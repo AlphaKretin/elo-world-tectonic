@@ -1,0 +1,4 @@
+[submodule "vendor/tectonic-content"]
+	path = vendor/tectonic-content
+	url = https://github.com/Pokemon-Tectonic-Team/Pokemon-Tectonic-Content
+	branch = ai-rework-testing
