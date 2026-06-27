@@ -1,6 +1,6 @@
 __pycache__/
 *.pyc
 .venv/
-results/*.jsonl
-results/*.status.json
+results/*
 !results/.gitkeep
+shards/
