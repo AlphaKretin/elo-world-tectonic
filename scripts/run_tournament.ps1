@@ -28,6 +28,18 @@
 # game directory (run setup_shards.ps1 first) since every debug launch
 # recompiles Data/PluginScripts.rxdata, which concurrent instances sharing
 # one directory would race on.
+#
+# Launches without the "debug" argument by default: $DEBUG=true launches
+# intermittently corrupt stdout/stderr ("Bad file descriptor", seemingly
+# from console allocation racing with PowerShell's pipe redirection),
+# confirmed absent across every non-debug run tried. logonerr (the per-
+# move error path our had_error detection depends on) isn't gated by
+# $DEBUG, so this doesn't lose error detection -- it only means
+# pbCriticalCode's top-level rescue isn't active, which only mattered for
+# logging a SystemStackError's already-empty backtrace before the process
+# died anyway; the watchdog's dangling-crash detection doesn't depend on
+# that log entry existing. Pass -UseDebugFlag after editing Plugin code,
+# since only a debug launch recompiles Data/PluginScripts.rxdata.
 param(
     [string]$Format = "singles",
     [int]$TurnStallTimeoutSeconds = 30,
@@ -35,7 +47,8 @@ param(
     [int]$PollIntervalSeconds = 5,
     [int]$BattleLimit = 0,   # 0 = unlimited (run until the whole tournament is done)
     [int]$ShardIndex = 0,
-    [int]$ShardCount = 1
+    [int]$ShardCount = 1,
+    [switch]$UseDebugFlag
 )
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
@@ -69,9 +82,15 @@ function Get-Finished {
 
 while (-not (Get-Finished)) {
     Push-Location $GameDir
-    $proc = Start-Process -FilePath ".\Game.exe" -ArgumentList "debug" -PassThru `
-        -RedirectStandardOutput (Join-Path $ResultsDir "game_stdout_$Suffix.log") `
-        -RedirectStandardError  (Join-Path $ResultsDir "game_stderr_$Suffix.log")
+    if ($UseDebugFlag) {
+        $proc = Start-Process -FilePath ".\Game.exe" -ArgumentList "debug" -PassThru `
+            -RedirectStandardOutput (Join-Path $ResultsDir "game_stdout_$Suffix.log") `
+            -RedirectStandardError  (Join-Path $ResultsDir "game_stderr_$Suffix.log")
+    } else {
+        $proc = Start-Process -FilePath ".\Game.exe" -PassThru `
+            -RedirectStandardOutput (Join-Path $ResultsDir "game_stdout_$Suffix.log") `
+            -RedirectStandardError  (Join-Path $ResultsDir "game_stderr_$Suffix.log")
+    }
     Pop-Location
 
     Write-Output "$(Get-Date -Format o)  [$Suffix] launched Game.exe (PID $($proc.Id))"

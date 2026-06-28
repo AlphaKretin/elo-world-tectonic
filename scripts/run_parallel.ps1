@@ -8,7 +8,8 @@ param(
     [int]$ShardCount = 8,
     [int]$TurnStallTimeoutSeconds = 30,
     [int]$BattleStallTimeoutSeconds = 240,
-    [int]$PollIntervalSeconds = 5
+    [int]$PollIntervalSeconds = 5,
+    [switch]$UseDebugFlag
 )
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
@@ -27,6 +28,7 @@ for ($i = 0; $i -lt $ShardCount; $i++) {
         "-BattleStallTimeoutSeconds", $BattleStallTimeoutSeconds,
         "-PollIntervalSeconds", $PollIntervalSeconds
     )
+    if ($UseDebugFlag) { $argList += "-UseDebugFlag" }
     Start-Process -FilePath "powershell.exe" -ArgumentList $argList `
         -RedirectStandardOutput $outLogPath -RedirectStandardError $errLogPath `
         -WindowStyle Hidden
