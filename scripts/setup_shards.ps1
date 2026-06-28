@@ -10,13 +10,55 @@
 # runs only touch the handful of changed Plugin .rb files plus the
 # recompiled PluginScripts.rxdata, not the ~0.67GB of Graphics/Audio/PBS
 # data that never changes.
+#
+# -Recompile does a plain "debug" launch of the root game first (scripts
+# only -- PluginScripts.rxdata -- not a PBS recompile; PBS data is a
+# one-time "debug compile" pass done manually, not part of this routine
+# flow) so edited Plugin code is actually picked up before syncing.
+#
+# Completion is detected via headless_boot.rb's ELO_COMPILE_ONLY path
+# writing Analysis/compile_done.txt and exiting, not by comparing
+# PluginScripts.rxdata's timestamp before/after: that comparison has to
+# cross PowerShell (UTC) and whatever the file system reports, and got
+# the UTC/local conversion wrong more than once -- a marker file written
+# from inside the same process that's doing the compiling has no
+# cross-tool timezone math to get wrong.
 param(
-    [int]$ShardCount = 8
+    [int]$ShardCount = 8,
+    [switch]$Recompile
 )
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
 $SourceDir  = Join-Path $RepoRoot "vendor\tectonic-content"
 $ShardsRoot = Join-Path $RepoRoot "shards"
+
+if ($Recompile) {
+    $marker = Join-Path $SourceDir "Analysis\compile_done.txt"
+    Remove-Item $marker -ErrorAction SilentlyContinue
+
+    Write-Output "Recompiling scripts (debug launch)..."
+    Push-Location $SourceDir
+    $env:ELO_TOURNAMENT = "1"
+    $env:ELO_COMPILE_ONLY = "1"
+    $proc = Start-Process -FilePath ".\Game.exe" -ArgumentList "debug" -PassThru
+    Remove-Item Env:\ELO_TOURNAMENT -ErrorAction SilentlyContinue
+    Remove-Item Env:\ELO_COMPILE_ONLY -ErrorAction SilentlyContinue
+    Pop-Location
+
+    $deadline = (Get-Date).AddMinutes(2)
+    while ((Get-Date) -lt $deadline) {
+        Start-Sleep -Seconds 2
+        if (Test-Path $marker) { break }
+        if ($proc.HasExited) { break }
+    }
+    Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+
+    if (Test-Path $marker) {
+        Write-Output "Recompile done ($(Get-Content $marker))."
+    } else {
+        Write-Output "WARNING: compile_done.txt never appeared within 2 minutes -- check for a stuck dialog or compile error."
+    }
+}
 
 New-Item -ItemType Directory -Force -Path $ShardsRoot | Out-Null
 

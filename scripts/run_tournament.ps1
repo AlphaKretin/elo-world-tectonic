@@ -18,7 +18,14 @@
 # every round. A single round that's actually stuck never updates that
 # heartbeat at all.
 #   - TurnStallTimeoutSeconds: resets whenever ELO_TURN_HEARTBEAT_PATH's
-#     round number changes. Catches a genuinely stuck turn quickly.
+#     round number changes. Catches a genuinely stuck turn quickly. 30s
+#     looked safe in isolation (a normal round resolves in low single-digit
+#     seconds even for unusual interactions like PARADOXHERB+MIRRORHERB --
+#     confirmed by running the exact pairing/seed that kept stalling here
+#     standalone, which then completed cleanly every time), but pairings
+#     that never hang alone still occasionally hit this threshold under
+#     real 8-shard contention; bumped to 60s rather than chasing a bug that
+#     may not exist in the battle logic at all.
 #   - BattleStallTimeoutSeconds: resets whenever ELO_ATTEMPTING_PATH changes
 #     (i.e. a new battle started). Backstop in case something progresses
 #     turn-by-turn but the battle as a whole never ends.
@@ -42,13 +49,15 @@
 # since only a debug launch recompiles Data/PluginScripts.rxdata.
 param(
     [string]$Format = "singles",
-    [int]$TurnStallTimeoutSeconds = 30,
+    [int]$TurnStallTimeoutSeconds = 60,
     [int]$BattleStallTimeoutSeconds = 240,
     [int]$PollIntervalSeconds = 5,
     [int]$BattleLimit = 0,   # 0 = unlimited (run until the whole tournament is done)
     [int]$ShardIndex = 0,
     [int]$ShardCount = 1,
-    [switch]$UseDebugFlag
+    [switch]$UseDebugFlag,
+    [int]$SampleGamesPerTrainer = 0,   # 0 = full round robin; >0 = sparse random sampling
+    [int]$SampleSeed = 1
 )
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
@@ -73,6 +82,12 @@ if ($BattleLimit -gt 0) {
     $env:ELO_BATTLE_LIMIT = "$BattleLimit"
 } else {
     Remove-Item Env:\ELO_BATTLE_LIMIT -ErrorAction SilentlyContinue
+}
+if ($SampleGamesPerTrainer -gt 0) {
+    $env:ELO_SAMPLE_GAMES_PER_TRAINER = "$SampleGamesPerTrainer"
+    $env:ELO_SAMPLE_SEED = "$SampleSeed"
+} else {
+    Remove-Item Env:\ELO_SAMPLE_GAMES_PER_TRAINER -ErrorAction SilentlyContinue
 }
 
 function Get-Finished {
