@@ -6,7 +6,8 @@
 param(
     [string]$Format = "singles",
     [int]$ShardCount = 8,
-    [int]$StallTimeoutSeconds = 90,
+    [int]$TurnStallTimeoutSeconds = 30,
+    [int]$BattleStallTimeoutSeconds = 240,
     [int]$PollIntervalSeconds = 5
 )
 
@@ -15,19 +16,21 @@ $ResultsDir = Join-Path $RepoRoot "results"
 $ScriptPath = Join-Path $PSScriptRoot "run_tournament.ps1"
 
 for ($i = 0; $i -lt $ShardCount; $i++) {
-    $logPath = Join-Path $ResultsDir "watchdog_${Format}_shard$i.log"
+    $outLogPath = Join-Path $ResultsDir "watchdog_${Format}_shard$i.log"
+    $errLogPath = Join-Path $ResultsDir "watchdog_${Format}_shard${i}_err.log"
     $argList = @(
         "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "`"$ScriptPath`"",
         "-Format", $Format,
         "-ShardIndex", $i,
         "-ShardCount", $ShardCount,
-        "-StallTimeoutSeconds", $StallTimeoutSeconds,
+        "-TurnStallTimeoutSeconds", $TurnStallTimeoutSeconds,
+        "-BattleStallTimeoutSeconds", $BattleStallTimeoutSeconds,
         "-PollIntervalSeconds", $PollIntervalSeconds
     )
     Start-Process -FilePath "powershell.exe" -ArgumentList $argList `
-        -RedirectStandardOutput $logPath -RedirectStandardError $logPath `
+        -RedirectStandardOutput $outLogPath -RedirectStandardError $errLogPath `
         -WindowStyle Hidden
-    Write-Output "Launched shard $i watchdog (log: $logPath)"
+    Write-Output "Launched shard $i watchdog (log: $outLogPath)"
 }
 
 Write-Output ""

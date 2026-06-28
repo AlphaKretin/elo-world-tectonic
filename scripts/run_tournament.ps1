@@ -6,12 +6,22 @@
 #   - The process can crash outright (e.g. a SystemStackError) -- handled by
 #     just relaunching; tournament.rb's identity-based resume + crash-streak
 #     tracking picks up where it left off.
-#   - A specific matchup can hang in a genuine infinite loop (still burning
-#     CPU, never raising, never finishing a turn) -- the engine itself never
-#     gives up on this, so this script watches ELO_ATTEMPTING_PATH and kills
-#     the process if it sits on the same pairing too long. The killed
-#     process counts as "crashed mid-battle" to tournament.rb, so the same
-#     crash-streak skip-after-N-failures logic applies to hangs too.
+#   - A specific turn can hang in a genuine infinite loop (still burning
+#     CPU, never raising, never finishing) -- the engine itself never gives
+#     up on this, so this script watches for it externally.
+#
+# Two independent timers, not one, because conflating them caused real
+# (if slow) battles to get killed and discarded as false positives: a
+# 100-round battle between two heavy-sustain teams that can't finish each
+# other off is a legitimate ~140s+ battle, not a hang, since
+# pbStartOfRoundPhase (see headless_boot.rb) keeps emitting a heartbeat
+# every round. A single round that's actually stuck never updates that
+# heartbeat at all.
+#   - TurnStallTimeoutSeconds: resets whenever ELO_TURN_HEARTBEAT_PATH's
+#     round number changes. Catches a genuinely stuck turn quickly.
+#   - BattleStallTimeoutSeconds: resets whenever ELO_ATTEMPTING_PATH changes
+#     (i.e. a new battle started). Backstop in case something progresses
+#     turn-by-turn but the battle as a whole never ends.
 #
 # Pass -ShardIndex/-ShardCount to run this as one of several parallel
 # shards (see run_parallel.ps1) -- each shard needs its own copy of the
@@ -20,7 +30,8 @@
 # one directory would race on.
 param(
     [string]$Format = "singles",
-    [int]$StallTimeoutSeconds = 90,
+    [int]$TurnStallTimeoutSeconds = 30,
+    [int]$BattleStallTimeoutSeconds = 240,
     [int]$PollIntervalSeconds = 5,
     [int]$BattleLimit = 0,   # 0 = unlimited (run until the whole tournament is done)
     [int]$ShardIndex = 0,
@@ -36,14 +47,15 @@ $GameDir    = if ($ShardCount -gt 1) {
 }
 $Suffix = if ($ShardCount -gt 1) { "${Format}_shard$ShardIndex" } else { $Format }
 
-$env:ELO_TOURNAMENT        = "1"
-$env:ELO_FORMAT            = $Format
-$env:ELO_SHARD_INDEX       = "$ShardIndex"
-$env:ELO_SHARD_COUNT       = "$ShardCount"
-$env:ELO_RESULTS_PATH      = Join-Path $ResultsDir "elo_results_$Suffix.jsonl"
-$env:ELO_STATUS_PATH       = Join-Path $ResultsDir "elo_status_$Suffix.json"
-$env:ELO_ATTEMPTING_PATH   = Join-Path $ResultsDir "elo_attempting_$Suffix.json"
-$env:ELO_CRASH_STREAK_PATH = Join-Path $ResultsDir "elo_crash_streaks_$Suffix.txt"
+$env:ELO_TOURNAMENT          = "1"
+$env:ELO_FORMAT              = $Format
+$env:ELO_SHARD_INDEX         = "$ShardIndex"
+$env:ELO_SHARD_COUNT         = "$ShardCount"
+$env:ELO_RESULTS_PATH        = Join-Path $ResultsDir "elo_results_$Suffix.jsonl"
+$env:ELO_STATUS_PATH         = Join-Path $ResultsDir "elo_status_$Suffix.json"
+$env:ELO_ATTEMPTING_PATH     = Join-Path $ResultsDir "elo_attempting_$Suffix.json"
+$env:ELO_CRASH_STREAK_PATH   = Join-Path $ResultsDir "elo_crash_streaks_$Suffix.txt"
+$env:ELO_TURN_HEARTBEAT_PATH = Join-Path $ResultsDir "elo_turn_heartbeat_$Suffix.json"
 if ($BattleLimit -gt 0) {
     $env:ELO_BATTLE_LIMIT = "$BattleLimit"
 } else {
@@ -64,8 +76,10 @@ while (-not (Get-Finished)) {
 
     Write-Output "$(Get-Date -Format o)  [$Suffix] launched Game.exe (PID $($proc.Id))"
 
-    $lastProgressAt      = Get-Date
+    $lastBattleProgressAt   = Get-Date
     $lastAttemptingSnapshot = $null
+    $lastTurnProgressAt     = Get-Date
+    $lastHeartbeatSnapshot  = $null
 
     while (-not $proc.HasExited) {
         Start-Sleep -Seconds $PollIntervalSeconds
@@ -74,13 +88,31 @@ while (-not (Get-Finished)) {
             $current = Get-Content $env:ELO_ATTEMPTING_PATH -Raw
             if ($current -ne $lastAttemptingSnapshot) {
                 $lastAttemptingSnapshot = $current
-                $lastProgressAt = Get-Date
+                $lastBattleProgressAt   = Get-Date
+                # New battle => round count resets too.
+                $lastTurnProgressAt    = Get-Date
+                $lastHeartbeatSnapshot = $null
             }
         }
 
-        $stalledSeconds = ((Get-Date) - $lastProgressAt).TotalSeconds
-        if ($stalledSeconds -gt $StallTimeoutSeconds) {
-            Write-Output "$(Get-Date -Format o)  [$Suffix] stalled ${stalledSeconds}s on: $lastAttemptingSnapshot -- killing PID $($proc.Id)"
+        if (Test-Path $env:ELO_TURN_HEARTBEAT_PATH) {
+            $currentHeartbeat = Get-Content $env:ELO_TURN_HEARTBEAT_PATH -Raw
+            if ($currentHeartbeat -ne $lastHeartbeatSnapshot) {
+                $lastHeartbeatSnapshot = $currentHeartbeat
+                $lastTurnProgressAt    = Get-Date
+            }
+        }
+
+        $turnStalledSeconds   = ((Get-Date) - $lastTurnProgressAt).TotalSeconds
+        $battleStalledSeconds = ((Get-Date) - $lastBattleProgressAt).TotalSeconds
+
+        if ($turnStalledSeconds -gt $TurnStallTimeoutSeconds) {
+            Write-Output "$(Get-Date -Format o)  [$Suffix] turn stalled ${turnStalledSeconds}s (heartbeat: $lastHeartbeatSnapshot) on: $lastAttemptingSnapshot -- killing PID $($proc.Id)"
+            Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
+            break
+        }
+        if ($battleStalledSeconds -gt $BattleStallTimeoutSeconds) {
+            Write-Output "$(Get-Date -Format o)  [$Suffix] battle stalled ${battleStalledSeconds}s on: $lastAttemptingSnapshot -- killing PID $($proc.Id)"
             Stop-Process -Id $proc.Id -Force -ErrorAction SilentlyContinue
             break
         }
