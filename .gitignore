@@ -8,3 +8,5 @@ upstream/
 analysis/ratings_*.json
 analysis/ratings_*.csv
 analysis/report_*.md
+analysis/cards/
+analysis/mockups/
