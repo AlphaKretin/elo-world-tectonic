@@ -26,6 +26,7 @@ import glob
 import json
 import math
 import os
+from collections import Counter
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -41,6 +42,10 @@ FRONT_SPRITE_DIR = os.path.join(TECTONIC_DIR, "Graphics", "Pokemon", "Front")
 FRONT_SHINY_SPRITE_DIR = os.path.join(TECTONIC_DIR, "Graphics", "Pokemon", "Front shiny")
 ITEM_ICON_DIR = os.path.join(TECTONIC_DIR, "Graphics", "Items")
 CURSE_BADGE_PATH = os.path.join(TECTONIC_DIR, "Graphics", "Items", "TAROTAMULET_ACTIVE.png")
+TRIBES_PATH = os.path.join(TECTONIC_DIR, "PBS", "tribes.txt")
+# The Tribal Bonus Info page's own header icon -- there's no per-tribe icon,
+# just this one generic badge for "a tribe bonus is active here".
+TRIBE_BADGE_PATH = os.path.join(TECTONIC_DIR, "Graphics", "Pictures", "icon_tribal_bonus.png")
 VENDOR_FONTS_DIR = os.path.join(REPO_ROOT, "vendor", "fonts")
 TITLE_FONT_PATH = os.path.join(TECTONIC_DIR, "Fonts", "power clear bold.ttf")  # the game's own pixel font, kept as a deliberate accent for the title only
 # Google Fonts (OFL-licensed, see vendor/fonts/OFL-*.txt), bundled rather
@@ -325,6 +330,43 @@ def resolved_gender(card_row, identities, card_data_by_label):
     return next(iter(identity_genders)) if len(identity_genders) == 1 else gender
 
 
+def load_tribe_info():
+    """{tribe_id: (threshold, display_name)} from PBS tribes.txt. Unlike
+    trainer/species data, tribe definitions are flat with no
+    ExtendsVersion-style inheritance, so parsing this directly is safe."""
+    info = {}
+    with open(TRIBES_PATH, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            tribe_id, threshold, name, _description = line.split(",", 3)
+            info[tribe_id] = (int(threshold), name)
+    return info
+
+
+def active_tribe_bonuses(card_row, tribe_info):
+    """Tribes whose party-wide member count meets the bonus threshold
+    (TribalBonus.rb's updateTribeCount), as (tribe_id, count, threshold,
+    name), highest count first."""
+    counts = Counter()
+    for member in card_row["party"]:
+        counts.update(member.get("tribes", []))
+    bonuses = []
+    for tribe_id, count in counts.items():
+        # Tribes outside tribe_info (tribes.txt) are debug/extension-only
+        # (e.g. DEBUG_TESTTRIBE, from a test species on some joke/dev
+        # trainer's team) -- GameData::Tribe.each_legal excludes these from
+        # ever giving a real bonus, so skip them here too.
+        if tribe_id not in tribe_info:
+            continue
+        threshold, name = tribe_info[tribe_id]
+        if count >= threshold:
+            bonuses.append((tribe_id, count, threshold, name))
+    bonuses.sort(key=lambda b: (-b[1], b[3]))
+    return bonuses
+
+
 def discover_formats():
     formats = set()
     for path in glob.glob(os.path.join(RESULTS_DIR, "elo_results_*_shard*.jsonl")):
@@ -426,6 +468,7 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     title_text = display_name(card_row, card_data_by_label)
     text_x = margin + s(24) + portrait_size + s(28)
     text_right = W - margin - s(24)
+    tribe_bonuses = active_tribe_bonuses(card_row, load_tribe_info())
 
     identities = masked_villain_identities(card_row, card_data_by_label)
     gender = resolved_gender(card_row, identities, card_data_by_label)
@@ -454,6 +497,9 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     y += s(30)
 
     lines = []  # (main_text, seed_or_None)
+    if tribe_bonuses:
+        names = [name for _, _, _, name in tribe_bonuses]
+        lines.append((f"Tribal Bonus: {', '.join(names)}", None))
     if best_win:
         rating, opponent, seed = best_win
         lines.append((f"Best win: {opponent_display(opponent)} ({rating:.0f})", seed))
@@ -534,9 +580,17 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     draw_wld_bar(draw, (text_x, bar_y, text_right, bar_y + s(22)), ratings_row["wins"], ratings_row["losses"], ratings_row["draws"])
 
     is_cursed = any(p.startswith("CURSE_") for p in card_row["policies"])
+    badge_paths = []
     if is_cursed and os.path.exists(CURSE_BADGE_PATH):
-        badge = fit_image(Image.open(CURSE_BADGE_PATH).convert("RGBA"), s(CURSE_BADGE_SIZE), s(CURSE_BADGE_SIZE))
-        canvas.alpha_composite(badge, (text_right - badge.width, margin + s(14)))
+        badge_paths.append(CURSE_BADGE_PATH)
+    if tribe_bonuses and os.path.exists(TRIBE_BADGE_PATH):
+        badge_paths.append(TRIBE_BADGE_PATH)
+    badge_x = text_right
+    for badge_path in badge_paths:
+        badge = fit_image(Image.open(badge_path).convert("RGBA"), s(CURSE_BADGE_SIZE), s(CURSE_BADGE_SIZE))
+        badge_x -= badge.width
+        canvas.alpha_composite(badge, (badge_x, margin + s(14)))
+        badge_x -= s(8)
 
     for (main_text, seed), ly in zip(lines, line_ys):
         draw.text((text_x, ly), main_text, font=line_font, fill=COLOR_TEXT)
@@ -604,11 +658,13 @@ def safe_filename(label):
 TEST_CASES = [
     ("ANOTHERPOSSIBLERAFAEL:Rafael#1", "undefeated #1, cursed, full team of large legendary sprites, male"),
     ("MASKEDVILLAIN2:Teal#5", "cursed with both a win and a loss, single identity reveal + gender fallback (Skyler)"),
-    ("HEXMANIAC:Errata", "non-cursed, female, species display-name fixes (H. Electrode, Farfetch'd)"),
+    ("HEXMANIAC:Errata", "non-cursed, female, species display-name fixes (H. Electrode, Farfetch'd), single tribal bonus"),
     ("YOUNGSTER:Joey", "1-Pokemon party (grid edge case), worst record in the pool"),
     ("MASKEDVILLAIN:Crimson#2", "single identity reveal, ambiguous match resolved to TRAINER_Alessa"),
     ("MASKEDVILLAIN_DOUBLE:Crimson", "double identity reveal (Imogene A & B), \"Masked Villains\" plural title"),
     ("MASKEDVILLAIN_Sang:Silver", "no identity reveal shown, gender still resolved via the Sang fallback"),
+    ("MASKEDVILLAIN_Sang:Silver#1", "cursed AND tribal bonus together -- both corner badges stacked, no overlap"),
+    ("BATTLEGIRL:Tester", "3 simultaneous tribal bonuses (comma-joined line, no overflow); also a 6x-identical-species party"),
     ("POKEMONMASTER_Vanya:Vanya#12", "genuine non-binary gender (consistent across all her versions)"),
     ("LEADER_Eko:Eko", "non-binary gender after the trainertypes.txt data fix, bad record"),
     ("LEADER_Helena:Helena#2", "wins + losses + draws all present -- full 3-color WLD bar"),
