@@ -16,6 +16,12 @@ outcome may be corrupted -- see tournament.rb) are excluded entirely.
 Running this against a partial, still-in-progress tournament is fine:
 Bradley-Terry only needs *a* connected set of results, not all of them,
 and re-running later as more results come in just refines the fit.
+
+--exclude-trainer drops a trainer (by its "TYPE:Name" or "TYPE:Name#N"
+label) from the fit entirely, e.g. for ROLLERSKATER_F:Attea, whose
+ALLOW_RANDOM_MOVES policy is too chaotic to be meaningful rating data --
+see trainer_pool.rb's QUARANTINED_POLICIES comment for why that isn't
+filtered at the trainer-pool level instead.
 """
 import argparse
 import csv
@@ -72,7 +78,7 @@ def load_results(fmt):
     return rows
 
 
-def compute_ratings(fmt):
+def compute_ratings(fmt, exclude_trainers=()):
     rows = load_results(fmt)
 
     stats = defaultdict(lambda: {"wins": 0, "losses": 0, "draws": 0, "battles": 0})
@@ -87,6 +93,8 @@ def compute_ratings(fmt):
         if result not in (WIN, LOSS, DRAW):
             continue
         t1, t2 = r["trainer1"], r["trainer2"]
+        if t1 in exclude_trainers or t2 in exclude_trainers:
+            continue
         stats[t1]["battles"] += 1
         stats[t2]["battles"] += 1
         if result == WIN:
@@ -163,6 +171,10 @@ def write_outputs(fmt, leaderboard):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", help="Only compute this format (default: all formats found in results/)")
+    parser.add_argument(
+        "--exclude-trainer", action="append", default=[], metavar="LABEL",
+        help="Trainer label (e.g. 'ROLLERSKATER_F:Attea') to drop from the fit entirely. Repeatable.",
+    )
     args = parser.parse_args()
 
     formats = [args.format] if args.format else discover_formats()
@@ -171,7 +183,7 @@ def main():
         return
 
     for fmt in formats:
-        leaderboard, stats = compute_ratings(fmt)
+        leaderboard, stats = compute_ratings(fmt, exclude_trainers=set(args.exclude_trainer))
         if not leaderboard:
             print(f"[{fmt}] No usable (non-skipped, win/loss/draw) results yet -- skipping.")
             continue
