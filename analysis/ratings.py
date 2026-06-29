@@ -22,6 +22,14 @@ label) from the fit entirely, e.g. for ROLLERSKATER_F:Attea, whose
 ALLOW_RANDOM_MOVES policy is too chaotic to be meaningful rating data --
 see trainer_pool.rb's QUARANTINED_POLICIES comment for why that isn't
 filtered at the trainer-pool level instead.
+
+Each trainer's rating also gets a standard error and a 95% confidence
+interval, plus an "overlap" count -- how many *other* trainers' point
+ratings fall inside this trainer's own CI. At ~30 games/trainer, a
+trainer with a lopsided record against whatever they were randomly
+matched against isn't necessarily precisely ranked -- the overlap count
+makes that visible instead of leaving rank to imply more precision than
+the data actually supports.
 """
 import argparse
 import csv
@@ -44,6 +52,18 @@ WIN, LOSS, DRAW = 1, 2, 5
 # Elo conversion (173 ~= 400 / ln(10), matching the usual Elo logistic curve).
 ELO_SCALE = 173
 ELO_BASE = 1500
+
+# sklearn's LogisticRegression(C=REG_C) minimizes 0.5*||w||^2 + C * log_loss,
+# so the L2 term is a unit-Gaussian prior on each coefficient, not an
+# afterthought -- it's also what makes the fit well-posed at all: a plain
+# Bradley-Terry design (each row is +1/-1 in two trainer columns, no
+# intercept) is only identifiable up to an additive constant (shifting every
+# rating by the same amount changes no prediction), so the unpenalized
+# Fisher information X^T W X is singular. The penalty's curvature (the +1
+# along the diagonal below) resolves that the same way it resolves the point
+# estimate, so REG_C has to be the same value the model itself is fit with.
+REG_C = 1.0
+CI_Z = 1.96  # ~95% normal-approximation interval
 
 
 def discover_formats():
@@ -131,16 +151,32 @@ def compute_ratings(fmt, exclude_trainers=()):
 
     X = coo_matrix((data, (row_idx, col_idx)), shape=(n_battles, n_trainers)).tocsr()
 
-    model = LogisticRegression(fit_intercept=False, max_iter=1000)
+    model = LogisticRegression(fit_intercept=False, C=REG_C, max_iter=1000)
     model.fit(X, y)
     coefs = model.coef_[0]
+
+    # Laplace approximation: the inverse of the penalized fit's Hessian at
+    # its own optimum approximates the coefficients' posterior covariance
+    # (see REG_C's comment for why the penalty term has to match the fit).
+    margins = X @ coefs
+    p = 1.0 / (1.0 + np.exp(-margins))
+    w = p * (1 - p)
+    X_dense = X.toarray()
+    hessian = np.eye(n_trainers) + REG_C * (X_dense * w[:, None]).T @ X_dense
+    se_coef = np.sqrt(np.diag(np.linalg.inv(hessian)))
+    se_rating = se_coef * ELO_SCALE
 
     leaderboard = []
     for name, idx in index.items():
         s = stats[name]
+        rating = coefs[idx] * ELO_SCALE + ELO_BASE
+        ci_half = CI_Z * se_rating[idx]
         leaderboard.append({
             "trainer": name,
-            "rating": round(coefs[idx] * ELO_SCALE + ELO_BASE, 2),
+            "rating": round(rating, 2),
+            "se": round(se_rating[idx], 2),
+            "ci_low": round(rating - ci_half, 2),
+            "ci_high": round(rating + ci_half, 2),
             "wins": s["wins"],
             "losses": s["losses"],
             "draws": s["draws"],
@@ -149,6 +185,14 @@ def compute_ratings(fmt, exclude_trainers=()):
     leaderboard.sort(key=lambda row: row["rating"], reverse=True)
     for rank, row in enumerate(leaderboard, start=1):
         row["rank"] = rank
+
+    # How many *other* trainers' point rating falls inside this trainer's
+    # own CI -- a direct count of "statistically indistinguishable from me,"
+    # rather than leaving that to be inferred from win/loss totals.
+    ratings_arr = np.array([row["rating"] for row in leaderboard])
+    for row in leaderboard:
+        overlap = np.count_nonzero((ratings_arr >= row["ci_low"]) & (ratings_arr <= row["ci_high"]))
+        row["overlap"] = int(overlap) - 1  # exclude self
 
     return leaderboard, stats
 
@@ -161,7 +205,10 @@ def write_outputs(fmt, leaderboard):
         json.dump(leaderboard, f, indent=2)
 
     with open(csv_path, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["rank", "trainer", "rating", "wins", "losses", "draws", "battles"])
+        writer = csv.DictWriter(f, fieldnames=[
+            "rank", "trainer", "rating", "se", "ci_low", "ci_high", "overlap",
+            "wins", "losses", "draws", "battles",
+        ])
         writer.writeheader()
         writer.writerows(leaderboard)
 

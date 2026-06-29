@@ -36,12 +36,17 @@ def write_report(fmt):
         "",
         f"{len(leaderboard)} trainers, {total_battles} battles.",
         "",
-        "| Rank | Trainer | Rating | W | L | D | Battles |",
-        "|---:|---|---:|---:|---:|---:|---:|",
+        "95% CI from the fit's own Laplace approximation; Overlap is how many "
+        "*other* trainers' rating falls inside this trainer's CI -- a high "
+        "count means their exact rank shouldn't be read as precise.",
+        "",
+        "| Rank | Trainer | Rating | 95% CI | Overlap | W | L | D | Battles |",
+        "|---:|---|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for row in leaderboard:
         lines.append(
             f"| {row['rank']} | {row['trainer']} | {row['rating']:.1f} "
+            f"| {row['ci_low']:.0f} - {row['ci_high']:.0f} | {row['overlap']} "
             f"| {row['wins']} | {row['losses']} | {row['draws']} | {row['battles']} |"
         )
 
