@@ -153,6 +153,18 @@ COLOR_GENDER_OTHER = (155, 80, 210)
 # representational sense) shows nothing.
 GENDER_GLYPHS = {0: ("♂", COLOR_GENDER_MALE), 1: ("♀", COLOR_GENDER_FEMALE), 2: ("⚥", COLOR_GENDER_OTHER)}
 
+# Same low (F) -> high (S+) ramp elo_world_pokemon_red's own tier_colors
+# uses -- a "heat" gradient (green -> yellow -> orange -> red -> magenta),
+# not red=bad/green=good, matching common tier-list convention.
+TIER_COLORS = {
+    "F": (0, 176, 80), "D-": (36, 187, 69), "D": (75, 199, 53), "D+": (111, 210, 38),
+    "C-": (147, 222, 21), "C": (184, 233, 0), "C+": (220, 244, 0), "B-": (255, 255, 0),
+    "B": (255, 214, 0), "B+": (255, 172, 0), "A-": (255, 93, 0), "A": (255, 87, 0),
+    "A+": (255, 43, 0), "S": (255, 0, 0), "S+": (255, 0, 80),
+}
+TIER_BADGE_HEIGHT = 30
+TIER_BADGE_PAD = 10
+
 
 def s(design_px):
     """Scale a design-space pixel value up to the final raster resolution."""
@@ -683,12 +695,32 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         gx = text_x + title_font.getlength(title_text) + s(10)
         gy = title_y + title_font.size * 0.55
         draw.text((gx, gy), glyph, font=glyph_font, fill=glyph_color, anchor="lm")
+    tier = ratings_row.get("tier")
+    tier_reserve = 0
+    tier_badge_w = 0
+    tier_font = load_font(BODY_FONT_PATH, 18)
+    if tier and tier in TIER_COLORS:
+        tier_badge_w = int(tier_font.getlength(tier)) + 2 * s(TIER_BADGE_PAD)
+        tier_reserve = tier_badge_w + s(10)
+
     rank_text = f"#{ratings_row['rank']} overall · {ratings_row['rating']:.1f} Elo"
     true_names = sorted({i["real_name"] for i in identities})
     if true_names:
         rank_text += f" · ({', '.join(true_names)})"
-    rank_font = fit_font(TITLE_FONT_PATH, rank_text, text_right - text_x, 30, min_size=14)
-    draw.text((text_x, rank_y), rank_text, font=rank_font, fill=COLOR_DIM)
+    rank_font = fit_font(TITLE_FONT_PATH, rank_text, text_right - text_x - tier_reserve, 30, min_size=14)
+
+    rank_text_x = text_x
+    if tier and tier in TIER_COLORS:
+        badge_color = TIER_COLORS[tier]
+        badge_h = s(TIER_BADGE_HEIGHT)
+        badge_y0 = rank_y + (rank_font.size - badge_h) // 2
+        draw.rounded_rectangle((text_x, badge_y0, text_x + tier_badge_w, badge_y0 + badge_h),
+                                radius=badge_h // 2, fill=badge_color)
+        draw.text((text_x + tier_badge_w // 2, badge_y0 + badge_h // 2), tier, font=tier_font,
+                   fill=readable_text_color(badge_color), anchor="mm")
+        rank_text_x = text_x + tier_badge_w + s(10)
+
+    draw.text((rank_text_x, rank_y), rank_text, font=rank_font, fill=COLOR_DIM)
     record = f"{ratings_row['wins']}W - {ratings_row['draws']}D - {ratings_row['losses']}L   ({ratings_row['battles']} battles)"
     draw.text((text_x, record_y), record, font=body_font, fill=COLOR_TEXT)
     draw_wld_bar(draw, (text_x, bar_y, text_right, bar_y + s(22)), ratings_row["wins"], ratings_row["losses"], ratings_row["draws"])

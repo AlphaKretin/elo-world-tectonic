@@ -37,6 +37,14 @@ trainer with a lopsided record against whatever they were randomly
 matched against isn't necessarily precisely ranked -- the overlap count
 makes that visible instead of leaving rank to imply more precision than
 the data actually supports.
+
+Each row also gets a 15-tier S-F tier (in the elo_world_pokemon_red/
+crystal style: F, D-/D/D+, C-/C/C+, B-/B/B+, A-/A/A+, S/S+) via two-stage
+k-means -- not the hand-picked fixed Elo breakpoints upstream actually
+shipped (those would need re-picking by hand every time this dataset's
+scale changes), and not flat 15-cluster k-means either, since a single
+pass has no notion that e.g. C+ should stay closer to C than to B-. See
+assign_tiers for the two-stage approach that fixes that.
 """
 import argparse
 import csv
@@ -47,6 +55,7 @@ from collections import defaultdict
 
 import numpy as np
 from scipy.sparse import coo_matrix
+from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -203,7 +212,56 @@ def compute_ratings(fmt, exclude_trainers=(), exclude_cursed=False):
         overlap = np.count_nonzero((ratings_arr >= row["ci_low"]) & (ratings_arr <= row["ci_high"]))
         row["overlap"] = int(overlap) - 1  # exclude self
 
+    assign_tiers(leaderboard)
+
     return leaderboard, stats
+
+
+# Bottom to top; F has no +/- (a single tier), S has no "-" (just S/S+) --
+# matching elo_world_pokemon_red's own 15-name list exactly.
+TIER_MACRO_LETTERS = ["F", "D", "C", "B", "A", "S"]
+TIER_SUFFIXES = {
+    "F": [""],
+    "D": ["-", "", "+"],
+    "C": ["-", "", "+"],
+    "B": ["-", "", "+"],
+    "A": ["-", "", "+"],
+    "S": ["", "+"],
+}
+
+
+def assign_tiers(leaderboard):
+    """Two-stage k-means: a macro pass (K=6) sorted by cluster center into
+    F/D/C/B/A/S, then a second pass *within* each macro group's own
+    members for the +/- split. Two-stage rather than one flat K=15 pass so
+    a C+ trainer is guaranteed to be a member of the same macro cluster as
+    C/C-, not just whichever of 15 raw clusters happens to land nearby --
+    a flat pass has no notion that C+ should stay closer to C than to B-.
+    Mutates leaderboard in place, adding a "tier" field to every row (None
+    if there aren't even enough trainers for one per macro tier)."""
+    if len(leaderboard) < len(TIER_MACRO_LETTERS):
+        for row in leaderboard:
+            row["tier"] = None
+        return
+
+    ratings_arr = np.array([row["rating"] for row in leaderboard]).reshape(-1, 1)
+    macro_km = KMeans(n_clusters=len(TIER_MACRO_LETTERS), n_init=10, random_state=0).fit(ratings_arr)
+    macro_order = np.argsort(macro_km.cluster_centers_.ravel())
+    macro_letter = {cluster: TIER_MACRO_LETTERS[rank] for rank, cluster in enumerate(macro_order)}
+    macro_tiers = [macro_letter[cluster] for cluster in macro_km.labels_]
+
+    for letter, suffixes in TIER_SUFFIXES.items():
+        group = [row for row, tier in zip(leaderboard, macro_tiers) if tier == letter]
+        if len(suffixes) == 1 or len(group) < len(suffixes):
+            for row in group:
+                row["tier"] = letter
+            continue
+        group_ratings = np.array([row["rating"] for row in group]).reshape(-1, 1)
+        sub_km = KMeans(n_clusters=len(suffixes), n_init=10, random_state=0).fit(group_ratings)
+        sub_order = np.argsort(sub_km.cluster_centers_.ravel())
+        suffix_by_cluster = {cluster: suffixes[rank] for rank, cluster in enumerate(sub_order)}
+        for row, cluster in zip(group, sub_km.labels_):
+            row["tier"] = letter + suffix_by_cluster[cluster]
 
 
 def write_outputs(fmt, leaderboard, suffix=""):
@@ -215,7 +273,7 @@ def write_outputs(fmt, leaderboard, suffix=""):
 
     with open(csv_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=[
-            "rank", "trainer", "rating", "se", "ci_low", "ci_high", "overlap",
+            "rank", "trainer", "rating", "tier", "se", "ci_low", "ci_high", "overlap",
             "wins", "losses", "draws", "battles",
         ])
         writer.writeheader()
@@ -258,7 +316,7 @@ def main():
         json_path, csv_path = write_outputs(fmt, leaderboard, suffix=suffix)
         total_battles = sum(s["battles"] for s in stats.values()) // 2
         print(f"[{fmt}] {len(leaderboard)} trainers, {total_battles} battles -> {csv_path}")
-        print(f"[{fmt}] Top 5: " + ", ".join(f"{row['trainer']} ({row['rating']})" for row in leaderboard[:5]))
+        print(f"[{fmt}] Top 5: " + ", ".join(f"{row['trainer']} ({row['rating']}, {row['tier']})" for row in leaderboard[:5]))
 
 
 if __name__ == "__main__":
