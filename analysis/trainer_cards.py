@@ -20,14 +20,21 @@ the engine's own resolution. Regenerate it with:
 (after a debug-mode launch to recompile, if dumpTrainerCardData! itself
 just changed.) Wait for Analysis/trainer_card_data.json to appear, then
 close Game.exe -- it doesn't exit on its own.
+
+Move type icons are bundled as SVG (vendor/type_icons/, see that
+directory's ATTRIBUTION.txt) and rasterized at runtime via resvg_py
+(`pip install resvg_py`) -- not cairosvg, which needs a native Cairo DLL
+this project doesn't otherwise depend on.
 """
 import argparse
 import glob
+import io
 import json
 import math
 import os
 from collections import Counter
 
+import resvg_py
 from PIL import Image, ImageDraw, ImageFont
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -46,6 +53,20 @@ TRIBES_PATH = os.path.join(TECTONIC_DIR, "PBS", "tribes.txt")
 # The Tribal Bonus Info page's own header icon -- there's no per-tribe icon,
 # just this one generic badge for "a tribe bonus is active here".
 TRIBE_BADGE_PATH = os.path.join(TECTONIC_DIR, "Graphics", "Pictures", "icon_tribal_bonus.png")
+TYPE_ICONS_DIR = os.path.join(REPO_ROOT, "vendor", "type_icons")
+# Mutant is a real Tectonic type with its own bundled icon; Flex has no
+# dedicated art anywhere (in-game or in this icon set), so -- like the icon
+# set's own author did for Mutant -- it borrows the "unknown" glyph.
+TYPE_ICON_FALLBACK = "QMarks.svg"
+TYPE_ICON_FILES = {
+    "NORMAL": "Normal.svg", "FIGHTING": "Fighting.svg", "FLYING": "Flying.svg",
+    "POISON": "Poison.svg", "GROUND": "Ground.svg", "ROCK": "Rock.svg",
+    "BUG": "Bug.svg", "GHOST": "Ghost.svg", "STEEL": "Steel.svg",
+    "FIRE": "Fire.svg", "WATER": "Water.svg", "GRASS": "Grass.svg",
+    "ELECTRIC": "Electric.svg", "PSYCHIC": "Psychic.svg", "ICE": "Ice.svg",
+    "DRAGON": "Dragon.svg", "DARK": "Dark.svg", "FAIRY": "Fairy.svg",
+    "QMARKS": "QMarks.svg", "MUTANT": "Mutant.svg",
+}
 VENDOR_FONTS_DIR = os.path.join(REPO_ROOT, "vendor", "fonts")
 TITLE_FONT_PATH = os.path.join(TECTONIC_DIR, "Fonts", "power clear bold.ttf")  # the game's own pixel font, kept as a deliberate accent for the title only
 # Google Fonts (OFL-licensed, see vendor/fonts/OFL-*.txt), bundled rather
@@ -66,9 +87,10 @@ MARGIN = 36
 PORTRAIT_SIZE = 260
 GRID_COLUMNS = 3
 GRID_GAP = 14
-# A nicknamed Pokemon stacks a second line (nickname above species+level)
-# inside this same single-line height rather than growing the cell -- by
-# design it can overlap into the sprite art above when that happens.
+# A nicknamed Pokemon stacks a second line (species+level, then nickname
+# below it) inside this same single-line height rather than growing the
+# cell -- by design it can overlap into the sprite art below when that
+# happens.
 CELL_LABEL_HEIGHT = 32
 CELL_INNER_PAD = 16
 # Every party sprite is native_size * SPRITE_SCALE, full stop -- no fitting
@@ -86,6 +108,17 @@ CURSE_BADGE_SIZE = 54
 # art too, so this multiplies native icon pixels directly rather than fitting
 # to a design-space size (which would scale by a fractional, blurring factor).
 ITEM_ICON_SCALE = 2
+# Move capsules: a "pill" (radius = half the height) with the type icon
+# inset at the left and the move name filling the rest. Smooth vector art,
+# not pixel art -- unlike sprites/items above, these scale and resample
+# normally (LANCZOS) rather than by an integer native multiple.
+TYPE_ICON_RENDER_SIZE = 128
+MOVE_CAPSULE_HEIGHT = 26
+MOVE_CAPSULE_GAP = 6
+MOVE_ICON_SIZE = 20
+MOVE_CAPSULE_PAD = 6
+MOVE_FONT_START = 16
+MOVE_FONT_MIN = 11
 # Hand-tuned per mask geometry, not a single shared constant -- the single
 # mask's one figure sits centered/narrower than the double mask's two, so
 # the same offset overshoots on the single case and undershoots on the
@@ -367,6 +400,74 @@ def active_tribe_bonuses(card_row, tribe_info):
     return bonuses
 
 
+_type_icon_cache = {}
+
+
+def load_type_icon(type_id):
+    """(icon image, capsule background color) for a move type, rendered
+    once from the bundled SVG (vendor/type_icons/, see ATTRIBUTION.txt) and
+    cached. The capsule color comes from the icon's own background circle,
+    not Tectonic's PBS type Color -- that one's tuned for text on a dark
+    background, not a solid fill block, and the two don't always agree
+    (e.g. Fire is #F08030 there vs. this icon set's #E4613E)."""
+    if type_id in _type_icon_cache:
+        return _type_icon_cache[type_id]
+    filename = TYPE_ICON_FILES.get(type_id, TYPE_ICON_FALLBACK)
+    with open(os.path.join(TYPE_ICONS_DIR, filename), encoding="utf-8") as f:
+        svg = f.read()
+    png_bytes = resvg_py.svg_to_bytes(svg_string=svg, width=TYPE_ICON_RENDER_SIZE, height=TYPE_ICON_RENDER_SIZE)
+    icon = Image.open(io.BytesIO(bytes(png_bytes))).convert("RGBA")
+    # A point just inside the left edge, vertically centered -- inside the
+    # icon's circular background but clear of every bundled glyph's own
+    # extent, verified against all 20 icons.
+    bg_color = icon.getpixel((max(2, icon.width // 32), icon.height // 2))[:3]
+    _type_icon_cache[type_id] = (icon, bg_color)
+    return _type_icon_cache[type_id]
+
+
+def readable_text_color(bg_color):
+    r, g, b = bg_color
+    luminance = 0.299 * r + 0.587 * g + 0.114 * b
+    return COLOR_TEXT if luminance > 140 else (255, 255, 255)
+
+
+def moveset_grid_columns(card_data_by_label, capsule_area_width):
+    """2 if the longest move name in the *whole* dataset still fits legibly
+    at MOVE_FONT_MIN within a 2-up capsule slice of capsule_area_width,
+    else 1 (a column of up to 4) -- decided globally so every card uses the
+    same grid shape, rather than each trainer's own moves determining it
+    independently (see [[feedback-trainer-card-iteration]] on consistent
+    scale being dataset-global, not per-card)."""
+    longest = ""
+    for row in card_data_by_label.values():
+        for member in row["party"]:
+            for move in member.get("moves", []):
+                if len(move["name"]) > len(longest):
+                    longest = move["name"]
+    if not longest:
+        return 2
+    two_up_width = (capsule_area_width - s(MOVE_CAPSULE_GAP)) // 2
+    text_budget = two_up_width - s(MOVE_ICON_SIZE) - s(MOVE_CAPSULE_PAD) * 3
+    floor_font = load_font(BODY_FONT_PATH, MOVE_FONT_MIN)
+    return 2 if floor_font.getlength(longest) <= text_budget else 1
+
+
+def draw_move_capsule(draw, canvas, coords, move):
+    x0, y0, x1, y1 = coords
+    icon, bg_color = load_type_icon(move["type"])
+    draw.rounded_rectangle(coords, radius=(y1 - y0) // 2, fill=bg_color)
+
+    icon_size = s(MOVE_ICON_SIZE)
+    fitted_icon = icon.resize((icon_size, icon_size), Image.LANCZOS)
+    icon_pos = (x0 + s(MOVE_CAPSULE_PAD), y0 + (y1 - y0 - icon_size) // 2)
+    canvas.alpha_composite(fitted_icon, icon_pos)
+
+    text_x0 = icon_pos[0] + icon_size + s(MOVE_CAPSULE_PAD)
+    text_budget = x1 - text_x0 - s(MOVE_CAPSULE_PAD)
+    font = fit_font(BODY_FONT_PATH, move["name"], text_budget, MOVE_FONT_START, min_size=MOVE_FONT_MIN)
+    draw.text((text_x0, (y0 + y1) // 2), move["name"], font=font, fill=readable_text_color(bg_color), anchor="lm")
+
+
 def discover_formats():
     formats = set()
     for path in glob.glob(os.path.join(RESULTS_DIR, "elo_results_*_shard*.jsonl")):
@@ -462,8 +563,21 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     label_h = s(CELL_LABEL_HEIGHT)
     cell_sprite_budget = max_native_dim * SPRITE_SCALE
     cell_w = cell_sprite_budget + 2 * inner_pad
-    cell_h = cell_sprite_budget + label_h + 2 * inner_pad
     W = 2 * margin + GRID_COLUMNS * cell_w + (GRID_COLUMNS - 1) * gap
+
+    # Moveset grid: 2-up if the longest move name anywhere in the dataset
+    # still fits, else a single column -- same shape on every card (see
+    # moveset_grid_columns). Cell height reserves the worst case (2 rows
+    # for 2-up, 4 for a column) so every cell in the grid is the same
+    # height regardless of how many moves this particular Pokemon has.
+    move_cols = moveset_grid_columns(card_data_by_label, cell_w - 2 * inner_pad)
+    move_rows = 2 if move_cols == 2 else 4
+    capsule_h = s(MOVE_CAPSULE_HEIGHT)
+    capsule_gap = s(MOVE_CAPSULE_GAP)
+    move_grid_h = move_rows * capsule_h + (move_rows - 1) * capsule_gap
+    capsule_w = (cell_w - 2 * inner_pad - (move_cols - 1) * capsule_gap) // move_cols
+
+    cell_h = inner_pad + label_h + cell_sprite_budget + inner_pad + move_grid_h
 
     title_text = display_name(card_row, card_data_by_label)
     text_x = margin + s(24) + portrait_size + s(28)
@@ -602,7 +716,26 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         cx0 = margin + col * (cell_w + gap)
         cy0 = grid_top + row * (cell_h + gap)
         draw.rounded_rectangle((cx0, cy0, cx0 + cell_w, cy0 + cell_h), radius=s(18), fill=COLOR_CELL)
-        sprite_area_top = cy0 + inner_pad
+
+        species_display = member.get("species_display") or member["species"].title()
+        species_line = f"{species_display}  Lv.{member['level']}"
+        label_max_w = cell_w - 2 * inner_pad
+        label_cx, label_cy = cx0 + cell_w // 2, cy0 + inner_pad + label_h // 2
+        nickname = member.get("nickname")
+        if nickname:
+            # species+level stays exactly where it always sits (same as the
+            # non-nicknamed case below); the nickname stacks below it,
+            # pushing down into the sprite art below. Accepted tradeoff, not
+            # a bug to fix -- both lines equally weighted, not one dimmed.
+            nick_font = fit_font(BODY_FONT_PATH, nickname, label_max_w, 24, min_size=14)
+            species_font = fit_font(BODY_FONT_PATH, species_line, label_max_w, 24, min_size=14)
+            draw.text((label_cx, label_cy + s(26)), nickname, font=nick_font, fill=COLOR_TEXT, anchor="mm")
+            draw.text((label_cx, label_cy), species_line, font=species_font, fill=COLOR_TEXT, anchor="mm")
+        else:
+            species_font = fit_font(BODY_FONT_PATH, species_line, label_max_w, 24, min_size=14)
+            draw.text((label_cx, label_cy), species_line, font=species_font, fill=COLOR_TEXT, anchor="mm")
+
+        sprite_area_top = cy0 + inner_pad + label_h
         sprite = front_sprite(member["species"], member.get("shiny", False))
         if sprite:
             scaled = sprite.resize((sprite.width * SPRITE_SCALE, sprite.height * SPRITE_SCALE), Image.NEAREST)
@@ -624,23 +757,13 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
             fitted = icon.resize((icon.width * ITEM_ICON_SCALE, icon.height * ITEM_ICON_SCALE), Image.NEAREST)
             pos = (corner_x - fitted.width - n * fitted.width, corner_y - fitted.height)
             canvas.alpha_composite(fitted, pos)
-        species_display = member.get("species_display") or member["species"].title()
-        species_line = f"{species_display}  Lv.{member['level']}"
-        label_max_w = cell_w - 2 * inner_pad
-        label_cx, label_cy = cx0 + cell_w // 2, cy0 + cell_h - label_h // 2
-        nickname = member.get("nickname")
-        if nickname:
-            # species+level stays exactly where it always sits (same as the
-            # non-nicknamed case below); the nickname stacks above it,
-            # pushing up into the sprite art above. Accepted tradeoff, not
-            # a bug to fix -- both lines equally weighted, not one dimmed.
-            nick_font = fit_font(BODY_FONT_PATH, nickname, label_max_w, 24, min_size=14)
-            species_font = fit_font(BODY_FONT_PATH, species_line, label_max_w, 24, min_size=14)
-            draw.text((label_cx, label_cy - s(26)), nickname, font=nick_font, fill=COLOR_TEXT, anchor="mm")
-            draw.text((label_cx, label_cy), species_line, font=species_font, fill=COLOR_TEXT, anchor="mm")
-        else:
-            species_font = fit_font(BODY_FONT_PATH, species_line, label_max_w, 24, min_size=14)
-            draw.text((label_cx, label_cy), species_line, font=species_font, fill=COLOR_TEXT, anchor="mm")
+
+        move_grid_top = sprite_area_top + cell_sprite_budget + inner_pad
+        for mi, move in enumerate(member.get("moves") or []):
+            mcol, mrow = mi % move_cols, mi // move_cols
+            mx0 = cx0 + inner_pad + mcol * (capsule_w + capsule_gap)
+            my0 = move_grid_top + mrow * (capsule_h + capsule_gap)
+            draw_move_capsule(draw, canvas, (mx0, my0, mx0 + capsule_w, my0 + capsule_h), move)
 
     canvas.convert("RGB").save(out_path)
 
@@ -665,6 +788,7 @@ TEST_CASES = [
     ("MASKEDVILLAIN_Sang:Silver", "no identity reveal shown, gender still resolved via the Sang fallback"),
     ("MASKEDVILLAIN_Sang:Silver#1", "cursed AND tribal bonus together -- both corner badges stacked, no overlap"),
     ("BATTLEGIRL:Tester", "3 simultaneous tribal bonuses (comma-joined line, no overflow); also a 6x-identical-species party"),
+    ("GAMBLER:Tiki", "has the longest move name in the dataset (Dielectric Breakdown) -- the case that decides moveset_grid_columns() globally"),
     ("POKEMONMASTER_Vanya:Vanya#12", "genuine non-binary gender (consistent across all her versions)"),
     ("LEADER_Eko:Eko", "non-binary gender after the trainertypes.txt data fix, bad record"),
     ("LEADER_Helena:Helena#2", "wins + losses + draws all present -- full 3-color WLD bar"),

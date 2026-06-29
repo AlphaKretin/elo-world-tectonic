@@ -1,0 +1,14 @@
+Pokemon type icons, converted from JSX to standalone SVG.
+
+Source: https://github.com/Pokemon-Tectonic-Team/tectonic-tools
+        (src/components/type_icons/components/*TypeIcon.tsx)
+
+That repo's type_icons README states:
+  "A set of SVG icons of Pokemon types. This is a recreation of the type
+  icons found in Brilliant Diamond, Shining Pearl, Legends: Arceus,
+  Scarlet, and Violet. [...] Free to use under MIT license."
+  (originally from https://github.com/partywhale/pokemon-type-icons)
+
+Mutant.svg is a Tectonic-specific addition from the same repo (reuses the
+"unknown" glyph with its own color). Flex has no dedicated icon in either
+project; trainer_cards.py falls back to QMarks.svg for it.
