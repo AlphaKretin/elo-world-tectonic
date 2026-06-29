@@ -68,7 +68,14 @@ for ($i = 0; $i -lt $ShardCount; $i++) {
     # /MIR mirror (copies changed files, removes ones deleted from source)
     # /MT:8 multi-threaded  /R:1 /W:1 minimal retry on a locked file
     # /NFL /NDL /NJH /NP suppress the (huge, unhelpful) per-file listing
-    robocopy $SourceDir $shardDir /MIR /MT:8 /NFL /NDL /NJH /NP /R:1 /W:1 | Out-Null
+    #
+    # Absolute path, not bare "robocopy": a detached process launched from
+    # a git-bash-derived PATH (e.g. via the Bash tool) doesn't include
+    # System32, so plain "robocopy" silently resolves to nothing and this
+    # whole sync step no-ops -- happened for real on the 2026-06-28->29
+    # singles-to-doubles handoff. $env:SystemRoot is set by the OS itself,
+    # not derived from PATH, so it survives that.
+    & "$env:SystemRoot\System32\robocopy.exe" $SourceDir $shardDir /MIR /MT:8 /NFL /NDL /NJH /NP /R:1 /W:1 | Out-Null
     # Robocopy exit codes 0-7 are all success (bit flags for what it did);
     # 8+ means a real error.
     if ($LASTEXITCODE -ge 8) {
