@@ -23,6 +23,13 @@ ALLOW_RANDOM_MOVES policy is too chaotic to be meaningful rating data --
 see trainer_pool.rb's QUARANTINED_POLICIES comment for why that isn't
 filtered at the trainer-pool level instead.
 
+--exclude-cursed drops every battle flagged curse (tournament.rb tags a
+battle curse if either trainer had a CURSE_* policy active in it) and
+writes a parallel ratings_<fmt>_uncursed.json/csv leaderboard, to see how
+the field shakes out without curse-skewed results pulling on the fit.
+Cursed trainers' curses are active in every battle they play, so they end
+up with no data and don't appear in the uncursed leaderboard at all.
+
 Each trainer's rating also gets a standard error and a 95% confidence
 interval, plus an "overlap" count -- how many *other* trainers' point
 ratings fall inside this trainer's own CI. At ~30 games/trainer, a
@@ -98,7 +105,7 @@ def load_results(fmt):
     return rows
 
 
-def compute_ratings(fmt, exclude_trainers=()):
+def compute_ratings(fmt, exclude_trainers=(), exclude_cursed=False):
     rows = load_results(fmt)
 
     stats = defaultdict(lambda: {"wins": 0, "losses": 0, "draws": 0, "battles": 0})
@@ -108,6 +115,8 @@ def compute_ratings(fmt, exclude_trainers=()):
         if r.get("skipped"):
             continue
         if r.get("had_error"):
+            continue
+        if exclude_cursed and r.get("curse"):
             continue
         result = r.get("result")
         if result not in (WIN, LOSS, DRAW):
@@ -197,9 +206,9 @@ def compute_ratings(fmt, exclude_trainers=()):
     return leaderboard, stats
 
 
-def write_outputs(fmt, leaderboard):
-    json_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
-    csv_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.csv")
+def write_outputs(fmt, leaderboard, suffix=""):
+    json_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}{suffix}.json")
+    csv_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}{suffix}.csv")
 
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(leaderboard, f, indent=2)
@@ -222,6 +231,15 @@ def main():
         "--exclude-trainer", action="append", default=[], metavar="LABEL",
         help="Trainer label (e.g. 'ROLLERSKATER_F:Attea') to drop from the fit entirely. Repeatable.",
     )
+    parser.add_argument(
+        "--exclude-cursed", action="store_true",
+        help=(
+            "Drop every battle flagged curse (either side had a CURSE_* policy active) from the fit, "
+            "and write to ratings_<fmt>_uncursed.json/csv instead of the normal output. Since a cursed "
+            "trainer's curse is active in every battle it plays (see tournament.rb's pairsForEdge), "
+            "this leaves cursed trainers with no data and they won't appear in the result."
+        ),
+    )
     args = parser.parse_args()
 
     formats = [args.format] if args.format else discover_formats()
@@ -229,12 +247,15 @@ def main():
         print("No elo_results_*_shard*.jsonl files found under results/.")
         return
 
+    suffix = "_uncursed" if args.exclude_cursed else ""
     for fmt in formats:
-        leaderboard, stats = compute_ratings(fmt, exclude_trainers=set(args.exclude_trainer))
+        leaderboard, stats = compute_ratings(
+            fmt, exclude_trainers=set(args.exclude_trainer), exclude_cursed=args.exclude_cursed,
+        )
         if not leaderboard:
             print(f"[{fmt}] No usable (non-skipped, win/loss/draw) results yet -- skipping.")
             continue
-        json_path, csv_path = write_outputs(fmt, leaderboard)
+        json_path, csv_path = write_outputs(fmt, leaderboard, suffix=suffix)
         total_battles = sum(s["battles"] for s in stats.values()) // 2
         print(f"[{fmt}] {len(leaderboard)} trainers, {total_battles} battles -> {csv_path}")
         print(f"[{fmt}] Top 5: " + ", ".join(f"{row['trainer']} ({row['rating']})" for row in leaderboard[:5]))
