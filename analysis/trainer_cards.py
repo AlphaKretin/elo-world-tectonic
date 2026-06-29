@@ -202,9 +202,47 @@ def vertical_gradient(w, h, top, bottom):
     return column.resize((w, h))
 
 
-def display_name(card_row):
+def distinct_fight_number(card_row, card_data_by_label):
+    """1-indexed position of this row's fight among same-identity versions,
+    or None if there's only one distinct fight.
+
+    A version with a CURSE_* policy is the same fight as the nearest
+    preceding non-cursed version, not a new one (e.g. Yezera's versions
+    0/1, 2/3, ... are 6 fights, not 12; Crimson/Teal's identity rotates via
+    name_for_hashing rather than real_name, with each identity getting its
+    own two fights elsewhere in the version range). Versions with no curse
+    at all (e.g. Vanya's 22-version gauntlet) are each their own fight.
+    """
+    identity = card_row.get("name_for_hashing") or card_row["real_name"]
+    siblings = sorted(
+        (row for row in card_data_by_label.values()
+         if row["trainer_type"] == card_row["trainer_type"]
+         and (row.get("name_for_hashing") or row["real_name"]) == identity),
+        key=lambda row: row["version"],
+    )
+
+    fight_numbers = {}
+    next_number = 1
+    last_base_version = None
+    for row in siblings:
+        is_cursed = any(p.startswith("CURSE_") for p in row["policies"])
+        if is_cursed and last_base_version is not None:
+            fight_numbers[row["version"]] = fight_numbers[last_base_version]
+        else:
+            fight_numbers[row["version"]] = next_number
+            next_number += 1
+            last_base_version = row["version"]
+
+    if next_number - 1 <= 1:
+        return None
+    return fight_numbers[card_row["version"]]
+
+
+def display_name(card_row, card_data_by_label):
     display_type = card_row.get("trainer_type_display") or card_row["trainer_type"]
-    return f"{display_type} {card_row['real_name']} #{card_row['version'] + 1}"
+    number = distinct_fight_number(card_row, card_data_by_label)
+    suffix = f" #{number}" if number is not None else ""
+    return f"{display_type} {card_row['real_name']}{suffix}"
 
 
 def identity_matches(real_name, card_data_by_label):
@@ -385,7 +423,7 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     cell_h = cell_sprite_budget + label_h + 2 * inner_pad
     W = 2 * margin + GRID_COLUMNS * cell_w + (GRID_COLUMNS - 1) * gap
 
-    title_text = display_name(card_row)
+    title_text = display_name(card_row, card_data_by_label)
     text_x = margin + s(24) + portrait_size + s(28)
     text_right = W - margin - s(24)
 
@@ -400,7 +438,7 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
 
     def opponent_display(label):
         opp_row = card_data_by_label.get(label)
-        return display_name(opp_row) if opp_row else label
+        return display_name(opp_row, card_data_by_label) if opp_row else label
 
     # Lay out header text top-down, tracking y as we go, so the panel can be
     # sized to fit whatever's actually drawn (an undefeated trainer's header
