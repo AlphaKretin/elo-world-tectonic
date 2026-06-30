@@ -1,4 +1,4 @@
 [submodule "vendor/tectonic-content"]
 	path = vendor/tectonic-content
-	url = https://github.com/Pokemon-Tectonic-Team/Pokemon-Tectonic-Content
+	url = https://github.com/AlphaKretin/Pokemon-Tectonic-Mods
 	branch = elo-tournament
