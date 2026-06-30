@@ -93,6 +93,13 @@ GRID_GAP = 14
 # happens.
 CELL_LABEL_HEIGHT = 32
 CELL_INNER_PAD = 16
+# The label and move grid sit closer to the cell's top/bottom edges than
+# CELL_INNER_PAD would put them -- CELL_INNER_PAD itself is left alone since
+# it still anchors the sprite's own position (see sprite_area_top in
+# render_card), which must not move.
+CELL_LABEL_TOP_PAD = 14
+MOVE_GRID_TOP_GAP = 10
+CELL_BOTTOM_PAD = 16
 # Every party sprite is native_size * SPRITE_SCALE, full stop -- no fitting
 # a sprite to its cell, no adapting the factor per party. Both of those
 # rescale each sprite by a *different* amount depending on its native size
@@ -104,21 +111,29 @@ CELL_INNER_PAD = 16
 # to fix by blowing it up.
 SPRITE_SCALE = 2
 CURSE_BADGE_SIZE = 54
+# The tribal-bonus line's own leading icon -- this is the *only* place that
+# badge appears now (see TRIBE_BADGE_PATH); it no longer also sits in the
+# top-right corner next to the curse badge.
+LINE_ICON_SIZE = 30
+# Gender badge: a small filled circle in the top-left corner of the header
+# panel, same corner-accent vocabulary as CURSE_BADGE_SIZE but smaller since
+# it's a secondary detail rather than a gameplay flag.
+GENDER_BADGE_DIAM = 40
 # Same native/integer-scale reasoning as SPRITE_SCALE -- item icons are pixel
 # art too, so this multiplies native icon pixels directly rather than fitting
 # to a design-space size (which would scale by a fractional, blurring factor).
 ITEM_ICON_SCALE = 2
 # Move capsules: a "pill" (radius = half the height) with the type icon
-# inset at the left and the move name filling the rest. Smooth vector art,
+# filling the rounded left end flush (same diameter as the capsule's own
+# height, no inset) and the move name filling the rest. Smooth vector art,
 # not pixel art -- unlike sprites/items above, these scale and resample
 # normally (LANCZOS) rather than by an integer native multiple.
 TYPE_ICON_RENDER_SIZE = 128
-MOVE_CAPSULE_HEIGHT = 26
+MOVE_CAPSULE_HEIGHT = 32
 MOVE_CAPSULE_GAP = 6
-MOVE_ICON_SIZE = 20
 MOVE_CAPSULE_PAD = 6
-MOVE_FONT_START = 16
-MOVE_FONT_MIN = 11
+MOVE_FONT_START = 19
+MOVE_FONT_MIN = 13
 # Hand-tuned per mask geometry, not a single shared constant -- the single
 # mask's one figure sits centered/narrower than the double mask's two, so
 # the same offset overshoots on the single case and undershoots on the
@@ -162,8 +177,8 @@ TIER_COLORS = {
     "B": (255, 214, 0), "B+": (255, 172, 0), "A-": (255, 93, 0), "A": (255, 87, 0),
     "A+": (255, 43, 0), "S": (255, 0, 0), "S+": (255, 0, 80),
 }
-TIER_BADGE_HEIGHT = 30
-TIER_BADGE_PAD = 10
+TIER_BADGE_HEIGHT = 46
+TIER_BADGE_PAD = 16
 
 
 def s(design_px):
@@ -459,7 +474,7 @@ def moveset_grid_columns(card_data_by_label, capsule_area_width):
     if not longest:
         return 2
     two_up_width = (capsule_area_width - s(MOVE_CAPSULE_GAP)) // 2
-    text_budget = two_up_width - s(MOVE_ICON_SIZE) - s(MOVE_CAPSULE_PAD) * 3
+    text_budget = two_up_width - s(MOVE_CAPSULE_HEIGHT) - s(MOVE_CAPSULE_PAD) * 2
     floor_font = load_font(BODY_FONT_PATH, MOVE_FONT_MIN)
     return 2 if floor_font.getlength(longest) <= text_budget else 1
 
@@ -469,9 +484,13 @@ def draw_move_capsule(draw, canvas, coords, move):
     icon, bg_color = load_type_icon(move["type"])
     draw.rounded_rectangle(coords, radius=(y1 - y0) // 2, fill=bg_color)
 
-    icon_size = s(MOVE_ICON_SIZE)
+    # The icon disc is exactly the capsule's height, flush with its left
+    # edge -- it fills the rounded end-cap itself (same bg_color as the
+    # icon's own circular background) rather than floating inset with a
+    # visible border of capsule color around it.
+    icon_size = y1 - y0
     fitted_icon = icon.resize((icon_size, icon_size), Image.LANCZOS)
-    icon_pos = (x0 + s(MOVE_CAPSULE_PAD), y0 + (y1 - y0 - icon_size) // 2)
+    icon_pos = (x0, y0)
     canvas.alpha_composite(fitted_icon, icon_pos)
 
     text_x0 = icon_pos[0] + icon_size + s(MOVE_CAPSULE_PAD)
@@ -579,17 +598,21 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
 
     # Moveset grid: 2-up if the longest move name anywhere in the dataset
     # still fits, else a single column -- same shape on every card (see
-    # moveset_grid_columns). Cell height reserves the worst case (2 rows
-    # for 2-up, 4 for a column) so every cell in the grid is the same
-    # height regardless of how many moves this particular Pokemon has.
+    # moveset_grid_columns). Base case reserves 2 or 4 rows; a 5th move
+    # (from CURSE_EXTRA_MOVES) expands only the grid rows that need it --
+    # all cells in the same card-row equalize to the tallest member's move
+    # count so the grid stays rectilinear.
     move_cols = moveset_grid_columns(card_data_by_label, cell_w - 2 * inner_pad)
-    move_rows = 2 if move_cols == 2 else 4
+    base_move_rows = 2 if move_cols == 2 else 4
     capsule_h = s(MOVE_CAPSULE_HEIGHT)
     capsule_gap = s(MOVE_CAPSULE_GAP)
-    move_grid_h = move_rows * capsule_h + (move_rows - 1) * capsule_gap
     capsule_w = (cell_w - 2 * inner_pad - (move_cols - 1) * capsule_gap) // move_cols
 
-    cell_h = inner_pad + label_h + cell_sprite_budget + inner_pad + move_grid_h
+    def cell_h_for_n_move_rows(n):
+        grid_h = n * capsule_h + (n - 1) * capsule_gap
+        return inner_pad + label_h + cell_sprite_budget + s(MOVE_GRID_TOP_GAP) + grid_h + s(CELL_BOTTOM_PAD)
+
+    cell_h = cell_h_for_n_move_rows(base_move_rows)
 
     title_text = display_name(card_row, card_data_by_label)
     text_x = margin + s(24) + portrait_size + s(28)
@@ -599,8 +622,12 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     identities = masked_villain_identities(card_row, card_data_by_label)
     gender = resolved_gender(card_row, identities, card_data_by_label)
     glyph, glyph_color = GENDER_GLYPHS.get(gender, (None, None))
-    glyph_reserve = s(50) if glyph else 0
-    title_font = fit_font(TITLE_FONT_PATH, title_text, text_right - text_x - glyph_reserve, 50)
+    # Reserve space for the curse badge at top-right so the title text never
+    # extends under it. Computed early (before title font sizing) so the fit
+    # uses the real boundary. One badge only -- tribe badge moved to inline.
+    is_cursed = any(p.startswith("CURSE_") for p in card_row["policies"])
+    badge_right_reserve = s(CURSE_BADGE_SIZE + 12) if is_cursed else 0
+    title_font = fit_font(TITLE_FONT_PATH, title_text, text_right - text_x - badge_right_reserve, 50)
     body_font = load_font(BODY_FONT_PATH, 28)
     line_font = load_font(BODY_FONT_PATH, 24)
     seed_font = load_font(BODY_FONT_PATH, 22)
@@ -616,29 +643,33 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     title_y = y
     y += s(48)
     rank_y = y
-    y += s(38)
+    y += s(TIER_BADGE_HEIGHT) + s(8)
     record_y = y
     y += s(34)
     bar_y = y
     y += s(30)
 
-    lines = []  # (main_text, seed_or_None)
+    lines = []  # (main_text, seed_or_None, icon_path_or_None)
     if tribe_bonuses:
+        # The tribal-bonus badge icon itself (TRIBE_BADGE_PATH) leads the
+        # line in place of a "Tribal Bonus:" label -- it's the one icon for
+        # "a tribe bonus is active here", so it doesn't need a text header
+        # alongside it, just the active tribes' own names.
         names = [name for _, _, _, name in tribe_bonuses]
-        lines.append((f"Tribal Bonus: {', '.join(names)}", None))
+        lines.append((', '.join(names), None, TRIBE_BADGE_PATH))
     if best_win:
         rating, opponent, seed = best_win
-        lines.append((f"Best win: {opponent_display(opponent)} ({rating:.0f})", seed))
+        lines.append((f"Best win: {opponent_display(opponent)} ({rating:.0f})", seed, None))
     else:
-        lines.append(("Best win: --", None))
+        lines.append(("Best win: --", None, None))
     if worst_loss:
         rating, opponent, seed = worst_loss
-        lines.append((f"Worst loss: {opponent_display(opponent)} ({rating:.0f})", seed))
+        lines.append((f"Worst loss: {opponent_display(opponent)} ({rating:.0f})", seed, None))
     else:
-        lines.append(("Worst loss: --", None))
+        lines.append(("Worst loss: --", None, None))
 
     line_ys = []
-    for _, seed in lines:
+    for _, seed, _ in lines:
         line_ys.append(y)
         y += s(36) if seed else 0
         y += s(28)
@@ -649,9 +680,21 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     header_bottom = max(y + s(10), left_column_bottom)
 
     party = card_row["party"]
-    rows = math.ceil(len(party) / GRID_COLUMNS) if party else 0
+    grid_rows = math.ceil(len(party) / GRID_COLUMNS) if party else 0
     grid_top = header_bottom + s(22)
-    H = grid_top + rows * cell_h + max(0, rows - 1) * gap + margin if rows else header_bottom + margin
+
+    # Per-card-row cell heights: all cells in a row share the height needed
+    # for whichever member has the most moves in that row.
+    row_heights = []
+    for gr in range(grid_rows):
+        row_members = [party[gr * GRID_COLUMNS + c] for c in range(GRID_COLUMNS)
+                       if gr * GRID_COLUMNS + c < len(party)]
+        max_moves = max((len(m.get("moves") or []) for m in row_members), default=0)
+        n = max(base_move_rows, math.ceil(max_moves / move_cols)) if max_moves else base_move_rows
+        row_heights.append(cell_h_for_n_move_rows(n))
+    row_tops = [grid_top + sum(row_heights[:gr]) + gr * gap for gr in range(grid_rows)]
+
+    H = (grid_top + sum(row_heights) + max(0, grid_rows - 1) * gap + margin) if grid_rows else header_bottom + margin
 
     canvas = vertical_gradient(W, H, COLOR_BG_TOP, COLOR_BG_BOTTOM).convert("RGBA")
     draw = ImageDraw.Draw(canvas)
@@ -689,19 +732,27 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     if sprite:
         paste_in_portrait_box(sprite)
 
-    draw.text((text_x, title_y), title_text, font=title_font, fill=COLOR_TEXT)
     if glyph:
-        glyph_font = load_font(SYMBOL_FONT_PATH, title_font.size / RENDER_SCALE)
-        gx = text_x + title_font.getlength(title_text) + s(10)
-        gy = title_y + title_font.size * 0.55
-        draw.text((gx, gy), glyph, font=glyph_font, fill=glyph_color, anchor="lm")
+        gdiam = s(GENDER_BADGE_DIAM)
+        gx0, gy0 = margin + s(10), margin + s(10)
+        draw.ellipse((gx0, gy0, gx0 + gdiam, gy0 + gdiam), fill=glyph_color)
+        glyph_font = load_font(SYMBOL_FONT_PATH, round(GENDER_BADGE_DIAM * 0.52))
+        draw.text((gx0 + gdiam // 2, gy0 + gdiam // 2), glyph, font=glyph_font,
+                  fill=(255, 255, 255), anchor="mm")
+
+    draw.text((text_x, title_y), title_text, font=title_font, fill=COLOR_TEXT)
+    # Badge width is fixed across the *entire* tier set (the widest label's
+    # width, e.g. "A+"/"S+"), not just this card's own tier -- so "S" and
+    # "S+" badges are the same width everywhere, same dataset-global
+    # consistency rule as moveset_grid_columns().
     tier = ratings_row.get("tier")
     tier_reserve = 0
     tier_badge_w = 0
-    tier_font = load_font(BODY_FONT_PATH, 18)
+    tier_font = load_font(BODY_FONT_PATH, 24)
     if tier and tier in TIER_COLORS:
-        tier_badge_w = int(tier_font.getlength(tier)) + 2 * s(TIER_BADGE_PAD)
-        tier_reserve = tier_badge_w + s(10)
+        widest_label_w = max(tier_font.getlength(t) for t in TIER_COLORS)
+        tier_badge_w = int(widest_label_w) + 2 * s(TIER_BADGE_PAD)
+        tier_reserve = tier_badge_w + s(12)
 
     rank_text = f"#{ratings_row['rank']} overall · {ratings_row['rating']:.1f} Elo"
     true_names = sorted({i["real_name"] for i in identities})
@@ -709,28 +760,29 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         rank_text += f" · ({', '.join(true_names)})"
     rank_font = fit_font(TITLE_FONT_PATH, rank_text, text_right - text_x - tier_reserve, 30, min_size=14)
 
+    # Both the badge and the rank text are vertically centered on the same
+    # fixed-height row (TIER_BADGE_HEIGHT, whether or not a badge is drawn
+    # this card) so the rank line doesn't jump position between cursed and
+    # tier-less cards.
+    row_center_y = rank_y + s(TIER_BADGE_HEIGHT) // 2
     rank_text_x = text_x
     if tier and tier in TIER_COLORS:
         badge_color = TIER_COLORS[tier]
         badge_h = s(TIER_BADGE_HEIGHT)
-        badge_y0 = rank_y + (rank_font.size - badge_h) // 2
-        draw.rounded_rectangle((text_x, badge_y0, text_x + tier_badge_w, badge_y0 + badge_h),
+        draw.rounded_rectangle((text_x, rank_y, text_x + tier_badge_w, rank_y + badge_h),
                                 radius=badge_h // 2, fill=badge_color)
-        draw.text((text_x + tier_badge_w // 2, badge_y0 + badge_h // 2), tier, font=tier_font,
+        draw.text((text_x + tier_badge_w // 2, row_center_y), tier, font=tier_font,
                    fill=readable_text_color(badge_color), anchor="mm")
-        rank_text_x = text_x + tier_badge_w + s(10)
+        rank_text_x = text_x + tier_badge_w + s(12)
 
-    draw.text((rank_text_x, rank_y), rank_text, font=rank_font, fill=COLOR_DIM)
+    draw.text((rank_text_x, row_center_y), rank_text, font=rank_font, fill=COLOR_DIM, anchor="lm")
     record = f"{ratings_row['wins']}W - {ratings_row['draws']}D - {ratings_row['losses']}L   ({ratings_row['battles']} battles)"
     draw.text((text_x, record_y), record, font=body_font, fill=COLOR_TEXT)
     draw_wld_bar(draw, (text_x, bar_y, text_right, bar_y + s(22)), ratings_row["wins"], ratings_row["losses"], ratings_row["draws"])
 
-    is_cursed = any(p.startswith("CURSE_") for p in card_row["policies"])
     badge_paths = []
     if is_cursed and os.path.exists(CURSE_BADGE_PATH):
         badge_paths.append(CURSE_BADGE_PATH)
-    if tribe_bonuses and os.path.exists(TRIBE_BADGE_PATH):
-        badge_paths.append(TRIBE_BADGE_PATH)
     badge_x = text_right
     for badge_path in badge_paths:
         badge = fit_image(Image.open(badge_path).convert("RGBA"), s(CURSE_BADGE_SIZE), s(CURSE_BADGE_SIZE))
@@ -738,21 +790,29 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         canvas.alpha_composite(badge, (badge_x, margin + s(14)))
         badge_x -= s(8)
 
-    for (main_text, seed), ly in zip(lines, line_ys):
-        draw.text((text_x, ly), main_text, font=line_font, fill=COLOR_TEXT)
+    for (main_text, seed, icon_path), ly in zip(lines, line_ys):
+        line_text_x = text_x
+        if icon_path and os.path.exists(icon_path):
+            icon_size = s(LINE_ICON_SIZE)
+            icon_img = fit_image(Image.open(icon_path).convert("RGBA"), icon_size, icon_size)
+            icon_y = ly + (line_font.size - icon_img.height) // 2
+            canvas.alpha_composite(icon_img, (text_x, icon_y))
+            line_text_x = text_x + icon_img.width + s(8)
+        draw.text((line_text_x, ly), main_text, font=line_font, fill=COLOR_TEXT)
         if seed:
             draw.text((text_x, ly + s(30)), f"Seed: {seed}", font=seed_font, fill=COLOR_SEED)
 
     for i, member in enumerate(party):
-        col, row = i % GRID_COLUMNS, i // GRID_COLUMNS
+        col, gr = i % GRID_COLUMNS, i // GRID_COLUMNS
         cx0 = margin + col * (cell_w + gap)
-        cy0 = grid_top + row * (cell_h + gap)
-        draw.rounded_rectangle((cx0, cy0, cx0 + cell_w, cy0 + cell_h), radius=s(18), fill=COLOR_CELL)
+        cy0 = row_tops[gr]
+        ch = row_heights[gr]
+        draw.rounded_rectangle((cx0, cy0, cx0 + cell_w, cy0 + ch), radius=s(18), fill=COLOR_CELL)
 
         species_display = member.get("species_display") or member["species"].title()
         species_line = f"{species_display}  Lv.{member['level']}"
         label_max_w = cell_w - 2 * inner_pad
-        label_cx, label_cy = cx0 + cell_w // 2, cy0 + inner_pad + label_h // 2
+        label_cx, label_cy = cx0 + cell_w // 2, cy0 + s(CELL_LABEL_TOP_PAD)
         nickname = member.get("nickname")
         if nickname:
             # species+level stays exactly where it always sits (same as the
@@ -790,7 +850,7 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
             pos = (corner_x - fitted.width - n * fitted.width, corner_y - fitted.height)
             canvas.alpha_composite(fitted, pos)
 
-        move_grid_top = sprite_area_top + cell_sprite_budget + inner_pad
+        move_grid_top = sprite_area_top + cell_sprite_budget + s(MOVE_GRID_TOP_GAP)
         for mi, move in enumerate(member.get("moves") or []):
             mcol, mrow = mi % move_cols, mi // move_cols
             mx0 = cx0 + inner_pad + mcol * (capsule_w + capsule_gap)
@@ -811,7 +871,7 @@ def safe_filename(label):
 # post-reset results; re-pick a replacement if one ever drops out of the
 # pool, e.g. a quarantined policy.)
 TEST_CASES = [
-    ("ANOTHERPOSSIBLERAFAEL:Rafael#1", "undefeated #1, cursed, full team of large legendary sprites, male"),
+    ("ANOTHERPOSSIBLERAFAEL:Rafael#1", "undefeated #1, CURSE_EXTRA_MOVES -- all 6 Pokemon have 5 moves (5th-move grid expansion), large legendary sprites, male"),
     ("MASKEDVILLAIN2:Teal#5", "cursed with both a win and a loss, single identity reveal + gender fallback (Skyler)"),
     ("HEXMANIAC:Errata", "non-cursed, female, species display-name fixes (H. Electrode, Farfetch'd), single tribal bonus"),
     ("YOUNGSTER:Joey", "1-Pokemon party (grid edge case), worst record in the pool"),
