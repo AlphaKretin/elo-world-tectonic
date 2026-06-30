@@ -1,0 +1,12 @@
+# Copy this file to remote_hosts.txt (gitignored -- not committed, since
+# it's live infrastructure detail, not code) and fill in your own droplet
+# IPs, one per line. Lines starting with # are ignored, blank lines are
+# ignored. Shard index = position among non-comment lines (0-based),
+# shard count = total non-comment lines -- both control-side scripts
+# (setup_remote_shards.ps1, run_remote_parallel.ps1, etc.) derive these
+# automatically from this file, so the fleet size only needs to be edited
+# here, not duplicated as a parameter everywhere.
+#
+# Requires: root SSH key auth already working (no password prompt) for
+# every host listed.
+000.000.000.000

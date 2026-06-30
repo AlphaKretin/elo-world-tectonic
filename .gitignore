@@ -5,6 +5,7 @@ results/*
 !results/.gitkeep
 shards/
 upstream/
+scripts/remote_hosts.txt
 analysis/*.json
 analysis/*.csv
 analysis/*.md
