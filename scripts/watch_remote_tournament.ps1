@@ -28,7 +28,8 @@ while ($true) {
     $snapshots = $hostList | ForEach-Object -ThrottleLimit $hostList.Count -Parallel {
         $thisHost = $_
         $remoteCmd = "for f in ~/elo-test/results/elo_status_*_shard*.json; do [ -f `"`$f`" ] && echo `"`$f:`" && cat `"`$f`"; done 2>/dev/null; echo '---ATTEMPTING---'; for f in ~/elo-test/results/elo_attempting_*_shard*.json; do [ -f `"`$f`" ] && cat `"`$f`"; done 2>/dev/null"
-        $output = & ssh -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$thisHost" $remoteCmd 2>$null
+        # -n: see setup_remote_shards.ps1's comment on the same flag.
+        $output = & ssh -n -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$thisHost" $remoteCmd 2>$null
         [PSCustomObject]@{ HostName = $thisHost; Output = ($output -join "`n") }
     }
 

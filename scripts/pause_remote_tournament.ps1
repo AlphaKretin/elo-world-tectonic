@@ -38,7 +38,8 @@ $hostList | ForEach-Object -ThrottleLimit $hostList.Count -Parallel {
     $thisHost = $_
     $script = $using:RemoteKillScript
     Write-Output "[$thisHost] stopping watchdog..."
-    & ssh -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$thisHost" $script 2>&1 |
+    # -n: see setup_remote_shards.ps1's comment on the same flag.
+    & ssh -n -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$thisHost" $script 2>&1 |
         ForEach-Object { "[$thisHost] $_" }
 }
 

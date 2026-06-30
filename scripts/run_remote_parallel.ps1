@@ -65,7 +65,9 @@ for ($i = 0; $i -lt $hosts.Count; $i++) {
     # results/ is already created by remote_provision_shard.sh -- no
     # `mkdir && $remoteCmd` prefix here, for the same reason $remoteCmd
     # itself avoids a leading `cd &&` (see comment above).
-    & ssh -o StrictHostKeyChecking=accept-new "root@$thisHost" "$remoteCmd"
+    # -n: see setup_remote_shards.ps1's comment on the same flag -- prevents
+    # ssh.exe hanging on a stdin EOF that never arrives in a scripted context.
+    & ssh -n -o StrictHostKeyChecking=accept-new "root@$thisHost" "$remoteCmd"
 }
 
 Write-Output ""

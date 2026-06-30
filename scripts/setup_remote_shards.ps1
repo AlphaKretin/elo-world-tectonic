@@ -33,7 +33,16 @@ $hosts | ForEach-Object -ThrottleLimit $ThrottleLimit -Parallel {
         "root@${thisHost}:~/" 2>&1 | ForEach-Object { "[$thisHost] $_" }
 
     Write-Output "[$thisHost] running remote_provision_shard.sh (this takes a minute or two)..."
-    & ssh -o StrictHostKeyChecking=accept-new "root@$thisHost" `
+    # -n (redirect stdin from /dev/null): without it, ssh.exe on Windows can
+    # hang indefinitely waiting for stdin EOF that never arrives inside a
+    # ForEach-Object -Parallel runspace, even though the remote command has
+    # long since finished -- the remote side shows zero child processes left
+    # under its sshd session while the *local* ssh.exe sits there for
+    # 20+ minutes. Cost real time misdiagnosing "provisioning failures" that
+    # were actually just this hang (then -Force-killing the hung local
+    # process, which makes $LASTEXITCODE report -1 and falsely look like a
+    # real remote failure on top of it). See [[feedback-cross-tool-environment-gotchas]].
+    & ssh -n -o StrictHostKeyChecking=accept-new "root@$thisHost" `
         "chmod +x ~/remote_provision_shard.sh ~/remote_run_tournament.sh && ~/remote_provision_shard.sh" 2>&1 |
         ForEach-Object { "[$thisHost] $_" }
 
