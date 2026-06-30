@@ -65,7 +65,6 @@ $env:ELO_TEST_SINGLE_PAIRING = "1"
 $env:ELO_TEST_T1_TYPE = "YOUNGSTER"; $env:ELO_TEST_T1_NAME = "Joey"
 $env:ELO_TEST_T2_TYPE = "HARLEQUIN"; $env:ELO_TEST_T2_NAME = "Vincenzi"
 $env:ELO_TEST_SEED = "2786941428"
-$env:ELO_TEST_TIMEOUT = "30"  # watcher thread interrupts with a full backtrace if exceeded
 .\vendor\tectonic-content\Game.exe
 ```
 Result lands in `vendor/tectonic-content/Analysis/single_pairing_test.txt`. Add `ELO_TEST_T1_VERSION`/`ELO_TEST_T2_VERSION` for non-zero trainer versions, or `ELO_TEST_PREBATTLE_ONLY=1` to dump each side's resolved party species without running a battle at all.
