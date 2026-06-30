@@ -30,7 +30,7 @@ while ($true) {
         $remoteCmd = "for f in ~/elo-test/results/elo_status_*_shard*.json; do [ -f `"`$f`" ] && echo `"`$f:`" && cat `"`$f`"; done 2>/dev/null; echo '---ATTEMPTING---'; for f in ~/elo-test/results/elo_attempting_*_shard*.json; do [ -f `"`$f`" ] && cat `"`$f`"; done 2>/dev/null"
         # -n: see setup_remote_shards.ps1's comment on the same flag.
         $output = & ssh -n -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$thisHost" $remoteCmd 2>$null
-        [PSCustomObject]@{ HostName = $thisHost; Output = ($output -join "`n") }
+        [PSCustomObject]@{ HostName = $thisHost; Output = ($output -join "`n"); SshFailed = ($LASTEXITCODE -ne 0) }
     }
 
     # try/catch: Clear-Host throws "handle is invalid" when stdout isn't a
@@ -59,8 +59,18 @@ while ($true) {
             foreach ($m in [regex]::Matches($statusRaw, '"done":(\d+)'))  { $totalDone += [int]$m.Groups[1].Value }
             foreach ($m in [regex]::Matches($statusRaw, '"total":(\d+)')) { $totalAll  += [int]$m.Groups[1].Value }
             if ($statusRaw -match '"error":\{')    { $anyError = $true }
+        } elseif (-not $snap -or $snap.SshFailed) {
+            # Distinct from the "no status file yet" case below -- this means
+            # ssh itself failed (host down, connection refused, etc), a real
+            # problem worth investigating, not just "still warming up."
+            Write-Output "*** UNREACHABLE (ssh failed) ***"
         } else {
-            Write-Output "(no status yet / unreachable)"
+            # tournament.rb only writes elo_status_*.json every
+            # ELO_PROGRESS_INTERVAL (default 25) completed battles -- a
+            # freshly launched/restarted shard can legitimately show this
+            # for ~100s+ before its first checkpoint. Not an error by
+            # itself; check whether "attempting" below is moving.
+            Write-Output "(no status file yet -- normal until the first 25-battle checkpoint)"
         }
 
         if ($attemptingRaw -and $attemptingRaw -ne $lastAttempting[$i]) {
