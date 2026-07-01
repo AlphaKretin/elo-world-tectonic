@@ -15,6 +15,62 @@ param(
     [int]$RefreshSeconds = 5
 )
 
+# tournament.rb's writeStatus/writeAttempting (ELO Tournament/tournament.rb)
+# write flat, single-line JSON with no trailing newline, and the remote glob
+# loop below concatenates every matching file back-to-back with no
+# separator between them. So "path1:{json1}path2:{json2}" is what actually
+# comes back over SSH when a shard has status/attempting files for more
+# than one format. Split on a file path immediately followed by ":" (paths
+# never contain "{"/"}"/whitespace) to recover each (path, json) pair, and
+# split concatenated attempting blobs on the "}{" boundary between objects.
+function Split-StatusBlobs([string]$raw) {
+    $pairs = @()
+    $parts = [regex]::Split($raw, '([^\s{}]+\.json):')
+    for ($j = 1; $j -lt $parts.Count; $j += 2) {
+        $path = $parts[$j]
+        $jsonText = if ($j + 1 -lt $parts.Count) { $parts[$j + 1].Trim() } else { "" }
+        if (-not $jsonText) { continue }
+        $pairs += [PSCustomObject]@{ Path = $path; Json = $jsonText }
+    }
+    return $pairs
+}
+
+function Split-AttemptingBlobs([string]$raw) {
+    return [regex]::Split($raw, '(?<=\})\s*(?=\{)') | Where-Object { $_.Trim() }
+}
+
+function Get-ShardFormatLabel([string]$path) {
+    if ($path -match 'elo_(?:status|attempting)_(.+)_shard\d+\.json$') { return $Matches[1] }
+    return $path
+}
+
+# Renders a duration (in seconds, possibly fractional) as [Dd] HH:MM:SS.
+function Format-Duration($seconds) {
+    if ($null -eq $seconds) { return "n/a" }
+    $ts = [TimeSpan]::FromSeconds([double]$seconds)
+    if ($ts.Days -ne 0) { return "{0}d {1:D2}:{2:D2}:{3:D2}" -f $ts.Days, [Math]::Abs($ts.Hours), [Math]::Abs($ts.Minutes), [Math]::Abs($ts.Seconds) }
+    return "{0:D2}:{1:D2}:{2:D2}" -f $ts.Hours, $ts.Minutes, $ts.Seconds
+}
+
+function Write-StatusEntry([PSCustomObject]$d, [string]$formatLabel) {
+    $state = if ($d.error) { "ERROR" } elseif ($d.finished) { "FINISHED" } else { "running" }
+    Write-Output "  [$formatLabel] $state -- $($d.done)/$($d.total) ($($d.percent)%)"
+    $rateText = if ($null -ne $d.rate_per_s) { "$($d.rate_per_s) battles/s" } else { "n/a" }
+    Write-Output "    elapsed: $(Format-Duration $d.elapsed_s)  rate: $rateText"
+    if (-not $d.finished -and $null -ne $d.eta_s) {
+        $etaClock = (Get-Date).AddSeconds([double]$d.eta_s)
+        Write-Output "    ETA: $(Format-Duration $d.eta_s) remaining -- around $($etaClock.ToString('yyyy-MM-dd HH:mm:ss'))"
+    }
+    if ($d.error) {
+        Write-Output "    *** ERROR: $($d.error.error_class): $($d.error.error_message) ***"
+    }
+    Write-Output "    updated_at: $($d.updated_at)"
+}
+
+function Write-AttemptingEntry([PSCustomObject]$a) {
+    Write-Output "  [$($a.format)] $($a.trainer1) vs $($a.trainer2) (seed $($a.seed))"
+}
+
 $hostList = @(Get-Content $HostsFile | Where-Object { $_ -and $_ -notmatch '^\s*#' } | ForEach-Object { $_.Trim() })
 if (-not $hostList) {
     Write-Output "No hosts found in $HostsFile"
@@ -23,6 +79,7 @@ if (-not $hostList) {
 
 $lastAttempting = @{}
 $lastAttemptingChangedAt = @{}
+$lastAttemptingEntries = @{}
 
 while ($true) {
     $snapshots = $hostList | ForEach-Object -ThrottleLimit $hostList.Count -Parallel {
@@ -53,12 +110,21 @@ while ($true) {
 
         Write-Output ""
         Write-Output "-- shard $i ($thisHost) --"
-        if ($statusRaw) {
-            Write-Output $statusRaw
-            # Sum across every format's status line present, not just one.
-            foreach ($m in [regex]::Matches($statusRaw, '"done":(\d+)'))  { $totalDone += [int]$m.Groups[1].Value }
-            foreach ($m in [regex]::Matches($statusRaw, '"total":(\d+)')) { $totalAll  += [int]$m.Groups[1].Value }
-            if ($statusRaw -match '"error":\{')    { $anyError = $true }
+        $statusBlobs = if ($statusRaw) { Split-StatusBlobs $statusRaw } else { @() }
+        if ($statusBlobs) {
+            foreach ($blob in $statusBlobs) {
+                $formatLabel = Get-ShardFormatLabel $blob.Path
+                try {
+                    $d = $blob.Json | ConvertFrom-Json
+                } catch {
+                    Write-Output "  [$formatLabel] (failed to parse status JSON: $($_.Exception.Message))"
+                    continue
+                }
+                $totalDone += [int]$d.done
+                $totalAll  += [int]$d.total
+                if ($d.error) { $anyError = $true }
+                Write-StatusEntry $d $formatLabel
+            }
         } elseif (-not $snap -or $snap.SshFailed) {
             # Distinct from the "no status file yet" case below -- this means
             # ssh itself failed (host down, connection refused, etc), a real
@@ -76,10 +142,16 @@ while ($true) {
         if ($attemptingRaw -and $attemptingRaw -ne $lastAttempting[$i]) {
             $lastAttempting[$i] = $attemptingRaw
             $lastAttemptingChangedAt[$i] = Get-Date
+            $entries = @()
+            foreach ($blob in (Split-AttemptingBlobs $attemptingRaw)) {
+                try { $entries += ($blob | ConvertFrom-Json) } catch {}
+            }
+            $lastAttemptingEntries[$i] = $entries
         }
         if ($lastAttempting[$i]) {
             $sinceChange = [int]((Get-Date) - $lastAttemptingChangedAt[$i]).TotalSeconds
-            Write-Output "attempting (unchanged ${sinceChange}s): $($lastAttempting[$i])"
+            Write-Output "attempting (unchanged ${sinceChange}s):"
+            foreach ($a in $lastAttemptingEntries[$i]) { Write-AttemptingEntry $a }
         }
     }
 
