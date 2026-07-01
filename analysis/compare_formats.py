@@ -9,6 +9,12 @@ Rank is the primary signal (each format's regression is its own separate
 fit, so raw rating values aren't directly comparable the way ranks are);
 rating delta is included alongside as secondary context.
 
+Ranks are rescaled to the intersection of the two formats' participants
+before comparing -- trainers only ranked in one format (e.g. ineligible for
+doubles' MIN_PARTY_SIZE) would otherwise shift everyone else's rank number
+by their mere presence in one leaderboard and not the other, making swings
+between formats look larger or smaller than they really are.
+
 rank_delta = rank_a - rank_b, so positive means the trainer ranks better
 (lower rank number) in format b than format a -- e.g. for singles/doubles,
 positive means stronger relative to the field in doubles.
@@ -32,6 +38,13 @@ def load_leaderboard(fmt):
     return {row["trainer"]: row for row in rows}
 
 
+def rescale_ranks(board, shared):
+    """Re-rank trainers by rating within just the shared set, so a rank_delta
+    isn't skewed by trainers who only appear in one format's leaderboard."""
+    ordered = sorted(shared, key=lambda trainer: board[trainer]["rating"], reverse=True)
+    return {trainer: rank for rank, trainer in enumerate(ordered, start=1)}
+
+
 def compare(fmt_a, fmt_b):
     board_a = load_leaderboard(fmt_a)
     board_b = load_leaderboard(fmt_b)
@@ -40,14 +53,17 @@ def compare(fmt_a, fmt_b):
     only_a = sorted(set(board_a) - set(board_b))
     only_b = sorted(set(board_b) - set(board_a))
 
+    rank_a = rescale_ranks(board_a, shared)
+    rank_b = rescale_ranks(board_b, shared)
+
     comparisons = []
     for trainer in shared:
         a, b = board_a[trainer], board_b[trainer]
         comparisons.append({
             "trainer": trainer,
-            f"rank_{fmt_a}": a["rank"],
-            f"rank_{fmt_b}": b["rank"],
-            "rank_delta": a["rank"] - b["rank"],
+            f"rank_{fmt_a}": rank_a[trainer],
+            f"rank_{fmt_b}": rank_b[trainer],
+            "rank_delta": rank_a[trainer] - rank_b[trainer],
             f"rating_{fmt_a}": a["rating"],
             f"rating_{fmt_b}": b["rating"],
             "rating_delta": round(b["rating"] - a["rating"], 2),
