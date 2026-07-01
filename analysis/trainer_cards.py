@@ -25,6 +25,9 @@ Move type icons are bundled as SVG (vendor/type_icons/, see that
 directory's ATTRIBUTION.txt) and rasterized at runtime via resvg_py
 (`pip install resvg_py`) -- not cairosvg, which needs a native Cairo DLL
 this project doesn't otherwise depend on.
+
+Best win / worst loss come from best_worst_<format>.json (see
+best_worst.py); run that (after ratings.py) before this script.
 """
 import argparse
 import glob
@@ -74,8 +77,6 @@ TITLE_FONT_PATH = os.path.join(TECTONIC_DIR, "Fonts", "power clear bold.ttf")  #
 # a recurring complaint) or a Windows system font (Segoe UI Symbol has the
 # same coverage but isn't ours to redistribute and isn't guaranteed present).
 BODY_FONT_PATH = os.path.join(VENDOR_FONTS_DIR, "NotoSans-Regular.ttf")
-
-WIN, LOSS, DRAW = 1, 2, 5
 
 # Layout is authored in "design space" (a 1100px-wide canvas) and rendered
 # at RENDER_SCALE x that for crispness -- same idea as scaling up a small
@@ -479,37 +480,20 @@ def load_card_data():
     return {row["label"]: row for row in rows}
 
 
-def best_and_worst(fmt, label, ratings_by_label):
-    """Highest-rated trainer beaten, and lowest-rated trainer lost to, with seeds."""
-    best_win = None    # (opponent_rating, opponent_label, seed)
-    worst_loss = None  # (opponent_rating, opponent_label, seed)
-    for path in sorted(glob.glob(os.path.join(RESULTS_DIR, f"elo_results_{fmt}_shard*.jsonl"))):
-        with open(path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    row = json.loads(line)
-                except json.JSONDecodeError:
-                    continue
-                if row.get("skipped") or row.get("had_error"):
-                    continue
-                t1, t2, result = row.get("trainer1"), row.get("trainer2"), row.get("result")
-                if label not in (t1, t2) or result not in (WIN, LOSS):
-                    continue
-                opponent = t2 if label == t1 else t1
-                won = (result == WIN) == (label == t1)
-                opp_rating = ratings_by_label.get(opponent, {}).get("rating")
-                if opp_rating is None:
-                    continue
-                if won:
-                    if best_win is None or opp_rating > best_win[0]:
-                        best_win = (opp_rating, opponent, row.get("seed"))
-                else:
-                    if worst_loss is None or opp_rating < worst_loss[0]:
-                        worst_loss = (opp_rating, opponent, row.get("seed"))
-    return best_win, worst_loss
+def load_best_worst(fmt):
+    """{trainer_label: {"best_win": ..., "worst_loss": ...}} from
+    best_worst_<fmt>.json (see best_worst.py -- it computes this in one
+    pass over the results instead of trainer_cards.py rescanning them once
+    per trainer rendered)."""
+    path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}.json")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def best_win_tuple(entry):
+    """best_worst.json entries are {"opponent", "rating", "seed"} or null;
+    render_card wants (rating, opponent, seed) or None."""
+    return (entry["rating"], entry["opponent"], entry["seed"]) if entry else None
 
 
 def draw_wld_bar(draw, coords, wins, losses, draws, min_frac=0.04):
@@ -827,12 +811,15 @@ TEST_CASES = [
 ]
 
 
-def render_one(label, fmt, ratings_by_label, card_data_by_label, max_native_dim):
+def render_one(label, fmt, ratings_by_label, card_data_by_label, best_worst_by_label, max_native_dim):
     if label not in ratings_by_label:
         raise KeyError(f"No ratings entry for trainer {label!r}.")
     if label not in card_data_by_label:
         raise KeyError(f"No trainer_card_data.json entry for trainer {label!r}.")
-    best_win, worst_loss = best_and_worst(fmt, label, ratings_by_label)
+    if label not in best_worst_by_label:
+        raise KeyError(f"No best_worst_{fmt}.json entry for trainer {label!r} -- re-run best_worst.py.")
+    bw = best_worst_by_label[label]
+    best_win, worst_loss = best_win_tuple(bw["best_win"]), best_win_tuple(bw["worst_loss"])
     os.makedirs(CARDS_OUT_DIR, exist_ok=True)
     out_path = os.path.join(CARDS_OUT_DIR, f"{safe_filename(label)}.png")
     render_card(card_data_by_label[label], ratings_by_label[label], card_data_by_label, max_native_dim, best_win, worst_loss, out_path)
@@ -860,19 +847,23 @@ def main():
     fmt = args.format or discover_formats()[0]
     ratings_by_label = load_ratings(fmt)
     card_data_by_label = load_card_data()
+    best_worst_path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}.json")
+    if not os.path.exists(best_worst_path):
+        raise SystemExit(f"{best_worst_path} not found -- run `python analysis/best_worst.py --format {fmt}` first.")
+    best_worst_by_label = load_best_worst(fmt)
     max_native_dim = max_native_sprite_dim(card_data_by_label)
 
     if args.test_cases:
         for label, why in TEST_CASES:
             try:
-                out_path = render_one(label, fmt, ratings_by_label, card_data_by_label, max_native_dim)
+                out_path = render_one(label, fmt, ratings_by_label, card_data_by_label, best_worst_by_label, max_native_dim)
                 print(f"Wrote {out_path}  ({why})")
             except KeyError as e:
                 print(f"SKIPPED {label!r} ({why}): {e}")
         return
 
     label = args.trainer or next(iter(ratings_by_label))  # ratings_<fmt>.json is rank-sorted
-    out_path = render_one(label, fmt, ratings_by_label, card_data_by_label, max_native_dim)
+    out_path = render_one(label, fmt, ratings_by_label, card_data_by_label, best_worst_by_label, max_native_dim)
     print(f"Wrote {out_path}")
 
 

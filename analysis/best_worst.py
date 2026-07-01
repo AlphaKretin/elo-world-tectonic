@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""
+Per-trainer best win / worst loss, cached to analysis/best_worst_<format>.json.
+
+Reads every results/remote/elo_results_<format>_shard*.jsonl (default; use
+--results-dir results/ for local shard data) and that format's own
+ratings_<format>.json (from ratings.py), and for every trainer records the
+highest-rated opponent they beat (best_win) and the lowest-rated opponent
+they lost to (worst_loss), each with the seed of that battle (for
+ELO_SAVE_REPLAY). Either field is null if the trainer has no such result
+(e.g. undefeated, or no wins at all).
+
+trainer_cards.py used to compute this itself by rescanning every shard file
+once per trainer it rendered -- fine for a single --trainer render, but
+wasteful for --test-cases (rescans the whole result set once per test case)
+and would be O(trainers^2) for a hypothetical "render every trainer" mode.
+This does one pass over the results for the whole format instead, so
+trainer_cards.py (or any other future consumer) just looks its trainer up
+in the cache.
+
+Run this after ratings.py for a given format; re-run it whenever the
+underlying results change, same as ratings.py.
+"""
+import argparse
+import glob
+import json
+import os
+
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
+ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
+
+WIN, LOSS = 1, 2
+
+
+def discover_formats():
+    formats = set()
+    for path in glob.glob(os.path.join(RESULTS_DIR, "elo_results_*_shard*.jsonl")):
+        name = os.path.basename(path)
+        middle = name[len("elo_results_"):-len(".jsonl")]
+        formats.add(middle.rsplit("_shard", 1)[0])
+    return sorted(formats)
+
+
+def load_ratings(fmt):
+    path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
+    with open(path, "r", encoding="utf-8") as f:
+        rows = json.load(f)
+    return {row["trainer"]: row for row in rows}
+
+
+def compute_best_worst(fmt, ratings_by_label):
+    """One pass over every battle in the format: for each trainer, the
+    highest-rated opponent beaten (best_win) and lowest-rated opponent lost
+    to (worst_loss), each as (opponent_rating, opponent_label, seed)."""
+    best_win = {}
+    worst_loss = {}
+    for path in sorted(glob.glob(os.path.join(RESULTS_DIR, f"elo_results_{fmt}_shard*.jsonl"))):
+        with open(path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                if row.get("skipped") or row.get("had_error"):
+                    continue
+                t1, t2, result = row.get("trainer1"), row.get("trainer2"), row.get("result")
+                if result not in (WIN, LOSS):
+                    continue
+                seed = row.get("seed")
+                winner, loser = (t1, t2) if result == WIN else (t2, t1)
+                loser_rating = ratings_by_label.get(loser, {}).get("rating")
+                if loser_rating is not None:
+                    cur = best_win.get(winner)
+                    if cur is None or loser_rating > cur[0]:
+                        best_win[winner] = (loser_rating, loser, seed)
+                winner_rating = ratings_by_label.get(winner, {}).get("rating")
+                if winner_rating is not None:
+                    cur = worst_loss.get(loser)
+                    if cur is None or winner_rating < cur[0]:
+                        worst_loss[loser] = (winner_rating, winner, seed)
+    return best_win, worst_loss
+
+
+def to_json_entry(entry):
+    if entry is None:
+        return None
+    rating, opponent, seed = entry
+    return {"opponent": opponent, "rating": rating, "seed": seed}
+
+
+def write_output(fmt, best_win, worst_loss, trainers):
+    out = {
+        label: {
+            "best_win": to_json_entry(best_win.get(label)),
+            "worst_loss": to_json_entry(worst_loss.get(label)),
+        }
+        for label in trainers
+    }
+    path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(out, f, indent=2)
+    return path
+
+
+def main():
+    global RESULTS_DIR
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--format", help="Only compute this format (default: all formats found in --results-dir)")
+    parser.add_argument(
+        "--results-dir", default=RESULTS_DIR, metavar="DIR",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+    )
+    args = parser.parse_args()
+    RESULTS_DIR = args.results_dir
+
+    formats = [args.format] if args.format else discover_formats()
+    if not formats:
+        print(f"No elo_results_*_shard*.jsonl files found under {RESULTS_DIR}.")
+        return
+
+    for fmt in formats:
+        ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
+        if not os.path.exists(ratings_path):
+            print(f"[{fmt}] {ratings_path} not found -- run ratings.py first. Skipping.")
+            continue
+        ratings_by_label = load_ratings(fmt)
+        best_win, worst_loss = compute_best_worst(fmt, ratings_by_label)
+        path = write_output(fmt, best_win, worst_loss, ratings_by_label.keys())
+        print(f"[{fmt}] {len(ratings_by_label)} trainers -> {path}")
+
+
+if __name__ == "__main__":
+    main()
