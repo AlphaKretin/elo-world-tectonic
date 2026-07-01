@@ -97,7 +97,7 @@ CELL_INNER_PAD = 16
 # CELL_INNER_PAD would put them -- CELL_INNER_PAD itself is left alone since
 # it still anchors the sprite's own position (see sprite_area_top in
 # render_card), which must not move.
-CELL_LABEL_TOP_PAD = 14
+CELL_LABEL_TOP_PAD = 18
 MOVE_GRID_TOP_GAP = 10
 CELL_BOTTOM_PAD = 16
 # Every party sprite is native_size * SPRITE_SCALE, full stop -- no fitting
@@ -118,7 +118,9 @@ LINE_ICON_SIZE = 30
 # Gender badge: a small filled circle in the top-left corner of the header
 # panel, same corner-accent vocabulary as CURSE_BADGE_SIZE but smaller since
 # it's a secondary detail rather than a gameplay flag.
-GENDER_BADGE_DIAM = 40
+GENDER_BADGE_DIAM = 46
+# Glyph rendered at this fraction of the badge diameter (design space).
+GENDER_GLYPH_RATIO = 0.60
 # Same native/integer-scale reasoning as SPRITE_SCALE -- item icons are pixel
 # art too, so this multiplies native icon pixels directly rather than fitting
 # to a design-space size (which would scale by a fractional, blurring factor).
@@ -479,6 +481,32 @@ def moveset_grid_columns(card_data_by_label, capsule_area_width):
     return 2 if floor_font.getlength(longest) <= text_budget else 1
 
 
+_gender_glyph_cache = {}
+
+
+def render_gender_glyph_image(glyph, design_size):
+    """Pre-render a gender symbol to a tightly-cropped RGBA image.
+
+    Drawing the glyph directly with anchor="mm" inside a circle badge gives
+    visually off-center results because font vertical metrics (ascender /
+    descender / line-gap) differ between the symbol font and the badge's
+    geometric center. Rendering to a temp canvas, auto-cropping to the actual
+    opaque pixel bounding box, then centering *that* image in the circle
+    produces true visual centering independent of font metrics."""
+    key = (glyph, design_size)
+    if key in _gender_glyph_cache:
+        return _gender_glyph_cache[key]
+    font = load_font(SYMBOL_FONT_PATH, design_size)
+    pad = font.size * 2
+    tmp = Image.new("RGBA", (pad, pad), (0, 0, 0, 0))
+    ImageDraw.Draw(tmp).text((pad // 2, pad // 2), glyph, font=font,
+                             fill=(255, 255, 255, 255), anchor="mm")
+    bbox = tmp.getbbox()
+    result = tmp.crop(bbox) if bbox else None
+    _gender_glyph_cache[key] = result
+    return result
+
+
 def draw_move_capsule(draw, canvas, coords, move):
     x0, y0, x1, y1 = coords
     icon, bg_color = load_type_icon(move["type"])
@@ -736,9 +764,11 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         gdiam = s(GENDER_BADGE_DIAM)
         gx0, gy0 = margin + s(10), margin + s(10)
         draw.ellipse((gx0, gy0, gx0 + gdiam, gy0 + gdiam), fill=glyph_color)
-        glyph_font = load_font(SYMBOL_FONT_PATH, round(GENDER_BADGE_DIAM * 0.52))
-        draw.text((gx0 + gdiam // 2, gy0 + gdiam // 2), glyph, font=glyph_font,
-                  fill=(255, 255, 255), anchor="mm")
+        glyph_img = render_gender_glyph_image(glyph, round(GENDER_BADGE_DIAM * GENDER_GLYPH_RATIO))
+        if glyph_img:
+            px = gx0 + (gdiam - glyph_img.width) // 2
+            py = gy0 + (gdiam - glyph_img.height) // 2
+            canvas.alpha_composite(glyph_img, (px, py))
 
     draw.text((text_x, title_y), title_text, font=title_font, fill=COLOR_TEXT)
     # Badge width is fixed across the *entire* tier set (the widest label's
