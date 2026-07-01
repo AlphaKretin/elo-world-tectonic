@@ -39,7 +39,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results")
+RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
 TECTONIC_DIR = os.path.join(REPO_ROOT, "vendor", "tectonic-content")
 CARD_DATA_PATH = os.path.join(TECTONIC_DIR, "Analysis", "trainer_card_data.json")
 CARDS_OUT_DIR = os.path.join(ANALYSIS_DIR, "cards")
@@ -70,12 +70,10 @@ TYPE_ICON_FILES = {
 VENDOR_FONTS_DIR = os.path.join(REPO_ROOT, "vendor", "fonts")
 TITLE_FONT_PATH = os.path.join(TECTONIC_DIR, "Fonts", "power clear bold.ttf")  # the game's own pixel font, kept as a deliberate accent for the title only
 # Google Fonts (OFL-licensed, see vendor/fonts/OFL-*.txt), bundled rather
-# than relying on the game's bundled fonts (no ⚥/⚧ coverage; legibility at
-# body-text sizes was a recurring complaint) or a Windows system font
-# (Segoe UI Symbol has all of these glyphs too, but isn't ours to redistribute
-# and isn't guaranteed present on every machine).
+# than relying on the game's bundled fonts (legibility at body-text sizes was
+# a recurring complaint) or a Windows system font (Segoe UI Symbol has the
+# same coverage but isn't ours to redistribute and isn't guaranteed present).
 BODY_FONT_PATH = os.path.join(VENDOR_FONTS_DIR, "NotoSans-Regular.ttf")
-SYMBOL_FONT_PATH = os.path.join(VENDOR_FONTS_DIR, "NotoSansSymbols-Regular.ttf")
 
 WIN, LOSS, DRAW = 1, 2, 5
 
@@ -115,12 +113,6 @@ CURSE_BADGE_SIZE = 54
 # badge appears now (see TRIBE_BADGE_PATH); it no longer also sits in the
 # top-right corner next to the curse badge.
 LINE_ICON_SIZE = 30
-# Gender badge: a small filled circle in the top-left corner of the header
-# panel, same corner-accent vocabulary as CURSE_BADGE_SIZE but smaller since
-# it's a secondary detail rather than a gameplay flag.
-GENDER_BADGE_DIAM = 46
-# Glyph rendered at this fraction of the badge diameter (design space).
-GENDER_GLYPH_RATIO = 0.60
 # Same native/integer-scale reasoning as SPRITE_SCALE -- item icons are pixel
 # art too, so this multiplies native icon pixels directly rather than fitting
 # to a design-space size (which would scale by a fractional, blurring factor).
@@ -159,16 +151,6 @@ COLOR_SEED = (70, 80, 100)
 COLOR_WIN = (70, 170, 90)
 COLOR_DRAW = (225, 185, 40)
 COLOR_LOSS = (195, 60, 50)
-COLOR_GENDER_MALE = (70, 120, 220)
-COLOR_GENDER_FEMALE = (220, 70, 90)
-COLOR_GENDER_OTHER = (155, 80, 210)
-
-# TrainerType gender: 0=Male, 1=Female, 2=Unknown/Mixed, 3=Wild. 2 covers
-# both genuinely unknown (e.g. Masked Villains, gender-ambiguous by design)
-# and real affirmatively non-binary characters, so it gets its own glyph
-# rather than being skipped -- only Wild (not really a "gender" in the
-# representational sense) shows nothing.
-GENDER_GLYPHS = {0: ("♂", COLOR_GENDER_MALE), 1: ("♀", COLOR_GENDER_FEMALE), 2: ("⚥", COLOR_GENDER_OTHER)}
 
 # Same low (F) -> high (S+) ramp elo_world_pokemon_red's own tier_colors
 # uses -- a "heat" gradient (green -> yellow -> orange -> red -> magenta),
@@ -179,8 +161,7 @@ TIER_COLORS = {
     "B": (255, 214, 0), "B+": (255, 172, 0), "A-": (255, 93, 0), "A": (255, 87, 0),
     "A+": (255, 43, 0), "S": (255, 0, 0), "S+": (255, 0, 80),
 }
-TIER_BADGE_HEIGHT = 46
-TIER_BADGE_PAD = 16
+TIER_BADGE_HEIGHT = 46  # corner badge diameter
 
 
 def s(design_px):
@@ -323,20 +304,11 @@ def identity_matches(real_name, card_data_by_label):
     return list(by_type.values())
 
 
-# Silver's mask doesn't hide much -- his trainer_type is literally
-# MASKEDVILLAIN_Sang, spelling out his real identity directly instead of
-# routing it through NameForHashing like the other Masked Villains. Not
-# shown as an identity-reveal (he's not really a "who's under the mask?"
-# the way the others are) but still worth resolving for his gender.
-SILVER_TRAINER_TYPE = "MASKEDVILLAIN_Sang"
-SILVER_TRUE_NAME = "Sang"
-
-
 def masked_villain_identities(card_row, card_data_by_label):
     """Who's really under the mask, by way of name_for_hashing -- a Masked
     Villain's NameForHashing holds their true identity's real_name (Silver
-    is the one exception: no name_for_hashing at all, so naturally returns
-    nothing -- see SILVER_TRAINER_TYPE). _DOUBLE-class masks are a pair
+    is the one exception: MASKEDVILLAIN_Sang has no name_for_hashing at all,
+    so it naturally returns nothing). _DOUBLE-class masks are a pair
     fighting together (confirmed: Imogene is currently the only one) so
     every match is shown, not just one; otherwise prefer a plain
     "TRAINER_<name>" match over special variants (confirmed correct for
@@ -374,22 +346,6 @@ def identity_offsets(identities):
     if set(by_type) == set(IMOGENE_OFFSETS):
         return [(by_type[t], offset) for t, offset in IMOGENE_OFFSETS.items()]
     return [(identity, IDENTITY_OFFSET_SINGLE) for identity in identities]
-
-
-def resolved_gender(card_row, identities, card_data_by_label):
-    """The mask's own TrainerType is gender Unknown/Mixed by design (it's a
-    disguise) -- if there's exactly one identity behind it (or several
-    agreeing, e.g. both Imogenes), show *their* gender instead of the
-    mask's. Silver has no NameForHashing identity to fall back to via
-    `identities` (see SILVER_TRAINER_TYPE), so he gets his own lookup."""
-    gender = card_row.get("gender")
-    if gender != 2:
-        return gender
-    candidates = identities
-    if not candidates and card_row["trainer_type"] == SILVER_TRAINER_TYPE:
-        candidates = identity_matches(SILVER_TRUE_NAME, card_data_by_label)
-    identity_genders = {r.get("gender") for r in candidates if r.get("gender") is not None}
-    return next(iter(identity_genders)) if len(identity_genders) == 1 else gender
 
 
 def load_tribe_info():
@@ -479,32 +435,6 @@ def moveset_grid_columns(card_data_by_label, capsule_area_width):
     text_budget = two_up_width - s(MOVE_CAPSULE_HEIGHT) - s(MOVE_CAPSULE_PAD) * 2
     floor_font = load_font(BODY_FONT_PATH, MOVE_FONT_MIN)
     return 2 if floor_font.getlength(longest) <= text_budget else 1
-
-
-_gender_glyph_cache = {}
-
-
-def render_gender_glyph_image(glyph, design_size):
-    """Pre-render a gender symbol to a tightly-cropped RGBA image.
-
-    Drawing the glyph directly with anchor="mm" inside a circle badge gives
-    visually off-center results because font vertical metrics (ascender /
-    descender / line-gap) differ between the symbol font and the badge's
-    geometric center. Rendering to a temp canvas, auto-cropping to the actual
-    opaque pixel bounding box, then centering *that* image in the circle
-    produces true visual centering independent of font metrics."""
-    key = (glyph, design_size)
-    if key in _gender_glyph_cache:
-        return _gender_glyph_cache[key]
-    font = load_font(SYMBOL_FONT_PATH, design_size)
-    pad = font.size * 2
-    tmp = Image.new("RGBA", (pad, pad), (0, 0, 0, 0))
-    ImageDraw.Draw(tmp).text((pad // 2, pad // 2), glyph, font=font,
-                             fill=(255, 255, 255, 255), anchor="mm")
-    bbox = tmp.getbbox()
-    result = tmp.crop(bbox) if bbox else None
-    _gender_glyph_cache[key] = result
-    return result
 
 
 def draw_move_capsule(draw, canvas, coords, move):
@@ -648,8 +578,6 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     tribe_bonuses = active_tribe_bonuses(card_row, load_tribe_info())
 
     identities = masked_villain_identities(card_row, card_data_by_label)
-    gender = resolved_gender(card_row, identities, card_data_by_label)
-    glyph, glyph_color = GENDER_GLYPHS.get(gender, (None, None))
     # Reserve space for the curse badge at top-right so the title text never
     # extends under it. Computed early (before title font sizing) so the fit
     # uses the real boundary. One badge only -- tribe badge moved to inline.
@@ -760,52 +688,26 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     if sprite:
         paste_in_portrait_box(sprite)
 
-    if glyph:
-        gdiam = s(GENDER_BADGE_DIAM)
-        gx0, gy0 = margin + s(10), margin + s(10)
-        draw.ellipse((gx0, gy0, gx0 + gdiam, gy0 + gdiam), fill=glyph_color)
-        glyph_img = render_gender_glyph_image(glyph, round(GENDER_BADGE_DIAM * GENDER_GLYPH_RATIO))
-        if glyph_img:
-            px = gx0 + (gdiam - glyph_img.width) // 2
-            py = gy0 + (gdiam - glyph_img.height) // 2
-            canvas.alpha_composite(glyph_img, (px, py))
+    tier = ratings_row.get("tier")
+    if tier and tier in TIER_COLORS:
+        badge_color = TIER_COLORS[tier]
+        tdiam = s(TIER_BADGE_HEIGHT)
+        tx0, ty0 = margin + s(10), margin + s(10)
+        draw.ellipse((tx0, ty0, tx0 + tdiam, ty0 + tdiam), fill=badge_color)
+        tier_font = load_font(BODY_FONT_PATH, 24)
+        draw.text((tx0 + tdiam // 2, ty0 + tdiam // 2), tier, font=tier_font,
+                   fill=readable_text_color(badge_color), anchor="mm")
 
     draw.text((text_x, title_y), title_text, font=title_font, fill=COLOR_TEXT)
-    # Badge width is fixed across the *entire* tier set (the widest label's
-    # width, e.g. "A+"/"S+"), not just this card's own tier -- so "S" and
-    # "S+" badges are the same width everywhere, same dataset-global
-    # consistency rule as moveset_grid_columns().
-    tier = ratings_row.get("tier")
-    tier_reserve = 0
-    tier_badge_w = 0
-    tier_font = load_font(BODY_FONT_PATH, 24)
-    if tier and tier in TIER_COLORS:
-        widest_label_w = max(tier_font.getlength(t) for t in TIER_COLORS)
-        tier_badge_w = int(widest_label_w) + 2 * s(TIER_BADGE_PAD)
-        tier_reserve = tier_badge_w + s(12)
 
     rank_text = f"#{ratings_row['rank']} overall · {ratings_row['rating']:.1f} Elo"
     true_names = sorted({i["real_name"] for i in identities})
     if true_names:
         rank_text += f" · ({', '.join(true_names)})"
-    rank_font = fit_font(TITLE_FONT_PATH, rank_text, text_right - text_x - tier_reserve, 30, min_size=14)
+    rank_font = fit_font(TITLE_FONT_PATH, rank_text, text_right - text_x, 30, min_size=14)
 
-    # Both the badge and the rank text are vertically centered on the same
-    # fixed-height row (TIER_BADGE_HEIGHT, whether or not a badge is drawn
-    # this card) so the rank line doesn't jump position between cursed and
-    # tier-less cards.
     row_center_y = rank_y + s(TIER_BADGE_HEIGHT) // 2
-    rank_text_x = text_x
-    if tier and tier in TIER_COLORS:
-        badge_color = TIER_COLORS[tier]
-        badge_h = s(TIER_BADGE_HEIGHT)
-        draw.rounded_rectangle((text_x, rank_y, text_x + tier_badge_w, rank_y + badge_h),
-                                radius=badge_h // 2, fill=badge_color)
-        draw.text((text_x + tier_badge_w // 2, row_center_y), tier, font=tier_font,
-                   fill=readable_text_color(badge_color), anchor="mm")
-        rank_text_x = text_x + tier_badge_w + s(12)
-
-    draw.text((rank_text_x, row_center_y), rank_text, font=rank_font, fill=COLOR_DIM, anchor="lm")
+    draw.text((text_x, row_center_y), rank_text, font=rank_font, fill=COLOR_DIM, anchor="lm")
     record = f"{ratings_row['wins']}W - {ratings_row['draws']}D - {ratings_row['losses']}L   ({ratings_row['battles']} battles)"
     draw.text((text_x, record_y), record, font=body_font, fill=COLOR_TEXT)
     draw_wld_bar(draw, (text_x, bar_y, text_right, bar_y + s(22)), ratings_row["wins"], ratings_row["losses"], ratings_row["draws"])
@@ -902,17 +804,17 @@ def safe_filename(label):
 # pool, e.g. a quarantined policy.)
 TEST_CASES = [
     ("ANOTHERPOSSIBLERAFAEL:Rafael#1", "undefeated #1, CURSE_EXTRA_MOVES -- all 6 Pokemon have 5 moves (5th-move grid expansion), large legendary sprites, male"),
-    ("MASKEDVILLAIN2:Teal#5", "cursed with both a win and a loss, single identity reveal + gender fallback (Skyler)"),
+    ("MASKEDVILLAIN2:Teal#5", "cursed with both a win and a loss, single identity reveal (Skyler)"),
     ("HEXMANIAC:Errata", "non-cursed, female, species display-name fixes (H. Electrode, Farfetch'd), single tribal bonus"),
     ("YOUNGSTER:Joey", "1-Pokemon party (grid edge case), worst record in the pool"),
     ("MASKEDVILLAIN:Crimson#2", "single identity reveal, ambiguous match resolved to TRAINER_Alessa"),
     ("MASKEDVILLAIN_DOUBLE:Crimson", "double identity reveal (Imogene A & B), \"Masked Villains\" plural title"),
-    ("MASKEDVILLAIN_Sang:Silver", "no identity reveal shown, gender still resolved via the Sang fallback"),
+    ("MASKEDVILLAIN_Sang:Silver", "no identity reveal shown (MASKEDVILLAIN_Sang has no name_for_hashing)"),
     ("MASKEDVILLAIN_Sang:Silver#1", "cursed AND tribal bonus together -- both corner badges stacked, no overlap"),
     ("BATTLEGIRL:Tester", "3 simultaneous tribal bonuses (comma-joined line, no overflow); also a 6x-identical-species party"),
     ("GAMBLER:Tiki", "has the longest move name in the dataset (Dielectric Breakdown) -- the case that decides moveset_grid_columns() globally"),
-    ("POKEMONMASTER_Vanya:Vanya#12", "genuine non-binary gender (consistent across all her versions)"),
-    ("LEADER_Eko:Eko", "non-binary gender after the trainertypes.txt data fix, bad record"),
+    ("POKEMONMASTER_Vanya:Vanya#12", "22-version sequence; fight number always shown since every version is a distinct fight"),
+    ("LEADER_Eko:Eko", "gym leader with a bad record"),
     ("LEADER_Helena:Helena#2", "wins + losses + draws all present -- full 3-color WLD bar"),
     ("LEADER_Noel:Noel", "nicknamed + shiny party member (Armiger the Metagross), authored override not the wild aesthetics-ID roll"),
 ]
@@ -931,11 +833,17 @@ def render_one(label, fmt, ratings_by_label, card_data_by_label, max_native_dim)
 
 
 def main():
+    global RESULTS_DIR
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", default=None, help="Format to use (default: first one found)")
     parser.add_argument("--trainer", default=None, help="Trainer label, e.g. 'MASKEDVILLAIN2:Teal#5' (default: #1 ranked)")
     parser.add_argument("--test-cases", action="store_true", help="Render the whole canonical TEST_CASES set instead of a single trainer")
+    parser.add_argument(
+        "--results-dir", default=RESULTS_DIR, metavar="DIR",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+    )
     args = parser.parse_args()
+    RESULTS_DIR = args.results_dir
 
     if not os.path.exists(CARD_DATA_PATH):
         raise SystemExit(
