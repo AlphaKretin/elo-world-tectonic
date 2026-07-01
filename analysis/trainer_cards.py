@@ -724,13 +724,20 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
 
     for (main_text, seed, icon_path), ly in zip(lines, line_ys):
         line_text_x = text_x
+        text_y = ly
+        anchor = None
         if icon_path and os.path.exists(icon_path):
             icon_size = s(LINE_ICON_SIZE)
-            icon_img = fit_image(Image.open(icon_path).convert("RGBA"), icon_size, icon_size)
+            icon_img = fit_image(trim_transparent(Image.open(icon_path).convert("RGBA")), icon_size, icon_size)
             icon_y = ly + (line_font.size - icon_img.height) // 2
             canvas.alpha_composite(icon_img, (text_x, icon_y))
-            line_text_x = text_x + icon_img.width + s(8)
-        draw.text((line_text_x, ly), main_text, font=line_font, fill=COLOR_TEXT)
+            # Cropping the icon to its bounding box removes its own baked-in
+            # padding, so the text needs a smaller gap than an uncropped icon
+            # would to still read as evenly kerned against it.
+            line_text_x = text_x + icon_img.width + s(4)
+            text_y = icon_y + icon_img.height / 2
+            anchor = "lm"
+        draw.text((line_text_x, text_y), main_text, font=line_font, fill=COLOR_TEXT, anchor=anchor)
         if seed:
             draw.text((text_x, ly + s(30)), f"Seed: {seed}", font=seed_font, fill=COLOR_SEED)
 
