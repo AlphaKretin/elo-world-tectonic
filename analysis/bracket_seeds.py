@@ -22,6 +22,10 @@ BRACKET_SIZE = 16
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", default="singles", help="Format to seed from (default: singles)")
+    parser.add_argument(
+        "--results-dir", default=RESULTS_DIR, metavar="DIR",
+        help="Directory to write bracket_seeds_<format>.txt into (default: results/; bracket.rb reads from here)",
+    )
     args = parser.parse_args()
 
     json_path = os.path.join(ANALYSIS_DIR, f"ratings_{args.format}.json")
@@ -32,8 +36,8 @@ def main():
         raise SystemExit(f"Only {len(leaderboard)} rated trainers in {json_path}, need {BRACKET_SIZE}.")
 
     top = leaderboard[:BRACKET_SIZE]
-    os.makedirs(RESULTS_DIR, exist_ok=True)
-    out_path = os.path.join(RESULTS_DIR, f"bracket_seeds_{args.format}.txt")
+    os.makedirs(args.results_dir, exist_ok=True)
+    out_path = os.path.join(args.results_dir, f"bracket_seeds_{args.format}.txt")
     with open(out_path, "w", encoding="utf-8") as f:
         for seed, row in enumerate(top, start=1):
             f.write(f"{seed}\t{row['trainer']}\t{row['rating']}\n")

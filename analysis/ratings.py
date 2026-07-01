@@ -2,7 +2,8 @@
 """
 Bradley-Terry trainer ratings from ELO Tournament battle results.
 
-Reads every results/elo_results_<format>_shard*.jsonl, fits one-hot
+Reads every results/remote/elo_results_<format>_shard*.jsonl (default;
+use --results-dir results/ for local shard data), fits one-hot
 ±1 logistic regression per format (Bradley-Terry), and writes a sorted
 leaderboard (CSV + JSON) per format to analysis/.
 
@@ -59,7 +60,7 @@ from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results")
+RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
 ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 WIN, LOSS, DRAW = 1, 2, 5
@@ -283,8 +284,13 @@ def write_outputs(fmt, leaderboard, suffix=""):
 
 
 def main():
+    global RESULTS_DIR
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--format", help="Only compute this format (default: all formats found in results/)")
+    parser.add_argument("--format", help="Only compute this format (default: all formats found in --results-dir)")
+    parser.add_argument(
+        "--results-dir", default=RESULTS_DIR, metavar="DIR",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+    )
     parser.add_argument(
         "--exclude-trainer", action="append", default=[], metavar="LABEL",
         help="Trainer label (e.g. 'ROLLERSKATER_F:Attea') to drop from the fit entirely. Repeatable.",
@@ -299,10 +305,11 @@ def main():
         ),
     )
     args = parser.parse_args()
+    RESULTS_DIR = args.results_dir
 
     formats = [args.format] if args.format else discover_formats()
     if not formats:
-        print("No elo_results_*_shard*.jsonl files found under results/.")
+        print(f"No elo_results_*_shard*.jsonl files found under {RESULTS_DIR}.")
         return
 
     suffix = "_uncursed" if args.exclude_cursed else ""

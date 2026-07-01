@@ -21,7 +21,8 @@ an ongoing thing, not meant to be exhaustive):
   favorite is just the upset category (or nothing) wearing a different hat.
 
 Run after ratings.py (needs ratings_<format>.json) against
-results/elo_results_<format>_shard*.jsonl and
+results/remote/elo_results_<format>_shard*.jsonl (default; use
+--results-dir results/ for local shard data) and
 vendor/tectonic-content/Analysis/trainer_card_data.json (for per-trainer
 curse/identity lookups, the same dump trainer_cards.py uses). Writes
 analysis/notable_matches_<format>.md.
@@ -37,7 +38,7 @@ import os
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results")
+RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
 CARD_DATA_PATH = os.path.join(REPO_ROOT, "vendor", "tectonic-content", "Analysis", "trainer_card_data.json")
 
 WIN, LOSS, DRAW = 1, 2, 5
@@ -260,14 +261,20 @@ def write_report(fmt, upsets, self_mirror, longest, fastest):
 
 
 def main():
+    global RESULTS_DIR
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", help="Only this format (default: all formats with a ratings_*.json found)")
     parser.add_argument("--top", type=int, default=15, help="How many matches per top-N category (default: 15)")
+    parser.add_argument(
+        "--results-dir", default=RESULTS_DIR, metavar="DIR",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+    )
     args = parser.parse_args()
+    RESULTS_DIR = args.results_dir
 
     formats = [args.format] if args.format else discover_formats()
     if not formats:
-        print("No elo_results_*_shard*.jsonl found under results/.")
+        print(f"No elo_results_*_shard*.jsonl found under {RESULTS_DIR}.")
         return
     if not os.path.exists(CARD_DATA_PATH):
         raise SystemExit(f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first.")
