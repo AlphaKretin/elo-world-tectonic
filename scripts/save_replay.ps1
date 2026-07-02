@@ -13,7 +13,7 @@
 param(
     [Parameter(Mandatory)][string]$Trainer1,
     [Parameter(Mandatory)][string]$Trainer2,
-    [Parameter(Mandatory)][int]$Seed,
+    [Parameter(Mandatory)][int64]$Seed,
     [string]$Format = "singles",
     [string]$OutputName,
     [switch]$UseDebugFlag
@@ -32,17 +32,18 @@ function Set-ReplayTrainerEnv {
     Set-Item "Env:ELO_REPLAY_${Prefix}_VERSION" $(if ($Matches.version) { $Matches.version } else { "0" })
 }
 
-$RepoRoot   = Split-Path -Parent $PSScriptRoot
+$RepoRoot = Split-Path -Parent $PSScriptRoot
 $ResultsDir = Join-Path $RepoRoot "results"
-$GameDir    = Join-Path $RepoRoot "vendor\tectonic-content"
+$GameDir = Join-Path $RepoRoot "vendor\tectonic-content"
 
-$env:ELO_TOURNAMENT    = "1"
-$env:ELO_SAVE_REPLAY   = "1"
+$env:ELO_TOURNAMENT = "1"
+$env:ELO_SAVE_REPLAY = "1"
 $env:ELO_REPLAY_FORMAT = if ($Format -eq "doubles") { "double" } else { "single" }
-$env:ELO_REPLAY_SEED   = "$Seed"
+$env:ELO_REPLAY_SEED = "$Seed"
 if ($OutputName) {
     $env:ELO_REPLAY_NAME = $OutputName
-} else {
+}
+else {
     Remove-Item Env:\ELO_REPLAY_NAME -ErrorAction SilentlyContinue
 }
 
@@ -54,7 +55,8 @@ if ($UseDebugFlag) {
     $proc = Start-Process -FilePath ".\Game.exe" -ArgumentList "debug" -PassThru `
         -RedirectStandardOutput (Join-Path $ResultsDir "replay_stdout.log") `
         -RedirectStandardError  (Join-Path $ResultsDir "replay_stderr.log")
-} else {
+}
+else {
     $proc = Start-Process -FilePath ".\Game.exe" -PassThru `
         -RedirectStandardOutput (Join-Path $ResultsDir "replay_stdout.log") `
         -RedirectStandardError  (Join-Path $ResultsDir "replay_stderr.log")
