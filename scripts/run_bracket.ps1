@@ -19,24 +19,24 @@ param(
     [switch]$UseDebugFlag
 )
 
-$RepoRoot   = Split-Path -Parent $PSScriptRoot
+$RepoRoot = Split-Path -Parent $PSScriptRoot
 $ResultsDir = Join-Path $RepoRoot "results"
-$GameDir    = Join-Path $RepoRoot "vendor\tectonic-content"
-$SeedsPath  = Join-Path $ResultsDir "bracket_seeds_$Format.txt"
+$GameDir = Join-Path $RepoRoot "vendor\tectonic-content"
+$SeedsPath = Join-Path $ResultsDir "bracket_seeds_$Format.txt"
 
 if (-not (Test-Path $SeedsPath)) {
     Write-Error "Seeds file not found: $SeedsPath -- run '.\.venv\Scripts\python.exe analysis\bracket_seeds.py --format $Format' first."
     exit 1
 }
 
-$env:ELO_TOURNAMENT          = "1"
-$env:ELO_RUN_BRACKET         = "1"
-$env:ELO_FORMAT              = $Format   # cosmetic only -- labels the attempting-file snapshot the watchdog diffs
-$env:ELO_BRACKET_FORMAT      = if ($Format -eq "doubles") { "double" } else { "single" }
-$env:ELO_BRACKET_SEEDS_PATH  = $SeedsPath
+$env:ELO_TOURNAMENT = "1"
+$env:ELO_RUN_BRACKET = "1"
+$env:ELO_FORMAT = $Format   # cosmetic only -- labels the attempting-file snapshot the watchdog diffs
+$env:ELO_BRACKET_FORMAT = if ($Format -like "double*") { "double" } else { "single" }
+$env:ELO_BRACKET_SEEDS_PATH = $SeedsPath
 $env:ELO_BRACKET_RESULTS_PATH = Join-Path $ResultsDir "bracket_${Format}_results.tsv"
 $env:ELO_BRACKET_STATUS_PATH = Join-Path $ResultsDir "bracket_${Format}_status.json"
-$env:ELO_ATTEMPTING_PATH     = Join-Path $ResultsDir "bracket_${Format}_attempting.json"
+$env:ELO_ATTEMPTING_PATH = Join-Path $ResultsDir "bracket_${Format}_attempting.json"
 $env:ELO_TURN_HEARTBEAT_PATH = Join-Path $ResultsDir "bracket_${Format}_turn_heartbeat.json"
 
 function Get-Finished {
@@ -50,7 +50,8 @@ while (-not (Get-Finished)) {
         $proc = Start-Process -FilePath ".\Game.exe" -ArgumentList "debug" -PassThru `
             -RedirectStandardOutput (Join-Path $ResultsDir "bracket_${Format}_stdout.log") `
             -RedirectStandardError  (Join-Path $ResultsDir "bracket_${Format}_stderr.log")
-    } else {
+    }
+    else {
         $proc = Start-Process -FilePath ".\Game.exe" -PassThru `
             -RedirectStandardOutput (Join-Path $ResultsDir "bracket_${Format}_stdout.log") `
             -RedirectStandardError  (Join-Path $ResultsDir "bracket_${Format}_stderr.log")
@@ -59,10 +60,10 @@ while (-not (Get-Finished)) {
 
     Write-Output "$(Get-Date -Format o)  [bracket-$Format] launched Game.exe (PID $($proc.Id))"
 
-    $lastBattleProgressAt   = Get-Date
+    $lastBattleProgressAt = Get-Date
     $lastAttemptingSnapshot = $null
-    $lastTurnProgressAt     = Get-Date
-    $lastHeartbeatSnapshot  = $null
+    $lastTurnProgressAt = Get-Date
+    $lastHeartbeatSnapshot = $null
 
     while (-not $proc.HasExited) {
         Start-Sleep -Seconds $PollIntervalSeconds
@@ -71,9 +72,9 @@ while (-not (Get-Finished)) {
             $current = Get-Content $env:ELO_ATTEMPTING_PATH -Raw
             if ($current -ne $lastAttemptingSnapshot) {
                 $lastAttemptingSnapshot = $current
-                $lastBattleProgressAt   = Get-Date
+                $lastBattleProgressAt = Get-Date
                 # New battle => round count resets too.
-                $lastTurnProgressAt    = Get-Date
+                $lastTurnProgressAt = Get-Date
                 $lastHeartbeatSnapshot = $null
             }
         }
@@ -82,11 +83,11 @@ while (-not (Get-Finished)) {
             $currentHeartbeat = Get-Content $env:ELO_TURN_HEARTBEAT_PATH -Raw
             if ($currentHeartbeat -ne $lastHeartbeatSnapshot) {
                 $lastHeartbeatSnapshot = $currentHeartbeat
-                $lastTurnProgressAt    = Get-Date
+                $lastTurnProgressAt = Get-Date
             }
         }
 
-        $turnStalledSeconds   = ((Get-Date) - $lastTurnProgressAt).TotalSeconds
+        $turnStalledSeconds = ((Get-Date) - $lastTurnProgressAt).TotalSeconds
         $battleStalledSeconds = ((Get-Date) - $lastBattleProgressAt).TotalSeconds
 
         if ($turnStalledSeconds -gt $TurnStallTimeoutSeconds) {
