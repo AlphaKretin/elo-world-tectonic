@@ -313,11 +313,20 @@ def is_curse_variant(card_row, card_data_by_label):
     return grouping[card_row["version"]][1]
 
 
-def display_name(card_row, card_data_by_label):
+def display_name(card_row, card_data_by_label, identities=None):
+    """identities, if given, renders as "[real name(s)]" between the real
+    name and the "#N" fight-number suffix -- needed when referencing a
+    Crimson/Teal masked villain by version number alone (e.g. "Crimson #2")
+    would otherwise be ambiguous about which of their several rotating
+    identities (see fight_grouping's docstring) that specific version was."""
     display_type = card_row.get("trainer_type_display") or card_row["trainer_type"]
     number = distinct_fight_number(card_row, card_data_by_label)
     suffix = f" #{number}" if number is not None else ""
-    return f"{display_type} {card_row['real_name']}{suffix}"
+    identity_tag = ""
+    if identities:
+        names = ", ".join(sorted({i["real_name"] for i in identities}))
+        identity_tag = f" [{names}]"
+    return f"{display_type} {card_row['real_name']}{identity_tag}{suffix}"
 
 
 def identity_matches(real_name, card_data_by_label):
@@ -606,11 +615,20 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         Uses is_curse_variant rather than a raw policy check so a base fight
         with an authored, always-on curse (Rafael's CURSE_FORCE_PERFECT)
         doesn't read as indistinguishable from its actual curse-rolled
-        sibling."""
+        sibling.
+
+        Also passes the opponent's own masked-villain identities (if any)
+        through to display_name -- unlike the card's own title (which shows
+        identity via the portrait peek + rank-line names instead), a best
+        win/worst loss line has no portrait for the opponent, so a Crimson/
+        Teal opponent's fight number alone would be ambiguous about which
+        rotating identity that particular version was (see display_name)."""
         opp_row = card_data_by_label.get(label)
         if not opp_row:
             return label, False
-        return display_name(opp_row, card_data_by_label), is_curse_variant(opp_row, card_data_by_label)
+        opp_identities = masked_villain_identities(opp_row, card_data_by_label)
+        name = display_name(opp_row, card_data_by_label, identities=opp_identities)
+        return name, is_curse_variant(opp_row, card_data_by_label)
 
     # Lay out header text top-down, tracking y as we go, so the panel can be
     # sized to fit whatever's actually drawn (an undefeated trainer's header
@@ -764,7 +782,13 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
             suffix_y = icon_y + icon_img.height / 2
             anchor = "lm"
         if suffix:
-            draw.text((cur_x, suffix_y), suffix, font=line_font, fill=COLOR_TEXT, anchor=anchor)
+            # Unlike the title/rank lines above (fit_font against text_right
+            # from the start), these lines were never width-checked -- fine
+            # while every suffix was short, but a masked-villain identity
+            # bracket (opponent_display) can push one past the panel's right
+            # edge, so shrink to fit the same way those lines already do.
+            suffix_font = fit_font(BODY_FONT_PATH, suffix, text_right - cur_x, 24, min_size=14)
+            draw.text((cur_x, suffix_y), suffix, font=suffix_font, fill=COLOR_TEXT, anchor=anchor)
         if seed:
             draw.text((text_x, ly + s(30)), f"Seed: {seed}", font=seed_font, fill=COLOR_SEED)
 
@@ -852,6 +876,7 @@ TEST_CASES = [
     ("LEADER_Helena:Helena#2", "wins + losses + draws all present -- full 3-color WLD bar"),
     ("LEADER_Noel:Noel", "nicknamed + shiny party member (Armiger the Metagross), authored override not the wild aesthetics-ID roll"),
     ("SPIRITGUARDIAN4:Brigitte#1", "worst loss recorded against a genuinely curse-rolled opponent version (SEEKER_Nora:Nora#1) -- curse badge shown inline on the Worst loss line; best-win badge cases are already covered elsewhere in this set"),
+    ("ANOTHERPOSSIBLEALESSA:Alessa#1", "best win and worst loss both against masked villains (Teal#15, Crimson#11) -- both lines must show the identity bracket (opponent_display), not just the fight number, since neither opponent's own portrait is on this card"),
 ]
 
 

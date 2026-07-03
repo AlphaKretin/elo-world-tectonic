@@ -20,6 +20,11 @@ in the cache.
 
 Run this after ratings.py for a given format; re-run it whenever the
 underlying results change, same as ratings.py.
+
+--exclude-cursed mirrors ratings.py's own flag of the same name: pass the
+base format (e.g. "doubles") plus --exclude-cursed, not "doubles_uncursed"
+as --format, to produce best_worst_doubles_uncursed.json from
+ratings_doubles_uncursed.json.
 """
 import argparse
 import glob
@@ -42,17 +47,24 @@ def discover_formats():
     return sorted(formats)
 
 
-def load_ratings(fmt):
-    path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
+def load_ratings(fmt, suffix=""):
+    path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}{suffix}.json")
     with open(path, "r", encoding="utf-8") as f:
         rows = json.load(f)
     return {row["trainer"]: row for row in rows}
 
 
-def compute_best_worst(fmt, ratings_by_label):
+def compute_best_worst(fmt, ratings_by_label, exclude_cursed=False):
     """One pass over every battle in the format: for each trainer, the
     highest-rated opponent beaten (best_win) and lowest-rated opponent lost
-    to (worst_loss), each as (opponent_rating, opponent_label, seed)."""
+    to (worst_loss), each as (opponent_rating, opponent_label, seed).
+
+    exclude_cursed mirrors ratings.py's --exclude-cursed: there's no separate
+    elo_results_<fmt>_uncursed_shard*.jsonl on disk (ratings.py's "uncursed"
+    leaderboard is just the normal <fmt> results with curse-flagged battles
+    filtered out, saved under an _uncursed-suffixed filename), so this must
+    filter the same way rather than globbing for a results file that will
+    never exist."""
     best_win = {}
     worst_loss = {}
     for path in sorted(glob.glob(os.path.join(RESULTS_DIR, f"elo_results_{fmt}_shard*.jsonl"))):
@@ -66,6 +78,8 @@ def compute_best_worst(fmt, ratings_by_label):
                 except json.JSONDecodeError:
                     continue
                 if row.get("skipped") or row.get("had_error"):
+                    continue
+                if exclude_cursed and row.get("curse"):
                     continue
                 t1, t2, result = row.get("trainer1"), row.get("trainer2"), row.get("result")
                 if result not in (WIN, LOSS):
@@ -92,7 +106,7 @@ def to_json_entry(entry):
     return {"opponent": opponent, "rating": rating, "seed": seed}
 
 
-def write_output(fmt, best_win, worst_loss, trainers):
+def write_output(fmt, suffix, best_win, worst_loss, trainers):
     out = {
         label: {
             "best_win": to_json_entry(best_win.get(label)),
@@ -100,7 +114,7 @@ def write_output(fmt, best_win, worst_loss, trainers):
         }
         for label in trainers
     }
-    path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}.json")
+    path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}{suffix}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2)
     return path
@@ -114,6 +128,15 @@ def main():
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
         help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
     )
+    parser.add_argument(
+        "--exclude-cursed", action="store_true",
+        help=(
+            "Drop every battle flagged curse, matching `ratings.py --exclude-cursed`, and read/write "
+            "the _uncursed-suffixed files (ratings_<fmt>_uncursed.json in, best_worst_<fmt>_uncursed.json "
+            "out) instead of the normal ones. --format should still name the base format (e.g. 'doubles', "
+            "not 'doubles_uncursed') -- there is no elo_results_<fmt>_uncursed_shard*.jsonl on disk."
+        ),
+    )
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
 
@@ -122,15 +145,16 @@ def main():
         print(f"No elo_results_*_shard*.jsonl files found under {RESULTS_DIR}.")
         return
 
+    suffix = "_uncursed" if args.exclude_cursed else ""
     for fmt in formats:
-        ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
+        ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}{suffix}.json")
         if not os.path.exists(ratings_path):
             print(f"[{fmt}] {ratings_path} not found -- run ratings.py first. Skipping.")
             continue
-        ratings_by_label = load_ratings(fmt)
-        best_win, worst_loss = compute_best_worst(fmt, ratings_by_label)
-        path = write_output(fmt, best_win, worst_loss, ratings_by_label.keys())
-        print(f"[{fmt}] {len(ratings_by_label)} trainers -> {path}")
+        ratings_by_label = load_ratings(fmt, suffix)
+        best_win, worst_loss = compute_best_worst(fmt, ratings_by_label, exclude_cursed=args.exclude_cursed)
+        path = write_output(fmt, suffix, best_win, worst_loss, ratings_by_label.keys())
+        print(f"[{fmt}{suffix}] {len(ratings_by_label)} trainers -> {path}")
 
 
 if __name__ == "__main__":
