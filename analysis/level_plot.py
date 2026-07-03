@@ -40,7 +40,7 @@ def load_card_data():
 def main():
     global RESULTS_DIR
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--format", default=None, help="Format to use (default: first one found)")
+    parser.add_argument("--format", default=None, help="Format to use (default: singles, or the first format found if singles isn't present)")
     parser.add_argument(
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
         help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
@@ -53,7 +53,8 @@ def main():
             f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first (see this script's docstring)."
         )
 
-    fmt = args.format or discover_formats()[0]
+    found_formats = discover_formats()
+    fmt = args.format or ("singles" if "singles" in found_formats else found_formats[0])
     ratings_by_label = load_ratings(fmt)
     card_data_by_label = load_card_data()
 

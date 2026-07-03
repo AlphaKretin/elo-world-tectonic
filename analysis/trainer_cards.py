@@ -251,9 +251,10 @@ def vertical_gradient(w, h, top, bottom):
     return column.resize((w, h))
 
 
-def distinct_fight_number(card_row, card_data_by_label):
-    """1-indexed position of this row's fight among same-identity versions,
-    or None if there's only one distinct fight.
+def fight_grouping(card_row, card_data_by_label):
+    """{version: (fight_number, is_curse_variant)} across every same-identity
+    sibling, plus the total distinct-fight count, for the fight-numbering
+    scheme shared by distinct_fight_number() and is_curse_variant() below.
 
     A version with a CURSE_* policy is the same fight as the nearest
     preceding non-cursed version, not a new one (e.g. Yezera's versions
@@ -261,6 +262,16 @@ def distinct_fight_number(card_row, card_data_by_label):
     name_for_hashing rather than real_name, with each identity getting its
     own two fights elsewhere in the version range). Versions with no curse
     at all (e.g. Vanya's 22-version gauntlet) are each their own fight.
+
+    is_curse_variant is only True for a row that got collapsed into an
+    earlier sibling's fight number -- never for whichever row started that
+    fight number, even if that row's own policies happen to include a
+    CURSE_* entry. This matters for Rafael specifically: his version 0 has
+    CURSE_FORCE_PERFECT baked into its own PBS entry (always active,
+    authored -- not a tournament curse roll), so a naive "has any CURSE_
+    policy" check would mark him cursed even though he's every other
+    sibling's base fight, indistinguishable from his actual curse-rolled
+    version 1 (which adds CURSE_EXTRA_MOVES on top).
     """
     identity = card_row.get("name_for_hashing") or card_row["real_name"]
     siblings = sorted(
@@ -270,21 +281,36 @@ def distinct_fight_number(card_row, card_data_by_label):
         key=lambda row: row["version"],
     )
 
-    fight_numbers = {}
+    grouping = {}
     next_number = 1
     last_base_version = None
     for row in siblings:
         is_cursed = any(p.startswith("CURSE_") for p in row["policies"])
         if is_cursed and last_base_version is not None:
-            fight_numbers[row["version"]] = fight_numbers[last_base_version]
+            grouping[row["version"]] = (grouping[last_base_version][0], True)
         else:
-            fight_numbers[row["version"]] = next_number
+            grouping[row["version"]] = (next_number, False)
             next_number += 1
             last_base_version = row["version"]
 
-    if next_number - 1 <= 1:
+    return grouping, next_number - 1
+
+
+def distinct_fight_number(card_row, card_data_by_label):
+    """1-indexed position of this row's fight among same-identity versions,
+    or None if there's only one distinct fight."""
+    grouping, total = fight_grouping(card_row, card_data_by_label)
+    if total <= 1:
         return None
-    return fight_numbers[card_row["version"]]
+    return grouping[card_row["version"]][0]
+
+
+def is_curse_variant(card_row, card_data_by_label):
+    """Whether this row is the curse-rolled instance of its fight, as
+    opposed to that fight's base version (see fight_grouping's docstring for
+    why this isn't just "has any CURSE_ policy")."""
+    grouping, _ = fight_grouping(card_row, card_data_by_label)
+    return grouping[card_row["version"]][1]
 
 
 def display_name(card_row, card_data_by_label):
@@ -573,8 +599,18 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     seed_font = load_font(BODY_FONT_PATH, 22)
 
     def opponent_display(label):
+        """(name, is_cursed) -- is_cursed reflects the specific opponent
+        version this result was recorded against, which curse-deduping can
+        hide behind a fight number shared with an uncursed sibling (e.g.
+        Bence#2/#3 both display as "Bence #2"; only #3 carries a curse).
+        Uses is_curse_variant rather than a raw policy check so a base fight
+        with an authored, always-on curse (Rafael's CURSE_FORCE_PERFECT)
+        doesn't read as indistinguishable from its actual curse-rolled
+        sibling."""
         opp_row = card_data_by_label.get(label)
-        return display_name(opp_row, card_data_by_label) if opp_row else label
+        if not opp_row:
+            return label, False
+        return display_name(opp_row, card_data_by_label), is_curse_variant(opp_row, card_data_by_label)
 
     # Lay out header text top-down, tracking y as we go, so the panel can be
     # sized to fit whatever's actually drawn (an undefeated trainer's header
@@ -589,27 +625,31 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     bar_y = y
     y += s(30)
 
-    lines = []  # (main_text, seed_or_None, icon_path_or_None)
+    lines = []  # (prefix, icon_path_or_None, suffix, seed_or_None)
     if tribe_bonuses:
         # The tribal-bonus badge icon itself (TRIBE_BADGE_PATH) leads the
         # line in place of a "Tribal Bonus:" label -- it's the one icon for
         # "a tribe bonus is active here", so it doesn't need a text header
         # alongside it, just the active tribes' own names.
         names = [name for _, _, _, name in tribe_bonuses]
-        lines.append((', '.join(names), None, TRIBE_BADGE_PATH))
+        lines.append(("", TRIBE_BADGE_PATH, ', '.join(names), None))
     if best_win:
         rating, opponent, seed = best_win
-        lines.append((f"Best win: {opponent_display(opponent)} ({rating:.0f})", seed, None))
+        opp_text, opp_cursed = opponent_display(opponent)
+        icon = CURSE_BADGE_PATH if opp_cursed else None
+        lines.append(("Best win: ", icon, f"{opp_text} ({rating:.0f})", seed))
     else:
-        lines.append(("Best win: --", None, None))
+        lines.append(("Best win: --", None, "", None))
     if worst_loss:
         rating, opponent, seed = worst_loss
-        lines.append((f"Worst loss: {opponent_display(opponent)} ({rating:.0f})", seed, None))
+        opp_text, opp_cursed = opponent_display(opponent)
+        icon = CURSE_BADGE_PATH if opp_cursed else None
+        lines.append(("Worst loss: ", icon, f"{opp_text} ({rating:.0f})", seed))
     else:
-        lines.append(("Worst loss: --", None, None))
+        lines.append(("Worst loss: --", None, "", None))
 
     line_ys = []
-    for _, seed, _ in lines:
+    for _, _, _, seed in lines:
         line_ys.append(y)
         y += s(36) if seed else 0
         y += s(28)
@@ -706,22 +746,25 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         canvas.alpha_composite(badge, (badge_x, margin + s(14)))
         badge_x -= s(8)
 
-    for (main_text, seed, icon_path), ly in zip(lines, line_ys):
-        line_text_x = text_x
-        text_y = ly
-        anchor = None
+    for (prefix, icon_path, suffix, seed), ly in zip(lines, line_ys):
+        cur_x = text_x
+        if prefix:
+            draw.text((cur_x, ly), prefix, font=line_font, fill=COLOR_TEXT)
+            cur_x += line_font.getlength(prefix)
+        suffix_y, anchor = ly, None
         if icon_path and os.path.exists(icon_path):
             icon_size = s(LINE_ICON_SIZE)
             icon_img = fit_image(trim_transparent(Image.open(icon_path).convert("RGBA")), icon_size, icon_size)
             icon_y = ly + (line_font.size - icon_img.height) // 2
-            canvas.alpha_composite(icon_img, (text_x, icon_y))
+            canvas.alpha_composite(icon_img, (round(cur_x), icon_y))
             # Cropping the icon to its bounding box removes its own baked-in
             # padding, so the text needs a smaller gap than an uncropped icon
             # would to still read as evenly kerned against it.
-            line_text_x = text_x + icon_img.width + s(4)
-            text_y = icon_y + icon_img.height / 2
+            cur_x += icon_img.width + s(4)
+            suffix_y = icon_y + icon_img.height / 2
             anchor = "lm"
-        draw.text((line_text_x, text_y), main_text, font=line_font, fill=COLOR_TEXT, anchor=anchor)
+        if suffix:
+            draw.text((cur_x, suffix_y), suffix, font=line_font, fill=COLOR_TEXT, anchor=anchor)
         if seed:
             draw.text((text_x, ly + s(30)), f"Seed: {seed}", font=seed_font, fill=COLOR_SEED)
 
@@ -794,7 +837,7 @@ def safe_filename(label):
 # post-reset results; re-pick a replacement if one ever drops out of the
 # pool, e.g. a quarantined policy.)
 TEST_CASES = [
-    ("ANOTHERPOSSIBLERAFAEL:Rafael#1", "undefeated #1, CURSE_EXTRA_MOVES -- all 6 Pokemon have 5 moves (5th-move grid expansion), large legendary sprites, male"),
+    ("ANOTHERPOSSIBLERAFAEL:Rafael#1", "undefeated #1, CURSE_EXTRA_MOVES -- all 6 Pokemon have 5 moves (5th-move grid expansion), large legendary sprites, male; best win is against base Rafael (v0), whose authored CURSE_FORCE_PERFECT must NOT show the inline curse badge (see is_curse_variant)"),
     ("MASKEDVILLAIN2:Teal#5", "cursed with both a win and a loss, single identity reveal (Skyler)"),
     ("HEXMANIAC:Errata", "non-cursed, female, species display-name fixes (H. Electrode, Farfetch'd), single tribal bonus"),
     ("YOUNGSTER:Joey", "1-Pokemon party (grid edge case), worst record in the pool"),
@@ -808,6 +851,7 @@ TEST_CASES = [
     ("LEADER_Eko:Eko", "gym leader with a bad record"),
     ("LEADER_Helena:Helena#2", "wins + losses + draws all present -- full 3-color WLD bar"),
     ("LEADER_Noel:Noel", "nicknamed + shiny party member (Armiger the Metagross), authored override not the wild aesthetics-ID roll"),
+    ("SPIRITGUARDIAN4:Brigitte#1", "worst loss recorded against a genuinely curse-rolled opponent version (SEEKER_Nora:Nora#1) -- curse badge shown inline on the Worst loss line; best-win badge cases are already covered elsewhere in this set"),
 ]
 
 
@@ -829,7 +873,7 @@ def render_one(label, fmt, ratings_by_label, card_data_by_label, best_worst_by_l
 def main():
     global RESULTS_DIR
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--format", default=None, help="Format to use (default: first one found)")
+    parser.add_argument("--format", default=None, help="Format to use (default: singles, or the first format found if singles isn't present)")
     parser.add_argument("--trainer", default=None, help="Trainer label, e.g. 'MASKEDVILLAIN2:Teal#5' (default: #1 ranked)")
     parser.add_argument("--test-cases", action="store_true", help="Render the whole canonical TEST_CASES set instead of a single trainer")
     parser.add_argument(
@@ -844,7 +888,8 @@ def main():
             f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first (see this script's docstring)."
         )
 
-    fmt = args.format or discover_formats()[0]
+    found_formats = discover_formats()
+    fmt = args.format or ("singles" if "singles" in found_formats else found_formats[0])
     ratings_by_label = load_ratings(fmt)
     card_data_by_label = load_card_data()
     best_worst_path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}.json")
