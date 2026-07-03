@@ -25,17 +25,10 @@ silently dropped.
 """
 import argparse
 import csv
-import json
 import os
 
-ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
-
-
-def load_leaderboard(fmt):
-    path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
-    with open(path, "r", encoding="utf-8") as f:
-        rows = json.load(f)
-    return {row["trainer"]: row for row in rows}
+import results_lib
+from results_lib import ANALYSIS_DIR
 
 
 def rescale_ranks(board, shared):
@@ -46,8 +39,8 @@ def rescale_ranks(board, shared):
 
 
 def compare(fmt_a, fmt_b):
-    board_a = load_leaderboard(fmt_a)
-    board_b = load_leaderboard(fmt_b)
+    board_a = results_lib.load_ratings(fmt_a, analysis_dir=ANALYSIS_DIR)
+    board_b = results_lib.load_ratings(fmt_b, analysis_dir=ANALYSIS_DIR)
 
     shared = sorted(set(board_a) & set(board_b))
     only_a = sorted(set(board_a) - set(board_b))

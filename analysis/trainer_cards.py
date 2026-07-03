@@ -30,7 +30,6 @@ Best win / worst loss come from best_worst_<format>.json (see
 best_worst.py); run that (after ratings.py) before this script.
 """
 import argparse
-import glob
 import io
 import json
 import math
@@ -40,11 +39,11 @@ from collections import Counter
 import resvg_py
 from PIL import Image, ImageDraw, ImageFont
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
+import results_lib
+from results_lib import ANALYSIS_DIR, CARD_DATA_PATH, REPO_ROOT
+
+RESULTS_DIR = results_lib.RESULTS_DIR
 TECTONIC_DIR = os.path.join(REPO_ROOT, "vendor", "tectonic-content")
-CARD_DATA_PATH = os.path.join(TECTONIC_DIR, "Analysis", "trainer_card_data.json")
 CARDS_OUT_DIR = os.path.join(ANALYSIS_DIR, "cards")
 
 TRAINER_SPRITE_DIR = os.path.join(TECTONIC_DIR, "Graphics", "Trainers")
@@ -493,28 +492,6 @@ def draw_move_capsule(draw, canvas, coords, move):
     draw.text((text_x0, (y0 + y1) // 2), move["name"], font=font, fill=readable_text_color(bg_color), anchor="lm")
 
 
-def discover_formats():
-    formats = set()
-    for path in glob.glob(os.path.join(RESULTS_DIR, "elo_results_*_shard*.jsonl")):
-        name = os.path.basename(path)
-        middle = name[len("elo_results_"):-len(".jsonl")]
-        formats.add(middle.rsplit("_shard", 1)[0])
-    return sorted(formats)
-
-
-def load_ratings(fmt):
-    path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
-    with open(path, "r", encoding="utf-8") as f:
-        rows = json.load(f)
-    return {row["trainer"]: row for row in rows}
-
-
-def load_card_data():
-    with open(CARD_DATA_PATH, "r", encoding="utf-8") as f:
-        rows = json.load(f)
-    return {row["label"]: row for row in rows}
-
-
 def load_best_worst(fmt):
     """{trainer_label: {"best_win": ..., "worst_loss": ...}} from
     best_worst_<fmt>.json (see best_worst.py -- it computes this in one
@@ -913,10 +890,10 @@ def main():
             f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first (see this script's docstring)."
         )
 
-    found_formats = discover_formats()
+    found_formats = results_lib.discover_formats(RESULTS_DIR)
     fmt = args.format or ("singles" if "singles" in found_formats else found_formats[0])
-    ratings_by_label = load_ratings(fmt)
-    card_data_by_label = load_card_data()
+    ratings_by_label = results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR)
+    card_data_by_label = results_lib.load_card_data()
     best_worst_path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}.json")
     if not os.path.exists(best_worst_path):
         raise SystemExit(f"{best_worst_path} not found -- run `python analysis/best_worst.py --format {fmt}` first.")

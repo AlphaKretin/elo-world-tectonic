@@ -15,19 +15,17 @@ Needs an interactive matplotlib backend for the mplcursors hover tooltips
 saves a static PNG (no hover tooltips) for sharing a snapshot.
 """
 import argparse
-import glob
-import json
 import os
 
 import matplotlib.pyplot as plt
 import mplcursors
 import numpy as np
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
+import results_lib
+from results_lib import ANALYSIS_DIR, CARD_DATA_PATH, REPO_ROOT
+
+RESULTS_DIR = results_lib.RESULTS_DIR
 TECTONIC_DIR = os.path.join(REPO_ROOT, "vendor", "tectonic-content")
-CARD_DATA_PATH = os.path.join(TECTONIC_DIR, "Analysis", "trainer_card_data.json")
 
 # Palette -- dark surface, structural roles (surfaces/ink/grid), the fit
 # line's accent, and the point fill.
@@ -41,28 +39,6 @@ COLOR_GRID = "#2c2c2a"       # gridline hairline, dark mode
 
 COLOR_FIT = "#e66767"        # trend line
 COLOR_POINT = "#5aa9d6"      # point fill -- distinct hue from the trend line
-
-
-def discover_formats():
-    formats = set()
-    for path in glob.glob(os.path.join(RESULTS_DIR, "elo_results_*_shard*.jsonl")):
-        name = os.path.basename(path)
-        middle = name[len("elo_results_"):-len(".jsonl")]
-        formats.add(middle.rsplit("_shard", 1)[0])
-    return sorted(formats)
-
-
-def load_ratings(fmt):
-    path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
-    with open(path, "r", encoding="utf-8") as f:
-        rows = json.load(f)
-    return {row["trainer"]: row for row in rows}
-
-
-def load_card_data():
-    with open(CARD_DATA_PATH, "r", encoding="utf-8") as f:
-        rows = json.load(f)
-    return {row["label"]: row for row in rows}
 
 
 def build_entries(ratings_by_label, card_data_by_label):
@@ -175,10 +151,10 @@ def main():
             f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first (see this script's docstring)."
         )
 
-    found_formats = discover_formats()
+    found_formats = results_lib.discover_formats(RESULTS_DIR)
     fmt = args.format or ("singles" if "singles" in found_formats else found_formats[0])
-    ratings_by_label = load_ratings(fmt)
-    card_data_by_label = load_card_data()
+    ratings_by_label = results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR)
+    card_data_by_label = results_lib.load_card_data()
 
     entries = build_entries(ratings_by_label, card_data_by_label)
     m, b, r2 = fit_trend(entries)

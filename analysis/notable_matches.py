@@ -32,53 +32,12 @@ treat anything this turns up right now as a check that the script runs,
 not as a real finding. Re-run once the dataset is actually valid.
 """
 import argparse
-import glob
-import json
 import os
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
-CARD_DATA_PATH = os.path.join(REPO_ROOT, "vendor", "tectonic-content", "Analysis", "trainer_card_data.json")
+import results_lib
+from results_lib import ANALYSIS_DIR, CARD_DATA_PATH, REPO_ROOT, WIN, LOSS, DRAW
 
-WIN, LOSS, DRAW = 1, 2, 5
-
-
-def discover_formats():
-    formats = set()
-    for path in glob.glob(os.path.join(RESULTS_DIR, "elo_results_*_shard*.jsonl")):
-        name = os.path.basename(path)
-        middle = name[len("elo_results_"):-len(".jsonl")]
-        formats.add(middle.rsplit("_shard", 1)[0])
-    return sorted(formats)
-
-
-def load_ratings(fmt):
-    path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
-    with open(path, "r", encoding="utf-8") as f:
-        rows = json.load(f)
-    return {row["trainer"]: row for row in rows}
-
-
-def load_card_data():
-    with open(CARD_DATA_PATH, "r", encoding="utf-8") as f:
-        rows = json.load(f)
-    return {row["label"]: row for row in rows}
-
-
-def load_results(fmt):
-    rows = []
-    for path in sorted(glob.glob(os.path.join(RESULTS_DIR, f"elo_results_{fmt}_shard*.jsonl"))):
-        with open(path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    rows.append(json.loads(line))
-                except json.JSONDecodeError:
-                    continue
-    return rows
+RESULTS_DIR = results_lib.RESULTS_DIR
 
 
 def decisive_rows(rows):
@@ -272,21 +231,21 @@ def main():
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
 
-    formats = [args.format] if args.format else discover_formats()
+    formats = [args.format] if args.format else results_lib.discover_formats(RESULTS_DIR)
     if not formats:
         print(f"No elo_results_*_shard*.jsonl found under {RESULTS_DIR}.")
         return
     if not os.path.exists(CARD_DATA_PATH):
         raise SystemExit(f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first.")
-    card_data = load_card_data()
+    card_data = results_lib.load_card_data()
 
     for fmt in formats:
         ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
         if not os.path.exists(ratings_path):
             print(f"[{fmt}] No {ratings_path} -- run ratings.py first. Skipping.")
             continue
-        ratings = load_ratings(fmt)
-        rows = load_results(fmt)
+        ratings = results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR)
+        rows = results_lib.load_results(fmt, results_dir=RESULTS_DIR)
 
         upsets = find_upsets(rows, ratings, args.top)
         self_mirror = find_self_mirror_losses(rows, card_data, ratings)

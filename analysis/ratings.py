@@ -26,10 +26,17 @@ filtered at the trainer-pool level instead.
 
 --exclude-cursed drops every battle flagged curse (tournament.rb tags a
 battle curse if either trainer had a CURSE_* policy active in it) and
-writes a parallel ratings_<fmt>_uncursed.json/csv leaderboard, to see how
-the field shakes out without curse-skewed results pulling on the fit.
+writes a parallel ratings_<fmt>_cursed_excluded.json/csv leaderboard, to see
+how the field shakes out without curse-skewed results pulling on the fit.
 Cursed trainers' curses are active in every battle they play, so they end
-up with no data and don't appear in the uncursed leaderboard at all.
+up with no data and don't appear in the cursed_excluded leaderboard at all
+-- same for the two known trainers whose curse is authored on their duo
+partner's side instead of their own (see results_lib.ASYMMETRIC_CURSE_PAIRS).
+
+This is a blunt, post-hoc data filter, not a simulation of what cursed
+trainers "should" look like -- for that, see the singles_uncursed/
+doubles_uncursed formats, which re-battle cursed trainers with curse
+*effects* actually stripped instead of just discarding their data.
 
 Each trainer's rating also gets a standard error and a 95% confidence
 interval, plus an "overlap" count -- how many *other* trainers' point
@@ -49,7 +56,6 @@ assign_tiers for the two-stage approach that fixes that.
 """
 import argparse
 import csv
-import glob
 import json
 import os
 from collections import defaultdict
@@ -59,11 +65,10 @@ from scipy.sparse import coo_matrix
 from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
-ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
+import results_lib
+from results_lib import ANALYSIS_DIR, REPO_ROOT, WIN, LOSS, DRAW
 
-WIN, LOSS, DRAW = 1, 2, 5
+RESULTS_DIR = results_lib.RESULTS_DIR
 
 # rating = coefficient * ELO_SCALE + ELO_BASE, the standard logistic-regression
 # Elo conversion (173 ~= 400 / ln(10), matching the usual Elo logistic curve).
@@ -83,40 +88,8 @@ REG_C = 1.0
 CI_Z = 1.96  # ~95% normal-approximation interval
 
 
-def discover_formats():
-    formats = set()
-    for path in glob.glob(os.path.join(RESULTS_DIR, "elo_results_*_shard*.jsonl")):
-        name = os.path.basename(path)
-        # elo_results_<format>_shard<N>.jsonl
-        middle = name[len("elo_results_"):-len(".jsonl")]
-        fmt = middle.rsplit("_shard", 1)[0]
-        formats.add(fmt)
-    return sorted(formats)
-
-
-def load_results(fmt):
-    rows = []
-    skipped_lines = 0
-    for path in sorted(glob.glob(os.path.join(RESULTS_DIR, f"elo_results_{fmt}_shard*.jsonl"))):
-        with open(path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                # Result files may be actively appended to by a live
-                # tournament run while this reads them; a line caught
-                # mid-write is incomplete JSON, not a real data problem.
-                try:
-                    rows.append(json.loads(line))
-                except json.JSONDecodeError:
-                    skipped_lines += 1
-    if skipped_lines:
-        print(f"  (skipped {skipped_lines} unparseable line(s), likely caught mid-write)")
-    return rows
-
-
 def compute_ratings(fmt, exclude_trainers=(), exclude_cursed=False):
-    rows = load_results(fmt)
+    rows = results_lib.load_results(fmt, results_dir=RESULTS_DIR, report_skipped=True)
 
     stats = defaultdict(lambda: {"wins": 0, "losses": 0, "draws": 0, "battles": 0})
     fit_rows = []  # (trainer1, trainer2, target) for the regression
@@ -126,7 +99,7 @@ def compute_ratings(fmt, exclude_trainers=(), exclude_cursed=False):
             continue
         if r.get("had_error"):
             continue
-        if exclude_cursed and r.get("curse"):
+        if exclude_cursed and results_lib.is_cursed_excluded(r):
             continue
         result = r.get("result")
         if result not in (WIN, LOSS, DRAW):
@@ -298,8 +271,10 @@ def main():
     parser.add_argument(
         "--exclude-cursed", action="store_true",
         help=(
-            "Drop every battle flagged curse (either side had a CURSE_* policy active) from the fit, "
-            "and write to ratings_<fmt>_uncursed.json/csv instead of the normal output. Since a cursed "
+            "Drop every battle flagged curse (either side had a CURSE_* policy active), plus battles "
+            "involving the non-curse-flagged half of a known asymmetric CURSE_NO_MERCY pair (see "
+            "results_lib.ASYMMETRIC_CURSE_PAIRS), from the fit, and write to "
+            "ratings_<fmt>_cursed_excluded.json/csv instead of the normal output. Since a cursed "
             "trainer's curse is active in every battle it plays (see tournament.rb's pairsForEdge), "
             "this leaves cursed trainers with no data and they won't appear in the result."
         ),
@@ -307,12 +282,12 @@ def main():
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
 
-    formats = [args.format] if args.format else discover_formats()
+    formats = [args.format] if args.format else results_lib.discover_formats(RESULTS_DIR)
     if not formats:
         print(f"No elo_results_*_shard*.jsonl files found under {RESULTS_DIR}.")
         return
 
-    suffix = "_uncursed" if args.exclude_cursed else ""
+    suffix = "_cursed_excluded" if args.exclude_cursed else ""
     for fmt in formats:
         leaderboard, stats = compute_ratings(
             fmt, exclude_trainers=set(args.exclude_trainer), exclude_cursed=args.exclude_cursed,
