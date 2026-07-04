@@ -1,0 +1,74 @@
+{
+    "label": "POKEMONBREEDER_M4:Isaac",
+    "title": "Pok\u00e9mon Breeder Isaac",
+    "trainerType": "POKEMONBREEDER_M4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "YANMEGA",
+            "speciesDisplay": "Yanmega",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ASSASSIN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Javelin",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "TURTONATOR",
+            "speciesDisplay": "Turtonator",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Shell Trap",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

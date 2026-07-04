@@ -1,0 +1,137 @@
+{
+    "label": "COOLTRAINERSQUAD_2:Shouta and Kaede",
+    "title": "Cool Squad Shouta and Kaede",
+    "trainerType": "COOLTRAINERSQUAD_2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TITANIX",
+            "speciesDisplay": "Titanix",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "SHIFTRY",
+            "speciesDisplay": "Shiftry",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Tempest",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Tera Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GYARADOS",
+            "speciesDisplay": "Gyarados",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Rip Tide",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "GENGAR",
+            "speciesDisplay": "Gengar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thunder",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Acid Ball",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

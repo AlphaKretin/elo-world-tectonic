@@ -1,0 +1,79 @@
+{
+    "label": "HARLEQUIN:Vincenzi",
+    "title": "Harlequin Vincenzi #1",
+    "trainerType": "HARLEQUIN",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SWADLOON",
+            "speciesDisplay": "Swadloon",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "ASSASSIN",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "String Shot",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "BRIONNE",
+            "speciesDisplay": "Brionne",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Growl",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "STUFFUL",
+            "speciesDisplay": "Stufful",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "CARETAKER",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Leer",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pummel",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

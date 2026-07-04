@@ -1,0 +1,145 @@
+{
+    "label": "DANDY:Roger",
+    "title": "Dandy Roger",
+    "trainerType": "DANDY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PERSIAN",
+            "speciesDisplay": "Persian",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "BUGGEM",
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Cha-ching",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earthsplitter",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "LILLIGANT",
+            "speciesDisplay": "Lilligant",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "MIRRORHERB",
+                "POWERHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Aromatherapy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Puffball",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "SIGILYPH",
+            "speciesDisplay": "Sigilyph",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Pulsar",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Wind Tunnel",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "NINJASK",
+            "speciesDisplay": "Ninjask",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "ASSASSIN",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Hunt Down",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

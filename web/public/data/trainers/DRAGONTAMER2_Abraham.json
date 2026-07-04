@@ -1,0 +1,207 @@
+{
+    "label": "DRAGONTAMER2:Abraham",
+    "title": "Dragon Tamer Abraham",
+    "trainerType": "DRAGONTAMER2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DRUDDIGON",
+            "speciesDisplay": "Druddigon",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "PINPOINTROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Loom Over",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Diametric Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "CLAYDOL",
+            "speciesDisplay": "Claydol",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "ZOROARK",
+            "speciesDisplay": "Zoroark",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Eclipse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "LATIOS",
+            "speciesDisplay": "Latios",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "SERENE"
+            ],
+            "heldItems": [
+                "POWERHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Jet Speed",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "LATIAS",
+            "speciesDisplay": "Latias",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Misty Mirage",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mystical Fire",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "WHISCASH",
+            "speciesDisplay": "Whiscash",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "CHESTOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Calamitous Slash",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,200 @@
+{
+    "label": "POKEMONTRAINER_Yezera:Yezera#8",
+    "title": "Pok\u00e9mon Trainer Yezera #5",
+    "trainerType": "POKEMONTRAINER_Yezera",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "REGIDRAGO",
+            "speciesDisplay": "Regidrago",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dragon Energy",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "REGIELEKI",
+            "speciesDisplay": "Regieleki",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Electroweb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Electro Ball",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "TOGEKISS",
+            "speciesDisplay": "Togekiss",
+            "level": 65,
+            "shiny": false,
+            "nickname": "Artemisia",
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "BABIRIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Superstition",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "HAEROBIC",
+            "speciesDisplay": "Haerobic",
+            "level": 65,
+            "shiny": false,
+            "nickname": "Amalthea",
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Hare Heroics",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "CHANDELURE",
+            "speciesDisplay": "Chandelure",
+            "level": 65,
+            "shiny": false,
+            "nickname": "Auden",
+            "tribes": [
+                "SCOURGE",
+                "DECEIVER",
+                "ANIMATED"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "TYRANITAR",
+            "speciesDisplay": "Tyranitar",
+            "level": 65,
+            "shiny": false,
+            "nickname": "Autochthon",
+            "tribes": [
+                "TYRANNICAL",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Power Hammer",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

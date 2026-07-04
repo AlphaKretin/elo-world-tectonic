@@ -1,0 +1,208 @@
+{
+    "label": "LEADER_Eko:Eko#3",
+    "title": "Gym Leader Eko #2",
+    "trainerType": "LEADER_Eko",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "INCINEROAR",
+            "speciesDisplay": "Incineroar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "DECEIVER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "SITREONBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Darkest Lariat",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flame Spikes",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "SALAZZLE",
+            "speciesDisplay": "Salazzle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "POWERKEY"
+            ],
+            "moves": [
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "TALONFLAME",
+            "speciesDisplay": "Talonflame",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Dario",
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "CLARITYSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "EELEKTROSS",
+            "speciesDisplay": "Eelektross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LEADBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "SCOLIPEDE",
+            "speciesDisplay": "Scolipede",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "DEATHORB"
+            ],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "ARAICHU",
+            "speciesDisplay": "A. Raichu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LUCENTGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Psychic Overload",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

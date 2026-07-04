@@ -1,0 +1,77 @@
+{
+    "label": "LINEBACKER:Lorenzo",
+    "title": "Linebacker Lorenzo",
+    "trainerType": "LINEBACKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KOMMOO",
+            "speciesDisplay": "Kommo-o",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "NOBLE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Guttural Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GRENINJA",
+            "speciesDisplay": "Greninja",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

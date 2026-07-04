@@ -1,0 +1,137 @@
+{
+    "label": "FIREBREATHER:Bradley",
+    "title": "Firebreather Bradley",
+    "trainerType": "FIREBREATHER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TURTONATOR",
+            "speciesDisplay": "Turtonator",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Shell Trap",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "TALONFLAME",
+            "speciesDisplay": "Talonflame",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "FLYINGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Flare Up",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "PALOSSAND",
+            "speciesDisplay": "Palossand",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCOURGE",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "CRADILY",
+            "speciesDisplay": "Cradily",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

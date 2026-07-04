@@ -1,0 +1,95 @@
+{
+    "label": "TRAINER_Keoni:Keoni",
+    "title": "Pok\u00e9mon Trainer Keoni #1",
+    "trainerType": "TRAINER_Keoni",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MSENTRET",
+            "speciesDisplay": "M. Sentret",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "ESOTERIC",
+                "SERENE"
+            ],
+            "heldItems": [
+                "PSYCHICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Heart Stamp",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Covet",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "ARATTATA",
+            "speciesDisplay": "A. Rattata",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Take Down",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pursuit",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Super Fang",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GDARUMAKA",
+            "speciesDisplay": "G. Darumaka",
+            "level": 23,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "METRONOME"
+            ],
+            "moves": [
+                {
+                    "name": "Frost Barb",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

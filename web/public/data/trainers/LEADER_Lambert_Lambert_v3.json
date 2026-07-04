@@ -1,0 +1,209 @@
+{
+    "label": "LEADER_Lambert:Lambert#3",
+    "title": "Gym Leader Lambert #2",
+    "trainerType": "LEADER_Lambert",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ZOROARK",
+            "speciesDisplay": "Zoroark",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "CLARITYSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mass Destruction",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "RIOJIN",
+            "speciesDisplay": "Riojin",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Sangfroid",
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "ZALAKABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Rising Power",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Steel Beam",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "PANGORO",
+            "speciesDisplay": "Pangoro",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "ROSELIFEAST"
+            ],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "EXCADRILL",
+            "speciesDisplay": "Excadrill",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCOURGE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LUNCHBOX"
+            ],
+            "moves": [
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "INFERNAPE",
+            "speciesDisplay": "Infernape",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "WARRIOR",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "LUCENTGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Fire Punch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "AEGISLASH",
+            "speciesDisplay": "Aegislash",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "SPELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "King's Shield",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Wailing Blow",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

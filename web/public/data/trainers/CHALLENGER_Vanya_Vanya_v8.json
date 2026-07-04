@@ -1,0 +1,194 @@
+{
+    "label": "CHALLENGER_Vanya:Vanya#8",
+    "title": "Challenger Vanya #9",
+    "trainerType": "CHALLENGER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SKARMORY",
+            "speciesDisplay": "Skarmory",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Feather Ward",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "WEAVILE",
+            "speciesDisplay": "Weavile",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Winter Ops",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GOLURK",
+            "speciesDisplay": "Golurk",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Six Feet Under",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Dynamic Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "DRAGALGE",
+            "speciesDisplay": "Dragalge",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "VAPOREON",
+            "speciesDisplay": "Vaporeon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mending Spring",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PINCURCHIN",
+            "speciesDisplay": "Pincurchin",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stunning Curl",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunder Cage",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

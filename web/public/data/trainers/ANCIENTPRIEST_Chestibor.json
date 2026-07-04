@@ -1,0 +1,139 @@
+{
+    "label": "ANCIENTPRIEST:Chestibor",
+    "title": "Ancient Priest Chestibor",
+    "trainerType": "ANCIENTPRIEST",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GOLEM",
+            "speciesDisplay": "Golem",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "RINDOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Grind Stone",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "ZOROARK",
+            "speciesDisplay": "Zoroark",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DRAPION",
+            "speciesDisplay": "Drapion",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Honorless Sting",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Agonize",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "SUDOWOODO",
+            "speciesDisplay": "Sudowoodo",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "FIGHTINGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Shattered Light",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Erode",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

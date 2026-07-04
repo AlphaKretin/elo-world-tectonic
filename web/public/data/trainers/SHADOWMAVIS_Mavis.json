@@ -1,0 +1,143 @@
+{
+    "label": "SHADOWMAVIS:Mavis",
+    "title": "Shadow Mavis #1",
+    "trainerType": "SHADOWMAVIS",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GARDEVOIR",
+            "speciesDisplay": "Gardevoir",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Tiredstars",
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dazzling Gleam",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "FROSMOTH",
+            "speciesDisplay": "Frosmoth",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Wellwishes",
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "ICEGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Thermal Drain",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "LUXRAY",
+            "speciesDisplay": "Luxray",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Stillheres",
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Photon Edge",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "BASCULEGION",
+            "speciesDisplay": "Basculegion",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Brokenribs",
+            "tribes": [
+                "LOYAL",
+                "SCRAPPER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Six Feet Under",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

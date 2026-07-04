@@ -1,0 +1,170 @@
+{
+    "label": "PILOT:Charlie",
+    "title": "Pilot Charlie",
+    "trainerType": "PILOT",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SKARMORY",
+            "speciesDisplay": "Skarmory",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Feather Ward",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Fragmentation",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "AZUMARILL",
+            "speciesDisplay": "Azumarill",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MANERGETIC",
+            "speciesDisplay": "Manergetic",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "ELECTRICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Capacity Burst",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Overheat",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "KROOKODILE",
+            "speciesDisplay": "Krookodile",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "DARKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Stare Down",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MINIOR",
+            "speciesDisplay": "Minior",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Accelerock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

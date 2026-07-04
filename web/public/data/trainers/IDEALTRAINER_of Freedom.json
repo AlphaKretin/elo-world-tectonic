@@ -1,0 +1,197 @@
+{
+    "label": "IDEALTRAINER:of Freedom",
+    "title": "Ideal Trainer of Freedom",
+    "trainerType": "IDEALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MNINETALES",
+            "speciesDisplay": "M. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Ghostly Tale",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "ABSOLUS",
+            "speciesDisplay": "Absolus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Stroke of Midnight",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Superstition",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Deep Breathing",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "EMOLGA",
+            "speciesDisplay": "Emolga",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Retreat",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "LEDIAN",
+            "speciesDisplay": "Ledian",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Carapace Crush",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Storm Throw",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Lunge",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "HZOROARK",
+            "speciesDisplay": "H. Zoroark",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Phantom Gate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Malefaction",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "GIGANTEON",
+            "speciesDisplay": "Giganteon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Tri Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Chaos Wheel",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

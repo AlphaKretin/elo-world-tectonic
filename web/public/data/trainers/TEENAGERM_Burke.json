@@ -1,0 +1,138 @@
+{
+    "label": "TEENAGERM:Burke",
+    "title": "Teenager Burke",
+    "trainerType": "TEENAGERM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LEAFEON",
+            "speciesDisplay": "Leafeon",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Poison Ivy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GSTUNFISK",
+            "speciesDisplay": "G. Stunfisk",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "GRIPCLAW"
+            ],
+            "moves": [
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MAROWAK",
+            "speciesDisplay": "Marowak",
+            "level": 59,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCRAPPER",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Submission",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bonemerang",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "SEVIPER",
+            "speciesDisplay": "Seviper",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Vipershock",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

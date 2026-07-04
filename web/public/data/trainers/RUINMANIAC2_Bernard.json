@@ -1,0 +1,139 @@
+{
+    "label": "RUINMANIAC2:Bernard",
+    "title": "Ruin Maniac Bernard",
+    "trainerType": "RUINMANIAC2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KLEAVOR",
+            "speciesDisplay": "Kleavor",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Stone Axe",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "DRAMPA",
+            "speciesDisplay": "Drampa",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Young Again",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Guttural Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SCARAPACE",
+            "speciesDisplay": "Scarapace",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "CHARIZARD",
+            "speciesDisplay": "Charizard",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Wildfire Melt",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Overheat",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

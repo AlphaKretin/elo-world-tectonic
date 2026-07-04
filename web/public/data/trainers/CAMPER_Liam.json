@@ -1,0 +1,103 @@
+{
+    "label": "CAMPER:Liam",
+    "title": "Camper Liam",
+    "trainerType": "CAMPER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HITMONCHAN",
+            "speciesDisplay": "Hitmonchan",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fire Punch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Thunder Punch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "ELECTIVIRE",
+            "speciesDisplay": "Electivire",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "LIECHIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "CACTURNE",
+            "speciesDisplay": "Cacturne",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Payback",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

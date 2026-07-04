@@ -1,0 +1,34 @@
+.format-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.format-picker-group {
+  display: inline-flex;
+  border-radius: 999px;
+  background: var(--surface-2);
+  padding: 4px;
+  gap: 2px;
+}
+
+.format-picker-group button {
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.format-picker-group button:hover {
+  color: var(--text-primary);
+}
+
+.format-picker-group button.active {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}

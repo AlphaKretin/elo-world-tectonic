@@ -1,0 +1,207 @@
+{
+    "label": "SCIENTIST_M3:Gunter",
+    "title": "Scientist Gunter",
+    "trainerType": "SCIENTIST_M3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HYDREIGON",
+            "speciesDisplay": "Hydreigon",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "TYRANNICAL",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Mass Destruction",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Triple Threat",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "BRELOOM",
+            "speciesDisplay": "Breloom",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Spore",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "CRUSTLE",
+            "speciesDisplay": "Crustle",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Shell Smash",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Carapace Crush",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "TYRANITAR",
+            "speciesDisplay": "Tyranitar",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "ALAKAZAM",
+            "speciesDisplay": "Alakazam",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Javelin",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Disarming Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "HITMONCHAN",
+            "speciesDisplay": "Hitmonchan",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "MUSCLEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thunder Punch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

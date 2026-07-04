@@ -1,0 +1,166 @@
+{
+    "label": "GENTLEMAN3:Oliver",
+    "title": "Gentleman Oliver",
+    "trainerType": "GENTLEMAN3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GRAPIDASH",
+            "speciesDisplay": "G. Rapidash",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "GWEEZING",
+            "speciesDisplay": "G. Weezing",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "OBSTAGOON",
+            "speciesDisplay": "Obstagoon",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Obstruct",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Throat Chop",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Chaos Wheel",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SIRFETCHD",
+            "speciesDisplay": "Sirfetch'd",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "ARTILLERY",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Art of War",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Sacred Sword",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "GSLOWKING",
+            "speciesDisplay": "G. Slowking",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "SCOURGE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Venoshock",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

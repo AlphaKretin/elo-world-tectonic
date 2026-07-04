@@ -1,0 +1,139 @@
+{
+    "label": "SAILOR:Dom",
+    "title": "Sailor Dom",
+    "trainerType": "SAILOR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CRAMORANT",
+            "speciesDisplay": "Cramorant",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "LOYAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Gulping Dive",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DUDUDUNSPARCE",
+            "speciesDisplay": "Dududunsparce",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "FORTUNE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Fleur Cannon",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Heaven's Eyes",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sandblasting",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "HARIYAMA",
+            "speciesDisplay": "Hariyama",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Smelling Salts",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Storm Throw",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "LICKILICKY",
+            "speciesDisplay": "Lickilicky",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "STAMPEDE",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Belly Drum",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thrash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Tongue Twister",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

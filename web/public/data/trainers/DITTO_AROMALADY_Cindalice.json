@@ -1,0 +1,104 @@
+{
+    "label": "DITTO_AROMALADY:Cindalice",
+    "title": "Aroma Lady Cindalice",
+    "trainerType": "DITTO_AROMALADY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LURANTIS",
+            "speciesDisplay": "Lurantis",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "PINPOINTROCK"
+            ],
+            "moves": [
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Autumn Blast",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Eclipse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "KLANG",
+            "speciesDisplay": "Klang",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Gyro Ball",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "VENOMOTH",
+            "speciesDisplay": "Venomoth",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Penumbra",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Allergy",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Occultation",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

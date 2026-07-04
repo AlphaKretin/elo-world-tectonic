@@ -1,0 +1,138 @@
+{
+    "label": "RUINMANIAC:Colby",
+    "title": "Ruin Maniac Colby",
+    "trainerType": "RUINMANIAC",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MUDSDALE",
+            "speciesDisplay": "Mudsdale",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SERENE",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stabilize",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "DEWGONG",
+            "speciesDisplay": "Dewgong",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "SKILLHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Supercool",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Frigid Flurry",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "WHIMSICOTT",
+            "speciesDisplay": "Whimsicott",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "RAPIDASH",
+            "speciesDisplay": "Rapidash",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "LOYAL",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "GROUNDGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Pounce",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

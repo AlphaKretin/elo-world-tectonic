@@ -1,0 +1,138 @@
+{
+    "label": "WORKER:Bryn",
+    "title": "Worker Bryn",
+    "trainerType": "WORKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "COALOSSAL",
+            "speciesDisplay": "Coalossal",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ANIMATED",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tar Shot",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "CORVIKNIGHT",
+            "speciesDisplay": "Corviknight",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "TACTICIAN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bar",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "GOLEM",
+            "speciesDisplay": "Golem",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Self-Destruct",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "CARBINK",
+            "speciesDisplay": "Carbink",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

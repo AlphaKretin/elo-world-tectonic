@@ -1,0 +1,138 @@
+{
+    "label": "CHEF:Gordon",
+    "title": "Chef Gordon",
+    "trainerType": "CHEF",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PYUKUMUKU",
+            "speciesDisplay": "Pyukumuku",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MAROMATISSE",
+            "speciesDisplay": "M. Aromatisse",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Infinite Force",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Floral Gramarye",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "LEAVANNY",
+            "speciesDisplay": "Leavanny",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "ASSASSIN",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Skewer",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "DRIFBLIM",
+            "speciesDisplay": "Drifblim",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Substitute",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

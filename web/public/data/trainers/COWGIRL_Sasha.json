@@ -1,0 +1,137 @@
+{
+    "label": "COWGIRL:Sasha",
+    "title": "Cowgirl Sasha",
+    "trainerType": "COWGIRL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "VIVILLON",
+            "speciesDisplay": "Vivillon",
+            "level": 39,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aurora Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Poison Ivy",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "SHELGON",
+            "speciesDisplay": "Shelgon",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Pursuit",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GENGAR",
+            "speciesDisplay": "Gengar",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "POISONGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Spectral Tongue",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "BLAZIKEN",
+            "speciesDisplay": "Blaziken",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

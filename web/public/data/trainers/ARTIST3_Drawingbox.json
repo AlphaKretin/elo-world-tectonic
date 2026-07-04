@@ -1,0 +1,195 @@
+{
+    "label": "ARTIST3:Drawingbox",
+    "title": "Developer Drawingbox",
+    "trainerType": "ARTIST3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ESPEON",
+            "speciesDisplay": "Espeon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "GOTHITELLE",
+            "speciesDisplay": "Gothitelle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Astral Shift",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Future Sight",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Core Collapse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "BEHEEYEM",
+            "speciesDisplay": "Beheeyem",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flechettes",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Switcheroo",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Doom Desire",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "ORBEETLE",
+            "speciesDisplay": "Orbeetle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Terror Swarm",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Mind Sap",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Memory Removal",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "HATTERENE",
+            "speciesDisplay": "Hatterene",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Censor",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Morningstar",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Emotional Deluge",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "MALAMAR",
+            "speciesDisplay": "Malamar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

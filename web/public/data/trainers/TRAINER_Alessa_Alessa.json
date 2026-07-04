@@ -1,0 +1,141 @@
+{
+    "label": "TRAINER_Alessa:Alessa",
+    "title": "Pok\u00e9mon Trainer Alessa #1",
+    "trainerType": "TRAINER_Alessa",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "COTTONEE",
+            "speciesDisplay": "Cottonee",
+            "level": 19,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "KEEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Mishap",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Cotton Spore",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "DWEBBLE",
+            "speciesDisplay": "Dwebble",
+            "level": 19,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Curl Up",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bug Bite",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Rock Tomb",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "WOOPER",
+            "speciesDisplay": "Wooper",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "RINDOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "VANILLISH",
+            "speciesDisplay": "Vanillish",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

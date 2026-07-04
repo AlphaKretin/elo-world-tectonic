@@ -1,0 +1,100 @@
+{
+    "label": "CAMPER:Christian",
+    "title": "Camper Christian",
+    "trainerType": "CAMPER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DUSCLOPS",
+            "speciesDisplay": "Dusclops",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "GLOOM",
+            "speciesDisplay": "Gloom",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Stink Cloud",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Mega Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Puffball",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "QUAGSIRE",
+            "speciesDisplay": "Quagsire",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pixie Punch",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Tail Slam",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

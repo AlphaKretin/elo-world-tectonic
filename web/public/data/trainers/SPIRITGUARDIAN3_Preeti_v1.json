@@ -1,0 +1,216 @@
+{
+    "label": "SPIRITGUARDIAN3:Preeti#1",
+    "title": "Spirit Guardian Preeti",
+    "trainerType": "SPIRITGUARDIAN3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [
+        {
+            "tribeId": "FORTUNE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Fortune"
+        }
+    ],
+    "party": [
+        {
+            "species": "GOTHITELLE",
+            "speciesDisplay": "Gothitelle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "MIRROREDROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Moonglow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "RUBARIOR",
+            "speciesDisplay": "Rubarior",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "TOGEKISS",
+            "speciesDisplay": "Togekiss",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "SALACBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Ancient Power",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "HONCHKROW",
+            "speciesDisplay": "Honchkrow",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "WARRIOR",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Finalize",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MNINETALES",
+            "speciesDisplay": "M. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "GOREBYSS",
+            "speciesDisplay": "Gorebyss",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "BIGROOT"
+            ],
+            "moves": [
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Cruel Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

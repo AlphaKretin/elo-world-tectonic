@@ -1,0 +1,175 @@
+{
+    "label": "LEADER_Zoe:Zo\u00e9#1",
+    "title": "Gym Leader Zo\u00e9 #2",
+    "trainerType": "LEADER_Zoe",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MTANGROWTH",
+            "speciesDisplay": "M. Tangrowth",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Stare Down",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Petrify",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MANTINE",
+            "speciesDisplay": "Mantine",
+            "level": 40,
+            "shiny": false,
+            "nickname": "1 Second",
+            "tribes": [
+                "CARETAKER",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "GLISCOR",
+            "speciesDisplay": "Gliscor",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "POWERHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "SUDOWOODO",
+            "speciesDisplay": "Sudowoodo",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Strength Sap",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "BASTIODON",
+            "speciesDisplay": "Bastiodon",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "STAMPEDE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Shielding Bash",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

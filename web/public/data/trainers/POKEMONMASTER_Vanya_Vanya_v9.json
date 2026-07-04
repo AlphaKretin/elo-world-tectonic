@@ -1,0 +1,194 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#9",
+    "title": "Pok\u00e9mon Master Vanya #9",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DEWGONG",
+            "speciesDisplay": "Dewgong",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Frigid Flurry",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Rising Tide",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "BOLTUND",
+            "speciesDisplay": "Boltund",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "INDUSTRIOUS",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "ARMALDO",
+            "speciesDisplay": "Armaldo",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "BLASFEMMIE",
+            "speciesDisplay": "Blasfemmie",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "FLOATZEL",
+            "speciesDisplay": "Floatzel",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Weaseling",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "HYMNUS",
+            "speciesDisplay": "Hymnus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Refresh",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

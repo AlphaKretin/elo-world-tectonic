@@ -1,0 +1,105 @@
+{
+    "label": "BLACKBELT3:Philip",
+    "title": "Black Belt Philip",
+    "trainerType": "BLACKBELT3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MIENFOO",
+            "speciesDisplay": "Mienfoo",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "WARRIOR",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Vacuum Wave",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Concuss",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Squall Dart",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "WHIRLIPEDE",
+            "speciesDisplay": "Whirlipede",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stunning Curl",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Poison Tail",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Steamroller",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Blunt Force",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "SNORUNT",
+            "speciesDisplay": "Snorunt",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Icicle Spear",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Aurora Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,196 @@
+{
+    "label": "LADY4:Pria",
+    "title": "Developer Pria",
+    "trainerType": "LADY4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DRAGONITE",
+            "speciesDisplay": "Dragonite",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tempest",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Outrage",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Ride",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "KLAWSAR",
+            "speciesDisplay": "Klawsar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Carapace Crush",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Eroding Foam",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "VESPIQUEN",
+            "speciesDisplay": "Vespiquen",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tempest",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Defend Order",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Heal Order",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Swarm Order",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "SCRAFTY",
+            "speciesDisplay": "Scrafty",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Quick Guard",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Focus Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Browbeat",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "PRIMARINA",
+            "speciesDisplay": "Primarina",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sparkling Aria",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "NIDOKING",
+            "speciesDisplay": "Nidoking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Backhand",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

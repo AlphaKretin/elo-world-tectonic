@@ -1,0 +1,141 @@
+{
+    "label": "WILDPACK:Muggy",
+    "title": "Wild Pack Muggy",
+    "trainerType": "WILDPACK",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "STUNFISK",
+            "speciesDisplay": "Stunfisk",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "DAMPROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Thunder",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Defibrillate",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "PELIPPER",
+            "speciesDisplay": "Pelipper",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "WACANBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "PINCURCHIN",
+            "speciesDisplay": "Pincurchin",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Spiky Shield",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "LUDICOLO",
+            "speciesDisplay": "Ludicolo",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "KEBIABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Symbiosis",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

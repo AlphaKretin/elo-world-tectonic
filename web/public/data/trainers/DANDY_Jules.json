@@ -1,0 +1,139 @@
+{
+    "label": "DANDY:Jules",
+    "title": "Dandy Jules",
+    "trainerType": "DANDY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "NINETALES",
+            "speciesDisplay": "Ninetales",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "NOBLE",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Disable",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "TROPIUS",
+            "speciesDisplay": "Tropius",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "SITRUSBERRY",
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "GARCHOMP",
+            "speciesDisplay": "Garchomp",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Devour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "EELEKTROSS",
+            "speciesDisplay": "Eelektross",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Coil",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Toxic Taste",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

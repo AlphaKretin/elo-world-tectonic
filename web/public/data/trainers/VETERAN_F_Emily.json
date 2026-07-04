@@ -1,0 +1,138 @@
+{
+    "label": "VETERAN_F:Emily",
+    "title": "Veteran Emily",
+    "trainerType": "VETERAN_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HSAMUROTT",
+            "speciesDisplay": "H. Samurott",
+            "level": 62,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Ceaseless Edge",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Razor Shell",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Low Sweep",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "MUDSDALE",
+            "speciesDisplay": "Mudsdale",
+            "level": 62,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SERENE",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stabilize",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "CHIMECHO",
+            "speciesDisplay": "Chimecho",
+            "level": 63,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Reverb Ward",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Psycho Boost",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "CHATOT",
+            "speciesDisplay": "Chatot",
+            "level": 62,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Chatter",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

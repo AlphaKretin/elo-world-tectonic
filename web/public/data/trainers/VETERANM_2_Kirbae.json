@@ -1,0 +1,209 @@
+{
+    "label": "VETERANM_2:Kirbae",
+    "title": "Developer Kirbae",
+    "trainerType": "VETERANM_2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MISMAGIUS",
+            "speciesDisplay": "Mismagius",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Banshee",
+            "tribes": [
+                "FORTUNE",
+                "HARMONIC",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Spiteful Chant",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "EXPLOUD",
+            "speciesDisplay": "Exploud",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Dr. Dre",
+            "tribes": [
+                "HARMONIC",
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Boomburst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Eerie Spell",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "TREVENANT",
+            "speciesDisplay": "Trevenant",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Abaddon",
+            "tribes": [
+                "CARETAKER",
+                "DECEIVER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "TOWERPODA",
+            "speciesDisplay": "Towerpoda",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Big Boss",
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "POWERLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Mirror Shield",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "DONSTER",
+            "speciesDisplay": "Donster",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Luna",
+            "tribes": [
+                "SCOURGE",
+                "SCAVENGER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Trash Treasure",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "HYDREIGON",
+            "speciesDisplay": "Hydreigon",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Medusa",
+            "tribes": [
+                "SCOURGE",
+                "TYRANNICAL",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "CHOPLEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Triple Threat",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

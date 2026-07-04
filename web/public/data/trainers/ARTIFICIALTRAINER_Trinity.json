@@ -1,0 +1,192 @@
+{
+    "label": "ARTIFICIALTRAINER:Trinity",
+    "title": "Artificial Trainer Trinity",
+    "trainerType": "ARTIFICIALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "WAILORD",
+            "speciesDisplay": "Wailord",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Noble Roar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whale Song",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Amnesia",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "AEGISLASH",
+            "speciesDisplay": "Aegislash",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Substitute",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "King's Shield",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "RILLABOOM",
+            "speciesDisplay": "Rillaboom",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "BUSHWHACKER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Endure",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "OBSTAGOON",
+            "speciesDisplay": "Obstagoon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Assurance",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DELIBIRD",
+            "speciesDisplay": "Delibird",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Package",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "STONJOURNER",
+            "speciesDisplay": "Stonjourner",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

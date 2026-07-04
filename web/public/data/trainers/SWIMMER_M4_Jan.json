@@ -1,0 +1,137 @@
+{
+    "label": "SWIMMER_M4:Jan",
+    "title": "Swimmer Jan",
+    "trainerType": "SWIMMER_M4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MSEAKING",
+            "speciesDisplay": "M. Seaking",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Supersonic",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "BEHEEYEM",
+            "speciesDisplay": "Beheeyem",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Occultation",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "SPINDA",
+            "speciesDisplay": "Spinda",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Teeter Dance",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pacify",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dizzy Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "ANNIHILAPE",
+            "speciesDisplay": "Annihilape",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "STAMPEDE",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Wailing Blow",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

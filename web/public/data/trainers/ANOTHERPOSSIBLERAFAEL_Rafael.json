@@ -1,0 +1,200 @@
+{
+    "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
+    "title": "Another Possible Rafael",
+    "trainerType": "ANOTHERPOSSIBLERAFAEL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DIANCIE",
+            "speciesDisplay": "Diancie",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Gemforged Oath",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Diamond Storm",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "CALYREX",
+            "speciesDisplay": "Calyrex",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "TACTICIAN",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Psycho Boost",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Astral Barrage",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Lumin Burst",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "DEOXYS",
+            "speciesDisplay": "Deoxys",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [],
+            "heldItems": [
+                "CRYSTALVEIL"
+            ],
+            "moves": [
+                {
+                    "name": "Psycho Boost",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "YVELTAL",
+            "speciesDisplay": "Yveltal",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Oblivion Wing",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Iceberg Bash",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Mass Destruction",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GROUDON",
+            "speciesDisplay": "Groudon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "REDORB"
+            ],
+            "moves": [
+                {
+                    "name": "Precipice Blades",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Fire Blast",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Stone Edge",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "RAYQUAZA",
+            "speciesDisplay": "Rayquaza",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Carnage",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Atmospheric Burst",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Overheat",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

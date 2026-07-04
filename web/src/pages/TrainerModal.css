@@ -1,0 +1,41 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 10, 20, 0.65);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-loading {
+  color: var(--text-primary);
+  background: var(--surface-1);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+}
+
+.download-button {
+  margin-top: 1rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.download-button:hover {
+  background: var(--surface-2);
+}

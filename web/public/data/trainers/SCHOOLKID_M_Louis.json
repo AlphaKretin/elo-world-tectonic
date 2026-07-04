@@ -1,0 +1,132 @@
+{
+    "label": "SCHOOLKID_M:Louis",
+    "title": "School Kid Louis",
+    "trainerType": "SCHOOLKID_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DUCKLETT",
+            "speciesDisplay": "Ducklett",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Tide Pull",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Pluck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Mishap",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "ELECTRIKE",
+            "speciesDisplay": "Electrike",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ember",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Shock Wave",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "STUFFUL",
+            "speciesDisplay": "Stufful",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "CARETAKER",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Baby-Doll Eyes",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Endure",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pummel",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Force Palm",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "FERROSEED",
+            "speciesDisplay": "Ferroseed",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Flash Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

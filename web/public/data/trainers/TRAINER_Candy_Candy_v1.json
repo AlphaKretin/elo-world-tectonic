@@ -1,0 +1,201 @@
+{
+    "label": "TRAINER_Candy:Candy#1",
+    "title": "Pok\u00e9mon Trainer Candy #2",
+    "trainerType": "TRAINER_Candy",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GALLADE",
+            "speciesDisplay": "Gallade",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Jeanne",
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "STARAPTOR",
+            "speciesDisplay": "Staraptor",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Robin",
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Submission",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "KINGAMBIT",
+            "speciesDisplay": "Kingambit",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Jirokichi",
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "GRAPIDASH",
+            "speciesDisplay": "G. Rapidash",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Vashti",
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Infinite Force",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "ARCANINE",
+            "speciesDisplay": "Arcanine",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Enkidu",
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Blazing Speed",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Outrage",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GOLURK",
+            "speciesDisplay": "Golurk",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Prometheus",
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Inferno",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Mud Slide",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Sunder Fate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

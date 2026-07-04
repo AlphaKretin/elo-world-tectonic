@@ -1,0 +1,142 @@
+{
+    "label": "WILDPACK:Cosmic",
+    "title": "Wild Pack Cosmic",
+    "trainerType": "WILDPACK",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "XATU",
+            "speciesDisplay": "Xatu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "PINPOINTROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "HAXORUS",
+            "speciesDisplay": "Haxorus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LUMBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Axe to Grind",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Calamitous Slash",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Deep Breathing",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "STARMIE",
+            "speciesDisplay": "Starmie",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Heliopause",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Thunder",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "DRAMPA",
+            "speciesDisplay": "Drampa",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Energy",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Young Again",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heliopause",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

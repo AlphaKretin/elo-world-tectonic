@@ -1,0 +1,207 @@
+{
+    "label": "ODDISH:Oddium",
+    "title": "Developer Oddium",
+    "trainerType": "ODDISH",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FLAPPLE",
+            "speciesDisplay": "Flapple",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Combo",
+            "tribes": [
+                "DECEIVER",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "TECHNIQUEBOOSTER"
+            ],
+            "moves": [
+                {
+                    "name": "Classical Physics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Gunk Shot",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Heliopause",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "TITANIX",
+            "speciesDisplay": "Titanix",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Wombo",
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Fragmentation",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SHIFTRY",
+            "speciesDisplay": "Shiftry",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Tree",
+            "tribes": [
+                "SCOURGE",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "CHOICESPECS"
+            ],
+            "moves": [
+                {
+                    "name": "Tempest",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Leaf Storm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Mass Destruction",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "CURSOLA",
+            "speciesDisplay": "Cursola",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Well",
+            "tribes": [
+                "SCOURGE",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Rockapult",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Spiteful Chant",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Strength Sap",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MSWAMPERT",
+            "speciesDisplay": "M. Swampert",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Noodle",
+            "tribes": [
+                "SERENE",
+                "CHARMER",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Echolocate",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Dragon Energy",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "MSCEPTILE",
+            "speciesDisplay": "M. Sceptile",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Skeptile",
+            "tribes": [
+                "TACTICIAN",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Featherlock Volley",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Rail Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Omniscient Blow",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

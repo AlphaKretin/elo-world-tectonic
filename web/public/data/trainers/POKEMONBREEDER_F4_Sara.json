@@ -1,0 +1,75 @@
+{
+    "label": "POKEMONBREEDER_F4:Sara",
+    "title": "Pok\u00e9mon Breeder Sara",
+    "trainerType": "POKEMONBREEDER_F4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SANDSLASH",
+            "speciesDisplay": "Sandslash",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "ASSASSIN",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "GOODRA",
+            "speciesDisplay": "Goodra",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Slimeball",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dragon Energy",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

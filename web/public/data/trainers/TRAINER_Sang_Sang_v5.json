@@ -1,0 +1,214 @@
+{
+    "label": "TRAINER_Sang:Sang#5",
+    "title": "Pok\u00e9mon Trainer Sang #2",
+    "trainerType": "TRAINER_Sang",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [
+        {
+            "tribeId": "HARMONIC",
+            "count": 5,
+            "threshold": 5,
+            "name": "Harmonic"
+        }
+    ],
+    "party": [
+        {
+            "species": "SENSIBELLE",
+            "speciesDisplay": "Sensibelle",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Heron Gem",
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "WATERBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heart Rhythm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MFURRET",
+            "speciesDisplay": "M. Furret",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Kite Mask",
+            "tribes": [
+                "HARMONIC",
+                "ESOTERIC",
+                "SERENE"
+            ],
+            "heldItems": [
+                "WEAKNESSPOLICY"
+            ],
+            "moves": [
+                {
+                    "name": "Hundred-Hand Clap",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Stertor",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Oneiromancy",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "DIGGERSBY",
+            "speciesDisplay": "Diggersby",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Eagle Rift",
+            "tribes": [
+                "INDUSTRIOUS",
+                "SERENE"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "TOXICROAK",
+            "speciesDisplay": "Toxicroak",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Rook Knife",
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Belch",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "EXPLOUD",
+            "speciesDisplay": "Exploud",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Egret Ash",
+            "tribes": [
+                "HARMONIC",
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Boomburst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SEISMITOAD",
+            "speciesDisplay": "Seismitoad",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Ibis Veil",
+            "tribes": [
+                "CARETAKER",
+                "SCRAPPER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

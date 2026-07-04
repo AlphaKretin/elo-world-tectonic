@@ -1,0 +1,195 @@
+{
+    "label": "MASKEDVILLAIN2:Teal#2",
+    "title": "Masked Villain Teal #1",
+    "trainerType": "MASKEDVILLAIN2",
+    "identities": [
+        {
+            "trainerType": "TRAINER_Alessa",
+            "realName": "Alessa"
+        }
+    ],
+    "trueNames": [
+        "Alessa"
+    ],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "REGICE",
+            "speciesDisplay": "Regice",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "FORRETRESS",
+            "speciesDisplay": "Forretress",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "RATTATA",
+            "speciesDisplay": "Rattata",
+            "level": 10,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Endeavor",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PORYGONZ",
+            "speciesDisplay": "Porygon-Z",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Critical Error",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Phantom Gate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "HAXORUS",
+            "speciesDisplay": "Haxorus",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "RILLABOOM",
+            "speciesDisplay": "Rillaboom",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "BUSHWHACKER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Kick Drum",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

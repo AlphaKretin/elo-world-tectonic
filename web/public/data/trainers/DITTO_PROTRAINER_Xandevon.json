@@ -1,0 +1,216 @@
+{
+    "label": "DITTO_PROTRAINER:Xandevon",
+    "title": "Pro Trainer Xandevon",
+    "trainerType": "DITTO_PROTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "DECEIVER",
+            "count": 6,
+            "threshold": 5,
+            "name": "Deceiver"
+        }
+    ],
+    "party": [
+        {
+            "species": "HZOROARK",
+            "speciesDisplay": "H. Zoroark",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Malefaction",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "ZOROARK",
+            "speciesDisplay": "Zoroark",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "SEVENLEAGUEBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "LINOONE",
+            "speciesDisplay": "Linoone",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "DECEIVER",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Covet",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "FLAPPLE",
+            "speciesDisplay": "Flapple",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WIDELENS"
+            ],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Classical Physics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "DRAGALGE",
+            "speciesDisplay": "Dragalge",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Acid Breach",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "ESCAVALIER",
+            "speciesDisplay": "Escavalier",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Agonize",
+                    "type": "BUG"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,205 @@
+{
+    "label": "POKEMONTRAINER_Vanya:Vanya#2",
+    "title": "Pok\u00e9mon Trainer Vanya #3",
+    "trainerType": "POKEMONTRAINER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TITANIX",
+            "speciesDisplay": "Titanix",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shard Surge",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "CRADILY",
+            "speciesDisplay": "Cradily",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Tera Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Rockapult",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "WEAVILE",
+            "speciesDisplay": "Weavile",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Supercool",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Censor",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Nightfelling",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Skewer",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "WHISCASH",
+            "speciesDisplay": "Whiscash",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "RINDOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Rip Tide",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TENTACRUEL",
+            "speciesDisplay": "Tentacruel",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hydro Pump",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Venomortar",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Tera Drain",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "CURSOLA",
+            "speciesDisplay": "Cursola",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Rockapult",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Strength Sap",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

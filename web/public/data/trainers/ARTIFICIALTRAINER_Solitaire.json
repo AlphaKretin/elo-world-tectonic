@@ -1,0 +1,175 @@
+{
+    "label": "ARTIFICIALTRAINER:Solitaire",
+    "title": "Artificial Trainer Solitaire",
+    "trainerType": "ARTIFICIALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "STOUTLAND",
+            "speciesDisplay": "Stoutland",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BLISSEY",
+            "speciesDisplay": "Blissey",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Eerie Impulse",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SHUCKLE",
+            "speciesDisplay": "Shuckle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Struggle Bug",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Power Split",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Guard Split",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "SHEDINJA",
+            "speciesDisplay": "Shedinja",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "ASSASSIN",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Possession",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Switcheroo",
+                    "type": "DARK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Endure",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PASSIMIAN",
+            "speciesDisplay": "Passimian",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Snatch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Quick Guard",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Skill Swap",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "DITTO",
+            "speciesDisplay": "Ditto",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Transform",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

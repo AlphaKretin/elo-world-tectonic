@@ -1,0 +1,139 @@
+{
+    "label": "GUITARIST3:Athena",
+    "title": "Guitarist Athena",
+    "trainerType": "GUITARIST3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MSEVIPER",
+            "speciesDisplay": "M. Seviper",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "RADIANT",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Lightning Slam",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "POLITOED",
+            "speciesDisplay": "Politoed",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "HARMONIC",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Stertor",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "KRICKETUNE",
+            "speciesDisplay": "Kricketune",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "THROATSPRAY"
+            ],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Eerie Spell",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "NIDOKING",
+            "speciesDisplay": "Nidoking",
+            "level": 59,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Lightning Slam",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

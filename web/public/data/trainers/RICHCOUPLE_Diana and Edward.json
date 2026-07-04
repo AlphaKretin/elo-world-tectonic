@@ -1,0 +1,134 @@
+{
+    "label": "RICHCOUPLE:Diana and Edward",
+    "title": "Rich Couple Diana and Edward",
+    "trainerType": "RICHCOUPLE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MEOWSTIC",
+            "speciesDisplay": "Meowstic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "BEWEAR",
+            "speciesDisplay": "Bewear",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "CARETAKER",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bear Hug",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "NIBELONG",
+            "speciesDisplay": "Nibelong",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Retaliate",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "AROMATISSE",
+            "speciesDisplay": "Aromatisse",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "CHOICESPECS",
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Mist Burst",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

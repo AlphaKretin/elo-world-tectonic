@@ -1,0 +1,106 @@
+{
+    "label": "POKEMONRANGER_F2:Amahle",
+    "title": "Pok\u00e9mon Ranger Amahle",
+    "trainerType": "POKEMONRANGER_F2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GROTLE",
+            "speciesDisplay": "Grotle",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "LAMPENT",
+            "speciesDisplay": "Lampent",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "DECEIVER",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Incinerate",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "EKANS",
+            "speciesDisplay": "Ekans",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dragon Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Feint Attack",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+    "label": "CHALLENGER_Vanya:Vanya#3",
+    "title": "Challenger Vanya #4",
+    "trainerType": "CHALLENGER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PYROAR",
+            "speciesDisplay": "Pyroar",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Vainglory Flames",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Noble Roar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Tease",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "ARBOK",
+            "speciesDisplay": "Arbok",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stinging Jealousy",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Incinerate",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dust Devil",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "BEAUTIFLY",
+            "speciesDisplay": "Beautifly",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCRAPPER",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Suck Blood",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Squall Dart",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "SNEASEL",
+            "speciesDisplay": "Sneasel",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Night Slash",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Frost Barb",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "WAILMER",
+            "speciesDisplay": "Wailmer",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Brine",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

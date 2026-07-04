@@ -1,0 +1,196 @@
+{
+    "label": "ROUGHNECK2:Jaggedthorn",
+    "title": "Developer Jaggedthorn",
+    "trainerType": "ROUGHNECK2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KLINKLANG",
+            "speciesDisplay": "Klinklang",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aim True",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shift Gear",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Gear Grind",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "FALINKS",
+            "speciesDisplay": "Falinks",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Rising Power",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "No Retreat",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "EXPLOUD",
+            "speciesDisplay": "Exploud",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Tri Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Boomburst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "RHYPERIOR",
+            "speciesDisplay": "Rhyperior",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "ARTILLERY",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Mud Slide",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Carapace Crush",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "YANMEGA",
+            "speciesDisplay": "Yanmega",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ASSASSIN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aim True",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Lumina Chain",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "DHELMISE",
+            "speciesDisplay": "Dhelmise",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Razing Vines",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Metal Sound",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Weigh Anchor",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

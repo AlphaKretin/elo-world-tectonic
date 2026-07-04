@@ -1,0 +1,170 @@
+{
+    "label": "KIMONOGIRL:Haera",
+    "title": "Kimono Girl Haera",
+    "trainerType": "KIMONOGIRL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ROSELIA",
+            "speciesDisplay": "Roselia",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Slash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stinging Jealousy",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "BRIONNE",
+            "speciesDisplay": "Brionne",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "THROATSPRAY"
+            ],
+            "moves": [
+                {
+                    "name": "Baleful Bop",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Echoed Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Prank",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BUTTERFREE",
+            "speciesDisplay": "Butterfree",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Squall Dart",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Silver Wind",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Sedating Dust",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "BOLDORE",
+            "speciesDisplay": "Boldore",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ESOTERIC",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Laser Beam",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Crystal Gleam",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Charge",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "POOCHYENA",
+            "speciesDisplay": "Poochyena",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "DARKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Assurance",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scary Face",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

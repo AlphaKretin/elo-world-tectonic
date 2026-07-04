@@ -1,0 +1,206 @@
+{
+    "label": "FORMERCHAMP_Praveen:Praveen",
+    "title": "Former Champion Praveen",
+    "trainerType": "FORMERCHAMP_Praveen",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "XATU",
+            "speciesDisplay": "Xatu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "PINPOINTROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "MGIGALITH",
+            "speciesDisplay": "M. Gigalith",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Failsafe",
+            "tribes": [
+                "ESOTERIC",
+                "ANIMATED",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Aberrant Mote",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Singing Stone",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Eclipse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "ARAICHU",
+            "speciesDisplay": "A. Raichu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [
+                "KEEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thunder Cage",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "AGOLEM",
+            "speciesDisplay": "A. Golem",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "CRADILY",
+            "speciesDisplay": "Cradily",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "UTILITYUMBRELLA"
+            ],
+            "moves": [
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DRACOZOLT",
+            "speciesDisplay": "Dracozolt",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Volt Seekers",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

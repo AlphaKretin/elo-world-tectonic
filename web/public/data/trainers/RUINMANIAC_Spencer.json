@@ -1,0 +1,102 @@
+{
+    "label": "RUINMANIAC:Spencer",
+    "title": "Ruin Maniac Spencer",
+    "trainerType": "RUINMANIAC",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BALTOY",
+            "speciesDisplay": "Baltoy",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Confide",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Mud Shot",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "BUIZEL",
+            "speciesDisplay": "Buizel",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wipeout",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dazzle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GROWLITHE",
+            "speciesDisplay": "Growlithe",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Fire Fang",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Growl",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

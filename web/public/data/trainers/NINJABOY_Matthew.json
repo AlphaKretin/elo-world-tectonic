@@ -1,0 +1,68 @@
+{
+    "label": "NINJABOY:Matthew",
+    "title": "Ninja Boy Matthew",
+    "trainerType": "NINJABOY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BONSLY",
+            "speciesDisplay": "Bonsly",
+            "level": 12,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sling Shot",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Valor Bolt",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Embrittle",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "NINCADA",
+            "speciesDisplay": "Nincada",
+            "level": 12,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Feed On",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Harden",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rumble",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Leafage",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

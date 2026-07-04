@@ -1,0 +1,169 @@
+{
+    "label": "LOST_RANGER_BLUE:Farid",
+    "title": "Pok\u00e9mon Ranger Farid",
+    "trainerType": "LOST_RANGER_BLUE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "INTELEON",
+            "speciesDisplay": "Inteleon",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "SCOPELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Disarming Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Deep Breathing",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "DARMANITAN",
+            "speciesDisplay": "Darmanitan",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psyche Switch",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "RIOJIN",
+            "speciesDisplay": "Riojin",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Steel Beam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "DONPHAN",
+            "speciesDisplay": "Donphan",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Carapace Crush",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "KOMALA",
+            "speciesDisplay": "Komala",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "GRASSGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Holly Charm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

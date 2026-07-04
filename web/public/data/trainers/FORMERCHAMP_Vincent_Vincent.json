@@ -1,0 +1,208 @@
+{
+    "label": "FORMERCHAMP_Vincent:Vincent",
+    "title": "Former Champion Vincent",
+    "trainerType": "FORMERCHAMP_Vincent",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "POLITOED",
+            "speciesDisplay": "Politoed",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Drawback",
+            "tribes": [
+                "ESOTERIC",
+                "HARMONIC",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "DAMPROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Mending Spring",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "SWAMPERT",
+            "speciesDisplay": "Swampert",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Typhoon",
+            "tribes": [
+                "SCRAPPER",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "RINDOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "THIEVUL",
+            "speciesDisplay": "Thievul",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Repentance",
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GYARADOS",
+            "speciesDisplay": "Gyarados",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Tiamat",
+            "tribes": [
+                "STAMPEDE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Devour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Power Whip",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Power Hammer",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "HYDREIGON",
+            "speciesDisplay": "Hydreigon",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Seraph",
+            "tribes": [
+                "SCOURGE",
+                "TYRANNICAL",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Triple Threat",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "GRENINJA",
+            "speciesDisplay": "Greninja",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Revenant",
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "PRISMATICPLATE"
+            ],
+            "moves": [
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "label": "COOLTRAINER_F:Reina",
+    "title": "Cooltrainer Reina",
+    "trainerType": "COOLTRAINER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AMBIPOM",
+            "speciesDisplay": "Ambipom",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "LOYAL",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Thieving Spree",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thief",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "HTYPHLOSION",
+            "speciesDisplay": "H. Typhlosion",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ARTILLERY",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Impurity Blaze",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "HSAMUROTT",
+            "speciesDisplay": "H. Samurott",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "WHETSTONE"
+            ],
+            "moves": [
+                {
+                    "name": "Razor Shell",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "HDECIDUEYE",
+            "speciesDisplay": "H. Decidueye",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Threefold Volley",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Javelin",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Disarming Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "label": "WILDPARTY_FINI:of Hope",
+    "title": "Wild Party of Hope",
+    "trainerType": "WILDPARTY_FINI",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "EELEKTROSS",
+            "speciesDisplay": "Eelektross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SHUCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Magnetic Coil",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "PRIMARINA",
+            "speciesDisplay": "Primarina",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "KEBIABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Water Spout",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "AMUK",
+            "speciesDisplay": "A. Muk",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Gunk Shot",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BARBARACLE",
+            "speciesDisplay": "Barbaracle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Shell Smash",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Accelerock",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

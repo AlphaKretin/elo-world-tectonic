@@ -1,0 +1,206 @@
+{
+    "label": "ANOTHERPOSSIBLEZAIN:Zain#1",
+    "title": "Another Possible Zain #2",
+    "trainerType": "ANOTHERPOSSIBLEZAIN",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LIEPARD",
+            "speciesDisplay": "Liepard",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "NOBLE",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "FERROTHORN",
+            "speciesDisplay": "Ferrothorn",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "BLAZIKEN",
+            "speciesDisplay": "Blaziken",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LUMBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "GIRATINA",
+            "speciesDisplay": "Giratina",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "TYRANNICAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "WEAKNESSPOLICY"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Force",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "HYMNUS",
+            "speciesDisplay": "Hymnus",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Khamsin",
+            "tribes": [
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "SERPERIOR",
+            "speciesDisplay": "Serperior",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "NOBLE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "YACHEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Autumn Blast",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Petrify",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

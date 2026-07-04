@@ -1,0 +1,138 @@
+{
+    "label": "BEAUTY6:Brenda",
+    "title": "Beauty Brenda",
+    "trainerType": "BEAUTY6",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HEATMOR",
+            "speciesDisplay": "Heatmor",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Weld",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Burn Up",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "BLASFEMMIE",
+            "speciesDisplay": "Blasfemmie",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Moonglow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "DONSTER",
+            "speciesDisplay": "Donster",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCAVENGER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Trash Treasure",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "HATTERENE",
+            "speciesDisplay": "Hatterene",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Morningstar",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

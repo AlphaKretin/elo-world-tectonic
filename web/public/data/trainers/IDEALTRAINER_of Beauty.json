@@ -1,0 +1,197 @@
+{
+    "label": "IDEALTRAINER:of Beauty",
+    "title": "Ideal Trainer of Beauty",
+    "trainerType": "IDEALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SYLVEON",
+            "speciesDisplay": "Sylveon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "TALONFLAME",
+            "speciesDisplay": "Talonflame",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "NOIVERN",
+            "speciesDisplay": "Noivern",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Guttural Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Sonic Shriek",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "HAWLUCHA",
+            "speciesDisplay": "Hawlucha",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "NOBLE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Shadow Boxing",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Pounce",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Flying Press",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "FLORGES",
+            "speciesDisplay": "Florges",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Petal Dance",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Tera Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Light of Ruin",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "AEGISLASH",
+            "speciesDisplay": "Aegislash",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Sacred Sword",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "King's Shield",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

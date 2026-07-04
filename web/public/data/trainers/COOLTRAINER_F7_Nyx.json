@@ -1,0 +1,216 @@
+{
+    "label": "COOLTRAINER_F7:Nyx",
+    "title": "Pro Trainer Nyx",
+    "trainerType": "COOLTRAINER_F7",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "FORTUNE",
+            "count": 6,
+            "threshold": 5,
+            "name": "Fortune"
+        }
+    ],
+    "party": [
+        {
+            "species": "ALOMOMOLA",
+            "speciesDisplay": "Alomomola",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "CHARMER",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "MIRROREDROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Infinite Force",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "LUNATONE",
+            "speciesDisplay": "Lunatone",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "HONCHKROW",
+            "speciesDisplay": "Honchkrow",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "WARRIOR",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Cavitation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "TOGEKISS",
+            "speciesDisplay": "Togekiss",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LUMBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Ancient Power",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Superstition",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "APERSIAN",
+            "speciesDisplay": "A. Persian",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "MENTALHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Moonglow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Night Chill",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "ADUGTRIO",
+            "speciesDisplay": "A. Dugtrio",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "UTILITYUMBRELLA"
+            ],
+            "moves": [
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Star Dance",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

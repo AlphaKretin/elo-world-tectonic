@@ -1,0 +1,219 @@
+{
+    "label": "HEXMANIAC:Errata",
+    "title": "Developer Errata",
+    "trainerType": "HEXMANIAC",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "BUSHWHACKER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Bushwhacker"
+        }
+    ],
+    "party": [
+        {
+            "species": "INTELEON",
+            "speciesDisplay": "Inteleon",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Glasses 2",
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CHOICESPECS"
+            ],
+            "moves": [
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "GOLURK",
+            "speciesDisplay": "Golurk",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Toys",
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WILDCARD"
+            ],
+            "moves": [
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Sunder Fate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Rocket Punch",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "HELECTRODE",
+            "speciesDisplay": "H. Electrode",
+            "level": 70,
+            "shiny": false,
+            "nickname": "NootinsApl",
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Chloroblast",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "FARFETCHD",
+            "speciesDisplay": "Farfetch'd",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Duck Soup",
+            "tribes": [
+                "FORTUNE",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "POWERLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Fury Swipes",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fury Pecks",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Extreme Speed",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "YANMEGA",
+            "speciesDisplay": "Yanmega",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Glasses 1",
+            "tribes": [
+                "SCOURGE",
+                "ASSASSIN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "CHOICESPECS"
+            ],
+            "moves": [
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Lumin Burst",
+                    "type": "BUG"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Scale Storm",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "FLAPPLE",
+            "speciesDisplay": "Flapple",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Nootin'",
+            "tribes": [
+                "DECEIVER",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "TECHNIQUEBOOSTER"
+            ],
+            "moves": [
+                {
+                    "name": "Classical Physics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

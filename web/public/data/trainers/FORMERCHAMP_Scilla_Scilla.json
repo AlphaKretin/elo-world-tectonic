@@ -1,0 +1,208 @@
+{
+    "label": "FORMERCHAMP_Scilla:Scilla",
+    "title": "Former Champion Scilla",
+    "trainerType": "FORMERCHAMP_Scilla",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AZUMARILL",
+            "speciesDisplay": "Azumarill",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "POWERLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GALLADE",
+            "speciesDisplay": "Gallade",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sacred Sword",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Infinite Force",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "KOMMOO",
+            "speciesDisplay": "Kommo-o",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "NOBLE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "STRESSBALL"
+            ],
+            "moves": [
+                {
+                    "name": "Clangorous Soul",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "MAROMATISSE",
+            "speciesDisplay": "M. Aromatisse",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Aromatherapy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Floral Gramarye",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "FLOATZEL",
+            "speciesDisplay": "Floatzel",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "ENERGYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Giga Impact",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Weaseling",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "URSHIFU",
+            "speciesDisplay": "Urshifu",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Whitewater",
+            "tribes": [
+                "SCRAPPER",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Surging Strikes",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,204 @@
+{
+    "label": "LEADER_Eko:Eko#1",
+    "title": "Gym Leader Eko #1",
+    "trainerType": "LEADER_Eko",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SALANDIT",
+            "speciesDisplay": "Salandit",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Broil",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "FLETCHINDER",
+            "speciesDisplay": "Fletchinder",
+            "level": 20,
+            "shiny": false,
+            "nickname": "Dario",
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "CHARTIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Double Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "TENTACOOL",
+            "speciesDisplay": "Tentacool",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Clamp",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Infestation",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TYNAMO",
+            "speciesDisplay": "Tynamo",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thunder Fang",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Poison Fang",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Hydro Fang",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "MMANTYKE",
+            "speciesDisplay": "M. Mantyke",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "CHARMER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Fang",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Poison Tail",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Bullet Charge",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "CAMERUPT",
+            "speciesDisplay": "Camerupt",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "PASSHOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Incinerate",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Mud Shot",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

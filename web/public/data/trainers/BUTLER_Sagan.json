@@ -1,0 +1,135 @@
+{
+    "label": "BUTLER:Sagan",
+    "title": "Butler Sagan",
+    "trainerType": "BUTLER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MMUSHARNA",
+            "speciesDisplay": "M. Musharna",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "CHESTOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "PORYGONZ",
+            "speciesDisplay": "Porygon-Z",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tri Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "INCINEROAR",
+            "speciesDisplay": "Incineroar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "DECEIVER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Submission",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "MUDSDALE",
+            "speciesDisplay": "Mudsdale",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SERENE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Stabilize",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

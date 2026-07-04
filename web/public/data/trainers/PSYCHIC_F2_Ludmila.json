@@ -1,0 +1,105 @@
+{
+    "label": "PSYCHIC_F2:Ludmila",
+    "title": "Psychic Ludmila",
+    "trainerType": "PSYCHIC_F2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MIMEJR",
+            "speciesDisplay": "Mime Jr.",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mage Hand",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Pixie Punch",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GOLBAT",
+            "speciesDisplay": "Golbat",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Supersonic",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Toxic Taste",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Suck Blood",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "RATTATA",
+            "speciesDisplay": "Rattata",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Headbutt",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Poison Fang",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Scary Face",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

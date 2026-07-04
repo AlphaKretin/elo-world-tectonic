@@ -1,0 +1,106 @@
+{
+    "label": "TEENAGERM:Jonas",
+    "title": "Teenager Jonas",
+    "trainerType": "TEENAGERM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SKIDDO",
+            "speciesDisplay": "Skiddo",
+            "level": 19,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "INDUSTRIOUS",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mega Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Hop",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Valor Bolt",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "ARON",
+            "speciesDisplay": "Aron",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "STAMPEDE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Harden",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "AXEW",
+            "speciesDisplay": "Axew",
+            "level": 19,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Shred",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rock Throw",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Sharpen",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

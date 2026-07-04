@@ -1,0 +1,194 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#16",
+    "title": "Pok\u00e9mon Master Vanya #16",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PELIPPER",
+            "speciesDisplay": "Pelipper",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Geyser",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "GLISCOR",
+            "speciesDisplay": "Gliscor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Retreating Sting",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "TROPIUS",
+            "speciesDisplay": "Tropius",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Tera Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Evernalize",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SAURENAID",
+            "speciesDisplay": "Saurenaid",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Galling Spit",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Frost Breath",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "DELIBIRD",
+            "speciesDisplay": "Delibird",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Frost Spikes",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Package",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "AMOONGUSS",
+            "speciesDisplay": "Amoonguss",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Acid Bath",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Spore",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

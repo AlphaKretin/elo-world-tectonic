@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "Power Clear Bold";
+  src: url("/assets/fonts/power-clear-bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Card";
+  src: url("/assets/fonts/NotoSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+.trainer-card {
+  --card-bg-top: #1c2a4a;
+  --card-bg-bottom: #0c1224;
+  --card-panel: rgba(222, 228, 240, 0.92);
+  --card-text: #14182e;
+  --card-dim: #78829a;
+  --card-cell: rgba(222, 228, 240, 0.86);
+  --card-win: #46aa5a;
+  --card-draw: #e1b928;
+  --card-loss: #c33c32;
+
+  background: linear-gradient(to bottom, var(--card-bg-top), var(--card-bg-bottom));
+  border-radius: 20px;
+  padding: 1.25rem;
+  font-family: "Noto Sans Card", system-ui, sans-serif;
+  color: var(--card-text);
+  max-width: 1280px;
+}
+
+.card-header {
+  position: relative;
+  background: var(--card-panel);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+}
+
+.tier-badge {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.curse-badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 34px;
+  height: 34px;
+}
+
+.header-body {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.portrait-wrap {
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.portrait-sprite,
+.identity-sprite {
+  position: absolute;
+  top: 50%;
+}
+
+.portrait-sprite {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.identity-sprite {
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  font-family: "Power Clear Bold", "Noto Sans Card", sans-serif;
+  font-size: 1.85rem;
+  margin: 0 0 0.4rem;
+  color: var(--card-text);
+  line-height: 1.15;
+}
+
+.rank-line {
+  color: var(--card-dim);
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+}
+
+.record-line {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.wld-bar {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+  background: var(--card-dim);
+}
+
+.wld-segment.wld-win {
+  background: var(--card-win);
+}
+.wld-segment.wld-draw {
+  background: var(--card-draw);
+}
+.wld-segment.wld-loss {
+  background: var(--card-loss);
+}
+
+.card-line {
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.card-line.dim {
+  color: var(--card-dim);
+}
+
+.card-line .seed {
+  color: #46506a;
+  font-size: 0.95rem;
+  margin-left: 0.25rem;
+}
+
+.inline-badge {
+  width: 22px;
+  height: 22px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.party-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .party-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.party-cell {
+  background: var(--card-cell);
+  border-radius: 14px;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cell-label {
+  margin: 0;
+  font-size: 1.05rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cell-nickname {
+  margin: 0;
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--card-dim);
+}
+
+.cell-sprite-wrap {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  margin: 0.3rem 0;
+}
+
+.cell-sprite {
+  image-rendering: pixelated;
+  max-width: none;
+}
+
+.held-items {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.held-item-icon {
+  image-rendering: pixelated;
+  transform-origin: bottom right;
+}
+
+.move-grid {
+  display: grid;
+  gap: 0.3rem;
+  width: 100%;
+}
+
+.move-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.move-grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.move-capsule {
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  height: 34px;
+  overflow: hidden;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.move-capsule-icon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move-capsule-icon img {
+  width: 70%;
+  height: 70%;
+}
+
+.move-capsule-name {
+  padding: 0 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}

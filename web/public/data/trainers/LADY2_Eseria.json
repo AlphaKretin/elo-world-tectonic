@@ -1,0 +1,207 @@
+{
+    "label": "LADY2:Eseria",
+    "title": "Developer Eseria",
+    "trainerType": "LADY2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "RUBARIOR",
+            "speciesDisplay": "Rubarior",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Stasis",
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "SIMISAGE",
+            "speciesDisplay": "Simisage",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Overgrowth",
+            "tribes": [
+                "SCAVENGER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "ENERGYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Frenzy Plant",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Hyper Beam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MJELLICENT",
+            "speciesDisplay": "M. Jellicent",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Despair",
+            "tribes": [
+                "INDUSTRIOUS",
+                "NOBLE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "POWERLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Bad Ending",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Lightning Slam",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "MANIKLAW",
+            "speciesDisplay": "Maniklaw",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Entropy",
+            "tribes": [
+                "SCOURGE",
+                "ANIMATED",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Six Feet Under",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Horizon Slice",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SKUNTANK",
+            "speciesDisplay": "Skuntank",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "GDARMANITAN",
+            "speciesDisplay": "G. Darmanitan",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Violence",
+            "tribes": [
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

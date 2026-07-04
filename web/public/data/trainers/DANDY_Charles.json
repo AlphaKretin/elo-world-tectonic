@@ -1,0 +1,102 @@
+{
+    "label": "DANDY:Charles",
+    "title": "Dandy Charles",
+    "trainerType": "DANDY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "COMFEY",
+            "speciesDisplay": "Comfey",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "CARETAKER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Growth",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "EELEKTRIK",
+            "speciesDisplay": "Eelektrik",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "BIGROOT"
+            ],
+            "moves": [
+                {
+                    "name": "Thunder Fang",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Toxic Taste",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "BEAUTIFLY",
+            "speciesDisplay": "Beautifly",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCRAPPER",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Suck Blood",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

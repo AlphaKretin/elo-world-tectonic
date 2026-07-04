@@ -1,0 +1,138 @@
+{
+    "label": "DRAGONTAMER:Bataar",
+    "title": "Dragon Tamer Bataar",
+    "trainerType": "DRAGONTAMER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "XATU",
+            "speciesDisplay": "Xatu",
+            "level": 59,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "PINPOINTROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "SALAMENCE",
+            "speciesDisplay": "Salamence",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wingspan Eclipse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Calamitous Slash",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "GRUMPIG",
+            "speciesDisplay": "Grumpig",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fling",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Zen Headbutt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Rhythmic Ritual",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "DRAMPA",
+            "speciesDisplay": "Drampa",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Young Again",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Occultation",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

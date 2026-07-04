@@ -1,0 +1,105 @@
+{
+    "label": "WORKER6:Paul",
+    "title": "Worker Paul",
+    "trainerType": "WORKER6",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KLINKLANG",
+            "speciesDisplay": "Klinklang",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shift Gear",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Gear Grind",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "REAVOR",
+            "speciesDisplay": "Reavor",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Stinging Jab",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "SHIINOTIC",
+            "speciesDisplay": "Shiinotic",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ESOTERIC",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Puffball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Strength Sap",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

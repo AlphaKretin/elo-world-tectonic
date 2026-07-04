@@ -1,0 +1,207 @@
+{
+    "label": "NIGHTMAREQUEEN_Elise:Elise",
+    "title": "Nightmare Queen Elise",
+    "trainerType": "NIGHTMAREQUEEN_Elise",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MNOCTOWL",
+            "speciesDisplay": "M. Noctowl",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hail",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "INCINEROAR",
+            "speciesDisplay": "Incineroar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "DECEIVER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "KYUREM",
+            "speciesDisplay": "Kyurem",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "CHOICESPECS"
+            ],
+            "moves": [
+                {
+                    "name": "Cleansing Flames",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "ZOROARK",
+            "speciesDisplay": "Zoroark",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "CRYSTALVEIL"
+            ],
+            "moves": [
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MANIKLAW",
+            "speciesDisplay": "Maniklaw",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ANIMATED",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "SNEASLER",
+            "speciesDisplay": "Sneasler",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

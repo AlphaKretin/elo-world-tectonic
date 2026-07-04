@@ -1,0 +1,143 @@
+{
+    "label": "WILDPARTY_KOKO:of Conflict",
+    "title": "Wild Party of Conflict",
+    "trainerType": "WILDPARTY_KOKO",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "INCINEROAR",
+            "speciesDisplay": "Incineroar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "DECEIVER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Darkest Lariat",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "AGOLEM",
+            "speciesDisplay": "A. Golem",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "SKILLHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Monolith Drop",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PURUGLY",
+            "speciesDisplay": "Purugly",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "CHOPLEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stare Down",
+                    "type": "DARK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "FEAROW",
+            "speciesDisplay": "Fearow",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "CHARTIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Jet Stream",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Feather Dance",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

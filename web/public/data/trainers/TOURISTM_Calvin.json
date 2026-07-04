@@ -1,0 +1,139 @@
+{
+    "label": "TOURISTM:Calvin",
+    "title": "Tourist Calvin",
+    "trainerType": "TOURISTM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SANDSLASH",
+            "speciesDisplay": "Sandslash",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "ASSASSIN",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shed Spines",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "KRICKETUNE",
+            "speciesDisplay": "Kricketune",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "CHOICESPECS"
+            ],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Eerie Spell",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Mass Destruction",
+                    "type": "DARK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "TSAREENA",
+            "speciesDisplay": "Tsareena",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "NOBLE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Trop Kick",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "TALONFLAME",
+            "speciesDisplay": "Talonflame",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

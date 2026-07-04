@@ -1,0 +1,197 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#10",
+    "title": "Pok\u00e9mon Master Vanya #10",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SYLVEON",
+            "speciesDisplay": "Sylveon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "LUXRAY",
+            "speciesDisplay": "Luxray",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Photon Edge",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "INFERNAPE",
+            "speciesDisplay": "Infernape",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "WARRIOR",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Storm Throw",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Torment",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "GRENINJA",
+            "speciesDisplay": "Greninja",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Substitute",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Water Shuriken",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "WORNET",
+            "speciesDisplay": "Wornet",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Agonize",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Skewer",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Manyneedle",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "TORTERRA",
+            "speciesDisplay": "Torterra",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

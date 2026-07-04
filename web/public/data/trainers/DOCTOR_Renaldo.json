@@ -1,0 +1,138 @@
+{
+    "label": "DOCTOR:Renaldo",
+    "title": "Doctor Renaldo",
+    "trainerType": "DOCTOR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MAROMATISSE",
+            "speciesDisplay": "M. Aromatisse",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "WIDELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Morningstar",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Perish Song",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Power Whip",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "GRAPPLOCT",
+            "speciesDisplay": "Grapploct",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Octolock",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dive",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "DUGTRIO",
+            "speciesDisplay": "Dugtrio",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "INDUSTRIOUS",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crushing Chasm",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Rotary Headbutt",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Propellant",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "TENTACRUEL",
+            "speciesDisplay": "Tentacruel",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "GRIPCLAW"
+            ],
+            "moves": [
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Terror Swarm",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

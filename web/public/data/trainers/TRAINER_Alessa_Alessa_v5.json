@@ -1,0 +1,189 @@
+{
+    "label": "TRAINER_Alessa:Alessa#5",
+    "title": "Pok\u00e9mon Trainer Alessa #4",
+    "trainerType": "TRAINER_Alessa",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FORRETRESS",
+            "speciesDisplay": "Forretress",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "RATTATA",
+            "speciesDisplay": "Rattata",
+            "level": 10,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Endeavor",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PORYGONZ",
+            "speciesDisplay": "Porygon-Z",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Critical Error",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Phantom Gate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "HAXORUS",
+            "speciesDisplay": "Haxorus",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "RILLABOOM",
+            "speciesDisplay": "Rillaboom",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "BUSHWHACKER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Kick Drum",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DIGNIPHITE",
+            "speciesDisplay": "Digniphite",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

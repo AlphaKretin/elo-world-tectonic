@@ -1,0 +1,105 @@
+{
+    "label": "DITTO_CAMPER:Johnate",
+    "title": "Camper Johnate",
+    "trainerType": "DITTO_CAMPER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SPINDA",
+            "speciesDisplay": "Spinda",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dizzy Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pacify",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "TREVENANT",
+            "speciesDisplay": "Trevenant",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "DECEIVER",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "THROH",
+            "speciesDisplay": "Throh",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "INDUSTRIOUS",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

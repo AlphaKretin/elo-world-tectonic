@@ -1,0 +1,173 @@
+{
+    "label": "BAKER:Margerie",
+    "title": "Baker Margerie",
+    "trainerType": "BAKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ARCANINE",
+            "speciesDisplay": "Arcanine",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "BLASFEMMIE",
+            "speciesDisplay": "Blasfemmie",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Scam",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "HYPNO",
+            "speciesDisplay": "Hypno",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ICEGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Hundred-Hand Clap",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "STOUTLAND",
+            "speciesDisplay": "Stoutland",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "VESPIQUEN",
+            "speciesDisplay": "Vespiquen",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Swarm Order",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Defend Order",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Heal Order",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "label": "BAKER:Rose",
+    "title": "Baker Rose",
+    "trainerType": "BAKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "QUILAVA",
+            "speciesDisplay": "Quilava",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ominous Wind",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "SEEL",
+            "speciesDisplay": "Seel",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Light Show",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Brine",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

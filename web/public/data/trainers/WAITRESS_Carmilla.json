@@ -1,0 +1,133 @@
+{
+    "label": "WAITRESS:Carmilla",
+    "title": "Waitress Carmilla",
+    "trainerType": "WAITRESS",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DURANT",
+            "speciesDisplay": "Durant",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "WIDELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Tail Slam",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "HIPPOWDON",
+            "speciesDisplay": "Hippowdon",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fire Spin",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "AEXEGGUTOR",
+            "speciesDisplay": "A. Exeggutor",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "CHARMER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Kickstart",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Flash Seed",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "OCTILLERY",
+            "speciesDisplay": "Octillery",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "TACTICIAN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fireworks",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Bubble Barrage",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Hone Sight",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

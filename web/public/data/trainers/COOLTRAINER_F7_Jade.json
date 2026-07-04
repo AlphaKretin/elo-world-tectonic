@@ -1,0 +1,216 @@
+{
+    "label": "COOLTRAINER_F7:Jade",
+    "title": "Pro Trainer Jade",
+    "trainerType": "COOLTRAINER_F7",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "CHARMER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Charmer"
+        }
+    ],
+    "party": [
+        {
+            "species": "DRIZZILE",
+            "speciesDisplay": "Drizzile",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "SCOPELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Water Gun",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Exploit",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Pursuit",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "BAYLEEF",
+            "speciesDisplay": "Bayleef",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sapping Jealousy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MAWILE",
+            "speciesDisplay": "Mawile",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SALACBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Mishap",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Innocent Masque",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MGOLDEEN",
+            "speciesDisplay": "M. Goldeen",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Breaking Swipe",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MMILOTIC",
+            "speciesDisplay": "M. Milotic",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "WATERBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Arc of Hope",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stand Together",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "BRAIXEN",
+            "speciesDisplay": "Braixen",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "ESOTERIC",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Exploit",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shock Wave",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Broil",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

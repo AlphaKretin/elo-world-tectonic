@@ -1,0 +1,141 @@
+{
+    "label": "EXPERTF:Kimiko",
+    "title": "Expert Kimiko",
+    "trainerType": "EXPERTF",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "INFERNAPE",
+            "speciesDisplay": "Infernape",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "WARRIOR",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Secret Technique",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "FLOATZEL",
+            "speciesDisplay": "Floatzel",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Weaseling",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fury Swipes",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rock Blast",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Icicle Spear",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "LEAFEON",
+            "speciesDisplay": "Leafeon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "METAGROSS",
+            "speciesDisplay": "Metagross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "GRIPCLAW"
+            ],
+            "moves": [
+                {
+                    "name": "Censor",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Power-Up Punch",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

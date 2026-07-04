@@ -1,0 +1,208 @@
+{
+    "label": "TAPU_KOKO:Tapu Koko#1",
+    "title": "Guardian Deity Tapu Koko",
+    "trainerType": "TAPU_KOKO",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AMAROWAK",
+            "speciesDisplay": "A. Marowak",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCRAPPER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "PASSHOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Bone",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Lightning Slam",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "DODRIO",
+            "speciesDisplay": "Dodrio",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "STAMPEDE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "PERSIMBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "KOMMOO",
+            "speciesDisplay": "Kommo-o",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "NOBLE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Clangorous Soul",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "VIKAVOLT",
+            "speciesDisplay": "Vikavolt",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "INDUSTRIOUS",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CHARTIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Dielectric Breakdown",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Lumina Chain",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Psychic Overload",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Bio Flash",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "WOLFEROC",
+            "speciesDisplay": "Wolferoc",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "ROCKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Phantom Gate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Earthsplitter",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Lightning Slam",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "ARAICHU",
+            "speciesDisplay": "A. Raichu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [
+                "WATERGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

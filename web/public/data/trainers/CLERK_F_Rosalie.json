@@ -1,0 +1,106 @@
+{
+    "label": "CLERK_F:Rosalie",
+    "title": "Clerk Rosalie",
+    "trainerType": "CLERK_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DEDENNE",
+            "speciesDisplay": "Dedenne",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Parabolic Charge",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "RIOJIN",
+            "speciesDisplay": "Riojin",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Steel Beam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Vacuum Wave",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "CLEFABLE",
+            "speciesDisplay": "Clefable",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mist Burst",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Curl Up",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

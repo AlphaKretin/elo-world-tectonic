@@ -1,0 +1,73 @@
+{
+    "label": "CLERK_M2:Alejandro",
+    "title": "Clerk Alejandro",
+    "trainerType": "CLERK_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CLOYSTER",
+            "speciesDisplay": "Cloyster",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Spike Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Fury Pecks",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Icicle Spear",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Clamp",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "ZEBSTRIKA",
+            "speciesDisplay": "Zebstrika",
+            "level": 39,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Inertia Shock",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

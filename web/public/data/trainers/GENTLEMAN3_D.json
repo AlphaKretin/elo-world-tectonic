@@ -1,0 +1,189 @@
+{
+    "label": "GENTLEMAN3:D",
+    "title": "Developer D",
+    "trainerType": "GENTLEMAN3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SHUPPET",
+            "speciesDisplay": "Shuppet",
+            "level": 7,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ANIMATED",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Astonish",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Scratch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bare Teeth",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MIMIKYU",
+            "speciesDisplay": "Mimikyu",
+            "level": 5,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "CHARMER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Astonish",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Eager Tickling",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Ill Wishes",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "MNINETALES",
+            "speciesDisplay": "M. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Ghostly Tale",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "DELCATTY",
+            "speciesDisplay": "Delcatty",
+            "level": 70,
+            "shiny": true,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "NOBLE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Simple Beam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "ZORUA",
+            "speciesDisplay": "Zorua",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Grim Visions",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SHEDINJA",
+            "speciesDisplay": "Shedinja",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "ASSASSIN",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ghostly Tale",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Death Mark",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

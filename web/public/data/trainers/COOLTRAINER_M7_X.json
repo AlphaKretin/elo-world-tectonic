@@ -1,0 +1,203 @@
+{
+    "label": "COOLTRAINER_M7:X",
+    "title": "Pro Trainer X",
+    "trainerType": "COOLTRAINER_M7",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MRMIME",
+            "speciesDisplay": "Mr. Mime",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "DECEIVER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Teeter Dance",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SENSIBELLE",
+            "speciesDisplay": "Sensibelle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "INDEEDEE",
+            "speciesDisplay": "Indeedee",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Rising Power",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mystical Fire",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "PERSIAN",
+            "speciesDisplay": "Persian",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "NORMALGEM",
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Cha-ching",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "MIMIKYU",
+            "speciesDisplay": "Mimikyu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "CHARMER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Tantrum",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Wailing Blow",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "GARDEVOIR",
+            "speciesDisplay": "Gardevoir",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

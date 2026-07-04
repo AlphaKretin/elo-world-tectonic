@@ -1,0 +1,138 @@
+{
+    "label": "ARTIST2:Frank",
+    "title": "Artist Frank",
+    "trainerType": "ARTIST2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SALAZZLE",
+            "speciesDisplay": "Salazzle",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Hypothermiate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "CORVIKNIGHT",
+            "speciesDisplay": "Corviknight",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "TACTICIAN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "ABSOLUS",
+            "speciesDisplay": "Absolus",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Doom Desire",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Looming Winter",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Stroke of Midnight",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "BRELOOM",
+            "speciesDisplay": "Breloom",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Spore",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Bullet Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

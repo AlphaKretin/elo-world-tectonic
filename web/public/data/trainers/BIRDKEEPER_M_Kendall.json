@@ -1,0 +1,139 @@
+{
+    "label": "BIRDKEEPER_M:Kendall",
+    "title": "Bird Keeper Kendall",
+    "trainerType": "BIRDKEEPER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DODRIO",
+            "speciesDisplay": "Dodrio",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "STAMPEDE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Chaos Wheel",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GOLDUCK",
+            "speciesDisplay": "Golduck",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Psycho Shift",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "AGGRON",
+            "speciesDisplay": "Aggron",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "STAMPEDE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "GROUNDGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MIENSHAO",
+            "speciesDisplay": "Mienshao",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "WARRIOR",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Whip Trance",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Vacuum Wave",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

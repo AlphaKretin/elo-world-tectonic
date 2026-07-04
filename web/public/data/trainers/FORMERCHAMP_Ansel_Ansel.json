@@ -1,0 +1,207 @@
+{
+    "label": "FORMERCHAMP_Ansel:Ansel",
+    "title": "Former Champion Ansel",
+    "trainerType": "FORMERCHAMP_Ansel",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GALVANTULA",
+            "speciesDisplay": "Galvantula",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Dr. Silk",
+            "tribes": [
+                "BUSHWHACKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunder",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "CROBAT",
+            "speciesDisplay": "Crobat",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "EXPERTBELT"
+            ],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Exsanguinate",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Divining Talon",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "PAPELLUMEN",
+            "speciesDisplay": "Papellumen",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Sedating Dust",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "WORNET",
+            "speciesDisplay": "Wornet",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Manyneedle",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "SWALOT",
+            "speciesDisplay": "Swalot",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Stockpile",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Swallow",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Spit Up",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "BRAVIARY",
+            "speciesDisplay": "Braviary",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "PRISMATICPLATE"
+            ],
+            "moves": [
+                {
+                    "name": "Righteous Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

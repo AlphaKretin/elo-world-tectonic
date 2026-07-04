@@ -1,0 +1,106 @@
+{
+    "label": "POKEMONRANGER_M2:Connor",
+    "title": "Pok\u00e9mon Ranger Connor",
+    "trainerType": "POKEMONRANGER_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DRIFBLIM",
+            "speciesDisplay": "Drifblim",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "LOMBRE",
+            "speciesDisplay": "Lombre",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aqua Shock",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Autumn Blast",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Teeter Dance",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GYAMASK",
+            "speciesDisplay": "G. Yamask",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "FORTUNE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Blunt Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Block",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

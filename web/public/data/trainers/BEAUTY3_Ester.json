@@ -1,0 +1,138 @@
+{
+    "label": "BEAUTY3:Ester",
+    "title": "Beauty Ester",
+    "trainerType": "BEAUTY3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AMPHAROS",
+            "speciesDisplay": "Ampharos",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "HSAMUROTT",
+            "speciesDisplay": "H. Samurott",
+            "level": 43,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Ceaseless Edge",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Low Sweep",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "GRIPCLAW"
+            ],
+            "moves": [
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "DECIDUEYE",
+            "speciesDisplay": "Decidueye",
+            "level": 43,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Spirit Shackle",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

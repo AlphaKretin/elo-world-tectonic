@@ -1,0 +1,139 @@
+{
+    "label": "BEAUTY4:Brunhilda",
+    "title": "Beauty Brunhilda",
+    "trainerType": "BEAUTY4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MBEAUTIFLY",
+            "speciesDisplay": "M. Beautifly",
+            "level": 59,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "RADIANT",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Icy Injection",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "GOLDUCK",
+            "speciesDisplay": "Golduck",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "WYRDEER",
+            "speciesDisplay": "Wyrdeer",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "FORTUNE",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Psyshield Bash",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "MAGCARGO",
+            "speciesDisplay": "Magcargo",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Red-Hot Retreat",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shattered Light",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,170 @@
+{
+    "label": "SWIMMER_F2:Astrid",
+    "title": "Swimmer Astrid",
+    "trainerType": "SWIMMER_F2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "OVERQWIL",
+            "speciesDisplay": "Overqwil",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "GSLOWBRO",
+            "speciesDisplay": "G. Slowbro",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Psycho Boost",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Venoshock",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Shell Side Arm",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "HYMNUS",
+            "speciesDisplay": "Hymnus",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "ROSERADE",
+            "speciesDisplay": "Roserade",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Cruel Whipblade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DRAPION",
+            "speciesDisplay": "Drapion",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Honorless Sting",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

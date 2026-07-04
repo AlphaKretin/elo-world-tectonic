@@ -1,0 +1,213 @@
+{
+    "label": "COOLTRAINER_M7:Emir",
+    "title": "Pro Trainer Emir",
+    "trainerType": "COOLTRAINER_M7",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "TACTICIAN",
+            "count": 6,
+            "threshold": 5,
+            "name": "Tactician"
+        }
+    ],
+    "party": [
+        {
+            "species": "CROBAT",
+            "speciesDisplay": "Crobat",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "POISONGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Exsanguinate",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DURANT",
+            "speciesDisplay": "Durant",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "WIDELENS"
+            ],
+            "moves": [
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MIGHTYENA",
+            "speciesDisplay": "Mightyena",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Wet Work",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "WEAVILE",
+            "speciesDisplay": "Weavile",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "EELEKTROSS",
+            "speciesDisplay": "Eelektross",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Toxic Taste",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SIMIPOUR",
+            "speciesDisplay": "Simipour",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "TACTICIAN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

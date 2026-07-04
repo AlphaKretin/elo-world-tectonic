@@ -1,0 +1,171 @@
+{
+    "label": "VETERANM:Yoshihiro",
+    "title": "Veteran Yoshihiro",
+    "trainerType": "VETERANM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ARIADOS",
+            "speciesDisplay": "Ariados",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Toxic Thread",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "ATLACROSS",
+            "speciesDisplay": "Atlacross",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Arm Thrust",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Pin Missile",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Rock Blast",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "PORYGONMAV",
+            "speciesDisplay": "Porygon-MAV",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WHETSTONE"
+            ],
+            "moves": [
+                {
+                    "name": "Quarantine",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SKUNTANK",
+            "speciesDisplay": "Skuntank",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stink Cover",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "QUAGSIRE",
+            "speciesDisplay": "Quagsire",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "label": "NIGHTMARE_TRAINER:Agony",
+    "title": "Nightmare of Agony",
+    "trainerType": "NIGHTMARE_TRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DELCATTY",
+            "speciesDisplay": "Delcatty",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "NOBLE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Last Resort",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GLACEON",
+            "speciesDisplay": "Glaceon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "SKILLHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hypothermiate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "DRACOZOLT",
+            "speciesDisplay": "Dracozolt",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fleur Cannon",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Volt Seekers",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "label": "TRAINER_Skyler:Skyler",
+    "title": "Pok\u00e9mon Trainer Skyler",
+    "trainerType": "TRAINER_Skyler",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FLORGES",
+            "speciesDisplay": "Florges",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Petal Tempest",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "JIRACHI",
+            "speciesDisplay": "Jirachi",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "ABSOLUS",
+            "speciesDisplay": "Absolus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Infinite Force",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Fleur Cannon",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SIGILYPH",
+            "speciesDisplay": "Sigilyph",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Pulsar",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Wind Tunnel",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "PALMANTRA",
+            "speciesDisplay": "Palmantra",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MILLIBLAZE",
+            "speciesDisplay": "Milliblaze",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "WATERGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Flare Up",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Power Whip",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "label": "BUGCATCHER2:Rangsan",
+    "title": "Bug Catcher Rangsan",
+    "trainerType": "BUGCATCHER2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DRACOVISH",
+            "speciesDisplay": "Dracovish",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Fishious Rend",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Searing Crunch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SCEPTILE",
+            "speciesDisplay": "Sceptile",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "FROSMOTH",
+            "speciesDisplay": "Frosmoth",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "WEAKNESSPOLICY"
+            ],
+            "moves": [
+                {
+                    "name": "Thermal Drain",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DURANT",
+            "speciesDisplay": "Durant",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

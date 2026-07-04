@@ -1,0 +1,127 @@
+{
+    "label": "BACKERS_M:Yanko and Orlando",
+    "title": "Backers Yanko and Orlando",
+    "trainerType": "BACKERS_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SIMISEAR",
+            "speciesDisplay": "Simisear",
+            "level": 54,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "TACTICIAN",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fire Pledge",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Tri Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Follow Me",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SIMISAGE",
+            "speciesDisplay": "Simisage",
+            "level": 54,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Grass Pledge",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Holly Charm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Tri Attack",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MGIGALITH",
+            "speciesDisplay": "M. Gigalith",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "ANIMATED",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "ROCKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Aberrant Mote",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Struggle Bug",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "FROSLASS",
+            "speciesDisplay": "Froslass",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "SKILLHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

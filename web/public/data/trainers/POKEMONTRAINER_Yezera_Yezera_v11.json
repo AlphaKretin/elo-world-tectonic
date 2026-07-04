@@ -1,0 +1,208 @@
+{
+    "label": "POKEMONTRAINER_Yezera:Yezera#11",
+    "title": "Pok\u00e9mon Trainer Yezera #6",
+    "trainerType": "POKEMONTRAINER_Yezera",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TYRANITAR",
+            "speciesDisplay": "Tyranitar",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Autochthon",
+            "tribes": [
+                "TYRANNICAL",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Lash Out",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Rock Polish",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "TOGEKISS",
+            "speciesDisplay": "Togekiss",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Artemisia",
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "BABIRIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dazzling Gleam",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "HAEROBIC",
+            "speciesDisplay": "Haerobic",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Amalthea",
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Extreme Speed",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "CHANDELURE",
+            "speciesDisplay": "Chandelure",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Auden",
+            "tribes": [
+                "SCOURGE",
+                "DECEIVER",
+                "ANIMATED"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MAGNEZONE",
+            "speciesDisplay": "Magnezone",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Anri",
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Electroweb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Steel Beam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "GYARADOS",
+            "speciesDisplay": "Gyarados",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Asha",
+            "tribes": [
+                "STAMPEDE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Devour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

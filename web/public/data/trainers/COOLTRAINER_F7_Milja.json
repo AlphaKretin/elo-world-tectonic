@@ -1,0 +1,212 @@
+{
+    "label": "COOLTRAINER_F7:Milja",
+    "title": "Pro Trainer Milja",
+    "trainerType": "COOLTRAINER_F7",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "BUSHWHACKER",
+            "count": 6,
+            "threshold": 5,
+            "name": "Bushwhacker"
+        }
+    ],
+    "party": [
+        {
+            "species": "HELECTRODE",
+            "speciesDisplay": "H. Electrode",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Self-Destruct",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Chloroblast",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Aromatherapy",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "GSTUNFISK",
+            "speciesDisplay": "G. Stunfisk",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Crushing Chasm",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "YANMEGA",
+            "speciesDisplay": "Yanmega",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ASSASSIN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Lumina Chain",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "GRAPPLOCT",
+            "speciesDisplay": "Grapploct",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Arm Thrust",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Pin Missile",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Fury Pecks",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Octolock",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "CLOYSTER",
+            "speciesDisplay": "Cloyster",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "ICEGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Icicle Pin",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "LANTURN",
+            "speciesDisplay": "Lanturn",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Mending Spring",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

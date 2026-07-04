@@ -1,0 +1,138 @@
+{
+    "label": "RUINMANIAC2:Nabil",
+    "title": "Ruin Maniac Nabil",
+    "trainerType": "RUINMANIAC2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "NIDOQUEEN",
+            "speciesDisplay": "Nidoqueen",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "NOBLE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SKARMORY",
+            "speciesDisplay": "Skarmory",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Feather Ward",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Take Shelter",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DRUDDIGON",
+            "speciesDisplay": "Druddigon",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dread",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "FROSMOTH",
+            "speciesDisplay": "Frosmoth",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Thermal Drain",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Terror Swarm",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

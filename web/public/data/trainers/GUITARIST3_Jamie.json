@@ -1,0 +1,166 @@
+{
+    "label": "GUITARIST3:Jamie",
+    "title": "Guitarist Jamie",
+    "trainerType": "GUITARIST3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "NIDOKING",
+            "speciesDisplay": "Nidoking",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "NINETALES",
+            "speciesDisplay": "Ninetales",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "NOBLE",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dazzling Gleam",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Disable",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "NOIVERN",
+            "speciesDisplay": "Noivern",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Scour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Sonic Shriek",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Supersonic",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "LEAVANNY",
+            "speciesDisplay": "Leavanny",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "ASSASSIN",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Rake",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "GIGACHU",
+            "speciesDisplay": "Gigachu",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Thunder Belly",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

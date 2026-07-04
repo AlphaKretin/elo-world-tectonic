@@ -1,0 +1,172 @@
+{
+    "label": "DRAGONTAMER:Arthur",
+    "title": "Dragon Tamer Arthur",
+    "trainerType": "DRAGONTAMER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GOODRA",
+            "speciesDisplay": "Goodra",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Slimeball",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dissolution",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "HYMNUS",
+            "speciesDisplay": "Hymnus",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Wyrmwounding",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "FALINKS",
+            "speciesDisplay": "Falinks",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LUMBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "No Retreat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Megahorn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "CACTURNE",
+            "speciesDisplay": "Cacturne",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sinister Spines",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "ARCTOVISH",
+            "speciesDisplay": "Arctovish",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Pressure Burst",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sublimate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

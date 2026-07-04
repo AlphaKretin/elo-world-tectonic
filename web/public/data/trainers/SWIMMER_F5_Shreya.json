@@ -1,0 +1,133 @@
+{
+    "label": "SWIMMER_F5:Shreya",
+    "title": "Swimmer Shreya",
+    "trainerType": "SWIMMER_F5",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FERALIGATR",
+            "speciesDisplay": "Feraligatr",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Rip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Glacial Crunch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "ARMALDO",
+            "speciesDisplay": "Armaldo",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "JOLTEON",
+            "speciesDisplay": "Jolteon",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stellarate",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SWANNA",
+            "speciesDisplay": "Swanna",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

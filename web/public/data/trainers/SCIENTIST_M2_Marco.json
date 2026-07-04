@@ -1,0 +1,138 @@
+{
+    "label": "SCIENTIST_M2:Marco",
+    "title": "Scientist Marco",
+    "trainerType": "SCIENTIST_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KECLEON",
+            "speciesDisplay": "Kecleon",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "DELCATTY",
+            "speciesDisplay": "Delcatty",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "NOBLE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Extreme Speed",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "NINETALES",
+            "speciesDisplay": "Ninetales",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "NOBLE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Flame Spikes",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "GABITE",
+            "speciesDisplay": "Gabite",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Devour",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "label": "BACKPACKER_F:Aiyana",
+    "title": "Backpacker Aiyana",
+    "trainerType": "BACKPACKER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TANGELA",
+            "speciesDisplay": "Tangela",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "GRASSGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Blunt Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Poison Ivy",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "GOURGEIST",
+            "speciesDisplay": "Gourgeist",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mystical Fire",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Mystery Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Seance",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "CHARJABUG",
+            "speciesDisplay": "Charjabug",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "INDUSTRIOUS",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Charge",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Charge Beam",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Eerie Impulse",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

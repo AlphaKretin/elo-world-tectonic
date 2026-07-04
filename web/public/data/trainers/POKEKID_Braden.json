@@ -1,0 +1,126 @@
+{
+    "label": "POKEKID:Braden",
+    "title": "Pok\u00e9 Kid Braden",
+    "trainerType": "POKEKID",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MONFERNO",
+            "speciesDisplay": "Monferno",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "WARRIOR",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Fire Punch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "CACNEA",
+            "speciesDisplay": "Cacnea",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Feint Attack",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Caustic Punch",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "KROKOROK",
+            "speciesDisplay": "Krokorok",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "GROUNDGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Brutal Swing",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Torment",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "VOLTORB",
+            "speciesDisplay": "Voltorb",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Self-Destruct",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

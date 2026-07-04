@@ -1,0 +1,208 @@
+{
+    "label": "TAPU_FINI:Tapu Fini#1",
+    "title": "Guardian Deity Tapu Fini",
+    "trainerType": "TAPU_FINI",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TOXAPEX",
+            "speciesDisplay": "Toxapex",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "ANINETALES",
+            "speciesDisplay": "A. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Looming Winter",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sanctuary",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "PALOSSAND",
+            "speciesDisplay": "Palossand",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCOURGE",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "GOLISOPOD",
+            "speciesDisplay": "Golisopod",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "BUGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "First Impression",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Drag Beneath",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "ABSOLUS",
+            "speciesDisplay": "Absolus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Future Sight",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Doom Desire",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "DRAGALGE",
+            "speciesDisplay": "Dragalge",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "ROWAPBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

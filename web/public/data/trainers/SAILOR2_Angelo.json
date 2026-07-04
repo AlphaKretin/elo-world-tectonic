@@ -1,0 +1,137 @@
+{
+    "label": "SAILOR2:Angelo",
+    "title": "Sailor Angelo",
+    "trainerType": "SAILOR2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "QUAGSIRE",
+            "speciesDisplay": "Quagsire",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "River Rest",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "TENTACRUEL",
+            "speciesDisplay": "Tentacruel",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "UNFEZANT",
+            "speciesDisplay": "Unfezant",
+            "level": 59,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "FLYINGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Gunk Shot",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GSTUNFISK",
+            "speciesDisplay": "G. Stunfisk",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

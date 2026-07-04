@@ -1,0 +1,135 @@
+{
+    "label": "RUINMANIAC:Matteo",
+    "title": "Ruin Maniac Matteo",
+    "trainerType": "RUINMANIAC",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ARCTOZOLT",
+            "speciesDisplay": "Arctozolt",
+            "level": 52,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "ELECTRICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Bolt Beak",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Halting Cold",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "DRACOZOLT",
+            "speciesDisplay": "Dracozolt",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Volt Seekers",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "DRACOVISH",
+            "speciesDisplay": "Dracovish",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Searing Crunch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fishious Rend",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Galling Spit",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "ARCTOVISH",
+            "speciesDisplay": "Arctovish",
+            "level": 52,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Pressure Burst",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sublimate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

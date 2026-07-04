@@ -1,0 +1,108 @@
+{
+    "label": "VETERANM_3:Pearce",
+    "title": "Veteran Pearce",
+    "trainerType": "VETERANM_3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ROSERADE",
+            "speciesDisplay": "Roserade",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "WHETSTONE"
+            ],
+            "moves": [
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "GLISCOR",
+            "speciesDisplay": "Gliscor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "EMPOLEON",
+            "speciesDisplay": "Empoleon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "WATERBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "label": "LEADER_Bence:Bence",
+    "title": "Gym Leader Bence #1",
+    "trainerType": "LEADER_Bence",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "JUMPLUFF",
+            "speciesDisplay": "Jumpluff",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "STONJOURNER",
+            "speciesDisplay": "Stonjourner",
+            "level": 40,
+            "shiny": false,
+            "nickname": "Agnes",
+            "tribes": [
+                "ANIMATED",
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "AGOLEM",
+            "speciesDisplay": "A. Golem",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,205 @@
+{
+    "label": "POKEMONRANGER_F_GANG:Amber",
+    "title": "Driller Amber",
+    "trainerType": "POKEMONRANGER_F_GANG",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KROOKODILE",
+            "speciesDisplay": "Krookodile",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Stare Down",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "SCEPTILE",
+            "speciesDisplay": "Sceptile",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Wyrmwounding",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Pursuit",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SENSIBELLE",
+            "speciesDisplay": "Sensibelle",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TOXAPEX",
+            "speciesDisplay": "Toxapex",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Drag Beneath",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "AMOONGUSS",
+            "speciesDisplay": "Amoonguss",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Spore",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Poison Ivy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Frenzy Plant",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "HEATMOR",
+            "speciesDisplay": "Heatmor",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Overheat",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Flechettes",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

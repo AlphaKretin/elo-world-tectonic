@@ -1,0 +1,101 @@
+{
+    "label": "NINJABOY:Hwan",
+    "title": "Ninja Boy Hwan",
+    "trainerType": "NINJABOY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SCIZOR",
+            "speciesDisplay": "Scizor",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Rake",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MBOLDORE",
+            "speciesDisplay": "M. Boldore",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "ANIMATED",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Struggle Bug",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Rock Tomb",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "POLIWHIRL",
+            "speciesDisplay": "Poliwhirl",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Low Sweep",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aqua Shock",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

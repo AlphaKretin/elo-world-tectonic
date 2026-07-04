@@ -1,0 +1,142 @@
+{
+    "label": "WILDPACK:Solar",
+    "title": "Wild Pack Solar",
+    "trainerType": "WILDPACK",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TORKOAL",
+            "speciesDisplay": "Torkoal",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "HEATROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Eruption",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SOLROCK",
+            "speciesDisplay": "Solrock",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Evernal Flux",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Stone Edge",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "EXEGGUTOR",
+            "speciesDisplay": "Exeggutor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Head Throw",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Belch",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BELLOSSOM",
+            "speciesDisplay": "Bellossom",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SERENE",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Pollen Puff",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

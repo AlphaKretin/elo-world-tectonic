@@ -1,0 +1,139 @@
+{
+    "label": "BEAUTY5:Esme",
+    "title": "Beauty Esme",
+    "trainerType": "BEAUTY5",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SUNFLORA",
+            "speciesDisplay": "Sunflora",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "LOYAL",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "HEATROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "ESPEON",
+            "speciesDisplay": "Espeon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Psyche Switch",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Acid Ball",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "CHERRIM",
+            "speciesDisplay": "Cherrim",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "POWERLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Solar Glide",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "CASTFORM",
+            "speciesDisplay": "Castform",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "FORTUNE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Invite Sunshine",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Iceberg Bash",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "label": "PSYCHIC_M:Uriel",
+    "title": "Psychic Uriel",
+    "trainerType": "PSYCHIC_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ABRA",
+            "speciesDisplay": "Abra",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "PSYCHICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Iron Arrow",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Retreat",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Disable",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "IMPIDIMP",
+            "speciesDisplay": "Impidimp",
+            "level": 16,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "ASSASSIN",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Prank",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ill Wishes",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Pixie Punch",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "RUFFLET",
+            "speciesDisplay": "Rufflet",
+            "level": 16,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Smash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Torment",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

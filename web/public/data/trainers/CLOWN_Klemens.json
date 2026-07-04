@@ -1,0 +1,136 @@
+{
+    "label": "CLOWN:Klemens",
+    "title": "Clown Klemens",
+    "trainerType": "CLOWN",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BRONZOR",
+            "speciesDisplay": "Bronzor",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "REINFORCINGROD"
+            ],
+            "moves": [
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Pacify",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "HAKAMOO",
+            "speciesDisplay": "Hakamo-o",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "NOBLE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dragon Claw",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Capoeira",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Noble Roar",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SNEASEL",
+            "speciesDisplay": "Sneasel",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Frost Barb",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Covet",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "LAMPENT",
+            "speciesDisplay": "Lampent",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "DECEIVER",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ominous Wind",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Claw",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Covet",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

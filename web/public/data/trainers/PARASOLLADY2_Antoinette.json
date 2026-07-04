@@ -1,0 +1,134 @@
+{
+    "label": "PARASOLLADY2:Antoinette",
+    "title": "Parasol Lady Antoinette",
+    "trainerType": "PARASOLLADY2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "STUNFISK",
+            "speciesDisplay": "Stunfisk",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "DAMPROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Thunder",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Live Wire",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "OMASTAR",
+            "speciesDisplay": "Omastar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SERENE",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Shell Smash",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "BOLTUND",
+            "speciesDisplay": "Boltund",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "INDUSTRIOUS",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Storm Drive",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "AURORUS",
+            "speciesDisplay": "Aurorus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "RADIANT",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thunder",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

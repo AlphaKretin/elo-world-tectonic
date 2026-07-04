@@ -1,0 +1,197 @@
+{
+    "label": "IDEALTRAINER:of Riches",
+    "title": "Ideal Trainer of Riches",
+    "trainerType": "IDEALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ROTOM",
+            "speciesDisplay": "Rotom",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "LOYAL",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Switcheroo",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Machinate",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "ROSERADE",
+            "speciesDisplay": "Roserade",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bar",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Cruel Whipblade",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "LUXRAY",
+            "speciesDisplay": "Luxray",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Photon Edge",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "RIOJIN",
+            "speciesDisplay": "Riojin",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Javelin",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Aura Storm",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "STARAPTOR",
+            "speciesDisplay": "Staraptor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Feather Dance",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Fight Forever",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "MAGMORTAR",
+            "speciesDisplay": "Magmortar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Tephra Cannon",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

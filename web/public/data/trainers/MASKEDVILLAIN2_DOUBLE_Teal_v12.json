@@ -1,0 +1,211 @@
+{
+    "label": "MASKEDVILLAIN2_DOUBLE:Teal#12",
+    "title": "Masked Villains Teal #2",
+    "trainerType": "MASKEDVILLAIN2_DOUBLE",
+    "identities": [
+        {
+            "trainerType": "TRAINER_Imogene_A",
+            "realName": "Imogene"
+        },
+        {
+            "trainerType": "TRAINER_Imogene_B",
+            "realName": "Imogene"
+        }
+    ],
+    "trueNames": [
+        "Imogene"
+    ],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GOLISOPOD",
+            "speciesDisplay": "Golisopod",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "First Impression",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "CORVIKNIGHT",
+            "speciesDisplay": "Corviknight",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "TACTICIAN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "GLISCOR",
+            "speciesDisplay": "Gliscor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Blight",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "MSEVIPER",
+            "speciesDisplay": "M. Seviper",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "RADIANT",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Glacial Crunch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GOTHITELLE",
+            "speciesDisplay": "Gothitelle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Core Collapse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Plant Doubt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Future Sight",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SHEDINJA",
+            "speciesDisplay": "Shedinja",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "ASSASSIN",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Wailing Blow",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,198 @@
+{
+    "label": "ARTIFICIALTRAINER:Doppel",
+    "title": "Artificial Trainer Doppel",
+    "trainerType": "ARTIFICIALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PYUKUMUKU",
+            "speciesDisplay": "Pyukumuku",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LEPPABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Symbiosis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Stand Together",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Recycle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "CRYOGONAL",
+            "speciesDisplay": "Cryogonal",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mirror Shield",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Ice-Nine Wall",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "CLEFABLE",
+            "speciesDisplay": "Clefable",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Metronome",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heal Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Curl Up",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Retreat",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TYRANITAR",
+            "speciesDisplay": "Tyranitar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dragon Claw",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "DRAGAPULT",
+            "speciesDisplay": "Dragapult",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "ASSASSIN",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PACHIRISU",
+            "speciesDisplay": "Pachirisu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bestow",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Amp Up",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

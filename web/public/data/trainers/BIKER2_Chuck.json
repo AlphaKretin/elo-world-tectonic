@@ -1,0 +1,138 @@
+{
+    "label": "BIKER2:Chuck",
+    "title": "Biker Chuck",
+    "trainerType": "BIKER2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SKUNTANK",
+            "speciesDisplay": "Skuntank",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stink Cover",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "MAGMORTAR",
+            "speciesDisplay": "Magmortar",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Tephra Cannon",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SHIFTRY",
+            "speciesDisplay": "Shiftry",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Magical Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Scheme",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "PORYGONZ",
+            "speciesDisplay": "Porygon-Z",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Critical Error",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Tri Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

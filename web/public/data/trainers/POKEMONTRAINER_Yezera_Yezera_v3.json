@@ -1,0 +1,190 @@
+{
+    "label": "POKEMONTRAINER_Yezera:Yezera#3",
+    "title": "Pok\u00e9mon Trainer Yezera #2",
+    "trainerType": "POKEMONTRAINER_Yezera",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MORGREM",
+            "speciesDisplay": "Morgrem",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "ASSASSIN",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "TANGABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Assurance",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Pixie Punch",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SANDACONDA",
+            "speciesDisplay": "Sandaconda",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "DECEIVER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Dust Devil",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Bluster",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "MAGNETON",
+            "speciesDisplay": "Magneton",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "SHUCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shock Wave",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "POLIWHIRL",
+            "speciesDisplay": "Poliwhirl",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "CENTISKORCH",
+            "speciesDisplay": "Centiskorch",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Bug Bite",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Flame Wheel",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dazzle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DARTRIX",
+            "speciesDisplay": "Dartrix",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "PSYCHICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Psycho Cut",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sharpen",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Pluck",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

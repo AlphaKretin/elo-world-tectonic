@@ -1,0 +1,164 @@
+{
+    "label": "CHALLENGER_Vanya:Vanya#2",
+    "title": "Challenger Vanya #3",
+    "trainerType": "CHALLENGER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SLIGGOO",
+            "speciesDisplay": "Sliggoo",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "CHARMER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dragon Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Loom Over",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SHELLOS",
+            "speciesDisplay": "Shellos",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mud Shot",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dissolution",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "HVOLTORB",
+            "speciesDisplay": "H. Voltorb",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Spark",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Leafage",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Charge Beam",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Anesthetize",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "PHANPY",
+            "speciesDisplay": "Phanpy",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Accelerock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "GARBODOR",
+            "speciesDisplay": "Garbodor",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCAVENGER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Trash Treasure",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shrapnel",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

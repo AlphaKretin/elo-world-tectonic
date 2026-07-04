@@ -1,0 +1,164 @@
+{
+    "label": "BURGLAR:Keith",
+    "title": "Burglar Keith",
+    "trainerType": "BURGLAR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PRIMEAPE",
+            "speciesDisplay": "Primeape",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Fire Punch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Focus Energy",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GDARMANITAN",
+            "speciesDisplay": "G. Darmanitan",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Fire Punch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "AGOLEM",
+            "speciesDisplay": "A. Golem",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Self-Destruct",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Live Wire",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Rock Tomb",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Dizzy Punch",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "EXEGGUTOR",
+            "speciesDisplay": "Exeggutor",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Diametric Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MANDIBUZZ",
+            "speciesDisplay": "Mandibuzz",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "CARETAKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Cull",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Plant Doubt",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

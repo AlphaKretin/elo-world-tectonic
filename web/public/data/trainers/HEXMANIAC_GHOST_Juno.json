@@ -1,0 +1,139 @@
+{
+    "label": "HEXMANIAC_GHOST:Juno",
+    "title": "Hex Maniac Juno",
+    "trainerType": "HEXMANIAC_GHOST",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "OBSTAGOON",
+            "speciesDisplay": "Obstagoon",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Drown",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mind Sap",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "TORTERRA",
+            "speciesDisplay": "Torterra",
+            "level": 46,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MIENSHAO",
+            "speciesDisplay": "Mienshao",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "WARRIOR",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whip Trance",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Disarming Shot",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MDUSTOX",
+            "speciesDisplay": "M. Dustox",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Liftoff",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Lunge",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

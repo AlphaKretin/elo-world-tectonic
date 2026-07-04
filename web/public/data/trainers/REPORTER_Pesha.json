@@ -1,0 +1,138 @@
+{
+    "label": "REPORTER:Pesha",
+    "title": "Reporter Pesha",
+    "trainerType": "REPORTER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HELECTRODE",
+            "speciesDisplay": "H. Electrode",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Chloroblast",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Electro Ball",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Wood Hammer",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "VOLCARONA",
+            "speciesDisplay": "Volcarona",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CARETAKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "PRIMARINA",
+            "speciesDisplay": "Primarina",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sparkling Aria",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "ANNIHILAPE",
+            "speciesDisplay": "Annihilape",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "STAMPEDE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "SEVENLEAGUEBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Cold Shoulder",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Wraith Wrath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Raging Fury",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

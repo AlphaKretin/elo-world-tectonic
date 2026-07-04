@@ -1,0 +1,126 @@
+{
+    "label": "WORKER2:Hugo",
+    "title": "Worker Hugo",
+    "trainerType": "WORKER2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MACHAMP",
+            "speciesDisplay": "Machamp",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dynamic Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "ASANDSLASH",
+            "speciesDisplay": "A. Sandslash",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TYRANTRUM",
+            "speciesDisplay": "Tyrantrum",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "SCOURGE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "SHUCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Calamitous Slash",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "VIKAVOLT",
+            "speciesDisplay": "Vikavolt",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "INDUSTRIOUS",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Terror Swarm",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

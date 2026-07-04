@@ -1,0 +1,137 @@
+{
+    "label": "SCHOOLKID_F4:Lucia",
+    "title": "School Kid Lucia",
+    "trainerType": "SCHOOLKID_F4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HGOODRA",
+            "speciesDisplay": "H. Goodra",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shining Shell",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DRACOZOLT",
+            "speciesDisplay": "Dracozolt",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Volt Seekers",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "MASQUERAIN",
+            "speciesDisplay": "Masquerain",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bluster",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Scale Storm",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "VOLBEAT",
+            "speciesDisplay": "Volbeat",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "FLASHBULB"
+            ],
+            "moves": [
+                {
+                    "name": "Tail Glow",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Lumin Burst",
+                    "type": "BUG"
+                },
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

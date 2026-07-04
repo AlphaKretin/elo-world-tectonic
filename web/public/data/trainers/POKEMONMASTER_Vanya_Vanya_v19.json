@@ -1,0 +1,194 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#19",
+    "title": "Pok\u00e9mon Master Vanya #19",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "REAVOR",
+            "speciesDisplay": "Reavor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Carapace Crush",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shatter Vise",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "CINDERACE",
+            "speciesDisplay": "Cinderace",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Propellant",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Pyro Ball",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "MANERGETIC",
+            "speciesDisplay": "Manergetic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Magnet Rise",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Dielectric Breakdown",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Capacity Burst",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "SCEPTILE",
+            "speciesDisplay": "Sceptile",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Calamitous Slash",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Retreat",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PRIMARINA",
+            "speciesDisplay": "Primarina",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sparkling Aria",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "WEAVILE",
+            "speciesDisplay": "Weavile",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Lurk",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Winter Ops",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

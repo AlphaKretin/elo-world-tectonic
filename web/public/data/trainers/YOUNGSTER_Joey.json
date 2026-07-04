@@ -1,0 +1,45 @@
+{
+    "label": "YOUNGSTER:Joey",
+    "title": "Youngster Joey",
+    "trainerType": "YOUNGSTER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LILLIGANT",
+            "speciesDisplay": "Lilligant",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "PARADOXHERB",
+                "MIRRORHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Enchanted Arrow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Petal Tempest",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Petal Dance",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

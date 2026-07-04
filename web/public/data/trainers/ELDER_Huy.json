@@ -1,0 +1,141 @@
+{
+    "label": "ELDER:Huy",
+    "title": "Elder Huy",
+    "trainerType": "ELDER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CRAWDAUNT",
+            "speciesDisplay": "Crawdaunt",
+            "level": 54,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "WEAKNESSPOLICY"
+            ],
+            "moves": [
+                {
+                    "name": "Gleeful Grasp",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "SCOLIPEDE",
+            "speciesDisplay": "Scolipede",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Rolling Arsenal",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Stunning Curl",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "CINDERACE",
+            "speciesDisplay": "Cinderace",
+            "level": 54,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "WIDELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Propellant",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "FLORGES",
+            "speciesDisplay": "Florges",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Petal Tempest",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Blossom",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

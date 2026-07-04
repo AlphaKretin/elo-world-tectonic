@@ -1,0 +1,138 @@
+{
+    "label": "AROMALADY3:Henrietta",
+    "title": "Aroma Lady Henrietta",
+    "trainerType": "AROMALADY3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DUSKNOIR",
+            "speciesDisplay": "Dusknoir",
+            "level": 51,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "DUDUDUNSPARCE",
+            "speciesDisplay": "Dududunsparce",
+            "level": 52,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "FORTUNE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Heaven's Eyes",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "VENUSAUR",
+            "speciesDisplay": "Venusaur",
+            "level": 51,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "STAMPEDE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Sapping Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Power Whip",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "GRIMICE",
+            "speciesDisplay": "Grimice",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

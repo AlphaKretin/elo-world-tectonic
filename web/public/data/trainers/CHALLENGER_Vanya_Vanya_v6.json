@@ -1,0 +1,196 @@
+{
+    "label": "CHALLENGER_Vanya:Vanya#6",
+    "title": "Challenger Vanya #7",
+    "trainerType": "CHALLENGER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MASQUERAIN",
+            "speciesDisplay": "Masquerain",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Squall Dart",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "TORTERRA",
+            "speciesDisplay": "Torterra",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "TOXICROAK",
+            "speciesDisplay": "Toxicroak",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "METAGROSS",
+            "speciesDisplay": "Metagross",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Hundred-Hand Clap",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Laser Focus",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MARACTUS",
+            "speciesDisplay": "Maractus",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thorn Rattle",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "OCTILLERY",
+            "speciesDisplay": "Octillery",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "TACTICIAN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Spray and Pray",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Bubble Barrage",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Javelin",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "label": "REPORTER:Helga",
+    "title": "Reporter Helga",
+    "trainerType": "REPORTER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ELECTABUZZ",
+            "speciesDisplay": "Electabuzz",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Power-Up Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thunder Punch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Charge",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "STARAVIA",
+            "speciesDisplay": "Staravia",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Air Strike",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "KADABRA",
+            "speciesDisplay": "Kadabra",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "STEELGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Retreat",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mind Link",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

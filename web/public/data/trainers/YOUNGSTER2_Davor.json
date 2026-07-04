@@ -1,0 +1,138 @@
+{
+    "label": "YOUNGSTER2:Davor",
+    "title": "Youngster Davor",
+    "trainerType": "YOUNGSTER2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "RUBARIOR",
+            "speciesDisplay": "Rubarior",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "DARKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Stare Down",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Shattered Light",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "GOREBYSS",
+            "speciesDisplay": "Gorebyss",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Mist Burst",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "HLILLIGANT",
+            "speciesDisplay": "H. Lilligant",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SERENE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "WHETSTONE"
+            ],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Pounce",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sacred Sword",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "TURTONATOR",
+            "speciesDisplay": "Turtonator",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Diametric Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

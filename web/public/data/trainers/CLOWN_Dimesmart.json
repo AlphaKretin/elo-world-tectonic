@@ -1,0 +1,104 @@
+{
+    "label": "CLOWN:Dimesmart",
+    "title": "Clown Dimesmart",
+    "trainerType": "CLOWN",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MIMIKYU",
+            "speciesDisplay": "Mimikyu",
+            "level": 39,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "GIGACHU",
+            "speciesDisplay": "Gigachu",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thunder Belly",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MASQUERAIN",
+            "speciesDisplay": "Masquerain",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "WATERGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bluster",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

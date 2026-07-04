@@ -1,0 +1,196 @@
+{
+    "label": "CLERK_M2:Papper",
+    "title": "Developer Papper",
+    "trainerType": "CLERK_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FERALIGATR",
+            "speciesDisplay": "Feraligatr",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dive",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Aquatic Crunch",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Rip Turn",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "PACHIRISU",
+            "speciesDisplay": "Pachirisu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bestow",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Coaching",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Amp Up",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "TORTERRA",
+            "speciesDisplay": "Torterra",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "HONCHKROW",
+            "speciesDisplay": "Honchkrow",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "WARRIOR",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Finalize",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hundred-Hand Clap",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sanctuary",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DRAPION",
+            "speciesDisplay": "Drapion",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Agonize",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Honorless Sting",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

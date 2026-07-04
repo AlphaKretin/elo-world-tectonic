@@ -1,0 +1,139 @@
+{
+    "label": "SCHOOLKID_F3:Dinah",
+    "title": "School Kid Dinah",
+    "trainerType": "SCHOOLKID_F3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MINUN",
+            "speciesDisplay": "Minun",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "HARMONIC",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Trump Card",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "DODRIO",
+            "speciesDisplay": "Dodrio",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "STAMPEDE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Hunt Down",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "MEGANIUM",
+            "speciesDisplay": "Meganium",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Holly Charm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "HGOODRA",
+            "speciesDisplay": "H. Goodra",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "GRIPCLAW"
+            ],
+            "moves": [
+                {
+                    "name": "Wyrmwounding",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shining Shell",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

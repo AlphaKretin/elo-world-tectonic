@@ -1,0 +1,61 @@
+{
+    "label": "CAMERAMAN:Marcel",
+    "title": "Cameraman Marcel",
+    "trainerType": "CAMERAMAN",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ROTOM",
+            "speciesDisplay": "Rotom",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "LOYAL",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ELECTRICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "VIKAVOLT",
+            "speciesDisplay": "Vikavolt",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "INDUSTRIOUS",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CHARTIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

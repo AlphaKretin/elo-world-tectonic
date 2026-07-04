@@ -1,0 +1,207 @@
+{
+    "label": "WAITRESS3:Destiny",
+    "title": "Developer Destiny",
+    "trainerType": "WAITRESS3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CONIFEAR",
+            "speciesDisplay": "Conifear",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "ICYROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Iceberg Bash",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Leaf Storm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Holly Charm",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MEGANIUM",
+            "speciesDisplay": "Meganium",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Breathe Life",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Aromatherapy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Holly Charm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MILLIBLAZE",
+            "speciesDisplay": "Milliblaze",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Lunge",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Earthsplitter",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MMANTINE",
+            "speciesDisplay": "M. Mantine",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "CHARMER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Hail",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Glacial Crunch",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Blight",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "FROSLASS",
+            "speciesDisplay": "Froslass",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "GHOSTGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Phantom Gate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Snowy Sorrows",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "MZANGOOSE",
+            "speciesDisplay": "M. Zangoose",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SEVENLEAGUEBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Cold Shoulder",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,197 @@
+{
+    "label": "WORKER5:Jbsundown",
+    "title": "Developer Jbsundown",
+    "trainerType": "WORKER5",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SUDOWOODO",
+            "speciesDisplay": "Sudowoodo",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Petrify",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Terraform",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "DRAGONITE",
+            "speciesDisplay": "Dragonite",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tempest",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Outrage",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Ride",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "NIDOKING",
+            "speciesDisplay": "Nidoking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Backhand",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "HATTERENE",
+            "speciesDisplay": "Hatterene",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Censor",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Morningstar",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Emotional Deluge",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "MPOLTEAGEIST",
+            "speciesDisplay": "M. Polteageist",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Petal Tempest",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Aromatic Mist",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "TYPHLOSION",
+            "speciesDisplay": "Typhlosion",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ARTILLERY",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Scour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Shimmering Heat",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

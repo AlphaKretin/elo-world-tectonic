@@ -1,0 +1,137 @@
+{
+    "label": "SAILOR:Konrad",
+    "title": "Sailor Konrad",
+    "trainerType": "SAILOR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AMPHAROS",
+            "speciesDisplay": "Ampharos",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "UMBREON",
+            "speciesDisplay": "Umbreon",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "VICTREEBEL",
+            "speciesDisplay": "Victreebel",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "FLYINGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MDRAGALGE",
+            "speciesDisplay": "M. Dragalge",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aim True",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rip Tide",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Root Driver",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

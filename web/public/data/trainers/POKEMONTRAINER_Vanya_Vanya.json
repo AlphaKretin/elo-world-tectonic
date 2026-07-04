@@ -1,0 +1,207 @@
+{
+    "label": "POKEMONTRAINER_Vanya:Vanya",
+    "title": "Pok\u00e9mon Trainer Vanya #1",
+    "trainerType": "POKEMONTRAINER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PINCURCHIN",
+            "speciesDisplay": "Pincurchin",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "REDCARD"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stunning Curl",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "KOMMOO",
+            "speciesDisplay": "Kommo-o",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "NOBLE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "STRESSBALL"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Clangorous Soul",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "MHAEROBIC",
+            "speciesDisplay": "M. Haerobic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "EMPTYSTONE"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Luna Sucre",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "CONIFEAR",
+            "speciesDisplay": "Conifear",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "EJECTPACK"
+            ],
+            "moves": [
+                {
+                    "name": "Iceberg Bash",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Leaf Storm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Seismic Wave",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MZANGOOSE",
+            "speciesDisplay": "M. Zangoose",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SEVENLEAGUEBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Six Feet Under",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "KLAWSAR",
+            "speciesDisplay": "Klawsar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "GRIPCLAW"
+            ],
+            "moves": [
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Eroding Foam",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

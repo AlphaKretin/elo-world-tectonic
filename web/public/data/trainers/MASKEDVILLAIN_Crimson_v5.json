@@ -1,0 +1,214 @@
+{
+    "label": "MASKEDVILLAIN:Crimson#5",
+    "title": "Masked Villain Crimson #1",
+    "trainerType": "MASKEDVILLAIN",
+    "identities": [
+        {
+            "trainerType": "TRAINER_Skyler",
+            "realName": "Skyler"
+        }
+    ],
+    "trueNames": [
+        "Skyler"
+    ],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "REGIROCK",
+            "speciesDisplay": "Regirock",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "ROCKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Accelerock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "ABSOLUS",
+            "speciesDisplay": "Absolus",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Fleur Cannon",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "ASANDSLASH",
+            "speciesDisplay": "A. Sandslash",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "CUSTAPBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Icicle Spear",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Spike Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Pin Missile",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "MILLIBLAZE",
+            "speciesDisplay": "Milliblaze",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "WATERGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "FLORGES",
+            "speciesDisplay": "Florges",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Petal Dance",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "PALMANTRA",
+            "speciesDisplay": "Palmantra",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dead End",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,212 @@
+{
+    "label": "COOLTRAINER_M7:Xander",
+    "title": "Pro Trainer Xander",
+    "trainerType": "COOLTRAINER_M7",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "SCAVENGER",
+            "count": 6,
+            "threshold": 5,
+            "name": "Scavenger"
+        }
+    ],
+    "party": [
+        {
+            "species": "JOLTIK",
+            "speciesDisplay": "Joltik",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ELECTRICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Thunder Shock",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bio Flash",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "SHELLOS",
+            "speciesDisplay": "Shellos",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Mud Sling",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Water Gun",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "PANSAGE",
+            "speciesDisplay": "Pansage",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "GRASSGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Scratch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Essence Arrow",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Disarming Voice",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "TEPIG",
+            "speciesDisplay": "Tepig",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "WARRIOR",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Ember",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Tread On",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Scuffle",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Recycle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "STUNKY",
+            "speciesDisplay": "Stunky",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "POISONGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nasty Nip",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GULPIN",
+            "speciesDisplay": "Gulpin",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Acid",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stockpile",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Diffuse Pulse",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

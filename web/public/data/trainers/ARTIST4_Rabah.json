@@ -1,0 +1,137 @@
+{
+    "label": "ARTIST4:Rabah",
+    "title": "Artist Rabah",
+    "trainerType": "ARTIST4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MLILLIGANT",
+            "speciesDisplay": "M. Lilligant",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "CARETAKER",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Drag Beneath",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MACHAMP",
+            "speciesDisplay": "Machamp",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "RAWSTBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Submission",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "STUNFISK",
+            "speciesDisplay": "Stunfisk",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mud Slide",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rapid Hertz",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "TEAMUJIN",
+            "speciesDisplay": "Teamujin",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Power-Up Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

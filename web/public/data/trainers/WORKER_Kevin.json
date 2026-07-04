@@ -1,0 +1,71 @@
+{
+    "label": "WORKER:Kevin",
+    "title": "Worker Kevin",
+    "trainerType": "WORKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ABOMASNOW",
+            "speciesDisplay": "Abomasnow",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "CHOPLEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Flash Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Magical Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "HEATMOR",
+            "speciesDisplay": "Heatmor",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Shrapnel",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dust Devil",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

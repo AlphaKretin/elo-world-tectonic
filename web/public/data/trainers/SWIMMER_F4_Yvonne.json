@@ -1,0 +1,138 @@
+{
+    "label": "SWIMMER_F4:Yvonne",
+    "title": "Swimmer Yvonne",
+    "trainerType": "SWIMMER_F4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "REINFORCINGROD"
+            ],
+            "moves": [
+                {
+                    "name": "Gyro Ball",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Psycho Boost",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Brain Freeze",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Lightning Slam",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "ABSOLUS",
+            "speciesDisplay": "Absolus",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Superstition",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "EMPOLEON",
+            "speciesDisplay": "Empoleon",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "DRAGONITE",
+            "speciesDisplay": "Dragonite",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "SKILLHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Tempest",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

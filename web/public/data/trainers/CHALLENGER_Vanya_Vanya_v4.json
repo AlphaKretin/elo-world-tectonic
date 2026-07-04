@@ -1,0 +1,197 @@
+{
+    "label": "CHALLENGER_Vanya:Vanya#4",
+    "title": "Challenger Vanya #5",
+    "trainerType": "CHALLENGER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KLEFKI",
+            "speciesDisplay": "Klefki",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "GRENINJA",
+            "speciesDisplay": "Greninja",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Substitute",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DUGTRIO",
+            "speciesDisplay": "Dugtrio",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "INDUSTRIOUS",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Crushing Chasm",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Wailing Blow",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "ARAICHU",
+            "speciesDisplay": "A. Raichu",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Hundred-Hand Clap",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "CARRACOSTA",
+            "speciesDisplay": "Carracosta",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CARETAKER",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Take Shelter",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Thunder Cage",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

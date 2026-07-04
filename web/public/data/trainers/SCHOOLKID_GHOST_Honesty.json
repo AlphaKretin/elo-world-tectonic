@@ -1,0 +1,139 @@
+{
+    "label": "SCHOOLKID_GHOST:Honesty",
+    "title": "School Kid Honesty",
+    "trainerType": "SCHOOLKID_GHOST",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CHANDELURE",
+            "speciesDisplay": "Chandelure",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "DECEIVER",
+                "ANIMATED"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "ZOROARK",
+            "speciesDisplay": "Zoroark",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "RIBOMBEE",
+            "speciesDisplay": "Ribombee",
+            "level": 49,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "FLAMEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "RIOJIN",
+            "speciesDisplay": "Riojin",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Javelin",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

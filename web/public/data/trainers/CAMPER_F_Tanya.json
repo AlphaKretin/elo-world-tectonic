@@ -1,0 +1,158 @@
+{
+    "label": "CAMPER_F:Tanya",
+    "title": "Camper Tanya",
+    "trainerType": "CAMPER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DITTO",
+            "speciesDisplay": "Ditto",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Transform",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "ARCANINE",
+            "speciesDisplay": "Arcanine",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Blazing Speed",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GASTRODON",
+            "speciesDisplay": "Gastrodon",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Silt Surge",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Terror Swarm",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MINIOR",
+            "speciesDisplay": "Minior",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Shell Smash",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "GARDEVOIR",
+            "speciesDisplay": "Gardevoir",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

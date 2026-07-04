@@ -1,0 +1,108 @@
+{
+    "label": "NIGHTMARE_TRAINER:Torment",
+    "title": "Nightmare of Torment",
+    "trainerType": "NIGHTMARE_TRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AMAROWAK",
+            "speciesDisplay": "A. Marowak",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCRAPPER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shadow Bone",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "HAEROBIC",
+            "speciesDisplay": "Haerobic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Retaliate",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Hare Heroics",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GOLISOPOD",
+            "speciesDisplay": "Golisopod",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "First Impression",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Stunning Curl",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

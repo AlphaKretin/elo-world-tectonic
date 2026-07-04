@@ -1,0 +1,209 @@
+{
+    "label": "GUITARIST3:Envy",
+    "title": "Developer Envy",
+    "trainerType": "GUITARIST3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SIGILYPH",
+            "speciesDisplay": "Sigilyph",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Malkuth",
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "ENERGYLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Pressure Shock",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Future Sight",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Whirlwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "PROBOPASS",
+            "speciesDisplay": "Probopass",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "CRYSTALVEIL"
+            ],
+            "moves": [
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "WYNAUT",
+            "speciesDisplay": "Wynaut",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "EVIOLITE"
+            ],
+            "moves": [
+                {
+                    "name": "Counter",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Mirror Coat",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "GRAPIDASH",
+            "speciesDisplay": "G. Rapidash",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Sunshine",
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Tantrum",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Omniscient Blow",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "PORYGONZ",
+            "speciesDisplay": "Porygon-Z",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Tiphereth",
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Critical Error",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "MMANDIBUZZ",
+            "speciesDisplay": "M. Mandibuzz",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Binah",
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

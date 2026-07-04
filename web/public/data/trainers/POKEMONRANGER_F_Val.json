@@ -1,0 +1,106 @@
+{
+    "label": "POKEMONRANGER_F:Val",
+    "title": "Pok\u00e9mon Ranger Val",
+    "trainerType": "POKEMONRANGER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BANETTE",
+            "speciesDisplay": "Banette",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ANIMATED",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Blind Side",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Slash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shadow Claw",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "CHERRIM",
+            "speciesDisplay": "Cherrim",
+            "level": 29,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Growth",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Blossom",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Incinerate",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "FLOATZEL",
+            "speciesDisplay": "Floatzel",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Headbutt",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

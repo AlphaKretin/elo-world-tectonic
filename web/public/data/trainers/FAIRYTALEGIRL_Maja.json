@@ -1,0 +1,106 @@
+{
+    "label": "FAIRYTALEGIRL:Maja",
+    "title": "Fairy Tale Girl Maja",
+    "trainerType": "FAIRYTALEGIRL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HSLIGGOO",
+            "speciesDisplay": "H. Sliggoo",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Magnetize",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Mage Hand",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dragon Claw",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Steamroller",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "MPETILIL",
+            "speciesDisplay": "M. Petilil",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "CARETAKER",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "ICEGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Frost Barb",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Backhand",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SPOINK",
+            "speciesDisplay": "Spoink",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Heart Stamp",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Kickstart",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

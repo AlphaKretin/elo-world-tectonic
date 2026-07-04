@@ -1,0 +1,103 @@
+{
+    "label": "SCIENTIST_F:Marie",
+    "title": "Scientist Marie",
+    "trainerType": "SCIENTIST_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CARKOL",
+            "speciesDisplay": "Carkol",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ANIMATED",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Diamond Bolt",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "KOFFING",
+            "speciesDisplay": "Koffing",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dazzle",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SLUGMA",
+            "speciesDisplay": "Slugma",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Incinerate",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Crystal Gleam",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Struggle Bug",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

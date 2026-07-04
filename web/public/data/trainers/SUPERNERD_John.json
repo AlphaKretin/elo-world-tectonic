@@ -1,0 +1,138 @@
+{
+    "label": "SUPERNERD:John",
+    "title": "Super Nerd John",
+    "trainerType": "SUPERNERD",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KECLEON",
+            "speciesDisplay": "Kecleon",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "GRENINJA",
+            "speciesDisplay": "Greninja",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Water Shuriken",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "CINDERACE",
+            "speciesDisplay": "Cinderace",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "WIDELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Pyro Ball",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "WORMADAM",
+            "speciesDisplay": "Wormadam",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "CARETAKER",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

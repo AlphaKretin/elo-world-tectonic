@@ -1,0 +1,104 @@
+{
+    "label": "GUITARIST:Reece",
+    "title": "Guitarist Reece",
+    "trainerType": "GUITARIST",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BLITZLE",
+            "speciesDisplay": "Blitzle",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Current Crash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Kindle",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Scuffle",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Eerie Impulse",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "SURSKIT",
+            "speciesDisplay": "Surskit",
+            "level": 16,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Clackaclack",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Gust",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "SANDILE",
+            "speciesDisplay": "Sandile",
+            "level": 16,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Scheme",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mud Sling",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Brutal Swing",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rumble",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

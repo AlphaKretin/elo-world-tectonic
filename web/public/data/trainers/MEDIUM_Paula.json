@@ -1,0 +1,138 @@
+{
+    "label": "MEDIUM:Paula",
+    "title": "Medium Paula",
+    "trainerType": "MEDIUM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GENGAR",
+            "speciesDisplay": "Gengar",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "ICEGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MMUSHARNA",
+            "speciesDisplay": "M. Musharna",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stertor",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Diametric Breath",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "ZANGOOSE",
+            "speciesDisplay": "Zangoose",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCRAPPER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Deep Breathing",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "SEAKING",
+            "speciesDisplay": "Seaking",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "CHARMER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

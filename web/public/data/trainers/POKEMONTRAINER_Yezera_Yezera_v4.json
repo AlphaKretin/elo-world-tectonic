@@ -1,0 +1,171 @@
+{
+    "label": "POKEMONTRAINER_Yezera:Yezera#4",
+    "title": "Pok\u00e9mon Trainer Yezera #3",
+    "trainerType": "POKEMONTRAINER_Yezera",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ILLUMISE",
+            "speciesDisplay": "Illumise",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "MENTALHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Superstition",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BARBARACLE",
+            "speciesDisplay": "Barbaracle",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "COVERTCLOAK"
+            ],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Accelerock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MALAMAR",
+            "speciesDisplay": "Malamar",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Incision",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Eerie Impulse",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "GOURGEIST",
+            "speciesDisplay": "Gourgeist",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Mystery Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Seance",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Fireworks",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Bullet Seed",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "RAICHU",
+            "speciesDisplay": "Raichu",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Lightning Dance",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Joke Jolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

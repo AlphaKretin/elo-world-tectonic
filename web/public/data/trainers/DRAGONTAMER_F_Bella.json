@@ -1,0 +1,234 @@
+{
+    "label": "DRAGONTAMER_F:Bella",
+    "title": "Developer Bella",
+    "trainerType": "DRAGONTAMER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "CARETAKER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Caretaker"
+        }
+    ],
+    "party": [
+        {
+            "species": "INDEEDEE",
+            "speciesDisplay": "Indeedee",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "PINPOINTROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Eclipse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Follow Me",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mystical Fire",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Tutelage",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "DELCATTY",
+            "speciesDisplay": "Delcatty",
+            "level": 70,
+            "shiny": true,
+            "nickname": "EatTheRich",
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WILDCARD"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Follow Me",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Allergy",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "HTYPHLOSION",
+            "speciesDisplay": "H. Typhlosion",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ARTILLERY",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "UTILITYUMBRELLA"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MILOTIC",
+            "speciesDisplay": "Milotic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Mending Spring",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Breaking Swipe",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MEGANIUM",
+            "speciesDisplay": "Meganium",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Strength Sap",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "AMPHAROS",
+            "speciesDisplay": "Ampharos",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "COVERTCLOAK"
+            ],
+            "moves": [
+                {
+                    "name": "Transcendent Energy",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Thunder Cage",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Diametric Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,207 @@
+{
+    "label": "SCIENTIST_F3:Nkechi",
+    "title": "Scientist Nkechi",
+    "trainerType": "SCIENTIST_F3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "URSALUNA",
+            "speciesDisplay": "Ursaluna",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "CARETAKER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Extreme Effort",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stertor",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Horizon Slice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Toss n' Turn",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "AMUK",
+            "speciesDisplay": "A. Muk",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Wet Work",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "UNFEZANT",
+            "speciesDisplay": "Unfezant",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "SCOPELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SAURENAID",
+            "speciesDisplay": "Saurenaid",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Galling Spit",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Frost Breath",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "PORYGONZ",
+            "speciesDisplay": "Porygon-Z",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "WIDELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Critical Error",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thunder",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "DECEAT",
+            "speciesDisplay": "Deceat",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+{
+    "label": "ELDER:Logun",
+    "title": "Elder Logun",
+    "trainerType": "ELDER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "RAICHU",
+            "speciesDisplay": "Raichu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Lightning Dance",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "PELIPPER",
+            "speciesDisplay": "Pelipper",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "JABOCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "KLEAVOR",
+            "speciesDisplay": "Kleavor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Stone Axe",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "ABSOLUS",
+            "speciesDisplay": "Absolus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Plant Doubt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Infinite Force",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "ALAKAZAM",
+            "speciesDisplay": "Alakazam",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Steel Beam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Mist Burst",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "VICTREEBEL",
+            "speciesDisplay": "Victreebel",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Power Whip",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

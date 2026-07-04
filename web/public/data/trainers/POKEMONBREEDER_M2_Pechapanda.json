@@ -1,0 +1,133 @@
+{
+    "label": "POKEMONBREEDER_M2:Pechapanda",
+    "title": "Developer Pechapanda",
+    "trainerType": "POKEMONBREEDER_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KIRLIA",
+            "speciesDisplay": "Kirlia",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Exploit",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Psycho Cut",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "ESPEON",
+            "speciesDisplay": "Espeon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "EMPOLEON",
+            "speciesDisplay": "Empoleon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Backhand",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Power Hammer",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Hydro Pump",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "JELLICENT",
+            "speciesDisplay": "Jellicent",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bind Fate",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

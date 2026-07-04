@@ -1,0 +1,174 @@
+{
+    "label": "BATTLEGIRL2:Juniper",
+    "title": "Battle Girl Juniper",
+    "trainerType": "BATTLEGIRL2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AMOONGUSS",
+            "speciesDisplay": "Amoonguss",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Spore",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "OMASTAR",
+            "speciesDisplay": "Omastar",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SERENE",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mind Sap",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Petrify",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "DRAPION",
+            "speciesDisplay": "Drapion",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "REDCARD"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Honorless Sting",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Agonize",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "MAGMORTAR",
+            "speciesDisplay": "Magmortar",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "MDRAGALGE",
+            "speciesDisplay": "M. Dragalge",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "FROSTORB"
+            ],
+            "moves": [
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "High Jump Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

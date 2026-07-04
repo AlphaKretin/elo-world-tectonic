@@ -1,0 +1,138 @@
+{
+    "label": "MEDIUM:Izumi",
+    "title": "Medium Izumi",
+    "trainerType": "MEDIUM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FROSLASS",
+            "speciesDisplay": "Froslass",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "CARNIVINE",
+            "speciesDisplay": "Carnivine",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Camouflage",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Lurk",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Searing Crunch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "BASTIODON",
+            "speciesDisplay": "Bastiodon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "STAMPEDE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "SCRAFTY",
+            "speciesDisplay": "Scrafty",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Browbeat",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

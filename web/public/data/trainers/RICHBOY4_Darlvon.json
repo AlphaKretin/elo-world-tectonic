@@ -1,0 +1,196 @@
+{
+    "label": "RICHBOY4:Darlvon",
+    "title": "Developer Darlvon",
+    "trainerType": "RICHBOY4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PURUGLY",
+            "speciesDisplay": "Purugly",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stare Down",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "METAGROSS",
+            "speciesDisplay": "Metagross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Zen Headbutt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Censor",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "WEAVILE",
+            "speciesDisplay": "Weavile",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Lurk",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Winter Ops",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "WHIMSICOTT",
+            "speciesDisplay": "Whimsicott",
+            "level": 70,
+            "shiny": true,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cotton Guard",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Misadventure",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "AGGRON",
+            "speciesDisplay": "Aggron",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "STAMPEDE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Grounding",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Power Hammer",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Planetcracker",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "GOLISOPOD",
+            "speciesDisplay": "Golisopod",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "First Impression",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

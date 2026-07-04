@@ -1,0 +1,142 @@
+{
+    "label": "WILDPACK:Arid",
+    "title": "Wild Pack Arid",
+    "trainerType": "WILDPACK",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HIPPOWDON",
+            "speciesDisplay": "Hippowdon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "SMOOTHROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SUDOWOODO",
+            "speciesDisplay": "Sudowoodo",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "POWERHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Meteor Beam",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "PROBOPASS",
+            "speciesDisplay": "Probopass",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Flechettes",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Embrittle",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Pain Split",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "MANDIBUZZ",
+            "speciesDisplay": "Mandibuzz",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "CARETAKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "WACANBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Cull",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

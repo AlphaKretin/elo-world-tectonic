@@ -1,0 +1,202 @@
+{
+    "label": "WAITRESS2:Fanfan",
+    "title": "Developer Fanfan",
+    "trainerType": "WAITRESS2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ZOROARK",
+            "speciesDisplay": "Zoroark",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mass Destruction",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "PERSIAN",
+            "speciesDisplay": "Persian",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "NORMALGEM",
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Cha-ching",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "INDEEDEE",
+            "speciesDisplay": "Indeedee",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Rising Power",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mystical Fire",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "EELEKTROSS",
+            "speciesDisplay": "Eelektross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Toxic Taste",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Aquatic Crunch",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "INCINEROAR",
+            "speciesDisplay": "Incineroar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "DECEIVER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flame Spikes",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MIMIKYU",
+            "speciesDisplay": "Mimikyu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "CHARMER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Tantrum",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Wailing Blow",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

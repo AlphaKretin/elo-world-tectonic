@@ -1,0 +1,139 @@
+{
+    "label": "BLACKBELT:Santiago",
+    "title": "Black Belt Santiago",
+    "trainerType": "BLACKBELT",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DRAGONITE",
+            "speciesDisplay": "Dragonite",
+            "level": 54,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "EJECTPACK"
+            ],
+            "moves": [
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Brine",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Outrage",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "DELCATTY",
+            "speciesDisplay": "Delcatty",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "NOBLE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Hypothermiate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GOLISOPOD",
+            "speciesDisplay": "Golisopod",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "First Impression",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Stunning Curl",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "DIGNIPHITE",
+            "speciesDisplay": "Digniphite",
+            "level": 54,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Refurbish",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Power Hammer",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

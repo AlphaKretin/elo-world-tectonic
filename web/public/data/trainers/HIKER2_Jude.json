@@ -1,0 +1,64 @@
+{
+    "label": "HIKER2:Jude",
+    "title": "Hiker Jude",
+    "trainerType": "HIKER2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ANORITH",
+            "speciesDisplay": "Anorith",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wipeout",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Blunt Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Bug Bite",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "BELDUM",
+            "speciesDisplay": "Beldum",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Jolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Blind Side",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

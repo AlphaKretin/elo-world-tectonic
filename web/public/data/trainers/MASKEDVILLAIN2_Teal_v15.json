@@ -1,0 +1,212 @@
+{
+    "label": "MASKEDVILLAIN2:Teal#15",
+    "title": "Masked Villain Teal #2",
+    "trainerType": "MASKEDVILLAIN2",
+    "identities": [
+        {
+            "trainerType": "TRAINER_Alessa",
+            "realName": "Alessa"
+        }
+    ],
+    "trueNames": [
+        "Alessa"
+    ],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FORRETRESS",
+            "speciesDisplay": "Forretress",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Swarm Burst",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "PORYGONZ",
+            "speciesDisplay": "Porygon-Z",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Critical Error",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "HAXORUS",
+            "speciesDisplay": "Haxorus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "YACHEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "RILLABOOM",
+            "speciesDisplay": "Rillaboom",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "BUSHWHACKER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "GRASSGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Kick Drum",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DIGNIPHITE",
+            "speciesDisplay": "Digniphite",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Tantrum",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Heat Crash",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "CRUSTLE",
+            "speciesDisplay": "Crustle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SEVENLEAGUEBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Shell Smash",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

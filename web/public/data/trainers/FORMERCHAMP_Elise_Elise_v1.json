@@ -1,0 +1,201 @@
+{
+    "label": "FORMERCHAMP_Elise:Elise#1",
+    "title": "Former Champion Elise #2",
+    "trainerType": "FORMERCHAMP_Elise",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FROSLASS",
+            "speciesDisplay": "Froslass",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Snowy Sorrows",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hail",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Destiny Bond",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "MAMOSWINE",
+            "speciesDisplay": "Mamoswine",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "STAMPEDE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Stone Edge",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "DROMERUPT",
+            "speciesDisplay": "Dromerupt",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dry Heat",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "GOLURK",
+            "speciesDisplay": "Golurk",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thunder Punch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Six Feet Under",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "CHIMECHO",
+            "speciesDisplay": "Chimecho",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Charge Beam",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "WEAVILE",
+            "speciesDisplay": "Weavile",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Cadenza",
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

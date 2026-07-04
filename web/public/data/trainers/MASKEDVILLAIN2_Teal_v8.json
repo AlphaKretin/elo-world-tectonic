@@ -1,0 +1,204 @@
+{
+    "label": "MASKEDVILLAIN2:Teal#8",
+    "title": "Masked Villain Teal #1",
+    "trainerType": "MASKEDVILLAIN2",
+    "identities": [
+        {
+            "trainerType": "TRAINER_Eifion",
+            "realName": "Eifion"
+        }
+    ],
+    "trueNames": [
+        "Eifion"
+    ],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "REGICE",
+            "speciesDisplay": "Regice",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "HOUNDOMINUS",
+            "speciesDisplay": "Houndominus",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Mass Destruction",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SCEPTILE",
+            "speciesDisplay": "Sceptile",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "MANERGETIC",
+            "speciesDisplay": "Manergetic",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "PHIONE",
+            "speciesDisplay": "Phione",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "SALACBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "GIGANTEON",
+            "speciesDisplay": "Giganteon",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

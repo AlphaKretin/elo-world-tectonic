@@ -1,0 +1,208 @@
+{
+    "label": "TOURISTM:Azeler",
+    "title": "Developer Azeler",
+    "trainerType": "TOURISTM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LEDIAN",
+            "speciesDisplay": "Ledian",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Orion",
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "EJECTPACK"
+            ],
+            "moves": [
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MRMIME",
+            "speciesDisplay": "Mr. Mime",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Mercury",
+            "tribes": [
+                "INDUSTRIOUS",
+                "DECEIVER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ill Wishes",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Teeter Dance",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bucket Drop",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "CROBAT",
+            "speciesDisplay": "Crobat",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Mars",
+            "tribes": [
+                "TACTICIAN",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Exsanguinate",
+                    "type": "POISON"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "SENSIBELLE",
+            "speciesDisplay": "Sensibelle",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Venus",
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Heal Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Saturn",
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sky Fall",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Take Shelter",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "RUBARIOR",
+            "speciesDisplay": "Rubarior",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Phobos",
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Destiny Bond",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

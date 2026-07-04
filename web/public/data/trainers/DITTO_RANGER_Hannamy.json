@@ -1,0 +1,105 @@
+{
+    "label": "DITTO_RANGER:Hannamy",
+    "title": "Pok\u00e9mon Ranger Hannamy",
+    "trainerType": "DITTO_RANGER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CACTURNE",
+            "speciesDisplay": "Cacturne",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "QWILFISH",
+            "speciesDisplay": "Qwilfish",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Throat Chop",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Stinging Jealousy",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stockpile",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SAWK",
+            "speciesDisplay": "Sawk",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Accelerock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Enchanted Arrow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "label": "BUGCATCHER_F:Caitlyn",
+    "title": "Bug Catcher Caitlyn",
+    "trainerType": "BUGCATCHER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KRICKETOT",
+            "speciesDisplay": "Kricketot",
+            "level": 8,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bide",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Prank",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Clackaclack",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Harsh Vibes",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MVULPIX",
+            "speciesDisplay": "M. Vulpix",
+            "level": 9,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dirge",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Fake Tears",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dazzle",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Luster",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

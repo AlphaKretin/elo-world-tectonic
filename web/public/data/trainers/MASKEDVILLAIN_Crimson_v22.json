@@ -1,0 +1,208 @@
+{
+    "label": "MASKEDVILLAIN:Crimson#22",
+    "title": "Masked Villain Crimson #2",
+    "trainerType": "MASKEDVILLAIN",
+    "identities": [
+        {
+            "trainerType": "TRAINER_Candy",
+            "realName": "Candy"
+        }
+    ],
+    "trueNames": [
+        "Candy"
+    ],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "STARAPTOR",
+            "speciesDisplay": "Staraptor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Submission",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "KINGAMBIT",
+            "speciesDisplay": "Kingambit",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GALLADE",
+            "speciesDisplay": "Gallade",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GRAPIDASH",
+            "speciesDisplay": "G. Rapidash",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Infinite Force",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "ARCANINE",
+            "speciesDisplay": "Arcanine",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Blazing Speed",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Outrage",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GOLURK",
+            "speciesDisplay": "Golurk",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Inferno",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Mud Slide",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Sunder Fate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

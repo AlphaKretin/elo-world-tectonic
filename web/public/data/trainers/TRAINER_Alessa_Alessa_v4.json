@@ -1,0 +1,204 @@
+{
+    "label": "TRAINER_Alessa:Alessa#4",
+    "title": "Pok\u00e9mon Trainer Alessa #3",
+    "trainerType": "TRAINER_Alessa",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FORRETRESS",
+            "speciesDisplay": "Forretress",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LUNCHBOX"
+            ],
+            "moves": [
+                {
+                    "name": "Swarm Burst",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "ROSERADE",
+            "speciesDisplay": "Roserade",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "STRIKECORSET"
+            ],
+            "moves": [
+                {
+                    "name": "Cruel Whipblade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "SWAMPERT",
+            "speciesDisplay": "Swampert",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "RINDOFEAST"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "CRUSTLE",
+            "speciesDisplay": "Crustle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WHITEBOUGH"
+            ],
+            "moves": [
+                {
+                    "name": "Shell Smash",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "DURANT",
+            "speciesDisplay": "Durant",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "ASSAULTCORSET"
+            ],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "CLAYDOL",
+            "speciesDisplay": "Claydol",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "LUNUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Leyline Burst",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dead End",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

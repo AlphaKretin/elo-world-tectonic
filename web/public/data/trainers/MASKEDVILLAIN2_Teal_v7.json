@@ -1,0 +1,213 @@
+{
+    "label": "MASKEDVILLAIN2:Teal#7",
+    "title": "Masked Villain Teal #1",
+    "trainerType": "MASKEDVILLAIN2",
+    "identities": [
+        {
+            "trainerType": "TRAINER_Keoni",
+            "realName": "Keoni"
+        }
+    ],
+    "trueNames": [
+        "Keoni"
+    ],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "REGICE",
+            "speciesDisplay": "Regice",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "ICEGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MFURRET",
+            "speciesDisplay": "M. Furret",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "ESOTERIC",
+                "SERENE"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Power-Up Punch",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "MPOLTEAGEIST",
+            "speciesDisplay": "M. Polteageist",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "COLBURBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Leaf Storm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Frost Breath",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Mind Sap",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GDARMANITAN",
+            "speciesDisplay": "G. Darmanitan",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Zen Headbutt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "AMUK",
+            "speciesDisplay": "A. Muk",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Venom Drench",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "AGOLEM",
+            "speciesDisplay": "A. Golem",
+            "level": 65,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "ELECTRICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,135 @@
+{
+    "label": "SCIENTIST_F:Natasha",
+    "title": "Scientist Natasha",
+    "trainerType": "SCIENTIST_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SMEARGLE",
+            "speciesDisplay": "Smeargle",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "V-create",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Stellarate",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Six Feet Under",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Planetcracker",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "SMEARGLE",
+            "speciesDisplay": "Smeargle",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Coaching",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Blossom",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Package",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Breakdance",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "SMEARGLE",
+            "speciesDisplay": "Smeargle",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Octolock",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "No Retreat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Oblivion Wing",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Tera Drain",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "SMEARGLE",
+            "speciesDisplay": "Smeargle",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "ENERGYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Giga Impact",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Allergy",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Hunt Down",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

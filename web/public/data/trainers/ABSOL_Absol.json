@@ -1,0 +1,44 @@
+{
+    "label": "ABSOL:Absol",
+    "title": "Wild Absol",
+    "trainerType": "ABSOL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ABSOL",
+            "speciesDisplay": "Absol",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Plant Doubt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

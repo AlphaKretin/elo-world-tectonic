@@ -1,0 +1,197 @@
+{
+    "label": "JANITOR:Steeb",
+    "title": "Developer Steeb",
+    "trainerType": "JANITOR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BEWEAR",
+            "speciesDisplay": "Bewear",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Nene",
+            "tribes": [
+                "SCRAPPER",
+                "CARETAKER",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Thrash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bear Hug",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "OCTILLERY",
+            "speciesDisplay": "Octillery",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "TACTICIAN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Inferno",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Spray and Pray",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "MAROWAK",
+            "speciesDisplay": "Marowak",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCRAPPER",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bonemerang",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "LILLIGANT",
+            "speciesDisplay": "Lilligant",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Enchanted Arrow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Petal Tempest",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Petal Dance",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "DHELMISE",
+            "speciesDisplay": "Dhelmise",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Razing Vines",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Metal Sound",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Weigh Anchor",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "DECEAT",
+            "speciesDisplay": "Deceat",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Spirit Break",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Innocent Masque",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

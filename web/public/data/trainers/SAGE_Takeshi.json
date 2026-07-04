@@ -1,0 +1,139 @@
+{
+    "label": "SAGE:Takeshi",
+    "title": "Sage Takeshi",
+    "trainerType": "SAGE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "RAMPARDOS",
+            "speciesDisplay": "Rampardos",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SALACBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Accelerock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "VESPIQUEN",
+            "speciesDisplay": "Vespiquen",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Defend Order",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Heal Order",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Terror Swarm",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "WYRDEER",
+            "speciesDisplay": "Wyrdeer",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "FORTUNE",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psyshield Bash",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Glacial Crunch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "HLILLIGANT",
+            "speciesDisplay": "H. Lilligant",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SERENE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

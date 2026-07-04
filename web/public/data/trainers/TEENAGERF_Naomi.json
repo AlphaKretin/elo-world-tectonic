@@ -1,0 +1,107 @@
+{
+    "label": "TEENAGERF:Naomi",
+    "title": "Teenager Naomi",
+    "trainerType": "TEENAGERF",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "IVYSAUR",
+            "speciesDisplay": "Ivysaur",
+            "level": 23,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "STAMPEDE",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stink Cloud",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Poison Ivy",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "TYRUNT",
+            "speciesDisplay": "Tyrunt",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "SCOURGE",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Lash Out",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Shred",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "WOOBAT",
+            "speciesDisplay": "Woobat",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "HARMONIC",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "SITRUSBERRY",
+                "PSYCHICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Heart Stamp",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Echolocate",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "label": "HIKER2:Rhys",
+    "title": "Hiker Rhys",
+    "trainerType": "HIKER2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CHESNAUGHT",
+            "speciesDisplay": "Chesnaught",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Spiky Shield",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sacred Sword",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "NOCTOWL",
+            "speciesDisplay": "Noctowl",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "EISCUE",
+            "speciesDisplay": "Eiscue",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shiver Dance",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Substitute",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "LUMINEON",
+            "speciesDisplay": "Lumineon",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "HARMONIC",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bubble Barrage",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Seance",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Rapid Hertz",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

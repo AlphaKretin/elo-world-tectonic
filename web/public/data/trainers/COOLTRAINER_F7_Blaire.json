@@ -1,0 +1,216 @@
+{
+    "label": "COOLTRAINER_F7:Blaire",
+    "title": "Pro Trainer Blaire",
+    "trainerType": "COOLTRAINER_F7",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "ESOTERIC",
+            "count": 6,
+            "threshold": 5,
+            "name": "Esoteric"
+        }
+    ],
+    "party": [
+        {
+            "species": "CLAYDOL",
+            "speciesDisplay": "Claydol",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Psyche Switch",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "MIENSHAO",
+            "speciesDisplay": "Mienshao",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "WARRIOR",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Disarming Shot",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "RELICANTH",
+            "speciesDisplay": "Relicanth",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Floodgate",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "AMAROWAK",
+            "speciesDisplay": "A. Marowak",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCRAPPER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "WEAKNESSPOLICY"
+            ],
+            "moves": [
+                {
+                    "name": "Breakdance",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Shadow Bone",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "MILOTIC",
+            "speciesDisplay": "Milotic",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Galling Spit",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "FLORGES",
+            "speciesDisplay": "Florges",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

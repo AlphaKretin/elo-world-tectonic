@@ -1,0 +1,166 @@
+{
+    "label": "CHALLENGER_Vanya:Vanya#1",
+    "title": "Challenger Vanya #2",
+    "trainerType": "CHALLENGER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BARBOACH",
+            "speciesDisplay": "Barboach",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tail Slam",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Spattering Ram",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Flounder",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Spark",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "MROGGENROLA",
+            "speciesDisplay": "M. Roggenrola",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "ANIMATED",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Rock Tomb",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Tail Slam",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Heart Stamp",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "SKRELP",
+            "speciesDisplay": "Skrelp",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Breaking Swipe",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Spark",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Natural Protection",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "BASCULIN",
+            "speciesDisplay": "Basculin",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "SCRAPPER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Hydro Fang",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "ARON",
+            "speciesDisplay": "Aron",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "STAMPEDE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Bullet Charge",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Howl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Embrittle",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

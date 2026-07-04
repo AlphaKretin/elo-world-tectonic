@@ -1,0 +1,200 @@
+{
+    "label": "TRAINER_Eifion:Eifion#1",
+    "title": "Pok\u00e9mon Trainer Eifion #2",
+    "trainerType": "TRAINER_Eifion",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DELPHOX",
+            "speciesDisplay": "Delphox",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "ESOTERIC",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "HEATROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Sunshine",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "HOUNDOMINUS",
+            "speciesDisplay": "Houndominus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PHIONE",
+            "speciesDisplay": "Phione",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "TOXAPEX",
+            "speciesDisplay": "Toxapex",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Venom Drench",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "OCTILLERY",
+            "speciesDisplay": "Octillery",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "TACTICIAN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "SLOWBRO",
+            "speciesDisplay": "Slowbro",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "HARMONIC",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Retreat",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

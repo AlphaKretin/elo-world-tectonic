@@ -1,0 +1,108 @@
+{
+    "label": "ANCIENTPRIEST:Dobromil",
+    "title": "Ancient Priest Dobromil",
+    "trainerType": "ANCIENTPRIEST",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MBEAUTIFLY",
+            "speciesDisplay": "M. Beautifly",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "RADIANT",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Icy Injection",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "PURUGLY",
+            "speciesDisplay": "Purugly",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stare Down",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "QUAGSIRE",
+            "speciesDisplay": "Quagsire",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "RINDOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "River Rest",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+.leaderboard-search {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.leaderboard-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 640px;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.leaderboard-table thead th {
+  cursor: pointer;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  user-select: none;
+  position: sticky;
+  top: 0;
+  background: var(--surface-1);
+}
+
+.leaderboard-table tbody tr {
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-faint);
+}
+
+.leaderboard-table tbody tr:hover {
+  background: var(--surface-2);
+}
+
+.trainer-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.trainer-curse-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.leaderboard-count {
+  margin-top: 0.6rem;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}

@@ -1,0 +1,109 @@
+{
+    "label": "VANYADAD:Avram",
+    "title": "Collector Avram",
+    "trainerType": "VANYADAD",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PLUSLE",
+            "speciesDisplay": "Plusle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "HARMONIC",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Lucky Cheer",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Retreat",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "SENSIBELLE",
+            "speciesDisplay": "Sensibelle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Heal Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MMILOTIC",
+            "speciesDisplay": "M. Milotic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "COVERTCLOAK"
+            ],
+            "moves": [
+                {
+                    "name": "Arc of Hope",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Stand Together",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

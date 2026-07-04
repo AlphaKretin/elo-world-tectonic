@@ -1,0 +1,126 @@
+{
+    "label": "SCIENTIST_M:Julien",
+    "title": "Scientist Julien",
+    "trainerType": "SCIENTIST_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "INTELEON",
+            "speciesDisplay": "Inteleon",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Shrapnel",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "DITTO",
+            "speciesDisplay": "Ditto",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SEVENLEAGUEBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Transform",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "ZOROARK",
+            "speciesDisplay": "Zoroark",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Grim Visions",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "MIMIKYU",
+            "speciesDisplay": "Mimikyu",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sapping Jealousy",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "label": "HEXMANIAC_1:Riptide",
+    "title": "Developer Riptide #1",
+    "trainerType": "HEXMANIAC_1",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AMUK",
+            "speciesDisplay": "A. Muk",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Brutal Swing",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "MEDITITE",
+            "speciesDisplay": "Meditite",
+            "level": 1,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Follow Me",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TURTWIG",
+            "speciesDisplay": "Turtwig",
+            "level": 1,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "SABLEYE",
+            "speciesDisplay": "Sableye",
+            "level": 1,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "FRAGILELOCKET"
+            ],
+            "moves": [
+                {
+                    "name": "Follow Me",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SPINARAK",
+            "speciesDisplay": "Spinarak",
+            "level": 1,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "FRAGILELOCKET"
+            ],
+            "moves": [
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "POLIWAG",
+            "speciesDisplay": "Poliwag",
+            "level": 1,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Follow Me",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

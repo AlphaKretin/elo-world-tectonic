@@ -1,0 +1,137 @@
+{
+    "label": "SWIMMER_F:Cosmina",
+    "title": "Swimmer Cosmina",
+    "trainerType": "SWIMMER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "RELICANTH",
+            "speciesDisplay": "Relicanth",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ROCKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Wild Charge",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Floodgate",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "CURESOLA",
+            "speciesDisplay": "Curesola",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Superstition",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Shattered Light",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Coral Overgrowth",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "HITMONLEE",
+            "speciesDisplay": "Hitmonlee",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "DUSTOX",
+            "speciesDisplay": "Dustox",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SERENE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Sandblasting",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Mind Sap",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

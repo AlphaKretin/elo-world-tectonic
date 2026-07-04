@@ -1,0 +1,204 @@
+{
+    "label": "LEADER_Samorn:Samorn",
+    "title": "Gym Leader Samorn #1",
+    "trainerType": "LEADER_Samorn",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FLYGON",
+            "speciesDisplay": "Flygon",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "COBABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Devouring Dust",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "TOWERPODA",
+            "speciesDisplay": "Towerpoda",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "CHOPLEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GARCHOMP",
+            "speciesDisplay": "Garchomp",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Devour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "VOLCARONA",
+            "speciesDisplay": "Volcarona",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CARETAKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "SAURENAID",
+            "speciesDisplay": "Saurenaid",
+            "level": 60,
+            "shiny": false,
+            "nickname": "Maxie",
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "REAVOR",
+            "speciesDisplay": "Reavor",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Shatter Vise",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

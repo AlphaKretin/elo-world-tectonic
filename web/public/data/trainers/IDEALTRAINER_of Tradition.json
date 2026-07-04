@@ -1,0 +1,196 @@
+{
+    "label": "IDEALTRAINER:of Tradition",
+    "title": "Ideal Trainer of Tradition",
+    "trainerType": "IDEALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SCIZOR",
+            "speciesDisplay": "Scizor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Carapace Crush",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "AMPHAROS",
+            "speciesDisplay": "Ampharos",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sanctuary",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Guttural Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Transcendent Energy",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "BLISSEY",
+            "speciesDisplay": "Blissey",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mind Link",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "ESPEON",
+            "speciesDisplay": "Espeon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "UMBREON",
+            "speciesDisplay": "Umbreon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GYARADOS",
+            "speciesDisplay": "Gyarados",
+            "level": 70,
+            "shiny": true,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Devour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Aquatic Crunch",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Wyrmwounding",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

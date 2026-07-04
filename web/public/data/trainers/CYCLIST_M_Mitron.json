@@ -1,0 +1,105 @@
+{
+    "label": "CYCLIST_M:Mitron",
+    "title": "Cyclist Mitron",
+    "trainerType": "CYCLIST_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MDUSTOX",
+            "speciesDisplay": "M. Dustox",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Bug Bite",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Cold Embrace",
+                    "type": "ICE"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "GARBODOR",
+            "speciesDisplay": "Garbodor",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCAVENGER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Trash Treasure",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stink Cloud",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "MARILL",
+            "speciesDisplay": "Marill",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Mending Spring",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Pixie Punch",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

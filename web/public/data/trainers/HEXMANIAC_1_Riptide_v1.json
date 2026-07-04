@@ -1,0 +1,197 @@
+{
+    "label": "HEXMANIAC_1:Riptide#1",
+    "title": "Developer Riptide #2",
+    "trainerType": "HEXMANIAC_1",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HELECTRODE",
+            "speciesDisplay": "H. Electrode",
+            "level": 70,
+            "shiny": true,
+            "nickname": "HECKIT",
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "AMUK",
+            "speciesDisplay": "A. Muk",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Stacker",
+            "tribes": [
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "COVERTCLOAK"
+            ],
+            "moves": [
+                {
+                    "name": "Venom Drench",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Wet Work",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MARACTUS",
+            "speciesDisplay": "Maractus",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Soloer",
+            "tribes": [
+                "HARMONIC",
+                "ANIMATED"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Thorn Rattle",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "SNEASLER",
+            "speciesDisplay": "Sneasler",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Diva",
+            "tribes": [
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "SCOPELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Focus Energy",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "WISHIWASHI",
+            "speciesDisplay": "Wishiwashi",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Demon Tower",
+            "tribes": [
+                "TACTICIAN",
+                "RADIANT",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Ebb & Flow",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dive",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Flounder",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "ARCLAMOR",
+            "speciesDisplay": "Arclamor",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Demondice",
+            "tribes": [
+                "HARMONIC",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "LEPPABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Wall of Sound",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Belch",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Noble Roar",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

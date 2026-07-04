@@ -1,0 +1,103 @@
+{
+    "label": "BIRDKEEPER_F:Amanda",
+    "title": "Bird Keeper Amanda",
+    "trainerType": "BIRDKEEPER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AERODACTYL",
+            "speciesDisplay": "Aerodactyl",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "FLYINGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Hunt Down",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Lash Out",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Supersonic",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MANECTRIC",
+            "speciesDisplay": "Manectric",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flare",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Shock Wave",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "DURALUDON",
+            "speciesDisplay": "Duraludon",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Take Shelter",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Dragon Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Loom Over",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

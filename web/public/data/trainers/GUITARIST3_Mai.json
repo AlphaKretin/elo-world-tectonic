@@ -1,0 +1,135 @@
+{
+    "label": "GUITARIST3:Mai",
+    "title": "Guitarist Mai",
+    "trainerType": "GUITARIST3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LOUDRED",
+            "speciesDisplay": "Loudred",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Aura Pulse",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Round",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Harsh Vibes",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GPONYTA",
+            "speciesDisplay": "G. Ponyta",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mishap",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Heart Stamp",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Growl",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MACHOKE",
+            "speciesDisplay": "Machoke",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Low Sweep",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Kindle",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "PIKACHU",
+            "speciesDisplay": "Pikachu",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "ELECTRICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Electro Ball",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunder Shock",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

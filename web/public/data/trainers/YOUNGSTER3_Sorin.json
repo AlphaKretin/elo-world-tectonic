@@ -1,0 +1,106 @@
+{
+    "label": "YOUNGSTER3:Sorin",
+    "title": "Youngster Sorin",
+    "trainerType": "YOUNGSTER3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FROGADIER",
+            "speciesDisplay": "Frogadier",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tease",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Round",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "BRAIXEN",
+            "speciesDisplay": "Braixen",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "ESOTERIC",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fire Spin",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Eerie Impulse",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "QUILLADIN",
+            "speciesDisplay": "Quilladin",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Spiky Shield",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Force Palm",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

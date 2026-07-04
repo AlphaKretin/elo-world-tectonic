@@ -1,0 +1,203 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#21",
+    "title": "Pok\u00e9mon Master Vanya #21",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "LOYAL",
+            "count": 6,
+            "threshold": 5,
+            "name": "Loyal"
+        }
+    ],
+    "party": [
+        {
+            "species": "SAMUROTT",
+            "speciesDisplay": "Samurott",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bar",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "CHESNAUGHT",
+            "speciesDisplay": "Chesnaught",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sacred Sword",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bar",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bulwark",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "LYCANROC",
+            "speciesDisplay": "Lycanroc",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Stormshards",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "SYLVEON",
+            "speciesDisplay": "Sylveon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "FURRET",
+            "speciesDisplay": "Furret",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Dive",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "BASCULEGION",
+            "speciesDisplay": "Basculegion",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "SCRAPPER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "From Beyond",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "label": "BURGLAR:Martino",
+    "title": "Burglar Martino",
+    "trainerType": "BURGLAR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "NINETALES",
+            "speciesDisplay": "Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "NOBLE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Fleur Cannon",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fire Blast",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "METAGROSS",
+            "speciesDisplay": "Metagross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Omniscient Blow",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "WEEZING",
+            "speciesDisplay": "Weezing",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "TACTICIAN",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "KINGDRA",
+            "speciesDisplay": "Kingdra",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "NOBLE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Galling Spit",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

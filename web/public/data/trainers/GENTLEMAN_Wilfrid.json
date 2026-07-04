@@ -1,0 +1,69 @@
+{
+    "label": "GENTLEMAN:Wilfrid",
+    "title": "Gentleman Wilfrid",
+    "trainerType": "GENTLEMAN",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GROWLITHE",
+            "speciesDisplay": "Growlithe",
+            "level": 10,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Kindle",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Growl",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Eager Tickling",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "CHEWTLE",
+            "speciesDisplay": "Chewtle",
+            "level": 10,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "TYRANNICAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Headbang",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Breach",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

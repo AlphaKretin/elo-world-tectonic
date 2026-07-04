@@ -1,0 +1,138 @@
+{
+    "label": "CAMPER_M:Nick",
+    "title": "Camper Nick",
+    "trainerType": "CAMPER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ARATICATE",
+            "speciesDisplay": "A. Raticate",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mouthful",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Extreme Speed",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "REAVOR",
+            "speciesDisplay": "Reavor",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Shatter Vise",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Carapace Crush",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "PTEROFLYTE",
+            "speciesDisplay": "Pteroflyte",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hunt Down",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "FLORGES",
+            "speciesDisplay": "Florges",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Enchanted Arrow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

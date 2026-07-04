@@ -1,0 +1,208 @@
+{
+    "label": "POKEMONRANGER_M2_GANG:Terrance",
+    "title": "Driller Terrance",
+    "trainerType": "POKEMONRANGER_M2_GANG",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ACCELGOR",
+            "speciesDisplay": "Accelgor",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Caltrop Arts",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scale Storm",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bio Flash",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "CROBAT",
+            "speciesDisplay": "Crobat",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "MZANGOOSE",
+            "speciesDisplay": "M. Zangoose",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Wailing Blow",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "ADUGTRIO",
+            "speciesDisplay": "A. Dugtrio",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Hair Flip",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Enchanted Arrow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Stinging Jealousy",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "JUMPLUFF",
+            "speciesDisplay": "Jumpluff",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CHOICESPECS"
+            ],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Petal Dance",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "BARRASKEWDA",
+            "speciesDisplay": "Barraskewda",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Ramming Speed",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

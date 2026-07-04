@@ -1,0 +1,196 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#14",
+    "title": "Pok\u00e9mon Master Vanya #14",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HELECTRODE",
+            "speciesDisplay": "H. Electrode",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Rockapult",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Chloroblast",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MZANGOOSE",
+            "speciesDisplay": "M. Zangoose",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Cold Shoulder",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "CRYOGONAL",
+            "speciesDisplay": "Cryogonal",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Frigid Flurry",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ice-Nine Wall",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "MNOCTOWL",
+            "speciesDisplay": "M. Noctowl",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bird's-Eye View",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Shed Coat",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "DUSCLOPS",
+            "speciesDisplay": "Dusclops",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cold Shoulder",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Destiny Bond",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "HDECIDUEYE",
+            "speciesDisplay": "H. Decidueye",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Threefold Volley",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

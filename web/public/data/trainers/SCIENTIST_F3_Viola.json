@@ -1,0 +1,139 @@
+{
+    "label": "SCIENTIST_F3:Viola",
+    "title": "Scientist Viola",
+    "trainerType": "SCIENTIST_F3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "REINFORCINGROD"
+            ],
+            "moves": [
+                {
+                    "name": "Take Shelter",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "KLEFKI",
+            "speciesDisplay": "Klefki",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bucket Drop",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "DRIFBLIM",
+            "speciesDisplay": "Drifblim",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SOLROCK",
+            "speciesDisplay": "Solrock",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Psycho Cut",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Rock Tomb",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

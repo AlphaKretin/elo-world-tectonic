@@ -1,0 +1,141 @@
+{
+    "label": "WILDPACK:Frigid",
+    "title": "Wild Pack Frigid",
+    "trainerType": "WILDPACK",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CONIFEAR",
+            "speciesDisplay": "Conifear",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "ICYROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Holly Charm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "TREVENANT",
+            "speciesDisplay": "Trevenant",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "DECEIVER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Wood Hammer",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Cold Shoulder",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MAMOSWINE",
+            "speciesDisplay": "Mamoswine",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "STAMPEDE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shiver Dance",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "BEARTIC",
+            "speciesDisplay": "Beartic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "BABIRIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

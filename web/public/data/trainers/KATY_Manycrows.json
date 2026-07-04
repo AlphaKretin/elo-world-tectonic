@@ -1,0 +1,205 @@
+{
+    "label": "KATY:Manycrows",
+    "title": "Developer Manycrows",
+    "trainerType": "KATY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ARAICHU",
+            "speciesDisplay": "A. Raichu",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Rex",
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [
+                "DAMPROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Live Wire",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "LANTURN",
+            "speciesDisplay": "Lanturn",
+            "level": 70,
+            "shiny": false,
+            "nickname": "DARYA",
+            "tribes": [
+                "RADIANT",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Illicium Impulse",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Mending Spring",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MANERGETIC",
+            "speciesDisplay": "Manergetic",
+            "level": 70,
+            "shiny": false,
+            "nickname": "KATY",
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Capacity Burst",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "ZEBSTRIKA",
+            "speciesDisplay": "Zebstrika",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Tiskhu",
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Submission",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "MAGNEZONE",
+            "speciesDisplay": "Magnezone",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Hypatia",
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Inferno",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Rockapult",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Tera Drain",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "TROPIUS",
+            "speciesDisplay": "Tropius",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Mika",
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

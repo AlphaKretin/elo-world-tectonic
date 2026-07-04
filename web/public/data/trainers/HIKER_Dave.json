@@ -1,0 +1,65 @@
+{
+    "label": "HIKER:Dave",
+    "title": "Hiker Dave",
+    "trainerType": "HIKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GEODUDE",
+            "speciesDisplay": "Geodude",
+            "level": 8,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Rock Throw",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Rumble",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Rock Polish",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "TIMBURR",
+            "speciesDisplay": "Timburr",
+            "level": 9,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Pound",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Front Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Leafage",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,215 @@
+{
+    "label": "SPIRITGUARDIAN4:Brigitte",
+    "title": "Spirit Guardian Brigitte",
+    "trainerType": "SPIRITGUARDIAN4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "CARETAKER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Caretaker"
+        }
+    ],
+    "party": [
+        {
+            "species": "TOGEDEMARU",
+            "speciesDisplay": "Togedemaru",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Thunder",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "TORTERRA",
+            "speciesDisplay": "Torterra",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Wood Hammer",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "LEAVANNY",
+            "speciesDisplay": "Leavanny",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "ASSASSIN",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "WHETSTONE"
+            ],
+            "moves": [
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "SAURENAID",
+            "speciesDisplay": "Saurenaid",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "CHESTOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Loom Over",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "PELIPPER",
+            "speciesDisplay": "Pelipper",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "DAMPROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Hydro Pump",
+                    "type": "WATER"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "GYARADOS",
+            "speciesDisplay": "Gyarados",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "WATERGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Outrage",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

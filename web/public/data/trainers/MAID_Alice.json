@@ -1,0 +1,105 @@
+{
+    "label": "MAID:Alice",
+    "title": "Maid Alice",
+    "trainerType": "MAID",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AUDINO",
+            "speciesDisplay": "Audino",
+            "level": 23,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dazzling Gleam",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Round",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Baby-Doll Eyes",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "FRILLISH",
+            "speciesDisplay": "Frillish",
+            "level": 23,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Bubble Barrage",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dead End",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "LICKITUNG",
+            "speciesDisplay": "Lickitung",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "STAMPEDE",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Take Down",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,195 @@
+{
+    "label": "COOLTRAINER_M3:Dada",
+    "title": "Developer Dada",
+    "trainerType": "COOLTRAINER_M3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FLAREON",
+            "speciesDisplay": "Flareon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flare Up",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Raging Fury",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "HOUNDOMINUS",
+            "speciesDisplay": "Houndominus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Mass Destruction",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Parhelion Hunt",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "MAGMORTAR",
+            "speciesDisplay": "Magmortar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "INDUSTRIOUS",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Tephra Cannon",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "DARMANITAN",
+            "speciesDisplay": "Darmanitan",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Searing Crunch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Psyche Switch",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Raging Fury",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Psychic Overload",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "CHANDELURE",
+            "speciesDisplay": "Chandelure",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "DECEIVER",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Polarized Room",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Inferno",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "TALONFLAME",
+            "speciesDisplay": "Talonflame",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

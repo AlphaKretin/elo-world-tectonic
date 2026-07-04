@@ -1,0 +1,105 @@
+{
+    "label": "COLLECTOR:Emre",
+    "title": "Collector Emre",
+    "trainerType": "COLLECTOR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CASTFORM",
+            "speciesDisplay": "Castform",
+            "level": 33,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "FORTUNE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "ICYROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Invite Hail",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Drift Off",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "POLTEAGEIST",
+            "speciesDisplay": "Polteageist",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aromatherapy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "ABOMASNOW",
+            "speciesDisplay": "Abomasnow",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

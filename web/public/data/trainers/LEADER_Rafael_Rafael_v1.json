@@ -1,0 +1,205 @@
+{
+    "label": "LEADER_Rafael:Rafael#1",
+    "title": "Gym Leader Rafael",
+    "trainerType": "LEADER_Rafael",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BELLOSSOM",
+            "speciesDisplay": "Bellossom",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SERENE",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Smolder Rave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dazzling Gleam",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "MNINETALES",
+            "speciesDisplay": "M. Ninetales",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Spiteful Chant",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Dust Devil",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "DHELMISE",
+            "speciesDisplay": "Dhelmise",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "OCCABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Weigh Anchor",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "AMAROWAK",
+            "speciesDisplay": "A. Marowak",
+            "level": 30,
+            "shiny": false,
+            "nickname": "Apotropaia",
+            "tribes": [
+                "ARTILLERY",
+                "SCRAPPER",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "ORICORIO",
+            "speciesDisplay": "Oricorio",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "HARMONIC",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "CHARCOAL"
+            ],
+            "moves": [
+                {
+                    "name": "Feather Dance",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Lightning Dance",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Squall Dart",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Smolder Rave",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "WHIMSICOTT",
+            "speciesDisplay": "Whimsicott",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Star Dance",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flash Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Pixie Punch",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

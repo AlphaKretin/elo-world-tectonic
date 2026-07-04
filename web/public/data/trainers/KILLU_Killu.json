@@ -1,0 +1,195 @@
+{
+    "label": "KILLU:Killu",
+    "title": "Developer Killu",
+    "trainerType": "KILLU",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HZOROARK",
+            "speciesDisplay": "H. Zoroark",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Keres",
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Substitute",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Phantom Gate",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "DITTO",
+            "speciesDisplay": "Ditto",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Ube",
+            "tribes": [
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SEVENLEAGUEBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Transform",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TOGEKISS",
+            "speciesDisplay": "Togekiss",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Teneo",
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "MIRROREDROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Moonglow",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "SNEASLER",
+            "speciesDisplay": "Sneasler",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Memory",
+            "tribes": [
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "LEAVANNY",
+            "speciesDisplay": "Leavanny",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Demeter",
+            "tribes": [
+                "INDUSTRIOUS",
+                "ASSASSIN",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "WHETSTONE"
+            ],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Camouflage",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "MHAEROBIC",
+            "speciesDisplay": "M. Haerobic",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Nyx",
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WISEGLASSES"
+            ],
+            "moves": [
+                {
+                    "name": "Luna Sucre",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Psyche Switch",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "label": "AROMALADY:Hannah",
+    "title": "Aroma Lady Hannah",
+    "trainerType": "AROMALADY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BUDEW",
+            "speciesDisplay": "Budew",
+            "level": 12,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Leafage",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Poison Sting",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Aromatherapy",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "FLABEBE",
+            "speciesDisplay": "Flab\u00e9b\u00e9",
+            "level": 12,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fairy Wind",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Prank",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PIPLUP",
+            "speciesDisplay": "Piplup",
+            "level": 12,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Growl",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Shotput",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

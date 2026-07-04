@@ -1,0 +1,75 @@
+{
+    "label": "IDOL:Teagan",
+    "title": "Idol Teagan",
+    "trainerType": "IDOL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "WATCHOG",
+            "speciesDisplay": "Watchog",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "CRYSTALVEIL"
+            ],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Stunning Display",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SYLVEON",
+            "speciesDisplay": "Sylveon",
+            "level": 59,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

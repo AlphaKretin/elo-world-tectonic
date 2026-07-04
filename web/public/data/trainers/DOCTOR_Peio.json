@@ -1,0 +1,138 @@
+{
+    "label": "DOCTOR:Peio",
+    "title": "Doctor Peio",
+    "trainerType": "DOCTOR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HATTERENE",
+            "speciesDisplay": "Hatterene",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Spirit Break",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "BLASTOISE",
+            "speciesDisplay": "Blastoise",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "TACTICIAN",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Volley Stance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "BARBARACLE",
+            "speciesDisplay": "Barbaracle",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Razor Shell",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Rock Polish",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "SENSIBELLE",
+            "speciesDisplay": "Sensibelle",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Heart Rhythm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

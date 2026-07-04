@@ -1,0 +1,208 @@
+{
+    "label": "POKEMONRANGER_M4_GANG:Micah",
+    "title": "Driller Micah",
+    "trainerType": "POKEMONRANGER_M4_GANG",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CLAYDOL",
+            "speciesDisplay": "Claydol",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Retreat",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Leyline Burst",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "KINGDRA",
+            "speciesDisplay": "Kingdra",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "NOBLE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "KINGAMBIT",
+            "speciesDisplay": "Kingambit",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Pursuit",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "FEAROW",
+            "speciesDisplay": "Fearow",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Jet Stream",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "ZANGOOSE",
+            "speciesDisplay": "Zangoose",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCRAPPER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FRAGILELOCKET"
+            ],
+            "moves": [
+                {
+                    "name": "Fury Swipes",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Deep Breathing",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GENGAR",
+            "speciesDisplay": "Gengar",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Spectral Tongue",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

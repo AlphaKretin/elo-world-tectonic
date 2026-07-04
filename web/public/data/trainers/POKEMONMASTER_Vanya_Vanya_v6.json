@@ -1,0 +1,197 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#6",
+    "title": "Pok\u00e9mon Master Vanya #6",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "INDUSTRIOUS",
+            "count": 5,
+            "threshold": 5,
+            "name": "Industrious"
+        },
+        {
+            "tribeId": "LOYAL",
+            "count": 5,
+            "threshold": 5,
+            "name": "Loyal"
+        }
+    ],
+    "party": [
+        {
+            "species": "KLEFKI",
+            "speciesDisplay": "Klefki",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Gyro Ball",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Tit for Tat",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SMEARGLE",
+            "speciesDisplay": "Smeargle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sketch",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BOLTUND",
+            "speciesDisplay": "Boltund",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "INDUSTRIOUS",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "AMBIPOM",
+            "speciesDisplay": "Ambipom",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "LOYAL",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Pounce",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Rock Blast",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Thieving Spree",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "WAILORD",
+            "speciesDisplay": "Wailord",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Whale Song",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "ALAKAZAM",
+            "speciesDisplay": "Alakazam",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Doom Desire",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Psyche Switch",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

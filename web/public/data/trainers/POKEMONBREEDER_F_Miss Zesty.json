@@ -1,0 +1,197 @@
+{
+    "label": "POKEMONBREEDER_F:Miss Zesty",
+    "title": "Developer Miss Zesty",
+    "trainerType": "POKEMONBREEDER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DECEAT",
+            "speciesDisplay": "Deceat",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Spirit Break",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Innocent Masque",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SYLVEON",
+            "speciesDisplay": "Sylveon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "ANINETALES",
+            "speciesDisplay": "A. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sylph Spell",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "MIMIKYU",
+            "speciesDisplay": "Mimikyu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "CHARMER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "After You",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Cold Shoulder",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "YANMEGA",
+            "speciesDisplay": "Yanmega",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ASSASSIN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aim True",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Lumina Chain",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "MPOLTEAGEIST",
+            "speciesDisplay": "M. Polteageist",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Petal Tempest",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Aromatic Mist",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

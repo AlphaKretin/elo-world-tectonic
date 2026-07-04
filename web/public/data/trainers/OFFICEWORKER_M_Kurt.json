@@ -1,0 +1,109 @@
+{
+    "label": "OFFICEWORKER_M:Kurt",
+    "title": "Office Worker Kurt",
+    "trainerType": "OFFICEWORKER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MEOWSTIC",
+            "speciesDisplay": "Meowstic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "LUXRAY",
+            "speciesDisplay": "Luxray",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Photon Edge",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Searing Crunch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Howl",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "TORKOAL",
+            "speciesDisplay": "Torkoal",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

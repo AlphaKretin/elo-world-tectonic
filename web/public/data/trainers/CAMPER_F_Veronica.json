@@ -1,0 +1,168 @@
+{
+    "label": "CAMPER_F:Veronica",
+    "title": "Camper Veronica",
+    "trainerType": "CAMPER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HAEROBIC",
+            "speciesDisplay": "Haerobic",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Night Slash",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MHAEROBIC",
+            "speciesDisplay": "M. Haerobic",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Luna Sucre",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mystical Fire",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "JELLICENT",
+            "speciesDisplay": "Jellicent",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Brine",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Drown",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "ZEBSTRIKA",
+            "speciesDisplay": "Zebstrika",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Take Down",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Wild Charge",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "SWELLOW",
+            "speciesDisplay": "Swellow",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Divining Talon",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Flail",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Steel Wing",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

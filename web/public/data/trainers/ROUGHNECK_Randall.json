@@ -1,0 +1,165 @@
+{
+    "label": "ROUGHNECK:Randall",
+    "title": "Roughneck Randall",
+    "trainerType": "ROUGHNECK",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GLACEON",
+            "speciesDisplay": "Glaceon",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Halting Cold",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Baby-Doll Eyes",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "OCTILLERY",
+            "speciesDisplay": "Octillery",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "TACTICIAN",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fireworks",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Bubble Barrage",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Hone Sight",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "CROBAT",
+            "speciesDisplay": "Crobat",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "FLYINGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Exsanguinate",
+                    "type": "POISON"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Suck Blood",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "SHIFTRY",
+            "speciesDisplay": "Shiftry",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Scheme",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Autumn Blast",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "STEELIX",
+            "speciesDisplay": "Steelix",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Terraform",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Mud Shot",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

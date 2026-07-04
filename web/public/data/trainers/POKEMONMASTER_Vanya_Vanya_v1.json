@@ -1,0 +1,196 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#1",
+    "title": "Pok\u00e9mon Master Vanya #2",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DROMERUPT",
+            "speciesDisplay": "Dromerupt",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Flame Spikes",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dry Heat",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "WATCHOG",
+            "speciesDisplay": "Watchog",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shattered Light",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Lumin Burst",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Stunning Display",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "MZANGOOSE",
+            "speciesDisplay": "M. Zangoose",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Cold Shoulder",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "RUBARIOR",
+            "speciesDisplay": "Rubarior",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Gem Seal",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "DECEAT",
+            "speciesDisplay": "Deceat",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Spirit Break",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Innocent Masque",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "PTEROFLYTE",
+            "speciesDisplay": "Pteroflyte",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Hard Place",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

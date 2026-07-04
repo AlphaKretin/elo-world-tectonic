@@ -1,0 +1,106 @@
+{
+    "label": "DITTO_HIKER:Kevinick",
+    "title": "Hiker Kevinick",
+    "trainerType": "DITTO_HIKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SCRAFTY",
+            "speciesDisplay": "Scrafty",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Drown",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Browbeat",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Stinging Jealousy",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "MDRAGALGE",
+            "speciesDisplay": "M. Dragalge",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Sapping Jealousy",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "LAIRON",
+            "speciesDisplay": "Lairon",
+            "level": 33,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "STAMPEDE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Magnetize",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

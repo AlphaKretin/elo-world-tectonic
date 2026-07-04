@@ -1,0 +1,172 @@
+{
+    "label": "CEO:Beatrice",
+    "title": "CEO Beatrice",
+    "trainerType": "CEO",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MNINETALES",
+            "speciesDisplay": "M. Ninetales",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "AMULETCOIN"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cha-ching",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fragmentation",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "GWEEZING",
+            "speciesDisplay": "G. Weezing",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cha-ching",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Charity",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "PERRSERKER",
+            "speciesDisplay": "Perrserker",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Plunder",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Cha-ching",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "COFAGRIGUS",
+            "speciesDisplay": "Cofagrigus",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "DECEIVER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Pharaoh's Curse",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Destiny Bond",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "PERSIAN",
+            "speciesDisplay": "Persian",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "WHETSTONE"
+            ],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

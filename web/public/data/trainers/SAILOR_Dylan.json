@@ -1,0 +1,103 @@
+{
+    "label": "SAILOR:Dylan",
+    "title": "Sailor Dylan",
+    "trainerType": "SAILOR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AZURILL",
+            "speciesDisplay": "Azurill",
+            "level": 14,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wipeout",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Tickle",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Eager Tickling",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "WINGULL",
+            "speciesDisplay": "Wingull",
+            "level": 14,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Immerse",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Draft",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TEPIG",
+            "speciesDisplay": "Tepig",
+            "level": 14,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "WARRIOR",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Kindle",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Leer",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Tread On",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Scuffle",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

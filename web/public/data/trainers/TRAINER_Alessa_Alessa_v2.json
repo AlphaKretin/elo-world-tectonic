@@ -1,0 +1,175 @@
+{
+    "label": "TRAINER_Alessa:Alessa#2",
+    "title": "Pok\u00e9mon Trainer Alessa",
+    "trainerType": "TRAINER_Alessa",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "WALREIN",
+            "speciesDisplay": "Walrein",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "ICEGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Halting Cold",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MEGANIUM",
+            "speciesDisplay": "Meganium",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Terraform",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "INCINEROAR",
+            "speciesDisplay": "Incineroar",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "DECEIVER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Darkest Lariat",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flame Spikes",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "WORNET",
+            "speciesDisplay": "Wornet",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Manyneedle",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "ALTARIA",
+            "speciesDisplay": "Altaria",
+            "level": 46,
+            "shiny": false,
+            "nickname": "Khamsin",
+            "tribes": [
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "EVIOLITE"
+            ],
+            "moves": [
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Cotton Guard",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "label": "BATTLEGIRL3:Amelia",
+    "title": "Battle Girl Amelia",
+    "trainerType": "BATTLEGIRL3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KECLEON",
+            "speciesDisplay": "Kecleon",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "WEAKNESSPOLICY"
+            ],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "ATLACROSS",
+            "speciesDisplay": "Atlacross",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "BRAVIARY",
+            "speciesDisplay": "Braviary",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Righteous Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Divining Talon",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "REUNICLUS",
+            "speciesDisplay": "Reuniclus",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "TACTICIAN",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "KEEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MANIKLAW",
+            "speciesDisplay": "Maniklaw",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ANIMATED",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

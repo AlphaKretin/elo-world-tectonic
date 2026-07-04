@@ -1,0 +1,138 @@
+{
+    "label": "BATTLEGIRL3:Kryska",
+    "title": "Battle Girl Kryska",
+    "trainerType": "BATTLEGIRL3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GOGOAT",
+            "speciesDisplay": "Gogoat",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "INDUSTRIOUS",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Root Driver",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MINIOR",
+            "speciesDisplay": "Minior",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ROCKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Rock Polish",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "SALAZZLE",
+            "speciesDisplay": "Salazzle",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CHARMER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Venoshock",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "FARIGIRAF",
+            "speciesDisplay": "Farigiraf",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "STAMPEDE",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Zen Headbutt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

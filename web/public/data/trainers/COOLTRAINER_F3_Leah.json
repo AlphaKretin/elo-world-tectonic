@@ -1,0 +1,74 @@
+{
+    "label": "COOLTRAINER_F3:Leah",
+    "title": "Cooltrainer Leah",
+    "trainerType": "COOLTRAINER_F3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "INDEEDEE",
+            "speciesDisplay": "Indeedee",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "TOGEDEMARU",
+            "speciesDisplay": "Togedemaru",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Zing Zap",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Spiky Shield",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Steel Beam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

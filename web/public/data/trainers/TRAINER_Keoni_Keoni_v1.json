@@ -1,0 +1,136 @@
+{
+    "label": "TRAINER_Keoni:Keoni#1",
+    "title": "Pok\u00e9mon Trainer Keoni #2",
+    "trainerType": "TRAINER_Keoni",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MSEVIPER",
+            "speciesDisplay": "M. Seviper",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "RADIANT",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Coil",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MZANGOOSE",
+            "speciesDisplay": "M. Zangoose",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "GHOSTGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "GDARMANITAN",
+            "speciesDisplay": "G. Darmanitan",
+            "level": 39,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "ICEGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "ARATICATE",
+            "speciesDisplay": "A. Raticate",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mouthful",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Natural Gift",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Brain Freeze",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

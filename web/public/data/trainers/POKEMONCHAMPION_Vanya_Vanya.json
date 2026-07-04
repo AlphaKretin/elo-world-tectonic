@@ -1,0 +1,206 @@
+{
+    "label": "POKEMONCHAMPION_Vanya:Vanya",
+    "title": "Champion Vanya",
+    "trainerType": "POKEMONCHAMPION_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PINCURCHIN",
+            "speciesDisplay": "Pincurchin",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "REDCARD"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stunning Curl",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Thunder Cage",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "KLAWSAR",
+            "speciesDisplay": "Klawsar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "GRIPCLAW"
+            ],
+            "moves": [
+                {
+                    "name": "Slam Shut",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Bar",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "ANNIHILAPE",
+            "speciesDisplay": "Annihilape",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "STAMPEDE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Wraith Wrath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Raging Fury",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Tantrum",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "MSCEPTILE",
+            "speciesDisplay": "M. Sceptile",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Featherlock Volley",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Drag Beneath",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "SALAZZLE",
+            "speciesDisplay": "Salazzle",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "EXPERTBELT"
+            ],
+            "moves": [
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Acid Bath",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Hypothermiate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "DELIBIRD",
+            "speciesDisplay": "Delibird",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "HEAVYDUTYBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Package",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

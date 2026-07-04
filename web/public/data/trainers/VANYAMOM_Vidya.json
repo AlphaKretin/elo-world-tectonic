@@ -1,0 +1,109 @@
+{
+    "label": "VANYAMOM:Vidya",
+    "title": "Scientist Vidya",
+    "trainerType": "VANYAMOM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "REINFORCINGROD"
+            ],
+            "moves": [
+                {
+                    "name": "Psycho Boost",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Fragmentation",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sky Fall",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Take Shelter",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "CROBAT",
+            "speciesDisplay": "Crobat",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DUSKNOIR",
+            "speciesDisplay": "Dusknoir",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "FRAGILELOCKET"
+            ],
+            "moves": [
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

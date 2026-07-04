@@ -1,0 +1,235 @@
+{
+    "label": "SCIENTIST_F:LunaFlare",
+    "title": "Developer LunaFlare",
+    "trainerType": "SCIENTIST_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "NOBLE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Noble"
+        }
+    ],
+    "party": [
+        {
+            "species": "ESPEON",
+            "speciesDisplay": "Espeon",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Chloe",
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "PSYCHICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Psyche Switch",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "HONCHKROW",
+            "speciesDisplay": "Honchkrow",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WILDCARD"
+            ],
+            "moves": [
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DELCATTY",
+            "speciesDisplay": "Delcatty",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "NOBLE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "NIDOQUEEN",
+            "speciesDisplay": "Nidoqueen",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "NOBLE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "WALREIN",
+            "speciesDisplay": "Walrein",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LUMBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Water Spout",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MNINETALES",
+            "speciesDisplay": "M. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Substitute",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

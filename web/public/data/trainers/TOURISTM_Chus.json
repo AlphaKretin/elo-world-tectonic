@@ -1,0 +1,214 @@
+{
+    "label": "TOURISTM:Chus",
+    "title": "Developer Chus",
+    "trainerType": "TOURISTM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "CARETAKER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Caretaker"
+        }
+    ],
+    "party": [
+        {
+            "species": "HSAMUROTT",
+            "speciesDisplay": "H. Samurott",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Mizu",
+            "tribes": [
+                "WARRIOR",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Ceaseless Edge",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "TORTERRA",
+            "speciesDisplay": "Torterra",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Terra",
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Root Shelter",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "BRAVIARY",
+            "speciesDisplay": "Braviary",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Hope",
+            "tribes": [
+                "WARRIOR",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Righteous Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "SENSIBELLE",
+            "speciesDisplay": "Sensibelle",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Isa",
+            "tribes": [
+                "CARETAKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Amnesia",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "VOLCARONA",
+            "speciesDisplay": "Volcarona",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Helios",
+            "tribes": [
+                "RADIANT",
+                "CARETAKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "HEAVYDUTYBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "TOGEDEMARU",
+            "speciesDisplay": "Togedemaru",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Toru",
+            "tribes": [
+                "CARETAKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Zing Zap",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Live Wire",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

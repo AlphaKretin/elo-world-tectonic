@@ -1,0 +1,204 @@
+{
+    "label": "POKEMONTRAINER_Vanya:Vanya#1",
+    "title": "Pok\u00e9mon Trainer Vanya #2",
+    "trainerType": "POKEMONTRAINER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MUSHARNA",
+            "speciesDisplay": "Musharna",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ENERGYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sugar Ball",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Cryo Sleep",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "MMUSHARNA",
+            "speciesDisplay": "M. Musharna",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "COVERTCLOAK"
+            ],
+            "moves": [
+                {
+                    "name": "Slumbering Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "REM Burst",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "KOMALA",
+            "speciesDisplay": "Komala",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [
+                "THROATSPRAY"
+            ],
+            "moves": [
+                {
+                    "name": "Dreamscape",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Stertor",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Last Resort",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PARASECT",
+            "speciesDisplay": "Parasect",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LEPPABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Possession",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Spore",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Follow Me",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BRELOOM",
+            "speciesDisplay": "Breloom",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Spore",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Power Whip",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "OBSTAGOON",
+            "speciesDisplay": "Obstagoon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Toss n' Turn",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Play Dead",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

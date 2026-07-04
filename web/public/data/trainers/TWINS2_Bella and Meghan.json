@@ -1,0 +1,139 @@
+{
+    "label": "TWINS2:Bella and Meghan",
+    "title": "Twins Bella and Meghan",
+    "trainerType": "TWINS2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LURANTIS",
+            "speciesDisplay": "Lurantis",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "REINFORCINGROD"
+            ],
+            "moves": [
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "SIGILYPH",
+            "speciesDisplay": "Sigilyph",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dazzling Gleam",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Pressure Shock",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Psypierce",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "HARCANINE",
+            "speciesDisplay": "H. Arcanine",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GSLOWKING",
+            "speciesDisplay": "G. Slowking",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "SCOURGE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "KEEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Eerie Spell",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Belch",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

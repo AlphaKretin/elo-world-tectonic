@@ -1,0 +1,105 @@
+{
+    "label": "BACKPACKER_M:Freedom",
+    "title": "Backpacker Freedom",
+    "trainerType": "BACKPACKER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "NUZLEAF",
+            "speciesDisplay": "Nuzleaf",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scheme",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Autumn Blast",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MAREANIE",
+            "speciesDisplay": "Mareanie",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Caustic Punch",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Razor Shell",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Peck",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "MSINISTEA",
+            "speciesDisplay": "M. Sinistea",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Magical Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

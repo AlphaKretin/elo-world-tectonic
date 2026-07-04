@@ -1,0 +1,132 @@
+{
+    "label": "SWIMMER_M2:Finn",
+    "title": "Swimmer Finn",
+    "trainerType": "SWIMMER_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "RELICANTH",
+            "speciesDisplay": "Relicanth",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "CUSTAPBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Petrify",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "FERROTHORN",
+            "speciesDisplay": "Ferrothorn",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Impaling Spike",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Gyro Ball",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "GLISCOR",
+            "speciesDisplay": "Gliscor",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Tail Slam",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Feint Attack",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "HEATMOR",
+            "speciesDisplay": "Heatmor",
+            "level": 39,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

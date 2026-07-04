@@ -40,6 +40,7 @@ import resvg_py
 from PIL import Image, ImageDraw, ImageFont
 
 import results_lib
+from card_constants import TIER_COLORS
 from results_lib import ANALYSIS_DIR, CARD_DATA_PATH, REPO_ROOT
 
 RESULTS_DIR = results_lib.RESULTS_DIR
@@ -152,15 +153,6 @@ COLOR_WIN = (70, 170, 90)
 COLOR_DRAW = (225, 185, 40)
 COLOR_LOSS = (195, 60, 50)
 
-# Same low (F) -> high (S+) ramp elo_world_pokemon_red's own tier_colors
-# uses -- a "heat" gradient (green -> yellow -> orange -> red -> magenta),
-# not red=bad/green=good, matching common tier-list convention.
-TIER_COLORS = {
-    "F": (0, 176, 80), "D-": (36, 187, 69), "D": (75, 199, 53), "D+": (111, 210, 38),
-    "C-": (147, 222, 21), "C": (184, 233, 0), "C+": (220, 244, 0), "B-": (255, 255, 0),
-    "B": (255, 214, 0), "B+": (255, 172, 0), "A-": (255, 93, 0), "A": (255, 87, 0),
-    "A+": (255, 43, 0), "S": (255, 0, 0), "S+": (255, 0, 80),
-}
 TIER_BADGE_HEIGHT = 46  # corner badge diameter
 
 

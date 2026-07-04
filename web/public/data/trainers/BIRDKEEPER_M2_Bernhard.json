@@ -1,0 +1,139 @@
+{
+    "label": "BIRDKEEPER_M2:Bernhard",
+    "title": "Bird Keeper Bernhard",
+    "trainerType": "BIRDKEEPER_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PIDGEOT",
+            "speciesDisplay": "Pidgeot",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "ASSASSIN",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dust Storm",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Scour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "WHISCASH",
+            "speciesDisplay": "Whiscash",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "CHESTOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Tail Slam",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "CRYOGONAL",
+            "speciesDisplay": "Cryogonal",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ominous Wind",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Aurora Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "RAICHU",
+            "speciesDisplay": "Raichu",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "CHOICESPECS"
+            ],
+            "moves": [
+                {
+                    "name": "Joke Jolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Swift",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

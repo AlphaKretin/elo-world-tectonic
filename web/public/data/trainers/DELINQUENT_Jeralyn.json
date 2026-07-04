@@ -1,0 +1,93 @@
+{
+    "label": "DELINQUENT:Jeralyn",
+    "title": "Delinquent Jeralyn",
+    "trainerType": "DELINQUENT",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DITTO",
+            "speciesDisplay": "Ditto",
+            "level": 33,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Transform",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MJELLICENT",
+            "speciesDisplay": "M. Jellicent",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "NOBLE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shadow Claw",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "GREEDENT",
+            "speciesDisplay": "Greedent",
+            "level": 33,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "INDUSTRIOUS",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Stockpile",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Recycle",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

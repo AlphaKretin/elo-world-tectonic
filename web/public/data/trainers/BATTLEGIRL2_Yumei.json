@@ -1,0 +1,143 @@
+{
+    "label": "BATTLEGIRL2:Yumei",
+    "title": "Battle Girl Yumei",
+    "trainerType": "BATTLEGIRL2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SUDOWOODO",
+            "speciesDisplay": "Sudowoodo",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "HEATROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Sunshine",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "HELIOLISK",
+            "speciesDisplay": "Heliolisk",
+            "level": 43,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ARTILLERY",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Beam Struggle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "EXEGGUTOR",
+            "speciesDisplay": "Exeggutor",
+            "level": 42,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Head Throw",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Diametric Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "RAPIDASH",
+            "speciesDisplay": "Rapidash",
+            "level": 43,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "LOYAL",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Solar Glide",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

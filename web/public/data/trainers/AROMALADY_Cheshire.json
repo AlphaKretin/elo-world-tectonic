@@ -1,0 +1,106 @@
+{
+    "label": "AROMALADY:Cheshire",
+    "title": "Aroma Lady Cheshire",
+    "trainerType": "AROMALADY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ROSELIA",
+            "speciesDisplay": "Roselia",
+            "level": 29,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "POISONGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Stinging Jealousy",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Slash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "WATCHOG",
+            "speciesDisplay": "Watchog",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Pacify",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Laser Beam",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "SHEDINJA",
+            "speciesDisplay": "Shedinja",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "ASSASSIN",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Claw",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

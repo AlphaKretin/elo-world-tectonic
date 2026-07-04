@@ -1,0 +1,169 @@
+{
+    "label": "NURSE:Ellen",
+    "title": "Nurse Ellen",
+    "trainerType": "NURSE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CHANSEY",
+            "speciesDisplay": "Chansey",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Tri Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SWOOBAT",
+            "speciesDisplay": "Swoobat",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "HARMONIC",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LUCKHERB",
+                "TWISTEDSPOON"
+            ],
+            "moves": [
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Heart Stamp",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "DUDUNSPARCE",
+            "speciesDisplay": "Dudunsparce",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "FORTUNE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dust Devil",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Fool",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "GOLISOPOD",
+            "speciesDisplay": "Golisopod",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "BUGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Spattering Ram",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Stunning Curl",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Low Sweep",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "First Impression",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "DOUBLADE",
+            "speciesDisplay": "Doublade",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Claw",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Autotomize",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

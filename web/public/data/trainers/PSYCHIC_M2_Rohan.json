@@ -1,0 +1,134 @@
+{
+    "label": "PSYCHIC_M2:Rohan",
+    "title": "Psychic Rohan",
+    "trainerType": "PSYCHIC_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "VENOMOTH",
+            "speciesDisplay": "Venomoth",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Creep Out",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "POLIWRATH",
+            "speciesDisplay": "Poliwrath",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "HARMONIC",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "LUXRAY",
+            "speciesDisplay": "Luxray",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Photon Edge",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MTANGROWTH",
+            "speciesDisplay": "M. Tangrowth",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "ROCKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Petrify",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

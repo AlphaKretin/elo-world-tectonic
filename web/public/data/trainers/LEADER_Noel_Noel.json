@@ -1,0 +1,204 @@
+{
+    "label": "LEADER_Noel:Noel",
+    "title": "Gym Leader Noel",
+    "trainerType": "LEADER_Noel",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MBEAUTIFLY",
+            "speciesDisplay": "M. Beautifly",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "RADIANT",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "HEAVYDUTYBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Skewer",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Icy Injection",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "METAGROSS",
+            "speciesDisplay": "Metagross",
+            "level": 45,
+            "shiny": true,
+            "nickname": "Armiger",
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Censor",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Crushing Chasm",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Monolith Drop",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "MPOLTEAGEIST",
+            "speciesDisplay": "M. Polteageist",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Frost Breath",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Seance",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Bubble Barrage",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Halting Cold",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "BRUXISH",
+            "speciesDisplay": "Bruxish",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "EXPERTBELT"
+            ],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Elemental Crunch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bare Teeth",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GRAPIDASH",
+            "speciesDisplay": "G. Rapidash",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Infinite Force",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "GDARMANITAN",
+            "speciesDisplay": "G. Darmanitan",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Burn Up",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Sublimate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

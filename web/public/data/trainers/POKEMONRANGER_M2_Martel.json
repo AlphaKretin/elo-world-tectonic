@@ -1,0 +1,99 @@
+{
+    "label": "POKEMONRANGER_M2:Martel",
+    "title": "Pok\u00e9mon Ranger Martel",
+    "trainerType": "POKEMONRANGER_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "APPLETUN",
+            "speciesDisplay": "Appletun",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "ARTILLERY",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Sugar Ball",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Confide",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MNINETALES",
+            "speciesDisplay": "M. Ninetales",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Dead End",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Iron Defense",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "MCARNIVINE",
+            "speciesDisplay": "M. Carnivine",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

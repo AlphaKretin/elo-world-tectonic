@@ -1,0 +1,74 @@
+{
+    "label": "POKEFAN_F3:Margaret",
+    "title": "Pok\u00e9 Fan Margaret",
+    "trainerType": "POKEFAN_F3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GRIMMSNARL",
+            "speciesDisplay": "Grimmsnarl",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "ASSASSIN",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "False Surrender",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MANECTRIC",
+            "speciesDisplay": "Manectric",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

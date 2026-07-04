@@ -1,0 +1,102 @@
+{
+    "label": "ROLLERSKATER_M:Lane Tester",
+    "title": "Roller Skater Lane Tester",
+    "trainerType": "ROLLERSKATER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MACHOP",
+            "speciesDisplay": "Machop",
+            "level": 10,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Coaching",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Karate Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Focus Energy",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bar",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "PIKACHU",
+            "speciesDisplay": "Pikachu",
+            "level": 10,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Prank",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thunder Shock",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "SEEDOT",
+            "speciesDisplay": "Seedot",
+            "level": 10,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bide",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Essence Arrow",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Harsh Vibes",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Fake Tears",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

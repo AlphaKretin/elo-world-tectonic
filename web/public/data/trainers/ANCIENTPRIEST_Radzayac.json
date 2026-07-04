@@ -1,0 +1,137 @@
+{
+    "label": "ANCIENTPRIEST:Radzayac",
+    "title": "Ancient Priest Radzayac",
+    "trainerType": "ANCIENTPRIEST",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DIGGERSBY",
+            "speciesDisplay": "Diggersby",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Super Fang",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "MGIGALITH",
+            "speciesDisplay": "M. Gigalith",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "ANIMATED",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Aberrant Mote",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Singing Stone",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Blossom",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Lumin Burst",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "HZOROARK",
+            "speciesDisplay": "H. Zoroark",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "UTILITYUMBRELLA"
+            ],
+            "moves": [
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Malefaction",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "ARCTOZOLT",
+            "speciesDisplay": "Arctozolt",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bolt Beak",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Frost Breath",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Erode",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

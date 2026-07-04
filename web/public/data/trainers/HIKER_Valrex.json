@@ -1,0 +1,177 @@
+{
+    "label": "HIKER:Valrex",
+    "title": "Developer Valrex",
+    "trainerType": "HIKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MFURRET",
+            "speciesDisplay": "M. Furret",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Pauline",
+            "tribes": [
+                "HARMONIC",
+                "ESOTERIC",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Oneiromancy",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MGIGALITH",
+            "speciesDisplay": "M. Gigalith",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "ANIMATED",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aberrant Mote",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Singing Stone",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "ARCTOZOLT",
+            "speciesDisplay": "Arctozolt",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bolt Beak",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ice Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "UNFEZANT",
+            "speciesDisplay": "Unfezant",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "FALINKS",
+            "speciesDisplay": "Falinks",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "No Retreat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Steel Beam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Rising Power",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MUDKIP",
+            "speciesDisplay": "Mudkip",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Counter",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Mirror Coat",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

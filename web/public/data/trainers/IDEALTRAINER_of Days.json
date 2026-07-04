@@ -1,0 +1,195 @@
+{
+    "label": "IDEALTRAINER:of Days",
+    "title": "Ideal Trainer of Days",
+    "trainerType": "IDEALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LYCANROC",
+            "speciesDisplay": "Lycanroc",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Stormshards",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "TOXAPEX",
+            "speciesDisplay": "Toxapex",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Venom Drench",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Substitute",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Venomortar",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "VIKAVOLT",
+            "speciesDisplay": "Vikavolt",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "INDUSTRIOUS",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Lumin Burst",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Lightning Dance",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "ANINETALES",
+            "speciesDisplay": "A. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sylph Spell",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "GOLISOPOD",
+            "speciesDisplay": "Golisopod",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "First Impression",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "TOUCANNON",
+            "speciesDisplay": "Toucannon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Bullet Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Beak Blast",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

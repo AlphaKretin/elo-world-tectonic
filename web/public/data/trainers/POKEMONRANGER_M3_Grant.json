@@ -1,0 +1,137 @@
+{
+    "label": "POKEMONRANGER_M3:Grant",
+    "title": "Pok\u00e9mon Ranger Grant",
+    "trainerType": "POKEMONRANGER_M3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HIPPOWDON",
+            "speciesDisplay": "Hippowdon",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MARACTUS",
+            "speciesDisplay": "Maractus",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thorn Rattle",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Erode",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PROBOPASS",
+            "speciesDisplay": "Probopass",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sandstorm",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "PALOSSAND",
+            "speciesDisplay": "Palossand",
+            "level": 47,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCOURGE",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Sirocco",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Erode",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

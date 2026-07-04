@@ -1,0 +1,167 @@
+{
+    "label": "LEADER_Helena:Helena",
+    "title": "Gym Leader Helena #1",
+    "trainerType": "LEADER_Helena",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CHINCHOU",
+            "speciesDisplay": "Chinchou",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Fool",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "WAILMER",
+            "speciesDisplay": "Wailmer",
+            "level": 25,
+            "shiny": false,
+            "nickname": "Hannibal",
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Discourage",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Brine",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "LUXIO",
+            "speciesDisplay": "Luxio",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Feint Attack",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Thunder Fang",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Fire Fang",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Ice Fang",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "PRINPLUP",
+            "speciesDisplay": "Prinplup",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Aqua Shock",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bullet Charge",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Aurora Beam",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "TOXTRICITY",
+            "speciesDisplay": "Toxtricity",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Assurance",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

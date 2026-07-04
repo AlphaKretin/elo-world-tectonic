@@ -1,0 +1,143 @@
+{
+    "label": "WILDPACK:Lunar",
+    "title": "Wild Pack Lunar",
+    "trainerType": "WILDPACK",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CLEFABLE",
+            "speciesDisplay": "Clefable",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "MIRROREDROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Follow Me",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Morningstar",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "ARATICATE",
+            "speciesDisplay": "A. Raticate",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Mouthful",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "NOCTOWL",
+            "speciesDisplay": "Noctowl",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "PSYCHICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Tempest",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "True Name",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SYLVEON",
+            "speciesDisplay": "Sylveon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Mist Burst",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Moonglow",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "label": "TRAINER_Alessa:Alessa#1",
+    "title": "Pok\u00e9mon Trainer Alessa #2",
+    "trainerType": "TRAINER_Alessa",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TRUBBISH",
+            "speciesDisplay": "Trubbish",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCAVENGER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Trash Treasure",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stink Cloud",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Shrapnel",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SWADLOON",
+            "speciesDisplay": "Swadloon",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "ASSASSIN",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Rake",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "PIGNITE",
+            "speciesDisplay": "Pignite",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "WARRIOR",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "FIREGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Flame Wheel",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SUNKERN",
+            "speciesDisplay": "Sunkern",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "LOYAL",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "HEATROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Magical Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Symbiosis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Broil",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

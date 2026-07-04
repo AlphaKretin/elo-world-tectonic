@@ -1,0 +1,105 @@
+{
+    "label": "HOOPSTER:Jerel",
+    "title": "Hoopster Jerel",
+    "trainerType": "HOOPSTER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "VOLTORB",
+            "speciesDisplay": "Voltorb",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Electro Ball",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Swift",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Self-Destruct",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rock Throw",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "SKORUPI",
+            "speciesDisplay": "Skorupi",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Feint Attack",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Fang",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Suck Blood",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "KOFFING",
+            "speciesDisplay": "Koffing",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Self-Destruct",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

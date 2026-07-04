@@ -1,0 +1,103 @@
+{
+    "label": "POKEFAN_F2:Tsveta",
+    "title": "Pok\u00e9 Fan Tsveta",
+    "trainerType": "POKEFAN_F2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LAPRAS",
+            "speciesDisplay": "Lapras",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Brine",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Round",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dragon Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "CARBINK",
+            "speciesDisplay": "Carbink",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Ancient Power",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Work Up",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "METANG",
+            "speciesDisplay": "Metang",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Magnetize",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Bullet Punch",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Psycho Cut",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Thunder Punch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

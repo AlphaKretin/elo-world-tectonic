@@ -1,0 +1,138 @@
+{
+    "label": "NURSERYAIDE:Francesca",
+    "title": "Nursery Aide Francesca",
+    "trainerType": "NURSERYAIDE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CINCCINO",
+            "speciesDisplay": "Cinccino",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Wind Tunnel",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Vicious Cleaning",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rapid Hertz",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Pacify",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "DRAGALGE",
+            "speciesDisplay": "Dragalge",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Acid Breach",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "CRUSTLE",
+            "speciesDisplay": "Crustle",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

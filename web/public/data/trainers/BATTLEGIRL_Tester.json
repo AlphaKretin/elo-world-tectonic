@@ -1,0 +1,144 @@
+{
+    "label": "BATTLEGIRL:Tester",
+    "title": "Battle Girl Tester",
+    "trainerType": "BATTLEGIRL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "NOBLE",
+            "count": 6,
+            "threshold": 5,
+            "name": "Noble"
+        },
+        {
+            "tribeId": "SCRAPPER",
+            "count": 6,
+            "threshold": 5,
+            "name": "Scrapper"
+        },
+        {
+            "tribeId": "SERENE",
+            "count": 6,
+            "threshold": 5,
+            "name": "Serene"
+        }
+    ],
+    "party": [
+        {
+            "species": "SLAKING",
+            "speciesDisplay": "Slaking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SERENE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tackle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SLAKING",
+            "speciesDisplay": "Slaking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SERENE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tackle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SLAKING",
+            "speciesDisplay": "Slaking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SERENE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tackle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SLAKING",
+            "speciesDisplay": "Slaking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SERENE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tackle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SLAKING",
+            "speciesDisplay": "Slaking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SERENE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tackle",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SLAKING",
+            "speciesDisplay": "Slaking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SERENE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tackle",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

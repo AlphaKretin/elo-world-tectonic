@@ -1,0 +1,152 @@
+{
+    "label": "JUGGLER:Youcef",
+    "title": "Juggler Youcef",
+    "trainerType": "JUGGLER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "ARTILLERY",
+            "count": 5,
+            "threshold": 5,
+            "name": "Artillery"
+        }
+    ],
+    "party": [
+        {
+            "species": "ELECTRODE",
+            "speciesDisplay": "Electrode",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "WEEZING",
+            "speciesDisplay": "Weezing",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "TACTICIAN",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "FERROTHORN",
+            "speciesDisplay": "Ferrothorn",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "IRONBALL"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Power Whip",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Gyro Ball",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "FORRETRESS",
+            "speciesDisplay": "Forretress",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Gyro Ball",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Payback",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GOLEM",
+            "speciesDisplay": "Golem",
+            "level": 46,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

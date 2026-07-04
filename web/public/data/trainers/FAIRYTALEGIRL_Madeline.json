@@ -1,0 +1,137 @@
+{
+    "label": "FAIRYTALEGIRL:Madeline",
+    "title": "Fairy Tale Girl Madeline",
+    "trainerType": "FAIRYTALEGIRL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FURFROU",
+            "speciesDisplay": "Furfrou",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "ESOTERIC",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Lounge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "GRANBULL",
+            "speciesDisplay": "Granbull",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "CARETAKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "EXPERTBELT"
+            ],
+            "moves": [
+                {
+                    "name": "Play Bite",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "TOXAPEX",
+            "speciesDisplay": "Toxapex",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "BLACKSLUDGE"
+            ],
+            "moves": [
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stockpile",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Terror Swarm",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "CHIMECHO",
+            "speciesDisplay": "Chimecho",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Reverb Ward",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

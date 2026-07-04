@@ -1,0 +1,126 @@
+{
+    "label": "BACKERS_F:Maria and Iveta",
+    "title": "Backers Maria and Iveta",
+    "trainerType": "BACKERS_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GYARADOS",
+            "speciesDisplay": "Gyarados",
+            "level": 64,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Devour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MAGNEZONE",
+            "speciesDisplay": "Magnezone",
+            "level": 63,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "ELECTRICGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "LANTURN",
+            "speciesDisplay": "Lanturn",
+            "level": 64,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "CHOICESPECS"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "NOIVERN",
+            "speciesDisplay": "Noivern",
+            "level": 63,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "DRAGONGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Guttural Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sonic Shriek",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

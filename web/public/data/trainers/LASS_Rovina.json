@@ -1,0 +1,175 @@
+{
+    "label": "LASS:Rovina",
+    "title": "Lass Rovina",
+    "trainerType": "LASS",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "CHARMER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Charmer"
+        },
+        {
+            "tribeId": "LOYAL",
+            "count": 5,
+            "threshold": 5,
+            "name": "Loyal"
+        }
+    ],
+    "party": [
+        {
+            "species": "UMBREON",
+            "speciesDisplay": "Umbreon",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Thief",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "ESPEON",
+            "speciesDisplay": "Espeon",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "SYLVEON",
+            "speciesDisplay": "Sylveon",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Ward Press",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Glamour Flash",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Pacify",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "GLACEON",
+            "speciesDisplay": "Glaceon",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Halting Cold",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hypothermiate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GIGANTEON",
+            "speciesDisplay": "Giganteon",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Retaliate",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

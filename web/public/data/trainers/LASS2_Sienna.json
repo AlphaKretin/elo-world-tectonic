@@ -1,0 +1,60 @@
+{
+    "label": "LASS2:Sienna",
+    "title": "Lass Sienna",
+    "trainerType": "LASS2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PICHU",
+            "speciesDisplay": "Pichu",
+            "level": 8,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thunder Shock",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Prank",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "PONYTA",
+            "speciesDisplay": "Ponyta",
+            "level": 8,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "LOYAL",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Kindle",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Tread On",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,202 @@
+{
+    "label": "LEADER_Helena:Helena#1",
+    "title": "Gym Leader Helena #1",
+    "trainerType": "LEADER_Helena",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CHINCHOU",
+            "speciesDisplay": "Chinchou",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Fool",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "WAILMER",
+            "speciesDisplay": "Wailmer",
+            "level": 25,
+            "shiny": false,
+            "nickname": "Hannibal",
+            "tribes": [
+                "HARMONIC",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Discourage",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Brine",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "LUXIO",
+            "speciesDisplay": "Luxio",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Feint Attack",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Thunder Fang",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Ice Fang",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "PRINPLUP",
+            "speciesDisplay": "Prinplup",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Shrapnel",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Supersonic",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Aura Flux",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "TOXTRICITY",
+            "speciesDisplay": "Toxtricity",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "AIRBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Assurance",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "KINGLER",
+            "speciesDisplay": "Kingler",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Razor Shell",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

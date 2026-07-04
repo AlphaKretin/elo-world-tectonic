@@ -1,0 +1,104 @@
+{
+    "label": "SAGE:Imay",
+    "title": "Sage Imay",
+    "trainerType": "SAGE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DOTTLER",
+            "speciesDisplay": "Dottler",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Infestation",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Surge Snare",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "HERDIER",
+            "speciesDisplay": "Herdier",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Howl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Headbutt",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "CHANSEY",
+            "speciesDisplay": "Chansey",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Eerie Impulse",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Mind Link",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Stellarate",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

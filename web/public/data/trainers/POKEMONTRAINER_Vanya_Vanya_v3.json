@@ -1,0 +1,207 @@
+{
+    "label": "POKEMONTRAINER_Vanya:Vanya#3",
+    "title": "Pok\u00e9mon Trainer Vanya #4",
+    "trainerType": "POKEMONTRAINER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KYUREM",
+            "speciesDisplay": "Kyurem",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "EJECTPACK"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Wyrmwounding",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "MNOCTOWL",
+            "speciesDisplay": "M. Noctowl",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Shed Coat",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Sublimate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "EMPOLEON",
+            "speciesDisplay": "Empoleon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Fragmentation",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "HDECIDUEYE",
+            "speciesDisplay": "H. Decidueye",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SCOPELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Threefold Volley",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Deep Breathing",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Leaf Storm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "HZOROARK",
+            "speciesDisplay": "H. Zoroark",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Malefaction",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Ghostly Tale",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Drift Off",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Hail",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "DRAGAPULT",
+            "speciesDisplay": "Dragapult",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "ASSASSIN",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dive",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Six Feet Under",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

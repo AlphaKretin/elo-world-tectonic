@@ -1,0 +1,138 @@
+{
+    "label": "CYCLIST_F2:Lukka",
+    "title": "Cyclist Lukka",
+    "trainerType": "CYCLIST_F2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BLISSEY",
+            "speciesDisplay": "Blissey",
+            "level": 51,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "CONKELDURR",
+            "speciesDisplay": "Conkeldurr",
+            "level": 52,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Wood Hammer",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "ARCLAMOR",
+            "speciesDisplay": "Arclamor",
+            "level": 52,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Lightning Dance",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MFURRET",
+            "speciesDisplay": "M. Furret",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "ESOTERIC",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Stomping Tantrum",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Kickstart",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

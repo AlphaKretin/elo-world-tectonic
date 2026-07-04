@@ -1,0 +1,66 @@
+{
+    "label": "POKEMANIAC:Paris",
+    "title": "Pok\u00e9 Maniac Paris",
+    "trainerType": "POKEMANIAC",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "QWILFISH",
+            "speciesDisplay": "Qwilfish",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Fugu Frenzy",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Poison Tail",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "LINOONE",
+            "speciesDisplay": "Linoone",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "DECEIVER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Extreme Speed",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Covet",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Throat Chop",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

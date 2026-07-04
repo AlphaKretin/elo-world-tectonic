@@ -1,0 +1,137 @@
+{
+    "label": "ARTIST:Arnold",
+    "title": "Artist Arnold",
+    "trainerType": "ARTIST",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "VENOMOTH",
+            "speciesDisplay": "Venomoth",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Penumbra",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Creep Out",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "CLAYDOL",
+            "speciesDisplay": "Claydol",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Leyline Burst",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Eerie Spell",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Self-Destruct",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "JYNX",
+            "speciesDisplay": "Jynx",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hypothermiate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Demon's Kiss",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "FROSLASS",
+            "speciesDisplay": "Froslass",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "GHOSTGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Snowy Sorrows",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hypothermiate",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shiver",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

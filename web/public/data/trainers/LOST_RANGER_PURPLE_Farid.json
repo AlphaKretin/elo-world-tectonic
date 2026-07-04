@@ -1,0 +1,170 @@
+{
+    "label": "LOST_RANGER_PURPLE:Farid",
+    "title": "Pok\u00e9mon Ranger Farid",
+    "trainerType": "LOST_RANGER_PURPLE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "NIDOKING",
+            "speciesDisplay": "Nidoking",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Lightning Slam",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "GRANBULL",
+            "speciesDisplay": "Granbull",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "CARETAKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "SKILLHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Play Bite",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Morningstar",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "MISMAGIUS",
+            "speciesDisplay": "Mismagius",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "HARMONIC",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "THROATSPRAY"
+            ],
+            "moves": [
+                {
+                    "name": "Death Knell",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dark Allure",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Eerie Spell",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "CLOYSTER",
+            "speciesDisplay": "Cloyster",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shell Smash",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Iceberg Bash",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "GLISCOR",
+            "speciesDisplay": "Gliscor",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

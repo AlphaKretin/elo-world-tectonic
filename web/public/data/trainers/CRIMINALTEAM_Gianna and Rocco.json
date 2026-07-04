@@ -1,0 +1,133 @@
+{
+    "label": "CRIMINALTEAM:Gianna and Rocco",
+    "title": "Criminal Team Gianna and Rocco",
+    "trainerType": "CRIMINALTEAM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HZOROARK",
+            "speciesDisplay": "H. Zoroark",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "ENERGYLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Malefaction",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Phantom Gate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "CROBAT",
+            "speciesDisplay": "Crobat",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "SKILLHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Venomortar",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Exsanguinate",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "ELECTIVIRE",
+            "speciesDisplay": "Electivire",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "ENERGYLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bar",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "AGGRON",
+            "speciesDisplay": "Aggron",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "STAMPEDE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

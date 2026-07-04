@@ -1,0 +1,137 @@
+{
+    "label": "ARTIST3:Frida",
+    "title": "Artist Frida",
+    "trainerType": "ARTIST3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FARIGIRAF",
+            "speciesDisplay": "Farigiraf",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "STAMPEDE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scam",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Zen Headbutt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "BEARTIC",
+            "speciesDisplay": "Beartic",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "DEWGONG",
+            "speciesDisplay": "Dewgong",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Frigid Flurry",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "DELPHOX",
+            "speciesDisplay": "Delphox",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "ESOTERIC",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mystical Fire",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

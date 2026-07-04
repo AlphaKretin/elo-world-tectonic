@@ -1,0 +1,96 @@
+{
+    "label": "BUGCATCHER_F:Lovina",
+    "title": "Bug Catcher Lovina",
+    "trainerType": "BUGCATCHER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HERACROSS",
+            "speciesDisplay": "Heracross",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Arm Thrust",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Pin Missile",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "DREDNAW",
+            "speciesDisplay": "Drednaw",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "TYRANNICAL",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Clamp",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Granite Head",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Brutal Swing",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "PORYGON2",
+            "speciesDisplay": "Porygon2",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Swift",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Psypierce",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

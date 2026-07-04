@@ -1,0 +1,75 @@
+{
+    "label": "SAILOR2:Noah",
+    "title": "Sailor Noah",
+    "trainerType": "SAILOR2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "RIBOMBEE",
+            "speciesDisplay": "Ribombee",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "ASSASSIN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Anesthetize",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Superstition",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "KINGDRA",
+            "speciesDisplay": "Kingdra",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "NOBLE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wakeful Tide",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Scour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

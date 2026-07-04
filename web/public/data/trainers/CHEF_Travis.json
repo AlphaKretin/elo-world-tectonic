@@ -1,0 +1,66 @@
+{
+    "label": "CHEF:Travis",
+    "title": "Chef Travis",
+    "trainerType": "CHEF",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HQWILFISH",
+            "speciesDisplay": "H. Qwilfish",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "POISONGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Assurance",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Smush",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Acid Spray",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "APPLIN",
+            "speciesDisplay": "Applin",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "POISONGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Magical Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Acid Spray",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

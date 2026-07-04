@@ -1,0 +1,137 @@
+{
+    "label": "GARDENER:Jacek",
+    "title": "Gardener Jacek",
+    "trainerType": "GARDENER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BIBAREL",
+            "speciesDisplay": "Bibarel",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Work Up",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TANGROWTH",
+            "speciesDisplay": "Tangrowth",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rock Tomb",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "XATU",
+            "speciesDisplay": "Xatu",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Future Sight",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stroke of Midnight",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "EMBOAR",
+            "speciesDisplay": "Emboar",
+            "level": 37,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "WARRIOR",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Heat Crash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Wild Charge",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

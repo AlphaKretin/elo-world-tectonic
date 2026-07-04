@@ -1,0 +1,234 @@
+{
+    "label": "TRAINER_Sang:Sang#3",
+    "title": "Pok\u00e9mon Trainer Sang #1",
+    "trainerType": "TRAINER_Sang",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [
+        {
+            "tribeId": "HARMONIC",
+            "count": 5,
+            "threshold": 5,
+            "name": "Harmonic"
+        }
+    ],
+    "party": [
+        {
+            "species": "REGISTEEL",
+            "speciesDisplay": "Registeel",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Everhone",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "CHATOT",
+            "speciesDisplay": "Chatot",
+            "level": 60,
+            "shiny": false,
+            "nickname": "Dove Abyss",
+            "tribes": [
+                "HARMONIC",
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Chatter",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Snarl",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "EXPLOUD",
+            "speciesDisplay": "Exploud",
+            "level": 60,
+            "shiny": false,
+            "nickname": "Egret Ash",
+            "tribes": [
+                "HARMONIC",
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SEISMITOAD",
+            "speciesDisplay": "Seismitoad",
+            "level": 60,
+            "shiny": false,
+            "nickname": "Ibis Veil",
+            "tribes": [
+                "CARETAKER",
+                "SCRAPPER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "WIGGLYTUFF",
+            "speciesDisplay": "Wigglytuff",
+            "level": 60,
+            "shiny": false,
+            "nickname": "Wren Glass",
+            "tribes": [
+                "HARMONIC",
+                "CHARMER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "THROATSPRAY"
+            ],
+            "moves": [
+                {
+                    "name": "Uproar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Lullaby",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "KROOKODILE",
+            "speciesDisplay": "Krookodile",
+            "level": 60,
+            "shiny": false,
+            "nickname": "Stork Saw",
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "WILDCARD"
+            ],
+            "moves": [
+                {
+                    "name": "Crushing Chasm",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Stare Down",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Crimson Storm",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

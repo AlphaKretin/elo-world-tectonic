@@ -1,0 +1,100 @@
+{
+    "label": "BURGLAR:Barret",
+    "title": "Burglar Barret",
+    "trainerType": "BURGLAR",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "DUDUNSPARCE",
+            "speciesDisplay": "Dudunsparce",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "FORTUNE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dust Devil",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Fool",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SLOWPOKE",
+            "speciesDisplay": "Slowpoke",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psycho Cut",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Disable",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "WEEPINBELL",
+            "speciesDisplay": "Weepinbell",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "FLYINGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Fang",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Root Driver",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

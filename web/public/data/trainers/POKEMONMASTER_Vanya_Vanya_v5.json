@@ -1,0 +1,202 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#5",
+    "title": "Pok\u00e9mon Master Vanya #5",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "ARTILLERY",
+            "count": 5,
+            "threshold": 5,
+            "name": "Artillery"
+        }
+    ],
+    "party": [
+        {
+            "species": "ELECTRODE",
+            "speciesDisplay": "Electrode",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Magnet Rise",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rockapult",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "CLAWITZER",
+            "speciesDisplay": "Clawitzer",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Hold Fire",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fire For Effect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "ARCTOVISH",
+            "speciesDisplay": "Arctovish",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hail",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Pressure Burst",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "DRAGAPULT",
+            "speciesDisplay": "Dragapult",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "ASSASSIN",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wailing Blow",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Calamitous Slash",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dreepy Barrage",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "ACCELGOR",
+            "speciesDisplay": "Accelgor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Disarming Shot",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Scale Storm",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Caltrop Arts",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SIRFETCHD",
+            "speciesDisplay": "Sirfetch'd",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "ARTILLERY",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sacred Sword",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Swords Dance",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Art of War",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

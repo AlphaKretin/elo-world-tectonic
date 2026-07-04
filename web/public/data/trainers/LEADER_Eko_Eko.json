@@ -1,0 +1,167 @@
+{
+    "label": "LEADER_Eko:Eko",
+    "title": "Gym Leader Eko #1",
+    "trainerType": "LEADER_Eko",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SALANDIT",
+            "speciesDisplay": "Salandit",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "CHARMER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stink Cloud",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Broil",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "FLETCHINDER",
+            "speciesDisplay": "Fletchinder",
+            "level": 20,
+            "shiny": false,
+            "nickname": "Dario",
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Double Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "TENTACOOL",
+            "speciesDisplay": "Tentacool",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "RADIANT",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Clamp",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Infestation",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "TYNAMO",
+            "speciesDisplay": "Tynamo",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Current Crash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Poison Fang",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Hydro Fang",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MMANTYKE",
+            "speciesDisplay": "M. Mantyke",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "CHARMER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Fang",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Poison Tail",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Bullet Charge",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

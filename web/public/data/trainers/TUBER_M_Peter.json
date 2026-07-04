@@ -1,0 +1,72 @@
+{
+    "label": "TUBER_M:Peter",
+    "title": "Tuber Peter",
+    "trainerType": "TUBER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TYNAMO",
+            "speciesDisplay": "Tynamo",
+            "level": 13,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Nasty Nip",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Growl",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Jolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "POLIWAG",
+            "speciesDisplay": "Poliwag",
+            "level": 13,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Draft",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bubble",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Breach",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Karate Chop",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

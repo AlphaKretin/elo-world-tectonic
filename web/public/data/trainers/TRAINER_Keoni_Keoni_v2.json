@@ -1,0 +1,200 @@
+{
+    "label": "TRAINER_Keoni:Keoni#2",
+    "title": "Pok\u00e9mon Trainer Keoni #3",
+    "trainerType": "TRAINER_Keoni",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MNOCTOWL",
+            "speciesDisplay": "M. Noctowl",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SERENE"
+            ],
+            "heldItems": [
+                "ICYROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Hail",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "PERRSERKER",
+            "speciesDisplay": "Perrserker",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Power-Up Punch",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "ANINETALES",
+            "speciesDisplay": "A. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fleur Cannon",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Hail",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "GDARMANITAN",
+            "speciesDisplay": "G. Darmanitan",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Zen Headbutt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MTANGROWTH",
+            "speciesDisplay": "M. Tangrowth",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "POWERHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Meteor Beam",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Petrify",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Razing Vines",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MZANGOOSE",
+            "speciesDisplay": "M. Zangoose",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Fire Punch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

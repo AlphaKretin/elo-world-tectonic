@@ -1,0 +1,208 @@
+{
+    "label": "POKEMONTRAINER_Yezera:Yezera#5",
+    "title": "Pok\u00e9mon Trainer Yezera #3",
+    "trainerType": "POKEMONTRAINER_Yezera",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ILLUMISE",
+            "speciesDisplay": "Illumise",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "MENTALHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Superstition",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "BARBARACLE",
+            "speciesDisplay": "Barbaracle",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "COVERTCLOAK"
+            ],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Accelerock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "MALAMAR",
+            "speciesDisplay": "Malamar",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Incision",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Eerie Impulse",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "GOURGEIST",
+            "speciesDisplay": "Gourgeist",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Mystery Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Seance",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Fireworks",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Bullet Seed",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "RAICHU",
+            "speciesDisplay": "Raichu",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Lightning Dance",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Joke Jolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "RATICATE",
+            "speciesDisplay": "Raticate",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Fang",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Hyper Fang",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Searing Crunch",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

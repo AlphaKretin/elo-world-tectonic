@@ -1,0 +1,134 @@
+{
+    "label": "PSYCHIC_M3:Boban",
+    "title": "Psychic Boban",
+    "trainerType": "PSYCHIC_M3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "XATU",
+            "speciesDisplay": "Xatu",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "PINPOINTROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Squall Dart",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Eerie Spell",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "NOIVERN",
+            "speciesDisplay": "Noivern",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Scour",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Sonic Shriek",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Supersonic",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "FORRETRESS",
+            "speciesDisplay": "Forretress",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Spike Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Pin Missile",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "WHISCASH",
+            "speciesDisplay": "Whiscash",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Eclipse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

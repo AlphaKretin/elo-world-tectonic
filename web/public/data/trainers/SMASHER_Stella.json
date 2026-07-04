@@ -1,0 +1,138 @@
+{
+    "label": "SMASHER:Stella",
+    "title": "Smasher Stella",
+    "trainerType": "SMASHER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SHUCKLE",
+            "speciesDisplay": "Shuckle",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Grey Mist",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Terror Swarm",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Power Split",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "VIVILLON",
+            "speciesDisplay": "Vivillon",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Aurora Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Anesthetize",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "WEEZING",
+            "speciesDisplay": "Weezing",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "TACTICIAN",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "POISONGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Cold Front",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "RUNERIGUS",
+            "speciesDisplay": "Runerigus",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "FORTUNE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

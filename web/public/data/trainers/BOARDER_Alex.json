@@ -1,0 +1,74 @@
+{
+    "label": "BOARDER:Alex",
+    "title": "Boarder Alex",
+    "trainerType": "BOARDER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HITMONTOP",
+            "speciesDisplay": "Hitmontop",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Brutal Swing",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "ARAICHU",
+            "speciesDisplay": "A. Raichu",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Rapid Hertz",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Pulsar",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bubble Barrage",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

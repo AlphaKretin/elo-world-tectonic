@@ -1,0 +1,103 @@
+{
+    "label": "SCIENTIST_M2:Dexter",
+    "title": "Scientist Dexter",
+    "trainerType": "SCIENTIST_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GRIMER",
+            "speciesDisplay": "Grimer",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Disable",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Mud Shot",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "CHARMELEON",
+            "speciesDisplay": "Charmeleon",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ignite",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Vacuum Wave",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fire Fang",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Twister",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "SOLOSIS",
+            "speciesDisplay": "Solosis",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "TACTICIAN",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Endeavor",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pain Split",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

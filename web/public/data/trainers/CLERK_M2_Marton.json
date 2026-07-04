@@ -1,0 +1,74 @@
+{
+    "label": "CLERK_M2:Marton",
+    "title": "Clerk Marton",
+    "trainerType": "CLERK_M2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KLEFKI",
+            "speciesDisplay": "Klefki",
+            "level": 38,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Ill Wishes",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "CENTISKORCH",
+            "speciesDisplay": "Centiskorch",
+            "level": 39,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Agonize",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Coil",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

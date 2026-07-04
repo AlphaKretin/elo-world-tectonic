@@ -1,0 +1,196 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#17",
+    "title": "Pok\u00e9mon Master Vanya #17",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "RUNERIGUS",
+            "speciesDisplay": "Runerigus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "FORTUNE",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Rock Blast",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Guard Split",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Power Split",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "CLAYDOL",
+            "speciesDisplay": "Claydol",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mud Slide",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Power Split",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Leyline Burst",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "HARCANINE",
+            "speciesDisplay": "H. Arcanine",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "RAMPARDOS",
+            "speciesDisplay": "Rampardos",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Rock Polish",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Stone Edge",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Cranial Guard",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "MARACTUS",
+            "speciesDisplay": "Maractus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Thorn Rattle",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "GARCHOMP",
+            "speciesDisplay": "Garchomp",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Wyrmwounding",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Mach Flight",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

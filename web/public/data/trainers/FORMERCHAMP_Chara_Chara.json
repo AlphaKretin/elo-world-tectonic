@@ -1,0 +1,209 @@
+{
+    "label": "FORMERCHAMP_Chara:Chara",
+    "title": "Former Champion Chara",
+    "trainerType": "FORMERCHAMP_Chara",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "KINGAMBIT",
+            "speciesDisplay": "Kingambit",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "WEAKNESSPOLICY"
+            ],
+            "moves": [
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "RIOJIN",
+            "speciesDisplay": "Riojin",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Ancient Power",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Detachment",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Vacuum Wave",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Steel Beam",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "MANDIBUZZ",
+            "speciesDisplay": "Mandibuzz",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "CARETAKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ROSELIBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "ATLACROSS",
+            "speciesDisplay": "Atlacross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Arm Thrust",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Pin Missile",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Rock Blast",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "URSHIFU",
+            "speciesDisplay": "Urshifu",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Precipice",
+            "tribes": [
+                "SCRAPPER",
+                "INDUSTRIOUS",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Wicked Blow",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Surging Strikes",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SPIRITOMB",
+            "speciesDisplay": "Spiritomb",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "FORTUNE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "REDCARD"
+            ],
+            "moves": [
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Hex",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

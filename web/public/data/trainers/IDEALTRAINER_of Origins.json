@@ -1,0 +1,194 @@
+{
+    "label": "IDEALTRAINER:of Origins",
+    "title": "Ideal Trainer of Origins",
+    "trainerType": "IDEALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GIGACHU",
+            "speciesDisplay": "Gigachu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "RADIANT",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Volt Tackle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Sanctuary",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Thunder Belly",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "PIDGEOT",
+            "speciesDisplay": "Pidgeot",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "ASSASSIN",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Sylph Spell",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Tempest",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dust Storm",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "GENGAR",
+            "speciesDisplay": "Gengar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Perish Song",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Acid Bath",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Destiny Bond",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Spectral Tongue",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "SAURENAID",
+            "speciesDisplay": "Saurenaid",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Galling Spit",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Surf",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Frost Breath",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "SNORLAX",
+            "speciesDisplay": "Snorlax",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Toss n' Turn",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Bedfellows",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MACHAMP",
+            "speciesDisplay": "Machamp",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Power-Up Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Focus Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Superpower",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

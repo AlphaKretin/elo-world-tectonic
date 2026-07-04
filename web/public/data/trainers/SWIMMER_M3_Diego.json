@@ -1,0 +1,139 @@
+{
+    "label": "SWIMMER_M3:Diego",
+    "title": "Swimmer Diego",
+    "trainerType": "SWIMMER_M3",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "FLOATZEL",
+            "speciesDisplay": "Floatzel",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CARETAKER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Weaseling",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Storm Throw",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Spattering Ram",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "CACTURNE",
+            "speciesDisplay": "Cacturne",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SCOURGE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sinister Spines",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Payback",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MGIGALITH",
+            "speciesDisplay": "M. Gigalith",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "ANIMATED",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Singing Stone",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Struggle Bug",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GOLISOPOD",
+            "speciesDisplay": "Golisopod",
+            "level": 56,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "First Impression",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Waterfall",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Cross Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

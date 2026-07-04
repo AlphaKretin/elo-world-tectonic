@@ -1,0 +1,136 @@
+{
+    "label": "ROUGHNECK2:Robert",
+    "title": "Roughneck Robert",
+    "trainerType": "ROUGHNECK2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GRIMER",
+            "speciesDisplay": "Grimer",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "EVIOLITE"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Sludge",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Broil",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dissolution",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "MIGHTYENA",
+            "speciesDisplay": "Mightyena",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Lash Out",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Plant Doubt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Midnight Hunt",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "ALTARIA",
+            "speciesDisplay": "Altaria",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Dragon Claw",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Dazzling Gleam",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "KANGASKHAN",
+            "speciesDisplay": "Kangaskhan",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Pummel",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flame Charge",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Headbutt",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

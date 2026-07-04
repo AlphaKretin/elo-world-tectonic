@@ -1,0 +1,197 @@
+{
+    "label": "SUPERNERD:Agentbla",
+    "title": "Developer Agentbla",
+    "trainerType": "SUPERNERD",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "WHIMSICOTT",
+            "speciesDisplay": "Whimsicott",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Joe",
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cotton Guard",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Misadventure",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "HARCANINE",
+            "speciesDisplay": "H. Arcanine",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Jun",
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "MANIKLAW",
+            "speciesDisplay": "Maniklaw",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Jumble",
+            "tribes": [
+                "SCOURGE",
+                "ANIMATED",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Possession",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Doll Stitch",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "ESPEON",
+            "speciesDisplay": "Espeon",
+            "level": 70,
+            "shiny": false,
+            "nickname": "June",
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Profane",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "CORVIKNIGHT",
+            "speciesDisplay": "Corviknight",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Joan",
+            "tribes": [
+                "WARRIOR",
+                "TACTICIAN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Plummet",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sanctuary",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "SWAMPERT",
+            "speciesDisplay": "Swampert",
+            "level": 70,
+            "shiny": false,
+            "nickname": "John",
+            "tribes": [
+                "SCRAPPER",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Rainstorm",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

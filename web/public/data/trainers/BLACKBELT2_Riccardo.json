@@ -1,0 +1,172 @@
+{
+    "label": "BLACKBELT2:Riccardo",
+    "title": "Black Belt Riccardo",
+    "trainerType": "BLACKBELT2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HIPPOWDON",
+            "speciesDisplay": "Hippowdon",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "SMOOTHROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Sandblasting",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MANDIBUZZ",
+            "speciesDisplay": "Mandibuzz",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "CARETAKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Cull",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MARACTUS",
+            "speciesDisplay": "Maractus",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Thorn Rattle",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Erode",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "HGOODRA",
+            "speciesDisplay": "H. Goodra",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "LOYAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "UTILITYUMBRELLA"
+            ],
+            "moves": [
+                {
+                    "name": "Meteor Mash",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wyrmwounding",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Sapping Jealousy",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "TYPHLOSION",
+            "speciesDisplay": "Typhlosion",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ARTILLERY",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "EXPERTBELT"
+            ],
+            "moves": [
+                {
+                    "name": "Shimmering Heat",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Suffocate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

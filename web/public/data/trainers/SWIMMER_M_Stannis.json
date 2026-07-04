@@ -1,0 +1,134 @@
+{
+    "label": "SWIMMER_M:Stannis",
+    "title": "Swimmer Stannis",
+    "trainerType": "SWIMMER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ALOMOMOLA",
+            "speciesDisplay": "Alomomola",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "CHARMER",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Harbor Breaker",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Spirit Break",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "PANGORO",
+            "speciesDisplay": "Pangoro",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Hateful Haymaker",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Throat Chop",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "ROUGAROC",
+            "speciesDisplay": "Rougaroc",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Spirit Break",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Scheme",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "EMOLGA",
+            "speciesDisplay": "Emolga",
+            "level": 36,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

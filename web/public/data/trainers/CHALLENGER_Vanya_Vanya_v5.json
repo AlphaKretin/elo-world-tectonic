@@ -1,0 +1,197 @@
+{
+    "label": "CHALLENGER_Vanya:Vanya#5",
+    "title": "Challenger Vanya #6",
+    "trainerType": "CHALLENGER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ESCAVALIER",
+            "speciesDisplay": "Escavalier",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cavalry Charge",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Agonize",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "SLOWBRO",
+            "speciesDisplay": "Slowbro",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "HARMONIC",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "KABUTOPS",
+            "speciesDisplay": "Kabutops",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Torrent Scythe",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Deep Breathing",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "HTYPHLOSION",
+            "speciesDisplay": "H. Typhlosion",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ARTILLERY",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Death Knell",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "CRAWDAUNT",
+            "speciesDisplay": "Crawdaunt",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Gleeful Grasp",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "VOLCARONA",
+            "speciesDisplay": "Volcarona",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CARETAKER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                }
+            ]
+        }
+    ]
+}

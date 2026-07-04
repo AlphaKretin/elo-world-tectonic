@@ -1,0 +1,196 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#12",
+    "title": "Pok\u00e9mon Master Vanya #12",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CHATOT",
+            "speciesDisplay": "Chatot",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "DECEIVER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Facade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Chatter",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "DHELMISE",
+            "speciesDisplay": "Dhelmise",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Razing Vines",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Metal Sound",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Weigh Anchor",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "SCARODON",
+            "speciesDisplay": "Scarodon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aquatic Crunch",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Toxic Taste",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Lash Out",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scarring Swing",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "COFAGRIGUS",
+            "speciesDisplay": "Cofagrigus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "DECEIVER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Pulsar",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Possession",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Calm Mind",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Pharaoh's Curse",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "RUBARIOR",
+            "speciesDisplay": "Rubarior",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Disturb",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Gem Seal",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "KINGDRA",
+            "speciesDisplay": "Kingdra",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "NOBLE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Miasma",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Galling Spit",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Wakeful Tide",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

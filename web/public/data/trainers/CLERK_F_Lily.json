@@ -1,0 +1,101 @@
+{
+    "label": "CLERK_F:Lily",
+    "title": "Clerk Lily",
+    "trainerType": "CLERK_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PIKACHU",
+            "speciesDisplay": "Pikachu",
+            "level": 23,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Electro Ball",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SEALEO",
+            "speciesDisplay": "Sealeo",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aurora Beam",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Aqua Shock",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Symbiosis",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MFRILLISH",
+            "speciesDisplay": "M. Frillish",
+            "level": 23,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "NOBLE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Nasty Nip",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Spark",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Astonish",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

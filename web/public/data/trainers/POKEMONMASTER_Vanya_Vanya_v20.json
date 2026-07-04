@@ -1,0 +1,202 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#20",
+    "title": "Pok\u00e9mon Master Vanya #20",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "SERENE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Serene"
+        }
+    ],
+    "party": [
+        {
+            "species": "KOMALA",
+            "speciesDisplay": "Komala",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dream Dance",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sleepwalk Strike",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Toss n' Turn",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MMUSHARNA",
+            "speciesDisplay": "M. Musharna",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Slumbering Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Dreamscape",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "HYPNO",
+            "speciesDisplay": "Hypno",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dreamscape",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Dynamic Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Hypnotherapy",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "SNORLAX",
+            "speciesDisplay": "Snorlax",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Toss n' Turn",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Bedfellows",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MFURRET",
+            "speciesDisplay": "M. Furret",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "ESOTERIC",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Me First",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Oneiromancy",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "PAPELLUMEN",
+            "speciesDisplay": "Papellumen",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Lumin Burst",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Quiver Dance",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Sedating Dust",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

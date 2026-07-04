@@ -1,0 +1,137 @@
+{
+    "label": "ROUGHNECK2:Flavio",
+    "title": "Roughneck Flavio",
+    "trainerType": "ROUGHNECK2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "UNFEZANT",
+            "speciesDisplay": "Unfezant",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Strafe",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Pale Blade",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Focus Energy",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TOUCANNON",
+            "speciesDisplay": "Toucannon",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCAVENGER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Beak Blast",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Flare Up",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SWANNA",
+            "speciesDisplay": "Swanna",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Flip Turn",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "RHYDON",
+            "speciesDisplay": "Rhydon",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "ARTILLERY",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Shatter Shot",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

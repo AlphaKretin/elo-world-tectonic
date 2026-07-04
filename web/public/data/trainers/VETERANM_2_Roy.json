@@ -1,0 +1,173 @@
+{
+    "label": "VETERANM_2:Roy",
+    "title": "Veteran Roy",
+    "trainerType": "VETERANM_2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CRYOGONAL",
+            "speciesDisplay": "Cryogonal",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "BUSHWHACKER",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "ICYROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Aurora Veil",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "DUSKNOIR",
+            "speciesDisplay": "Dusknoir",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Stitch Up",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cold Shoulder",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Drift Off",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Hail",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "MRRIME",
+            "speciesDisplay": "Mr. Rime",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "DECEIVER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Kinetic Grip",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Drift Off",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Snow Spill",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "HUNTAIL",
+            "speciesDisplay": "Huntail",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "SCOURGE",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "UTILITYUMBRELLA"
+            ],
+            "moves": [
+                {
+                    "name": "Abyssal Mist",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Blackout",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Blizzard",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "PERRSERKER",
+            "speciesDisplay": "Perrserker",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CHOICEBAND"
+            ],
+            "moves": [
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,194 @@
+{
+    "label": "IDEALTRAINER:of Brilliance",
+    "title": "Ideal Trainer of Brilliance",
+    "trainerType": "IDEALTRAINER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MILOTIC",
+            "speciesDisplay": "Milotic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "AGGRON",
+            "speciesDisplay": "Aggron",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "STAMPEDE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Grounding",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Power Hammer",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Planetcracker",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "METAGROSS",
+            "speciesDisplay": "Metagross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Zen Headbutt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Electroslash",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Censor",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "HYMNUS",
+            "speciesDisplay": "Hymnus",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Refresh",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "FLYGON",
+            "speciesDisplay": "Flygon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Seismic Wave",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Sandblasting",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Devouring Dust",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MANERGETIC",
+            "speciesDisplay": "Manergetic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Magnet Rise",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Dielectric Breakdown",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Capacity Burst",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

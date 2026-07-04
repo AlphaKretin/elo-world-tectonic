@@ -1,0 +1,104 @@
+{
+    "label": "LINEBACKER:Josh",
+    "title": "Linebacker Josh",
+    "trainerType": "LINEBACKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GURDURR",
+            "speciesDisplay": "Gurdurr",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Force Palm",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Brutal Swing",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Bullet Charge",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "LILEEP",
+            "speciesDisplay": "Lileep",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Mega Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Ancient Power",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Water Gun",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "FLAAFFY",
+            "speciesDisplay": "Flaaffy",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Laser Beam",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Signal Beam",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Charge",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

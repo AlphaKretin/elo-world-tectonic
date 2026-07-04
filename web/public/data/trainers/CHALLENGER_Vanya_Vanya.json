@@ -1,0 +1,166 @@
+{
+    "label": "CHALLENGER_Vanya:Vanya",
+    "title": "Challenger Vanya #1",
+    "trainerType": "CHALLENGER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BUTTERFREE",
+            "speciesDisplay": "Butterfree",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SERENE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Gust",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Clackaclack",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Mind Waves",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "String Shot",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "LITWICK",
+            "speciesDisplay": "Litwick",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "DECEIVER",
+                "ANIMATED"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dirge",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Ember",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "MGOLDEEN",
+            "speciesDisplay": "M. Goldeen",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Clash",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Eager Tickling",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Noble Roar",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MEDITITE",
+            "speciesDisplay": "Meditite",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Work Up",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Aura Pulse",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Smash",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "HONEDGE",
+            "speciesDisplay": "Honedge",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Helmbutt",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sharpen",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Scritchy-Scritch",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

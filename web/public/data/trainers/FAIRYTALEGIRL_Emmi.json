@@ -1,0 +1,222 @@
+{
+    "label": "FAIRYTALEGIRL:Emmi",
+    "title": "Developer Emmi",
+    "trainerType": "FAIRYTALEGIRL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "ESOTERIC",
+            "count": 5,
+            "threshold": 5,
+            "name": "Esoteric"
+        },
+        {
+            "tribeId": "HARMONIC",
+            "count": 5,
+            "threshold": 5,
+            "name": "Harmonic"
+        }
+    ],
+    "party": [
+        {
+            "species": "HATTERENE",
+            "speciesDisplay": "Hatterene",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Silence",
+            "tribes": [
+                "ESOTERIC",
+                "SCOURGE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Emotional Deluge",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Power Whip",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "POLIWRATH",
+            "speciesDisplay": "Poliwrath",
+            "level": 70,
+            "shiny": false,
+            "nickname": "CHERISH",
+            "tribes": [
+                "ESOTERIC",
+                "HARMONIC",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Throat Chop",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MFURRET",
+            "speciesDisplay": "M. Furret",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Walkies",
+            "tribes": [
+                "HARMONIC",
+                "ESOTERIC",
+                "SERENE"
+            ],
+            "heldItems": [
+                "ENERGYLOCK"
+            ],
+            "moves": [
+                {
+                    "name": "Oneiromancy",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "REM Burst",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MILOTIC",
+            "speciesDisplay": "Milotic",
+            "level": 70,
+            "shiny": false,
+            "nickname": "worm",
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "STRESSBALL"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Cavitation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Star Dance",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MHAEROBIC",
+            "speciesDisplay": "M. Haerobic",
+            "level": 70,
+            "shiny": false,
+            "nickname": "The Bouny",
+            "tribes": [
+                "CHARMER",
+                "RADIANT",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Retaliate",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Luna Sucre",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Psyche Switch",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Parting Shot",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "BRONZONG",
+            "speciesDisplay": "Bronzong",
+            "level": 70,
+            "shiny": false,
+            "nickname": "BING-BONG",
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Take Shelter",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Psycho Boost",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

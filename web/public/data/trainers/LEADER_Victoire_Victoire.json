@@ -1,0 +1,203 @@
+{
+    "label": "LEADER_Victoire:Victoire",
+    "title": "Gym Leader Victoire",
+    "trainerType": "LEADER_Victoire",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SLURPUFF",
+            "speciesDisplay": "Slurpuff",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bucket Drop",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "ADUGTRIO",
+            "speciesDisplay": "A. Dugtrio",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "ASSAULTVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Hair Flip",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Sandblasting",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Power Gem",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "DECEAT",
+            "speciesDisplay": "Deceat",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Spirit Break",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Innocent Masque",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "MSEAKING",
+            "speciesDisplay": "M. Seaking",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tantrum",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Outrage",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Drill Run",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MISMAGIUS",
+            "speciesDisplay": "Mismagius",
+            "level": 55,
+            "shiny": false,
+            "nickname": "Cherchez",
+            "tribes": [
+                "FORTUNE",
+                "HARMONIC",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "THROATSPRAY"
+            ],
+            "moves": [
+                {
+                    "name": "Frost Breath",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Death Knell",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "KINGAMBIT",
+            "speciesDisplay": "Kingambit",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "WARRIOR",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Slay",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

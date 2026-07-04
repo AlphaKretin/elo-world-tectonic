@@ -1,0 +1,136 @@
+{
+    "label": "TRAINER_Eifion:Eifion",
+    "title": "Pok\u00e9mon Trainer Eifion #1",
+    "trainerType": "TRAINER_Eifion",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HOUNDOOM",
+            "speciesDisplay": "Houndoom",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Finalize",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Lash Out",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GROVYLE",
+            "speciesDisplay": "Grovyle",
+            "level": 29,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shred",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Sapping Jealousy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Rake",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "MANECTRIC",
+            "speciesDisplay": "Manectric",
+            "level": 29,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Electro Ball",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thrust Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "PHIONE",
+            "speciesDisplay": "Phione",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "WATERBALLOON"
+            ],
+            "moves": [
+                {
+                    "name": "Mending Spring",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dive",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Supersonic",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Amnesia",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

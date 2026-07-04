@@ -1,0 +1,69 @@
+{
+    "label": "LADY2:Rebecca",
+    "title": "Lady Rebecca",
+    "trainerType": "LADY2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AMEOWTH",
+            "speciesDisplay": "A. Meowth",
+            "level": 14,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Harsh Vibes",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Plant Doubt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Sling Shot",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Pursuit",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "CHIKORITA",
+            "speciesDisplay": "Chikorita",
+            "level": 14,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Essence Arrow",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sunshine",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fairy Wind",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

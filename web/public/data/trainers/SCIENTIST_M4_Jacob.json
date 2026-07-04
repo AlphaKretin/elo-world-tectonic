@@ -1,0 +1,206 @@
+{
+    "label": "SCIENTIST_M4:Jacob",
+    "title": "Scientist Jacob",
+    "trainerType": "SCIENTIST_M4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GRANBULL",
+            "speciesDisplay": "Granbull",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "CARETAKER",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Play Bite",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "CONIFEAR",
+            "speciesDisplay": "Conifear",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Holly Charm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "SWANNA",
+            "speciesDisplay": "Swanna",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Spirit Break",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Drag Beneath",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "ARCLAMOR",
+            "speciesDisplay": "Arclamor",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "LEPPABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Wall of Sound",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Belch",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Noble Roar",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "NIBELONG",
+            "speciesDisplay": "Nibelong",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Sacred Lots",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Fury Swipes",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Arm Thrust",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "ADUGTRIO",
+            "speciesDisplay": "A. Dugtrio",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TACTICIAN",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "SEVENLEAGUEBOOTS"
+            ],
+            "moves": [
+                {
+                    "name": "Sandblasting",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Hair Flip",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Shore Up",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

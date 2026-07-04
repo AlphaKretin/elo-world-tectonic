@@ -1,0 +1,138 @@
+{
+    "label": "HARLEQUIN:Regis",
+    "title": "Harlequin Regis",
+    "trainerType": "HARLEQUIN",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PACHIRISU",
+            "speciesDisplay": "Pachirisu",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Amp Up",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Super Fang",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DRAMPA",
+            "speciesDisplay": "Drampa",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Energy",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Bubble Blaster",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "KLEAVOR",
+            "speciesDisplay": "Kleavor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Bug Bite",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "INDEEDEE",
+            "speciesDisplay": "Indeedee",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Kickstart",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Brain Freeze",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

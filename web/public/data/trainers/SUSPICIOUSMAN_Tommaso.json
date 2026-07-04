@@ -1,0 +1,138 @@
+{
+    "label": "SUSPICIOUSMAN:Tommaso",
+    "title": "Suspicious Man Tommaso",
+    "trainerType": "SUSPICIOUSMAN",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "NIDOQUEEN",
+            "speciesDisplay": "Nidoqueen",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "NOBLE",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Venoshock",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Earth Power",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "TOXAPEX",
+            "speciesDisplay": "Toxapex",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Drag Beneath",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Venom Drench",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Spikes",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "HYPNO",
+            "speciesDisplay": "Hypno",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Omniscient Blow",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Ice Punch",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Thunder Punch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "MANDIBUZZ",
+            "speciesDisplay": "Mandibuzz",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "CARETAKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Cull",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

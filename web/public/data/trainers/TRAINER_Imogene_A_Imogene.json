@@ -1,0 +1,75 @@
+{
+    "label": "TRAINER_Imogene_A:Imogene",
+    "title": "Pok\u00e9mon Trainer Imogene #1",
+    "trainerType": "TRAINER_Imogene_A",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GOTHORITA",
+            "speciesDisplay": "Gothorita",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCAVENGER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Plant Doubt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Tease",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Exploit",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SHEDINJA",
+            "speciesDisplay": "Shedinja",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "ASSASSIN",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Claw",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stinging Jab",
+                    "type": "BUG"
+                }
+            ]
+        }
+    ]
+}

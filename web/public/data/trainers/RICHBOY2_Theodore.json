@@ -1,0 +1,104 @@
+{
+    "label": "RICHBOY2:Theodore",
+    "title": "Rich Boy Theodore",
+    "trainerType": "RICHBOY2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MAWILE",
+            "speciesDisplay": "Mawile",
+            "level": 18,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "DECEIVER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "STEELGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Shotput",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Baby-Doll Eyes",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "HSNEASEL",
+            "speciesDisplay": "H. Sneasel",
+            "level": 19,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Karate Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scritchy-Scritch",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Caustic Punch",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SHELLOS",
+            "speciesDisplay": "Shellos",
+            "level": 19,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mud Shot",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Light Show",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Harden",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

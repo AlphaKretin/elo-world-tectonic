@@ -1,0 +1,105 @@
+{
+    "label": "MEDIUM:Theoni",
+    "title": "Medium Theoni",
+    "trainerType": "MEDIUM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SABLEYE",
+            "speciesDisplay": "Sableye",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Tease",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Crystal Gleam",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "SKRELP",
+            "speciesDisplay": "Skrelp",
+            "level": 23,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SCOURGE",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Poison Tail",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dragon Tail",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Aerial Ace",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "CHINGLING",
+            "speciesDisplay": "Chingling",
+            "level": 24,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ominous Wind",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dazzle",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

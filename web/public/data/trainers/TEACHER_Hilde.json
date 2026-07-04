@@ -1,0 +1,73 @@
+{
+    "label": "TEACHER:Hilde",
+    "title": "Teacher Hilde",
+    "trainerType": "TEACHER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MASQUERAIN",
+            "speciesDisplay": "Masquerain",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "BUGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Struggle Bug",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "INDEEDEE",
+            "speciesDisplay": "Indeedee",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "TACTICIAN",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Psycho Cut",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Swift",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

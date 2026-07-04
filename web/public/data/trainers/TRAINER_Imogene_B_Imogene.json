@@ -1,0 +1,74 @@
+{
+    "label": "TRAINER_Imogene_B:Imogene",
+    "title": "Pok\u00e9mon Trainer Imogene",
+    "trainerType": "TRAINER_Imogene_B",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CORVISQUIRE",
+            "speciesDisplay": "Corvisquire",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "TACTICIAN",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stand Together",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Pluck",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "GLIGAR",
+            "speciesDisplay": "Gligar",
+            "level": 27,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Fury Pecks",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Stinging Jealousy",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Rock Tomb",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

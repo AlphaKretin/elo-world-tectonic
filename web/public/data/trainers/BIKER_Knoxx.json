@@ -1,0 +1,137 @@
+{
+    "label": "BIKER:Knoxx",
+    "title": "Biker Knoxx",
+    "trainerType": "BIKER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SCRAFTY",
+            "speciesDisplay": "Scrafty",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Browbeat",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Drown",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GUMSHOOS",
+            "speciesDisplay": "Gumshoos",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "CRYSTALVEIL"
+            ],
+            "moves": [
+                {
+                    "name": "Super Fang",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Future Sight",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Ghostly Tale",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "TITANIX",
+            "speciesDisplay": "Titanix",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Shard Surge",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Inferno",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Zap Cannon",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "BOLTUND",
+            "speciesDisplay": "Boltund",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "INDUSTRIOUS",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Volt Crunch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Aquatic Crunch",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

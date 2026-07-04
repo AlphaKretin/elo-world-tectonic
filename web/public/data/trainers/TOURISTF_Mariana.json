@@ -1,0 +1,106 @@
+{
+    "label": "TOURISTF:Mariana",
+    "title": "Tourist Mariana",
+    "trainerType": "TOURISTF",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PILOSWINE",
+            "speciesDisplay": "Piloswine",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "STAMPEDE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Ice Fang",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Flail",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "DOUBLADE",
+            "speciesDisplay": "Doublade",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "DECEIVER",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shadow Claw",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Sharpen",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SEADRA",
+            "speciesDisplay": "Seadra",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "NOBLE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Dragon Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Concentrate",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "label": "VETERAN_F:Genevieve",
+    "title": "Veteran Genevieve",
+    "trainerType": "VETERAN_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "HITMONLEE",
+            "speciesDisplay": "Hitmonlee",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Current Crash",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "COPPERAJAH",
+            "speciesDisplay": "Copperajah",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "STAMPEDE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "PAYAPABERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Refurbish",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Confide",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "LUNATONE",
+            "speciesDisplay": "Lunatone",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "RADIANT",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sweet Selene",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Diamond Bolt",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Psybeam",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

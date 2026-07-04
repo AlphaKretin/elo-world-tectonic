@@ -1,0 +1,136 @@
+{
+    "label": "POKEMONTRAINER_Yezera:Yezera",
+    "title": "Pok\u00e9mon Trainer Yezera #1",
+    "trainerType": "POKEMONTRAINER_Yezera",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "BUNNELBY",
+            "speciesDisplay": "Bunnelby",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "SERENE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Tread On",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Hop",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Tackle",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Baby-Doll Eyes",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SMOOCHUM",
+            "speciesDisplay": "Smoochum",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Powder Snow",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Mind Waves",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Fake Tears",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "JOLTIK",
+            "speciesDisplay": "Joltik",
+            "level": 18,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Light Show",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Sticky Web",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Disable",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Thunder Shock",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "NOIBAT",
+            "speciesDisplay": "Noibat",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FLYINGGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Absorb",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Defog",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dragon Breath",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

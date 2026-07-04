@@ -1,0 +1,139 @@
+{
+    "label": "POKEMONRANGER_M:Alastar",
+    "title": "Pok\u00e9mon Ranger Alastar",
+    "trainerType": "POKEMONRANGER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ARBOK",
+            "speciesDisplay": "Arbok",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Throat Chop",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "FARIGIRAF",
+            "speciesDisplay": "Farigiraf",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "STAMPEDE",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Piercing Doubt",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "VANILLUXE",
+            "speciesDisplay": "Vanilluxe",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mist Burst",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Frigid Flurry",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SIMIPOUR",
+            "speciesDisplay": "Simipour",
+            "level": 60,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "TACTICIAN",
+                "SERENE"
+            ],
+            "heldItems": [
+                "ENERGYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Hydro Cannon",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Launder",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

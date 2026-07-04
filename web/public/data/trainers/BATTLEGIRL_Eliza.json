@@ -1,0 +1,103 @@
+{
+    "label": "BATTLEGIRL:Eliza",
+    "title": "Battle Girl Eliza",
+    "trainerType": "BATTLEGIRL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MAKUHITA",
+            "speciesDisplay": "Makuhita",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wipeout",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Leer",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Scuffle",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SCRAGGY",
+            "speciesDisplay": "Scraggy",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Smash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Scheme",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pilfer",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "NICKIT",
+            "speciesDisplay": "Nickit",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Pilfer",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Hone Claws",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Quick Attack",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

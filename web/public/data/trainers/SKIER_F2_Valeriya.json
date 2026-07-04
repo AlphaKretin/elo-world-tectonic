@@ -1,0 +1,135 @@
+{
+    "label": "SKIER_F2:Valeriya",
+    "title": "Skier Valeriya",
+    "trainerType": "SKIER_F2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ALCREMIE",
+            "speciesDisplay": "Alcremie",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "FORTUNE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Tease",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Aromatherapy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sweet Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "DUSCLOPS",
+            "speciesDisplay": "Dusclops",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "CARETAKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "SHARPEDO",
+            "speciesDisplay": "Sharpedo",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Hydro Fang",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Poison Fang",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Brutal Swing",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "PINSIR",
+            "speciesDisplay": "Pinsir",
+            "level": 30,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "FORTUNE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fury Pecks",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Capoeira",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bug Bite",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

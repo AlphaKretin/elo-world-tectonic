@@ -1,0 +1,29 @@
+{
+    "label": "TESTTRAINERTYPE:Test Trainer",
+    "title": "Test Trainer Test Trainer",
+    "trainerType": "TESTTRAINERTYPE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TESTPOKEMON",
+            "speciesDisplay": "Test Pokemon",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "DEBUG_TESTTRIBE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Test Move",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

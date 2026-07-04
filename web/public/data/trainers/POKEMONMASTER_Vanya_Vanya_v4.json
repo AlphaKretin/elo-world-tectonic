@@ -1,0 +1,203 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#4",
+    "title": "Pok\u00e9mon Master Vanya #4",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "STAMPEDE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Stampede"
+        }
+    ],
+    "party": [
+        {
+            "species": "BASTIODON",
+            "speciesDisplay": "Bastiodon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TYRANNICAL",
+                "STAMPEDE",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Faraday Cage",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shielding Bash",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "SAWSBUCK",
+            "speciesDisplay": "Sawsbuck",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "STAMPEDE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shiver Dance",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Season's End",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "LICKILICKY",
+            "speciesDisplay": "Lickilicky",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "STAMPEDE",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Thrash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Belly Drum",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Tongue Twister",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "GOGOAT",
+            "speciesDisplay": "Gogoat",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "INDUSTRIOUS",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Submission",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "HIPPOWDON",
+            "speciesDisplay": "Hippowdon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Scorching Sands",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Heat Wave",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Sandblasting",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "JELLICENT",
+            "speciesDisplay": "Jellicent",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "SCOURGE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Cursed Oath",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bind Fate",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

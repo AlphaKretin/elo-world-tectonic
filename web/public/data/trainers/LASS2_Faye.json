@@ -1,0 +1,134 @@
+{
+    "label": "LASS2:Faye",
+    "title": "Lass Faye",
+    "trainerType": "LASS2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "WIGGLYTUFF",
+            "speciesDisplay": "Wigglytuff",
+            "level": 39,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "CHARMER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "THROATSPRAY"
+            ],
+            "moves": [
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Uproar",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SWALOT",
+            "speciesDisplay": "Swalot",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Gas",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Acid Spray",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Stellarate",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "HELIOLISK",
+            "speciesDisplay": "Heliolisk",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "ARTILLERY",
+                "ASSASSIN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Beam Struggle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Weather Burst",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Burning Jealousy",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "MOTHIM",
+            "speciesDisplay": "Mothim",
+            "level": 40,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Leech Life",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

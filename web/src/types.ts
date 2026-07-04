@@ -1,0 +1,93 @@
+export type BattleType = "singles" | "doubles";
+export type CurseVariant = "cursed" | "uncursed" | "cursed_excluded";
+
+export interface OpponentRef {
+  label: string;
+  display: string;
+  cursed: boolean;
+}
+
+export interface BestWorstEntry {
+  rating: number;
+  seed: number;
+  opponent: OpponentRef;
+}
+
+export interface WldFractions {
+  win: number;
+  draw: number;
+  loss: number;
+}
+
+// Everything about a trainer's result that VARIES by format -- rank/rating/
+// record/best-worst. Paired with the trainer's static payload (see
+// TrainerStatic below) by `label`, which is shared across both.
+export interface LeaderboardRow {
+  label: string;
+  trainer: string;
+  cursed: boolean;
+  rating: number;
+  se: number;
+  ciLow: number;
+  ciHigh: number;
+  wins: number;
+  losses: number;
+  draws: number;
+  battles: number;
+  rank: number;
+  overlap: number | null;
+  tier: string | null;
+  tierColor: [number, number, number] | null;
+  wldFractions: WldFractions;
+  bestWin: BestWorstEntry | null;
+  worstLoss: BestWorstEntry | null;
+}
+
+export interface FormatMeta {
+  moveGridColumns: 1 | 2;
+  maxNativeSpriteDim: number;
+  spriteScale: number;
+}
+
+export interface TribeBonus {
+  tribeId: string;
+  count: number;
+  threshold: number;
+  name: string;
+}
+
+export interface MoveInfo {
+  name: string;
+  type: string;
+}
+
+export interface PartyMember {
+  species: string;
+  speciesDisplay: string;
+  level: number;
+  shiny: boolean;
+  nickname: string | null;
+  tribes: string[];
+  heldItems: string[];
+  moves: MoveInfo[];
+}
+
+export interface IdentityRef {
+  trainerType: string;
+  realName: string;
+}
+
+// The static (format-independent) half of a trainer's card -- identity,
+// party, curse-authoring, tribe bonuses. Combine with a LeaderboardRow
+// (same `label`) for the format-dependent half (rank/rating/record/
+// best-worst) to render a full TrainerCard.
+export interface TrainerStatic {
+  label: string;
+  title: string;
+  trainerType: string;
+  identities: IdentityRef[];
+  trueNames: string[];
+  isCursed: boolean;
+  tribeBonuses: TribeBonus[];
+  party: PartyMember[];
+}

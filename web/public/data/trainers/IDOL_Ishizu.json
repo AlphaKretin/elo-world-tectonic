@@ -1,0 +1,104 @@
+{
+    "label": "IDOL:Ishizu",
+    "title": "Idol Ishizu",
+    "trainerType": "IDOL",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "JIGGLYPUFF",
+            "speciesDisplay": "Jigglypuff",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "CHARMER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Lullaby",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Round",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Baleful Bop",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Tease",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "KLANG",
+            "speciesDisplay": "Klang",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Autotomize",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Magnetize",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Shock Wave",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Metal Sound",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "VIBRAVA",
+            "speciesDisplay": "Vibrava",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Droning",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Dragon Breath",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Bulldoze",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

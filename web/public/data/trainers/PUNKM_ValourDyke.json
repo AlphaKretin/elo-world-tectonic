@@ -1,0 +1,207 @@
+{
+    "label": "PUNKM:ValourDyke",
+    "title": "Developer ValourDyke",
+    "trainerType": "PUNKM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AGGRON",
+            "speciesDisplay": "Aggron",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Macha",
+            "tribes": [
+                "CARETAKER",
+                "STAMPEDE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Bedrock Breaker",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Iron Head",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Icecalibur",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "LANTURN",
+            "speciesDisplay": "Lanturn",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Clarity",
+            "tribes": [
+                "RADIANT",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "FLASHBULB"
+            ],
+            "moves": [
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Scald",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Volt Switch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "MAROWAK",
+            "speciesDisplay": "Marowak",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Nanaya",
+            "tribes": [
+                "ARTILLERY",
+                "SCRAPPER",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Bonemerang",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Vim Ripper",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MILTANK",
+            "speciesDisplay": "Miltank",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Hortensa",
+            "tribes": [
+                "FORTUNE",
+                "STAMPEDE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Dinner Bell",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "FLYGON",
+            "speciesDisplay": "Flygon",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Mercurial",
+            "tribes": [
+                "BUSHWHACKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "THROATSPRAY"
+            ],
+            "moves": [
+                {
+                    "name": "Guttural Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Protect",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MANTINE",
+            "speciesDisplay": "Mantine",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Camilla",
+            "tribes": [
+                "CARETAKER",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "HIVISJACKET"
+            ],
+            "moves": [
+                {
+                    "name": "Mach Pulse",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Sky Fall",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Wide Guard",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,142 @@
+{
+    "label": "SEEKER_Nora:Nora",
+    "title": "Seeker Nora",
+    "trainerType": "SEEKER_Nora",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "COALOSSAL",
+            "speciesDisplay": "Coalossal",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Certainty",
+            "tribes": [
+                "ASSASSIN",
+                "ANIMATED",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Diamond Force",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Flare Up",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Flame Spikes",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "HZOROARK",
+            "speciesDisplay": "H. Zoroark",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Curiosity",
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LIGHTCLAY"
+            ],
+            "moves": [
+                {
+                    "name": "Malefaction",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SKUNTANK",
+            "speciesDisplay": "Skuntank",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Ferocity",
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Gunk Shot",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Crunch",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "JUMPLUFF",
+            "speciesDisplay": "Jumpluff",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Velocity",
+            "tribes": [
+                "STAMPEDE",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "ROCKYHELMET"
+            ],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "label": "DRAGONTAMER:Georgius#1",
+    "title": "Dragon Tamer Georgius #2",
+    "trainerType": "DRAGONTAMER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MARSHADOW",
+            "speciesDisplay": "Marshadow",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "HARMONIC",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Drain Punch",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "DRUDDIGON",
+            "speciesDisplay": "Druddigon",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "SCRAPPER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stand Together",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Flamethrower",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Cruelty",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "NOIVERN",
+            "speciesDisplay": "Noivern",
+            "level": 50,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sonic Shriek",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Guttural Roar",
+                    "type": "DRAGON"
+                }
+            ]
+        }
+    ]
+}

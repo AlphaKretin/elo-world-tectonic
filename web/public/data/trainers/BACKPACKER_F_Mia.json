@@ -1,0 +1,139 @@
+{
+    "label": "BACKPACKER_F:Mia",
+    "title": "Backpacker Mia",
+    "trainerType": "BACKPACKER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SAWSBUCK",
+            "speciesDisplay": "Sawsbuck",
+            "level": 52,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "STAMPEDE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "FAIRYGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Headbutt",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "SAWSBUCK",
+            "speciesDisplay": "Sawsbuck",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "STAMPEDE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Headbutt",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whip Kick",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "SAWSBUCK",
+            "speciesDisplay": "Sawsbuck",
+            "level": 53,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "STAMPEDE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Headbutt",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "SAWSBUCK",
+            "speciesDisplay": "Sawsbuck",
+            "level": 52,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "STAMPEDE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Whirlwind Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Headbutt",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                }
+            ]
+        }
+    ]
+}

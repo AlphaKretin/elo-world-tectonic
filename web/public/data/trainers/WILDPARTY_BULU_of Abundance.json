@@ -1,0 +1,141 @@
+{
+    "label": "WILDPARTY_BULU:of Abundance",
+    "title": "Wild Party of Abundance",
+    "trainerType": "WILDPARTY_BULU",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ASANDSLASH",
+            "speciesDisplay": "A. Sandslash",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "SCOURGE"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Shiver Dance",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Icicle Spear",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Spike Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Pin Missile",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "FLYGON",
+            "speciesDisplay": "Flygon",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "SOFTSAND"
+            ],
+            "moves": [
+                {
+                    "name": "Pulverizer Chord",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Guttural Roar",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Bug Buzz",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "DECIDUEYE",
+            "speciesDisplay": "Decidueye",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ARTILLERY",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "MENTALHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Spirit Shackle",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Six Feet Under",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "SNORLAX",
+            "speciesDisplay": "Snorlax",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bedfellows",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

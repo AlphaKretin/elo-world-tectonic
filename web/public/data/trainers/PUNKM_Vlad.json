@@ -1,0 +1,139 @@
+{
+    "label": "PUNKM:Vlad",
+    "title": "Punk Vlad",
+    "trainerType": "PUNKM",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GSLOWBRO",
+            "speciesDisplay": "G. Slowbro",
+            "level": 43,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "SCOURGE",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "SCOPELENS"
+            ],
+            "moves": [
+                {
+                    "name": "Total Control",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Cross Poison",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "DRAPION",
+            "speciesDisplay": "Drapion",
+            "level": 43,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "TYRANNICAL",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Honorless Sting",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Venom Guard",
+                    "type": "POISON"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "VILEPLUME",
+            "speciesDisplay": "Vileplume",
+            "level": 43,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "SERENE",
+                "ARTILLERY"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Ivy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Giga Drain",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Allergy",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "RHYPERIOR",
+            "speciesDisplay": "Rhyperior",
+            "level": 44,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "ARTILLERY",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "LUCKHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Seismic Wave",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "label": "TUBER_F:Sophie",
+    "title": "Tuber Sophie",
+    "trainerType": "TUBER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TOTODILE",
+            "speciesDisplay": "Totodile",
+            "level": 13,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wipeout",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Waterlog",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leer",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "TRAPINCH",
+            "speciesDisplay": "Trapinch",
+            "level": 13,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Tread On",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Dazzle",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Smush",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

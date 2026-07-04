@@ -1,0 +1,106 @@
+{
+    "label": "SAGE:Shion",
+    "title": "Sage Shion",
+    "trainerType": "SAGE",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MISMAGIUS",
+            "speciesDisplay": "Mismagius",
+            "level": 33,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "HARMONIC",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Spiteful Chant",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Enchanting Song",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Frost Breath",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "BRELOOM",
+            "speciesDisplay": "Breloom",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "SCAVENGER",
+                "SCRAPPER"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Spore",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bullet Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Rock Tomb",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "COALOSSAL",
+            "speciesDisplay": "Coalossal",
+            "level": 34,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "ANIMATED",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Stealth Rock",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Creeping Strike",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                }
+            ]
+        }
+    ]
+}

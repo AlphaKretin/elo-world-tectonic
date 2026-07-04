@@ -1,0 +1,72 @@
+{
+    "label": "GUITARIST2:Brady",
+    "title": "Guitarist Brady",
+    "trainerType": "GUITARIST2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PLUSLE",
+            "speciesDisplay": "Plusle",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "HARMONIC",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Lucky Cheer",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Nuzzle",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "ORANGURU",
+            "speciesDisplay": "Oranguru",
+            "level": 48,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "AGILITYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Instruct",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Stellarate",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

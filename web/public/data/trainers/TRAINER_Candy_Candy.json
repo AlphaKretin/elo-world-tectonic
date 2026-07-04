@@ -1,0 +1,141 @@
+{
+    "label": "TRAINER_Candy:Candy",
+    "title": "Pok\u00e9mon Trainer Candy #1",
+    "trainerType": "TRAINER_Candy",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GALLADE",
+            "speciesDisplay": "Gallade",
+            "level": 40,
+            "shiny": false,
+            "nickname": "Jeanne",
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "FOCUSSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Sacred Sword",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "GRAPIDASH",
+            "speciesDisplay": "G. Rapidash",
+            "level": 40,
+            "shiny": false,
+            "nickname": "Vashti",
+            "tribes": [
+                "STAMPEDE",
+                "RADIANT",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Misadventure",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Drill Peck",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "STARAPTOR",
+            "speciesDisplay": "Staraptor",
+            "level": 40,
+            "shiny": false,
+            "nickname": "Robin",
+            "tribes": [
+                "SCRAPPER",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SHELLBELL"
+            ],
+            "moves": [
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                }
+            ]
+        },
+        {
+            "species": "ARCANINE",
+            "speciesDisplay": "Arcanine",
+            "level": 40,
+            "shiny": false,
+            "nickname": "Enkidu",
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "EJECTBUTTON"
+            ],
+            "moves": [
+                {
+                    "name": "Blazing Speed",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Extreme Speed",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Humble",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Inferno Impact",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

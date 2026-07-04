@@ -1,0 +1,105 @@
+{
+    "label": "DANCER:Isai",
+    "title": "Dancer Isai",
+    "trainerType": "DANCER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "COMBUSKEN",
+            "speciesDisplay": "Combusken",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Peck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Smash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Kindle",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Fire Spin",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "GROVYLE",
+            "speciesDisplay": "Grovyle",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "SERENE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sharpen",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Clash",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Pilfer",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "MARSHTOMP",
+            "speciesDisplay": "Marshtomp",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SERENE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Wavebreak",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Smash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Supersonic",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Rumble",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

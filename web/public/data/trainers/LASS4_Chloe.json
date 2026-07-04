@@ -1,0 +1,69 @@
+{
+    "label": "LASS4:Chloe",
+    "title": "Lass Chloe",
+    "trainerType": "LASS4",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "YAMASK",
+            "speciesDisplay": "Yamask",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "DECEIVER",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Fire Spin",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Dead End",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "ROSELIA",
+            "speciesDisplay": "Roselia",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "WARRIOR",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "GRASSGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Razor Leaf",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Envenom",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Poison Tail",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

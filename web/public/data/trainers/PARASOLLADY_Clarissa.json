@@ -1,0 +1,105 @@
+{
+    "label": "PARASOLLADY:Clarissa",
+    "title": "Parasol Lady Clarissa",
+    "trainerType": "PARASOLLADY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LINOONE",
+            "speciesDisplay": "Linoone",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "DECEIVER",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Extreme Speed",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Covet",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Steamroller",
+                    "type": "BUG"
+                },
+                {
+                    "name": "Bullet Charge",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "BANETTE",
+            "speciesDisplay": "Banette",
+            "level": 28,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "ANIMATED",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Claw",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Slash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Will-O-Wisp",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Shadow Sneak",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "CUBONE",
+            "speciesDisplay": "Cubone",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Drop Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Payback",
+                    "type": "DARK"
+                }
+            ]
+        }
+    ]
+}

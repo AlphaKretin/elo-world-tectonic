@@ -1,0 +1,105 @@
+{
+    "label": "SCHOOLKID_F:Arya",
+    "title": "School Kid Arya",
+    "trainerType": "SCHOOLKID_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TRANQUILL",
+            "speciesDisplay": "Tranquill",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Focus Energy",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pluck",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Incision",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Scratch",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GOLDEEN",
+            "speciesDisplay": "Goldeen",
+            "level": 20,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "CHARMER",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "WATERGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Teeter Dance",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Leer",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "WARTORTLE",
+            "speciesDisplay": "Wartortle",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "TACTICIAN",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Aqua Shock",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Shine Shot",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Aqua Jet",
+                    "type": "WATER"
+                }
+            ]
+        }
+    ]
+}

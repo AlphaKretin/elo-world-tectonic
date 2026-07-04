@@ -1,0 +1,74 @@
+{
+    "label": "CAMERAMAN2:Octavio",
+    "title": "Cameraman Octavio",
+    "trainerType": "CAMERAMAN2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SKARMORY",
+            "speciesDisplay": "Skarmory",
+            "level": 57,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Feather Ward",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Slag",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Brave Bird",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "CRABOMINABLE",
+            "speciesDisplay": "Crabominable",
+            "level": 58,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CADOBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Storm Throw",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Thunder Punch",
+                    "type": "ELECTRIC"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,209 @@
+{
+    "label": "TAPU_BULU:Tapu Bulu#1",
+    "title": "Guardian Deity Tapu Bulu",
+    "trainerType": "TAPU_BULU",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "TAUROS",
+            "speciesDisplay": "Tauros",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "SCRAPPER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Thrash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Raging Fury",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Dielectric Breakdown",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Petal Dance",
+                    "type": "GRASS"
+                }
+            ]
+        },
+        {
+            "species": "HAWLUCHA",
+            "speciesDisplay": "Hawlucha",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "NOBLE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Laser Focus",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "X-Scissor",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "AEXEGGUTOR",
+            "speciesDisplay": "A. Exeggutor",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "WHITEHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Hammer",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Bullet Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Rock Blast",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "APERSIAN",
+            "speciesDisplay": "A. Persian",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "DARKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Lash Out",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Halting Cold",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Shattered Light",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "CRABOMINABLE",
+            "speciesDisplay": "Crabominable",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "SCAVENGER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "CUSTAPBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Knock Off",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "METAGROSS",
+            "speciesDisplay": "Metagross",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "TACTICIAN",
+                "ASSASSIN"
+            ],
+            "heldItems": [
+                "KEEBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Heavy Slam",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Zen Headbutt",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

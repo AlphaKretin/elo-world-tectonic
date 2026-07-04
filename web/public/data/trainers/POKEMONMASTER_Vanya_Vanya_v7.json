@@ -1,0 +1,204 @@
+{
+    "label": "POKEMONMASTER_Vanya:Vanya#7",
+    "title": "Pok\u00e9mon Master Vanya #7",
+    "trainerType": "POKEMONMASTER_Vanya",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "NOBLE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Noble"
+        }
+    ],
+    "party": [
+        {
+            "species": "MNINETALES",
+            "speciesDisplay": "M. Ninetales",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Ghostly Tale",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Encore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Agility",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "SLOWKING",
+            "speciesDisplay": "Slowking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "REM Burst",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Bar",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Tutelage",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Selective Memory",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "MILOTIC",
+            "speciesDisplay": "Milotic",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dragon Pulse",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Life Dew",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                }
+            ]
+        },
+        {
+            "species": "FURFROU",
+            "speciesDisplay": "Furfrou",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "ESOTERIC",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Foul Play",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Short Circuit",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Puzzle Room",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Lounge",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SHEDINJA",
+            "speciesDisplay": "Shedinja",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "ASSASSIN",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Psychoscission",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ghostly Tale",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Death Mark",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "NIDOKING",
+            "speciesDisplay": "Nidoking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Poison Jab",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Backhand",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Grime Grapple",
+                    "type": "POISON"
+                }
+            ]
+        }
+    ]
+}

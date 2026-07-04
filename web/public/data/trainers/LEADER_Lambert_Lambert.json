@@ -1,0 +1,166 @@
+{
+    "label": "LEADER_Lambert:Lambert",
+    "title": "Gym Leader Lambert #1",
+    "trainerType": "LEADER_Lambert",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ZORUA",
+            "speciesDisplay": "Zorua",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Harsh Vibes",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Shout",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ember",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "PANCHAM",
+            "speciesDisplay": "Pancham",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "NOBLE",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Smash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Taunt",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Leer",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "BINACLE",
+            "speciesDisplay": "Binacle",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "TACTICIAN",
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Rock Throw",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Karate Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Rumble",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "RIOLU",
+            "speciesDisplay": "Riolu",
+            "level": 15,
+            "shiny": false,
+            "nickname": "Sangfroid",
+            "tribes": [
+                "LOYAL",
+                "WARRIOR",
+                "HARMONIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Luster",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Aura Pulse",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Vanguard",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "CROAGUNK",
+            "speciesDisplay": "Croagunk",
+            "level": 15,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "HARMONIC",
+                "SCRAPPER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Nasty Nip",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Karate Chop",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Nerve Block",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

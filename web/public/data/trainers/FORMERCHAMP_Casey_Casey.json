@@ -1,0 +1,206 @@
+{
+    "label": "FORMERCHAMP_Casey:Casey",
+    "title": "Former Champion Casey",
+    "trainerType": "FORMERCHAMP_Casey",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "CHERRIM",
+            "speciesDisplay": "Cherrim",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "RADIANT",
+                "TACTICIAN"
+            ],
+            "heldItems": [
+                "HEATROCK"
+            ],
+            "moves": [
+                {
+                    "name": "Sunshine",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Synthesis",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Fire Blast",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "PYROAR",
+            "speciesDisplay": "Pyroar",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "RADIANT",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "POWERHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Fire Blast",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Hyper Voice",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Solar Beam",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SAWSBUCK",
+            "speciesDisplay": "Sawsbuck",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Periwinkle",
+            "tribes": [
+                "HARMONIC",
+                "STAMPEDE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Leaf Blade",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "STOUTLAND",
+            "speciesDisplay": "Stoutland",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Roar",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Reflect",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Light Screen",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "APPLETUN",
+            "speciesDisplay": "Appletun",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "ARTILLERY",
+                "CHARMER"
+            ],
+            "heldItems": [
+                "LEFTOVERS"
+            ],
+            "moves": [
+                {
+                    "name": "Honey Slather",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Draco Meteor",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "White Flame",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "BLAZIKEN",
+            "speciesDisplay": "Blaziken",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "PRISMATICPLATE"
+            ],
+            "moves": [
+                {
+                    "name": "Blaze Kick",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Divining Talon",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Overheat",
+                    "type": "FIRE"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "label": "BEAUTY2:Enisa",
+    "title": "Beauty Enisa",
+    "trainerType": "BEAUTY2",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MUNCHLAX",
+            "speciesDisplay": "Munchlax",
+            "level": 26,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "SCAVENGER"
+            ],
+            "heldItems": [
+                "CUSTAPBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Snore",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Take Down",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "HAUNTER",
+            "speciesDisplay": "Haunter",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCOURGE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Spectral Tongue",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Clear Smog",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Icy Wind",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Seance",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "PRIMEAPE",
+            "speciesDisplay": "Primeape",
+            "level": 25,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Fire Punch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Arm Thrust",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Shadow Punch",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Bulk Up",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}

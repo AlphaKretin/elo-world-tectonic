@@ -1,0 +1,209 @@
+{
+    "label": "LEADER_Bence:Bence#3",
+    "title": "Gym Leader Bence #2",
+    "trainerType": "LEADER_Bence",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": true,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "ARCHEOPS",
+            "speciesDisplay": "Archeops",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "LOYAL",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CHOICECROWN"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "STONJOURNER",
+            "speciesDisplay": "Stonjourner",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Agnes",
+            "tribes": [
+                "ANIMATED",
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "ALLPURPOSEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Body Press",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Adamantine Press",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Heat Crash",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "JUMPLUFF",
+            "speciesDisplay": "Jumpluff",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "STAMPEDE",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "HOOHSASHES"
+            ],
+            "moves": [
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Air Slash",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "HAWLUCHA",
+            "speciesDisplay": "Hawlucha",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "NOBLE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "CLARITYSASH"
+            ],
+            "moves": [
+                {
+                    "name": "Thunder Punch",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Tailwind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Acrobatics",
+                    "type": "FLYING"
+                }
+            ]
+        },
+        {
+            "species": "PALMANTRA",
+            "speciesDisplay": "Palmantra",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "SERENE",
+                "HARMONIC"
+            ],
+            "heldItems": [
+                "GHOSTRING"
+            ],
+            "moves": [
+                {
+                    "name": "Adrenalash",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Energy Ball",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Neural Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "DRAGONITE",
+            "speciesDisplay": "Dragonite",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "FORTUNE",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LUNCHBOX"
+            ],
+            "moves": [
+                {
+                    "name": "Roost",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dragon Dance",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Outrage",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Fly",
+                    "type": "FLYING"
+                }
+            ]
+        }
+    ]
+}

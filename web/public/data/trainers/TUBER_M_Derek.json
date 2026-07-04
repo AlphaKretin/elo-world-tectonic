@@ -1,0 +1,138 @@
+{
+    "label": "TUBER_M:Derek",
+    "title": "Tuber Derek",
+    "trainerType": "TUBER_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "INTELEON",
+            "speciesDisplay": "Inteleon",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "CHARMER",
+                "ARTILLERY"
+            ],
+            "heldItems": [
+                "WATERGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Dark Pulse",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Frigid Jealousy",
+                    "type": "ICE"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "MLILLIGANT",
+            "speciesDisplay": "M. Lilligant",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "CARETAKER",
+                "NOBLE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Glacial Ram",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Liquidation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Backhand",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "SANDSLASH",
+            "speciesDisplay": "Sandslash",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "WARRIOR",
+                "ASSASSIN",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Camouflage",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Shed Spines",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "U-turn",
+                    "type": "BUG"
+                }
+            ]
+        },
+        {
+            "species": "DARMANITAN",
+            "speciesDisplay": "Darmanitan",
+            "level": 41,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCRAPPER",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "CHOICESCARF"
+            ],
+            "moves": [
+                {
+                    "name": "Fire Lash",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Thrash",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Hundred-Hand Clap",
+                    "type": "PSYCHIC"
+                }
+            ]
+        }
+    ]
+}

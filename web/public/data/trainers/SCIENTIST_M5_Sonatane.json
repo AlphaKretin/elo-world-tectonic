@@ -1,0 +1,107 @@
+{
+    "label": "SCIENTIST_M5:Sonatane",
+    "title": "Scientist Sonatane",
+    "trainerType": "SCIENTIST_M5",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "AROMATISSE",
+            "speciesDisplay": "Aromatisse",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "NOBLE",
+                "BUSHWHACKER"
+            ],
+            "heldItems": [
+                "LEFTOVERS",
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Moonblast",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Mist Burst",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Sludge Wave",
+                    "type": "POISON"
+                },
+                {
+                    "name": "Draining Kiss",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "KLEFKI",
+            "speciesDisplay": "Klefki",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Flash Cannon",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Play Rough",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Numb",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Metal Sound",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "BLASTOISE",
+            "speciesDisplay": "Blastoise",
+            "level": 55,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "TACTICIAN",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Cavitation",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Aura Sphere",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Null Pulse",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Javelin",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

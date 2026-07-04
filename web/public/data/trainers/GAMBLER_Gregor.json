@@ -1,0 +1,110 @@
+{
+    "label": "GAMBLER:Gregor",
+    "title": "Gambler Gregor",
+    "trainerType": "GAMBLER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "MEOWTH",
+            "speciesDisplay": "Meowth",
+            "level": 21,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE"
+            ],
+            "heldItems": [
+                "NORMALGEM",
+                "GROUNDGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Pay Day",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Scratch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Stamp Down",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                }
+            ]
+        },
+        {
+            "species": "AMEOWTH",
+            "speciesDisplay": "A. Meowth",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "DARKGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Pay Day",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Pursuit",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Crystal Gleam",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Plant Doubt",
+                    "type": "DARK"
+                }
+            ]
+        },
+        {
+            "species": "GMEOWTH",
+            "speciesDisplay": "G. Meowth",
+            "level": 22,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "SCRAPPER",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "STEELGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Pay Day",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Double Kick",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                }
+            ]
+        }
+    ]
+}

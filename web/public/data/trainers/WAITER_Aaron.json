@@ -1,0 +1,417 @@
+{
+    "label": "WAITER:Aaron",
+    "title": "Waiter Aaron",
+    "trainerType": "WAITER",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [
+        {
+            "tribeId": "CARETAKER",
+            "count": 6,
+            "threshold": 5,
+            "name": "Caretaker"
+        },
+        {
+            "tribeId": "DECEIVER",
+            "count": 6,
+            "threshold": 5,
+            "name": "Deceiver"
+        },
+        {
+            "tribeId": "LOYAL",
+            "count": 6,
+            "threshold": 5,
+            "name": "Loyal"
+        },
+        {
+            "tribeId": "ANIMATED",
+            "count": 5,
+            "threshold": 5,
+            "name": "Animated"
+        },
+        {
+            "tribeId": "ARTILLERY",
+            "count": 5,
+            "threshold": 5,
+            "name": "Artillery"
+        },
+        {
+            "tribeId": "ASSASSIN",
+            "count": 5,
+            "threshold": 5,
+            "name": "Assassin"
+        },
+        {
+            "tribeId": "BUSHWHACKER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Bushwhacker"
+        },
+        {
+            "tribeId": "CHARMER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Charmer"
+        },
+        {
+            "tribeId": "ESOTERIC",
+            "count": 5,
+            "threshold": 5,
+            "name": "Esoteric"
+        },
+        {
+            "tribeId": "FORTUNE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Fortune"
+        },
+        {
+            "tribeId": "HARMONIC",
+            "count": 5,
+            "threshold": 5,
+            "name": "Harmonic"
+        },
+        {
+            "tribeId": "INDUSTRIOUS",
+            "count": 5,
+            "threshold": 5,
+            "name": "Industrious"
+        },
+        {
+            "tribeId": "NOBLE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Noble"
+        },
+        {
+            "tribeId": "RADIANT",
+            "count": 5,
+            "threshold": 5,
+            "name": "Radiant"
+        },
+        {
+            "tribeId": "SCAVENGER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Scavenger"
+        },
+        {
+            "tribeId": "SCOURGE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Scourge"
+        },
+        {
+            "tribeId": "SCRAPPER",
+            "count": 5,
+            "threshold": 5,
+            "name": "Scrapper"
+        },
+        {
+            "tribeId": "SERENE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Serene"
+        },
+        {
+            "tribeId": "STAMPEDE",
+            "count": 5,
+            "threshold": 5,
+            "name": "Stampede"
+        },
+        {
+            "tribeId": "TACTICIAN",
+            "count": 5,
+            "threshold": 5,
+            "name": "Tactician"
+        },
+        {
+            "tribeId": "TYRANNICAL",
+            "count": 5,
+            "threshold": 5,
+            "name": "Tyrannical"
+        },
+        {
+            "tribeId": "WARRIOR",
+            "count": 5,
+            "threshold": 5,
+            "name": "Warrior"
+        }
+    ],
+    "party": [
+        {
+            "species": "GIGANTEON",
+            "speciesDisplay": "Giganteon",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Mega Punch",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Dig",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Flow State",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "HZOROARK",
+            "speciesDisplay": "H. Zoroark",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "DECEIVER",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Malefaction",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Spikes",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GIGANTEON",
+            "speciesDisplay": "Giganteon",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ruin",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shadow Ball",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Scheme",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GIGANTEON",
+            "speciesDisplay": "Giganteon",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Body Slam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Glacial Crunch",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GIGANTEON",
+            "speciesDisplay": "Giganteon",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Double-Edge",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Searing Crunch",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heal Bell",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "GIGANTEON",
+            "speciesDisplay": "Giganteon",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "ASSASSIN",
+                "BUSHWHACKER",
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER",
+                "ESOTERIC",
+                "FORTUNE",
+                "HARMONIC",
+                "INDUSTRIOUS",
+                "LOYAL",
+                "NOBLE",
+                "RADIANT",
+                "SCAVENGER",
+                "SCOURGE",
+                "SCRAPPER",
+                "SERENE",
+                "STAMPEDE",
+                "TACTICIAN",
+                "TYRANNICAL",
+                "WARRIOR"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Last Resort",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Laser Focus",
+                    "type": "STEEL"
+                }
+            ]
+        }
+    ]
+}

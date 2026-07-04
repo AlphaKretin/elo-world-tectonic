@@ -1,0 +1,137 @@
+{
+    "label": "POKEMANIAC:Nikos",
+    "title": "Pok\u00e9 Maniac Nikos",
+    "trainerType": "POKEMANIAC",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "LEAFEON",
+            "speciesDisplay": "Leafeon",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CHARMER",
+                "LOYAL",
+                "WARRIOR"
+            ],
+            "heldItems": [
+                "GRASSGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Poison Ivy",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Solar Glide",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Baby-Doll Eyes",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Work Up",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "WEAVILE",
+            "speciesDisplay": "Weavile",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sever",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Frost Barb",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Metal Claw",
+                    "type": "STEEL"
+                }
+            ]
+        },
+        {
+            "species": "HYPNO",
+            "speciesDisplay": "Hypno",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "SCAVENGER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dream Absorb",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Brick Break",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Hypnotherapy",
+                    "type": "PSYCHIC"
+                }
+            ]
+        },
+        {
+            "species": "ALTARIA",
+            "speciesDisplay": "Altaria",
+            "level": 35,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "HARMONIC",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Dragon Claw",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Frolic",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Boreal Wind",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Dazzling Gleam",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

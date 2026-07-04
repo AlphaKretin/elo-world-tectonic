@@ -1,0 +1,197 @@
+{
+    "label": "DELINQUENT:Lilypad",
+    "title": "Developer Lilypad",
+    "trainerType": "DELINQUENT",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PORYGONZ",
+            "speciesDisplay": "Porygon-Z",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Beepo",
+            "tribes": [
+                "ANIMATED",
+                "ARTILLERY",
+                "DECEIVER"
+            ],
+            "heldItems": [
+                "ENERGYHERB"
+            ],
+            "moves": [
+                {
+                    "name": "Hyper Beam",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Critical Error",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Phantom Gate",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Thunderbolt",
+                    "type": "ELECTRIC"
+                }
+            ]
+        },
+        {
+            "species": "LYCANROC",
+            "speciesDisplay": "Lycanroc",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Fluffles",
+            "tribes": [
+                "LOYAL",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "LIFEORB"
+            ],
+            "moves": [
+                {
+                    "name": "Stormshards",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Rockalanche",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Glacial Crunch",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "WOLFEROC",
+            "speciesDisplay": "Wolferoc",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Ruffles",
+            "tribes": [
+                "LOYAL",
+                "ESOTERIC"
+            ],
+            "heldItems": [
+                "NORMALGEM"
+            ],
+            "moves": [
+                {
+                    "name": "Trump Card",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Shattered Light",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Pounce",
+                    "type": "FLYING"
+                },
+                {
+                    "name": "Trample",
+                    "type": "GROUND"
+                }
+            ]
+        },
+        {
+            "species": "ROUGAROC",
+            "speciesDisplay": "Rougaroc",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Scruffles",
+            "tribes": [
+                "LOYAL",
+                "TYRANNICAL"
+            ],
+            "heldItems": [
+                "STRIKEVEST"
+            ],
+            "moves": [
+                {
+                    "name": "Monolith Drop",
+                    "type": "ROCK"
+                },
+                {
+                    "name": "Nightfelling",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Rip Tide",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Stormshards",
+                    "type": "ROCK"
+                }
+            ]
+        },
+        {
+            "species": "CURESOLA",
+            "speciesDisplay": "Curesola",
+            "level": 70,
+            "shiny": true,
+            "nickname": "Lilypad",
+            "tribes": [
+                "RADIANT",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                "CUSTAPBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Coral Overgrowth",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Explosion",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MOTHIM",
+            "speciesDisplay": "Mothim",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SCOURGE",
+                "STAMPEDE"
+            ],
+            "heldItems": [
+                "CRYSTALVEIL"
+            ],
+            "moves": [
+                {
+                    "name": "Powder Bomb",
+                    "type": "STEEL"
+                },
+                {
+                    "name": "Leech Seed",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Leaf Storm",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "label": "ARTIST:Evan",
+    "title": "Artist Evan",
+    "trainerType": "ARTIST",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "SMEARGLE",
+            "speciesDisplay": "Smeargle",
+            "level": 18,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Helping Hand",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Heal Pulse",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Bare Teeth",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Noble Roar",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MISDREAVUS",
+            "speciesDisplay": "Misdreavus",
+            "level": 16,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "HARMONIC",
+                "ESOTERIC"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Disarming Voice",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Ominous Wind",
+                    "type": "GHOST"
+                }
+            ]
+        }
+    ]
+}

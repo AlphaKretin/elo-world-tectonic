@@ -1,0 +1,137 @@
+{
+    "label": "POKEFAN_M:Jamie",
+    "title": "Pok\u00e9 Fan Jamie",
+    "trainerType": "POKEFAN_M",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "PUMPKABOO",
+            "speciesDisplay": "Pumpkaboo",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "CARETAKER",
+                "CHARMER",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Dirge",
+                    "type": "GHOST"
+                },
+                {
+                    "name": "Grass Knot",
+                    "type": "GRASS"
+                },
+                {
+                    "name": "Ember",
+                    "type": "FIRE"
+                },
+                {
+                    "name": "Confuse Ray",
+                    "type": "GHOST"
+                }
+            ]
+        },
+        {
+            "species": "EKANS",
+            "speciesDisplay": "Ekans",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "BUSHWHACKER",
+                "DECEIVER",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Glare",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Twister",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Acid",
+                    "type": "POISON"
+                }
+            ]
+        },
+        {
+            "species": "SPHEAL",
+            "speciesDisplay": "Spheal",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "NOBLE",
+                "STAMPEDE",
+                "CARETAKER"
+            ],
+            "heldItems": [
+                "SITRUSBERRY"
+            ],
+            "moves": [
+                {
+                    "name": "Powder Snow",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Cryo Sleep",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Rest",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Bubble Beam",
+                    "type": "WATER"
+                }
+            ]
+        },
+        {
+            "species": "SNUBBULL",
+            "speciesDisplay": "Snubbull",
+            "level": 17,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "LOYAL",
+                "CARETAKER",
+                "DECEIVER"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Pixie Punch",
+                    "type": "FAIRY"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Bite",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Charm",
+                    "type": "FAIRY"
+                }
+            ]
+        }
+    ]
+}

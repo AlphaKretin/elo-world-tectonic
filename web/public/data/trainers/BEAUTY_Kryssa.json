@@ -1,0 +1,138 @@
+{
+    "label": "BEAUTY:Kryssa",
+    "title": "Beauty Kryssa",
+    "trainerType": "BEAUTY",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "party": [
+        {
+            "species": "GDARMANITAN",
+            "speciesDisplay": "G. Darmanitan",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "SERENE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Close Combat",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Mach Punch",
+                    "type": "FIGHTING"
+                },
+                {
+                    "name": "Flare Blitz",
+                    "type": "FIRE"
+                }
+            ]
+        },
+        {
+            "species": "STARMIE",
+            "speciesDisplay": "Starmie",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ASSASSIN",
+                "FORTUNE",
+                "RADIANT"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Snipe Shot",
+                    "type": "WATER"
+                },
+                {
+                    "name": "Exploit",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Arc Lamp",
+                    "type": "ELECTRIC"
+                },
+                {
+                    "name": "Rapid Spin",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "MAMOSWINE",
+            "speciesDisplay": "Mamoswine",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SCAVENGER",
+                "STAMPEDE",
+                "INDUSTRIOUS"
+            ],
+            "heldItems": [
+                "LUMBERAXE"
+            ],
+            "moves": [
+                {
+                    "name": "Earthquake",
+                    "type": "GROUND"
+                },
+                {
+                    "name": "Ice Hammer",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Ice Shard",
+                    "type": "ICE"
+                },
+                {
+                    "name": "Chill",
+                    "type": "ICE"
+                }
+            ]
+        },
+        {
+            "species": "MEOWSTIC",
+            "speciesDisplay": "Meowstic",
+            "level": 45,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ARTILLERY",
+                "CARETAKER",
+                "LOYAL"
+            ],
+            "heldItems": [
+                "LOADEDDICE"
+            ],
+            "moves": [
+                {
+                    "name": "Pattern Release",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Psychic Fang",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Sucker Punch",
+                    "type": "DARK"
+                },
+                {
+                    "name": "Arm Thrust",
+                    "type": "FIGHTING"
+                }
+            ]
+        }
+    ]
+}
