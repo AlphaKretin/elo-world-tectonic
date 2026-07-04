@@ -31,7 +31,7 @@ if (-not (Test-Path $SeedsPath)) {
 
 $env:ELO_TOURNAMENT = "1"
 $env:ELO_RUN_BRACKET = "1"
-$env:ELO_FORMAT = $Format   # cosmetic only -- labels the attempting-file snapshot the watchdog diffs
+$env:ELO_FORMAT = $Format   # labels the attempting-file snapshot AND tells bracket.rb whether to curse-strip entrants (UNCURSED_BRACKET)
 $env:ELO_BRACKET_FORMAT = if ($Format -like "double*") { "double" } else { "single" }
 $env:ELO_BRACKET_SEEDS_PATH = $SeedsPath
 $env:ELO_BRACKET_RESULTS_PATH = Join-Path $ResultsDir "bracket_${Format}_results.tsv"
