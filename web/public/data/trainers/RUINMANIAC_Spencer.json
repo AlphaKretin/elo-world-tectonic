@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 21.0,
+    "maxLevel": 21,
     "party": [
         {
             "species": "BALTOY",

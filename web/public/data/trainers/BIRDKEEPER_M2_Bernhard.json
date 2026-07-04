@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 36.75,
+    "maxLevel": 37,
     "party": [
         {
             "species": "PIDGEOT",

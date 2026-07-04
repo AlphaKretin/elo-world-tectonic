@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 44.0,
+    "maxLevel": 44,
     "party": [
         {
             "species": "SANDSLASH",

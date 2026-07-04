@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 47.5,
+    "maxLevel": 48,
     "party": [
         {
             "species": "HELECTRODE",

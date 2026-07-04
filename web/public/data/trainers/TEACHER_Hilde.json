@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 28.0,
+    "maxLevel": 28,
     "party": [
         {
             "species": "MASQUERAIN",

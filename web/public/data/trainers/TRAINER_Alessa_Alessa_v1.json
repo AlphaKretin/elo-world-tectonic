@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 26.5,
+    "maxLevel": 27,
     "party": [
         {
             "species": "TRUBBISH",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 48.75,
+    "maxLevel": 50,
     "party": [
         {
             "species": "CHANDELURE",

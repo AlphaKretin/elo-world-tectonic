@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 63.5,
+    "maxLevel": 64,
     "party": [
         {
             "species": "GYARADOS",

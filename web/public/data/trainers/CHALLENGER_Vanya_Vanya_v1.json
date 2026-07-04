@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 20.0,
+    "maxLevel": 20,
     "party": [
         {
             "species": "BARBOACH",

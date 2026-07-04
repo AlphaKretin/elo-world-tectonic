@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 36.0,
+    "maxLevel": 36,
     "party": [
         {
             "species": "KECLEON",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 21.666666666666668,
+    "maxLevel": 22,
     "party": [
         {
             "species": "MEOWTH",

@@ -17,6 +17,8 @@
     ],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 55.0,
+    "maxLevel": 55,
     "party": [
         {
             "species": "REGIROCK",

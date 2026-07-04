@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 19.333333333333332,
+    "maxLevel": 20,
     "party": [
         {
             "species": "SKIDDO",

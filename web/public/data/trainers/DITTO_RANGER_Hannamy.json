@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 34.0,
+    "maxLevel": 34,
     "party": [
         {
             "species": "CACTURNE",

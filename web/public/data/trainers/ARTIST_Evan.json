@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 17.0,
+    "maxLevel": 18,
     "party": [
         {
             "species": "SMEARGLE",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": true,
     "tribeBonuses": [],
+    "avgLevel": 25.0,
+    "maxLevel": 25,
     "party": [
         {
             "species": "MORGREM",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 63.2,
+    "maxLevel": 64,
     "party": [
         {
             "species": "MMANDIBUZZ",

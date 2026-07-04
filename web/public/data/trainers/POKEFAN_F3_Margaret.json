@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 37.0,
+    "maxLevel": 38,
     "party": [
         {
             "species": "GRIMMSNARL",

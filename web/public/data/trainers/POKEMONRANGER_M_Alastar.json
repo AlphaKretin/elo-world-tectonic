@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 60.0,
+    "maxLevel": 60,
     "party": [
         {
             "species": "ARBOK",

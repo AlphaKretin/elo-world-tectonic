@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 51.75,
+    "maxLevel": 53,
     "party": [
         {
             "species": "DUSKNOIR",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 50.0,
+    "maxLevel": 50,
     "party": [
         {
             "species": "MARSHADOW",

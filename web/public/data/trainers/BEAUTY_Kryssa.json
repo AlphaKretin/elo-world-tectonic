@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 45.0,
+    "maxLevel": 45,
     "party": [
         {
             "species": "GDARMANITAN",

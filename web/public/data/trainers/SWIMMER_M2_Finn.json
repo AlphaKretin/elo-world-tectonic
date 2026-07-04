@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 38.25,
+    "maxLevel": 39,
     "party": [
         {
             "species": "RELICANTH",

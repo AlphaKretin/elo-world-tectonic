@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 24.0,
+    "maxLevel": 24,
     "party": [
         {
             "species": "QUILAVA",

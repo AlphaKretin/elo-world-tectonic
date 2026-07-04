@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 58.0,
+    "maxLevel": 59,
     "party": [
         {
             "species": "XATU",

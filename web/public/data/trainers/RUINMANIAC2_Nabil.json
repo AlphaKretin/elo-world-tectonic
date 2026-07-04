@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 57.0,
+    "maxLevel": 57,
     "party": [
         {
             "species": "NIDOQUEEN",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 33.333333333333336,
+    "maxLevel": 34,
     "party": [
         {
             "species": "DITTO",

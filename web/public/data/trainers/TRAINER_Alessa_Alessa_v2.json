@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 44.8,
+    "maxLevel": 46,
     "party": [
         {
             "species": "WALREIN",

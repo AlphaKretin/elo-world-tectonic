@@ -84,6 +84,7 @@ def static_trainer_payload(label, card_data_by_label, tribe_info):
     identities = trainer_cards.masked_villain_identities(row, card_data_by_label)
     tribe_bonuses = trainer_cards.active_tribe_bonuses(row, tribe_info)
     is_cursed = any(p.startswith("CURSE_") for p in row["policies"])
+    levels = [m["level"] for m in row["party"]]
     return {
         "label": label,
         "title": trainer_cards.display_name(row, card_data_by_label),
@@ -98,6 +99,14 @@ def static_trainer_payload(label, card_data_by_label, tribe_info):
             {"tribeId": t, "count": c, "threshold": th, "name": n}
             for t, c, th, n in tribe_bonuses
         ],
+        # Team level is format-independent (party doesn't vary by
+        # battleType/curseVariant, see the module docstring), so it's stored
+        # once here rather than per-format -- also mirrored into the
+        # standalone team_levels.json summary (see export_team_levels) so
+        # the Stats page can plot it against every format's ratings without
+        # fetching every trainer's static payload individually.
+        "avgLevel": sum(levels) / len(levels) if levels else 0,
+        "maxLevel": max(levels) if levels else 0,
         "party": [
             {
                 "species": m["species"],
@@ -134,6 +143,27 @@ def export_trainers(card_data_by_label, tribe_info):
             json.dump(payload, f, indent=4)
         n += 1
     print(f"trainers: {n} static payloads -> {out_dir}")
+
+
+def export_team_levels(card_data_by_label):
+    """Standalone label -> {avgLevel, maxLevel} summary for every trainer,
+    format-independent (see static_trainer_payload). Lets the Stats page
+    plot team level against any format's ratings with one fetch instead of
+    one fetch per trainer (there's no per-format subset filtering here --
+    every trainer with a party gets an entry, same set the trainers/
+    directory covers)."""
+    out = {}
+    for label, row in card_data_by_label.items():
+        levels = [m["level"] for m in row["party"]]
+        if not levels:
+            continue
+        out[label] = {
+            "avgLevel": sum(levels) / len(levels),
+            "maxLevel": max(levels),
+        }
+    with open(os.path.join(WEB_DATA_DIR, "team_levels.json"), "w", encoding="utf-8") as f:
+        json.dump(out, f, indent=4)
+    print(f"team_levels: {len(out)} entries -> {WEB_DATA_DIR}")
 
 
 def export_format(fmt, card_data_by_label):
@@ -251,6 +281,7 @@ def main():
         }, f, indent=4)
 
     export_trainers(card_data_by_label, tribe_info)
+    export_team_levels(card_data_by_label)
 
     for fmt in FORMATS:
         ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")

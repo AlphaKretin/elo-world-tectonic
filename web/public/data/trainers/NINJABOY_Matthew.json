@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 12.0,
+    "maxLevel": 12,
     "party": [
         {
             "species": "BONSLY",

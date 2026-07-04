@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 58.75,
+    "maxLevel": 60,
     "party": [
         {
             "species": "QUAGSIRE",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 37.5,
+    "maxLevel": 38,
     "party": [
         {
             "species": "BIBAREL",

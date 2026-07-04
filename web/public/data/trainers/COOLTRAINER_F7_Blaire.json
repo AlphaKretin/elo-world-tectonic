@@ -13,6 +13,8 @@
             "name": "Esoteric"
         }
     ],
+    "avgLevel": 40.0,
+    "maxLevel": 40,
     "party": [
         {
             "species": "CLAYDOL",

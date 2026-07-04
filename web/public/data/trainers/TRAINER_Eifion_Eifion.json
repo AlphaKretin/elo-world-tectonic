@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 29.0,
+    "maxLevel": 30,
     "party": [
         {
             "species": "HOUNDOOM",

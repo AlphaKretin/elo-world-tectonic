@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 26.0,
+    "maxLevel": 26,
     "party": [
         {
             "species": "FROGADIER",

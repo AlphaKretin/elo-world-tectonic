@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 12.5,
+    "maxLevel": 70,
     "party": [
         {
             "species": "AMUK",

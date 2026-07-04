@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 35.0,
+    "maxLevel": 35,
     "party": [
         {
             "species": "BRONZONG",

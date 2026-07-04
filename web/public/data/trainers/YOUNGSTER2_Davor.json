@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 57.5,
+    "maxLevel": 58,
     "party": [
         {
             "species": "RUBARIOR",

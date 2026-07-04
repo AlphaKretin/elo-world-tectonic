@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 28.333333333333332,
+    "maxLevel": 29,
     "party": [
         {
             "species": "ROSELIA",

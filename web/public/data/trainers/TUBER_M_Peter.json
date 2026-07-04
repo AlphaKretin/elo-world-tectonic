@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 13.0,
+    "maxLevel": 13,
     "party": [
         {
             "species": "TYNAMO",

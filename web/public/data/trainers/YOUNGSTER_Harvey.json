@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 8.0,
+    "maxLevel": 8,
     "party": [
         {
             "species": "LUVDISC",

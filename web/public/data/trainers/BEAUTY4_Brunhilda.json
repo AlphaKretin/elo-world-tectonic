@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 58.25,
+    "maxLevel": 59,
     "party": [
         {
             "species": "MBEAUTIFLY",

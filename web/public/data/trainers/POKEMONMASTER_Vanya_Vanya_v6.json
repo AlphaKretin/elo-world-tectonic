@@ -19,6 +19,8 @@
             "name": "Loyal"
         }
     ],
+    "avgLevel": 70.0,
+    "maxLevel": 70,
     "party": [
         {
             "species": "KLEFKI",

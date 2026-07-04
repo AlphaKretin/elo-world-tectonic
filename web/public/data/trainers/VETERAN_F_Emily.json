@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 62.25,
+    "maxLevel": 63,
     "party": [
         {
             "species": "HSAMUROTT",

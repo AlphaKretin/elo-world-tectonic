@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 27.0,
+    "maxLevel": 27,
     "party": [
         {
             "species": "GOTHORITA",

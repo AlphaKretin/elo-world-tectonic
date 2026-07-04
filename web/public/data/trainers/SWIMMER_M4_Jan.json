@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 41.5,
+    "maxLevel": 42,
     "party": [
         {
             "species": "MSEAKING",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 48.666666666666664,
+    "maxLevel": 70,
     "party": [
         {
             "species": "SHUPPET",

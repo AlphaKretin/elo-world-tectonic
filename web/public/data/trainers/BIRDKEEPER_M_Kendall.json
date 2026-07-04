@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 40.5,
+    "maxLevel": 41,
     "party": [
         {
             "species": "DODRIO",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 23.333333333333332,
+    "maxLevel": 24,
     "party": [
         {
             "species": "PIKACHU",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 54.5,
+    "maxLevel": 55,
     "party": [
         {
             "species": "DRAGONITE",

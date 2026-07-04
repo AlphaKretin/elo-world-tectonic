@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 42.5,
+    "maxLevel": 43,
     "party": [
         {
             "species": "DRAMPA",

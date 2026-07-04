@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 10.0,
+    "maxLevel": 10,
     "party": [
         {
             "species": "GROWLITHE",

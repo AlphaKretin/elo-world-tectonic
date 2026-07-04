@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 8.5,
+    "maxLevel": 9,
     "party": [
         {
             "species": "KRICKETOT",

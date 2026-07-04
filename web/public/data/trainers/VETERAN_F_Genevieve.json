@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 30.0,
+    "maxLevel": 30,
     "party": [
         {
             "species": "HITMONLEE",

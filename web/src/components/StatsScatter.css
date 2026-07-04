@@ -1,0 +1,115 @@
+.stats-scatter {
+  position: relative;
+  margin-bottom: 1.5rem;
+  /* Matches the svg's own max-width so the tooltip's %-based left/top
+     (computed from the svg's viewBox coordinates) lines up with the
+     rendered point instead of a wider container. */
+  max-width: 640px;
+}
+
+.stats-scatter svg {
+  width: 100%;
+  height: auto;
+  max-width: 640px;
+  display: block;
+}
+
+.stats-scatter .scatter-grid {
+  stroke: var(--border-faint);
+  stroke-width: 1;
+}
+
+.stats-scatter .scatter-tick {
+  fill: var(--text-secondary);
+  font-size: 10px;
+}
+
+.stats-scatter .scatter-axis-label {
+  fill: var(--text-secondary);
+  font-size: 12px;
+}
+
+.stats-scatter .scatter-diagonal {
+  stroke: var(--text-secondary);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 5;
+  opacity: 0.6;
+}
+
+.stats-scatter .scatter-legend-line {
+  width: 16px;
+  height: 0;
+  border-top: 1.5px dashed var(--text-secondary);
+  display: inline-block;
+  opacity: 0.6;
+}
+
+.stats-scatter .scatter-trendline {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.stats-scatter .scatter-legend-line-trend {
+  border-top: 2px solid var(--accent);
+  opacity: 1;
+}
+
+.stats-scatter .scatter-point {
+  cursor: pointer;
+  transition: r 0.1s;
+}
+
+.stats-scatter .scatter-point-neutral {
+  fill: var(--accent);
+  stroke: none;
+  opacity: 0.85;
+}
+
+.stats-scatter .scatter-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.stats-scatter .scatter-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.stats-scatter .scatter-tooltip {
+  position: absolute;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  pointer-events: none;
+  /* width:max-content sizes to content regardless of anchor position --
+     plain width:auto on an absolutely-positioned box with only `left` set
+     shrink-to-fits using the space between `left` and the containing
+     block's edge (computed BEFORE the transform below moves it), so near
+     the right edge it was collapsing to a sliver and word-wrapping hard. */
+  width: max-content;
+  max-width: 220px;
+  z-index: 1;
+}
+
+/* Horizontal anchor varies by which side of the point has room, so the
+   tooltip grows toward the middle of the chart near an edge instead of
+   overflowing the container and word-wrapping aggressively. */
+.stats-scatter .scatter-tooltip-center {
+  transform: translate(-50%, -100%) translateY(-12px);
+}
+
+.stats-scatter .scatter-tooltip-left {
+  transform: translate(0, -100%) translateY(-12px);
+}
+
+.stats-scatter .scatter-tooltip-right {
+  transform: translate(-100%, -100%) translateY(-12px);
+}

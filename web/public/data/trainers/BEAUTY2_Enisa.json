@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 25.333333333333332,
+    "maxLevel": 26,
     "party": [
         {
             "species": "MUNCHLAX",

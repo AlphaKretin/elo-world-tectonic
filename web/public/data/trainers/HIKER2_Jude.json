@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 17.0,
+    "maxLevel": 17,
     "party": [
         {
             "species": "ANORITH",

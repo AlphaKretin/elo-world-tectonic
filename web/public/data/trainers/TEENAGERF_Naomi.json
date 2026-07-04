@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 23.666666666666668,
+    "maxLevel": 24,
     "party": [
         {
             "species": "IVYSAUR",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 39.75,
+    "maxLevel": 40,
     "party": [
         {
             "species": "WIGGLYTUFF",

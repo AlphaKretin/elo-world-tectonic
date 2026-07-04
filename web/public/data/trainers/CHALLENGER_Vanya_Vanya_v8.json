@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 70.0,
+    "maxLevel": 70,
     "party": [
         {
             "species": "SKARMORY",

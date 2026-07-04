@@ -6,12 +6,19 @@ import { fetchLeaderboardRow, fetchMeta, fetchTrainerStatic, formatKey } from ".
 import type { BattleType, CurseVariant, FormatMeta, LeaderboardRow, TrainerStatic } from "../types";
 import "./TrainerModal.css";
 
-export function TrainerModal() {
-  const params = useParams();
-  const navigate = useNavigate();
-  const battleType = params.battleType as BattleType;
-  const curseVariant = params.curseVariant as CurseVariant;
-  const label = decodeURIComponent(params.label ?? "");
+interface TrainerModalContentProps {
+  battleType: BattleType;
+  curseVariant: CurseVariant;
+  label: string;
+  onClose: () => void;
+  onOpenTrainer: (label: string) => void;
+}
+
+// Presentational modal, driven entirely by props so it can be mounted either
+// as a route (TrainerModal below, for the Leaderboard page) or directly from
+// page-local state (see ComparePage) without navigating away and losing that
+// page's filters/settings.
+export function TrainerModalContent({ battleType, curseVariant, label, onClose, onOpenTrainer }: TrainerModalContentProps) {
   const fmt = formatKey(battleType, curseVariant);
 
   const [trainer, setTrainer] = useState<TrainerStatic | null>(null);
@@ -19,10 +26,6 @@ export function TrainerModal() {
   const [meta, setMeta] = useState<FormatMeta | null>(null);
   const [error, setError] = useState<string | null>(null);
   const cardRef = useRef<HTMLDivElement>(null);
-
-  function close() {
-    navigate(`/${battleType}/${curseVariant}`);
-  }
 
   useEffect(() => {
     let cancelled = false;
@@ -54,7 +57,7 @@ export function TrainerModal() {
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "Escape") close();
+      if (e.key === "Escape") onClose();
     }
     window.addEventListener("keydown", onKeyDown);
     return () => {
@@ -73,18 +76,14 @@ export function TrainerModal() {
     a.click();
   }
 
-  function handleOpenTrainer(nextLabel: string) {
-    navigate(`/${battleType}/${curseVariant}/${encodeURIComponent(nextLabel)}`);
-  }
-
   return (
-    <div className="modal-backdrop" onClick={close}>
+    <div className="modal-backdrop" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         {error && <p className="error">Failed to load trainer: {error}</p>}
         {!error && !trainer && <p className="modal-loading">Loading...</p>}
         {trainer && row && meta && (
           <>
-            <TrainerCard trainer={trainer} row={row} meta={meta} onOpenTrainer={handleOpenTrainer} ref={cardRef} />
+            <TrainerCard trainer={trainer} row={row} meta={meta} onOpenTrainer={onOpenTrainer} ref={cardRef} />
             <button type="button" className="download-button" onClick={handleDownload}>
               Download as PNG
             </button>
@@ -92,5 +91,33 @@ export function TrainerModal() {
         )}
       </div>
     </div>
+  );
+}
+
+// Route-mounted wrapper for the Leaderboard page's nested /:label route --
+// derives props from the URL and closes/navigates via the router.
+export function TrainerModal() {
+  const params = useParams();
+  const navigate = useNavigate();
+  const battleType = params.battleType as BattleType;
+  const curseVariant = params.curseVariant as CurseVariant;
+  const label = decodeURIComponent(params.label ?? "");
+
+  function close() {
+    navigate(`/${battleType}/${curseVariant}`);
+  }
+
+  function openTrainer(nextLabel: string) {
+    navigate(`/${battleType}/${curseVariant}/${encodeURIComponent(nextLabel)}`);
+  }
+
+  return (
+    <TrainerModalContent
+      battleType={battleType}
+      curseVariant={curseVariant}
+      label={label}
+      onClose={close}
+      onOpenTrainer={openTrainer}
+    />
   );
 }

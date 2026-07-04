@@ -19,6 +19,8 @@
             "name": "Loyal"
         }
     ],
+    "avgLevel": 48.0,
+    "maxLevel": 48,
     "party": [
         {
             "species": "UMBREON",

@@ -13,6 +13,8 @@
             "name": "Bushwhacker"
         }
     ],
+    "avgLevel": 35.0,
+    "maxLevel": 35,
     "party": [
         {
             "species": "HELECTRODE",

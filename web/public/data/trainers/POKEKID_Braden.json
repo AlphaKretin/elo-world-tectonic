@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 21.75,
+    "maxLevel": 22,
     "party": [
         {
             "species": "MONFERNO",

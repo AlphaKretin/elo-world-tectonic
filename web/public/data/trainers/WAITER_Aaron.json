@@ -139,6 +139,8 @@
             "name": "Warrior"
         }
     ],
+    "avgLevel": 45.0,
+    "maxLevel": 45,
     "party": [
         {
             "species": "GIGANTEON",

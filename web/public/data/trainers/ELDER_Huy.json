@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 53.5,
+    "maxLevel": 54,
     "party": [
         {
             "species": "CRAWDAUNT",

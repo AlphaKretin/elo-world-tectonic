@@ -43,6 +43,18 @@ export interface LeaderboardRow {
   worstLoss: BestWorstEntry | null;
 }
 
+// Per-trainer format-independent team level summary (avg/max of party
+// levels), keyed by label -- see analysis/export_web_data.py's
+// export_team_levels. One file covering every trainer, so the Stats page
+// can plot team level against any format's ratings without fetching each
+// trainer's static payload individually.
+export interface TeamLevelEntry {
+  avgLevel: number;
+  maxLevel: number;
+}
+
+export type TeamLevels = Record<string, TeamLevelEntry>;
+
 export interface FormatMeta {
   moveGridColumns: 1 | 2;
   maxNativeSpriteDim: number;
@@ -81,6 +93,28 @@ export interface IdentityRef {
 // party, curse-authoring, tribe bonuses. Combine with a LeaderboardRow
 // (same `label`) for the format-dependent half (rank/rating/record/
 // best-worst) to render a full TrainerCard.
+// Row shape produced by joining two leaderboard formats by trainer `label`
+// (see pages/ComparePage.tsx) -- shared with components/RatingScatter.tsx.
+export interface JoinedRow {
+  label: string;
+  trainer: string;
+  cursed: boolean;
+  rankA: number;
+  ratingA: number;
+  rankB: number;
+  ratingB: number;
+}
+
+// Generic point for the Stats page's axis-picker scatter (components/
+// StatsScatter.tsx) -- x/y can be any chosen metric (rating, win rate,
+// team level...), unlike JoinedRow's fixed rating-vs-rating shape.
+export interface ScatterPoint {
+  label: string;
+  trainer: string;
+  x: number;
+  y: number;
+}
+
 export interface TrainerStatic {
   label: string;
   title: string;
@@ -88,6 +122,8 @@ export interface TrainerStatic {
   identities: IdentityRef[];
   trueNames: string[];
   isCursed: boolean;
+  avgLevel: number;
+  maxLevel: number;
   tribeBonuses: TribeBonus[];
   party: PartyMember[];
 }

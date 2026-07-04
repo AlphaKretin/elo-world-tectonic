@@ -13,6 +13,8 @@
             "name": "Charmer"
         }
     ],
+    "avgLevel": 25.0,
+    "maxLevel": 25,
     "party": [
         {
             "species": "DRIZZILE",

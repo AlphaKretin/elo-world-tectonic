@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 40.0,
+    "maxLevel": 40,
     "party": [
         {
             "species": "SHUCKLE",

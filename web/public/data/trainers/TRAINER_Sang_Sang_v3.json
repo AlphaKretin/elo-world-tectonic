@@ -13,6 +13,8 @@
             "name": "Harmonic"
         }
     ],
+    "avgLevel": 60.0,
+    "maxLevel": 60,
     "party": [
         {
             "species": "REGISTEEL",

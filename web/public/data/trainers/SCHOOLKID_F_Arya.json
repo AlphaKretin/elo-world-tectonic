@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 20.666666666666668,
+    "maxLevel": 21,
     "party": [
         {
             "species": "TRANQUILL",

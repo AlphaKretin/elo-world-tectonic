@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 22.0,
+    "maxLevel": 22,
     "party": [
         {
             "species": "YAMASK",

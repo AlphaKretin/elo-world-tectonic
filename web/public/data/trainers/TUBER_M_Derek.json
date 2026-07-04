@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 41.0,
+    "maxLevel": 41,
     "party": [
         {
             "species": "INTELEON",

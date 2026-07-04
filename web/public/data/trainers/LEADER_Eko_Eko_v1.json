@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": true,
     "tribeBonuses": [],
+    "avgLevel": 20.0,
+    "maxLevel": 20,
     "party": [
         {
             "species": "SALANDIT",

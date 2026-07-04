@@ -13,6 +13,8 @@
             "name": "Artillery"
         }
     ],
+    "avgLevel": 44.8,
+    "maxLevel": 46,
     "party": [
         {
             "species": "ELECTRODE",

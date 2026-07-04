@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 42.25,
+    "maxLevel": 43,
     "party": [
         {
             "species": "AMPHAROS",

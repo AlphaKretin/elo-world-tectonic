@@ -13,6 +13,8 @@
             "name": "Fortune"
         }
     ],
+    "avgLevel": 55.0,
+    "maxLevel": 55,
     "party": [
         {
             "species": "ALOMOMOLA",

@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 58.5,
+    "maxLevel": 59,
     "party": [
         {
             "species": "WATCHOG",

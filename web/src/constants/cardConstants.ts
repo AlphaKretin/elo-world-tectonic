@@ -41,6 +41,14 @@ export const TYPE_ICON_FILES: Record<string, string> = {
 };
 export const TYPE_ICON_FALLBACK = "QMarks.svg";
 
+// High -> low, mirroring analysis/card_constants.py's TIER_COLORS keys
+// (defined low -> high there) -- used for tier chip ordering and sorting on
+// the leaderboard, since plain string sort puts "A-" before "A+" and "S"
+// before "S+".
+export const TIER_ORDER = [
+  "S+", "S", "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F",
+];
+
 export function readableTextColor([r, g, b]: [number, number, number]): string {
   const luminance = 0.299 * r + 0.587 * g + 0.114 * b;
   return luminance > 140 ? "#141a2e" : "#ffffff";

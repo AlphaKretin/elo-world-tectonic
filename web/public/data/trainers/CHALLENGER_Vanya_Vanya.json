@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 15.0,
+    "maxLevel": 15,
     "party": [
         {
             "species": "BUTTERFREE",

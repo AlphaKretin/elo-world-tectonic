@@ -1,0 +1,2222 @@
+{
+    "BATTLEGIRL:Tester": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "YOUNGSTER:Joey": {
+        "avgLevel": 50.0,
+        "maxLevel": 50
+    },
+    "ROLLERSKATER_M:Lane Tester": {
+        "avgLevel": 10.0,
+        "maxLevel": 10
+    },
+    "BUGCATCHER_F:Caitlyn": {
+        "avgLevel": 8.5,
+        "maxLevel": 9
+    },
+    "YOUNGSTER:Harvey": {
+        "avgLevel": 8.0,
+        "maxLevel": 8
+    },
+    "LASS2:Sienna": {
+        "avgLevel": 8.0,
+        "maxLevel": 8
+    },
+    "HIKER:Dave": {
+        "avgLevel": 8.5,
+        "maxLevel": 9
+    },
+    "GENTLEMAN:Wilfrid": {
+        "avgLevel": 10.0,
+        "maxLevel": 10
+    },
+    "NINJABOY:Matthew": {
+        "avgLevel": 12.0,
+        "maxLevel": 12
+    },
+    "FIREBREATHER:Antonio": {
+        "avgLevel": 13.0,
+        "maxLevel": 13
+    },
+    "AROMALADY:Hannah": {
+        "avgLevel": 12.0,
+        "maxLevel": 12
+    },
+    "SAILOR:Dylan": {
+        "avgLevel": 14.0,
+        "maxLevel": 14
+    },
+    "LADY2:Rebecca": {
+        "avgLevel": 14.0,
+        "maxLevel": 14
+    },
+    "TUBER_M:Peter": {
+        "avgLevel": 13.0,
+        "maxLevel": 13
+    },
+    "TUBER_F:Sophie": {
+        "avgLevel": 13.0,
+        "maxLevel": 13
+    },
+    "BATTLEGIRL:Eliza": {
+        "avgLevel": 15.0,
+        "maxLevel": 15
+    },
+    "LEADER_Lambert:Lambert": {
+        "avgLevel": 15.0,
+        "maxLevel": 15
+    },
+    "LEADER_Lambert:Lambert#1": {
+        "avgLevel": 15.0,
+        "maxLevel": 15
+    },
+    "POKEMONTRAINER_Yezera:Yezera": {
+        "avgLevel": 17.25,
+        "maxLevel": 18
+    },
+    "POKEMONTRAINER_Yezera:Yezera#1": {
+        "avgLevel": 17.333333333333332,
+        "maxLevel": 18
+    },
+    "GUITARIST:Reece": {
+        "avgLevel": 16.333333333333332,
+        "maxLevel": 17
+    },
+    "PSYCHIC_M:Uriel": {
+        "avgLevel": 16.333333333333332,
+        "maxLevel": 17
+    },
+    "POKEFAN_M:Jamie": {
+        "avgLevel": 17.0,
+        "maxLevel": 17
+    },
+    "DANCER:Isai": {
+        "avgLevel": 17.0,
+        "maxLevel": 17
+    },
+    "ARTIST:Evan": {
+        "avgLevel": 17.0,
+        "maxLevel": 18
+    },
+    "HIKER2:Jude": {
+        "avgLevel": 17.0,
+        "maxLevel": 17
+    },
+    "SCIENTIST_M2:Dexter": {
+        "avgLevel": 20.0,
+        "maxLevel": 20
+    },
+    "SCIENTIST_F:Marie": {
+        "avgLevel": 20.0,
+        "maxLevel": 20
+    },
+    "LEADER_Eko:Eko": {
+        "avgLevel": 20.0,
+        "maxLevel": 20
+    },
+    "LEADER_Eko:Eko#1": {
+        "avgLevel": 20.0,
+        "maxLevel": 20
+    },
+    "TEENAGERM:Jonas": {
+        "avgLevel": 19.333333333333332,
+        "maxLevel": 20
+    },
+    "LINEBACKER:Josh": {
+        "avgLevel": 20.666666666666668,
+        "maxLevel": 21
+    },
+    "SCHOOLKID_F:Arya": {
+        "avgLevel": 20.666666666666668,
+        "maxLevel": 21
+    },
+    "RUINMANIAC:Spencer": {
+        "avgLevel": 21.0,
+        "maxLevel": 21
+    },
+    "SOCIALITE:Elizabeth": {
+        "avgLevel": 22.0,
+        "maxLevel": 22
+    },
+    "LASS4:Chloe": {
+        "avgLevel": 22.0,
+        "maxLevel": 22
+    },
+    "GAMBLER:Gregor": {
+        "avgLevel": 21.666666666666668,
+        "maxLevel": 22
+    },
+    "MAID:Alice": {
+        "avgLevel": 22.666666666666668,
+        "maxLevel": 23
+    },
+    "LASS:Tara": {
+        "avgLevel": 22.666666666666668,
+        "maxLevel": 23
+    },
+    "SCHOOLKID_M2:Branimir": {
+        "avgLevel": 23.666666666666668,
+        "maxLevel": 24
+    },
+    "TEENAGERF:Naomi": {
+        "avgLevel": 23.666666666666668,
+        "maxLevel": 24
+    },
+    "MEDIUM:Theoni": {
+        "avgLevel": 23.666666666666668,
+        "maxLevel": 24
+    },
+    "BAKER:Rose": {
+        "avgLevel": 24.0,
+        "maxLevel": 24
+    },
+    "CHEF:Travis": {
+        "avgLevel": 24.0,
+        "maxLevel": 24
+    },
+    "GUITARIST3:Mai": {
+        "avgLevel": 24.0,
+        "maxLevel": 24
+    },
+    "POKEKID:Braden": {
+        "avgLevel": 21.75,
+        "maxLevel": 22
+    },
+    "RICHBOY2:Theodore": {
+        "avgLevel": 18.666666666666668,
+        "maxLevel": 19
+    },
+    "LEADER_Helena:Helena": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "LEADER_Helena:Helena#1": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "IDOL:Ishizu": {
+        "avgLevel": 25.333333333333332,
+        "maxLevel": 26
+    },
+    "BEAUTY2:Enisa": {
+        "avgLevel": 25.333333333333332,
+        "maxLevel": 26
+    },
+    "CLERK_F:Lily": {
+        "avgLevel": 23.333333333333332,
+        "maxLevel": 24
+    },
+    "PSYCHIC_F2:Ludmila": {
+        "avgLevel": 26.0,
+        "maxLevel": 27
+    },
+    "YOUNGSTER3:Sorin": {
+        "avgLevel": 26.0,
+        "maxLevel": 26
+    },
+    "BLACKBELT3:Philip": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "COOLTRAINER_M7:Xander": {
+        "avgLevel": 15.0,
+        "maxLevel": 15
+    },
+    "COOLTRAINER_F7:Jade": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "COOLTRAINER_F7:Blaire": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "COOLTRAINER_M7:Emir": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "COOLTRAINER_F7:Nyx": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "COOLTRAINER_M7:Nero": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "POKEMONTRAINER_Yezera:Yezera#2": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "POKEMONTRAINER_Yezera:Yezera#3": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "POKEMONTRAINER_Yezera:Yezera#4": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "POKEMONTRAINER_Yezera:Yezera#5": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "SCHOOLKID_M:Louis": {
+        "avgLevel": 20.0,
+        "maxLevel": 20
+    },
+    "KIMONOGIRL:Haera": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "NURSE:Ellen": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "GUITARIST3:Jamie": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "BAKER:Margerie": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "PILOT:Charlie": {
+        "avgLevel": 50.0,
+        "maxLevel": 50
+    },
+    "VETERANM_2:Roy": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "DRAGONTAMER:Arthur": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "IRISCOSPLAYER:Isabelle": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "ELDER:Logun": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SCIENTIST_M2:Marco": {
+        "avgLevel": 36.0,
+        "maxLevel": 36
+    },
+    "SCIENTIST_F:Natasha": {
+        "avgLevel": 37.0,
+        "maxLevel": 37
+    },
+    "SCIENTIST_M:Julien": {
+        "avgLevel": 36.0,
+        "maxLevel": 36
+    },
+    "SCIENTIST_F3:Viola": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "TOURISTF:Mariana": {
+        "avgLevel": 26.0,
+        "maxLevel": 26
+    },
+    "DANDY:Charles": {
+        "avgLevel": 26.333333333333332,
+        "maxLevel": 27
+    },
+    "SAGE:Imay": {
+        "avgLevel": 26.666666666666668,
+        "maxLevel": 27
+    },
+    "PARASOLLADY:Clarissa": {
+        "avgLevel": 26.666666666666668,
+        "maxLevel": 28
+    },
+    "POKEFAN_F2:Tsveta": {
+        "avgLevel": 27.333333333333332,
+        "maxLevel": 28
+    },
+    "CYCLIST_M:Mitron": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "REPORTER:Helga": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "WORKER:Kevin": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "TEACHER:Hilde": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "POKEMONRANGER_M2:Connor": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "BACKPACKER_F:Aiyana": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "POKEMONRANGER_F2:Amahle": {
+        "avgLevel": 27.333333333333332,
+        "maxLevel": 28
+    },
+    "CAMPER:Christian": {
+        "avgLevel": 27.666666666666668,
+        "maxLevel": 28
+    },
+    "POKEMONRANGER_F:Val": {
+        "avgLevel": 28.0,
+        "maxLevel": 29
+    },
+    "AROMALADY:Cheshire": {
+        "avgLevel": 28.333333333333332,
+        "maxLevel": 29
+    },
+    "POKEMONRANGER_M:Ivan": {
+        "avgLevel": 27.333333333333332,
+        "maxLevel": 28
+    },
+    "FAIRYTALEGIRL:Maja": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "HOOPSTER:Jerel": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "BACKPACKER_M:Freedom": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "BUGCATCHER_F:Lovina": {
+        "avgLevel": 28.0,
+        "maxLevel": 28
+    },
+    "CLOWN:Klemens": {
+        "avgLevel": 27.75,
+        "maxLevel": 28
+    },
+    "NINJABOY:Hwan": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "BIRDKEEPER_F:Amanda": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "VETERAN_F:Genevieve": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "CAMPER_F:Veronica": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "GUITARIST2:Alan": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "SAILOR:Konrad": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "LEADER_Rafael:Rafael": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "LEADER_Rafael:Rafael#1": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "ARCHFRIEND_Lainie:Lainie": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ULTRALAINIE:Lainie": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "NURSE:Joy": {
+        "avgLevel": 20.0,
+        "maxLevel": 20
+    },
+    "POKEMANIAC:Nikos": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "ROUGHNECK:Randall": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "BURGLAR:Keith": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "BATTLEGIRL3:Kryska": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "PSYCHIC_M3:Boban": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "DRAGONTAMER:Georgius": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "SAGE:Rennyo": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "HARLEQUIN:Vincenzi": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "DRAGONTAMER:Georgius#1": {
+        "avgLevel": 50.0,
+        "maxLevel": 50
+    },
+    "SAGE:Rennyo#1": {
+        "avgLevel": 50.0,
+        "maxLevel": 50
+    },
+    "HARLEQUIN:Vincenzi#1": {
+        "avgLevel": 50.0,
+        "maxLevel": 50
+    },
+    "BOARDER:Alex": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "JOGGER:Georgio": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "TWINS2:Bella and Meghan": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "SWIMMER_M:Stannis": {
+        "avgLevel": 35.5,
+        "maxLevel": 36
+    },
+    "WAITRESS:Carmilla": {
+        "avgLevel": 37.25,
+        "maxLevel": 38
+    },
+    "BIKER2:Chuck": {
+        "avgLevel": 37.25,
+        "maxLevel": 38
+    },
+    "NURSERYAIDE:Francesca": {
+        "avgLevel": 37.25,
+        "maxLevel": 38
+    },
+    "GENTLEMAN3:Oliver": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "CLERK_M2:Alejandro": {
+        "avgLevel": 38.5,
+        "maxLevel": 39
+    },
+    "CLERK_M2:Marton": {
+        "avgLevel": 38.5,
+        "maxLevel": 39
+    },
+    "CLERK_M2:Zoltan": {
+        "avgLevel": 38.5,
+        "maxLevel": 39
+    },
+    "CEO:Beatrice": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "BIRDKEEPER_M:Kendall": {
+        "avgLevel": 40.5,
+        "maxLevel": 41
+    },
+    "POKEFAN_F:Impi": {
+        "avgLevel": 41.5,
+        "maxLevel": 42
+    },
+    "COLLECTOR:Mirko": {
+        "avgLevel": 41.5,
+        "maxLevel": 42
+    },
+    "DOCTOR:Peio": {
+        "avgLevel": 41.0,
+        "maxLevel": 42
+    },
+    "VETERANM_2:Hadley": {
+        "avgLevel": 42.5,
+        "maxLevel": 43
+    },
+    "CYCLIST_F:Anastasia": {
+        "avgLevel": 42.5,
+        "maxLevel": 44
+    },
+    "BEAUTY:Gretchen": {
+        "avgLevel": 44.0,
+        "maxLevel": 44
+    },
+    "CAMERAMAN:Marcel": {
+        "avgLevel": 44.0,
+        "maxLevel": 44
+    },
+    "JANITOR:Eric": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "LADY3:Kristiane": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "ROUGHNECK:Reese": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "WORKER:Bryn": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "ROUGHNECK2:Flavio": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "SMASHER:Stella": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "JUGGLER:Brickbat": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "DRAGONTAMER_F:Zinnia": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SUPERNERD:Agentbla": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LADY4:Pria": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "GAMBLER:IgnitedxSoul": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ARTIST3:Drawingbox": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "COOLTRAINER_M3:Dada": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONRANGER_M:Zufaix": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "HEXMANIAC:Lichenprincess": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MAID2:Maddie": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "CLERK_M2:Papper": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "GAMBLER:Tiki": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "RICHBOY:Splitmoon": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "JANITOR:Steeb": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "GENTLEMAN3:D": {
+        "avgLevel": 48.666666666666664,
+        "maxLevel": 70
+    },
+    "ROUGHNECK2:Jaggedthorn": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "RICHBOY4:Darlvon": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "HARLEQUIN:Minty": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SCIENTIST_F:LunaFlare": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "HIKER:Valrex": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WORKER5:Jbsundown": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONBREEDER_F:Miss Zesty": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "HEXMANIAC_1:Riptide": {
+        "avgLevel": 12.5,
+        "maxLevel": 70
+    },
+    "HEXMANIAC_1:Riptide#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "DRAGONTAMER_F:Bella": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "VETERANM_2:Kirbae": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONBREEDER_M2:Pechapanda": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "DELINQUENT:Lilypad": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "GUITARIST3:Envy": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "PUNKM:ValourDyke": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "HEXMANIAC:Errata": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WAITRESS2:Fanfan": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "KATY:Manycrows": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TOURISTM:Chus": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "KILLU:Killu": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LADY2:Eseria": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WAITRESS3:Destiny": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TOURISTM:Azeler": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "FAIRYTALEGIRL:Emmi": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ODDISH:Oddium": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Bence:Bence": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "LEADER_Bence:Bence#1": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "LEADER_Zoe:Zo\u00e9": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "LEADER_Zoe:Zo\u00e9#1": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "TRAINER_Zain:Zain": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "TRAINER_Zain:Zain#1": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "SWIMMER_M4:Jan": {
+        "avgLevel": 41.5,
+        "maxLevel": 42
+    },
+    "BATTLEGIRL2:Yumei": {
+        "avgLevel": 42.5,
+        "maxLevel": 43
+    },
+    "SWIMMER_F3:Bree": {
+        "avgLevel": 46.5,
+        "maxLevel": 47
+    },
+    "WORKER3:Seamus": {
+        "avgLevel": 47.5,
+        "maxLevel": 48
+    },
+    "RUINMANIAC:Colby": {
+        "avgLevel": 47.5,
+        "maxLevel": 48
+    },
+    "JUGGLER:Mikael": {
+        "avgLevel": 47.5,
+        "maxLevel": 48
+    },
+    "DANDY:Jules": {
+        "avgLevel": 47.5,
+        "maxLevel": 48
+    },
+    "CAMPER:Liam": {
+        "avgLevel": 35.333333333333336,
+        "maxLevel": 36
+    },
+    "POKEMONRANGER_M2:Martel": {
+        "avgLevel": 36.0,
+        "maxLevel": 37
+    },
+    "POKEMANIAC:Paris": {
+        "avgLevel": 36.5,
+        "maxLevel": 37
+    },
+    "POKEFAN_F3:Margaret": {
+        "avgLevel": 37.0,
+        "maxLevel": 38
+    },
+    "GARDENER:Jacek": {
+        "avgLevel": 37.5,
+        "maxLevel": 38
+    },
+    "SWIMMER_F2:Astrid": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "SWIMMER_F5:Shreya": {
+        "avgLevel": 56.0,
+        "maxLevel": 56
+    },
+    "HIKER2:Rhys": {
+        "avgLevel": 57.0,
+        "maxLevel": 57
+    },
+    "CLERK_M:Scott": {
+        "avgLevel": 59.0,
+        "maxLevel": 59
+    },
+    "JUGGLER:Youcef": {
+        "avgLevel": 44.8,
+        "maxLevel": 46
+    },
+    "BEAUTY:Kryssa": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "ARTIST:Arnold": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "SKIER_F:Natalia": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "ARTIST3:Frida": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "WORKER3:Bruce": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "LEADER_Noel:Noel": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "LEADER_Noel:Noel#1": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "BLACKBELT2:Riccardo": {
+        "avgLevel": 50.0,
+        "maxLevel": 50
+    },
+    "BATTLEGIRL3:Amelia": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "BATTLEGIRL2:Juniper": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "BLACKBELT:Leo": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "FORMERCHAMP_Scilla:Scilla": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "FORMERCHAMP_Casey:Casey": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Imogene_A:Imogene": {
+        "avgLevel": 27.0,
+        "maxLevel": 27
+    },
+    "TRAINER_Imogene_B:Imogene": {
+        "avgLevel": 27.0,
+        "maxLevel": 27
+    },
+    "ROUGHNECK2:Robert": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "TRAINER_Candy:Candy": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "TRAINER_Keoni:Keoni": {
+        "avgLevel": 22.333333333333332,
+        "maxLevel": 23
+    },
+    "TRAINER_Keoni:Keoni#1": {
+        "avgLevel": 38.75,
+        "maxLevel": 40
+    },
+    "TRAINER_Keoni:Keoni#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Alessa:Alessa": {
+        "avgLevel": 19.5,
+        "maxLevel": 20
+    },
+    "TRAINER_Alessa:Alessa#1": {
+        "avgLevel": 26.5,
+        "maxLevel": 27
+    },
+    "TRAINER_Alessa:Alessa#2": {
+        "avgLevel": 44.8,
+        "maxLevel": 46
+    },
+    "BIRDKEEPER_M2:Bernhard": {
+        "avgLevel": 36.75,
+        "maxLevel": 37
+    },
+    "PSYCHIC_M2:Rohan": {
+        "avgLevel": 36.75,
+        "maxLevel": 37
+    },
+    "SWIMMER_M2:Finn": {
+        "avgLevel": 38.25,
+        "maxLevel": 39
+    },
+    "COWGIRL:Sasha": {
+        "avgLevel": 39.75,
+        "maxLevel": 40
+    },
+    "LASS2:Faye": {
+        "avgLevel": 39.75,
+        "maxLevel": 40
+    },
+    "SCIENTIST_F:Zofia": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "BOARDER:Lev": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "SKIER_F2:Valeriya": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "BURGLAR:Barret": {
+        "avgLevel": 26.333333333333332,
+        "maxLevel": 27
+    },
+    "TUBER_M:Derek": {
+        "avgLevel": 41.0,
+        "maxLevel": 41
+    },
+    "ARTIST2:Frank": {
+        "avgLevel": 47.5,
+        "maxLevel": 48
+    },
+    "REPORTER:Pesha": {
+        "avgLevel": 47.5,
+        "maxLevel": 48
+    },
+    "VETERANM:Yoshihiro": {
+        "avgLevel": 48.0,
+        "maxLevel": 48
+    },
+    "CLOWN:Dimesmart": {
+        "avgLevel": 39.666666666666664,
+        "maxLevel": 40
+    },
+    "WORKER2:Hugo": {
+        "avgLevel": 44.0,
+        "maxLevel": 44
+    },
+    "PUNKM:Vlad": {
+        "avgLevel": 43.25,
+        "maxLevel": 44
+    },
+    "BEAUTY3:Ester": {
+        "avgLevel": 42.25,
+        "maxLevel": 43
+    },
+    "SUPERNERD:John": {
+        "avgLevel": 41.75,
+        "maxLevel": 42
+    },
+    "SCIENTIST_M3:Gunter": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "SCIENTIST_F3:Nkechi": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "SCIENTIST_M4:Jacob": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "AROMALADY3:Henrietta": {
+        "avgLevel": 51.75,
+        "maxLevel": 53
+    },
+    "RUINMANIAC:Matteo": {
+        "avgLevel": 52.5,
+        "maxLevel": 53
+    },
+    "ELDER:Huy": {
+        "avgLevel": 53.5,
+        "maxLevel": 54
+    },
+    "CYCLIST_F2:Lukka": {
+        "avgLevel": 52.0,
+        "maxLevel": 53
+    },
+    "BACKPACKER_F:Mia": {
+        "avgLevel": 52.5,
+        "maxLevel": 53
+    },
+    "BACKERS_M:Yanko and Orlando": {
+        "avgLevel": 53.5,
+        "maxLevel": 54
+    },
+    "BLACKBELT:Santiago": {
+        "avgLevel": 54.5,
+        "maxLevel": 55
+    },
+    "GENTLEMAN:Nicholas": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "ARTIST4:Rabah": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "COOLTRAINER_F:Reina": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "LEADER_Victoire:Victoire": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "LEADER_Victoire:Victoire#1": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN_Sang:Silver": {
+        "avgLevel": 50.0,
+        "maxLevel": 50
+    },
+    "MASKEDVILLAIN_Sang:Silver#1": {
+        "avgLevel": 50.0,
+        "maxLevel": 50
+    },
+    "POKEMONTRAINER_Yezera:Yezera#6": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "POKEMONTRAINER_Yezera:Yezera#7": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "KIMONOGIRL:Chiyo": {
+        "avgLevel": 56.0,
+        "maxLevel": 57
+    },
+    "YOUNGSTER2:Davor": {
+        "avgLevel": 57.5,
+        "maxLevel": 58
+    },
+    "DRAGONTAMER:Bataar": {
+        "avgLevel": 58.0,
+        "maxLevel": 59
+    },
+    "BEAUTY6:Brenda": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "WORKER6:Paul": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "CLERK_F:Rosalie": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "LASS3:Carmen": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "SCIENTIST_M5:Sonatane": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "CAMPER_F:Tanya": {
+        "avgLevel": 48.0,
+        "maxLevel": 48
+    },
+    "POKEMONRANGER_M3:Grant": {
+        "avgLevel": 47.5,
+        "maxLevel": 48
+    },
+    "GUITARIST2:Brady": {
+        "avgLevel": 48.0,
+        "maxLevel": 48
+    },
+    "LINEBACKER:Lorenzo": {
+        "avgLevel": 48.0,
+        "maxLevel": 48
+    },
+    "LASS:Rovina": {
+        "avgLevel": 48.0,
+        "maxLevel": 48
+    },
+    "TRAINER_Eifion:Eifion": {
+        "avgLevel": 29.0,
+        "maxLevel": 30
+    },
+    "SCHOOLKID_M3:Jeremy": {
+        "avgLevel": 9.0,
+        "maxLevel": 9
+    },
+    "FORMERCHAMP_Chara:Chara": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "RUINMANIAC2:Bernard": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "SCHOOLKID_F4:Lucia": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "BUGCATCHER2:Rangsan": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "LEADER_Samorn:Samorn": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "LEADER_Samorn:Samorn#1": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "FIREBREATHER:Bradley": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "SWIMMER_M3:Diego": {
+        "avgLevel": 56.0,
+        "maxLevel": 56
+    },
+    "RUINMANIAC2:Nabil": {
+        "avgLevel": 57.0,
+        "maxLevel": 57
+    },
+    "BLACKBELT:Kai": {
+        "avgLevel": 59.0,
+        "maxLevel": 59
+    },
+    "TRAINER_Sang:Sang#2": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "TRAINER_Sang:Sang#3": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "VETERAN_F:Emily": {
+        "avgLevel": 62.25,
+        "maxLevel": 63
+    },
+    "BACKERS_F:Maria and Iveta": {
+        "avgLevel": 63.5,
+        "maxLevel": 64
+    },
+    "PSYCHIC_F3:Felicia": {
+        "avgLevel": 63.2,
+        "maxLevel": 64
+    },
+    "ABSOL:Absol": {
+        "avgLevel": 20.0,
+        "maxLevel": 20
+    },
+    "YOUNGSTER:Buzim": {
+        "avgLevel": 48.0,
+        "maxLevel": 48
+    },
+    "SWIMMER_F4:Yvonne": {
+        "avgLevel": 57.0,
+        "maxLevel": 58
+    },
+    "TUBER_F2:Hana": {
+        "avgLevel": 57.0,
+        "maxLevel": 58
+    },
+    "SWIMMER_F6:Kiana": {
+        "avgLevel": 59.0,
+        "maxLevel": 60
+    },
+    "SAILOR2:Angelo": {
+        "avgLevel": 58.75,
+        "maxLevel": 60
+    },
+    "POKEMONTRAINER_Yezera:Yezera#8": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "POKEMONTRAINER_Yezera:Yezera#9": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN_DOUBLE:Crimson": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN_DOUBLE:Crimson#1": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#2": {
+        "avgLevel": 47.5,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#3": {
+        "avgLevel": 47.5,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#4": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#5": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#6": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#7": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#8": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#9": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#10": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN:Crimson#11": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "MASKEDVILLAIN2_DOUBLE:Teal": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2_DOUBLE:Teal#1": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#2": {
+        "avgLevel": 55.833333333333336,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#3": {
+        "avgLevel": 55.833333333333336,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#4": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#5": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#6": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#7": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#8": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#9": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#10": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "MASKEDVILLAIN2:Teal#11": {
+        "avgLevel": 65.0,
+        "maxLevel": 65
+    },
+    "FORMERCHAMP_Elise:Elise": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "FORMERCHAMP_Vincent:Vincent": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "FORMERCHAMP_Praveen:Praveen": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "FORMERCHAMP_Ansel:Ansel": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Samorn:Samorn#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Samorn:Samorn#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Lambert:Lambert#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Lambert:Lambert#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Eko:Eko#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Eko:Eko#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "COOLTRAINER_M7:X": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "COOLTRAINER_M7:X#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "FORMERCHAMP_Elise:Elise#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "FORMERCHAMP_Elise:Elise#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Alessa:Alessa#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Alessa:Alessa#4": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Eifion:Eifion#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Eifion:Eifion#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Helena:Helena#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Helena:Helena#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Bence:Bence#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "LEADER_Bence:Bence#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Zain:Zain#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Zain:Zain#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Sang:Sang#4": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Sang:Sang#5": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ANOTHERPOSSIBLEZAIN:Zain": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ANOTHERPOSSIBLEZAIN:Zain#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ANOTHERPOSSIBLETAMARIND:Tamarind": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ANOTHERPOSSIBLETAMARIND:Tamarind#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ANOTHERPOSSIBLEALESSA:Alessa": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ANOTHERPOSSIBLEALESSA:Alessa#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN_DOUBLE:Crimson#12": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN_DOUBLE:Crimson#13": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#14": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#15": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#16": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#17": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#18": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#19": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#20": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#21": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#22": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN:Crimson#23": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2_DOUBLE:Teal#12": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2_DOUBLE:Teal#13": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#14": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#15": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#16": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#17": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#18": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#19": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#20": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#21": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#22": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MASKEDVILLAIN2:Teal#23": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONTRAINER_Yezera:Yezera#10": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONTRAINER_Yezera:Yezera#11": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SHADOWMAVIS:Mavis": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SHADOWMAVIS:Mavis#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "PROFESSOR_Tamarind:Tamarind": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Candy:Candy#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Imogene_A:Imogene#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Eifion:Eifion#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Alessa:Alessa#5": {
+        "avgLevel": 47.5,
+        "maxLevel": 55
+    },
+    "TRAINER_Alessa:Alessa#6": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TRAINER_Skyler:Skyler": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "FAIRYTALEGIRL:Madeline": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "GARDENER:Larry": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "BEAUTY5:Esme": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "HEXMANIAC_GHOST:Juno": {
+        "avgLevel": 46.5,
+        "maxLevel": 48
+    },
+    "ARTIST3_GHOST:Alicynthia": {
+        "avgLevel": 48.75,
+        "maxLevel": 50
+    },
+    "SCHOOLKID_GHOST:Honesty": {
+        "avgLevel": 48.75,
+        "maxLevel": 50
+    },
+    "RICHBOY3:Ryan": {
+        "avgLevel": 56.75,
+        "maxLevel": 58
+    },
+    "CAMERAMAN2:Octavio": {
+        "avgLevel": 57.5,
+        "maxLevel": 58
+    },
+    "IDOL:Teagan": {
+        "avgLevel": 58.5,
+        "maxLevel": 59
+    },
+    "LOST_RANGER_BLUE:Farid": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "LOST_RANGER_GREEN:Farid": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "LOST_RANGER_PURPLE:Farid": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "TEENAGERM:Burke": {
+        "avgLevel": 58.25,
+        "maxLevel": 59
+    },
+    "MEDIUM:Paula": {
+        "avgLevel": 57.5,
+        "maxLevel": 58
+    },
+    "BEAUTY4:Brunhilda": {
+        "avgLevel": 58.25,
+        "maxLevel": 59
+    },
+    "BIKER:Knoxx": {
+        "avgLevel": 57.0,
+        "maxLevel": 57
+    },
+    "GUITARIST3:Athena": {
+        "avgLevel": 58.75,
+        "maxLevel": 60
+    },
+    "SWIMMER_F:Cosmina": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "SCHOOLKID_F3:Dinah": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "POKEMONRANGER_M:Alastar": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "PILOT:Kurtis": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "DOCTOR:Renaldo": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "DELINQUENT:Jeralyn": {
+        "avgLevel": 33.333333333333336,
+        "maxLevel": 34
+    },
+    "COLLECTOR:Emre": {
+        "avgLevel": 34.0,
+        "maxLevel": 35
+    },
+    "SAGE:Shion": {
+        "avgLevel": 34.0,
+        "maxLevel": 35
+    },
+    "DITTO_HIKER:Kevinick": {
+        "avgLevel": 34.0,
+        "maxLevel": 35
+    },
+    "DITTO_AROMALADY:Cindalice": {
+        "avgLevel": 34.0,
+        "maxLevel": 34
+    },
+    "DITTO_CAMPER:Johnate": {
+        "avgLevel": 34.0,
+        "maxLevel": 34
+    },
+    "DITTO_RANGER:Hannamy": {
+        "avgLevel": 34.0,
+        "maxLevel": 34
+    },
+    "DITTO_PROTRAINER:Xandevon": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "CAMPER_M:Nick": {
+        "avgLevel": 57.25,
+        "maxLevel": 58
+    },
+    "ANCIENTPRIEST:Chestibor": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "ANCIENTPRIEST:Radzayac": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "ANCIENTPRIEST:Dobromil": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "ANCIENTPRIEST:Kazmilos": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "CHALLENGER_Vanya:Vanya": {
+        "avgLevel": 15.0,
+        "maxLevel": 15
+    },
+    "CHALLENGER_Vanya:Vanya#1": {
+        "avgLevel": 20.0,
+        "maxLevel": 20
+    },
+    "CHALLENGER_Vanya:Vanya#2": {
+        "avgLevel": 25.0,
+        "maxLevel": 25
+    },
+    "CHALLENGER_Vanya:Vanya#3": {
+        "avgLevel": 30.0,
+        "maxLevel": 30
+    },
+    "CHALLENGER_Vanya:Vanya#4": {
+        "avgLevel": 40.0,
+        "maxLevel": 40
+    },
+    "CHALLENGER_Vanya:Vanya#5": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "CHALLENGER_Vanya:Vanya#6": {
+        "avgLevel": 55.0,
+        "maxLevel": 55
+    },
+    "CHALLENGER_Vanya:Vanya#7": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "CHALLENGER_Vanya:Vanya#8": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONTRAINER_Vanya:Vanya": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONTRAINER_Vanya:Vanya#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONTRAINER_Vanya:Vanya#2": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONTRAINER_Vanya:Vanya#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONCHAMPION_Vanya:Vanya": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "VANYADAD:Avram": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "VANYAMOM:Vidya": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#3": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#4": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#5": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#6": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#7": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#8": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#9": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#10": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#11": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#12": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#13": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#14": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#15": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#16": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#17": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#18": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#19": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#20": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONMASTER_Vanya:Vanya#21": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPARTY_KOKO:of Conflict": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TAPU_KOKO:Tapu Koko": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TAPU_KOKO:Tapu Koko#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPARTY_LELE:of Life": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TAPU_LELE:Tapu Lele": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TAPU_LELE:Tapu Lele#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPARTY_BULU:of Abundance": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TAPU_BULU:Tapu Bulu": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TAPU_BULU:Tapu Bulu#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPARTY_FINI:of Hope": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TAPU_FINI:Tapu Fini": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TAPU_FINI:Tapu Fini#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPACK:Solar": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPACK:Lunar": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPACK:Muggy": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPACK:Arid": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPACK:Frigid": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "WILDPACK:Cosmic": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SAILOR2:Noah": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "POKEMONBREEDER_F4:Sara": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "POKEMONBREEDER_M4:Isaac": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "COOLTRAINER_F3:Leah": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "DRAGONTAMER2:Abraham": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "NIGHTMARE_TRAINER:Agony": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "NIGHTMARE_TRAINER:Torment": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "NIGHTMAREQUEEN_Elise:Elise": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "NIGHTMAREQUEEN_Elise:Elise#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "BIRDKEEPER_M2:Vlasta": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "BIRDKEEPER_F:Danika": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "COOLTRAINERSQUAD_2:Shouta and Kaede": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "RICHCOUPLE:Diana and Edward": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MAID:Wendy": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "BUTLER:Sagan": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "BURGLAR:Martino": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "CRIMINALTEAM:Gianna and Rocco": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SUSPICIOUSMAN:Tommaso": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SPIRITGUARDIAN2:Sonya": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SPIRITGUARDIAN2:Sonya#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SPIRITGUARDIAN3:Preeti": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SPIRITGUARDIAN3:Preeti#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SPIRITGUARDIAN4:Brigitte": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SPIRITGUARDIAN4:Brigitte#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SAGE:Takeshi": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "VETERANM:Taro": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "MEDIUM:Izumi": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "EXPERTF:Kimiko": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "EXPERTM:Hiroshi": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TOURISTM:Francois": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "OFFICEWORKER_M:Kurt": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "VETERANM_3:Pearce": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SEEKER_Nora:Nora": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SEEKER_Nora:Nora#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "VOLCANION:Volcanion": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "DANDY:Roger": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "PARASOLLADY2:Antoinette": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "GARDENER:Bud": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TOURISTM:Calvin": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "BUGCATCHER_F:April": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "HARLEQUIN:Regis": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "SAILOR:Dom": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "CHEF:Gordon": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "BURGLAR:Devin": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Origins": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Tradition": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Brilliance": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Riches": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Colors": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Beauty": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Days": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Conquest": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "IDEALTRAINER:of Freedom": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ARTIFICIALTRAINER:Solitaire": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ARTIFICIALTRAINER:Doppel": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ARTIFICIALTRAINER:Trinity": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "POKEMONRANGER_F2_GANG:Mina": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "POKEMONRANGER_F_GANG:Amber": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "POKEMONRANGER_M2_GANG:Terrance": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "POKEMONRANGER_M4_GANG:Micah": {
+        "avgLevel": 60.0,
+        "maxLevel": 60
+    },
+    "WAITER:Aaron": {
+        "avgLevel": 45.0,
+        "maxLevel": 45
+    },
+    "COOLTRAINER_F7:Milja": {
+        "avgLevel": 35.0,
+        "maxLevel": 35
+    },
+    "ANOTHERPOSSIBLERAFAEL:Rafael": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "ANOTHERPOSSIBLERAFAEL:Rafael#1": {
+        "avgLevel": 70.0,
+        "maxLevel": 70
+    },
+    "TESTTRAINERTYPE:Test Trainer": {
+        "avgLevel": 15.0,
+        "maxLevel": 15
+    }
+}

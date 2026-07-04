@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 16.333333333333332,
+    "maxLevel": 17,
     "party": [
         {
             "species": "ABRA",

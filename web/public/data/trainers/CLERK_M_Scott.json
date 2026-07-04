@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 59.0,
+    "maxLevel": 59,
     "party": [
         {
             "species": "DRAGAPULT",

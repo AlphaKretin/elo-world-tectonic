@@ -13,6 +13,8 @@
             "name": "Harmonic"
         }
     ],
+    "avgLevel": 50.0,
+    "maxLevel": 50,
     "party": [
         {
             "species": "EXPLOUD",

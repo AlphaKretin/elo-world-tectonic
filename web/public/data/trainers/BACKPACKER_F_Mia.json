@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 52.5,
+    "maxLevel": 53,
     "party": [
         {
             "species": "SAWSBUCK",

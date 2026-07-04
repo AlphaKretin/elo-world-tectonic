@@ -13,6 +13,8 @@
             "name": "Scavenger"
         }
     ],
+    "avgLevel": 15.0,
+    "maxLevel": 15,
     "party": [
         {
             "species": "JOLTIK",

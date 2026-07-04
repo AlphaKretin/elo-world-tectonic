@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 65.0,
+    "maxLevel": 65,
     "party": [
         {
             "species": "HAXORUS",

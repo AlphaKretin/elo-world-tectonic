@@ -1,4 +1,4 @@
-import type { BattleType, CurseVariant, FormatMeta, LeaderboardRow, TrainerStatic } from "../types";
+import type { BattleType, CurseVariant, FormatMeta, LeaderboardRow, TeamLevels, TrainerStatic } from "../types";
 
 // The 6 backend datasets are a cross product of battleType x curseVariant,
 // but "cursed" (the default/base tournament) has no suffix in the backend
@@ -35,6 +35,13 @@ export function fetchLeaderboard(fmt: string): Promise<LeaderboardRow[]> {
 // identical across every format -- one shared meta.json, not one per format.
 export function fetchMeta(): Promise<FormatMeta> {
   return fetchJsonCached(dataUrl("meta.json"));
+}
+
+// Format-independent team level (avg/max party level) per trainer -- one
+// shared file, same reasoning as fetchMeta above (see export_team_levels
+// in analysis/export_web_data.py).
+export function fetchTeamLevels(): Promise<TeamLevels> {
+  return fetchJsonCached(dataUrl("team_levels.json"));
 }
 
 function safeFilename(label: string): string {

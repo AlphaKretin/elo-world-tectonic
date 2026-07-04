@@ -1,0 +1,41 @@
+.compare-picker-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.compare-picker-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.compare-picker-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.compare-hint {
+  color: var(--text-secondary);
+}
+
+.compare-table-controls {
+  margin-top: 1rem;
+}
+
+.compare-delta-pos {
+  color: #2e8b3d;
+}
+
+.compare-delta-neg {
+  color: var(--error);
+}
+
+@media (prefers-color-scheme: dark) {
+  .compare-delta-pos {
+    color: #7fd48a;
+  }
+}

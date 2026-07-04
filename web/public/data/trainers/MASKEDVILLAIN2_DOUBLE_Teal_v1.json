@@ -17,6 +17,8 @@
     ],
     "isCursed": true,
     "tribeBonuses": [],
+    "avgLevel": 65.0,
+    "maxLevel": 65,
     "party": [
         {
             "species": "REGICE",

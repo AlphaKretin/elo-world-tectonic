@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 46.5,
+    "maxLevel": 47,
     "party": [
         {
             "species": "SCARODON",

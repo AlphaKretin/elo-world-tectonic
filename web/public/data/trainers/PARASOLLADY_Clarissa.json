@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 26.666666666666668,
+    "maxLevel": 28,
     "party": [
         {
             "species": "LINOONE",

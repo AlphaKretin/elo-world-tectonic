@@ -6,6 +6,8 @@
     "trueNames": [],
     "isCursed": false,
     "tribeBonuses": [],
+    "avgLevel": 22.666666666666668,
+    "maxLevel": 23,
     "party": [
         {
             "species": "AUDINO",
