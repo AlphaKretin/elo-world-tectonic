@@ -2,9 +2,21 @@
 
 Ranks every trainer in [Pokemon Tectonic](https://github.com/Pokemon-Tectonic-Team/Pokemon-Tectonic-Content) by running a full round-robin tournament of real, headless AI-vs-AI battles, then fitting Bradley-Terry ratings over the results — the same methodology as [elo_world_pokemon_crystal](https://github.com/jsettlem/elo_world_pokemon_crystal), built on top of Tectonic's [AI Benchmark](https://github.com/Pokemon-Tectonic-Team/Pokemon-Essentials-Chasm-Engine/tree/3.5-ai-rework) headless battle engine instead of emulator automation.
 
+## Website
+
+**[alphakretin.github.io/elo-world-tectonic](https://alphakretin.github.io/elo-world-tectonic/)** — browse the full round-robin results across all four formats (singles/doubles × cursed/uncursed, plus a "cursed-excluded" variant of each):
+
+- **Leaderboard** — sortable, searchable rankings for any format, with tier and curse-roll filters. Click a trainer to open their full card (party, moves, held items, record, best win/worst loss), downloadable as a PNG.
+- **Compare** — pick any two formats and see every trainer's rank and rating side-by-side, with the delta between them (rescaled so a trainer missing from one format doesn't inflate the others' rank deltas).
+- **Stats** — scatter-plot any two metrics against each other (rating, rank, win rate, team level) across any format, with an optional least-squares trendline.
+
 ## Results
 
-A preliminary published snapshot of the full round-robin ratings lives in [`official_results/`](official_results/) — leaderboards, notable-match writeups, and top-16 bracket showcases, for all four formats: singles, doubles, and an "uncursed" variant of each that drops every battle where a `CURSE_*` trainer policy was active, to see how the field shakes out without curse-skewed results pulling on the fit. This is a manually-curated snapshot, not auto-generated; `analysis/` produces the same reports plus supplementary output (comparison CSVs, raw JSON) but isn't committed since it's fully reproducible from `results/`.
+A preliminary published snapshot of the full round-robin ratings also lives in [`official_results/`](official_results/) as static Markdown — leaderboards, notable-match writeups, and top-16 bracket showcases, for the same four formats. This is a manually-curated snapshot, not auto-generated; `analysis/` produces the same reports plus supplementary output (comparison CSVs, raw JSON) but isn't committed since it's fully reproducible from `results/`.
+
+---
+
+The rest of this README covers the tournament infrastructure itself — running the headless battle engine, distributing it across a cloud fleet, and generating the ratings/reports/website data from the results.
 
 ## Layout
 
@@ -35,6 +47,7 @@ A preliminary published snapshot of the full round-robin ratings lives in [`offi
   - `report.py` — turns `ratings.py`'s output into a Markdown leaderboard.
   - `bracket_seeds.py` / `bracket_report.py` — top-16 seed extraction and bracket-tree reporting, see "Top 16 bracket" below.
 - `.venv/` — Python virtualenv for `analysis/` (gitignored; see "Analysis" below to recreate it).
+- `web/` — the React/Vite site published at the URL above. Reads static JSON (`web/public/data/`) produced by `analysis/export_web_data.py`; see "Website" below. Deployed automatically to GitHub Pages by `.github/workflows/deploy-web.yml` on every push to `main` that touches `web/`.
 
 ## Running a tournament
 
@@ -138,6 +151,23 @@ python -m venv .venv
 ```
 Outputs `analysis/ratings_<format>.{json,csv}` and `analysis/report_<format>.md` (all gitignored, regenerable).
 
+## Developing the website
+
+The site (`web/`) reads static JSON, not a live backend, so any new tournament results have to be re-exported before the site reflects them:
+
+```powershell
+.\.venv\Scripts\python.exe analysis\export_web_data.py
+```
+This regenerates everything under `web/public/data/` (leaderboards, trainer cards, team levels) from `analysis/`'s ratings/best-worst/trainer-card output — run `ratings.py` and `best_worst.py` first if those are stale. Skips any format whose `ratings_<fmt>.json` isn't present rather than failing the whole export.
+
+Then, from `web/`:
+```powershell
+npm install
+npm run dev      # local dev server
+npm run build    # production build (tsc -b && vite build), what CI runs
+```
+Pushing to `main` with changes under `web/` triggers `.github/workflows/deploy-web.yml`, which builds and publishes to GitHub Pages automatically — no manual deploy step.
+
 ## Status
 
-A full singles+doubles round robin has completed on the cloud fleet, with zero `had_error` battles remaining, and the top-16 bracket has been run for all four formats against that data — see [Results](#results) above for the published snapshot. Presentation is still preliminary: trainer cards (`analysis/trainer_cards.py`) exist for a handful of trainers but aren't published yet, since committing ~555-per-format PNGs to git isn't practical without a more formal publication method first.
+A full singles+doubles round robin has completed on the cloud fleet, with zero `had_error` battles remaining, and the top-16 bracket has been run for all four formats against that data — see [Website](#website) and [Results](#results) above. Every trainer's card (party, moves, held items, record, best win/worst loss) is viewable live on the site, rendered as HTML rather than committing ~555-per-format static PNGs to git.
