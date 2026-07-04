@@ -35,8 +35,10 @@ partner's side instead of their own (see results_lib.ASYMMETRIC_CURSE_PAIRS).
 
 This is a blunt, post-hoc data filter, not a simulation of what cursed
 trainers "should" look like -- for that, see the singles_uncursed/
-doubles_uncursed formats, which re-battle cursed trainers with curse
-*effects* actually stripped instead of just discarding their data.
+doubles_uncursed formats (built by build_uncursed_results.py from the raw
+curse-stripped re-battles plus the base results), which re-battle cursed
+trainers with curse *effects* actually stripped instead of just discarding
+their data.
 
 Each trainer's rating also gets a standard error and a 95% confidence
 interval, plus an "overlap" count -- how many *other* trainers' point

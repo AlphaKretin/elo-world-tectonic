@@ -29,6 +29,19 @@ CURSE_STRIP_DIFF_PATH = os.path.join(REPO_ROOT, "vendor", "tectonic-content", "A
 
 WIN, LOSS, DRAW = 1, 2, 5
 
+# The curse-stripped tournament's raw per-shard output (elo_results_<fmt>_
+# uncursed_raw_shard*.jsonl) is a partial re-battled subset, not a full round
+# robin -- coherent only once build_uncursed_results.py merges it into the
+# base format's results as elo_results_<fmt>_uncursed_shard0.jsonl (see
+# project_curse_stripping_format.md). Excluded from default (no --format)
+# discovery so it never gets its own standalone ratings by accident; still
+# reachable via an explicit --format for debugging.
+RAW_ONLY_SUFFIX = "_uncursed_raw"
+
+
+def is_raw_only_format(fmt):
+    return fmt.endswith(RAW_ONLY_SUFFIX)
+
 # Trainers whose only curse policy is CURSE_NO_MERCY (or a numbered variant)
 # but who battle alongside a narratively-linked partner that carries no
 # curse policy at all -- confirmed with Luna 2026-07-04, not derivable from
@@ -43,14 +56,28 @@ ASYMMETRIC_CURSE_PAIRS = {
 }
 
 
+def _is_sidecar_file(path):
+    """dedupe_results.py/strip_had_error.py back up removed rows to
+    <file>.duplicates_removed.jsonl / <file>.had_error_removed.jsonl next to
+    the original -- both still end in ".jsonl", so a naive glob.glob(
+    "elo_results_<fmt>_shard*.jsonl") matches them too (glob's "*" crosses
+    "."), silently re-including rows that were deliberately removed."""
+    return ".duplicates_removed" in path or ".had_error_removed" in path
+
+
 def discover_formats(results_dir=None):
     results_dir = results_dir or RESULTS_DIR
     formats = set()
     for path in glob.glob(os.path.join(results_dir, "elo_results_*_shard*.jsonl")):
+        if _is_sidecar_file(path):
+            continue
         name = os.path.basename(path)
         # elo_results_<format>_shard<N>.jsonl
         middle = name[len("elo_results_"):-len(".jsonl")]
-        formats.add(middle.rsplit("_shard", 1)[0])
+        fmt = middle.rsplit("_shard", 1)[0]
+        if is_raw_only_format(fmt):
+            continue
+        formats.add(fmt)
     return sorted(formats)
 
 
@@ -62,6 +89,8 @@ def load_results(fmt, results_dir=None, report_skipped=False):
     rows = []
     skipped_lines = 0
     for path in sorted(glob.glob(os.path.join(results_dir, f"elo_results_{fmt}_shard*.jsonl"))):
+        if _is_sidecar_file(path):
+            continue
         with open(path, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
