@@ -44,7 +44,7 @@ class GenerateTab(QWidget):
         self.trainer2_edit.setPlaceholderText("TYPE:Name or TYPE:Name#version")
         self.seed_edit = QLineEdit()
         self.format_combo = QComboBox()
-        self.format_combo.addItems(["singles", "doubles"])
+        self.format_combo.addItems(["singles", "doubles", "singles_uncursed", "doubles_uncursed"])
         self.output_name_edit = QLineEdit()
         self.output_name_edit.setPlaceholderText("(optional, auto-generated if blank)")
         self.backdrop_combo = QComboBox()
@@ -95,7 +95,10 @@ class GenerateTab(QWidget):
         self.trainer2_edit.setText(payload.get("trainer2", ""))
         self.seed_edit.setText(str(payload.get("seed", "")))
         fmt = payload.get("format") or ""
-        index = self.format_combo.findText("doubles" if "double" in fmt else "singles")
+        target = ("doubles" if "double" in fmt else "singles") + (
+            "_uncursed" if "uncursed" in fmt else ""
+        )
+        index = self.format_combo.findText(target)
         if index >= 0:
             self.format_combo.setCurrentIndex(index)
 

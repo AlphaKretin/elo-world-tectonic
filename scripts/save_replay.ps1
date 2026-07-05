@@ -38,7 +38,7 @@ $GameDir = Join-Path $RepoRoot "vendor\tectonic-content"
 
 $env:ELO_TOURNAMENT = "1"
 $env:ELO_SAVE_REPLAY = "1"
-$env:ELO_REPLAY_FORMAT = if ($Format -eq "doubles") { "double" } else { "single" }
+$env:ELO_REPLAY_FORMAT = $(if ($Format -like "*double*") { "double" } else { "single" }) + $(if ($Format -like "*uncursed*") { "_uncursed" } else { "" })
 $env:ELO_REPLAY_SEED = "$Seed"
 if ($OutputName) {
     $env:ELO_REPLAY_NAME = $OutputName

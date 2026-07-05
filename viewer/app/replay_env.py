@@ -38,9 +38,12 @@ def build_env(
     """Build the ELO_REPLAY_* env-var dict for one save_replay-equivalent
     (always headless) run.
 
-    battle_format takes the same "singles"/"doubles" values as the results
-    jsonl's "format" field; ELO_REPLAY_FORMAT itself uses the engine's
-    "single"/"double" values, same translation save_replay.ps1 does.
+    battle_format takes the same "singles"/"doubles"/"singles_uncursed"/
+    "doubles_uncursed" values as the results jsonl's "format" field;
+    ELO_REPLAY_FORMAT itself uses the engine's "single"/"double"(_uncursed)
+    values, same translation save_replay.ps1 does. replay.rb then substring-
+    matches "double"/"uncursed" out of that (same convention as tournament.rb's
+    BATTLE_MODE/UNCURSED_RUN) to decide battle mode and whether to curse-strip.
 
     backdrop names a Graphics/Battlebacks/<name>_bg file to force instead of
     the "indoor1" default. Side-swapping is a UI-level concern (the caller
@@ -54,7 +57,10 @@ def build_env(
     env = {
         "ELO_TOURNAMENT": "1",
         "ELO_SAVE_REPLAY": "1",
-        "ELO_REPLAY_FORMAT": "double" if battle_format == "doubles" else "single",
+        "ELO_REPLAY_FORMAT": (
+            ("double" if "double" in battle_format else "single")
+            + ("_uncursed" if "uncursed" in battle_format else "")
+        ),
         "ELO_REPLAY_SEED": str(seed),
         "ELO_REPLAY_T1_TYPE": t1["type"],
         "ELO_REPLAY_T1_NAME": t1["name"],
