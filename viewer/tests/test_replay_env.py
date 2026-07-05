@@ -52,6 +52,14 @@ class BuildEnvTests(unittest.TestCase):
         env = replay_env.build_env("BATTLEGIRL:Tester", "YOUNGSTER:Joey", 1, output_name="my_replay")
         self.assertEqual(env["ELO_REPLAY_NAME"], "my_replay")
 
+    def test_no_backdrop_by_default(self):
+        env = replay_env.build_env("BATTLEGIRL:Tester", "YOUNGSTER:Joey", 1)
+        self.assertNotIn("ELO_REPLAY_BACKDROP", env)
+
+    def test_backdrop_override(self):
+        env = replay_env.build_env("BATTLEGIRL:Tester", "YOUNGSTER:Joey", 1, backdrop="cave1")
+        self.assertEqual(env["ELO_REPLAY_BACKDROP"], "cave1")
+
 
 class BuildWatchEnvTests(unittest.TestCase):
     def test_minimal(self):
@@ -67,6 +75,26 @@ class BuildWatchEnvTests(unittest.TestCase):
         self.assertEqual(env["ELO_WATCH_BATTLESCENE"], "0")
         self.assertEqual(env["ELO_WATCH_TEXTSPEED"], "4")
         self.assertEqual(env["ELO_WATCH_TRANSITIONS"], "1")
+
+    def test_volume_overrides(self):
+        env = replay_env.build_watch_env("_WatchStaging", bgmvolume=0, mevolume=0, sevolume=50)
+        self.assertEqual(env["ELO_WATCH_BGMVOLUME"], "0")
+        self.assertEqual(env["ELO_WATCH_MEVOLUME"], "0")
+        self.assertEqual(env["ELO_WATCH_SEVOLUME"], "50")
+
+    def test_no_volume_overrides_by_default(self):
+        env = replay_env.build_watch_env("_WatchStaging")
+        self.assertNotIn("ELO_WATCH_BGMVOLUME", env)
+        self.assertNotIn("ELO_WATCH_MEVOLUME", env)
+        self.assertNotIn("ELO_WATCH_SEVOLUME", env)
+
+    def test_bgm_override(self):
+        env = replay_env.build_watch_env("_WatchStaging", bgm="Battle wild")
+        self.assertEqual(env["ELO_WATCH_BGM"], "Battle wild")
+
+    def test_no_bgm_by_default(self):
+        env = replay_env.build_watch_env("_WatchStaging")
+        self.assertNotIn("ELO_WATCH_BGM", env)
 
 
 if __name__ == "__main__":

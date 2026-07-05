@@ -16,7 +16,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import replay_env
+from app import game_assets, replay_env
 from app.replay_runner import ReplayRunner
 
 
@@ -47,12 +47,22 @@ class GenerateTab(QWidget):
         self.format_combo.addItems(["singles", "doubles"])
         self.output_name_edit = QLineEdit()
         self.output_name_edit.setPlaceholderText("(optional, auto-generated if blank)")
+        self.backdrop_combo = QComboBox()
+        self.backdrop_combo.addItem("(default: indoor1)", None)
+        for name in game_assets.list_backdrops(config.vendor_dir):
+            self.backdrop_combo.addItem(name, name)
+        self.swap_sides_button = QPushButton("⇄ Swap trainers")
 
-        form.addRow("Trainer 1", self.trainer1_edit)
+        trainer1_row = QHBoxLayout()
+        trainer1_row.addWidget(self.trainer1_edit)
+        trainer1_row.addWidget(self.swap_sides_button)
+
+        form.addRow("Trainer 1", trainer1_row)
         form.addRow("Trainer 2", self.trainer2_edit)
         form.addRow("Seed", self.seed_edit)
         form.addRow("Format", self.format_combo)
         form.addRow("Output name", self.output_name_edit)
+        form.addRow("Backdrop", self.backdrop_combo)
         layout.addLayout(form)
 
         buttons = QHBoxLayout()
@@ -78,6 +88,7 @@ class GenerateTab(QWidget):
         self.cancel_button.clicked.connect(self.runner.cancel)
         self.export_button.clicked.connect(self._on_export_clicked)
         self.watch_button.clicked.connect(self._on_watch_clicked)
+        self.swap_sides_button.clicked.connect(self._on_swap_sides_clicked)
 
     def set_match(self, payload):
         self.trainer1_edit.setText(payload.get("trainer1", ""))
@@ -87,6 +98,11 @@ class GenerateTab(QWidget):
         index = self.format_combo.findText("doubles" if "double" in fmt else "singles")
         if index >= 0:
             self.format_combo.setCurrentIndex(index)
+
+    def _on_swap_sides_clicked(self):
+        t1, t2 = self.trainer1_edit.text(), self.trainer2_edit.text()
+        self.trainer1_edit.setText(t2)
+        self.trainer2_edit.setText(t1)
 
     def _on_generate_clicked(self):
         if not self.config.is_valid():
@@ -111,6 +127,7 @@ class GenerateTab(QWidget):
                 seed,
                 battle_format=self.format_combo.currentText(),
                 output_name=self.output_name_edit.text().strip() or None,
+                backdrop=self.backdrop_combo.currentData(),
             )
         except replay_env.InvalidTrainerLabel as exc:
             QMessageBox.warning(self, "Invalid trainer label", str(exc))

@@ -4,6 +4,7 @@ import os
 
 from PySide6.QtWidgets import (
     QAbstractItemView,
+    QCheckBox,
     QComboBox,
     QFileDialog,
     QFormLayout,
@@ -18,7 +19,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import replay_env
+from app import game_assets, replay_env
 from app.replay_runner import ReplayRunner
 
 COLUMNS = ["Name", "Modified"]
@@ -71,9 +72,16 @@ class WatchTab(QWidget):
         self.transitions_combo = QComboBox()
         for label, _value in TRANSITIONS_OPTIONS:
             self.transitions_combo.addItem(label)
+        self.mute_check = QCheckBox("Mute (music/sound effects)")
+        self.bgm_combo = QComboBox()
+        self.bgm_combo.addItem("(default: derived from opponent)", None)
+        for name in game_assets.list_bgm_tracks(config.vendor_dir):
+            self.bgm_combo.addItem(name, name)
         form.addRow("Battle animations", self.battlescene_combo)
         form.addRow("Text speed", self.textspeed_combo)
         form.addRow("Battle transitions", self.transitions_combo)
+        form.addRow("", self.mute_check)
+        form.addRow("BGM override", self.bgm_combo)
         layout.addLayout(form)
 
         buttons = QHBoxLayout()
@@ -177,11 +185,16 @@ class WatchTab(QWidget):
             except (OSError, json.JSONDecodeError):
                 self._expected_result = None
 
+        mute = self.mute_check.isChecked()
         env_vars = replay_env.build_watch_env(
             STAGING_NAME,
             battlescene=BATTLESCENE_OPTIONS[self.battlescene_combo.currentIndex()][1],
             textspeed=TEXTSPEED_OPTIONS[self.textspeed_combo.currentIndex()][1],
             transitions=TRANSITIONS_OPTIONS[self.transitions_combo.currentIndex()][1],
+            bgmvolume=0 if mute else None,
+            mevolume=0 if mute else None,
+            sevolume=0 if mute else None,
+            bgm=self.bgm_combo.currentData(),
         )
         self.status_view.setPlainText("Launching Game.exe (watch)...")
         self.runner.start(self.config.vendor_dir, env_vars, self.config.timeout_seconds, result_filename=WATCH_RESULT_FILE)
