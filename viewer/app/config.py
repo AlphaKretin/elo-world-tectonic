@@ -57,6 +57,12 @@ class AppConfig:
         return os.path.join(self.vendor_dir, "Game.exe")
 
     @property
+    def replay_dir(self):
+        # Matches EloTournament::REPLAY_SAVE_FILE_NAME's "Saves/ELOReplay.rxdata"
+        # -> VSRecorder resolves the directory from the save file's basename.
+        return os.path.join(self.vendor_dir, "VSRecorder", "ELOReplay")
+
+    @property
     def timeout_seconds(self):
         return int(self._settings.value("run/timeout_seconds", DEFAULT_TIMEOUT_SECONDS))
 

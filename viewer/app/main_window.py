@@ -3,6 +3,7 @@ from PySide6.QtWidgets import QFileDialog, QMainWindow, QMessageBox, QTabWidget
 from app.browse_tab import BrowseTab
 from app.config import AppConfig
 from app.generate_tab import GenerateTab
+from app.watch_tab import WatchTab
 
 
 class MainWindow(QMainWindow):
@@ -17,11 +18,14 @@ class MainWindow(QMainWindow):
         self.tabs = QTabWidget()
         self.browse_tab = BrowseTab(self.config)
         self.generate_tab = GenerateTab(self.config)
+        self.watch_tab = WatchTab(self.config)
         self.tabs.addTab(self.browse_tab, "Browse")
         self.tabs.addTab(self.generate_tab, "Generate")
+        self.tabs.addTab(self.watch_tab, "Watch")
         self.setCentralWidget(self.tabs)
 
         self.browse_tab.match_selected.connect(self._on_match_selected)
+        self.generate_tab.watch_requested.connect(self._on_watch_requested)
 
     def _ensure_valid_config(self):
         if self.config.is_valid():
@@ -41,3 +45,7 @@ class MainWindow(QMainWindow):
     def _on_match_selected(self, payload):
         self.generate_tab.set_match(payload)
         self.tabs.setCurrentWidget(self.generate_tab)
+
+    def _on_watch_requested(self, dat_path, expected_result):
+        self.watch_tab.select_replay(dat_path, expected_result)
+        self.tabs.setCurrentWidget(self.watch_tab)

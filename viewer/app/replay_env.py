@@ -1,4 +1,4 @@
-"""Trainer label parsing + ELO_REPLAY_* env-var building.
+"""Trainer label parsing + ELO_REPLAY_*/ELO_WATCH_* env-var building.
 
 Mirrors scripts/save_replay.ps1's Set-ReplayTrainerEnv exactly, so a
 TYPE:Name / TYPE:Name#version label pulled straight out of
@@ -52,4 +52,27 @@ def build_env(trainer1_label, trainer2_label, seed, battle_format="singles", out
     }
     if output_name:
         env["ELO_REPLAY_NAME"] = output_name
+    return env
+
+
+def build_watch_env(replay_name, battlescene=None, textspeed=None, transitions=None):
+    """Build the ELO_WATCH_* env-var dict for watching a .dat already
+    staged into vendor_dir/VSRecorder/ELOReplay/<replay_name>.dat via
+    playRecordedBattle.
+
+    battlescene/textspeed/transitions map straight onto $Options'
+    battlescene/textspeed/battle_transitions int values and are applied
+    in-memory only by the engine (never persisted to Options.dat); leave
+    unset to use whatever the game's own settings already are.
+    """
+    env = {
+        "ELO_TOURNAMENT": "1",
+        "ELO_WATCH_REPLAY_NAME": replay_name,
+    }
+    if battlescene is not None:
+        env["ELO_WATCH_BATTLESCENE"] = str(battlescene)
+    if textspeed is not None:
+        env["ELO_WATCH_TEXTSPEED"] = str(textspeed)
+    if transitions is not None:
+        env["ELO_WATCH_TRANSITIONS"] = str(transitions)
     return env

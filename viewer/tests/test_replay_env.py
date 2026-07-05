@@ -53,5 +53,21 @@ class BuildEnvTests(unittest.TestCase):
         self.assertEqual(env["ELO_REPLAY_NAME"], "my_replay")
 
 
+class BuildWatchEnvTests(unittest.TestCase):
+    def test_minimal(self):
+        env = replay_env.build_watch_env("_WatchStaging")
+        self.assertEqual(env["ELO_TOURNAMENT"], "1")
+        self.assertEqual(env["ELO_WATCH_REPLAY_NAME"], "_WatchStaging")
+        self.assertNotIn("ELO_WATCH_BATTLESCENE", env)
+        self.assertNotIn("ELO_WATCH_TEXTSPEED", env)
+        self.assertNotIn("ELO_WATCH_TRANSITIONS", env)
+
+    def test_display_overrides(self):
+        env = replay_env.build_watch_env("_WatchStaging", battlescene=0, textspeed=4, transitions=1)
+        self.assertEqual(env["ELO_WATCH_BATTLESCENE"], "0")
+        self.assertEqual(env["ELO_WATCH_TEXTSPEED"], "4")
+        self.assertEqual(env["ELO_WATCH_TRANSITIONS"], "1")
+
+
 if __name__ == "__main__":
     unittest.main()

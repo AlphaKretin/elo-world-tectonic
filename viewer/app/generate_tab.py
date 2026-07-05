@@ -1,6 +1,7 @@
 import json
 import os
 
+from PySide6.QtCore import Signal
 from PySide6.QtWidgets import (
     QComboBox,
     QFileDialog,
@@ -20,10 +21,11 @@ from app.replay_runner import ReplayRunner
 
 
 class GenerateTab(QWidget):
-    """Always-headless replay generation. Watching a battle live and
-    customizing battle-display settings are a separate, not-yet-built
-    replay-loading feature (playRecordedBattle already renders correctly,
-    unlike a live AIBenchmark run -- see project_replay_viewer memory)."""
+    """Always-headless replay generation. Watching the resulting .dat is
+    handed off to the Watch tab (see watch_requested), built on the
+    engine's playRecordedBattle rather than live in-process rendering."""
+
+    watch_requested = Signal(str, dict)
 
     def __init__(self, config, parent=None):
         super().__init__(parent)
@@ -59,9 +61,12 @@ class GenerateTab(QWidget):
         self.cancel_button.setEnabled(False)
         self.export_button = QPushButton("Export .dat...")
         self.export_button.setEnabled(False)
+        self.watch_button = QPushButton("Watch this replay")
+        self.watch_button.setEnabled(False)
         buttons.addWidget(self.generate_button)
         buttons.addWidget(self.cancel_button)
         buttons.addWidget(self.export_button)
+        buttons.addWidget(self.watch_button)
         layout.addLayout(buttons)
 
         layout.addWidget(QLabel("Status"))
@@ -72,6 +77,7 @@ class GenerateTab(QWidget):
         self.generate_button.clicked.connect(self._on_generate_clicked)
         self.cancel_button.clicked.connect(self.runner.cancel)
         self.export_button.clicked.connect(self._on_export_clicked)
+        self.watch_button.clicked.connect(self._on_watch_clicked)
 
     def set_match(self, payload):
         self.trainer1_edit.setText(payload.get("trainer1", ""))
@@ -111,7 +117,14 @@ class GenerateTab(QWidget):
             return
 
         self._last_result = None
+        self._last_request = {
+            "trainer1": self.trainer1_edit.text().strip(),
+            "trainer2": self.trainer2_edit.text().strip(),
+            "seed": seed,
+            "format": self.format_combo.currentText(),
+        }
         self.export_button.setEnabled(False)
+        self.watch_button.setEnabled(False)
         self.status_view.setPlainText("Launching Game.exe (headless)...")
         self.runner.start(self.config.vendor_dir, env_vars, self.config.timeout_seconds)
 
@@ -124,7 +137,16 @@ class GenerateTab(QWidget):
         self.cancel_button.setEnabled(False)
         self._last_result = result
         self.status_view.setPlainText(json.dumps(result, indent=2))
-        self.export_button.setEnabled(bool(result.get("ok")) and bool(result.get("saved_to")))
+        can_watch_or_export = bool(result.get("ok")) and bool(result.get("saved_to"))
+        self.export_button.setEnabled(can_watch_or_export)
+        self.watch_button.setEnabled(can_watch_or_export)
+
+    def _sidecar_metadata(self):
+        return {
+            **self._last_request,
+            "result": self._last_result.get("result"),
+            "rounds": self._last_result.get("rounds"),
+        }
 
     def _on_export_clicked(self):
         if not self._last_result or not self._last_result.get("saved_to"):
@@ -137,5 +159,13 @@ class GenerateTab(QWidget):
         try:
             with open(src, "rb") as f_in, open(dest, "wb") as f_out:
                 f_out.write(f_in.read())
+            with open(dest + ".json", "w", encoding="utf-8") as f:
+                json.dump(self._sidecar_metadata(), f, indent=2)
         except OSError as exc:
             QMessageBox.warning(self, "Export failed", str(exc))
+
+    def _on_watch_clicked(self):
+        if not self._last_result or not self._last_result.get("saved_to"):
+            return
+        src = os.path.normpath(os.path.join(self.config.vendor_dir, self._last_result["saved_to"]))
+        self.watch_requested.emit(src, self._sidecar_metadata())

@@ -3,7 +3,7 @@ import os
 
 from PySide6.QtCore import QObject, QProcess, QProcessEnvironment, QTimer, Signal
 
-RESULT_FILE_RELATIVE = os.path.join("Analysis", "replay_result.txt")
+DEFAULT_RESULT_FILE_RELATIVE = os.path.join("Analysis", "replay_result.txt")
 STDOUT_TAIL_CHARS = 4000
 STDERR_TAIL_CHARS = 4000
 
@@ -12,10 +12,11 @@ class ReplayRunner(QObject):
     """Drives Game.exe exactly as save_replay.ps1 does, but waits for
     completion and reports a structured result instead of firing-and-forgetting.
 
-    QProcess.finished is the sole completion signal, for both headless and
-    watch-live runs: headless_boot.rb exits the process once the battle is
-    done regardless of display settings, so there's no race to resolve with
-    a file watcher.
+    Shared by both generation (Analysis/replay_result.txt) and watch
+    (Analysis/watch_result.txt) -- same QProcess orchestration either way,
+    just a different env dict and result file. QProcess.finished is the
+    sole completion signal: headless_boot.rb exits the process once its
+    task is done, so there's no race to resolve with a file watcher.
     """
 
     finished = Signal(dict)
@@ -32,14 +33,15 @@ class ReplayRunner(QObject):
     def is_running(self):
         return self._process is not None and self._process.state() != QProcess.NotRunning
 
-    def start(self, vendor_dir, env_vars, timeout_seconds):
+    def start(self, vendor_dir, env_vars, timeout_seconds, result_filename=DEFAULT_RESULT_FILE_RELATIVE):
         if self.is_running():
             raise RuntimeError("A replay run is already in progress.")
 
         self._vendor_dir = vendor_dir
+        self._result_filename = result_filename
         self._cancelled = False
 
-        result_path = os.path.join(vendor_dir, RESULT_FILE_RELATIVE)
+        result_path = os.path.join(vendor_dir, result_filename)
         if os.path.exists(result_path):
             os.remove(result_path)
 
@@ -77,7 +79,7 @@ class ReplayRunner(QObject):
 
     def _on_finished(self, exit_code, exit_status):
         self._timer.stop()
-        result_path = os.path.join(self._vendor_dir, RESULT_FILE_RELATIVE)
+        result_path = os.path.join(self._vendor_dir, self._result_filename)
 
         if os.path.exists(result_path):
             with open(result_path, "r", encoding="utf-8") as f:
@@ -87,7 +89,7 @@ class ReplayRunner(QObject):
                     result = {
                         "ok": False,
                         "error_class": "MalformedResult",
-                        "error_message": "replay_result.txt was not valid JSON.",
+                        "error_message": f"{os.path.basename(result_path)} was not valid JSON.",
                     }
         elif self._cancelled:
             result = {"ok": False, "error_class": "Cancelled", "error_message": "Cancelled by user."}
