@@ -195,6 +195,12 @@ class WatchTab(QWidget):
         self.cancel_button.setEnabled(False)
 
         text = json.dumps(result, indent=2)
+        if result.get("ok") and result.get("had_error"):
+            text += (
+                "\n\n[error during battle] the engine's own error recovery caught and "
+                "logged something mid-battle, then let the battle continue/end normally -- "
+                "see error_log_entry above for the actual exception."
+            )
         expected = self._expected_result
         self._expected_result = None
         if expected and result.get("ok") and expected.get("result") is not None:
