@@ -3,6 +3,8 @@ import os
 
 from PySide6.QtCore import QObject, QProcess, QProcessEnvironment, QTimer, Signal
 
+from app import win_window_utils
+
 DEFAULT_RESULT_FILE_RELATIVE = os.path.join("Analysis", "replay_result.txt")
 STDOUT_TAIL_CHARS = 4000
 STDERR_TAIL_CHARS = 4000
@@ -29,11 +31,22 @@ class ReplayRunner(QObject):
         self._timer.setSingleShot(True)
         self._timer.timeout.connect(self._on_timeout)
         self._cancelled = False
+        self._window_suppressor = None
 
     def is_running(self):
         return self._process is not None and self._process.state() != QProcess.NotRunning
 
-    def start(self, vendor_dir, env_vars, timeout_seconds, result_filename=DEFAULT_RESULT_FILE_RELATIVE):
+    def start(
+        self,
+        vendor_dir,
+        env_vars,
+        timeout_seconds,
+        result_filename=DEFAULT_RESULT_FILE_RELATIVE,
+        suppress_window=False,
+    ):
+        """suppress_window sends the game's window behind the viewer instead
+        of letting it steal focus -- appropriate for Generate (meant to run
+        unattended), never for Watch (the whole point is seeing the battle)."""
         if self.is_running():
             raise RuntimeError("A replay run is already in progress.")
 
@@ -56,6 +69,15 @@ class ReplayRunner(QObject):
         self._process.finished.connect(self._on_finished)
 
         self._process.start()
+
+        self._window_suppressor = None
+        if suppress_window:
+            self._window_suppressor = win_window_utils.BackgroundWindowSuppressor(
+                get_pid=lambda: self._process.processId() if self._process else None,
+                refocus_widget=self.parent(),
+                parent=self,
+            )
+
         self._timer.start(int(timeout_seconds * 1000))
         self.started.emit()
 

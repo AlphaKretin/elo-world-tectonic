@@ -143,7 +143,7 @@ class GenerateTab(QWidget):
         self.export_button.setEnabled(False)
         self.watch_button.setEnabled(False)
         self.status_view.setPlainText("Launching Game.exe (headless)...")
-        self.runner.start(self.config.vendor_dir, env_vars, self.config.timeout_seconds)
+        self.runner.start(self.config.vendor_dir, env_vars, self.config.timeout_seconds, suppress_window=True)
 
     def _on_started(self):
         self.generate_button.setEnabled(False)
