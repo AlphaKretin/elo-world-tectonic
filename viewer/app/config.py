@@ -1,10 +1,18 @@
 import os
+import sys
 
 from PySide6.QtCore import QSettings
 
-_APP_DIR = os.path.dirname(os.path.abspath(__file__))  # .../viewer/app
-_VIEWER_DIR = os.path.dirname(_APP_DIR)  # .../viewer
-_DEV_REPO_ROOT = os.path.dirname(_VIEWER_DIR)  # dev checkout: viewer/'s parent
+if getattr(sys, "frozen", False):
+    # PyInstaller build: viewer.exe sits at the top of the shipped package,
+    # with vendor/, analysis/, results/ as siblings (see scripts/build_release.ps1) --
+    # unlike the dev checkout, there's no separate viewer/ subfolder to walk
+    # up out of.
+    _DEFAULT_REPO_ROOT = os.path.dirname(sys.executable)
+else:
+    _APP_DIR = os.path.dirname(os.path.abspath(__file__))  # .../viewer/app
+    _VIEWER_DIR = os.path.dirname(_APP_DIR)  # .../viewer
+    _DEFAULT_REPO_ROOT = os.path.dirname(_VIEWER_DIR)  # dev checkout: viewer/'s parent
 
 DEFAULT_TIMEOUT_SECONDS = 120
 
@@ -19,7 +27,7 @@ class AppConfig:
 
     @property
     def repo_root(self):
-        return self._settings.value("paths/repo_root", _DEV_REPO_ROOT)
+        return self._settings.value("paths/repo_root", _DEFAULT_REPO_ROOT)
 
     @repo_root.setter
     def repo_root(self, value):
