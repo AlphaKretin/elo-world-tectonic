@@ -29,6 +29,18 @@ $PackageDir  = Join-Path $StagingRoot $Version
 $GhExe       = "C:\Program Files\GitHub CLI\gh.exe"
 $Robocopy    = "$env:WINDIR\System32\robocopy.exe"
 
+# PowerShell's Compress-Archive is single-threaded with real per-entry
+# overhead -- benchmarked at ~11x slower than NanaZip's 7-Zip-based engine
+# on this package's ~20,000-small-files layout (17.9s vs 1.6s zipping just
+# Graphics/, same output size), so it's worth resolving NanaZip dynamically
+# rather than hardcoding its version-numbered install path (which changes
+# on every NanaZip update).
+$NanaZipPackage = Get-AppxPackage -Name "*NanaZip*" | Select-Object -First 1
+if (-not $NanaZipPackage) {
+    throw "NanaZip isn't installed -- it's what makes zipping this many small files fast. Install it (winget install NanaZip) or fall back to Compress-Archive by editing this script."
+}
+$NanaZipConsole = Join-Path $NanaZipPackage.InstallLocation "NanaZip.Universal.Console.exe"
+
 if (-not (Test-Path (Join-Path $VendorDir "Game.exe"))) {
     throw "Game.exe not found under $VendorDir -- check the submodule is checked out."
 }
@@ -132,7 +144,10 @@ $ZipName = "elo-viewer-$Version-windows.zip"
 $ZipPath = Join-Path $StagingRoot $ZipName
 Remove-Item $ZipPath -ErrorAction SilentlyContinue
 Write-Output "Zipping -> $ZipPath ..."
-Compress-Archive -Path "$PackageDir\*" -DestinationPath $ZipPath
+& $NanaZipConsole a -tzip -mx=5 -mmt=on $ZipPath "$PackageDir\*" | Out-Null
+if (-not (Test-Path $ZipPath)) {
+    throw "NanaZip didn't produce $ZipPath -- check the output above."
+}
 
 # ---------------------------------------------------------------------------
 # 7. Publish to GitHub Releases.
