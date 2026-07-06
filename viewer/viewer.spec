@@ -16,7 +16,7 @@ ANALYSIS_DIR = os.path.join(os.path.dirname(SPEC_DIR), "analysis")
 a = Analysis(
     ["main.py"],
     pathex=[ANALYSIS_DIR],
-    hiddenimports=["results_lib"],
+    hiddenimports=["results_lib", "trainer_naming"],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],

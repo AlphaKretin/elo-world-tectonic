@@ -21,14 +21,19 @@ from PySide6.QtWidgets import (
 
 from app import game_assets, replay_env
 from app.replay_runner import ReplayRunner
+from app.trainer_names import TrainerNameResolver
 
-COLUMNS = ["Name", "Modified"]
+COLUMNS = ["Name", "Trainer 1", "Trainer 2", "Modified"]
 WATCH_RESULT_FILE = os.path.join("Analysis", "watch_result.txt")
 STAGING_NAME = "_WatchStaging"
 
 BATTLESCENE_OPTIONS = [("On", 0), ("Fast", 1), ("Off", 2)]
 TEXTSPEED_OPTIONS = [("Slow", 0), ("Normal", 1), ("Fast", 2), ("Rapid", 3), ("Instant", 4)]
 TRANSITIONS_OPTIONS = [("Standard", 0), ("Fast", 1)]
+
+
+def _option_index(options, label):
+    return next(i for i, (opt_label, _value) in enumerate(options) if opt_label == label)
 
 
 class WatchTab(QWidget):
@@ -40,6 +45,7 @@ class WatchTab(QWidget):
     def __init__(self, config, parent=None):
         super().__init__(parent)
         self.config = config
+        self._names = TrainerNameResolver(config)
         self.runner = ReplayRunner(self)
         self.runner.started.connect(self._on_started)
         self.runner.finished.connect(self._on_finished)
@@ -66,17 +72,20 @@ class WatchTab(QWidget):
         self.battlescene_combo = QComboBox()
         for label, _value in BATTLESCENE_OPTIONS:
             self.battlescene_combo.addItem(label)
+        self.battlescene_combo.setCurrentIndex(_option_index(BATTLESCENE_OPTIONS, "Fast"))
         self.textspeed_combo = QComboBox()
         for label, _value in TEXTSPEED_OPTIONS:
             self.textspeed_combo.addItem(label)
+        self.textspeed_combo.setCurrentIndex(_option_index(TEXTSPEED_OPTIONS, "Instant"))
         self.transitions_combo = QComboBox()
         for label, _value in TRANSITIONS_OPTIONS:
             self.transitions_combo.addItem(label)
+        self.transitions_combo.setCurrentIndex(_option_index(TRANSITIONS_OPTIONS, "Standard"))
         self.mute_check = QCheckBox("Mute (music/sound effects)")
         self.bgm_combo = QComboBox()
         self.bgm_combo.addItem("(default: derived from opponent)", None)
-        for name in game_assets.list_bgm_tracks(config.vendor_dir):
-            self.bgm_combo.addItem(name, name)
+        for raw, display in game_assets.list_bgm_tracks(config.vendor_dir):
+            self.bgm_combo.addItem(display, raw)
         form.addRow("Battle animations", self.battlescene_combo)
         form.addRow("Text speed", self.textspeed_combo)
         form.addRow("Battle transitions", self.transitions_combo)
@@ -117,17 +126,47 @@ class WatchTab(QWidget):
             full_path = os.path.join(replay_dir, name)
             mtime = datetime.datetime.fromtimestamp(os.path.getmtime(full_path)).strftime("%Y-%m-%d %H:%M:%S")
             self.table.setItem(i, 0, QTableWidgetItem(os.path.splitext(name)[0]))
-            self.table.setItem(i, 1, QTableWidgetItem(mtime))
+            self._set_trainer_columns(i, *self._sidecar_trainers(full_path))
+            self.table.setItem(i, 3, QTableWidgetItem(mtime))
+
+    def _sidecar_trainers(self, full_path):
+        """(trainer1, trainer2) raw labels from full_path's ".dat.json"
+        sidecar, or ("", "") if there isn't one -- a replay imported/exported
+        through the file dialog carries its sidecar alongside it on disk,
+        see _on_import_clicked/GenerateTab._on_export_clicked."""
+        sidecar_path = full_path + ".json"
+        if not os.path.exists(sidecar_path):
+            return "", ""
+        try:
+            with open(sidecar_path, "r", encoding="utf-8") as f:
+                sidecar = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            return "", ""
+        return sidecar.get("trainer1", ""), sidecar.get("trainer2", "")
+
+    def _set_trainer_columns(self, row, t1_label, t2_label):
+        for col, label in ((1, t1_label), (2, t2_label)):
+            item = QTableWidgetItem(self._names.display_name(label) if label else "")
+            item.setToolTip(label)
+            self.table.setItem(row, col, item)
 
     def select_replay(self, dat_path, expected_result=None):
         """Called from Generate's "Watch this replay" hand-off. The file is
         already sitting in replay_dir (generation wrote it there), so this
-        just selects/highlights its row instead of copying anything."""
+        just selects/highlights its row instead of copying anything -- and
+        since a freshly-generated replay has no ".dat.json" sidecar on disk
+        yet (only Export writes one), the trainer columns are filled in
+        directly from expected_result here rather than through refresh()'s
+        own disk-sidecar lookup, which would otherwise leave them blank."""
         self.refresh()
         name = os.path.splitext(os.path.basename(dat_path))[0]
         for row in range(self.table.rowCount()):
             if self.table.item(row, 0).text() == name:
                 self.table.selectRow(row)
+                if expected_result:
+                    self._set_trainer_columns(
+                        row, expected_result.get("trainer1", ""), expected_result.get("trainer2", "")
+                    )
                 break
         self._expected_result = expected_result
 

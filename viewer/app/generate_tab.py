@@ -16,8 +16,9 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import game_assets, replay_env
+from app import asset_names, format_selector, game_assets, replay_env
 from app.replay_runner import ReplayRunner
+from app.trainer_names import TrainerNameResolver
 
 
 class GenerateTab(QWidget):
@@ -30,6 +31,7 @@ class GenerateTab(QWidget):
     def __init__(self, config, parent=None):
         super().__init__(parent)
         self.config = config
+        self._names = TrainerNameResolver(config)
         self.runner = ReplayRunner(self)
         self.runner.started.connect(self._on_started)
         self.runner.finished.connect(self._on_finished)
@@ -38,31 +40,57 @@ class GenerateTab(QWidget):
         layout = QVBoxLayout(self)
 
         form = QFormLayout()
+        form.setFieldGrowthPolicy(QFormLayout.ExpandingFieldsGrow)
         self.trainer1_edit = QLineEdit()
         self.trainer1_edit.setPlaceholderText("TYPE:Name or TYPE:Name#version")
+        self.trainer1_name_label = QLabel()
+        self.trainer1_name_label.setStyleSheet("color: gray;")
         self.trainer2_edit = QLineEdit()
         self.trainer2_edit.setPlaceholderText("TYPE:Name or TYPE:Name#version")
+        self.trainer2_name_label = QLabel()
+        self.trainer2_name_label.setStyleSheet("color: gray;")
         self.seed_edit = QLineEdit()
-        self.format_combo = QComboBox()
-        self.format_combo.addItems(["singles", "doubles", "singles_uncursed", "doubles_uncursed"])
+        self.battle_type_combo = QComboBox()
+        for value, label in format_selector.BATTLE_TYPES:
+            self.battle_type_combo.addItem(label, value)
+        self.curse_variant_combo = QComboBox()
+        for value, label in format_selector.CURSE_VARIANTS:
+            self.curse_variant_combo.addItem(label, value)
         self.output_name_edit = QLineEdit()
         self.output_name_edit.setPlaceholderText("(optional, auto-generated if blank)")
         self.backdrop_combo = QComboBox()
-        self.backdrop_combo.addItem("(default: indoor1)", None)
-        for name in game_assets.list_backdrops(config.vendor_dir):
-            self.backdrop_combo.addItem(name, name)
+        default_backdrop_display = asset_names.BACKDROP_NAMES.get("indoor1", "indoor1")
+        self.backdrop_combo.addItem(f"(default: {default_backdrop_display})", None)
+        for raw, display in game_assets.list_backdrop_environments(config.vendor_dir):
+            self.backdrop_combo.addItem(display, raw)
+        self.backdrop_time_combo = QComboBox()
+        for value, label in game_assets.TIME_VARIANTS:
+            self.backdrop_time_combo.addItem(label, value)
         self.swap_sides_button = QPushButton("⇄ Swap trainers")
 
         trainer1_row = QHBoxLayout()
-        trainer1_row.addWidget(self.trainer1_edit)
-        trainer1_row.addWidget(self.swap_sides_button)
+        trainer1_row.addWidget(self.trainer1_edit, 2)
+        trainer1_row.addWidget(self.trainer1_name_label, 3)
+        trainer2_row = QHBoxLayout()
+        trainer2_row.addWidget(self.trainer2_edit, 2)
+        trainer2_row.addWidget(self.trainer2_name_label, 3)
+        format_row = QHBoxLayout()
+        format_row.addWidget(QLabel("Battle type:"))
+        format_row.addWidget(self.battle_type_combo, 1)
+        format_row.addWidget(QLabel("Curse variant:"))
+        format_row.addWidget(self.curse_variant_combo, 1)
+        backdrop_row = QHBoxLayout()
+        backdrop_row.addWidget(self.backdrop_combo, 2)
+        backdrop_row.addWidget(QLabel("Time:"))
+        backdrop_row.addWidget(self.backdrop_time_combo, 1)
 
         form.addRow("Trainer 1", trainer1_row)
-        form.addRow("Trainer 2", self.trainer2_edit)
+        form.addRow("Trainer 2", trainer2_row)
+        form.addRow("", self.swap_sides_button)
         form.addRow("Seed", self.seed_edit)
-        form.addRow("Format", self.format_combo)
+        form.addRow("Format", format_row)
         form.addRow("Output name", self.output_name_edit)
-        form.addRow("Backdrop", self.backdrop_combo)
+        form.addRow("Backdrop", backdrop_row)
         layout.addLayout(form)
 
         buttons = QHBoxLayout()
@@ -89,18 +117,27 @@ class GenerateTab(QWidget):
         self.export_button.clicked.connect(self._on_export_clicked)
         self.watch_button.clicked.connect(self._on_watch_clicked)
         self.swap_sides_button.clicked.connect(self._on_swap_sides_clicked)
+        self.trainer1_edit.textChanged.connect(lambda text: self._update_name_label(self.trainer1_name_label, text))
+        self.trainer2_edit.textChanged.connect(lambda text: self._update_name_label(self.trainer2_name_label, text))
+        self._update_name_label(self.trainer1_name_label, self.trainer1_edit.text())
+        self._update_name_label(self.trainer2_name_label, self.trainer2_edit.text())
+
+    def _update_name_label(self, label_widget, raw_label):
+        raw_label = raw_label.strip()
+        if not raw_label:
+            label_widget.setText("")
+            return
+        resolved = self._names.display_name(raw_label)
+        label_widget.setText(resolved if resolved != raw_label else "(unknown trainer label)")
 
     def set_match(self, payload):
         self.trainer1_edit.setText(payload.get("trainer1", ""))
         self.trainer2_edit.setText(payload.get("trainer2", ""))
         self.seed_edit.setText(str(payload.get("seed", "")))
         fmt = payload.get("format") or ""
-        target = ("doubles" if "double" in fmt else "singles") + (
-            "_uncursed" if "uncursed" in fmt else ""
-        )
-        index = self.format_combo.findText(target)
-        if index >= 0:
-            self.format_combo.setCurrentIndex(index)
+        battle_type, curse_variant = format_selector.parse_format_key(fmt)
+        self.battle_type_combo.setCurrentIndex(self.battle_type_combo.findData(battle_type))
+        self.curse_variant_combo.setCurrentIndex(self.curse_variant_combo.findData(curse_variant))
 
     def _on_swap_sides_clicked(self):
         t1, t2 = self.trainer1_edit.text(), self.trainer2_edit.text()
@@ -123,14 +160,22 @@ class GenerateTab(QWidget):
             QMessageBox.warning(self, "Invalid seed", "Seed must be an integer.")
             return
 
+        fmt = format_selector.format_key(self.battle_type_combo.currentData(), self.curse_variant_combo.currentData())
+        environment = self.backdrop_combo.currentData()
+        backdrop = (
+            game_assets.resolve_backdrop(self.config.vendor_dir, environment, self.backdrop_time_combo.currentData())
+            if environment
+            else None
+        )
+
         try:
             env_vars = replay_env.build_env(
                 self.trainer1_edit.text().strip(),
                 self.trainer2_edit.text().strip(),
                 seed,
-                battle_format=self.format_combo.currentText(),
+                battle_format=fmt,
                 output_name=self.output_name_edit.text().strip() or None,
-                backdrop=self.backdrop_combo.currentData(),
+                backdrop=backdrop,
             )
         except replay_env.InvalidTrainerLabel as exc:
             QMessageBox.warning(self, "Invalid trainer label", str(exc))
@@ -141,7 +186,7 @@ class GenerateTab(QWidget):
             "trainer1": self.trainer1_edit.text().strip(),
             "trainer2": self.trainer2_edit.text().strip(),
             "seed": seed,
-            "format": self.format_combo.currentText(),
+            "format": fmt,
         }
         self.export_button.setEnabled(False)
         self.watch_button.setEnabled(False)
