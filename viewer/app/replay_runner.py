@@ -61,7 +61,12 @@ class ReplayRunner(QObject):
         appropriate for Watch, where a human is present and slow text/battle
         animations can legitimately run well past any fixed bound. Generate
         (headless, unattended) still wants a real timeout as its only
-        defense against a genuinely stuck process.
+        defense against a genuinely stuck process -- but when heartbeat_filename
+        is also given, the timer resets on every heartbeat update instead of
+        counting down from process start, so it's really a turn-stall timeout
+        (same TurnStallTimeoutSeconds idea as run_tournament.ps1's watchdog):
+        a legitimately slow-but-progressing battle on weak hardware won't get
+        killed, only a turn that's genuinely stuck ever trips it.
 
         heartbeat_filename polls headless_boot.rb's per-round
         elo_turn_heartbeat.json (only written while $aiBenchmarkRunning,
@@ -133,6 +138,8 @@ class ReplayRunner(QObject):
             # A poll can race the engine's write; the next tick picks up
             # the completed write since mtime will have moved on again.
             return
+        if self._timer.isActive():
+            self._timer.start()  # no-arg restart reuses the last interval -- turn-stall reset.
         self.heartbeat.emit(data)
 
     def _on_timeout(self):
