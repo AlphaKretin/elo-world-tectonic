@@ -86,7 +86,10 @@ class ResultsTableModel(QAbstractTableModel):
             "seed": row.get("seed") or 0,
             "seed_text": str(row.get("seed", "")),
             "rounds": row.get("rounds") or 0,
-            "rounds_text": str(row.get("rounds", "")),
+            # +1 for display: the engine's stored round count is 0-indexed
+            # (see replay_runner.describe_result); sort key above stays raw
+            # since a uniform +1 shift doesn't change ordering.
+            "rounds_text": str(row.get("rounds") + 1) if row.get("rounds") is not None else "",
             "result": result,
             "result_label": result_label,
         }

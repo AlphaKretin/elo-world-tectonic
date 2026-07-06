@@ -16,7 +16,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import asset_names, format_selector, game_assets, replay_env
+from app import asset_names, format_selector, game_assets, replay_env, replay_runner
 from app.replay_runner import ReplayRunner
 from app.trainer_names import TrainerNameResolver
 
@@ -35,6 +35,7 @@ class GenerateTab(QWidget):
         self.runner = ReplayRunner(self)
         self.runner.started.connect(self._on_started)
         self.runner.finished.connect(self._on_finished)
+        self.runner.heartbeat.connect(self._on_heartbeat)
         self._last_result = None
 
         layout = QVBoxLayout(self)
@@ -191,17 +192,35 @@ class GenerateTab(QWidget):
         self.export_button.setEnabled(False)
         self.watch_button.setEnabled(False)
         self.status_view.setPlainText("Launching Game.exe (headless)...")
-        self.runner.start(self.config.vendor_dir, env_vars, self.config.timeout_seconds, suppress_window=True)
+        self.runner.start(
+            self.config.vendor_dir,
+            env_vars,
+            self.config.timeout_seconds,
+            suppress_window=True,
+            heartbeat_filename=replay_runner.DEFAULT_HEARTBEAT_FILE_RELATIVE,
+        )
 
     def _on_started(self):
         self.generate_button.setEnabled(False)
         self.cancel_button.setEnabled(True)
 
+    def _on_heartbeat(self, data):
+        turn = data.get("turn")
+        updated_at = data.get("updated_at")
+        if turn is None:
+            return
+        text = f"Battle in progress -- turn {turn + 1}"
+        if updated_at:
+            text += f" (as of {updated_at})"
+        self.status_view.setPlainText(text)
+
     def _on_finished(self, result):
         self.generate_button.setEnabled(True)
         self.cancel_button.setEnabled(False)
         self._last_result = result
-        self.status_view.setPlainText(json.dumps(result, indent=2))
+        t1_name = self._names.display_name(self._last_request["trainer1"])
+        t2_name = self._names.display_name(self._last_request["trainer2"])
+        self.status_view.setPlainText(replay_runner.describe_result(result, t1_name, t2_name))
         can_watch_or_export = bool(result.get("ok")) and bool(result.get("saved_to"))
         self.export_button.setEnabled(can_watch_or_export)
         self.watch_button.setEnabled(can_watch_or_export)

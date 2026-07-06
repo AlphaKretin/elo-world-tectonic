@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import game_assets, replay_env
+from app import game_assets, replay_env, replay_runner
 from app.replay_runner import ReplayRunner
 from app.trainer_names import TrainerNameResolver
 
@@ -250,19 +250,24 @@ class WatchTab(QWidget):
         self.watch_button.setEnabled(True)
         self.cancel_button.setEnabled(False)
 
-        text = json.dumps(result, indent=2)
+        expected = self._expected_result
+        self._expected_result = None
+        t1_name = self._names.display_name(expected["trainer1"]) if expected and expected.get("trainer1") else "Trainer 1"
+        t2_name = self._names.display_name(expected["trainer2"]) if expected and expected.get("trainer2") else "Trainer 2"
+
+        text = replay_runner.describe_result(result, t1_name, t2_name)
         if result.get("ok") and result.get("had_error"):
             text += (
                 "\n\n[error during battle] the engine's own error recovery caught and "
-                "logged something mid-battle, then let the battle continue/end normally -- "
-                "see error_log_entry above for the actual exception."
+                "logged something mid-battle, then let the battle continue/end normally:"
             )
-        expected = self._expected_result
-        self._expected_result = None
+            if result.get("error_log_entry"):
+                text += f"\n{result['error_log_entry']}"
         if expected and result.get("ok") and expected.get("result") is not None:
             if result.get("result") != expected.get("result"):
                 text += (
-                    f"\n\n[unexpected outcome] expected result={expected.get('result')!r}, "
-                    f"got {result.get('result')!r}"
+                    f"\n\n[unexpected outcome] expected "
+                    f"{replay_runner.outcome_label(expected.get('result'), t1_name, t2_name)}, "
+                    f"got {replay_runner.outcome_label(result.get('result'), t1_name, t2_name)}"
                 )
         self.status_view.setPlainText(text)

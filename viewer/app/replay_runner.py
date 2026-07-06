@@ -6,8 +6,10 @@ from PySide6.QtCore import QObject, QProcess, QProcessEnvironment, QTimer, Signa
 from app import win_window_utils
 
 DEFAULT_RESULT_FILE_RELATIVE = os.path.join("Analysis", "replay_result.txt")
+DEFAULT_HEARTBEAT_FILE_RELATIVE = os.path.join("Analysis", "elo_turn_heartbeat.json")
 STDOUT_TAIL_CHARS = 4000
 STDERR_TAIL_CHARS = 4000
+HEARTBEAT_POLL_MS = 1000
 
 
 class ReplayRunner(QObject):
@@ -23,6 +25,7 @@ class ReplayRunner(QObject):
 
     finished = Signal(dict)
     started = Signal()
+    heartbeat = Signal(dict)
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -30,6 +33,10 @@ class ReplayRunner(QObject):
         self._timer = QTimer(self)
         self._timer.setSingleShot(True)
         self._timer.timeout.connect(self._on_timeout)
+        self._heartbeat_timer = QTimer(self)
+        self._heartbeat_timer.timeout.connect(self._poll_heartbeat)
+        self._heartbeat_path = None
+        self._heartbeat_mtime = None
         self._cancelled = False
         self._timed_out = False
         self._window_suppressor = None
@@ -44,6 +51,7 @@ class ReplayRunner(QObject):
         timeout_seconds,
         result_filename=DEFAULT_RESULT_FILE_RELATIVE,
         suppress_window=False,
+        heartbeat_filename=None,
     ):
         """suppress_window sends the game's window behind the viewer instead
         of letting it steal focus -- appropriate for Generate (meant to run
@@ -53,7 +61,13 @@ class ReplayRunner(QObject):
         appropriate for Watch, where a human is present and slow text/battle
         animations can legitimately run well past any fixed bound. Generate
         (headless, unattended) still wants a real timeout as its only
-        defense against a genuinely stuck process."""
+        defense against a genuinely stuck process.
+
+        heartbeat_filename polls headless_boot.rb's per-round
+        elo_turn_heartbeat.json (only written while $aiBenchmarkRunning,
+        i.e. during Generate's AI-vs-AI battle -- Watch's playRecordedBattle
+        never sets that flag, so pass None there rather than poll a file
+        that will never update)."""
         if self.is_running():
             raise RuntimeError("A replay run is already in progress.")
 
@@ -65,6 +79,11 @@ class ReplayRunner(QObject):
         result_path = os.path.join(vendor_dir, result_filename)
         if os.path.exists(result_path):
             os.remove(result_path)
+
+        self._heartbeat_path = os.path.join(vendor_dir, heartbeat_filename) if heartbeat_filename else None
+        self._heartbeat_mtime = None
+        if self._heartbeat_path and os.path.exists(self._heartbeat_path):
+            os.remove(self._heartbeat_path)
 
         qenv = QProcessEnvironment.systemEnvironment()
         for key, value in env_vars.items():
@@ -88,6 +107,8 @@ class ReplayRunner(QObject):
 
         if timeout_seconds:
             self._timer.start(int(timeout_seconds * 1000))
+        if self._heartbeat_path:
+            self._heartbeat_timer.start(HEARTBEAT_POLL_MS)
         self.started.emit()
 
     def cancel(self):
@@ -96,6 +117,23 @@ class ReplayRunner(QObject):
         self._cancelled = True
         self._timer.stop()
         self._process.kill()
+
+    def _poll_heartbeat(self):
+        try:
+            mtime = os.path.getmtime(self._heartbeat_path)
+        except OSError:
+            return
+        if mtime == self._heartbeat_mtime:
+            return
+        self._heartbeat_mtime = mtime
+        try:
+            with open(self._heartbeat_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            # A poll can race the engine's write; the next tick picks up
+            # the completed write since mtime will have moved on again.
+            return
+        self.heartbeat.emit(data)
 
     def _on_timeout(self):
         self._timed_out = True
@@ -113,6 +151,7 @@ class ReplayRunner(QObject):
 
     def _on_finished(self, exit_code, exit_status):
         self._timer.stop()
+        self._heartbeat_timer.stop()
         result_path = os.path.join(self._vendor_dir, self._result_filename)
 
         if os.path.exists(result_path):
@@ -146,3 +185,46 @@ class ReplayRunner(QObject):
             }
 
         self.finished.emit(result)
+
+
+def outcome_label(value, win_label="Trainer 1", loss_label="Trainer 2"):
+    """Renders runBattle/playRecordedBattle's shared 0/1/2 result scale
+    (0 = draw, 1 = party1/trainer1 side wins, 2 = party2/trainer2 side
+    wins) -- same convention GenerateTab's saved sidecar and WatchTab's
+    expected-outcome check already assume."""
+    return {0: "Draw", 1: f"{win_label} wins", 2: f"{loss_label} wins"}.get(
+        value, f"Unknown result ({value!r})"
+    )
+
+
+def describe_result(result, trainer1_name="Trainer 1", trainer2_name="Trainer 2"):
+    """Turns one of replay.rb/watch.rb's saved result JSONs (or one of
+    ReplayRunner's own Cancelled/Timeout/Crash/MalformedResult shapes,
+    which share the same ok/error_class/error_message keys) into a plain-
+    English status report, replacing a raw json.dumps dump."""
+    if not result.get("ok"):
+        lines = [f"Failed: {result.get('error_class', 'Error')} -- {result.get('error_message', '(no message)')}"]
+        backtrace = result.get("backtrace")
+        if backtrace:
+            lines.append("")
+            lines.append("Backtrace:")
+            lines.extend(backtrace)
+        if result.get("stdout_tail"):
+            lines.append("")
+            lines.append("--- stdout tail ---")
+            lines.append(result["stdout_tail"])
+        if result.get("stderr_tail"):
+            lines.append("")
+            lines.append("--- stderr tail ---")
+            lines.append(result["stderr_tail"])
+        return "\n".join(lines)
+
+    lines = [outcome_label(result.get("result"), trainer1_name, trainer2_name)]
+    rounds = result.get("rounds")
+    if rounds is not None:
+        time_s = result.get("time_s")
+        time_part = f", {time_s:.1f}s" if isinstance(time_s, (int, float)) else ""
+        lines.append(f"{rounds + 1} rounds{time_part}")
+    if result.get("saved_to"):
+        lines.append(f"Saved to {result['saved_to']}")
+    return "\n".join(lines)
