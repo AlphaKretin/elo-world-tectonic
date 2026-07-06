@@ -1,0 +1,6814 @@
+[
+    {
+        "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
+        "trainer": "Another Possible Rafael",
+        "cursed": false,
+        "rating": 2042.36,
+        "se": 58.51,
+        "ciLow": 1927.69,
+        "ciHigh": 2157.04,
+        "wins": 148,
+        "losses": 6,
+        "draws": 0,
+        "battles": 154,
+        "rank": 1,
+        "overlap": 0,
+        "tier": "S+",
+        "tierColor": [
+            255,
+            0,
+            80
+        ],
+        "wldFractions": {
+            "win": 0.96,
+            "draw": 0.0,
+            "loss": 0.04
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 4211195427,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1510.63,
+            "seed": 3638689575,
+            "opponent": {
+                "label": "SPIRITGUARDIAN4:Brigitte",
+                "display": "Spirit Guardian Brigitte",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONTRAINER_Vanya:Vanya#2",
+        "trainer": "Pok\u00e9mon Trainer Vanya #3",
+        "cursed": false,
+        "rating": 1869.65,
+        "se": 43.58,
+        "ciLow": 1784.24,
+        "ciHigh": 1955.06,
+        "wins": 134,
+        "losses": 19,
+        "draws": 1,
+        "battles": 154,
+        "rank": 2,
+        "overlap": 6,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8396815467728177,
+            "draw": 0.04,
+            "loss": 0.12031845322718225
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 2058791684,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 3805294228,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ODDISH:Oddium",
+        "trainer": "Developer Oddium",
+        "cursed": false,
+        "rating": 1835.15,
+        "se": 41.31,
+        "ciLow": 1754.19,
+        "ciHigh": 1916.11,
+        "wins": 131,
+        "losses": 23,
+        "draws": 0,
+        "battles": 154,
+        "rank": 3,
+        "overlap": 8,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8506493506493507,
+            "draw": 0.0,
+            "loss": 0.14935064935064934
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 182068827,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1375.81,
+            "seed": 253617137,
+            "opponent": {
+                "label": "WORKER5:Jbsundown",
+                "display": "Developer Jbsundown",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TOURISTM:Azeler",
+        "trainer": "Developer Azeler",
+        "cursed": false,
+        "rating": 1830.01,
+        "se": 41.4,
+        "ciLow": 1748.86,
+        "ciHigh": 1911.15,
+        "wins": 129,
+        "losses": 23,
+        "draws": 2,
+        "battles": 154,
+        "rank": 4,
+        "overlap": 11,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8139060710194731,
+            "draw": 0.04,
+            "loss": 0.14609392898052692
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 846846202,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 1082589747,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#23",
+        "trainer": "Masked Villain Crimson [Candy] #2",
+        "cursed": true,
+        "rating": 1816.59,
+        "se": 40.44,
+        "ciLow": 1737.32,
+        "ciHigh": 1895.86,
+        "wins": 128,
+        "losses": 25,
+        "draws": 1,
+        "battles": 154,
+        "rank": 5,
+        "overlap": 13,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8021495592834803,
+            "draw": 0.04,
+            "loss": 0.15785044071651977
+        },
+        "bestWin": {
+            "rating": 2042.36,
+            "seed": 3310311278,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
+                "display": "Another Possible Rafael",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1376.52,
+            "seed": 3942868177,
+            "opponent": {
+                "label": "FORMERCHAMP_Casey:Casey",
+                "display": "Former Champion Casey",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Candy:Candy#1",
+        "trainer": "Pok\u00e9mon Trainer Candy #2",
+        "cursed": false,
+        "rating": 1801.81,
+        "se": 39.57,
+        "ciLow": 1724.25,
+        "ciHigh": 1879.37,
+        "wins": 127,
+        "losses": 27,
+        "draws": 0,
+        "battles": 154,
+        "rank": 6,
+        "overlap": 14,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8246753246753247,
+            "draw": 0.0,
+            "loss": 0.17532467532467533
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 4247113242,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1376.52,
+            "seed": 3660785808,
+            "opponent": {
+                "label": "FORMERCHAMP_Casey:Casey",
+                "display": "Former Champion Casey",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONTRAINER_Vanya:Vanya#3",
+        "trainer": "Pok\u00e9mon Trainer Vanya #4",
+        "cursed": false,
+        "rating": 1793.91,
+        "se": 39.19,
+        "ciLow": 1717.09,
+        "ciHigh": 1870.73,
+        "wins": 126,
+        "losses": 28,
+        "draws": 0,
+        "battles": 154,
+        "rank": 7,
+        "overlap": 17,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8181818181818182,
+            "draw": 0.0,
+            "loss": 0.18181818181818182
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 1864158978,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1370.22,
+            "seed": 4196045165,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#6",
+                "display": "Pok\u00e9mon Master Vanya #6",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#23",
+        "trainer": "Masked Villain Teal [Candy] #2",
+        "cursed": true,
+        "rating": 1786.16,
+        "se": 38.84,
+        "ciLow": 1710.04,
+        "ciHigh": 1862.28,
+        "wins": 125,
+        "losses": 29,
+        "draws": 0,
+        "battles": 154,
+        "rank": 8,
+        "overlap": 16,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8116883116883117,
+            "draw": 0.0,
+            "loss": 0.18831168831168832
+        },
+        "bestWin": {
+            "rating": 1778.55,
+            "seed": 4111504665,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#22",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1376.52,
+            "seed": 683252600,
+            "opponent": {
+                "label": "FORMERCHAMP_Casey:Casey",
+                "display": "Former Champion Casey",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#22",
+        "trainer": "Masked Villain Crimson [Candy] #2",
+        "cursed": false,
+        "rating": 1778.55,
+        "se": 38.5,
+        "ciLow": 1703.09,
+        "ciHigh": 1854.01,
+        "wins": 124,
+        "losses": 30,
+        "draws": 0,
+        "battles": 154,
+        "rank": 9,
+        "overlap": 17,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8051948051948052,
+            "draw": 0.0,
+            "loss": 0.19480519480519481
+        },
+        "bestWin": {
+            "rating": 1761.7,
+            "seed": 946531069,
+            "opponent": {
+                "label": "POKEMONTRAINER_Yezera:Yezera#11",
+                "display": "Pok\u00e9mon Trainer Yezera #6",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1489.04,
+            "seed": 4267056403,
+            "opponent": {
+                "label": "TRAINER_Alessa:Alessa#3",
+                "display": "Pok\u00e9mon Trainer Alessa #3",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONTRAINER_Yezera:Yezera#11",
+        "trainer": "Pok\u00e9mon Trainer Yezera #6",
+        "cursed": true,
+        "rating": 1761.7,
+        "se": 37.96,
+        "ciLow": 1687.3,
+        "ciHigh": 1836.1,
+        "wins": 120,
+        "losses": 32,
+        "draws": 2,
+        "battles": 154,
+        "rank": 10,
+        "overlap": 19,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.757205040091638,
+            "draw": 0.04,
+            "loss": 0.202794959908362
+        },
+        "bestWin": {
+            "rating": 1801.81,
+            "seed": 3747146127,
+            "opponent": {
+                "label": "TRAINER_Candy:Candy#1",
+                "display": "Pok\u00e9mon Trainer Candy #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1310.76,
+            "seed": 3066798679,
+            "opponent": {
+                "label": "JUGGLER:Brickbat",
+                "display": "Developer Brickbat",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "HEXMANIAC:Errata",
+        "trainer": "Developer Errata",
+        "cursed": false,
+        "rating": 1749.46,
+        "se": 37.31,
+        "ciLow": 1676.32,
+        "ciHigh": 1822.59,
+        "wins": 120,
+        "losses": 34,
+        "draws": 0,
+        "battles": 154,
+        "rank": 11,
+        "overlap": 19,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7792207792207793,
+            "draw": 0.0,
+            "loss": 0.22077922077922077
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 2045850957,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 3571298546,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#22",
+        "trainer": "Masked Villain Teal [Candy] #2",
+        "cursed": false,
+        "rating": 1749.46,
+        "se": 37.31,
+        "ciLow": 1676.32,
+        "ciHigh": 1822.59,
+        "wins": 120,
+        "losses": 34,
+        "draws": 0,
+        "battles": 154,
+        "rank": 12,
+        "overlap": 19,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7792207792207793,
+            "draw": 0.0,
+            "loss": 0.22077922077922077
+        },
+        "bestWin": {
+            "rating": 2042.36,
+            "seed": 532568102,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
+                "display": "Another Possible Rafael",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1375.81,
+            "seed": 3080271733,
+            "opponent": {
+                "label": "HEXMANIAC_1:Riptide#1",
+                "display": "Developer Riptide #2",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "VETERANM_2:Kirbae",
+        "trainer": "Developer Kirbae",
+        "cursed": false,
+        "rating": 1749.46,
+        "se": 37.31,
+        "ciLow": 1676.32,
+        "ciHigh": 1822.59,
+        "wins": 120,
+        "losses": 34,
+        "draws": 0,
+        "battles": 154,
+        "rank": 13,
+        "overlap": 19,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7792207792207793,
+            "draw": 0.0,
+            "loss": 0.22077922077922077
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 2334410953,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1376.52,
+            "seed": 1877611395,
+            "opponent": {
+                "label": "FORMERCHAMP_Casey:Casey",
+                "display": "Former Champion Casey",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "SHADOWMAVIS:Mavis#1",
+        "trainer": "Shadow Mavis #2",
+        "cursed": false,
+        "rating": 1742.49,
+        "se": 37.05,
+        "ciLow": 1669.87,
+        "ciHigh": 1815.12,
+        "wins": 119,
+        "losses": 35,
+        "draws": 0,
+        "battles": 154,
+        "rank": 14,
+        "overlap": 20,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7727272727272727,
+            "draw": 0.0,
+            "loss": 0.22727272727272727
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 3040306260,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1324.68,
+            "seed": 1354350842,
+            "opponent": {
+                "label": "IDEALTRAINER:of Tradition",
+                "display": "Ideal Trainer of Tradition",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TOURISTM:Chus",
+        "trainer": "Developer Chus",
+        "cursed": false,
+        "rating": 1737.36,
+        "se": 37.08,
+        "ciLow": 1664.69,
+        "ciHigh": 1810.03,
+        "wins": 117,
+        "losses": 35,
+        "draws": 2,
+        "battles": 154,
+        "rank": 15,
+        "overlap": 21,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7383046964490263,
+            "draw": 0.04,
+            "loss": 0.22169530355097364
+        },
+        "bestWin": {
+            "rating": 2042.36,
+            "seed": 1942315605,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
+                "display": "Another Possible Rafael",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 799290605,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "SPIRITGUARDIAN3:Preeti",
+        "trainer": "Spirit Guardian Preeti",
+        "cursed": false,
+        "rating": 1735.65,
+        "se": 36.81,
+        "ciLow": 1663.5,
+        "ciHigh": 1807.79,
+        "wins": 118,
+        "losses": 36,
+        "draws": 0,
+        "battles": 154,
+        "rank": 16,
+        "overlap": 21,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7662337662337663,
+            "draw": 0.0,
+            "loss": 0.23376623376623376
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 1228208461,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 667853308,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "NIGHTMAREQUEEN_Elise:Elise",
+        "trainer": "Nightmare Queen Elise",
+        "cursed": false,
+        "rating": 1722.29,
+        "se": 36.35,
+        "ciLow": 1651.04,
+        "ciHigh": 1793.54,
+        "wins": 116,
+        "losses": 38,
+        "draws": 0,
+        "battles": 154,
+        "rank": 17,
+        "overlap": 19,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7532467532467533,
+            "draw": 0.0,
+            "loss": 0.24675324675324675
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 664101202,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1297.82,
+            "seed": 530419964,
+            "opponent": {
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "WAITRESS3:Destiny",
+        "trainer": "Developer Destiny",
+        "cursed": false,
+        "rating": 1720.98,
+        "se": 36.4,
+        "ciLow": 1649.63,
+        "ciHigh": 1792.33,
+        "wins": 115,
+        "losses": 38,
+        "draws": 1,
+        "battles": 154,
+        "rank": 18,
+        "overlap": 19,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7208302530565823,
+            "draw": 0.04,
+            "loss": 0.2391697469434177
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 1491291183,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1375.81,
+            "seed": 3566913861,
+            "opponent": {
+                "label": "WORKER5:Jbsundown",
+                "display": "Developer Jbsundown",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "SCIENTIST_F:LunaFlare",
+        "trainer": "Developer LunaFlare",
+        "cursed": false,
+        "rating": 1720.71,
+        "se": 36.41,
+        "ciLow": 1649.34,
+        "ciHigh": 1792.07,
+        "wins": 115,
+        "losses": 38,
+        "draws": 1,
+        "battles": 154,
+        "rank": 19,
+        "overlap": 19,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7208302530565823,
+            "draw": 0.04,
+            "loss": 0.2391697469434177
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 360691580,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1297.82,
+            "seed": 3578703666,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#20",
+                "display": "Masked Villain Crimson [Eifion] #2",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Alessa:Alessa#6",
+        "trainer": "Pok\u00e9mon Trainer Alessa #5",
+        "cursed": false,
+        "rating": 1709.36,
+        "se": 35.94,
+        "ciLow": 1638.92,
+        "ciHigh": 1779.8,
+        "wins": 114,
+        "losses": 40,
+        "draws": 0,
+        "battles": 154,
+        "rank": 20,
+        "overlap": 23,
+        "tier": "A+",
+        "tierColor": [
+            255,
+            43,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7402597402597403,
+            "draw": 0.0,
+            "loss": 0.2597402597402597
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 1133626365,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1324.68,
+            "seed": 3349291027,
+            "opponent": {
+                "label": "IDEALTRAINER:of Tradition",
+                "display": "Ideal Trainer of Tradition",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ULTRALAINIE:Lainie",
+        "trainer": "Ultra Lainie",
+        "cursed": false,
+        "rating": 1696.84,
+        "se": 35.57,
+        "ciLow": 1627.12,
+        "ciHigh": 1766.55,
+        "wins": 112,
+        "losses": 42,
+        "draws": 0,
+        "battles": 154,
+        "rank": 21,
+        "overlap": 25,
+        "tier": "A+",
+        "tierColor": [
+            255,
+            43,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7272727272727273,
+            "draw": 0.0,
+            "loss": 0.2727272727272727
+        },
+        "bestWin": {
+            "rating": 2042.36,
+            "seed": 2694728729,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
+                "display": "Another Possible Rafael",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1310.76,
+            "seed": 648454815,
+            "opponent": {
+                "label": "JUGGLER:Brickbat",
+                "display": "Developer Brickbat",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONCHAMPION_Vanya:Vanya",
+        "trainer": "Champion Vanya",
+        "cursed": false,
+        "rating": 1690.72,
+        "se": 35.4,
+        "ciLow": 1621.34,
+        "ciHigh": 1760.09,
+        "wins": 111,
+        "losses": 43,
+        "draws": 0,
+        "battles": 154,
+        "rank": 22,
+        "overlap": 24,
+        "tier": "A+",
+        "tierColor": [
+            255,
+            43,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7207792207792207,
+            "draw": 0.0,
+            "loss": 0.2792207792207792
+        },
+        "bestWin": {
+            "rating": 1801.81,
+            "seed": 3891497636,
+            "opponent": {
+                "label": "TRAINER_Candy:Candy#1",
+                "display": "Pok\u00e9mon Trainer Candy #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1341.44,
+            "seed": 541754945,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#13",
+                "display": "Pok\u00e9mon Master Vanya #13",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "PUNKM:ValourDyke",
+        "trainer": "Developer ValourDyke",
+        "cursed": false,
+        "rating": 1684.68,
+        "se": 35.23,
+        "ciLow": 1615.62,
+        "ciHigh": 1753.74,
+        "wins": 110,
+        "losses": 44,
+        "draws": 0,
+        "battles": 154,
+        "rank": 23,
+        "overlap": 26,
+        "tier": "A+",
+        "tierColor": [
+            255,
+            43,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7142857142857143,
+            "draw": 0.0,
+            "loss": 0.2857142857142857
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 2967669525,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 531892061,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Elise:Elise",
+        "trainer": "Former Champion Elise #1",
+        "cursed": false,
+        "rating": 1682.56,
+        "se": 35.3,
+        "ciLow": 1613.37,
+        "ciHigh": 1751.75,
+        "wins": 109,
+        "losses": 44,
+        "draws": 1,
+        "battles": 154,
+        "rank": 24,
+        "overlap": 26,
+        "tier": "A+",
+        "tierColor": [
+            255,
+            43,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6832982655672448,
+            "draw": 0.04,
+            "loss": 0.2767017344327552
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 134906447,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1294.64,
+            "seed": 3155006388,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya",
+                "display": "Pok\u00e9mon Master Vanya #1",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONTRAINER_Vanya:Vanya#1",
+        "trainer": "Pok\u00e9mon Trainer Vanya #2",
+        "cursed": false,
+        "rating": 1674.06,
+        "se": 35.06,
+        "ciLow": 1605.35,
+        "ciHigh": 1742.77,
+        "wins": 108,
+        "losses": 45,
+        "draws": 1,
+        "battles": 154,
+        "rank": 25,
+        "overlap": 28,
+        "tier": "A+",
+        "tierColor": [
+            255,
+            43,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6770429343190218,
+            "draw": 0.04,
+            "loss": 0.2829570656809781
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 287812231,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1335.48,
+            "seed": 3195522566,
+            "opponent": {
+                "label": "POKEMONBREEDER_F:Miss Zesty",
+                "display": "Developer Miss Zesty",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Elise:Elise#1",
+        "trainer": "Former Champion Elise #2",
+        "cursed": false,
+        "rating": 1672.87,
+        "se": 34.93,
+        "ciLow": 1604.4,
+        "ciHigh": 1741.34,
+        "wins": 108,
+        "losses": 46,
+        "draws": 0,
+        "battles": 154,
+        "rank": 26,
+        "overlap": 28,
+        "tier": "A+",
+        "tierColor": [
+            255,
+            43,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7012987012987013,
+            "draw": 0.0,
+            "loss": 0.2987012987012987
+        },
+        "bestWin": {
+            "rating": 1778.55,
+            "seed": 3393038448,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#22",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1335.48,
+            "seed": 3476688282,
+            "opponent": {
+                "label": "POKEMONBREEDER_F:Miss Zesty",
+                "display": "Developer Miss Zesty",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Sang:Sang#5",
+        "trainer": "Pok\u00e9mon Trainer Sang #2",
+        "cursed": true,
+        "rating": 1667.07,
+        "se": 34.79,
+        "ciLow": 1598.88,
+        "ciHigh": 1735.27,
+        "wins": 107,
+        "losses": 47,
+        "draws": 0,
+        "battles": 154,
+        "rank": 27,
+        "overlap": 28,
+        "tier": "A+",
+        "tierColor": [
+            255,
+            43,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6948051948051948,
+            "draw": 0.0,
+            "loss": 0.3051948051948052
+        },
+        "bestWin": {
+            "rating": 2042.36,
+            "seed": 2941756857,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
+                "display": "Another Possible Rafael",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 3346566912,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Vincent:Vincent",
+        "trainer": "Former Champion Vincent",
+        "cursed": false,
+        "rating": 1642.1,
+        "se": 34.37,
+        "ciLow": 1574.72,
+        "ciHigh": 1709.47,
+        "wins": 102,
+        "losses": 51,
+        "draws": 1,
+        "battles": 154,
+        "rank": 28,
+        "overlap": 28,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6395109468296843,
+            "draw": 0.04,
+            "loss": 0.3204890531703156
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 1828606286,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1318.82,
+            "seed": 1121395381,
+            "opponent": {
+                "label": "IDEALTRAINER:of Conquest",
+                "display": "Ideal Trainer of Conquest",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Scilla:Scilla",
+        "trainer": "Former Champion Scilla",
+        "cursed": false,
+        "rating": 1639.04,
+        "se": 34.2,
+        "ciLow": 1572.01,
+        "ciHigh": 1706.06,
+        "wins": 102,
+        "losses": 52,
+        "draws": 0,
+        "battles": 154,
+        "rank": 29,
+        "overlap": 28,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6623376623376623,
+            "draw": 0.0,
+            "loss": 0.33766233766233766
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 4135245198,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 3287665408,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
+        "trainer": "Masked Villains Teal [Imogene] #2",
+        "cursed": true,
+        "rating": 1639.04,
+        "se": 34.2,
+        "ciLow": 1572.01,
+        "ciHigh": 1706.06,
+        "wins": 102,
+        "losses": 52,
+        "draws": 0,
+        "battles": 154,
+        "rank": 30,
+        "overlap": 28,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6623376623376623,
+            "draw": 0.0,
+            "loss": 0.33766233766233766
+        },
+        "bestWin": {
+            "rating": 1786.16,
+            "seed": 474030136,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#23",
+                "display": "Masked Villain Teal [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1297.82,
+            "seed": 3704939893,
+            "opponent": {
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "SEEKER_Nora:Nora#1",
+        "trainer": "Seeker Nora",
+        "cursed": true,
+        "rating": 1639.04,
+        "se": 34.2,
+        "ciLow": 1572.01,
+        "ciHigh": 1706.06,
+        "wins": 102,
+        "losses": 52,
+        "draws": 0,
+        "battles": 154,
+        "rank": 31,
+        "overlap": 28,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6623376623376623,
+            "draw": 0.0,
+            "loss": 0.33766233766233766
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 1199192506,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 1267958558,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TAPU_BULU:Tapu Bulu",
+        "trainer": "Guardian Deity Tapu Bulu",
+        "cursed": false,
+        "rating": 1639.04,
+        "se": 34.2,
+        "ciLow": 1572.01,
+        "ciHigh": 1706.06,
+        "wins": 102,
+        "losses": 52,
+        "draws": 0,
+        "battles": 154,
+        "rank": 32,
+        "overlap": 28,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6623376623376623,
+            "draw": 0.0,
+            "loss": 0.33766233766233766
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 1913131839,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 740076738,
+            "opponent": {
+                "label": "SPIRITGUARDIAN2:Sonya",
+                "display": "Spirit Guardian Sonya",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONRANGER_M:Zufaix",
+        "trainer": "Developer Zufaix",
+        "cursed": false,
+        "rating": 1637.27,
+        "se": 34.26,
+        "ciLow": 1570.12,
+        "ciHigh": 1704.42,
+        "wins": 101,
+        "losses": 52,
+        "draws": 1,
+        "battles": 154,
+        "rank": 33,
+        "overlap": 28,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6332556155814615,
+            "draw": 0.04,
+            "loss": 0.32674438441853854
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 1756250715,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1317.08,
+            "seed": 3020785358,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLEZAIN:Zain",
+                "display": "Another Possible Zain #1",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN_DOUBLE:Crimson#13",
+        "trainer": "Masked Villains Crimson [Imogene] #2",
+        "cursed": true,
+        "rating": 1628.16,
+        "se": 34.0,
+        "ciLow": 1561.52,
+        "ciHigh": 1694.79,
+        "wins": 100,
+        "losses": 54,
+        "draws": 0,
+        "battles": 154,
+        "rank": 34,
+        "overlap": 29,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6493506493506493,
+            "draw": 0.0,
+            "loss": 0.35064935064935066
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 3487727448,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 3045436191,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TAPU_BULU:Tapu Bulu#1",
+        "trainer": "Guardian Deity Tapu Bulu",
+        "cursed": true,
+        "rating": 1628.16,
+        "se": 34.0,
+        "ciLow": 1561.52,
+        "ciHigh": 1694.79,
+        "wins": 100,
+        "losses": 54,
+        "draws": 0,
+        "battles": 154,
+        "rank": 35,
+        "overlap": 29,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6493506493506493,
+            "draw": 0.0,
+            "loss": 0.35064935064935066
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 2192502111,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 2151794166,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ANOTHERPOSSIBLEALESSA:Alessa#1",
+        "trainer": "Another Possible Alessa #2",
+        "cursed": false,
+        "rating": 1617.4,
+        "se": 33.82,
+        "ciLow": 1551.11,
+        "ciHigh": 1683.69,
+        "wins": 98,
+        "losses": 56,
+        "draws": 0,
+        "battles": 154,
+        "rank": 36,
+        "overlap": 34,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6363636363636364,
+            "draw": 0.0,
+            "loss": 0.36363636363636365
+        },
+        "bestWin": {
+            "rating": 1778.55,
+            "seed": 2807250191,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#22",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1353.15,
+            "seed": 2265499582,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#15",
+                "display": "Pok\u00e9mon Master Vanya #15",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LEADER_Samorn:Samorn#2",
+        "trainer": "Gym Leader Samorn #2",
+        "cursed": false,
+        "rating": 1615.73,
+        "se": 33.99,
+        "ciLow": 1549.11,
+        "ciHigh": 1682.34,
+        "wins": 97,
+        "losses": 55,
+        "draws": 2,
+        "battles": 154,
+        "rank": 37,
+        "overlap": 33,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6123024054982819,
+            "draw": 0.04,
+            "loss": 0.3476975945017182
+        },
+        "bestWin": {
+            "rating": 1801.81,
+            "seed": 1165511532,
+            "opponent": {
+                "label": "TRAINER_Candy:Candy#1",
+                "display": "Pok\u00e9mon Trainer Candy #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 3504105160,
+            "opponent": {
+                "label": "SPIRITGUARDIAN2:Sonya",
+                "display": "Spirit Guardian Sonya",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "KILLU:Killu",
+        "trainer": "Developer Killu",
+        "cursed": false,
+        "rating": 1612.06,
+        "se": 33.74,
+        "ciLow": 1545.93,
+        "ciHigh": 1678.19,
+        "wins": 97,
+        "losses": 57,
+        "draws": 0,
+        "battles": 154,
+        "rank": 38,
+        "overlap": 36,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6298701298701299,
+            "draw": 0.0,
+            "loss": 0.37012987012987014
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 3810815064,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1318.82,
+            "seed": 3213880732,
+            "opponent": {
+                "label": "IDEALTRAINER:of Conquest",
+                "display": "Ideal Trainer of Conquest",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ANOTHERPOSSIBLEALESSA:Alessa",
+        "trainer": "Another Possible Alessa #1",
+        "cursed": false,
+        "rating": 1606.73,
+        "se": 33.66,
+        "ciLow": 1540.75,
+        "ciHigh": 1672.71,
+        "wins": 96,
+        "losses": 58,
+        "draws": 0,
+        "battles": 154,
+        "rank": 39,
+        "overlap": 35,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6233766233766234,
+            "draw": 0.0,
+            "loss": 0.37662337662337664
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 377224334,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1353.15,
+            "seed": 2751747660,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#15",
+                "display": "Pok\u00e9mon Master Vanya #15",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LADY2:Eseria",
+        "trainer": "Developer Eseria",
+        "cursed": false,
+        "rating": 1606.73,
+        "se": 33.66,
+        "ciLow": 1540.75,
+        "ciHigh": 1672.71,
+        "wins": 96,
+        "losses": 58,
+        "draws": 0,
+        "battles": 154,
+        "rank": 40,
+        "overlap": 35,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6233766233766234,
+            "draw": 0.0,
+            "loss": 0.37662337662337664
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 3428800461,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 889.66,
+            "seed": 3959459580,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Trinity",
+                "display": "Artificial Trainer Trinity",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONTRAINER_Vanya:Vanya",
+        "trainer": "Pok\u00e9mon Trainer Vanya #1",
+        "cursed": false,
+        "rating": 1606.73,
+        "se": 33.66,
+        "ciLow": 1540.75,
+        "ciHigh": 1672.71,
+        "wins": 96,
+        "losses": 58,
+        "draws": 0,
+        "battles": 154,
+        "rank": 41,
+        "overlap": 35,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6233766233766234,
+            "draw": 0.0,
+            "loss": 0.37662337662337664
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 4207599314,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 4130928732,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ELDER:Logun",
+        "trainer": "Elder Logun",
+        "cursed": false,
+        "rating": 1606.35,
+        "se": 33.88,
+        "ciLow": 1539.94,
+        "ciHigh": 1672.75,
+        "wins": 95,
+        "losses": 57,
+        "draws": 2,
+        "battles": 154,
+        "rank": 42,
+        "overlap": 35,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5997021764032073,
+            "draw": 0.04,
+            "loss": 0.3602978235967927
+        },
+        "bestWin": {
+            "rating": 1720.71,
+            "seed": 4123763037,
+            "opponent": {
+                "label": "SCIENTIST_F:LunaFlare",
+                "display": "Developer LunaFlare",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 853970972,
+            "opponent": {
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Ansel:Ansel",
+        "trainer": "Former Champion Ansel",
+        "cursed": false,
+        "rating": 1605.1,
+        "se": 33.72,
+        "ciLow": 1539.01,
+        "ciHigh": 1671.19,
+        "wins": 95,
+        "losses": 58,
+        "draws": 1,
+        "battles": 154,
+        "rank": 43,
+        "overlap": 35,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.595723628092124,
+            "draw": 0.04,
+            "loss": 0.36427637190787604
+        },
+        "bestWin": {
+            "rating": 1742.49,
+            "seed": 673678750,
+            "opponent": {
+                "label": "SHADOWMAVIS:Mavis#1",
+                "display": "Shadow Mavis #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 1296512089,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Chara:Chara",
+        "trainer": "Former Champion Chara",
+        "cursed": false,
+        "rating": 1601.42,
+        "se": 33.59,
+        "ciLow": 1535.58,
+        "ciHigh": 1667.25,
+        "wins": 95,
+        "losses": 59,
+        "draws": 0,
+        "battles": 154,
+        "rank": 44,
+        "overlap": 35,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6168831168831169,
+            "draw": 0.0,
+            "loss": 0.38311688311688313
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 3834708611,
+            "opponent": {
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1291.2,
+            "seed": 3701275465,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#20",
+                "display": "Masked Villain Teal [Eifion] #2",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "COOLTRAINER_M7:X",
+        "trainer": "Pro Trainer X",
+        "cursed": false,
+        "rating": 1599.65,
+        "se": 33.65,
+        "ciLow": 1533.69,
+        "ciHigh": 1665.6,
+        "wins": 94,
+        "losses": 59,
+        "draws": 1,
+        "battles": 154,
+        "rank": 45,
+        "overlap": 34,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.589468296843901,
+            "draw": 0.04,
+            "loss": 0.37053170315609896
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 451482115,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1335.48,
+            "seed": 3681131748,
+            "opponent": {
+                "label": "POKEMONBREEDER_F:Miss Zesty",
+                "display": "Developer Miss Zesty",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FAIRYTALEGIRL:Emmi",
+        "trainer": "Developer Emmi",
+        "cursed": false,
+        "rating": 1596.11,
+        "se": 33.52,
+        "ciLow": 1530.41,
+        "ciHigh": 1661.81,
+        "wins": 94,
+        "losses": 60,
+        "draws": 0,
+        "battles": 154,
+        "rank": 46,
+        "overlap": 36,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6103896103896104,
+            "draw": 0.0,
+            "loss": 0.38961038961038963
+        },
+        "bestWin": {
+            "rating": 1761.7,
+            "seed": 1816619632,
+            "opponent": {
+                "label": "POKEMONTRAINER_Yezera:Yezera#11",
+                "display": "Pok\u00e9mon Trainer Yezera #6",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1318.82,
+            "seed": 3298100761,
+            "opponent": {
+                "label": "IDEALTRAINER:of Conquest",
+                "display": "Ideal Trainer of Conquest",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TAPU_KOKO:Tapu Koko",
+        "trainer": "Guardian Deity Tapu Koko",
+        "cursed": false,
+        "rating": 1592.71,
+        "se": 33.58,
+        "ciLow": 1526.89,
+        "ciHigh": 1658.53,
+        "wins": 93,
+        "losses": 60,
+        "draws": 1,
+        "battles": 154,
+        "rank": 47,
+        "overlap": 37,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5832129655956781,
+            "draw": 0.04,
+            "loss": 0.3767870344043219
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 4215276789,
+            "opponent": {
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 3840704649,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LEADER_Bence:Bence#2",
+        "trainer": "Gym Leader Bence #2",
+        "cursed": false,
+        "rating": 1580.21,
+        "se": 33.34,
+        "ciLow": 1514.86,
+        "ciHigh": 1645.56,
+        "wins": 91,
+        "losses": 63,
+        "draws": 0,
+        "battles": 154,
+        "rank": 48,
+        "overlap": 42,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5909090909090909,
+            "draw": 0.0,
+            "loss": 0.4090909090909091
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 2676945459,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 2795088364,
+            "opponent": {
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LEADER_Helena:Helena#2",
+        "trainer": "Gym Leader Helena #2",
+        "cursed": false,
+        "rating": 1572.66,
+        "se": 33.37,
+        "ciLow": 1507.26,
+        "ciHigh": 1638.06,
+        "wins": 89,
+        "losses": 64,
+        "draws": 1,
+        "battles": 154,
+        "rank": 49,
+        "overlap": 43,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5581916406027865,
+            "draw": 0.04,
+            "loss": 0.40180835939721354
+        },
+        "bestWin": {
+            "rating": 1801.81,
+            "seed": 1070211660,
+            "opponent": {
+                "label": "TRAINER_Candy:Candy#1",
+                "display": "Pok\u00e9mon Trainer Candy #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 918434117,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Zain:Zain#2",
+        "trainer": "Your Brother Zain #2",
+        "cursed": false,
+        "rating": 1567.38,
+        "se": 33.32,
+        "ciLow": 1502.07,
+        "ciHigh": 1632.68,
+        "wins": 88,
+        "losses": 65,
+        "draws": 1,
+        "battles": 154,
+        "rank": 50,
+        "overlap": 49,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5519363093545635,
+            "draw": 0.04,
+            "loss": 0.4080636906454364
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 4048082976,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 244532501,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Eifion:Eifion#3",
+        "trainer": "Pok\u00e9mon Trainer Eifion #3",
+        "cursed": false,
+        "rating": 1565.09,
+        "se": 33.27,
+        "ciLow": 1499.88,
+        "ciHigh": 1630.3,
+        "wins": 88,
+        "losses": 65,
+        "draws": 1,
+        "battles": 154,
+        "rank": 51,
+        "overlap": 49,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5519363093545635,
+            "draw": 0.04,
+            "loss": 0.4080636906454364
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 601246590,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 2357015781,
+            "opponent": {
+                "label": "SPIRITGUARDIAN2:Sonya",
+                "display": "Spirit Guardian Sonya",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Praveen:Praveen",
+        "trainer": "Former Champion Praveen",
+        "cursed": false,
+        "rating": 1558.95,
+        "se": 33.16,
+        "ciLow": 1493.96,
+        "ciHigh": 1623.94,
+        "wins": 87,
+        "losses": 67,
+        "draws": 0,
+        "battles": 154,
+        "rank": 52,
+        "overlap": 49,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.564935064935065,
+            "draw": 0.0,
+            "loss": 0.43506493506493504
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 2614169673,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 2332905685,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LEADER_Bence:Bence#3",
+        "trainer": "Gym Leader Bence #2",
+        "cursed": true,
+        "rating": 1558.95,
+        "se": 33.16,
+        "ciLow": 1493.96,
+        "ciHigh": 1623.94,
+        "wins": 87,
+        "losses": 67,
+        "draws": 0,
+        "battles": 154,
+        "rank": 53,
+        "overlap": 49,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.564935064935065,
+            "draw": 0.0,
+            "loss": 0.43506493506493504
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 720920230,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 1383443627,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LEADER_Eko:Eko#2",
+        "trainer": "Gym Leader Eko #2",
+        "cursed": false,
+        "rating": 1558.95,
+        "se": 33.16,
+        "ciLow": 1493.96,
+        "ciHigh": 1623.94,
+        "wins": 87,
+        "losses": 67,
+        "draws": 0,
+        "battles": 154,
+        "rank": 54,
+        "overlap": 49,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.564935064935065,
+            "draw": 0.0,
+            "loss": 0.43506493506493504
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 3365791661,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 1369091756,
+            "opponent": {
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Freedom",
+        "trainer": "Ideal Trainer of Freedom",
+        "cursed": false,
+        "rating": 1557.52,
+        "se": 33.22,
+        "ciLow": 1492.41,
+        "ciHigh": 1622.63,
+        "wins": 86,
+        "losses": 67,
+        "draws": 1,
+        "battles": 154,
+        "rank": 55,
+        "overlap": 49,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5394256468581177,
+            "draw": 0.04,
+            "loss": 0.42057435314188224
+        },
+        "bestWin": {
+            "rating": 1720.98,
+            "seed": 1386443901,
+            "opponent": {
+                "label": "WAITRESS3:Destiny",
+                "display": "Developer Destiny",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1291.2,
+            "seed": 4249702185,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#20",
+                "display": "Masked Villain Teal [Eifion] #2",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#19",
+        "trainer": "Pok\u00e9mon Master Vanya #19",
+        "cursed": false,
+        "rating": 1556.49,
+        "se": 33.24,
+        "ciLow": 1491.33,
+        "ciHigh": 1621.65,
+        "wins": 86,
+        "losses": 67,
+        "draws": 1,
+        "battles": 154,
+        "rank": 56,
+        "overlap": 50,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5394256468581177,
+            "draw": 0.04,
+            "loss": 0.42057435314188224
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 3819419052,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 2682246744,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LEADER_Lambert:Lambert#3",
+        "trainer": "Gym Leader Lambert #2",
+        "cursed": true,
+        "rating": 1553.61,
+        "se": 33.12,
+        "ciLow": 1488.69,
+        "ciHigh": 1618.53,
+        "wins": 86,
+        "losses": 68,
+        "draws": 0,
+        "battles": 154,
+        "rank": 57,
+        "overlap": 52,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5584415584415584,
+            "draw": 0.0,
+            "loss": 0.44155844155844154
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 2986009068,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 3170900079,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Sang:Sang#4",
+        "trainer": "Pok\u00e9mon Trainer Sang #2",
+        "cursed": false,
+        "rating": 1553.61,
+        "se": 33.12,
+        "ciLow": 1488.69,
+        "ciHigh": 1618.53,
+        "wins": 86,
+        "losses": 68,
+        "draws": 0,
+        "battles": 154,
+        "rank": 58,
+        "overlap": 52,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5584415584415584,
+            "draw": 0.0,
+            "loss": 0.44155844155844154
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 1079746872,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 3308241395,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "HIKER:Valrex",
+        "trainer": "Developer Valrex",
+        "cursed": false,
+        "rating": 1548.27,
+        "se": 33.09,
+        "ciLow": 1483.41,
+        "ciHigh": 1613.13,
+        "wins": 85,
+        "losses": 69,
+        "draws": 0,
+        "battles": 154,
+        "rank": 59,
+        "overlap": 50,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.551948051948052,
+            "draw": 0.0,
+            "loss": 0.44805194805194803
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 735403534,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1310.76,
+            "seed": 2590150408,
+            "opponent": {
+                "label": "JUGGLER:Brickbat",
+                "display": "Developer Brickbat",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "KATY:Manycrows",
+        "trainer": "Developer Manycrows",
+        "cursed": false,
+        "rating": 1548.27,
+        "se": 33.09,
+        "ciLow": 1483.41,
+        "ciHigh": 1613.13,
+        "wins": 85,
+        "losses": 69,
+        "draws": 0,
+        "battles": 154,
+        "rank": 60,
+        "overlap": 50,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.551948051948052,
+            "draw": 0.0,
+            "loss": 0.44805194805194803
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 3782130271,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 2090867546,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ARCHFRIEND_Lainie:Lainie",
+        "trainer": "Archfriend Lainie",
+        "cursed": false,
+        "rating": 1545.94,
+        "se": 33.18,
+        "ciLow": 1480.91,
+        "ciHigh": 1610.96,
+        "wins": 84,
+        "losses": 69,
+        "draws": 1,
+        "battles": 154,
+        "rank": 61,
+        "overlap": 49,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5269149843616718,
+            "draw": 0.04,
+            "loss": 0.43308501563832813
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 3692558514,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1335.48,
+            "seed": 553450196,
+            "opponent": {
+                "label": "POKEMONBREEDER_F:Miss Zesty",
+                "display": "Developer Miss Zesty",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#17",
+        "trainer": "Masked Villain Teal [Skyler] #2",
+        "cursed": true,
+        "rating": 1542.91,
+        "se": 33.06,
+        "ciLow": 1478.11,
+        "ciHigh": 1607.72,
+        "wins": 84,
+        "losses": 70,
+        "draws": 0,
+        "battles": 154,
+        "rank": 62,
+        "overlap": 53,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5454545454545454,
+            "draw": 0.0,
+            "loss": 0.45454545454545453
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 1668971660,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 3691381177,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ANOTHERPOSSIBLETAMARIND:Tamarind#1",
+        "trainer": "Another Possible Tamarind #2",
+        "cursed": false,
+        "rating": 1533.59,
+        "se": 33.11,
+        "ciLow": 1468.7,
+        "ciHigh": 1598.48,
+        "wins": 82,
+        "losses": 71,
+        "draws": 1,
+        "battles": 154,
+        "rank": 63,
+        "overlap": 49,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.514404321865226,
+            "draw": 0.04,
+            "loss": 0.44559567813477396
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 3499383485,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 920252873,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "SUPERNERD:Agentbla",
+        "trainer": "Developer Agentbla",
+        "cursed": false,
+        "rating": 1532.18,
+        "se": 33.02,
+        "ciLow": 1467.45,
+        "ciHigh": 1596.9,
+        "wins": 82,
+        "losses": 72,
+        "draws": 0,
+        "battles": 154,
+        "rank": 64,
+        "overlap": 50,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5324675324675324,
+            "draw": 0.0,
+            "loss": 0.4675324675324675
+        },
+        "bestWin": {
+            "rating": 1801.81,
+            "seed": 2438811347,
+            "opponent": {
+                "label": "TRAINER_Candy:Candy#1",
+                "display": "Pok\u00e9mon Trainer Candy #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 1936551735,
+            "opponent": {
+                "label": "SPIRITGUARDIAN2:Sonya",
+                "display": "Spirit Guardian Sonya",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "PROFESSOR_Tamarind:Tamarind",
+        "trainer": "Professor Tamarind",
+        "cursed": false,
+        "rating": 1530.07,
+        "se": 33.11,
+        "ciLow": 1465.18,
+        "ciHigh": 1594.96,
+        "wins": 81,
+        "losses": 72,
+        "draws": 1,
+        "battles": 154,
+        "rank": 65,
+        "overlap": 49,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5081489906170031,
+            "draw": 0.04,
+            "loss": 0.4518510093829969
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 2836281035,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1291.2,
+            "seed": 3339657868,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#20",
+                "display": "Masked Villain Teal [Eifion] #2",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "DELINQUENT:Lilypad",
+        "trainer": "Developer Lilypad",
+        "cursed": false,
+        "rating": 1526.8,
+        "se": 33.01,
+        "ciLow": 1462.1,
+        "ciHigh": 1591.5,
+        "wins": 81,
+        "losses": 73,
+        "draws": 0,
+        "battles": 154,
+        "rank": 66,
+        "overlap": 50,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.525974025974026,
+            "draw": 0.0,
+            "loss": 0.474025974025974
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 2247705630,
+            "opponent": {
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 2089480267,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TAPU_LELE:Tapu Lele#1",
+        "trainer": "Guardian Deity Tapu Lele",
+        "cursed": true,
+        "rating": 1524.1,
+        "se": 33.13,
+        "ciLow": 1459.17,
+        "ciHigh": 1589.04,
+        "wins": 79,
+        "losses": 73,
+        "draws": 1,
+        "battles": 153,
+        "rank": 67,
+        "overlap": 50,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.49888952489982835,
+            "draw": 0.04,
+            "loss": 0.4611104751001717
+        },
+        "bestWin": {
+            "rating": 1761.7,
+            "seed": 3665609450,
+            "opponent": {
+                "label": "POKEMONTRAINER_Yezera:Yezera#11",
+                "display": "Pok\u00e9mon Trainer Yezera #6",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1310.76,
+            "seed": 4136044350,
+            "opponent": {
+                "label": "JUGGLER:Brickbat",
+                "display": "Developer Brickbat",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "HARLEQUIN:Minty",
+        "trainer": "Developer Minty",
+        "cursed": false,
+        "rating": 1521.41,
+        "se": 33.0,
+        "ciLow": 1456.74,
+        "ciHigh": 1586.09,
+        "wins": 80,
+        "losses": 74,
+        "draws": 0,
+        "battles": 154,
+        "rank": 68,
+        "overlap": 53,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5194805194805194,
+            "draw": 0.0,
+            "loss": 0.4805194805194805
+        },
+        "bestWin": {
+            "rating": 1690.72,
+            "seed": 1929167080,
+            "opponent": {
+                "label": "POKEMONCHAMPION_Vanya:Vanya",
+                "display": "Champion Vanya",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 2679115558,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LEADER_Lambert:Lambert#2",
+        "trainer": "Gym Leader Lambert #2",
+        "cursed": false,
+        "rating": 1516.02,
+        "se": 32.99,
+        "ciLow": 1451.36,
+        "ciHigh": 1580.69,
+        "wins": 79,
+        "losses": 75,
+        "draws": 0,
+        "battles": 154,
+        "rank": 69,
+        "overlap": 55,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.512987012987013,
+            "draw": 0.0,
+            "loss": 0.487012987012987
+        },
+        "bestWin": {
+            "rating": 1786.16,
+            "seed": 2311202116,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#23",
+                "display": "Masked Villain Teal [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 3254504025,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#17",
+        "trainer": "Pok\u00e9mon Master Vanya #17",
+        "cursed": false,
+        "rating": 1516.02,
+        "se": 32.99,
+        "ciLow": 1451.36,
+        "ciHigh": 1580.69,
+        "wins": 79,
+        "losses": 75,
+        "draws": 0,
+        "battles": 154,
+        "rank": 70,
+        "overlap": 55,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.512987012987013,
+            "draw": 0.0,
+            "loss": 0.487012987012987
+        },
+        "bestWin": {
+            "rating": 1778.55,
+            "seed": 2372079728,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#22",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 3759606791,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2_DOUBLE:Teal#12",
+        "trainer": "Masked Villains Teal [Imogene] #2",
+        "cursed": false,
+        "rating": 1513.34,
+        "se": 33.09,
+        "ciLow": 1448.48,
+        "ciHigh": 1578.21,
+        "wins": 78,
+        "losses": 75,
+        "draws": 1,
+        "battles": 154,
+        "rank": 71,
+        "overlap": 55,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.48938299687233433,
+            "draw": 0.04,
+            "loss": 0.47061700312766563
+        },
+        "bestWin": {
+            "rating": 1742.49,
+            "seed": 75710175,
+            "opponent": {
+                "label": "SHADOWMAVIS:Mavis#1",
+                "display": "Shadow Mavis #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 1526276053,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#12",
+                "display": "Pok\u00e9mon Master Vanya #12",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ANOTHERPOSSIBLETAMARIND:Tamarind",
+        "trainer": "Another Possible Tamarind #1",
+        "cursed": false,
+        "rating": 1510.63,
+        "se": 32.99,
+        "ciLow": 1445.97,
+        "ciHigh": 1575.29,
+        "wins": 78,
+        "losses": 76,
+        "draws": 0,
+        "battles": 154,
+        "rank": 72,
+        "overlap": 55,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5064935064935064,
+            "draw": 0.0,
+            "loss": 0.4935064935064935
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 1189869903,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 929106811,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "GUITARIST3:Envy",
+        "trainer": "Developer Envy",
+        "cursed": false,
+        "rating": 1510.63,
+        "se": 32.99,
+        "ciLow": 1445.97,
+        "ciHigh": 1575.29,
+        "wins": 78,
+        "losses": 76,
+        "draws": 0,
+        "battles": 154,
+        "rank": 73,
+        "overlap": 55,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5064935064935064,
+            "draw": 0.0,
+            "loss": 0.4935064935064935
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 133257020,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1294.64,
+            "seed": 3835535736,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya",
+                "display": "Pok\u00e9mon Master Vanya #1",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#18",
+        "trainer": "Pok\u00e9mon Master Vanya #18",
+        "cursed": false,
+        "rating": 1510.63,
+        "se": 32.99,
+        "ciLow": 1445.97,
+        "ciHigh": 1575.29,
+        "wins": 78,
+        "losses": 76,
+        "draws": 0,
+        "battles": 154,
+        "rank": 74,
+        "overlap": 55,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5064935064935064,
+            "draw": 0.0,
+            "loss": 0.4935064935064935
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 1964922618,
+            "opponent": {
+                "label": "HEXMANIAC:Errata",
+                "display": "Developer Errata",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1297.82,
+            "seed": 1309420698,
+            "opponent": {
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "SPIRITGUARDIAN4:Brigitte",
+        "trainer": "Spirit Guardian Brigitte",
+        "cursed": false,
+        "rating": 1510.63,
+        "se": 32.99,
+        "ciLow": 1445.97,
+        "ciHigh": 1575.29,
+        "wins": 78,
+        "losses": 76,
+        "draws": 0,
+        "battles": 154,
+        "rank": 75,
+        "overlap": 55,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5064935064935064,
+            "draw": 0.0,
+            "loss": 0.4935064935064935
+        },
+        "bestWin": {
+            "rating": 2042.36,
+            "seed": 3638689575,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
+                "display": "Another Possible Rafael",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 3821111158,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#5",
+        "trainer": "Pok\u00e9mon Master Vanya #5",
+        "cursed": false,
+        "rating": 1507.91,
+        "se": 33.09,
+        "ciLow": 1443.05,
+        "ciHigh": 1572.78,
+        "wins": 77,
+        "losses": 76,
+        "draws": 1,
+        "battles": 154,
+        "rank": 76,
+        "overlap": 56,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.48312766562411147,
+            "draw": 0.04,
+            "loss": 0.47687233437588855
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 2917613128,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 1639264389,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "DRAGONTAMER_F:Zinnia",
+        "trainer": "Developer Zinnia",
+        "cursed": false,
+        "rating": 1505.23,
+        "se": 32.99,
+        "ciLow": 1440.56,
+        "ciHigh": 1569.9,
+        "wins": 77,
+        "losses": 77,
+        "draws": 0,
+        "battles": 154,
+        "rank": 77,
+        "overlap": 58,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5,
+            "draw": 0.0,
+            "loss": 0.5
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 24495830,
+            "opponent": {
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 2217051861,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#16",
+        "trainer": "Masked Villain Teal [Skyler] #2",
+        "cursed": false,
+        "rating": 1505.23,
+        "se": 32.99,
+        "ciLow": 1440.56,
+        "ciHigh": 1569.9,
+        "wins": 77,
+        "losses": 77,
+        "draws": 0,
+        "battles": 154,
+        "rank": 78,
+        "overlap": 58,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5,
+            "draw": 0.0,
+            "loss": 0.5
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 3943228286,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1294.64,
+            "seed": 2029618875,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya",
+                "display": "Pok\u00e9mon Master Vanya #1",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#15",
+        "trainer": "Masked Villain Crimson [Alessa] #2",
+        "cursed": true,
+        "rating": 1505.23,
+        "se": 32.99,
+        "ciLow": 1440.56,
+        "ciHigh": 1569.9,
+        "wins": 77,
+        "losses": 77,
+        "draws": 0,
+        "battles": 154,
+        "rank": 79,
+        "overlap": 58,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5,
+            "draw": 0.0,
+            "loss": 0.5
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 2829636248,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 3767712481,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#17",
+        "trainer": "Masked Villain Crimson [Skyler] #2",
+        "cursed": true,
+        "rating": 1505.23,
+        "se": 32.99,
+        "ciLow": 1440.56,
+        "ciHigh": 1569.9,
+        "wins": 77,
+        "losses": 77,
+        "draws": 0,
+        "battles": 154,
+        "rank": 80,
+        "overlap": 58,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5,
+            "draw": 0.0,
+            "loss": 0.5
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 3993359077,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 998823274,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Zain:Zain#3",
+        "trainer": "Your Brother Zain #2",
+        "cursed": true,
+        "rating": 1505.23,
+        "se": 32.99,
+        "ciLow": 1440.56,
+        "ciHigh": 1569.9,
+        "wins": 77,
+        "losses": 77,
+        "draws": 0,
+        "battles": 154,
+        "rank": 81,
+        "overlap": 58,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5,
+            "draw": 0.0,
+            "loss": 0.5
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 1913526643,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 2511414630,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TAPU_KOKO:Tapu Koko#1",
+        "trainer": "Guardian Deity Tapu Koko",
+        "cursed": true,
+        "rating": 1502.61,
+        "se": 33.1,
+        "ciLow": 1437.74,
+        "ciHigh": 1567.48,
+        "wins": 76,
+        "losses": 77,
+        "draws": 1,
+        "battles": 154,
+        "rank": 82,
+        "overlap": 58,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.47687233437588855,
+            "draw": 0.04,
+            "loss": 0.48312766562411147
+        },
+        "bestWin": {
+            "rating": 1801.81,
+            "seed": 4045156518,
+            "opponent": {
+                "label": "TRAINER_Candy:Candy#1",
+                "display": "Pok\u00e9mon Trainer Candy #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1324.68,
+            "seed": 904851249,
+            "opponent": {
+                "label": "IDEALTRAINER:of Tradition",
+                "display": "Ideal Trainer of Tradition",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Brilliance",
+        "trainer": "Ideal Trainer of Brilliance",
+        "cursed": false,
+        "rating": 1502.33,
+        "se": 33.1,
+        "ciLow": 1437.46,
+        "ciHigh": 1567.2,
+        "wins": 76,
+        "losses": 77,
+        "draws": 1,
+        "battles": 154,
+        "rank": 83,
+        "overlap": 57,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.47687233437588855,
+            "draw": 0.04,
+            "loss": 0.48312766562411147
+        },
+        "bestWin": {
+            "rating": 1735.65,
+            "seed": 856107627,
+            "opponent": {
+                "label": "SPIRITGUARDIAN3:Preeti",
+                "display": "Spirit Guardian Preeti",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 3621233547,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TAPU_LELE:Tapu Lele",
+        "trainer": "Guardian Deity Tapu Lele",
+        "cursed": false,
+        "rating": 1499.83,
+        "se": 33.0,
+        "ciLow": 1435.15,
+        "ciHigh": 1564.51,
+        "wins": 76,
+        "losses": 78,
+        "draws": 0,
+        "battles": 154,
+        "rank": 84,
+        "overlap": 58,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4935064935064935,
+            "draw": 0.0,
+            "loss": 0.5064935064935064
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 2109957937,
+            "opponent": {
+                "label": "HEXMANIAC:Errata",
+                "display": "Developer Errata",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 3004256512,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#15",
+        "trainer": "Masked Villain Teal [Alessa] #2",
+        "cursed": true,
+        "rating": 1497.15,
+        "se": 33.11,
+        "ciLow": 1432.26,
+        "ciHigh": 1562.04,
+        "wins": 75,
+        "losses": 78,
+        "draws": 1,
+        "battles": 154,
+        "rank": 85,
+        "overlap": 58,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.47061700312766563,
+            "draw": 0.04,
+            "loss": 0.48938299687233433
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 3039173585,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 3611804170,
+            "opponent": {
+                "label": "SPIRITGUARDIAN2:Sonya",
+                "display": "Spirit Guardian Sonya",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Skyler:Skyler",
+        "trainer": "Pok\u00e9mon Trainer Skyler",
+        "cursed": false,
+        "rating": 1491.72,
+        "se": 33.12,
+        "ciLow": 1426.8,
+        "ciHigh": 1556.63,
+        "wins": 74,
+        "losses": 79,
+        "draws": 1,
+        "battles": 154,
+        "rank": 86,
+        "overlap": 54,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4643616718794427,
+            "draw": 0.04,
+            "loss": 0.4956383281205573
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 530358033,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1291.2,
+            "seed": 783543880,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#20",
+                "display": "Masked Villain Teal [Eifion] #2",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#21",
+        "trainer": "Pok\u00e9mon Master Vanya #21",
+        "cursed": false,
+        "rating": 1489.04,
+        "se": 33.02,
+        "ciLow": 1424.31,
+        "ciHigh": 1553.77,
+        "wins": 74,
+        "losses": 80,
+        "draws": 0,
+        "battles": 154,
+        "rank": 87,
+        "overlap": 54,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4805194805194805,
+            "draw": 0.0,
+            "loss": 0.5194805194805194
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 170343001,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 1982524434,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Alessa:Alessa#3",
+        "trainer": "Pok\u00e9mon Trainer Alessa #3",
+        "cursed": false,
+        "rating": 1489.04,
+        "se": 33.02,
+        "ciLow": 1424.31,
+        "ciHigh": 1553.77,
+        "wins": 74,
+        "losses": 80,
+        "draws": 0,
+        "battles": 154,
+        "rank": 88,
+        "overlap": 54,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4805194805194805,
+            "draw": 0.0,
+            "loss": 0.5194805194805194
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 562545281,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 735332341,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "CHALLENGER_Vanya:Vanya#8",
+        "trainer": "Challenger Vanya #9",
+        "cursed": false,
+        "rating": 1479.54,
+        "se": 33.13,
+        "ciLow": 1414.61,
+        "ciHigh": 1544.47,
+        "wins": 72,
+        "losses": 81,
+        "draws": 1,
+        "battles": 154,
+        "rank": 89,
+        "overlap": 53,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4518510093829969,
+            "draw": 0.04,
+            "loss": 0.5081489906170031
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 4213405499,
+            "opponent": {
+                "label": "HEXMANIAC:Errata",
+                "display": "Developer Errata",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 3430757433,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#14",
+        "trainer": "Pok\u00e9mon Master Vanya #14",
+        "cursed": false,
+        "rating": 1479.23,
+        "se": 33.25,
+        "ciLow": 1414.06,
+        "ciHigh": 1544.41,
+        "wins": 71,
+        "losses": 81,
+        "draws": 2,
+        "battles": 154,
+        "rank": 90,
+        "overlap": 53,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.44849942726231384,
+            "draw": 0.04,
+            "loss": 0.5115005727376861
+        },
+        "bestWin": {
+            "rating": 1690.72,
+            "seed": 2115290566,
+            "opponent": {
+                "label": "POKEMONCHAMPION_Vanya:Vanya",
+                "display": "Champion Vanya",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 260425870,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "JANITOR:Steeb",
+        "trainer": "Developer Steeb",
+        "cursed": false,
+        "rating": 1478.26,
+        "se": 33.07,
+        "ciLow": 1413.45,
+        "ciHigh": 1543.07,
+        "wins": 72,
+        "losses": 82,
+        "draws": 0,
+        "battles": 154,
+        "rank": 91,
+        "overlap": 54,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4675324675324675,
+            "draw": 0.0,
+            "loss": 0.5324675324675324
+        },
+        "bestWin": {
+            "rating": 1761.7,
+            "seed": 3704785237,
+            "opponent": {
+                "label": "POKEMONTRAINER_Yezera:Yezera#11",
+                "display": "Pok\u00e9mon Trainer Yezera #6",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 3440713293,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Keoni:Keoni#2",
+        "trainer": "Pok\u00e9mon Trainer Keoni #3",
+        "cursed": false,
+        "rating": 1478.26,
+        "se": 33.07,
+        "ciLow": 1413.45,
+        "ciHigh": 1543.07,
+        "wins": 72,
+        "losses": 82,
+        "draws": 0,
+        "battles": 154,
+        "rank": 92,
+        "overlap": 54,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4675324675324675,
+            "draw": 0.0,
+            "loss": 0.5324675324675324
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 420214752,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 1076399049,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "WAITRESS2:Fanfan",
+        "trainer": "Developer Fanfan",
+        "cursed": false,
+        "rating": 1474.77,
+        "se": 33.17,
+        "ciLow": 1409.76,
+        "ciHigh": 1539.78,
+        "wins": 71,
+        "losses": 82,
+        "draws": 1,
+        "battles": 154,
+        "rank": 93,
+        "overlap": 53,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.44559567813477396,
+            "draw": 0.04,
+            "loss": 0.514404321865226
+        },
+        "bestWin": {
+            "rating": 1737.36,
+            "seed": 3263183359,
+            "opponent": {
+                "label": "TOURISTM:Chus",
+                "display": "Developer Chus",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 2200574289,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#3",
+        "trainer": "Pok\u00e9mon Master Vanya #3",
+        "cursed": false,
+        "rating": 1472.88,
+        "se": 33.09,
+        "ciLow": 1408.01,
+        "ciHigh": 1537.74,
+        "wins": 71,
+        "losses": 83,
+        "draws": 0,
+        "battles": 154,
+        "rank": 94,
+        "overlap": 53,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.461038961038961,
+            "draw": 0.0,
+            "loss": 0.538961038961039
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 3742740046,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 3098853235,
+            "opponent": {
+                "label": "SPIRITGUARDIAN2:Sonya",
+                "display": "Spirit Guardian Sonya",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "RICHBOY4:Darlvon",
+        "trainer": "Developer Darlvon",
+        "cursed": false,
+        "rating": 1472.32,
+        "se": 33.3,
+        "ciLow": 1407.05,
+        "ciHigh": 1537.58,
+        "wins": 70,
+        "losses": 82,
+        "draws": 2,
+        "battles": 154,
+        "rank": 95,
+        "overlap": 53,
+        "tier": "B-",
+        "tierColor": [
+            255,
+            255,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.44219931271477664,
+            "draw": 0.04,
+            "loss": 0.5178006872852233
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 3373685563,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 1708767441,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN_DOUBLE:Crimson#12",
+        "trainer": "Masked Villains Crimson [Imogene] #2",
+        "cursed": false,
+        "rating": 1467.5,
+        "se": 33.13,
+        "ciLow": 1402.57,
+        "ciHigh": 1532.43,
+        "wins": 70,
+        "losses": 84,
+        "draws": 0,
+        "battles": 154,
+        "rank": 96,
+        "overlap": 52,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.45454545454545453,
+            "draw": 0.0,
+            "loss": 0.5454545454545454
+        },
+        "bestWin": {
+            "rating": 1742.49,
+            "seed": 1978525334,
+            "opponent": {
+                "label": "SHADOWMAVIS:Mavis#1",
+                "display": "Shadow Mavis #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 3514013372,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#12",
+                "display": "Pok\u00e9mon Master Vanya #12",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#11",
+        "trainer": "Pok\u00e9mon Master Vanya #11",
+        "cursed": false,
+        "rating": 1462.13,
+        "se": 33.16,
+        "ciLow": 1397.13,
+        "ciHigh": 1527.13,
+        "wins": 69,
+        "losses": 85,
+        "draws": 0,
+        "battles": 154,
+        "rank": 97,
+        "overlap": 54,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.44805194805194803,
+            "draw": 0.0,
+            "loss": 0.551948051948052
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 3904910756,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 678058784,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#12",
+                "display": "Pok\u00e9mon Master Vanya #12",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "RICHBOY:Splitmoon",
+        "trainer": "Developer Splitmoon",
+        "cursed": false,
+        "rating": 1462.13,
+        "se": 33.16,
+        "ciLow": 1397.13,
+        "ciHigh": 1527.13,
+        "wins": 69,
+        "losses": 85,
+        "draws": 0,
+        "battles": 154,
+        "rank": 98,
+        "overlap": 54,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.44805194805194803,
+            "draw": 0.0,
+            "loss": 0.551948051948052
+        },
+        "bestWin": {
+            "rating": 1737.36,
+            "seed": 2687024868,
+            "opponent": {
+                "label": "TOURISTM:Chus",
+                "display": "Developer Chus",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 2197526200,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#14",
+        "trainer": "Masked Villain Teal [Alessa] #2",
+        "cursed": false,
+        "rating": 1456.76,
+        "se": 33.2,
+        "ciLow": 1391.68,
+        "ciHigh": 1521.84,
+        "wins": 68,
+        "losses": 86,
+        "draws": 0,
+        "battles": 154,
+        "rank": 99,
+        "overlap": 52,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.44155844155844154,
+            "draw": 0.0,
+            "loss": 0.5584415584415584
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 2906061358,
+            "opponent": {
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 563683193,
+            "opponent": {
+                "label": "SPIRITGUARDIAN2:Sonya",
+                "display": "Spirit Guardian Sonya",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#16",
+        "trainer": "Masked Villain Crimson [Skyler] #2",
+        "cursed": false,
+        "rating": 1456.76,
+        "se": 33.2,
+        "ciLow": 1391.68,
+        "ciHigh": 1521.84,
+        "wins": 68,
+        "losses": 86,
+        "draws": 0,
+        "battles": 154,
+        "rank": 100,
+        "overlap": 52,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.44155844155844154,
+            "draw": 0.0,
+            "loss": 0.5584415584415584
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 1942797449,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 109926294,
+            "opponent": {
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Imogene_A:Imogene#1",
+        "trainer": "Pok\u00e9mon Trainer Imogene #2",
+        "cursed": false,
+        "rating": 1456.76,
+        "se": 33.2,
+        "ciLow": 1391.68,
+        "ciHigh": 1521.84,
+        "wins": 68,
+        "losses": 86,
+        "draws": 0,
+        "battles": 154,
+        "rank": 101,
+        "overlap": 52,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.44155844155844154,
+            "draw": 0.0,
+            "loss": 0.5584415584415584
+        },
+        "bestWin": {
+            "rating": 1786.16,
+            "seed": 3085570261,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#23",
+                "display": "Masked Villain Teal [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 2017373211,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#19",
+        "trainer": "Masked Villain Crimson [Keoni] #2",
+        "cursed": true,
+        "rating": 1454.58,
+        "se": 33.37,
+        "ciLow": 1389.17,
+        "ciHigh": 1519.98,
+        "wins": 67,
+        "losses": 85,
+        "draws": 2,
+        "battles": 154,
+        "rank": 102,
+        "overlap": 51,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4232989690721649,
+            "draw": 0.04,
+            "loss": 0.536701030927835
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 2040383512,
+            "opponent": {
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 1573782751,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "COOLTRAINER_M3:Dada",
+        "trainer": "Developer Dada",
+        "cursed": false,
+        "rating": 1453.72,
+        "se": 33.33,
+        "ciLow": 1388.4,
+        "ciHigh": 1519.04,
+        "wins": 67,
+        "losses": 86,
+        "draws": 1,
+        "battles": 154,
+        "rank": 103,
+        "overlap": 51,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.42057435314188224,
+            "draw": 0.04,
+            "loss": 0.5394256468581177
+        },
+        "bestWin": {
+            "rating": 1816.59,
+            "seed": 1508577633,
+            "opponent": {
+                "label": "MASKEDVILLAIN:Crimson#23",
+                "display": "Masked Villain Crimson [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 2003471664,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#14",
+        "trainer": "Masked Villain Crimson [Alessa] #2",
+        "cursed": false,
+        "rating": 1450.62,
+        "se": 33.32,
+        "ciLow": 1385.32,
+        "ciHigh": 1515.93,
+        "wins": 66,
+        "losses": 87,
+        "draws": 1,
+        "battles": 154,
+        "rank": 104,
+        "overlap": 51,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4143190218936593,
+            "draw": 0.04,
+            "loss": 0.5456809781063406
+        },
+        "bestWin": {
+            "rating": 1684.68,
+            "seed": 4097379747,
+            "opponent": {
+                "label": "PUNKM:ValourDyke",
+                "display": "Developer ValourDyke",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 2717157936,
+            "opponent": {
+                "label": "SPIRITGUARDIAN2:Sonya",
+                "display": "Spirit Guardian Sonya",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ROUGHNECK2:Jaggedthorn",
+        "trainer": "Developer Jaggedthorn",
+        "cursed": false,
+        "rating": 1444.61,
+        "se": 33.4,
+        "ciLow": 1379.15,
+        "ciHigh": 1510.07,
+        "wins": 65,
+        "losses": 88,
+        "draws": 1,
+        "battles": 154,
+        "rank": 105,
+        "overlap": 46,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4080636906454364,
+            "draw": 0.04,
+            "loss": 0.5519363093545635
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 2193129717,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 3925704250,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#19",
+        "trainer": "Masked Villain Teal [Keoni] #2",
+        "cursed": true,
+        "rating": 1441.59,
+        "se": 33.39,
+        "ciLow": 1376.14,
+        "ciHigh": 1507.03,
+        "wins": 65,
+        "losses": 88,
+        "draws": 1,
+        "battles": 154,
+        "rank": 106,
+        "overlap": 46,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4080636906454364,
+            "draw": 0.04,
+            "loss": 0.5519363093545635
+        },
+        "bestWin": {
+            "rating": 1722.29,
+            "seed": 1736913258,
+            "opponent": {
+                "label": "NIGHTMAREQUEEN_Elise:Elise",
+                "display": "Nightmare Queen Elise",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 1283952118,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#1",
+        "trainer": "Pok\u00e9mon Master Vanya #2",
+        "cursed": false,
+        "rating": 1440.69,
+        "se": 33.35,
+        "ciLow": 1375.33,
+        "ciHigh": 1506.06,
+        "wins": 65,
+        "losses": 89,
+        "draws": 0,
+        "battles": 154,
+        "rank": 107,
+        "overlap": 48,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.42207792207792205,
+            "draw": 0.0,
+            "loss": 0.577922077922078
+        },
+        "bestWin": {
+            "rating": 1696.84,
+            "seed": 3876189905,
+            "opponent": {
+                "label": "ULTRALAINIE:Lainie",
+                "display": "Ultra Lainie",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 1271170906,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TRAINER_Eifion:Eifion#1",
+        "trainer": "Pok\u00e9mon Trainer Eifion #2",
+        "cursed": false,
+        "rating": 1440.69,
+        "se": 33.35,
+        "ciLow": 1375.33,
+        "ciHigh": 1506.06,
+        "wins": 65,
+        "losses": 89,
+        "draws": 0,
+        "battles": 154,
+        "rank": 108,
+        "overlap": 48,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.42207792207792205,
+            "draw": 0.0,
+            "loss": 0.577922077922078
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 3710567800,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#22",
+                "display": "Masked Villain Teal [Candy] #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 3991077542,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "DRAGONTAMER_F:Bella",
+        "trainer": "Developer Bella",
+        "cursed": false,
+        "rating": 1435.35,
+        "se": 33.41,
+        "ciLow": 1369.87,
+        "ciHigh": 1500.82,
+        "wins": 64,
+        "losses": 90,
+        "draws": 0,
+        "battles": 154,
+        "rank": 109,
+        "overlap": 43,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4155844155844156,
+            "draw": 0.0,
+            "loss": 0.5844155844155844
+        },
+        "bestWin": {
+            "rating": 1786.16,
+            "seed": 1463832272,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#23",
+                "display": "Masked Villain Teal [Candy] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 2560929393,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TAPU_FINI:Tapu Fini#1",
+        "trainer": "Guardian Deity Tapu Fini",
+        "cursed": true,
+        "rating": 1435.35,
+        "se": 33.41,
+        "ciLow": 1369.87,
+        "ciHigh": 1500.82,
+        "wins": 64,
+        "losses": 90,
+        "draws": 0,
+        "battles": 154,
+        "rank": 110,
+        "overlap": 43,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4155844155844156,
+            "draw": 0.0,
+            "loss": 0.5844155844155844
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 1050353862,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 2068891254,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#10",
+        "trainer": "Pok\u00e9mon Master Vanya #10",
+        "cursed": false,
+        "rating": 1424.65,
+        "se": 33.53,
+        "ciLow": 1358.92,
+        "ciHigh": 1490.37,
+        "wins": 62,
+        "losses": 92,
+        "draws": 0,
+        "battles": 154,
+        "rank": 111,
+        "overlap": 41,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4025974025974026,
+            "draw": 0.0,
+            "loss": 0.5974025974025974
+        },
+        "bestWin": {
+            "rating": 1801.81,
+            "seed": 986864453,
+            "opponent": {
+                "label": "TRAINER_Candy:Candy#1",
+                "display": "Pok\u00e9mon Trainer Candy #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1294.64,
+            "seed": 2198523041,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya",
+                "display": "Pok\u00e9mon Master Vanya #1",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "CLERK_M2:Papper",
+        "trainer": "Developer Papper",
+        "cursed": false,
+        "rating": 1419.29,
+        "se": 33.6,
+        "ciLow": 1353.42,
+        "ciHigh": 1485.16,
+        "wins": 61,
+        "losses": 93,
+        "draws": 0,
+        "battles": 154,
+        "rank": 112,
+        "overlap": 39,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.3961038961038961,
+            "draw": 0.0,
+            "loss": 0.6038961038961039
+        },
+        "bestWin": {
+            "rating": 1737.36,
+            "seed": 3927822340,
+            "opponent": {
+                "label": "TOURISTM:Chus",
+                "display": "Developer Chus",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 2571151651,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#21",
+        "trainer": "Masked Villain Crimson [Eifion] #2",
+        "cursed": true,
+        "rating": 1419.29,
+        "se": 33.6,
+        "ciLow": 1353.42,
+        "ciHigh": 1485.16,
+        "wins": 61,
+        "losses": 93,
+        "draws": 0,
+        "battles": 154,
+        "rank": 113,
+        "overlap": 39,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.3961038961038961,
+            "draw": 0.0,
+            "loss": 0.6038961038961039
+        },
+        "bestWin": {
+            "rating": 1735.65,
+            "seed": 1841850512,
+            "opponent": {
+                "label": "SPIRITGUARDIAN3:Preeti",
+                "display": "Spirit Guardian Preeti",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 3728217167,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#9",
+        "trainer": "Pok\u00e9mon Master Vanya #9",
+        "cursed": false,
+        "rating": 1419.29,
+        "se": 33.6,
+        "ciLow": 1353.42,
+        "ciHigh": 1485.16,
+        "wins": 61,
+        "losses": 93,
+        "draws": 0,
+        "battles": 154,
+        "rank": 114,
+        "overlap": 39,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.3961038961038961,
+            "draw": 0.0,
+            "loss": 0.6038961038961039
+        },
+        "bestWin": {
+            "rating": 1696.84,
+            "seed": 3790698201,
+            "opponent": {
+                "label": "ULTRALAINIE:Lainie",
+                "display": "Ultra Lainie",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 1517262971,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "TAPU_FINI:Tapu Fini",
+        "trainer": "Guardian Deity Tapu Fini",
+        "cursed": false,
+        "rating": 1415.7,
+        "se": 33.74,
+        "ciLow": 1349.57,
+        "ciHigh": 1481.83,
+        "wins": 60,
+        "losses": 93,
+        "draws": 1,
+        "battles": 154,
+        "rank": 115,
+        "overlap": 40,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.3767870344043219,
+            "draw": 0.04,
+            "loss": 0.5832129655956781
+        },
+        "bestWin": {
+            "rating": 1690.72,
+            "seed": 3394982145,
+            "opponent": {
+                "label": "POKEMONCHAMPION_Vanya:Vanya",
+                "display": "Champion Vanya",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1270.63,
+            "seed": 2578949794,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#12",
+                "display": "Pok\u00e9mon Master Vanya #12",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#18",
+        "trainer": "Masked Villain Crimson [Keoni] #2",
+        "cursed": false,
+        "rating": 1413.93,
+        "se": 33.68,
+        "ciLow": 1347.91,
+        "ciHigh": 1479.94,
+        "wins": 60,
+        "losses": 94,
+        "draws": 0,
+        "battles": 154,
+        "rank": 116,
+        "overlap": 40,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.38961038961038963,
+            "draw": 0.0,
+            "loss": 0.6103896103896104
+        },
+        "bestWin": {
+            "rating": 1690.72,
+            "seed": 1347020927,
+            "opponent": {
+                "label": "POKEMONCHAMPION_Vanya:Vanya",
+                "display": "Champion Vanya",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 291637192,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "GAMBLER:IgnitedxSoul",
+        "trainer": "Developer IgnitedxSoul",
+        "cursed": false,
+        "rating": 1399.75,
+        "se": 34.0,
+        "ciLow": 1333.11,
+        "ciHigh": 1466.39,
+        "wins": 57,
+        "losses": 96,
+        "draws": 1,
+        "battles": 154,
+        "rank": 117,
+        "overlap": 36,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.3580210406596531,
+            "draw": 0.04,
+            "loss": 0.6019789593403468
+        },
+        "bestWin": {
+            "rating": 1761.7,
+            "seed": 4204350086,
+            "opponent": {
+                "label": "POKEMONTRAINER_Yezera:Yezera#11",
+                "display": "Pok\u00e9mon Trainer Yezera #6",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 2878132799,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ANOTHERPOSSIBLEZAIN:Zain#1",
+        "trainer": "Another Possible Zain #2",
+        "cursed": false,
+        "rating": 1399.37,
+        "se": 33.99,
+        "ciLow": 1332.75,
+        "ciHigh": 1465.98,
+        "wins": 57,
+        "losses": 96,
+        "draws": 1,
+        "battles": 154,
+        "rank": 118,
+        "overlap": 36,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.3580210406596531,
+            "draw": 0.04,
+            "loss": 0.6019789593403468
+        },
+        "bestWin": {
+            "rating": 1639.04,
+            "seed": 1113840069,
+            "opponent": {
+                "label": "SEEKER_Nora:Nora#1",
+                "display": "Seeker Nora",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 1397403677,
+            "opponent": {
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Days",
+        "trainer": "Ideal Trainer of Days",
+        "cursed": false,
+        "rating": 1397.75,
+        "se": 33.93,
+        "ciLow": 1331.24,
+        "ciHigh": 1464.25,
+        "wins": 57,
+        "losses": 97,
+        "draws": 0,
+        "battles": 154,
+        "rank": 119,
+        "overlap": 36,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.37012987012987014,
+            "draw": 0.0,
+            "loss": 0.6298701298701299
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 2626816947,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 3668834530,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#21",
+        "trainer": "Masked Villain Teal [Eifion] #2",
+        "cursed": true,
+        "rating": 1397.75,
+        "se": 33.93,
+        "ciLow": 1331.24,
+        "ciHigh": 1464.25,
+        "wins": 57,
+        "losses": 97,
+        "draws": 0,
+        "battles": 154,
+        "rank": 120,
+        "overlap": 36,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.37012987012987014,
+            "draw": 0.0,
+            "loss": 0.6298701298701299
+        },
+        "bestWin": {
+            "rating": 1735.65,
+            "seed": 710504537,
+            "opponent": {
+                "label": "SPIRITGUARDIAN3:Preeti",
+                "display": "Spirit Guardian Preeti",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 3213140422,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Beauty",
+        "trainer": "Ideal Trainer of Beauty",
+        "cursed": false,
+        "rating": 1386.84,
+        "se": 34.13,
+        "ciLow": 1319.96,
+        "ciHigh": 1453.73,
+        "wins": 55,
+        "losses": 99,
+        "draws": 0,
+        "battles": 154,
+        "rank": 121,
+        "overlap": 31,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.35714285714285715,
+            "draw": 0.0,
+            "loss": 0.6428571428571429
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 3657702191,
+            "opponent": {
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 22097075,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#16",
+        "trainer": "Pok\u00e9mon Master Vanya #16",
+        "cursed": false,
+        "rating": 1386.84,
+        "se": 34.13,
+        "ciLow": 1319.96,
+        "ciHigh": 1453.73,
+        "wins": 55,
+        "losses": 99,
+        "draws": 0,
+        "battles": 154,
+        "rank": 122,
+        "overlap": 31,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.35714285714285715,
+            "draw": 0.0,
+            "loss": 0.6428571428571429
+        },
+        "bestWin": {
+            "rating": 1735.65,
+            "seed": 2029453235,
+            "opponent": {
+                "label": "SPIRITGUARDIAN3:Preeti",
+                "display": "Spirit Guardian Preeti",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 1499566822,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Casey:Casey",
+        "trainer": "Former Champion Casey",
+        "cursed": false,
+        "rating": 1376.52,
+        "se": 34.37,
+        "ciLow": 1309.14,
+        "ciHigh": 1443.89,
+        "wins": 53,
+        "losses": 100,
+        "draws": 1,
+        "battles": 154,
+        "rank": 123,
+        "overlap": 31,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.33299971566676145,
+            "draw": 0.04,
+            "loss": 0.6270002843332385
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 841879246,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 462692112,
+            "opponent": {
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "HEXMANIAC_1:Riptide#1",
+        "trainer": "Developer Riptide #2",
+        "cursed": false,
+        "rating": 1375.81,
+        "se": 34.34,
+        "ciLow": 1308.5,
+        "ciHigh": 1443.11,
+        "wins": 53,
+        "losses": 101,
+        "draws": 0,
+        "battles": 154,
+        "rank": 124,
+        "overlap": 31,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.34415584415584416,
+            "draw": 0.0,
+            "loss": 0.6558441558441559
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 3080271733,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#22",
+                "display": "Masked Villain Teal [Candy] #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 742158849,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "WORKER5:Jbsundown",
+        "trainer": "Developer Jbsundown",
+        "cursed": false,
+        "rating": 1375.81,
+        "se": 34.34,
+        "ciLow": 1308.5,
+        "ciHigh": 1443.11,
+        "wins": 53,
+        "losses": 101,
+        "draws": 0,
+        "battles": 154,
+        "rank": 125,
+        "overlap": 31,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.34415584415584416,
+            "draw": 0.0,
+            "loss": 0.6558441558441559
+        },
+        "bestWin": {
+            "rating": 1835.15,
+            "seed": 253617137,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 3612457261,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#18",
+        "trainer": "Masked Villain Teal [Keoni] #2",
+        "cursed": false,
+        "rating": 1370.22,
+        "se": 34.46,
+        "ciLow": 1302.69,
+        "ciHigh": 1437.76,
+        "wins": 52,
+        "losses": 102,
+        "draws": 0,
+        "battles": 154,
+        "rank": 126,
+        "overlap": 28,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.33766233766233766,
+            "draw": 0.0,
+            "loss": 0.6623376623376623
+        },
+        "bestWin": {
+            "rating": 1742.49,
+            "seed": 1143308447,
+            "opponent": {
+                "label": "SHADOWMAVIS:Mavis#1",
+                "display": "Shadow Mavis #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 3070332276,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#6",
+        "trainer": "Pok\u00e9mon Master Vanya #6",
+        "cursed": false,
+        "rating": 1370.22,
+        "se": 34.46,
+        "ciLow": 1302.69,
+        "ciHigh": 1437.76,
+        "wins": 52,
+        "losses": 102,
+        "draws": 0,
+        "battles": 154,
+        "rank": 127,
+        "overlap": 28,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.33766233766233766,
+            "draw": 0.0,
+            "loss": 0.6623376623376623
+        },
+        "bestWin": {
+            "rating": 1793.91,
+            "seed": 4196045165,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#3",
+                "display": "Pok\u00e9mon Trainer Vanya #4",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 1266355675,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#8",
+        "trainer": "Pok\u00e9mon Master Vanya #8",
+        "cursed": false,
+        "rating": 1364.59,
+        "se": 34.58,
+        "ciLow": 1296.81,
+        "ciHigh": 1432.36,
+        "wins": 51,
+        "losses": 103,
+        "draws": 0,
+        "battles": 154,
+        "rank": 128,
+        "overlap": 28,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.33116883116883117,
+            "draw": 0.0,
+            "loss": 0.6688311688311688
+        },
+        "bestWin": {
+            "rating": 1737.36,
+            "seed": 1618774676,
+            "opponent": {
+                "label": "TOURISTM:Chus",
+                "display": "Developer Chus",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 3585105672,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#15",
+        "trainer": "Pok\u00e9mon Master Vanya #15",
+        "cursed": false,
+        "rating": 1353.15,
+        "se": 34.84,
+        "ciLow": 1284.86,
+        "ciHigh": 1421.44,
+        "wins": 49,
+        "losses": 105,
+        "draws": 0,
+        "battles": 154,
+        "rank": 129,
+        "overlap": 29,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.3181818181818182,
+            "draw": 0.0,
+            "loss": 0.6818181818181818
+        },
+        "bestWin": {
+            "rating": 1617.4,
+            "seed": 2265499582,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLEALESSA:Alessa#1",
+                "display": "Another Possible Alessa #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 1750909776,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Riches",
+        "trainer": "Ideal Trainer of Riches",
+        "cursed": false,
+        "rating": 1347.33,
+        "se": 34.99,
+        "ciLow": 1278.76,
+        "ciHigh": 1415.9,
+        "wins": 48,
+        "losses": 106,
+        "draws": 0,
+        "battles": 154,
+        "rank": 130,
+        "overlap": 27,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.3116883116883117,
+            "draw": 0.0,
+            "loss": 0.6883116883116883
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 628420,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 3916997985,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#4",
+        "trainer": "Pok\u00e9mon Master Vanya #4",
+        "cursed": false,
+        "rating": 1347.33,
+        "se": 34.99,
+        "ciLow": 1278.76,
+        "ciHigh": 1415.9,
+        "wins": 48,
+        "losses": 106,
+        "draws": 0,
+        "battles": 154,
+        "rank": 131,
+        "overlap": 27,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.3116883116883117,
+            "draw": 0.0,
+            "loss": 0.6883116883116883
+        },
+        "bestWin": {
+            "rating": 1761.7,
+            "seed": 322624924,
+            "opponent": {
+                "label": "POKEMONTRAINER_Yezera:Yezera#11",
+                "display": "Pok\u00e9mon Trainer Yezera #6",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1263.54,
+            "seed": 2978289541,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#13",
+        "trainer": "Pok\u00e9mon Master Vanya #13",
+        "cursed": false,
+        "rating": 1341.44,
+        "se": 35.14,
+        "ciLow": 1272.58,
+        "ciHigh": 1410.31,
+        "wins": 47,
+        "losses": 107,
+        "draws": 0,
+        "battles": 154,
+        "rank": 132,
+        "overlap": 25,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.3051948051948052,
+            "draw": 0.0,
+            "loss": 0.6948051948051948
+        },
+        "bestWin": {
+            "rating": 1737.36,
+            "seed": 444851790,
+            "opponent": {
+                "label": "TOURISTM:Chus",
+                "display": "Developer Chus",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 3464603305,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONBREEDER_F:Miss Zesty",
+        "trainer": "Developer Miss Zesty",
+        "cursed": false,
+        "rating": 1335.48,
+        "se": 35.29,
+        "ciLow": 1266.3,
+        "ciHigh": 1404.66,
+        "wins": 46,
+        "losses": 108,
+        "draws": 0,
+        "battles": 154,
+        "rank": 133,
+        "overlap": 27,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.2987012987012987,
+            "draw": 0.0,
+            "loss": 0.7012987012987013
+        },
+        "bestWin": {
+            "rating": 1674.06,
+            "seed": 3195522566,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#1",
+                "display": "Pok\u00e9mon Trainer Vanya #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 1523520619,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Tradition",
+        "trainer": "Ideal Trainer of Tradition",
+        "cursed": false,
+        "rating": 1324.68,
+        "se": 35.69,
+        "ciLow": 1254.74,
+        "ciHigh": 1394.62,
+        "wins": 44,
+        "losses": 109,
+        "draws": 1,
+        "battles": 154,
+        "rank": 134,
+        "overlap": 26,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.2767017344327552,
+            "draw": 0.04,
+            "loss": 0.6832982655672448
+        },
+        "bestWin": {
+            "rating": 1742.49,
+            "seed": 1354350842,
+            "opponent": {
+                "label": "SHADOWMAVIS:Mavis#1",
+                "display": "Shadow Mavis #2",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 1913918816,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Conquest",
+        "trainer": "Ideal Trainer of Conquest",
+        "cursed": false,
+        "rating": 1318.82,
+        "se": 35.88,
+        "ciLow": 1248.49,
+        "ciHigh": 1389.15,
+        "wins": 43,
+        "losses": 110,
+        "draws": 1,
+        "battles": 154,
+        "rank": 135,
+        "overlap": 27,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.2704464031845323,
+            "draw": 0.04,
+            "loss": 0.6895535968154678
+        },
+        "bestWin": {
+            "rating": 1642.1,
+            "seed": 1121395381,
+            "opponent": {
+                "label": "FORMERCHAMP_Vincent:Vincent",
+                "display": "Former Champion Vincent",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 1635132803,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ANOTHERPOSSIBLEZAIN:Zain",
+        "trainer": "Another Possible Zain #1",
+        "cursed": false,
+        "rating": 1317.08,
+        "se": 35.82,
+        "ciLow": 1246.87,
+        "ciHigh": 1387.28,
+        "wins": 43,
+        "losses": 111,
+        "draws": 0,
+        "battles": 154,
+        "rank": 136,
+        "overlap": 27,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.2792207792207792,
+            "draw": 0.0,
+            "loss": 0.7207792207792207
+        },
+        "bestWin": {
+            "rating": 1639.04,
+            "seed": 4207799991,
+            "opponent": {
+                "label": "SEEKER_Nora:Nora#1",
+                "display": "Seeker Nora",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 658780347,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "JUGGLER:Brickbat",
+        "trainer": "Developer Brickbat",
+        "cursed": false,
+        "rating": 1310.76,
+        "se": 36.01,
+        "ciLow": 1240.17,
+        "ciHigh": 1381.35,
+        "wins": 42,
+        "losses": 112,
+        "draws": 0,
+        "battles": 154,
+        "rank": 137,
+        "overlap": 25,
+        "tier": "D+",
+        "tierColor": [
+            111,
+            210,
+            38
+        ],
+        "wldFractions": {
+            "win": 0.2727272727272727,
+            "draw": 0.0,
+            "loss": 0.7272727272727273
+        },
+        "bestWin": {
+            "rating": 1761.7,
+            "seed": 3066798679,
+            "opponent": {
+                "label": "POKEMONTRAINER_Yezera:Yezera#11",
+                "display": "Pok\u00e9mon Trainer Yezera #6",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 3498551759,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "GAMBLER:Tiki",
+        "trainer": "Developer Tiki",
+        "cursed": false,
+        "rating": 1297.82,
+        "se": 36.43,
+        "ciLow": 1226.42,
+        "ciHigh": 1369.23,
+        "wins": 40,
+        "losses": 114,
+        "draws": 0,
+        "battles": 154,
+        "rank": 138,
+        "overlap": 20,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.2597402597402597,
+            "draw": 0.0,
+            "loss": 0.7402597402597403
+        },
+        "bestWin": {
+            "rating": 1722.29,
+            "seed": 530419964,
+            "opponent": {
+                "label": "NIGHTMAREQUEEN_Elise:Elise",
+                "display": "Nightmare Queen Elise",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 1243967899,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#20",
+        "trainer": "Masked Villain Crimson [Eifion] #2",
+        "cursed": false,
+        "rating": 1297.82,
+        "se": 36.43,
+        "ciLow": 1226.42,
+        "ciHigh": 1369.23,
+        "wins": 40,
+        "losses": 114,
+        "draws": 0,
+        "battles": 154,
+        "rank": 139,
+        "overlap": 20,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.2597402597402597,
+            "draw": 0.0,
+            "loss": 0.7402597402597403
+        },
+        "bestWin": {
+            "rating": 1720.71,
+            "seed": 3578703666,
+            "opponent": {
+                "label": "SCIENTIST_F:LunaFlare",
+                "display": "Developer LunaFlare",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 3485150998,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya",
+        "trainer": "Pok\u00e9mon Master Vanya #1",
+        "cursed": false,
+        "rating": 1294.64,
+        "se": 36.69,
+        "ciLow": 1222.73,
+        "ciHigh": 1366.56,
+        "wins": 39,
+        "losses": 114,
+        "draws": 1,
+        "battles": 154,
+        "rank": 140,
+        "overlap": 20,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.24542507819164058,
+            "draw": 0.04,
+            "loss": 0.7145749218083595
+        },
+        "bestWin": {
+            "rating": 1682.56,
+            "seed": 3155006388,
+            "opponent": {
+                "label": "FORMERCHAMP_Elise:Elise",
+                "display": "Former Champion Elise #1",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 3023855144,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN2:Teal#20",
+        "trainer": "Masked Villain Teal [Eifion] #2",
+        "cursed": false,
+        "rating": 1291.2,
+        "se": 36.66,
+        "ciLow": 1219.35,
+        "ciHigh": 1363.05,
+        "wins": 39,
+        "losses": 115,
+        "draws": 0,
+        "battles": 154,
+        "rank": 141,
+        "overlap": 19,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.2532467532467532,
+            "draw": 0.0,
+            "loss": 0.7467532467532467
+        },
+        "bestWin": {
+            "rating": 1628.16,
+            "seed": 859907455,
+            "opponent": {
+                "label": "TAPU_BULU:Tapu Bulu#1",
+                "display": "Guardian Deity Tapu Bulu",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 1079408883,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Origins",
+        "trainer": "Ideal Trainer of Origins",
+        "cursed": false,
+        "rating": 1282.75,
+        "se": 37.25,
+        "ciLow": 1209.74,
+        "ciHigh": 1355.75,
+        "wins": 37,
+        "losses": 115,
+        "draws": 2,
+        "battles": 154,
+        "rank": 142,
+        "overlap": 19,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.2342955326460481,
+            "draw": 0.04,
+            "loss": 0.7257044673539519
+        },
+        "bestWin": {
+            "rating": 1749.46,
+            "seed": 3571298546,
+            "opponent": {
+                "label": "HEXMANIAC:Errata",
+                "display": "Developer Errata",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 3795505472,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#12",
+        "trainer": "Pok\u00e9mon Master Vanya #12",
+        "cursed": false,
+        "rating": 1270.63,
+        "se": 37.41,
+        "ciLow": 1197.31,
+        "ciHigh": 1343.96,
+        "wins": 36,
+        "losses": 118,
+        "draws": 0,
+        "battles": 154,
+        "rank": 143,
+        "overlap": 16,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.23376623376623376,
+            "draw": 0.0,
+            "loss": 0.7662337662337663
+        },
+        "bestWin": {
+            "rating": 1606.73,
+            "seed": 2749196022,
+            "opponent": {
+                "label": "LADY2:Eseria",
+                "display": "Developer Eseria",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1282.75,
+            "seed": 3190348065,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "SPIRITGUARDIAN2:Sonya",
+        "trainer": "Spirit Guardian Sonya",
+        "cursed": false,
+        "rating": 1270.63,
+        "se": 37.41,
+        "ciLow": 1197.31,
+        "ciHigh": 1343.96,
+        "wins": 36,
+        "losses": 118,
+        "draws": 0,
+        "battles": 154,
+        "rank": 144,
+        "overlap": 16,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.23376623376623376,
+            "draw": 0.0,
+            "loss": 0.7662337662337663
+        },
+        "bestWin": {
+            "rating": 1639.04,
+            "seed": 740076738,
+            "opponent": {
+                "label": "TAPU_BULU:Tapu Bulu",
+                "display": "Guardian Deity Tapu Bulu",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 1698369640,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ARTIST3:Drawingbox",
+        "trainer": "Developer Drawingbox",
+        "cursed": false,
+        "rating": 1263.54,
+        "se": 37.69,
+        "ciLow": 1189.67,
+        "ciHigh": 1337.41,
+        "wins": 35,
+        "losses": 119,
+        "draws": 0,
+        "battles": 154,
+        "rank": 145,
+        "overlap": 15,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.22727272727272727,
+            "draw": 0.0,
+            "loss": 0.7727272727272727
+        },
+        "bestWin": {
+            "rating": 1667.07,
+            "seed": 3346566912,
+            "opponent": {
+                "label": "TRAINER_Sang:Sang#5",
+                "display": "Pok\u00e9mon Trainer Sang #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 930798739,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "HEXMANIAC:Lichenprincess",
+        "trainer": "Developer Lichenprincess",
+        "cursed": false,
+        "rating": 1263.54,
+        "se": 37.69,
+        "ciLow": 1189.67,
+        "ciHigh": 1337.41,
+        "wins": 35,
+        "losses": 119,
+        "draws": 0,
+        "battles": 154,
+        "rank": 146,
+        "overlap": 15,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.22727272727272727,
+            "draw": 0.0,
+            "loss": 0.7727272727272727
+        },
+        "bestWin": {
+            "rating": 1628.16,
+            "seed": 1729172198,
+            "opponent": {
+                "label": "TAPU_BULU:Tapu Bulu#1",
+                "display": "Guardian Deity Tapu Bulu",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1256.32,
+            "seed": 3176587159,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "LADY4:Pria",
+        "trainer": "Developer Pria",
+        "cursed": false,
+        "rating": 1256.32,
+        "se": 37.98,
+        "ciLow": 1181.88,
+        "ciHigh": 1330.76,
+        "wins": 34,
+        "losses": 120,
+        "draws": 0,
+        "battles": 154,
+        "rank": 147,
+        "overlap": 15,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.22077922077922077,
+            "draw": 0.0,
+            "loss": 0.7792207792207793
+        },
+        "bestWin": {
+            "rating": 1628.16,
+            "seed": 3045436191,
+            "opponent": {
+                "label": "MASKEDVILLAIN_DOUBLE:Crimson#13",
+                "display": "Masked Villains Crimson [Imogene] #2",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 1143.46,
+            "seed": 1191683122,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#7",
+        "trainer": "Pok\u00e9mon Master Vanya #7",
+        "cursed": false,
+        "rating": 1248.97,
+        "se": 38.29,
+        "ciLow": 1173.92,
+        "ciHigh": 1324.01,
+        "wins": 33,
+        "losses": 121,
+        "draws": 0,
+        "battles": 154,
+        "rank": 148,
+        "overlap": 14,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.21428571428571427,
+            "draw": 0.0,
+            "loss": 0.7857142857142857
+        },
+        "bestWin": {
+            "rating": 1830.01,
+            "seed": 1082589747,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 710186106,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "IDEALTRAINER:of Colors",
+        "trainer": "Ideal Trainer of Colors",
+        "cursed": false,
+        "rating": 1186.08,
+        "se": 41.5,
+        "ciLow": 1104.75,
+        "ciHigh": 1267.41,
+        "wins": 25,
+        "losses": 128,
+        "draws": 1,
+        "battles": 154,
+        "rank": 149,
+        "overlap": 5,
+        "tier": "D-",
+        "tierColor": [
+            36,
+            187,
+            69
+        ],
+        "wldFractions": {
+            "win": 0.15785044071651977,
+            "draw": 0.04,
+            "loss": 0.8021495592834803
+        },
+        "bestWin": {
+            "rating": 1735.65,
+            "seed": 667853308,
+            "opponent": {
+                "label": "SPIRITGUARDIAN3:Preeti",
+                "display": "Spirit Guardian Preeti",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1248.97,
+            "seed": 1696799516,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#20",
+        "trainer": "Pok\u00e9mon Master Vanya #20",
+        "cursed": false,
+        "rating": 1143.46,
+        "se": 44.18,
+        "ciLow": 1056.88,
+        "ciHigh": 1230.04,
+        "wins": 20,
+        "losses": 133,
+        "draws": 0,
+        "battles": 153,
+        "rank": 150,
+        "overlap": 2,
+        "tier": "D-",
+        "tierColor": [
+            36,
+            187,
+            69
+        ],
+        "wldFractions": {
+            "win": 0.13071895424836602,
+            "draw": 0.0,
+            "loss": 0.869281045751634
+        },
+        "bestWin": {
+            "rating": 1639.04,
+            "seed": 1267958558,
+            "opponent": {
+                "label": "SEEKER_Nora:Nora#1",
+                "display": "Seeker Nora",
+                "cursed": true
+            }
+        },
+        "worstLoss": {
+            "rating": 904.51,
+            "seed": 1688997295,
+            "opponent": {
+                "label": "MAID2:Maddie",
+                "display": "Developer Maddie",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ARTIFICIALTRAINER:Doppel",
+        "trainer": "Artificial Trainer Doppel",
+        "cursed": false,
+        "rating": 1071.33,
+        "se": 49.94,
+        "ciLow": 973.44,
+        "ciHigh": 1169.21,
+        "wins": 13,
+        "losses": 138,
+        "draws": 0,
+        "battles": 151,
+        "rank": 151,
+        "overlap": 1,
+        "tier": "F",
+        "tierColor": [
+            0,
+            176,
+            80
+        ],
+        "wldFractions": {
+            "win": 0.08609271523178808,
+            "draw": 0.0,
+            "loss": 0.9139072847682119
+        },
+        "bestWin": {
+            "rating": 1869.65,
+            "seed": 3805294228,
+            "opponent": {
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1186.08,
+            "seed": 2794924933,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "MAID2:Maddie",
+        "trainer": "Developer Maddie",
+        "cursed": false,
+        "rating": 904.51,
+        "se": 65.44,
+        "ciLow": 776.25,
+        "ciHigh": 1032.77,
+        "wins": 4,
+        "losses": 150,
+        "draws": 0,
+        "battles": 154,
+        "rank": 152,
+        "overlap": 3,
+        "tier": "F",
+        "tierColor": [
+            0,
+            176,
+            80
+        ],
+        "wldFractions": {
+            "win": 0.04,
+            "draw": 0.0,
+            "loss": 0.96
+        },
+        "bestWin": {
+            "rating": 1143.46,
+            "seed": 1688997295,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#20",
+                "display": "Pok\u00e9mon Master Vanya #20",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 1071.33,
+            "seed": 1561332515,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Doppel",
+                "display": "Artificial Trainer Doppel",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ARTIFICIALTRAINER:Trinity",
+        "trainer": "Artificial Trainer Trinity",
+        "cursed": false,
+        "rating": 889.66,
+        "se": 68.1,
+        "ciLow": 756.2,
+        "ciHigh": 1023.13,
+        "wins": 3,
+        "losses": 150,
+        "draws": 0,
+        "battles": 153,
+        "rank": 153,
+        "overlap": 3,
+        "tier": "F",
+        "tierColor": [
+            0,
+            176,
+            80
+        ],
+        "wldFractions": {
+            "win": 0.04,
+            "draw": 0.0,
+            "loss": 0.96
+        },
+        "bestWin": {
+            "rating": 1606.73,
+            "seed": 3959459580,
+            "opponent": {
+                "label": "LADY2:Eseria",
+                "display": "Developer Eseria",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 904.51,
+            "seed": 1715212740,
+            "opponent": {
+                "label": "MAID2:Maddie",
+                "display": "Developer Maddie",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "ARTIFICIALTRAINER:Solitaire",
+        "trainer": "Artificial Trainer Solitaire",
+        "cursed": false,
+        "rating": 838.03,
+        "se": 73.63,
+        "ciLow": 693.72,
+        "ciHigh": 982.35,
+        "wins": 1,
+        "losses": 153,
+        "draws": 0,
+        "battles": 154,
+        "rank": 154,
+        "overlap": 3,
+        "tier": "F",
+        "tierColor": [
+            0,
+            176,
+            80
+        ],
+        "wldFractions": {
+            "win": 0.04,
+            "draw": 0.0,
+            "loss": 0.9600000000000001
+        },
+        "bestWin": {
+            "rating": 813.84,
+            "seed": 3794074011,
+            "opponent": {
+                "label": "BATTLEGIRL:Tester",
+                "display": "Battle Girl Tester",
+                "cursed": false
+            }
+        },
+        "worstLoss": {
+            "rating": 889.66,
+            "seed": 1956420788,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Trinity",
+                "display": "Artificial Trainer Trinity",
+                "cursed": false
+            }
+        }
+    },
+    {
+        "label": "BATTLEGIRL:Tester",
+        "trainer": "Battle Girl Tester",
+        "cursed": false,
+        "rating": 813.84,
+        "se": 76.86,
+        "ciLow": 663.2,
+        "ciHigh": 964.48,
+        "wins": 0,
+        "losses": 154,
+        "draws": 0,
+        "battles": 154,
+        "rank": 155,
+        "overlap": 3,
+        "tier": "F",
+        "tierColor": [
+            0,
+            176,
+            80
+        ],
+        "wldFractions": {
+            "win": 0.0,
+            "draw": 0.0,
+            "loss": 1.0
+        },
+        "bestWin": null,
+        "worstLoss": {
+            "rating": 838.03,
+            "seed": 3794074011,
+            "opponent": {
+                "label": "ARTIFICIALTRAINER:Solitaire",
+                "display": "Artificial Trainer Solitaire",
+                "cursed": false
+            }
+        }
+    }
+]

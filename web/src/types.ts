@@ -65,6 +65,11 @@ export interface FormatMeta {
   moveGridColumns: 1 | 2;
   maxNativeSpriteDim: number;
   spriteScale: number;
+  // formatKey()-shaped strings the site has data for (see
+  // analysis/export_web_data.py's FORMATS/FORMAT_SPECS) -- the single
+  // source of truth for which battleType/curseVariant/filter combinations
+  // are selectable, so the picker doesn't hand-maintain its own copy.
+  availableFormats: string[];
 }
 
 export interface TribeBonus {

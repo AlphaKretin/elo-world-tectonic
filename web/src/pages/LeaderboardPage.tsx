@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { Outlet, useNavigate, useParams } from "react-router-dom";
 import { FormatPicker } from "../components/FormatPicker";
 import { LeaderboardTable } from "../components/LeaderboardTable";
-import { fetchLeaderboard, formatKey } from "../lib/dataClient";
+import { fetchLeaderboard, fetchMeta, formatKey } from "../lib/dataClient";
+import { isValidFormat, nearestValidFormat } from "../lib/formatValidity";
 import type { BattleType, CurseVariant, FilterVariant, LeaderboardRow } from "../types";
 
 const VALID_BATTLE_TYPES: BattleType[] = ["singles", "doubles"];
@@ -23,11 +24,30 @@ export function LeaderboardPage() {
     : "none";
 
   const [rows, setRows] = useState<LeaderboardRow[] | null>(null);
+  const [availableFormats, setAvailableFormats] = useState<string[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const fmt = formatKey(battleType, curseVariant, filter);
 
   useEffect(() => {
+    fetchMeta()
+      .then((meta) => setAvailableFormats(meta.availableFormats))
+      .catch((err) => setError(String(err)));
+  }, []);
+
+  // Backup handler for a bad combination reached by hand (typed/bookmarked
+  // URL) rather than through the picker, which already prevents picking
+  // one -- redirects to the nearest valid combination instead of letting
+  // the fetch below 404.
+  useEffect(() => {
+    if (!availableFormats) return;
+    if (isValidFormat(availableFormats, battleType, curseVariant, filter)) return;
+    const [nextBattleType, nextCurseVariant, nextFilter] = nearestValidFormat(availableFormats, battleType, curseVariant, filter);
+    navigate(`/${nextBattleType}/${nextCurseVariant}/${nextFilter}`, { replace: true });
+  }, [availableFormats, battleType, curseVariant, filter, navigate]);
+
+  useEffect(() => {
+    if (availableFormats && !isValidFormat(availableFormats, battleType, curseVariant, filter)) return;
     let cancelled = false;
     setRows(null);
     setError(null);
@@ -41,7 +61,7 @@ export function LeaderboardPage() {
     return () => {
       cancelled = true;
     };
-  }, [fmt]);
+  }, [fmt, availableFormats, battleType, curseVariant, filter]);
 
   function handleFormatChange(nextBattleType: BattleType, nextCurseVariant: CurseVariant, nextFilter: FilterVariant) {
     navigate(`/${nextBattleType}/${nextCurseVariant}/${nextFilter}`);

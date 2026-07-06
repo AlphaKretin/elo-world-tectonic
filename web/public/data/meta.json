@@ -1,5 +1,17 @@
 {
     "moveGridColumns": 1,
     "maxNativeSpriteDim": 192,
-    "spriteScale": 2
+    "spriteScale": 2,
+    "availableFormats": [
+        "singles",
+        "doubles",
+        "singles_uncursed",
+        "doubles_uncursed",
+        "singles_cursed_excluded",
+        "doubles_cursed_excluded",
+        "singles_level70_only",
+        "doubles_level70_only",
+        "singles_uncursed_level70_only",
+        "doubles_uncursed_level70_only"
+    ]
 }

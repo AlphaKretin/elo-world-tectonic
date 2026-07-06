@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import { fetchMeta } from "../lib/dataClient";
+import { isValidFormat } from "../lib/formatValidity";
 import type { BattleType, CurseVariant, FilterVariant } from "../types";
 import "./FormatPicker.css";
 
@@ -25,45 +28,71 @@ interface Props {
 }
 
 export function FormatPicker({ battleType, curseVariant, filter, onChange }: Props) {
+  // null until loaded -- treated as "every combo valid" below so the picker
+  // doesn't flash all-disabled on first render. fetchMeta() is cached, so
+  // multiple FormatPicker instances on one page (e.g. ComparePage's A/B
+  // pickers) share a single fetch.
+  const [availableFormats, setAvailableFormats] = useState<string[] | null>(null);
+  useEffect(() => {
+    fetchMeta()
+      .then((meta) => setAvailableFormats(meta.availableFormats))
+      .catch(() => {});
+  }, []);
+  const isValid = (bt: BattleType, cv: CurseVariant, f: FilterVariant) =>
+    availableFormats === null || isValidFormat(availableFormats, bt, cv, f);
+
   return (
     <div className="format-picker">
       <div className="format-picker-group" role="group" aria-label="Battle type">
-        {BATTLE_TYPES.map((opt) => (
-          <button
-            key={opt.value}
-            type="button"
-            className={opt.value === battleType ? "active" : ""}
-            onClick={() => onChange(opt.value, curseVariant, filter)}
-          >
-            {opt.label}
-          </button>
-        ))}
+        {BATTLE_TYPES.map((opt) => {
+          const valid = isValid(opt.value, curseVariant, filter);
+          return (
+            <button
+              key={opt.value}
+              type="button"
+              className={opt.value === battleType ? "active" : ""}
+              disabled={!valid}
+              title={valid ? undefined : "No data for this combination"}
+              onClick={() => onChange(opt.value, curseVariant, filter)}
+            >
+              {opt.label}
+            </button>
+          );
+        })}
       </div>
       <div className="format-picker-group" role="group" aria-label="Curse variant">
-        {CURSE_VARIANTS.map((opt) => (
-          <button
-            key={opt.value}
-            type="button"
-            className={opt.value === curseVariant ? "active" : ""}
-            title={opt.hint}
-            onClick={() => onChange(battleType, opt.value, filter)}
-          >
-            {opt.label}
-          </button>
-        ))}
+        {CURSE_VARIANTS.map((opt) => {
+          const valid = isValid(battleType, opt.value, filter);
+          return (
+            <button
+              key={opt.value}
+              type="button"
+              className={opt.value === curseVariant ? "active" : ""}
+              disabled={!valid}
+              title={valid ? opt.hint : "No data for this combination"}
+              onClick={() => onChange(battleType, opt.value, filter)}
+            >
+              {opt.label}
+            </button>
+          );
+        })}
       </div>
       <div className="format-picker-group" role="group" aria-label="Filter">
-        {FILTER_VARIANTS.map((opt) => (
-          <button
-            key={opt.value}
-            type="button"
-            className={opt.value === filter ? "active" : ""}
-            title={opt.hint}
-            onClick={() => onChange(battleType, curseVariant, opt.value)}
-          >
-            {opt.label}
-          </button>
-        ))}
+        {FILTER_VARIANTS.map((opt) => {
+          const valid = isValid(battleType, curseVariant, opt.value);
+          return (
+            <button
+              key={opt.value}
+              type="button"
+              className={opt.value === filter ? "active" : ""}
+              disabled={!valid}
+              title={valid ? opt.hint : "No data for this combination"}
+              onClick={() => onChange(battleType, curseVariant, opt.value)}
+            >
+              {opt.label}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

@@ -42,6 +42,7 @@ FORMAT_SPECS = [
     ("singles_uncursed", []), ("doubles_uncursed", []),
     ("singles", ["cursed_excluded"]), ("doubles", ["cursed_excluded"]),
     ("singles", ["level70_only"]), ("doubles", ["level70_only"]),
+    ("singles_uncursed", ["level70_only"]), ("doubles_uncursed", ["level70_only"]),
 ]
 
 FORMATS = [base + results_lib.filter_suffix(filters) for base, filters in FORMAT_SPECS]
@@ -319,6 +320,12 @@ def main():
             "moveGridColumns": move_cols,
             "maxNativeSpriteDim": max_native_dim,
             "spriteScale": trainer_cards.SPRITE_SCALE,
+            # FORMAT_SPECS-derived list of format keys the site actually has
+            # data for, so the frontend's format picker can grey out
+            # combinations (e.g. uncursed + cursed_excluded, redundant by
+            # construction) without hand-maintaining a second copy of this
+            # list in TypeScript.
+            "availableFormats": FORMATS,
         }, f, indent=4)
 
     export_trainers(card_data_by_label, tribe_info)

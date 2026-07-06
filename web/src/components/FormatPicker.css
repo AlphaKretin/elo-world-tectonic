@@ -32,3 +32,13 @@
   background: var(--accent);
   color: var(--accent-contrast);
 }
+
+.format-picker-group button:disabled {
+  color: var(--text-secondary);
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.format-picker-group button:disabled:hover {
+  color: var(--text-secondary);
+}
