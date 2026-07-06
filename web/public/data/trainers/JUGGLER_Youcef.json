@@ -28,7 +28,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "NORMALGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                }
             ],
             "moves": [
                 {
@@ -79,7 +82,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "IRONBALL"
+                {
+                    "id": "IRONBALL",
+                    "name": "Iron Ball"
+                }
             ],
             "moves": [
                 {

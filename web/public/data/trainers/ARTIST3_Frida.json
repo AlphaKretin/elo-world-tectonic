@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "WHITEHERB"
+                {
+                    "id": "WHITEHERB",
+                    "name": "White Herb"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "WIDELENS"
+                {
+                    "id": "WIDELENS",
+                    "name": "Wide Lens"
+                }
             ],
             "moves": [
                 {

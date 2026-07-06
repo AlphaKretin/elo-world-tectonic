@@ -51,7 +51,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -83,7 +86,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "FAIRYGEM"
+                {
+                    "id": "FAIRYGEM",
+                    "name": "Fairy Gem"
+                }
             ],
             "moves": [
                 {

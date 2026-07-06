@@ -20,7 +20,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FRAGILELOCKET"
+                {
+                    "id": "FRAGILELOCKET",
+                    "name": "Fragile Locket"
+                }
             ],
             "moves": [
                 {
@@ -52,7 +55,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "BABIRIBERRY"
+                {
+                    "id": "BABIRIBERRY",
+                    "name": "Babiri Berry"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +163,10 @@
                 "ANIMATED"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {
@@ -183,7 +198,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {

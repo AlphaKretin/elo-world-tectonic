@@ -51,7 +51,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {

@@ -20,8 +20,14 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "YACHEBERRY",
-                "OCCABERRY"
+                {
+                    "id": "YACHEBERRY",
+                    "name": "Yache Berry"
+                },
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {

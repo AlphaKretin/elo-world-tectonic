@@ -21,7 +21,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "CRYSTALVEIL"
+                {
+                    "id": "CRYSTALVEIL",
+                    "name": "Crystal Veil"
+                }
             ],
             "moves": [
                 {

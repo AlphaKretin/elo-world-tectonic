@@ -20,7 +20,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "PINPOINTROCK"
+                {
+                    "id": "PINPOINTROCK",
+                    "name": "Pin-Point Rock"
+                }
             ],
             "moves": [
                 {
@@ -80,7 +83,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {

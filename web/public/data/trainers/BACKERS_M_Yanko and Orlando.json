@@ -83,7 +83,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "ROCKGEM"
+                {
+                    "id": "ROCKGEM",
+                    "name": "Rock Gem"
+                }
             ],
             "moves": [
                 {
@@ -112,7 +115,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "SKILLHERB"
+                {
+                    "id": "SKILLHERB",
+                    "name": "Skill Herb"
+                }
             ],
             "moves": [
                 {

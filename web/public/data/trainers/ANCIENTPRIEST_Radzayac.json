@@ -51,7 +51,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LUMBERAXE"
+                {
+                    "id": "LUMBERAXE",
+                    "name": "Lumber Axe"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "UTILITYUMBRELLA"
+                {
+                    "id": "UTILITYUMBRELLA",
+                    "name": "Utility Umbrella"
+                }
             ],
             "moves": [
                 {

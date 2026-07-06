@@ -20,7 +20,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {
@@ -113,7 +116,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {

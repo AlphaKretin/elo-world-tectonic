@@ -28,7 +28,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "PINPOINTROCK"
+                {
+                    "id": "PINPOINTROCK",
+                    "name": "Pin-Point Rock"
+                }
             ],
             "moves": [
                 {
@@ -80,7 +83,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "WILDCARD"
+                {
+                    "id": "WILDCARD",
+                    "name": "Wild Card"
+                }
             ],
             "moves": [
                 {
@@ -113,7 +119,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "UTILITYUMBRELLA"
+                {
+                    "id": "UTILITYUMBRELLA",
+                    "name": "Utility Umbrella"
+                }
             ],
             "moves": [
                 {
@@ -146,7 +155,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -179,7 +191,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -211,7 +226,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "COVERTCLOAK"
+                {
+                    "id": "COVERTCLOAK",
+                    "name": "Covert Cloak"
+                }
             ],
             "moves": [
                 {

@@ -21,7 +21,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -46,7 +49,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "SKILLHERB"
+                {
+                    "id": "SKILLHERB",
+                    "name": "Skill Herb"
+                }
             ],
             "moves": [
                 {

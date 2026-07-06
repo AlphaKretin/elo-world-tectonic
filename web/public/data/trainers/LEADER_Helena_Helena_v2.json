@@ -20,7 +20,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {
@@ -83,7 +86,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "CHOICESPECS"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                }
             ],
             "moves": [
                 {
@@ -146,7 +152,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

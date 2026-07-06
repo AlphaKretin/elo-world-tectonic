@@ -34,7 +34,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -67,7 +70,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -100,7 +106,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "ENERGYLOCK"
+                {
+                    "id": "ENERGYLOCK",
+                    "name": "Energy Lock"
+                }
             ],
             "moves": [
                 {
@@ -133,7 +142,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "STRESSBALL"
+                {
+                    "id": "STRESSBALL",
+                    "name": "Stress Ball"
+                }
             ],
             "moves": [
                 {
@@ -166,7 +178,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {
@@ -199,7 +214,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

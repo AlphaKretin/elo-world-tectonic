@@ -20,7 +20,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "HEATROCK"
+                {
+                    "id": "HEATROCK",
+                    "name": "Heat Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {

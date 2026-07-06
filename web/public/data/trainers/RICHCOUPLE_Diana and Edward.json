@@ -21,7 +21,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LUMBERAXE"
+                {
+                    "id": "LUMBERAXE",
+                    "name": "Lumber Axe"
+                }
             ],
             "moves": [
                 {
@@ -118,8 +124,14 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "CHOICESPECS",
-                "FAIRYGEM"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                },
+                {
+                    "id": "FAIRYGEM",
+                    "name": "Fairy Gem"
+                }
             ],
             "moves": [
                 {

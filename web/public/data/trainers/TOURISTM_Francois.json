@@ -52,7 +52,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "EXPERTBELT"
+                {
+                    "id": "EXPERTBELT",
+                    "name": "Expert Belt"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

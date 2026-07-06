@@ -21,7 +21,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "PSYCHICGEM"
+                {
+                    "id": "PSYCHICGEM",
+                    "name": "Psychic Gem"
+                }
             ],
             "moves": [
                 {

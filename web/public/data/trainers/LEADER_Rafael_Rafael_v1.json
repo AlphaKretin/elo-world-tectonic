@@ -21,7 +21,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "FAIRYGEM"
+                {
+                    "id": "FAIRYGEM",
+                    "name": "Fairy Gem"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "OCCABERRY"
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {
@@ -149,7 +155,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "CHARCOAL"
+                {
+                    "id": "CHARCOAL",
+                    "name": "Charcoal"
+                }
             ],
             "moves": [
                 {
@@ -182,7 +191,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

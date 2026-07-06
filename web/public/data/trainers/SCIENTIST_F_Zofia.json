@@ -51,7 +51,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "ELECTRICGEM"
+                {
+                    "id": "ELECTRICGEM",
+                    "name": "Electric Gem"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +123,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

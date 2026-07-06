@@ -21,7 +21,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "ELECTRICGEM"
+                {
+                    "id": "ELECTRICGEM",
+                    "name": "Electric Gem"
+                }
             ],
             "moves": [
                 {
@@ -46,7 +49,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "CHARTIBERRY"
+                {
+                    "id": "CHARTIBERRY",
+                    "name": "Charti Berry"
+                }
             ],
             "moves": [
                 {

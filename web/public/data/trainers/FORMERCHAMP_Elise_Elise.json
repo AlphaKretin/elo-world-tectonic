@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "SALACBERRY"
+                {
+                    "id": "SALACBERRY",
+                    "name": "Salac Berry"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "CHOICESCARF"
+                {
+                    "id": "CHOICESCARF",
+                    "name": "Choice Scarf"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "NORMALGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -184,7 +199,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {

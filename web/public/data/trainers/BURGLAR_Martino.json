@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

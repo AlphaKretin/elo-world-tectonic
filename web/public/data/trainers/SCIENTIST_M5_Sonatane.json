@@ -21,8 +21,14 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LEFTOVERS",
-                "STRIKEVEST"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                },
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {

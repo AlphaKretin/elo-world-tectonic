@@ -21,7 +21,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "HEATROCK"
+                {
+                    "id": "HEATROCK",
+                    "name": "Heat Rock"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "POWERLOCK"
+                {
+                    "id": "POWERLOCK",
+                    "name": "Power Lock"
+                }
             ],
             "moves": [
                 {

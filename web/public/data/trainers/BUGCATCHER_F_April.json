@@ -20,7 +20,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -114,7 +117,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {

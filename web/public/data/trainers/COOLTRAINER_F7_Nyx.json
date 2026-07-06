@@ -28,7 +28,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "MIRROREDROCK"
+                {
+                    "id": "MIRROREDROCK",
+                    "name": "Mirrored Rock"
+                }
             ],
             "moves": [
                 {
@@ -61,7 +64,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -94,7 +100,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "CHOICESCARF"
+                {
+                    "id": "CHOICESCARF",
+                    "name": "Choice Scarf"
+                }
             ],
             "moves": [
                 {
@@ -127,7 +136,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LUMBERRY"
+                {
+                    "id": "LUMBERRY",
+                    "name": "Lum Berry"
+                }
             ],
             "moves": [
                 {
@@ -160,7 +172,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "MENTALHERB"
+                {
+                    "id": "MENTALHERB",
+                    "name": "Mental Herb"
+                }
             ],
             "moves": [
                 {
@@ -193,7 +208,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "UTILITYUMBRELLA"
+                {
+                    "id": "UTILITYUMBRELLA",
+                    "name": "Utility Umbrella"
+                }
             ],
             "moves": [
                 {

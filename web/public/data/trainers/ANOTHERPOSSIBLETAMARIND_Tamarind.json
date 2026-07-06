@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "REINFORCINGROD"
+                {
+                    "id": "REINFORCINGROD",
+                    "name": "Reinforcing Rod"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "CHOICESPECS"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                }
             ],
             "moves": [
                 {

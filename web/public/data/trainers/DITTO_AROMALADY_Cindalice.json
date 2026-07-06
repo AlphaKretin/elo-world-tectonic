@@ -21,7 +21,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "PINPOINTROCK"
+                {
+                    "id": "PINPOINTROCK",
+                    "name": "Pin-Point Rock"
+                }
             ],
             "moves": [
                 {

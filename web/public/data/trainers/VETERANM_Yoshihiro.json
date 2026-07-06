@@ -21,7 +21,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "WHETSTONE"
+                {
+                    "id": "WHETSTONE",
+                    "name": "Whetstone"
+                }
             ],
             "moves": [
                 {
@@ -148,7 +154,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

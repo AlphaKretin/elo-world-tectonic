@@ -20,7 +20,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "COBABERRY"
+                {
+                    "id": "COBABERRY",
+                    "name": "Coba Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "CHOPLEBERRY"
+                {
+                    "id": "CHOPLEBERRY",
+                    "name": "Chople Berry"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +159,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

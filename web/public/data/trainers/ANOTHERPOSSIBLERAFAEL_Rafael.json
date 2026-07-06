@@ -52,7 +52,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -81,7 +84,10 @@
             "nickname": null,
             "tribes": [],
             "heldItems": [
-                "CRYSTALVEIL"
+                {
+                    "id": "CRYSTALVEIL",
+                    "name": "Crystal Veil"
+                }
             ],
             "moves": [
                 {
@@ -113,7 +119,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -145,7 +154,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "REDORB"
+                {
+                    "id": "REDORB",
+                    "name": "Red Orb"
+                }
             ],
             "moves": [
                 {
@@ -177,7 +189,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

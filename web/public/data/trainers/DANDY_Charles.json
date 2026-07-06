@@ -48,7 +48,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "BIGROOT"
+                {
+                    "id": "BIGROOT",
+                    "name": "Big Root"
+                }
             ],
             "moves": [
                 {

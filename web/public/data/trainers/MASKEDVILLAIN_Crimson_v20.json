@@ -88,7 +88,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +153,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "SALACBERRY"
+                {
+                    "id": "SALACBERRY",
+                    "name": "Salac Berry"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "EVIOLITE"
+                {
+                    "id": "EVIOLITE",
+                    "name": "Eviolite"
+                }
             ],
             "moves": [
                 {
@@ -82,7 +85,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

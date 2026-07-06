@@ -21,7 +21,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "SHUCABERRY"
+                {
+                    "id": "SHUCABERRY",
+                    "name": "Shuca Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "KEBIABERRY"
+                {
+                    "id": "KEBIABERRY",
+                    "name": "Kebia Berry"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "BLACKSLUDGE"
+                {
+                    "id": "BLACKSLUDGE",
+                    "name": "Black Sludge"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {

@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "POWERLOCK"
+                {
+                    "id": "POWERLOCK",
+                    "name": "Power Lock"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +165,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "BLACKSLUDGE"
+                {
+                    "id": "BLACKSLUDGE",
+                    "name": "Black Sludge"
+                }
             ],
             "moves": [
                 {
@@ -186,7 +201,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "CHOPLEBERRY"
+                {
+                    "id": "CHOPLEBERRY",
+                    "name": "Chople Berry"
+                }
             ],
             "moves": [
                 {

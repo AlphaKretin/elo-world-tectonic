@@ -21,7 +21,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {

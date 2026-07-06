@@ -20,7 +20,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -82,7 +85,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "ICEGEM"
+                {
+                    "id": "ICEGEM",
+                    "name": "Ice Gem"
+                }
             ],
             "moves": [
                 {

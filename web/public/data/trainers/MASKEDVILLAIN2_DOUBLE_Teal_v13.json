@@ -32,7 +32,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -65,7 +68,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "OCCABERRY"
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {
@@ -97,7 +103,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -130,7 +139,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "SEVENLEAGUEBOOTS"
+                {
+                    "id": "SEVENLEAGUEBOOTS",
+                    "name": "7-League Boots"
+                }
             ],
             "moves": [
                 {
@@ -163,7 +175,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -196,7 +211,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -112,7 +115,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "ENERGYHERB"
+                {
+                    "id": "ENERGYHERB",
+                    "name": "Energy Herb"
+                }
             ],
             "moves": [
                 {

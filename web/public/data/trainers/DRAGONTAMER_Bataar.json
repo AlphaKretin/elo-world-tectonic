@@ -20,7 +20,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "PINPOINTROCK"
+                {
+                    "id": "PINPOINTROCK",
+                    "name": "Pin-Point Rock"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

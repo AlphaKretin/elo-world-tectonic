@@ -28,7 +28,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -61,7 +64,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -94,7 +100,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -127,7 +136,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "OCCABERRY"
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {
@@ -159,7 +171,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "WATERGEM"
+                {
+                    "id": "WATERGEM",
+                    "name": "Water Gem"
+                }
             ],
             "moves": [
                 {
@@ -192,7 +207,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

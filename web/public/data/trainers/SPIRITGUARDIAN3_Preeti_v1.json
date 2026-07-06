@@ -28,7 +28,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "MIRROREDROCK"
+                {
+                    "id": "MIRROREDROCK",
+                    "name": "Mirrored Rock"
+                }
             ],
             "moves": [
                 {
@@ -61,7 +64,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -94,7 +100,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "SALACBERRY"
+                {
+                    "id": "SALACBERRY",
+                    "name": "Salac Berry"
+                }
             ],
             "moves": [
                 {
@@ -127,7 +136,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -160,7 +172,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -193,7 +208,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "BIGROOT"
+                {
+                    "id": "BIGROOT",
+                    "name": "Big Root"
+                }
             ],
             "moves": [
                 {

@@ -21,7 +21,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "WATERGEM"
+                {
+                    "id": "WATERGEM",
+                    "name": "Water Gem"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "CHOICESCARF"
+                {
+                    "id": "CHOICESCARF",
+                    "name": "Choice Scarf"
+                }
             ],
             "moves": [
                 {

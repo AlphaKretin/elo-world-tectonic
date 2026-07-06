@@ -20,7 +20,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "PINPOINTROCK"
+                {
+                    "id": "PINPOINTROCK",
+                    "name": "Pin-Point Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "KEEBERRY"
+                {
+                    "id": "KEEBERRY",
+                    "name": "Kee Berry"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +163,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "UTILITYUMBRELLA"
+                {
+                    "id": "UTILITYUMBRELLA",
+                    "name": "Utility Umbrella"
+                }
             ],
             "moves": [
                 {
@@ -183,7 +198,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "WHITEHERB"
+                {
+                    "id": "WHITEHERB",
+                    "name": "White Herb"
+                }
             ],
             "moves": [
                 {

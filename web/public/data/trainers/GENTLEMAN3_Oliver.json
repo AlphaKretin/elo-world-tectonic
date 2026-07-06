@@ -79,7 +79,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -143,7 +146,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "HIVISJACKET"
+                {
+                    "id": "HIVISJACKET",
+                    "name": "Hi-Viz Jacket"
+                }
             ],
             "moves": [
                 {

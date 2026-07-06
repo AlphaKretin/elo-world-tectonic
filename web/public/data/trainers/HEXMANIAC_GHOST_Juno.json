@@ -21,7 +21,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

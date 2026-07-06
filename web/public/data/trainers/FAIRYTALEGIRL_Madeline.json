@@ -52,7 +52,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "EXPERTBELT"
+                {
+                    "id": "EXPERTBELT",
+                    "name": "Expert Belt"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "BLACKSLUDGE"
+                {
+                    "id": "BLACKSLUDGE",
+                    "name": "Black Sludge"
+                }
             ],
             "moves": [
                 {

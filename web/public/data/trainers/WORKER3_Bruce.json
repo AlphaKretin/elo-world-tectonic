@@ -21,7 +21,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "ICYROCK"
+                {
+                    "id": "ICYROCK",
+                    "name": "Icy Rock"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "OCCABERRY"
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {

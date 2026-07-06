@@ -20,7 +20,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "POWERHERB"
+                {
+                    "id": "POWERHERB",
+                    "name": "Power Herb"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "FIGHTINGGEM"
+                {
+                    "id": "FIGHTINGGEM",
+                    "name": "Fighting Gem"
+                }
             ],
             "moves": [
                 {
@@ -147,7 +153,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -179,7 +188,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

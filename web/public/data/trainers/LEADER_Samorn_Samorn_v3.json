@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "SMOOTHSASH"
+                {
+                    "id": "SMOOTHSASH",
+                    "name": "Smooth Sash"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LUNUSBERRY"
+                {
+                    "id": "LUNUSBERRY",
+                    "name": "Lunus Berry"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LUNCHBOX"
+                {
+                    "id": "LUNCHBOX",
+                    "name": "Lunch Box"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "WATERRING"
+                {
+                    "id": "WATERRING",
+                    "name": "Water Ring"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +163,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "RINDOFEAST"
+                {
+                    "id": "RINDOFEAST",
+                    "name": "Rindo Feast"
+                }
             ],
             "moves": [
                 {
@@ -184,7 +199,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "STRIKECORSET"
+                {
+                    "id": "STRIKECORSET",
+                    "name": "Strike Corset"
+                }
             ],
             "moves": [
                 {

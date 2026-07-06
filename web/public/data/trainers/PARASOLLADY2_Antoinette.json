@@ -20,7 +20,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "DAMPROCK"
+                {
+                    "id": "DAMPROCK",
+                    "name": "Damp Rock"
+                }
             ],
             "moves": [
                 {
@@ -111,7 +114,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {

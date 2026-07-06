@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "PASSHOBERRY"
+                {
+                    "id": "PASSHOBERRY",
+                    "name": "Passho Berry"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "PERSIMBERRY"
+                {
+                    "id": "PERSIMBERRY",
+                    "name": "Persim Berry"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +159,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "ROCKGEM"
+                {
+                    "id": "ROCKGEM",
+                    "name": "Rock Gem"
+                }
             ],
             "moves": [
                 {

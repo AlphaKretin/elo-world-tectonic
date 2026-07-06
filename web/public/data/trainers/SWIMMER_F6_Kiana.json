@@ -21,7 +21,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {

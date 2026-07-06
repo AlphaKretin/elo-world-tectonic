@@ -48,7 +48,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -111,7 +114,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {

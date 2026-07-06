@@ -21,7 +21,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "GRASSGEM"
+                {
+                    "id": "GRASSGEM",
+                    "name": "Grass Gem"
+                }
             ],
             "moves": [
                 {

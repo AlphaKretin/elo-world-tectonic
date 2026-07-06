@@ -28,7 +28,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -61,7 +64,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -94,7 +100,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -127,7 +136,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "WEAKNESSPOLICY"
+                {
+                    "id": "WEAKNESSPOLICY",
+                    "name": "Weakness Policy"
+                }
             ],
             "moves": [
                 {
@@ -160,7 +172,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "HIVISJACKET"
+                {
+                    "id": "HIVISJACKET",
+                    "name": "Hi-Viz Jacket"
+                }
             ],
             "moves": [
                 {
@@ -193,7 +208,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

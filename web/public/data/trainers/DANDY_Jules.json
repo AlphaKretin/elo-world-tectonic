@@ -51,8 +51,14 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "SITRUSBERRY",
-                "CADOBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                },
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +122,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "BLACKSLUDGE"
+                {
+                    "id": "BLACKSLUDGE",
+                    "name": "Black Sludge"
+                }
             ],
             "moves": [
                 {

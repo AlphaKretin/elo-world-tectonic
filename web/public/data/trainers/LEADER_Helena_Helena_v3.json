@@ -20,7 +20,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "BIGREDBUTTON"
+                {
+                    "id": "BIGREDBUTTON",
+                    "name": "Big Red Button"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LUNCHBOX"
+                {
+                    "id": "LUNCHBOX",
+                    "name": "Lunch Box"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "ZENITHSPECS"
+                {
+                    "id": "ZENITHSPECS",
+                    "name": "Zenith Specs"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +126,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "JAGGEDHELMET"
+                {
+                    "id": "JAGGEDHELMET",
+                    "name": "Jagged Helmet"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +162,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "SITREONBERRY"
+                {
+                    "id": "SITREONBERRY",
+                    "name": "Sitreon Berry"
+                }
             ],
             "moves": [
                 {
@@ -182,7 +197,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "LEADBALLOON"
+                {
+                    "id": "LEADBALLOON",
+                    "name": "Lead Balloon"
+                }
             ],
             "moves": [
                 {

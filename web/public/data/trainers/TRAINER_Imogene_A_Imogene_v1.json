@@ -113,7 +113,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "AIRBALLOON"
+                {
+                    "id": "AIRBALLOON",
+                    "name": "Air Balloon"
+                }
             ],
             "moves": [
                 {
@@ -177,7 +180,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {

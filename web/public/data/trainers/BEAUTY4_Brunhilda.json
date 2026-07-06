@@ -52,7 +52,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {

@@ -27,7 +27,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "ROCKGEM"
+                {
+                    "id": "ROCKGEM",
+                    "name": "Rock Gem"
+                }
             ],
             "moves": [
                 {
@@ -60,7 +63,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -93,7 +99,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "CUSTAPBERRY"
+                {
+                    "id": "CUSTAPBERRY",
+                    "name": "Custap Berry"
+                }
             ],
             "moves": [
                 {
@@ -125,7 +134,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "WATERGEM"
+                {
+                    "id": "WATERGEM",
+                    "name": "Water Gem"
+                }
             ],
             "moves": [
                 {
@@ -158,7 +170,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "OCCABERRY"
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {
@@ -191,7 +206,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

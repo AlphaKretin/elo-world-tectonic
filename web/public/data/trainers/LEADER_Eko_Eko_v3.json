@@ -21,7 +21,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "SITREONBERRY"
+                {
+                    "id": "SITREONBERRY",
+                    "name": "Sitreon Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "POWERKEY"
+                {
+                    "id": "POWERKEY",
+                    "name": "Power Key"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "CLARITYSASH"
+                {
+                    "id": "CLARITYSASH",
+                    "name": "Clarity Sash"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "LEADBALLOON"
+                {
+                    "id": "LEADBALLOON",
+                    "name": "Lead Balloon"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "DEATHORB"
+                {
+                    "id": "DEATHORB",
+                    "name": "Death Orb"
+                }
             ],
             "moves": [
                 {
@@ -185,7 +200,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LUCENTGEM"
+                {
+                    "id": "LUCENTGEM",
+                    "name": "Lucent Gem"
+                }
             ],
             "moves": [
                 {

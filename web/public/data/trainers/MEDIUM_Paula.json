@@ -20,7 +20,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "ICEGEM"
+                {
+                    "id": "ICEGEM",
+                    "name": "Ice Gem"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {

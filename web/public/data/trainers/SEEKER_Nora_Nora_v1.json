@@ -21,7 +21,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LUMBERAXE"
+                {
+                    "id": "LUMBERAXE",
+                    "name": "Lumber Axe"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -182,7 +194,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "POWERHERB"
+                {
+                    "id": "POWERHERB",
+                    "name": "Power Herb"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {
@@ -114,7 +117,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "HIVISJACKET"
+                {
+                    "id": "HIVISJACKET",
+                    "name": "Hi-Viz Jacket"
+                }
             ],
             "moves": [
                 {

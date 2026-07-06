@@ -20,7 +20,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "CUSTAPBERRY"
+                {
+                    "id": "CUSTAPBERRY",
+                    "name": "Custap Berry"
+                }
             ],
             "moves": [
                 {

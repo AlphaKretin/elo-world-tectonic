@@ -21,7 +21,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

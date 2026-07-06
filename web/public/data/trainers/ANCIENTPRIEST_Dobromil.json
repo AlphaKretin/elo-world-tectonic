@@ -21,7 +21,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "RINDOBERRY"
+                {
+                    "id": "RINDOBERRY",
+                    "name": "Rindo Berry"
+                }
             ],
             "moves": [
                 {

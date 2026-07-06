@@ -21,7 +21,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "ENERGYHERB"
+                {
+                    "id": "ENERGYHERB",
+                    "name": "Energy Herb"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "NORMALGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +126,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -149,7 +161,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "CUSTAPBERRY"
+                {
+                    "id": "CUSTAPBERRY",
+                    "name": "Custap Berry"
+                }
             ],
             "moves": [
                 {
@@ -174,7 +189,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "CRYSTALVEIL"
+                {
+                    "id": "CRYSTALVEIL",
+                    "name": "Crystal Veil"
+                }
             ],
             "moves": [
                 {

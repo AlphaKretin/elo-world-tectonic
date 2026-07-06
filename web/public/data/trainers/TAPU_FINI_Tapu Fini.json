@@ -20,7 +20,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "BLACKSLUDGE"
+                {
+                    "id": "BLACKSLUDGE",
+                    "name": "Black Sludge"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +123,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "BUGGEM"
+                {
+                    "id": "BUGGEM",
+                    "name": "Bug Gem"
+                }
             ],
             "moves": [
                 {
@@ -181,7 +190,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "ROWAPBERRY"
+                {
+                    "id": "ROWAPBERRY",
+                    "name": "Rowap Berry"
+                }
             ],
             "moves": [
                 {

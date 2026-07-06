@@ -113,7 +113,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -176,7 +179,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "WATERGEM"
+                {
+                    "id": "WATERGEM",
+                    "name": "Water Gem"
+                }
             ],
             "moves": [
                 {

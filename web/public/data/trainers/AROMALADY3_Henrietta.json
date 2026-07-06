@@ -20,7 +20,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LUMBERAXE"
+                {
+                    "id": "LUMBERAXE",
+                    "name": "Lumber Axe"
+                }
             ],
             "moves": [
                 {

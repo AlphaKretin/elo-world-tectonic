@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -115,8 +118,14 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "NORMALGEM",
-                "FAIRYGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                },
+                {
+                    "id": "FAIRYGEM",
+                    "name": "Fairy Gem"
+                }
             ],
             "moves": [
                 {
@@ -180,7 +189,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

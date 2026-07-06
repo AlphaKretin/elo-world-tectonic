@@ -21,7 +21,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "REINFORCINGROD"
+                {
+                    "id": "REINFORCINGROD",
+                    "name": "Reinforcing Rod"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "NORMALGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                }
             ],
             "moves": [
                 {

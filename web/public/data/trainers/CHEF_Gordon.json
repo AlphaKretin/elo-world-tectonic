@@ -20,7 +20,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

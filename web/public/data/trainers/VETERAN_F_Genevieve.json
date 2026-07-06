@@ -51,7 +51,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "PAYAPABERRY"
+                {
+                    "id": "PAYAPABERRY",
+                    "name": "Payapa Berry"
+                }
             ],
             "moves": [
                 {

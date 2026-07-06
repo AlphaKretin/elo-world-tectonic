@@ -28,7 +28,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "CHOICESPECS"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                }
             ],
             "moves": [
                 {
@@ -72,7 +75,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "WILDCARD"
+                {
+                    "id": "WILDCARD",
+                    "name": "Wild Card"
+                }
             ],
             "moves": [
                 {
@@ -105,7 +111,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -138,7 +147,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "POWERLOCK"
+                {
+                    "id": "POWERLOCK",
+                    "name": "Power Lock"
+                }
             ],
             "moves": [
                 {
@@ -171,7 +183,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "CHOICESPECS"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                }
             ],
             "moves": [
                 {
@@ -204,7 +219,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "TECHNIQUEBOOSTER"
+                {
+                    "id": "TECHNIQUEBOOSTER",
+                    "name": "Technique Booster"
+                }
             ],
             "moves": [
                 {

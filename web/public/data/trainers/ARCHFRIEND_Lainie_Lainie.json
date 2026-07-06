@@ -21,7 +21,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "OCCABERRY"
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +163,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -184,7 +199,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {

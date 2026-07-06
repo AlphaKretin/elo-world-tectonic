@@ -20,7 +20,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "WIDELENS"
+                {
+                    "id": "WIDELENS",
+                    "name": "Wide Lens"
+                }
             ],
             "moves": [
                 {
@@ -52,7 +55,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {

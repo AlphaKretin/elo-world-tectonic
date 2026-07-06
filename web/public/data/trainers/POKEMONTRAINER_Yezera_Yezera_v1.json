@@ -20,7 +20,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -113,7 +116,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FLYINGGEM"
+                {
+                    "id": "FLYINGGEM",
+                    "name": "Flying Gem"
+                }
             ],
             "moves": [
                 {
@@ -146,7 +152,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -178,7 +187,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "THROATSPRAY"
+                {
+                    "id": "THROATSPRAY",
+                    "name": "Throat Spray"
+                }
             ],
             "moves": [
                 {

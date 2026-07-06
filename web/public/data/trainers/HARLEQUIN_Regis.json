@@ -51,7 +51,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "LUCKHERB"
+                {
+                    "id": "LUCKHERB",
+                    "name": "Luck Herb"
+                }
             ],
             "moves": [
                 {

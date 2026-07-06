@@ -21,7 +21,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "REDCARD"
+                {
+                    "id": "REDCARD",
+                    "name": "Red Card"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +124,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +160,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "FROSTORB"
+                {
+                    "id": "FROSTORB",
+                    "name": "Frost Orb"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "PINPOINTROCK"
+                {
+                    "id": "PINPOINTROCK",
+                    "name": "Pin-Point Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LUMBERRY"
+                {
+                    "id": "LUMBERRY",
+                    "name": "Lum Berry"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {

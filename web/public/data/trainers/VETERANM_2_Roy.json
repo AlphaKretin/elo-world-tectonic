@@ -21,7 +21,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "ICYROCK"
+                {
+                    "id": "ICYROCK",
+                    "name": "Icy Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +123,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "UTILITYUMBRELLA"
+                {
+                    "id": "UTILITYUMBRELLA",
+                    "name": "Utility Umbrella"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +159,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "CHOICEBAND"
+                {
+                    "id": "CHOICEBAND",
+                    "name": "Choice Band"
+                }
             ],
             "moves": [
                 {

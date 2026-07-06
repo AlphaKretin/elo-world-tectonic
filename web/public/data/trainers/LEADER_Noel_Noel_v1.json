@@ -21,7 +21,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "HEAVYDUTYBOOTS"
+                {
+                    "id": "HEAVYDUTYBOOTS",
+                    "name": "Heavy-Duty Boots"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "EXPERTBELT"
+                {
+                    "id": "EXPERTBELT",
+                    "name": "Expert Belt"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +165,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "WHITEHERB"
+                {
+                    "id": "WHITEHERB",
+                    "name": "White Herb"
+                }
             ],
             "moves": [
                 {
@@ -185,7 +200,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "WIDELENS"
+                {
+                    "id": "WIDELENS",
+                    "name": "Wide Lens"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "DRAGONGEM"
+                {
+                    "id": "DRAGONGEM",
+                    "name": "Dragon Gem"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -185,7 +200,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

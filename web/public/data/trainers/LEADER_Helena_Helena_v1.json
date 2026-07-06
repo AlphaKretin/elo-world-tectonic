@@ -20,7 +20,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -146,7 +152,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "AIRBALLOON"
+                {
+                    "id": "AIRBALLOON",
+                    "name": "Air Balloon"
+                }
             ],
             "moves": [
                 {
@@ -179,7 +188,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {

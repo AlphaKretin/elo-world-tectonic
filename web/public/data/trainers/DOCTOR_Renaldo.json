@@ -21,7 +21,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "WIDELENS"
+                {
+                    "id": "WIDELENS",
+                    "name": "Wide Lens"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "GRIPCLAW"
+                {
+                    "id": "GRIPCLAW",
+                    "name": "Grip Claw"
+                }
             ],
             "moves": [
                 {

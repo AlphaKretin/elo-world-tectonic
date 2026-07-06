@@ -51,7 +51,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "FROSTORB"
+                {
+                    "id": "FROSTORB",
+                    "name": "Frost Orb"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "GHOSTGEM"
+                {
+                    "id": "GHOSTGEM",
+                    "name": "Ghost Gem"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "WEAKNESSPOLICY"
+                {
+                    "id": "WEAKNESSPOLICY",
+                    "name": "Weakness Policy"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +123,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "KEEBERRY"
+                {
+                    "id": "KEEBERRY",
+                    "name": "Kee Berry"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +159,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {

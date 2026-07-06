@@ -20,7 +20,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "AIRBALLOON"
+                {
+                    "id": "AIRBALLOON",
+                    "name": "Air Balloon"
+                }
             ],
             "moves": [
                 {
@@ -48,7 +51,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

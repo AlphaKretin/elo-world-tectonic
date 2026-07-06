@@ -21,7 +21,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "GRIPCLAW"
+                {
+                    "id": "GRIPCLAW",
+                    "name": "Grip Claw"
+                }
             ],
             "moves": [
                 {

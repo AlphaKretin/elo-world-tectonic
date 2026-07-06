@@ -21,7 +21,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "AIRBALLOON"
+                {
+                    "id": "AIRBALLOON",
+                    "name": "Air Balloon"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "GHOSTGEM"
+                {
+                    "id": "GHOSTGEM",
+                    "name": "Ghost Gem"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "ICEGEM"
+                {
+                    "id": "ICEGEM",
+                    "name": "Ice Gem"
+                }
             ],
             "moves": [
                 {

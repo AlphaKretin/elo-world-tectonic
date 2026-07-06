@@ -21,7 +21,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "WATERBALLOON"
+                {
+                    "id": "WATERBALLOON",
+                    "name": "Water Balloon"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +124,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +160,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "POWERHERB"
+                {
+                    "id": "POWERHERB",
+                    "name": "Power Herb"
+                }
             ],
             "moves": [
                 {

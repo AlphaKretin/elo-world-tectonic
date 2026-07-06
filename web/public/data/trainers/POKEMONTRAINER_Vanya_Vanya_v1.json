@@ -21,7 +21,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "ENERGYHERB"
+                {
+                    "id": "ENERGYHERB",
+                    "name": "Energy Herb"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "COVERTCLOAK"
+                {
+                    "id": "COVERTCLOAK",
+                    "name": "Covert Cloak"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "THROATSPRAY"
+                {
+                    "id": "THROATSPRAY",
+                    "name": "Throat Spray"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +124,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LEPPABERRY"
+                {
+                    "id": "LEPPABERRY",
+                    "name": "Leppa Berry"
+                }
             ],
             "moves": [
                 {
@@ -148,7 +160,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -181,7 +196,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

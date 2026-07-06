@@ -21,7 +21,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FAIRYGEM"
+                {
+                    "id": "FAIRYGEM",
+                    "name": "Fairy Gem"
+                }
             ],
             "moves": [
                 {

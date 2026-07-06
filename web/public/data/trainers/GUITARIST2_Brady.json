@@ -21,7 +21,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -49,7 +52,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {

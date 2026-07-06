@@ -20,7 +20,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "MENTALHERB"
+                {
+                    "id": "MENTALHERB",
+                    "name": "Mental Herb"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "COVERTCLOAK"
+                {
+                    "id": "COVERTCLOAK",
+                    "name": "Covert Cloak"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {
@@ -185,7 +200,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

@@ -21,7 +21,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "REINFORCINGROD"
+                {
+                    "id": "REINFORCINGROD",
+                    "name": "Reinforcing Rod"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "FRAGILELOCKET"
+                {
+                    "id": "FRAGILELOCKET",
+                    "name": "Fragile Locket"
+                }
             ],
             "moves": [
                 {

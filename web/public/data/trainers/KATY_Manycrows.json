@@ -21,7 +21,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "DAMPROCK"
+                {
+                    "id": "DAMPROCK",
+                    "name": "Damp Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +126,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +162,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -182,7 +197,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

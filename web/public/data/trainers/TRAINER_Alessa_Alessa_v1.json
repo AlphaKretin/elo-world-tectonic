@@ -52,7 +52,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +124,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "HEATROCK"
+                {
+                    "id": "HEATROCK",
+                    "name": "Heat Rock"
+                }
             ],
             "moves": [
                 {

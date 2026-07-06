@@ -83,8 +83,14 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "SITRUSBERRY",
-                "PSYCHICGEM"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                },
+                {
+                    "id": "PSYCHICGEM",
+                    "name": "Psychic Gem"
+                }
             ],
             "moves": [
                 {

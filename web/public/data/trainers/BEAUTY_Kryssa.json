@@ -82,7 +82,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "LUMBERAXE"
+                {
+                    "id": "LUMBERAXE",
+                    "name": "Lumber Axe"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {

@@ -21,8 +21,14 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "BUGGEM",
-                "FIREGEM"
+                {
+                    "id": "BUGGEM",
+                    "name": "Bug Gem"
+                },
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {
@@ -55,8 +61,14 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "MIRRORHERB",
-                "POWERHERB"
+                {
+                    "id": "MIRRORHERB",
+                    "name": "Mirror Herb"
+                },
+                {
+                    "id": "POWERHERB",
+                    "name": "Power Herb"
+                }
             ],
             "moves": [
                 {
@@ -89,7 +101,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -122,7 +137,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

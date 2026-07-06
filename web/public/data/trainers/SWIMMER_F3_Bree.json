@@ -51,7 +51,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -114,7 +117,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {

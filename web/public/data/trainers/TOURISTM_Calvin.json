@@ -52,7 +52,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "CHOICESPECS"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "CHOICEBAND"
+                {
+                    "id": "CHOICEBAND",
+                    "name": "Choice Band"
+                }
             ],
             "moves": [
                 {

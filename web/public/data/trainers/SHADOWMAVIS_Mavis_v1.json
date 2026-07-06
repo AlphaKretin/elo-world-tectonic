@@ -21,7 +21,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "ICEGEM"
+                {
+                    "id": "ICEGEM",
+                    "name": "Ice Gem"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -185,7 +200,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "BLACKSLUDGE"
+                {
+                    "id": "BLACKSLUDGE",
+                    "name": "Black Sludge"
+                }
             ],
             "moves": [
                 {

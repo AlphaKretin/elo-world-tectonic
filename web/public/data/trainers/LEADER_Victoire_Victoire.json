@@ -52,7 +52,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -149,7 +155,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "THROATSPRAY"
+                {
+                    "id": "THROATSPRAY",
+                    "name": "Throat Spray"
+                }
             ],
             "moves": [
                 {

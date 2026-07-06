@@ -51,7 +51,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "SKILLHERB"
+                {
+                    "id": "SKILLHERB",
+                    "name": "Skill Herb"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "GROUNDGEM"
+                {
+                    "id": "GROUNDGEM",
+                    "name": "Ground Gem"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "ICYROCK"
+                {
+                    "id": "ICYROCK",
+                    "name": "Icy Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "OCCABERRY"
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "BABIRIBERRY"
+                {
+                    "id": "BABIRIBERRY",
+                    "name": "Babiri Berry"
+                }
             ],
             "moves": [
                 {

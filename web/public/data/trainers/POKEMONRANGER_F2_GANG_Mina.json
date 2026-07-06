@@ -20,7 +20,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "CHESTOBERRY"
+                {
+                    "id": "CHESTOBERRY",
+                    "name": "Chesto Berry"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "BLACKSLUDGE"
+                {
+                    "id": "BLACKSLUDGE",
+                    "name": "Black Sludge"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "EXPERTBELT"
+                {
+                    "id": "EXPERTBELT",
+                    "name": "Expert Belt"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +163,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {
@@ -184,7 +199,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

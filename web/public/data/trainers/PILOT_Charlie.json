@@ -20,7 +20,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -52,7 +55,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "CHOICESCARF"
+                {
+                    "id": "CHOICESCARF",
+                    "name": "Choice Scarf"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +90,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "ELECTRICGEM"
+                {
+                    "id": "ELECTRICGEM",
+                    "name": "Electric Gem"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +125,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "DARKGEM"
+                {
+                    "id": "DARKGEM",
+                    "name": "Dark Gem"
+                }
             ],
             "moves": [
                 {

@@ -21,7 +21,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "LUCKHERB"
+                {
+                    "id": "LUCKHERB",
+                    "name": "Luck Herb"
+                }
             ],
             "moves": [
                 {

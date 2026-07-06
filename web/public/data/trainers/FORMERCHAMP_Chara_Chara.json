@@ -21,7 +21,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "WEAKNESSPOLICY"
+                {
+                    "id": "WEAKNESSPOLICY",
+                    "name": "Weakness Policy"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LUCKHERB"
+                {
+                    "id": "LUCKHERB",
+                    "name": "Luck Herb"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "ROSELIBERRY"
+                {
+                    "id": "ROSELIBERRY",
+                    "name": "Roseli Berry"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +165,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -186,7 +201,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "REDCARD"
+                {
+                    "id": "REDCARD",
+                    "name": "Red Card"
+                }
             ],
             "moves": [
                 {

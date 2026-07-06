@@ -21,7 +21,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "ICYROCK"
+                {
+                    "id": "ICYROCK",
+                    "name": "Icy Rock"
+                }
             ],
             "moves": [
                 {
@@ -146,7 +149,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "POWERHERB"
+                {
+                    "id": "POWERHERB",
+                    "name": "Power Herb"
+                }
             ],
             "moves": [
                 {

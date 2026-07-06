@@ -20,7 +20,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "LUCKHERB"
+                {
+                    "id": "LUCKHERB",
+                    "name": "Luck Herb"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "LIECHIBERRY"
+                {
+                    "id": "LIECHIBERRY",
+                    "name": "Liechi Berry"
+                }
             ],
             "moves": [
                 {

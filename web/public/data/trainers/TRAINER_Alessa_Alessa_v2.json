@@ -21,7 +21,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "ICEGEM"
+                {
+                    "id": "ICEGEM",
+                    "name": "Ice Gem"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "EVIOLITE"
+                {
+                    "id": "EVIOLITE",
+                    "name": "Eviolite"
+                }
             ],
             "moves": [
                 {

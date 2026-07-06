@@ -21,7 +21,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LUNCHBOX"
+                {
+                    "id": "LUNCHBOX",
+                    "name": "Lunch Box"
+                }
             ],
             "moves": [
                 {
@@ -50,7 +53,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "STRIKECORSET"
+                {
+                    "id": "STRIKECORSET",
+                    "name": "Strike Corset"
+                }
             ],
             "moves": [
                 {
@@ -83,7 +89,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "RINDOFEAST"
+                {
+                    "id": "RINDOFEAST",
+                    "name": "Rindo Feast"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +125,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "WHITEBOUGH"
+                {
+                    "id": "WHITEBOUGH",
+                    "name": "White Bough"
+                }
             ],
             "moves": [
                 {
@@ -148,7 +160,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "ASSAULTCORSET"
+                {
+                    "id": "ASSAULTCORSET",
+                    "name": "Assault Corset"
+                }
             ],
             "moves": [
                 {
@@ -181,7 +196,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "LUNUSBERRY"
+                {
+                    "id": "LUNUSBERRY",
+                    "name": "Lunus Berry"
+                }
             ],
             "moves": [
                 {

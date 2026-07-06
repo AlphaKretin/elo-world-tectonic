@@ -21,7 +21,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "WHETSTONE"
+                {
+                    "id": "WHETSTONE",
+                    "name": "Whetstone"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "WATERBALLOON"
+                {
+                    "id": "WATERBALLOON",
+                    "name": "Water Balloon"
+                }
             ],
             "moves": [
                 {

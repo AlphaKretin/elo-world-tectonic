@@ -21,7 +21,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "RINDOBERRY"
+                {
+                    "id": "RINDOBERRY",
+                    "name": "Rindo Berry"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "FIGHTINGGEM"
+                {
+                    "id": "FIGHTINGGEM",
+                    "name": "Fighting Gem"
+                }
             ],
             "moves": [
                 {

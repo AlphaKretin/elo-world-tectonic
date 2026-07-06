@@ -20,7 +20,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "GRIPCLAW"
+                {
+                    "id": "GRIPCLAW",
+                    "name": "Grip Claw"
+                }
             ],
             "moves": [
                 {

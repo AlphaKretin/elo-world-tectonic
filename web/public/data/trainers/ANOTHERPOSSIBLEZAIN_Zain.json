@@ -142,7 +142,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -175,7 +178,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "YACHEBERRY"
+                {
+                    "id": "YACHEBERRY",
+                    "name": "Yache Berry"
+                }
             ],
             "moves": [
                 {

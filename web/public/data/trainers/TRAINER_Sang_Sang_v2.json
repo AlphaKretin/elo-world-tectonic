@@ -58,7 +58,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +156,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "THROATSPRAY"
+                {
+                    "id": "THROATSPRAY",
+                    "name": "Throat Spray"
+                }
             ],
             "moves": [
                 {
@@ -205,7 +211,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "WILDCARD"
+                {
+                    "id": "WILDCARD",
+                    "name": "Wild Card"
+                }
             ],
             "moves": [
                 {

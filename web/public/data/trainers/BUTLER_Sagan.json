@@ -21,7 +21,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "CHESTOBERRY"
+                {
+                    "id": "CHESTOBERRY",
+                    "name": "Chesto Berry"
+                }
             ],
             "moves": [
                 {
@@ -112,7 +115,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

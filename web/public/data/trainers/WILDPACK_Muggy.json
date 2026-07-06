@@ -20,7 +20,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "DAMPROCK"
+                {
+                    "id": "DAMPROCK",
+                    "name": "Damp Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "WACANBERRY"
+                {
+                    "id": "WACANBERRY",
+                    "name": "Wacan Berry"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "KEBIABERRY"
+                {
+                    "id": "KEBIABERRY",
+                    "name": "Kebia Berry"
+                }
             ],
             "moves": [
                 {

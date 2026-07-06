@@ -28,7 +28,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "NORMALGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                }
             ],
             "moves": [
                 {
@@ -60,7 +63,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -93,7 +99,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -125,7 +134,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -157,7 +169,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "ICEGEM"
+                {
+                    "id": "ICEGEM",
+                    "name": "Ice Gem"
+                }
             ],
             "moves": [
                 {
@@ -189,7 +204,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

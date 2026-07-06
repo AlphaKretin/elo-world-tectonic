@@ -21,7 +21,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "CHESTOBERRY"
+                {
+                    "id": "CHESTOBERRY",
+                    "name": "Chesto Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "CHESTOBERRY"
+                {
+                    "id": "CHESTOBERRY",
+                    "name": "Chesto Berry"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LEPPABERRY"
+                {
+                    "id": "LEPPABERRY",
+                    "name": "Leppa Berry"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "TANGABERRY"
+                {
+                    "id": "TANGABERRY",
+                    "name": "Tanga Berry"
+                }
             ],
             "moves": [
                 {

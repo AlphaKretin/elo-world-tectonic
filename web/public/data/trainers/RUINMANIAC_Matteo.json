@@ -20,7 +20,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "ELECTRICGEM"
+                {
+                    "id": "ELECTRICGEM",
+                    "name": "Electric Gem"
+                }
             ],
             "moves": [
                 {
@@ -112,7 +115,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {

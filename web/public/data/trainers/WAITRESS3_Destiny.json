@@ -20,7 +20,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "ICYROCK"
+                {
+                    "id": "ICYROCK",
+                    "name": "Icy Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "HIVISJACKET"
+                {
+                    "id": "HIVISJACKET",
+                    "name": "Hi-Viz Jacket"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "LUMBERAXE"
+                {
+                    "id": "LUMBERAXE",
+                    "name": "Lumber Axe"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +163,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "GHOSTGEM"
+                {
+                    "id": "GHOSTGEM",
+                    "name": "Ghost Gem"
+                }
             ],
             "moves": [
                 {
@@ -184,7 +199,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "SEVENLEAGUEBOOTS"
+                {
+                    "id": "SEVENLEAGUEBOOTS",
+                    "name": "7-League Boots"
+                }
             ],
             "moves": [
                 {

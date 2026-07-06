@@ -20,7 +20,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "EVIOLITE"
+                {
+                    "id": "EVIOLITE",
+                    "name": "Eviolite"
+                }
             ],
             "moves": [
                 {
@@ -113,7 +116,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "ROCKGEM"
+                {
+                    "id": "ROCKGEM",
+                    "name": "Rock Gem"
+                }
             ],
             "moves": [
                 {

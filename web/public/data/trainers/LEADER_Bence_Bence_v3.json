@@ -21,7 +21,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "CHOICECROWN"
+                {
+                    "id": "CHOICECROWN",
+                    "name": "Choice Crown"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "ALLPURPOSEVEST"
+                {
+                    "id": "ALLPURPOSEVEST",
+                    "name": "All-Purpose Vest"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "HOOHSASHES"
+                {
+                    "id": "HOOHSASHES",
+                    "name": "Ho-oh's Ashes"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "CLARITYSASH"
+                {
+                    "id": "CLARITYSASH",
+                    "name": "Clarity Sash"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +165,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "GHOSTRING"
+                {
+                    "id": "GHOSTRING",
+                    "name": "Ghost Ring"
+                }
             ],
             "moves": [
                 {
@@ -186,7 +201,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "LUNCHBOX"
+                {
+                    "id": "LUNCHBOX",
+                    "name": "Lunch Box"
+                }
             ],
             "moves": [
                 {

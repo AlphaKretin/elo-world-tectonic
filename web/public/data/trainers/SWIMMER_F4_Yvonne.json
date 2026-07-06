@@ -21,7 +21,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "REINFORCINGROD"
+                {
+                    "id": "REINFORCINGROD",
+                    "name": "Reinforcing Rod"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "SKILLHERB"
+                {
+                    "id": "SKILLHERB",
+                    "name": "Skill Herb"
+                }
             ],
             "moves": [
                 {

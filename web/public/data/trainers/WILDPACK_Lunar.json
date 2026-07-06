@@ -21,7 +21,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "MIRROREDROCK"
+                {
+                    "id": "MIRROREDROCK",
+                    "name": "Mirrored Rock"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "NORMALGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "PSYCHICGEM"
+                {
+                    "id": "PSYCHICGEM",
+                    "name": "Psychic Gem"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {

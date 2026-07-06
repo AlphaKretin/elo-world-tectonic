@@ -28,7 +28,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -61,7 +64,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "DARKGEM"
+                {
+                    "id": "DARKGEM",
+                    "name": "Dark Gem"
+                }
             ],
             "moves": [
                 {
@@ -94,7 +100,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -127,7 +136,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "LUMBERRY"
+                {
+                    "id": "LUMBERRY",
+                    "name": "Lum Berry"
+                }
             ],
             "moves": [
                 {
@@ -160,7 +172,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {
@@ -193,7 +208,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "SEVENLEAGUEBOOTS"
+                {
+                    "id": "SEVENLEAGUEBOOTS",
+                    "name": "7-League Boots"
+                }
             ],
             "moves": [
                 {

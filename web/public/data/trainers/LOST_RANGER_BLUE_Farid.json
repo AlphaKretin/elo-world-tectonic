@@ -21,7 +21,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {
@@ -146,7 +152,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "GRASSGEM"
+                {
+                    "id": "GRASSGEM",
+                    "name": "Grass Gem"
+                }
             ],
             "moves": [
                 {

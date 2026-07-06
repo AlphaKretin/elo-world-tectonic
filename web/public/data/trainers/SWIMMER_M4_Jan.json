@@ -21,7 +21,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "CHOICESCARF"
+                {
+                    "id": "CHOICESCARF",
+                    "name": "Choice Scarf"
+                }
             ],
             "moves": [
                 {
@@ -83,7 +86,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

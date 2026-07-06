@@ -21,7 +21,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "ELECTRICGEM"
+                {
+                    "id": "ELECTRICGEM",
+                    "name": "Electric Gem"
+                }
             ],
             "moves": [
                 {
@@ -82,7 +88,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "CHOICESPECS"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                }
             ],
             "moves": [
                 {
@@ -107,7 +116,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "DRAGONGEM"
+                {
+                    "id": "DRAGONGEM",
+                    "name": "Dragon Gem"
+                }
             ],
             "moves": [
                 {

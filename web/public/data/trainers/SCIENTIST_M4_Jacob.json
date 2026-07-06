@@ -21,7 +21,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "EJECTBUTTON"
+                {
+                    "id": "EJECTBUTTON",
+                    "name": "Eject Button"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +126,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "LEPPABERRY"
+                {
+                    "id": "LEPPABERRY",
+                    "name": "Leppa Berry"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +162,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -183,7 +198,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "SEVENLEAGUEBOOTS"
+                {
+                    "id": "SEVENLEAGUEBOOTS",
+                    "name": "7-League Boots"
+                }
             ],
             "moves": [
                 {

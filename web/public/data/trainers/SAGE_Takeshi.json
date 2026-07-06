@@ -21,7 +21,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "SALACBERRY"
+                {
+                    "id": "SALACBERRY",
+                    "name": "Salac Berry"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

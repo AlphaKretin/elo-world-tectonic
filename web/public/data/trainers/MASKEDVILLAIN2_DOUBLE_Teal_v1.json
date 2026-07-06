@@ -31,7 +31,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "ICEGEM"
+                {
+                    "id": "ICEGEM",
+                    "name": "Ice Gem"
+                }
             ],
             "moves": [
                 {
@@ -64,7 +67,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -97,7 +103,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -130,7 +139,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -162,7 +174,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -195,7 +210,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "BUGGEM"
+                {
+                    "id": "BUGGEM",
+                    "name": "Bug Gem"
+                }
             ],
             "moves": [
                 {

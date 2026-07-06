@@ -82,7 +82,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "FLYINGGEM"
+                {
+                    "id": "FLYINGGEM",
+                    "name": "Flying Gem"
+                }
             ],
             "moves": [
                 {
@@ -114,7 +117,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "HIVISJACKET"
+                {
+                    "id": "HIVISJACKET",
+                    "name": "Hi-Viz Jacket"
+                }
             ],
             "moves": [
                 {

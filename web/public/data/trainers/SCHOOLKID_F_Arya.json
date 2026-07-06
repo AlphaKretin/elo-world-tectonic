@@ -51,7 +51,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "WATERGEM"
+                {
+                    "id": "WATERGEM",
+                    "name": "Water Gem"
+                }
             ],
             "moves": [
                 {

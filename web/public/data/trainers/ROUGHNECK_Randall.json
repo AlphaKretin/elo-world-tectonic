@@ -79,7 +79,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "FLYINGGEM"
+                {
+                    "id": "FLYINGGEM",
+                    "name": "Flying Gem"
+                }
             ],
             "moves": [
                 {
@@ -142,7 +145,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

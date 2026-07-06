@@ -21,7 +21,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "COVERTCLOAK"
+                {
+                    "id": "COVERTCLOAK",
+                    "name": "Covert Cloak"
+                }
             ],
             "moves": [
                 {

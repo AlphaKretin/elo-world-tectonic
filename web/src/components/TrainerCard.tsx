@@ -173,9 +173,10 @@ export const TrainerCard = forwardRef<HTMLDivElement, Props>(function TrainerCar
                   <RemoteSprite
                     key={idx}
                     kind="Items"
-                    name={item}
+                    name={item.id}
                     className="held-item-icon"
-                    alt={item}
+                    alt={item.name}
+                    title={item.name}
                     style={{ transform: `scale(${ITEM_ICON_SCALE})` }}
                   />
                 ))}

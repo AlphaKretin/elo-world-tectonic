@@ -21,8 +21,14 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "PARADOXHERB",
-                "MIRRORHERB"
+                {
+                    "id": "PARADOXHERB",
+                    "name": "Paradox Herb"
+                },
+                {
+                    "id": "MIRRORHERB",
+                    "name": "Mirror Herb"
+                }
             ],
             "moves": [
                 {

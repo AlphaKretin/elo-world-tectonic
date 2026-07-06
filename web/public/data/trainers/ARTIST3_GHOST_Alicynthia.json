@@ -21,7 +21,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "REINFORCINGROD"
+                {
+                    "id": "REINFORCINGROD",
+                    "name": "Reinforcing Rod"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "PINPOINTROCK"
+                {
+                    "id": "PINPOINTROCK",
+                    "name": "Pin-Point Rock"
+                }
             ],
             "moves": [
                 {

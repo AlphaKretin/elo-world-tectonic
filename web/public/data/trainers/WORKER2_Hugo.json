@@ -74,7 +74,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "SHUCABERRY"
+                {
+                    "id": "SHUCABERRY",
+                    "name": "Shuca Berry"
+                }
             ],
             "moves": [
                 {
@@ -107,7 +110,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "OCCABERRY"
+                {
+                    "id": "OCCABERRY",
+                    "name": "Occa Berry"
+                }
             ],
             "moves": [
                 {

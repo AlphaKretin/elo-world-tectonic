@@ -21,8 +21,14 @@
                 "SERENE"
             ],
             "heldItems": [
-                "FOCUSSASH",
-                "LUCKHERB"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                },
+                {
+                    "id": "LUCKHERB",
+                    "name": "Luck Herb"
+                }
             ],
             "moves": [
                 {
@@ -55,8 +61,14 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "ASSAULTVEST",
-                "STRIKEVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                },
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -89,8 +101,14 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "LEFTOVERS",
-                "WHITENINGPASTE"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                },
+                {
+                    "id": "WHITENINGPASTE",
+                    "name": "Whitening Paste"
+                }
             ],
             "moves": [
                 {
@@ -123,8 +141,14 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "LIFEORB",
-                "MUSCLEBAND"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                },
+                {
+                    "id": "MUSCLEBAND",
+                    "name": "Muscle Band"
+                }
             ],
             "moves": [
                 {
@@ -157,8 +181,14 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "THROATSPRAY",
-                "SEVENLEAGUEBOOTS"
+                {
+                    "id": "THROATSPRAY",
+                    "name": "Throat Spray"
+                },
+                {
+                    "id": "SEVENLEAGUEBOOTS",
+                    "name": "7-League Boots"
+                }
             ],
             "moves": [
                 {
@@ -191,8 +221,14 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "WEAKNESSPOLICY",
-                "SALACBERRY"
+                {
+                    "id": "WEAKNESSPOLICY",
+                    "name": "Weakness Policy"
+                },
+                {
+                    "id": "SALACBERRY",
+                    "name": "Salac Berry"
+                }
             ],
             "moves": [
                 {

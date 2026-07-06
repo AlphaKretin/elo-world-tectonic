@@ -20,7 +20,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "OCCAFEAST"
+                {
+                    "id": "OCCAFEAST",
+                    "name": "Occa Feast"
+                }
             ],
             "moves": [
                 {
@@ -52,7 +55,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LUNUSBERRY"
+                {
+                    "id": "LUNUSBERRY",
+                    "name": "Lunus Berry"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "SITREONBERRY"
+                {
+                    "id": "SITREONBERRY",
+                    "name": "Sitreon Berry"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +126,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "STRIKECORSET"
+                {
+                    "id": "STRIKECORSET",
+                    "name": "Strike Corset"
+                }
             ],
             "moves": [
                 {
@@ -149,7 +161,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "DEATHORB"
+                {
+                    "id": "DEATHORB",
+                    "name": "Death Orb"
+                }
             ],
             "moves": [
                 {
@@ -182,7 +197,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "ASSAULTCORSET"
+                {
+                    "id": "ASSAULTCORSET",
+                    "name": "Assault Corset"
+                }
             ],
             "moves": [
                 {

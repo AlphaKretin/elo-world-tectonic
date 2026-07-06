@@ -21,7 +21,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "TECHNIQUEBOOSTER"
+                {
+                    "id": "TECHNIQUEBOOSTER",
+                    "name": "Technique Booster"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "CHOICESPECS"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "HIVISJACKET"
+                {
+                    "id": "HIVISJACKET",
+                    "name": "Hi-Viz Jacket"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +163,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {
@@ -184,7 +199,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "CHOICEBAND"
+                {
+                    "id": "CHOICEBAND",
+                    "name": "Choice Band"
+                }
             ],
             "moves": [
                 {

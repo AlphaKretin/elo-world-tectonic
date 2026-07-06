@@ -27,7 +27,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "ROCKGEM"
+                {
+                    "id": "ROCKGEM",
+                    "name": "Rock Gem"
+                }
             ],
             "moves": [
                 {
@@ -60,7 +63,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -93,7 +99,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "COLBURBERRY"
+                {
+                    "id": "COLBURBERRY",
+                    "name": "Colbur Berry"
+                }
             ],
             "moves": [
                 {
@@ -125,7 +134,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "CHOICESCARF"
+                {
+                    "id": "CHOICESCARF",
+                    "name": "Choice Scarf"
+                }
             ],
             "moves": [
                 {
@@ -157,7 +169,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -190,7 +205,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "ELECTRICGEM"
+                {
+                    "id": "ELECTRICGEM",
+                    "name": "Electric Gem"
+                }
             ],
             "moves": [
                 {

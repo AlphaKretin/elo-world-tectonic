@@ -21,7 +21,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "ENERGYHERB"
+                {
+                    "id": "ENERGYHERB",
+                    "name": "Energy Herb"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "POWERLOCK"
+                {
+                    "id": "POWERLOCK",
+                    "name": "Power Lock"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -184,7 +199,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "CHOICEBAND"
+                {
+                    "id": "CHOICEBAND",
+                    "name": "Choice Band"
+                }
             ],
             "moves": [
                 {

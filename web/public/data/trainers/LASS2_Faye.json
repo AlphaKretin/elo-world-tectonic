@@ -21,7 +21,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "THROATSPRAY"
+                {
+                    "id": "THROATSPRAY",
+                    "name": "Throat Spray"
+                }
             ],
             "moves": [
                 {
@@ -111,7 +114,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

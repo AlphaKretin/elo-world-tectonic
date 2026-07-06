@@ -88,7 +88,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +153,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "SALACBERRY"
+                {
+                    "id": "SALACBERRY",
+                    "name": "Salac Berry"
+                }
             ],
             "moves": [
                 {

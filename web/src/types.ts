@@ -85,6 +85,11 @@ export interface MoveInfo {
   type: string;
 }
 
+export interface HeldItem {
+  id: string;
+  name: string;
+}
+
 export interface PartyMember {
   species: string;
   speciesDisplay: string;
@@ -92,7 +97,7 @@ export interface PartyMember {
   shiny: boolean;
   nickname: string | null;
   tribes: string[];
-  heldItems: string[];
+  heldItems: HeldItem[];
   moves: MoveInfo[];
 }
 

@@ -21,7 +21,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "NORMALGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "WHITEHERB"
+                {
+                    "id": "WHITEHERB",
+                    "name": "White Herb"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "WHITEHERB"
+                {
+                    "id": "WHITEHERB",
+                    "name": "White Herb"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "DARKGEM"
+                {
+                    "id": "DARKGEM",
+                    "name": "Dark Gem"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +165,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "CUSTAPBERRY"
+                {
+                    "id": "CUSTAPBERRY",
+                    "name": "Custap Berry"
+                }
             ],
             "moves": [
                 {
@@ -186,7 +201,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "KEEBERRY"
+                {
+                    "id": "KEEBERRY",
+                    "name": "Kee Berry"
+                }
             ],
             "moves": [
                 {

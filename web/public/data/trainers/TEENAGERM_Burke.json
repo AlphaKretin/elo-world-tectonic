@@ -51,7 +51,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "GRIPCLAW"
+                {
+                    "id": "GRIPCLAW",
+                    "name": "Grip Claw"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "BLACKSLUDGE"
+                {
+                    "id": "BLACKSLUDGE",
+                    "name": "Black Sludge"
+                }
             ],
             "moves": [
                 {

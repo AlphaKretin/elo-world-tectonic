@@ -21,7 +21,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "EXPERTBELT"
+                {
+                    "id": "EXPERTBELT",
+                    "name": "Expert Belt"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

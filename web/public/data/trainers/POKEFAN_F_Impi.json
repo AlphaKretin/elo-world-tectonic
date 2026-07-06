@@ -82,7 +82,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "GHOSTGEM"
+                {
+                    "id": "GHOSTGEM",
+                    "name": "Ghost Gem"
+                }
             ],
             "moves": [
                 {

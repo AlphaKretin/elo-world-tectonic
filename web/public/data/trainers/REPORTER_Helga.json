@@ -83,7 +83,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "STEELGEM"
+                {
+                    "id": "STEELGEM",
+                    "name": "Steel Gem"
+                }
             ],
             "moves": [
                 {

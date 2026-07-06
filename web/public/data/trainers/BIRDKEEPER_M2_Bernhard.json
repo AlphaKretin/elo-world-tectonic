@@ -52,7 +52,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "CHESTOBERRY"
+                {
+                    "id": "CHESTOBERRY",
+                    "name": "Chesto Berry"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "CHOICESPECS"
+                {
+                    "id": "CHOICESPECS",
+                    "name": "Choice Specs"
+                }
             ],
             "moves": [
                 {

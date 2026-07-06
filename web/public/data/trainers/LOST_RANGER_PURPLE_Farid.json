@@ -52,7 +52,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "SKILLHERB"
+                {
+                    "id": "SKILLHERB",
+                    "name": "Skill Herb"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "THROATSPRAY"
+                {
+                    "id": "THROATSPRAY",
+                    "name": "Throat Spray"
+                }
             ],
             "moves": [
                 {
@@ -147,7 +153,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

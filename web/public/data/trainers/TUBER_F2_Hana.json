@@ -21,7 +21,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "REDCARD"
+                {
+                    "id": "REDCARD",
+                    "name": "Red Card"
+                }
             ],
             "moves": [
                 {

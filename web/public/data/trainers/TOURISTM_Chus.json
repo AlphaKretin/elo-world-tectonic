@@ -28,7 +28,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -61,7 +64,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -94,7 +100,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {
@@ -126,7 +135,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -159,7 +171,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "HEAVYDUTYBOOTS"
+                {
+                    "id": "HEAVYDUTYBOOTS",
+                    "name": "Heavy-Duty Boots"
+                }
             ],
             "moves": [
                 {
@@ -191,7 +206,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LUCKHERB"
+                {
+                    "id": "LUCKHERB",
+                    "name": "Luck Herb"
+                }
             ],
             "moves": [
                 {

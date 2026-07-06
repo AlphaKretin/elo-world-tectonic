@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "BRIGHTCLAY"
+                {
+                    "id": "BRIGHTCLAY",
+                    "name": "Bright Clay"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LUNCHBOX"
+                {
+                    "id": "LUNCHBOX",
+                    "name": "Lunch Box"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LUNUSBERRY"
+                {
+                    "id": "LUNUSBERRY",
+                    "name": "Lunus Berry"
+                }
             ],
             "moves": [
                 {
@@ -119,8 +128,14 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "NORMALGEM",
-                "FAIRYGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                },
+                {
+                    "id": "FAIRYGEM",
+                    "name": "Fairy Gem"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +168,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "CLARITYSASH"
+                {
+                    "id": "CLARITYSASH",
+                    "name": "Clarity Sash"
+                }
             ],
             "moves": [
                 {
@@ -186,7 +204,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "DEATHORB"
+                {
+                    "id": "DEATHORB",
+                    "name": "Death Orb"
+                }
             ],
             "moves": [
                 {

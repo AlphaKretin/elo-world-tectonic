@@ -21,7 +21,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "WHETSTONE"
+                {
+                    "id": "WHETSTONE",
+                    "name": "Whetstone"
+                }
             ],
             "moves": [
                 {

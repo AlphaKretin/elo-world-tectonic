@@ -21,7 +21,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "BABIRIBERRY"
+                {
+                    "id": "BABIRIBERRY",
+                    "name": "Babiri Berry"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "ANIMATED"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +165,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "SHUCABERRY"
+                {
+                    "id": "SHUCABERRY",
+                    "name": "Shuca Berry"
+                }
             ],
             "moves": [
                 {

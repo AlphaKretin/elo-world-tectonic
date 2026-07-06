@@ -21,7 +21,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "GRASSGEM"
+                {
+                    "id": "GRASSGEM",
+                    "name": "Grass Gem"
+                }
             ],
             "moves": [
                 {
@@ -114,7 +117,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

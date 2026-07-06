@@ -21,7 +21,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "DARKGEM"
+                {
+                    "id": "DARKGEM",
+                    "name": "Dark Gem"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "WHETSTONE"
+                {
+                    "id": "WHETSTONE",
+                    "name": "Whetstone"
+                }
             ],
             "moves": [
                 {

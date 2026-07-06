@@ -20,7 +20,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "SMOOTHROCK"
+                {
+                    "id": "SMOOTHROCK",
+                    "name": "Smooth Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +122,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "UTILITYUMBRELLA"
+                {
+                    "id": "UTILITYUMBRELLA",
+                    "name": "Utility Umbrella"
+                }
             ],
             "moves": [
                 {
@@ -149,7 +158,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "EXPERTBELT"
+                {
+                    "id": "EXPERTBELT",
+                    "name": "Expert Belt"
+                }
             ],
             "moves": [
                 {

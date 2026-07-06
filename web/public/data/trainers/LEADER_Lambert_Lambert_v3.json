@@ -21,7 +21,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "CLARITYSASH"
+                {
+                    "id": "CLARITYSASH",
+                    "name": "Clarity Sash"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "ZALAKABERRY"
+                {
+                    "id": "ZALAKABERRY",
+                    "name": "Zalaka Berry"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "ROSELIFEAST"
+                {
+                    "id": "ROSELIFEAST",
+                    "name": "Roseli Feast"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "LUNCHBOX"
+                {
+                    "id": "LUNCHBOX",
+                    "name": "Lunch Box"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +165,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "LUCENTGEM"
+                {
+                    "id": "LUCENTGEM",
+                    "name": "Lucent Gem"
+                }
             ],
             "moves": [
                 {
@@ -186,7 +201,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "SPELLBELL"
+                {
+                    "id": "SPELLBELL",
+                    "name": "Spell Bell"
+                }
             ],
             "moves": [
                 {

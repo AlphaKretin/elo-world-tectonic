@@ -21,7 +21,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "RAWSTBERRY"
+                {
+                    "id": "RAWSTBERRY",
+                    "name": "Rawst Berry"
+                }
             ],
             "moves": [
                 {

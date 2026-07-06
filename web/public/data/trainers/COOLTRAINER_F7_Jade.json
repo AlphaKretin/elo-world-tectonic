@@ -28,7 +28,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {
@@ -61,7 +64,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -94,7 +100,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "SALACBERRY"
+                {
+                    "id": "SALACBERRY",
+                    "name": "Salac Berry"
+                }
             ],
             "moves": [
                 {
@@ -127,7 +136,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -160,7 +172,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "WATERBALLOON"
+                {
+                    "id": "WATERBALLOON",
+                    "name": "Water Balloon"
+                }
             ],
             "moves": [
                 {
@@ -193,7 +208,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

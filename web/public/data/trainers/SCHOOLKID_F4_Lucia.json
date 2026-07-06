@@ -21,7 +21,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -114,7 +117,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "FLASHBULB"
+                {
+                    "id": "FLASHBULB",
+                    "name": "Flash Bulb"
+                }
             ],
             "moves": [
                 {

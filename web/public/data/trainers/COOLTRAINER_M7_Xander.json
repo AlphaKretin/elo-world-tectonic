@@ -27,7 +27,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "ELECTRICGEM"
+                {
+                    "id": "ELECTRICGEM",
+                    "name": "Electric Gem"
+                }
             ],
             "moves": [
                 {
@@ -59,7 +62,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -92,7 +98,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "GRASSGEM"
+                {
+                    "id": "GRASSGEM",
+                    "name": "Grass Gem"
+                }
             ],
             "moves": [
                 {
@@ -125,7 +134,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -157,7 +169,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "POISONGEM"
+                {
+                    "id": "POISONGEM",
+                    "name": "Poison Gem"
+                }
             ],
             "moves": [
                 {
@@ -189,7 +204,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {

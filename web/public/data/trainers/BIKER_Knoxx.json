@@ -51,7 +51,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "CRYSTALVEIL"
+                {
+                    "id": "CRYSTALVEIL",
+                    "name": "Crystal Veil"
+                }
             ],
             "moves": [
                 {
@@ -83,7 +86,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {

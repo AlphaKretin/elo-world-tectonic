@@ -21,7 +21,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "SALACBERRY"
+                {
+                    "id": "SALACBERRY",
+                    "name": "Salac Berry"
+                }
             ],
             "moves": [
                 {
@@ -180,7 +186,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "SPELLTAG"
+                {
+                    "id": "SPELLTAG",
+                    "name": "Spell Tag"
+                }
             ],
             "moves": [
                 {

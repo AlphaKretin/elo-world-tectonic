@@ -21,7 +21,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "ANIMATED"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "SHELLBELL"
+                {
+                    "id": "SHELLBELL",
+                    "name": "Shell Bell"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "GHOSTGEM"
+                {
+                    "id": "GHOSTGEM",
+                    "name": "Ghost Gem"
+                }
             ],
             "moves": [
                 {

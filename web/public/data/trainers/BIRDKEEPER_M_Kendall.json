@@ -83,7 +83,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "GROUNDGEM"
+                {
+                    "id": "GROUNDGEM",
+                    "name": "Ground Gem"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "ASSASSIN"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

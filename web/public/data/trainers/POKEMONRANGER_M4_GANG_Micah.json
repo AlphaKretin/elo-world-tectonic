@@ -21,7 +21,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {
@@ -120,7 +129,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -153,7 +165,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FRAGILELOCKET"
+                {
+                    "id": "FRAGILELOCKET",
+                    "name": "Fragile Locket"
+                }
             ],
             "moves": [
                 {
@@ -185,7 +200,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

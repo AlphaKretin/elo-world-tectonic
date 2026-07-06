@@ -698,8 +698,8 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         # card besides.
         corner_x = cx0 + inner_pad + cell_sprite_budget - inner_pad
         corner_y = sprite_area_top + cell_sprite_budget - inner_pad
-        for n, item_id in enumerate(member.get("held_items") or []):
-            icon = item_icon(item_id)
+        for n, item in enumerate(member.get("held_items") or []):
+            icon = item_icon(item["id"])
             if not icon:
                 continue
             fitted = icon.resize((icon.width * ITEM_ICON_SCALE, icon.height * ITEM_ICON_SCALE), Image.NEAREST)

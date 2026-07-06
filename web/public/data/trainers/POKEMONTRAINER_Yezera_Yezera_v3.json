@@ -21,7 +21,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "TANGABERRY"
+                {
+                    "id": "TANGABERRY",
+                    "name": "Tanga Berry"
+                }
             ],
             "moves": [
                 {
@@ -50,7 +53,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {
@@ -83,7 +89,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "SHUCABERRY"
+                {
+                    "id": "SHUCABERRY",
+                    "name": "Shuca Berry"
+                }
             ],
             "moves": [
                 {
@@ -111,7 +120,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -139,7 +151,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {
@@ -167,7 +182,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "PSYCHICGEM"
+                {
+                    "id": "PSYCHICGEM",
+                    "name": "Psychic Gem"
+                }
             ],
             "moves": [
                 {

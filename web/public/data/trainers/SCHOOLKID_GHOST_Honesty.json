@@ -21,7 +21,10 @@
                 "ANIMATED"
             ],
             "heldItems": [
-                "AIRBALLOON"
+                {
+                    "id": "AIRBALLOON",
+                    "name": "Air Balloon"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "FLAMEORB"
+                {
+                    "id": "FLAMEORB",
+                    "name": "Flame Orb"
+                }
             ],
             "moves": [
                 {

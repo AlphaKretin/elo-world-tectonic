@@ -21,7 +21,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "ROCKYHELMET"
+                {
+                    "id": "ROCKYHELMET",
+                    "name": "Rocky Helmet"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LUCKHERB"
+                {
+                    "id": "LUCKHERB",
+                    "name": "Luck Herb"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "LUMBERRY"
+                {
+                    "id": "LUMBERRY",
+                    "name": "Lum Berry"
+                }
             ],
             "moves": [
                 {
@@ -149,7 +158,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LUMBERAXE"
+                {
+                    "id": "LUMBERAXE",
+                    "name": "Lumber Axe"
+                }
             ],
             "moves": [
                 {

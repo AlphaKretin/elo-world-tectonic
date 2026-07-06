@@ -51,7 +51,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "THROATSPRAY"
+                {
+                    "id": "THROATSPRAY",
+                    "name": "Throat Spray"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +118,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -147,7 +153,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "DARKGEM"
+                {
+                    "id": "DARKGEM",
+                    "name": "Dark Gem"
+                }
             ],
             "moves": [
                 {

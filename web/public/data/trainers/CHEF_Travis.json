@@ -20,7 +20,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "POISONGEM"
+                {
+                    "id": "POISONGEM",
+                    "name": "Poison Gem"
+                }
             ],
             "moves": [
                 {
@@ -47,7 +50,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "POISONGEM"
+                {
+                    "id": "POISONGEM",
+                    "name": "Poison Gem"
+                }
             ],
             "moves": [
                 {

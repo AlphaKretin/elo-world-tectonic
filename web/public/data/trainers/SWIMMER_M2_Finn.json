@@ -21,7 +21,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "CUSTAPBERRY"
+                {
+                    "id": "CUSTAPBERRY",
+                    "name": "Custap Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

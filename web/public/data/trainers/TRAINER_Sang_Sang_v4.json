@@ -58,7 +58,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "WEAKNESSPOLICY"
+                {
+                    "id": "WEAKNESSPOLICY",
+                    "name": "Weakness Policy"
+                }
             ],
             "moves": [
                 {
@@ -90,7 +93,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -123,7 +129,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

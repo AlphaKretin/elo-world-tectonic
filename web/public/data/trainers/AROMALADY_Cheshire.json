@@ -21,7 +21,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "POISONGEM"
+                {
+                    "id": "POISONGEM",
+                    "name": "Poison Gem"
+                }
             ],
             "moves": [
                 {

@@ -21,7 +21,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "PSYCHICGEM"
+                {
+                    "id": "PSYCHICGEM",
+                    "name": "Psychic Gem"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "METRONOME"
+                {
+                    "id": "METRONOME",
+                    "name": "Metronome"
+                }
             ],
             "moves": [
                 {

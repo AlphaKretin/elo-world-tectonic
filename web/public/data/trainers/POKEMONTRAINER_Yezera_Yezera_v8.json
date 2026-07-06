@@ -81,7 +81,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "BABIRIBERRY"
+                {
+                    "id": "BABIRIBERRY",
+                    "name": "Babiri Berry"
+                }
             ],
             "moves": [
                 {
@@ -114,7 +117,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "STRIKEVEST"
+                {
+                    "id": "STRIKEVEST",
+                    "name": "Strike Vest"
+                }
             ],
             "moves": [
                 {
@@ -147,7 +153,10 @@
                 "ANIMATED"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {

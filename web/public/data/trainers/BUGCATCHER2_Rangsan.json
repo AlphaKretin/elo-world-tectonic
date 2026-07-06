@@ -20,7 +20,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "AGILITYHERB"
+                {
+                    "id": "AGILITYHERB",
+                    "name": "Agility Herb"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "WEAKNESSPOLICY"
+                {
+                    "id": "WEAKNESSPOLICY",
+                    "name": "Weakness Policy"
+                }
             ],
             "moves": [
                 {

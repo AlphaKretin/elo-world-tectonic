@@ -52,7 +52,10 @@
                 "FORTUNE"
             ],
             "heldItems": [
-                "CHOICEBAND"
+                {
+                    "id": "CHOICEBAND",
+                    "name": "Choice Band"
+                }
             ],
             "moves": [
                 {
@@ -84,7 +87,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "POISONGEM"
+                {
+                    "id": "POISONGEM",
+                    "name": "Poison Gem"
+                }
             ],
             "moves": [
                 {

@@ -21,7 +21,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "ENERGYLOCK"
+                {
+                    "id": "ENERGYLOCK",
+                    "name": "Energy Lock"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "SKILLHERB"
+                {
+                    "id": "SKILLHERB",
+                    "name": "Skill Herb"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +93,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "ENERGYLOCK"
+                {
+                    "id": "ENERGYLOCK",
+                    "name": "Energy Lock"
+                }
             ],
             "moves": [
                 {

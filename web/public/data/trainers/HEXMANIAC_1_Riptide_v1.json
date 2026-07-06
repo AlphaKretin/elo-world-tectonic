@@ -21,7 +21,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "FOCUSSASH"
+                {
+                    "id": "FOCUSSASH",
+                    "name": "Focus Sash"
+                }
             ],
             "moves": [
                 {
@@ -45,7 +48,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "COVERTCLOAK"
+                {
+                    "id": "COVERTCLOAK",
+                    "name": "Covert Cloak"
+                }
             ],
             "moves": [
                 {
@@ -77,7 +83,10 @@
                 "ANIMATED"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -109,7 +118,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "SCOPELENS"
+                {
+                    "id": "SCOPELENS",
+                    "name": "Scope Lens"
+                }
             ],
             "moves": [
                 {
@@ -142,7 +154,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -174,7 +189,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "LEPPABERRY"
+                {
+                    "id": "LEPPABERRY",
+                    "name": "Leppa Berry"
+                }
             ],
             "moves": [
                 {

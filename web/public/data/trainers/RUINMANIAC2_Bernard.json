@@ -21,7 +21,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "WHITEHERB"
+                {
+                    "id": "WHITEHERB",
+                    "name": "White Herb"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FIREGEM"
+                {
+                    "id": "FIREGEM",
+                    "name": "Fire Gem"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "LEPPABERRY"
+                {
+                    "id": "LEPPABERRY",
+                    "name": "Leppa Berry"
+                }
             ],
             "moves": [
                 {
@@ -175,7 +178,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

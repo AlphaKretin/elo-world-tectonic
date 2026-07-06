@@ -21,7 +21,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "DAMPROCK"
+                {
+                    "id": "DAMPROCK",
+                    "name": "Damp Rock"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +57,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "RINDOBERRY"
+                {
+                    "id": "RINDOBERRY",
+                    "name": "Rindo Berry"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "ASSAULTVEST"
+                {
+                    "id": "ASSAULTVEST",
+                    "name": "Assault Vest"
+                }
             ],
             "moves": [
                 {
@@ -152,7 +164,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -185,7 +200,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "PRISMATICPLATE"
+                {
+                    "id": "PRISMATICPLATE",
+                    "name": "Prismatic Plate"
+                }
             ],
             "moves": [
                 {

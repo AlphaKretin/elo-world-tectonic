@@ -21,7 +21,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "STEELGEM"
+                {
+                    "id": "STEELGEM",
+                    "name": "Steel Gem"
+                }
             ],
             "moves": [
                 {

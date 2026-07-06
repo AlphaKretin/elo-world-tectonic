@@ -51,7 +51,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -83,7 +86,10 @@
                 "DECEIVER"
             ],
             "heldItems": [
-                "FLYINGGEM"
+                {
+                    "id": "FLYINGGEM",
+                    "name": "Flying Gem"
+                }
             ],
             "moves": [
                 {

@@ -20,7 +20,10 @@
                 "SERENE"
             ],
             "heldItems": [
-                "CADOBERRY"
+                {
+                    "id": "CADOBERRY",
+                    "name": "Cado Berry"
+                }
             ],
             "moves": [
                 {
@@ -113,7 +116,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "FLYINGGEM"
+                {
+                    "id": "FLYINGGEM",
+                    "name": "Flying Gem"
+                }
             ],
             "moves": [
                 {

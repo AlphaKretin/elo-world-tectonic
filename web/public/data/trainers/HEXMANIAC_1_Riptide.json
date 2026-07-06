@@ -20,7 +20,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -91,7 +94,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "FRAGILELOCKET"
+                {
+                    "id": "FRAGILELOCKET",
+                    "name": "Fragile Locket"
+                }
             ],
             "moves": [
                 {
@@ -112,7 +118,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "FRAGILELOCKET"
+                {
+                    "id": "FRAGILELOCKET",
+                    "name": "Fragile Locket"
+                }
             ],
             "moves": [
                 {

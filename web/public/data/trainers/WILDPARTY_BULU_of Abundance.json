@@ -21,7 +21,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "SOFTSAND"
+                {
+                    "id": "SOFTSAND",
+                    "name": "Soft Sand"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "MENTALHERB"
+                {
+                    "id": "MENTALHERB",
+                    "name": "Mental Herb"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {

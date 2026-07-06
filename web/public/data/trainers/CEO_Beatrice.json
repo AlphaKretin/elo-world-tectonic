@@ -21,7 +21,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "AMULETCOIN"
+                {
+                    "id": "AMULETCOIN",
+                    "name": "Amulet Coin"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -149,7 +155,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "WHETSTONE"
+                {
+                    "id": "WHETSTONE",
+                    "name": "Whetstone"
+                }
             ],
             "moves": [
                 {

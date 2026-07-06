@@ -20,7 +20,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "REDCARD"
+                {
+                    "id": "REDCARD",
+                    "name": "Red Card"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "STRESSBALL"
+                {
+                    "id": "STRESSBALL",
+                    "name": "Stress Ball"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "EMPTYSTONE"
+                {
+                    "id": "EMPTYSTONE",
+                    "name": "Empty Stone"
+                }
             ],
             "moves": [
                 {
@@ -118,7 +127,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "EJECTPACK"
+                {
+                    "id": "EJECTPACK",
+                    "name": "Eject Pack"
+                }
             ],
             "moves": [
                 {
@@ -151,7 +163,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "SEVENLEAGUEBOOTS"
+                {
+                    "id": "SEVENLEAGUEBOOTS",
+                    "name": "7-League Boots"
+                }
             ],
             "moves": [
                 {
@@ -184,7 +199,10 @@
                 "TYRANNICAL"
             ],
             "heldItems": [
-                "GRIPCLAW"
+                {
+                    "id": "GRIPCLAW",
+                    "name": "Grip Claw"
+                }
             ],
             "moves": [
                 {

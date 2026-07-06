@@ -21,7 +21,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "FAIRYGEM"
+                {
+                    "id": "FAIRYGEM",
+                    "name": "Fairy Gem"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "LIFEORB"
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
             ],
             "moves": [
                 {

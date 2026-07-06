@@ -21,7 +21,10 @@
                 "RADIANT"
             ],
             "heldItems": [
-                "REINFORCINGROD"
+                {
+                    "id": "REINFORCINGROD",
+                    "name": "Reinforcing Rod"
+                }
             ],
             "moves": [
                 {
@@ -116,7 +119,10 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "KEEBERRY"
+                {
+                    "id": "KEEBERRY",
+                    "name": "Kee Berry"
+                }
             ],
             "moves": [
                 {

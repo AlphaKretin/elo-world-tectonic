@@ -20,7 +20,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "SMOOTHROCK"
+                {
+                    "id": "SMOOTHROCK",
+                    "name": "Smooth Rock"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "SCRAPPER"
             ],
             "heldItems": [
-                "POWERHERB"
+                {
+                    "id": "POWERHERB",
+                    "name": "Power Herb"
+                }
             ],
             "moves": [
                 {
@@ -86,7 +92,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "LEFTOVERS"
+                {
+                    "id": "LEFTOVERS",
+                    "name": "Leftovers"
+                }
             ],
             "moves": [
                 {
@@ -119,7 +128,10 @@
                 "SCAVENGER"
             ],
             "heldItems": [
-                "WACANBERRY"
+                {
+                    "id": "WACANBERRY",
+                    "name": "Wacan Berry"
+                }
             ],
             "moves": [
                 {

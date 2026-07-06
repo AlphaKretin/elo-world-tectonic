@@ -20,8 +20,14 @@
                 "NOBLE"
             ],
             "heldItems": [
-                "NORMALGEM",
-                "GROUNDGEM"
+                {
+                    "id": "NORMALGEM",
+                    "name": "Normal Gem"
+                },
+                {
+                    "id": "GROUNDGEM",
+                    "name": "Ground Gem"
+                }
             ],
             "moves": [
                 {
@@ -54,7 +60,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "DARKGEM"
+                {
+                    "id": "DARKGEM",
+                    "name": "Dark Gem"
+                }
             ],
             "moves": [
                 {
@@ -87,7 +96,10 @@
                 "STAMPEDE"
             ],
             "heldItems": [
-                "STEELGEM"
+                {
+                    "id": "STEELGEM",
+                    "name": "Steel Gem"
+                }
             ],
             "moves": [
                 {

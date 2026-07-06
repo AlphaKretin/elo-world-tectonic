@@ -21,7 +21,10 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "HEATSASH"
+                {
+                    "id": "HEATSASH",
+                    "name": "Heat Sash"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "DEATHORB"
+                {
+                    "id": "DEATHORB",
+                    "name": "Death Orb"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +91,10 @@
                 "CARETAKER"
             ],
             "heldItems": [
-                "LUNCHBOX"
+                {
+                    "id": "LUNCHBOX",
+                    "name": "Lunch Box"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +126,10 @@
                 "SCOURGE"
             ],
             "heldItems": [
-                "JAGGEDHELMET"
+                {
+                    "id": "JAGGEDHELMET",
+                    "name": "Jagged Helmet"
+                }
             ],
             "moves": [
                 {
@@ -150,7 +162,10 @@
                 "BUSHWHACKER"
             ],
             "heldItems": [
-                "ALLPURPOSEVEST"
+                {
+                    "id": "ALLPURPOSEVEST",
+                    "name": "All-Purpose Vest"
+                }
             ],
             "moves": [
                 {
@@ -183,7 +198,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "SITREONBERRY"
+                {
+                    "id": "SITREONBERRY",
+                    "name": "Sitreon Berry"
+                }
             ],
             "moves": [
                 {

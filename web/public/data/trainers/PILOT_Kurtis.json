@@ -21,7 +21,10 @@
                 "ESOTERIC"
             ],
             "heldItems": [
-                "LOADEDDICE"
+                {
+                    "id": "LOADEDDICE",
+                    "name": "Loaded Dice"
+                }
             ],
             "moves": [
                 {
@@ -85,7 +88,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "WIDELENS"
+                {
+                    "id": "WIDELENS",
+                    "name": "Wide Lens"
+                }
             ],
             "moves": [
                 {

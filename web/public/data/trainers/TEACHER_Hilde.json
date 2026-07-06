@@ -21,7 +21,10 @@
                 "TACTICIAN"
             ],
             "heldItems": [
-                "BUGGEM"
+                {
+                    "id": "BUGGEM",
+                    "name": "Bug Gem"
+                }
             ],
             "moves": [
                 {
@@ -50,7 +53,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {

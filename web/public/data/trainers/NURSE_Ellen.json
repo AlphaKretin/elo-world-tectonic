@@ -21,7 +21,10 @@
                 "HARMONIC"
             ],
             "heldItems": [
-                "LIGHTCLAY"
+                {
+                    "id": "LIGHTCLAY",
+                    "name": "Light Clay"
+                }
             ],
             "moves": [
                 {
@@ -54,8 +57,14 @@
                 "ARTILLERY"
             ],
             "heldItems": [
-                "LUCKHERB",
-                "TWISTEDSPOON"
+                {
+                    "id": "LUCKHERB",
+                    "name": "Luck Herb"
+                },
+                {
+                    "id": "TWISTEDSPOON",
+                    "name": "Twisted Spoon"
+                }
             ],
             "moves": [
                 {
@@ -115,7 +124,10 @@
                 "LOYAL"
             ],
             "heldItems": [
-                "BUGGEM"
+                {
+                    "id": "BUGGEM",
+                    "name": "Bug Gem"
+                }
             ],
             "moves": [
                 {

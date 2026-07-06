@@ -21,7 +21,10 @@
                 "INDUSTRIOUS"
             ],
             "heldItems": [
-                "SITRUSBERRY"
+                {
+                    "id": "SITRUSBERRY",
+                    "name": "Sitrus Berry"
+                }
             ],
             "moves": [
                 {
@@ -53,7 +56,10 @@
                 "CHARMER"
             ],
             "heldItems": [
-                "POWERLOCK"
+                {
+                    "id": "POWERLOCK",
+                    "name": "Power Lock"
+                }
             ],
             "moves": [
                 {
@@ -117,7 +123,10 @@
                 "WARRIOR"
             ],
             "heldItems": [
-                "AIRBALLOON"
+                {
+                    "id": "AIRBALLOON",
+                    "name": "Air Balloon"
+                }
             ],
             "moves": [
                 {
