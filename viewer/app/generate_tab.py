@@ -1,7 +1,7 @@
 import json
 import os
 
-from PySide6.QtCore import Signal
+from PySide6.QtCore import QSettings, Signal
 from PySide6.QtWidgets import (
     QComboBox,
     QFileDialog,
@@ -16,7 +16,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import asset_names, format_selector, game_assets, replay_env, replay_runner
+from app import asset_names, format_selector, game_assets, replay_env, replay_runner, ui_settings
 from app.replay_runner import ReplayRunner
 from app.trainer_names import TrainerNameResolver
 
@@ -123,6 +123,12 @@ class GenerateTab(QWidget):
         self._update_name_label(self.trainer1_name_label, self.trainer1_edit.text())
         self._update_name_label(self.trainer2_name_label, self.trainer2_edit.text())
 
+        settings = QSettings()
+        ui_settings.bind_combo(settings, "generate/battle_type", self.battle_type_combo)
+        ui_settings.bind_combo(settings, "generate/curse_variant", self.curse_variant_combo)
+        ui_settings.bind_combo(settings, "generate/backdrop", self.backdrop_combo)
+        ui_settings.bind_combo(settings, "generate/backdrop_time", self.backdrop_time_combo)
+
     def _update_name_label(self, label_widget, raw_label):
         raw_label = raw_label.strip()
         if not raw_label:
@@ -224,6 +230,20 @@ class GenerateTab(QWidget):
         can_watch_or_export = bool(result.get("ok")) and bool(result.get("saved_to"))
         self.export_button.setEnabled(can_watch_or_export)
         self.watch_button.setEnabled(can_watch_or_export)
+        if can_watch_or_export:
+            self._write_sidecar()
+
+    def _write_sidecar(self):
+        """Writes the .dat.json sidecar next to the freshly generated .dat
+        itself (not just on Export), so the Watch tab's trainer columns
+        survive a refresh even for a replay that was watched straight from
+        Generate and never exported."""
+        dat_path = os.path.normpath(os.path.join(self.config.vendor_dir, self._last_result["saved_to"]))
+        try:
+            with open(dat_path + ".json", "w", encoding="utf-8") as f:
+                json.dump(self._sidecar_metadata(), f, indent=2)
+        except OSError:
+            pass
 
     def _sidecar_metadata(self):
         return {

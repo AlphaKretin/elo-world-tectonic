@@ -2,6 +2,7 @@ import datetime
 import json
 import os
 
+from PySide6.QtCore import QSettings
 from PySide6.QtWidgets import (
     QAbstractItemView,
     QCheckBox,
@@ -19,7 +20,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import game_assets, replay_env, replay_runner
+from app import game_assets, replay_env, replay_runner, ui_settings
 from app.replay_runner import ReplayRunner
 from app.trainer_names import TrainerNameResolver
 
@@ -66,6 +67,7 @@ class WatchTab(QWidget):
         self.table.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.table.setSelectionMode(QAbstractItemView.SingleSelection)
         self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.table.setColumnWidth(0, 220)
         layout.addWidget(self.table)
 
         form = QFormLayout()
@@ -83,6 +85,9 @@ class WatchTab(QWidget):
         self.transitions_combo.setCurrentIndex(_option_index(TRANSITIONS_OPTIONS, "Standard"))
         self.mute_check = QCheckBox("Mute (music/sound effects)")
         self.debug_check = QCheckBox("Debug mode (shows the engine's console window)")
+        mute_debug_row = QHBoxLayout()
+        mute_debug_row.addWidget(self.mute_check)
+        mute_debug_row.addWidget(self.debug_check)
         self.bgm_combo = QComboBox()
         self.bgm_combo.addItem("(default: derived from opponent)", None)
         for raw, display in game_assets.list_bgm_tracks(config.vendor_dir):
@@ -90,8 +95,7 @@ class WatchTab(QWidget):
         form.addRow("Battle animations", self.battlescene_combo)
         form.addRow("Text speed", self.textspeed_combo)
         form.addRow("Battle transitions", self.transitions_combo)
-        form.addRow("", self.mute_check)
-        form.addRow("", self.debug_check)
+        form.addRow("", mute_debug_row)
         form.addRow("BGM override", self.bgm_combo)
         layout.addLayout(form)
 
@@ -112,6 +116,14 @@ class WatchTab(QWidget):
         self.import_button.clicked.connect(self._on_import_clicked)
         self.watch_button.clicked.connect(self._on_watch_clicked)
         self.cancel_button.clicked.connect(self.runner.cancel)
+
+        settings = QSettings()
+        ui_settings.bind_combo(settings, "watch/battlescene", self.battlescene_combo)
+        ui_settings.bind_combo(settings, "watch/textspeed", self.textspeed_combo)
+        ui_settings.bind_combo(settings, "watch/transitions", self.transitions_combo)
+        ui_settings.bind_combo(settings, "watch/bgm", self.bgm_combo)
+        ui_settings.bind_checkbox(settings, "watch/mute", self.mute_check)
+        ui_settings.bind_checkbox(settings, "watch/debug", self.debug_check)
 
         self.refresh()
 

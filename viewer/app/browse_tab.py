@@ -1,4 +1,4 @@
-from PySide6.QtCore import QAbstractTableModel, QModelIndex, Qt, QTimer, Signal
+from PySide6.QtCore import QAbstractTableModel, QModelIndex, QSettings, Qt, QTimer, Signal
 from PySide6.QtWidgets import (
     QAbstractItemView,
     QComboBox,
@@ -12,7 +12,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import format_selector
+from app import format_selector, ui_settings
 from app.results_source import load_results_lib
 from app.trainer_names import TrainerNameResolver
 
@@ -98,9 +98,15 @@ class ResultsTableModel(QAbstractTableModel):
         self.beginResetModel()
         indices = range(len(self._rows))
         if t1_query:
-            indices = [i for i in indices if t1_query in self._cache[i]["t1_search"]]
+            indices = [
+                i for i in indices
+                if t1_query in self._cache[i]["t1_search"] or t1_query in self._cache[i]["t2_search"]
+            ]
         if t2_query:
-            indices = [i for i in indices if t2_query in self._cache[i]["t2_search"]]
+            indices = [
+                i for i in indices
+                if t2_query in self._cache[i]["t1_search"] or t2_query in self._cache[i]["t2_search"]
+            ]
         if wanted_result is not None:
             indices = [i for i in indices if self._cache[i]["result"] == wanted_result]
         self._visible = list(indices)
@@ -216,6 +222,8 @@ class BrowseTab(QWidget):
         self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.table.setSortingEnabled(True)
         self.table.horizontalHeader().setStretchLastSection(True)
+        self.table.setColumnWidth(0, 220)
+        self.table.setColumnWidth(1, 220)
         layout.addWidget(self.table)
 
         self.use_button = QPushButton("Use selected match")
@@ -234,6 +242,11 @@ class BrowseTab(QWidget):
         self.result_filter_combo.currentIndexChanged.connect(self._apply_filter)
         self.use_button.clicked.connect(self._emit_selected)
         self.table.doubleClicked.connect(lambda _: self._emit_selected())
+
+        settings = QSettings()
+        ui_settings.bind_combo(settings, "browse/battle_type", self.battle_type_combo)
+        ui_settings.bind_combo(settings, "browse/curse_variant", self.curse_variant_combo)
+        ui_settings.bind_combo(settings, "browse/result_filter", self.result_filter_combo)
 
         self.refresh()
 
