@@ -82,6 +82,7 @@ class WatchTab(QWidget):
             self.transitions_combo.addItem(label)
         self.transitions_combo.setCurrentIndex(_option_index(TRANSITIONS_OPTIONS, "Standard"))
         self.mute_check = QCheckBox("Mute (music/sound effects)")
+        self.debug_check = QCheckBox("Debug mode (shows the engine's console window)")
         self.bgm_combo = QComboBox()
         self.bgm_combo.addItem("(default: derived from opponent)", None)
         for raw, display in game_assets.list_bgm_tracks(config.vendor_dir):
@@ -90,6 +91,7 @@ class WatchTab(QWidget):
         form.addRow("Text speed", self.textspeed_combo)
         form.addRow("Battle transitions", self.transitions_combo)
         form.addRow("", self.mute_check)
+        form.addRow("", self.debug_check)
         form.addRow("BGM override", self.bgm_combo)
         layout.addLayout(form)
 
@@ -240,7 +242,10 @@ class WatchTab(QWidget):
         # and slow text speed/full battle animations can legitimately run well
         # past any fixed bound. Only Generate (unattended) needs a stuck-process
         # safety net.
-        self.runner.start(self.config.vendor_dir, env_vars, None, result_filename=WATCH_RESULT_FILE)
+        extra_args = ["debug"] if self.debug_check.isChecked() else None
+        self.runner.start(
+            self.config.vendor_dir, env_vars, None, result_filename=WATCH_RESULT_FILE, extra_args=extra_args
+        )
 
     def _on_started(self):
         self.watch_button.setEnabled(False)

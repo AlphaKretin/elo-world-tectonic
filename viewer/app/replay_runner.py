@@ -52,8 +52,15 @@ class ReplayRunner(QObject):
         result_filename=DEFAULT_RESULT_FILE_RELATIVE,
         suppress_window=False,
         heartbeat_filename=None,
+        extra_args=None,
     ):
-        """suppress_window sends the game's window behind the viewer instead
+        """extra_args (e.g. ["debug"]) is passed straight to Game.exe -- the
+        same "debug" argument the launcher's own debug-recompile flow uses
+        (vendor_fetch.py), which allocates the real console window so
+        echoln/monkey-patch-warning output is visible, unlike a normal
+        (non-debug) launch where nothing is attached to see it.
+
+        suppress_window sends the game's window behind the viewer instead
         of letting it steal focus -- appropriate for Generate (meant to run
         unattended), never for Watch (the whole point is seeing the battle).
 
@@ -98,6 +105,8 @@ class ReplayRunner(QObject):
         self._process.setWorkingDirectory(vendor_dir)
         self._process.setProcessEnvironment(qenv)
         self._process.setProgram(os.path.join(vendor_dir, "Game.exe"))
+        if extra_args:
+            self._process.setArguments(extra_args)
         self._process.finished.connect(self._on_finished)
 
         self._process.start()
