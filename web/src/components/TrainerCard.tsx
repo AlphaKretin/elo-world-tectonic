@@ -69,10 +69,10 @@ function opponentLine(prefix: string, entry: BestWorstEntry | null, onOpenTraine
   const { opponent, rating, seed } = entry;
   return (
     <p className="card-line">
+      {prefix}:{" "}
       {opponent.cursed && (
         <RemoteSprite kind="Items" name="TAROTAMULET_ACTIVE" className="inline-badge" alt="cursed" title="Cursed opponent" />
       )}
-      {prefix}:{" "}
       {onOpenTrainer ? (
         <button type="button" className="link-button" onClick={() => onOpenTrainer(opponent.label)}>
           {opponent.display}
@@ -141,10 +141,12 @@ export const TrainerCard = forwardRef<HTMLDivElement, Props>(function TrainerCar
       <div className="party-grid">
         {trainer.party.map((member, i) => (
           <div key={i} className="party-cell">
-            <p className="cell-label">
-              {member.speciesDisplay} Lv.{member.level}
-            </p>
-            {member.nickname && <p className="cell-nickname">{member.nickname}</p>}
+            <div className="cell-heading">
+              <p className="cell-label">
+                {member.speciesDisplay} Lv.{member.level}
+              </p>
+              {member.nickname && <p className="cell-nickname">{member.nickname}</p>}
+            </div>
             <div className="cell-sprite-wrap" style={{ width: spriteBox, height: spriteBox }}>
               {member.shiny ? (
                 <img

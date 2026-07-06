@@ -84,10 +84,10 @@ export function TrainerModalContent({ battleType, curseVariant, filter, label, o
         {!error && !trainer && <p className="modal-loading">Loading...</p>}
         {trainer && row && meta && (
           <>
-            <TrainerCard trainer={trainer} row={row} meta={meta} onOpenTrainer={onOpenTrainer} ref={cardRef} />
             <button type="button" className="download-button" onClick={handleDownload}>
               Download as PNG
             </button>
+            <TrainerCard trainer={trainer} row={row} meta={meta} onOpenTrainer={onOpenTrainer} ref={cardRef} />
           </>
         )}
       </div>

@@ -37,8 +37,8 @@
 
 .tier-badge {
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: 10px;
+  left: 10px;
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -148,7 +148,9 @@
 .card-line .seed {
   color: #46506a;
   font-size: 0.95rem;
-  margin-left: 0.25rem;
+  flex-basis: 100%;
+  margin-left: 0;
+  margin-top: 0.15rem;
 }
 
 .inline-badge {
@@ -200,7 +202,16 @@
   font-weight: 600;
 }
 
+.cell-heading {
+  position: relative;
+  width: 100%;
+}
+
 .cell-nickname {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
   margin: 0;
   font-size: 0.95rem;
   text-align: center;
