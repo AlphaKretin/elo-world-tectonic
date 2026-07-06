@@ -9,24 +9,42 @@ constants/logic via card_constants.py and direct imports, so they can't
 silently drift apart on tier/type colors or the fight-grouping/dataset-wide
 decisions).
 
-Run after ratings.py and best_worst.py, for whichever formats you want
-published (default: all six -- see FORMATS below). Skips any format whose
-ratings_<fmt>.json isn't present rather than failing the whole run.
+Regenerates ratings_<fmt>.json and best_worst_<fmt>.json for every
+FORMAT_SPEC itself before exporting (see regenerate_analysis_outputs) --
+this used to be a manual "run ratings.py and best_worst.py first" step,
+which is exactly how the site ended up shipping a stale
+best_worst_singles.json/best_worst_doubles.json on 2026-07-04: an
+errored-battle rerun updated the base formats' results, ratings.py got
+rerun to match, but best_worst.py didn't, and nothing caught the gap
+before the site was exported. Regenerating both here, every time, means
+there's no manual step left to forget. Skips any FORMAT_SPEC with no
+usable results yet rather than failing the whole run.
 """
 import json
 import os
 import shutil
 
+import best_worst
+import ratings
 import results_lib
 import trainer_cards
 from card_constants import TIER_COLORS
 from results_lib import ANALYSIS_DIR, REPO_ROOT
 
-FORMATS = [
-    "singles", "doubles",
-    "singles_uncursed", "doubles_uncursed",
-    "singles_cursed_excluded", "doubles_cursed_excluded",
+# (base format, filters) pairs to publish -- base format is either a real
+# elo_results_<fmt>_shard*.jsonl dataset (singles/doubles/*_uncursed) or,
+# combined with filters, a post-hoc row-filtered view of one (see
+# results_lib.FILTERS). FORMATS (the exported web/public/data/<fmt>/ names)
+# is derived from this, not hand-maintained separately, so the two can't
+# drift apart.
+FORMAT_SPECS = [
+    ("singles", []), ("doubles", []),
+    ("singles_uncursed", []), ("doubles_uncursed", []),
+    ("singles", ["cursed_excluded"]), ("doubles", ["cursed_excluded"]),
+    ("singles", ["level70_only"]), ("doubles", ["level70_only"]),
 ]
+
+FORMATS = [base + results_lib.filter_suffix(filters) for base, filters in FORMAT_SPECS]
 
 WEB_DIR = os.path.join(REPO_ROOT, "web")
 WEB_DATA_DIR = os.path.join(WEB_DIR, "public", "data")
@@ -262,7 +280,30 @@ def export_assets(card_data_by_label):
     print(f"assets: copied {n} sprite/icon files -> {WEB_ASSETS_DIR}")
 
 
+def regenerate_analysis_outputs():
+    """Recompute ratings_<fmt>.json and best_worst_<fmt>.json for every
+    FORMAT_SPEC from the current results/remote data, so this script is
+    the one place that has to be run for the site to be fresh -- see the
+    module docstring for why relying on ratings.py/best_worst.py having
+    already been run by hand isn't good enough."""
+    for base_fmt, filters in FORMAT_SPECS:
+        fmt = base_fmt + results_lib.filter_suffix(filters)
+        leaderboard, stats = ratings.compute_ratings(base_fmt, filters=filters)
+        if not leaderboard:
+            print(f"SKIPPED regen for {fmt}: no usable results yet")
+            continue
+        suffix = results_lib.filter_suffix(filters)
+        ratings.write_outputs(base_fmt, leaderboard, suffix=suffix)
+        ratings_by_label = {row["trainer"]: row for row in leaderboard}
+        best_win, worst_loss = best_worst.compute_best_worst(base_fmt, ratings_by_label, filters=filters)
+        best_worst.write_output(base_fmt, suffix, best_win, worst_loss, ratings_by_label.keys())
+        total_battles = sum(s["battles"] for s in stats.values()) // 2
+        print(f"regenerated {fmt}: {len(leaderboard)} trainers, {total_battles} battles")
+
+
 def main():
+    regenerate_analysis_outputs()
+
     card_data_by_label = results_lib.load_card_data()
     tribe_info = trainer_cards.load_tribe_info()
     max_native_dim = trainer_cards.max_native_sprite_dim(card_data_by_label)

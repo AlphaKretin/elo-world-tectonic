@@ -14,7 +14,7 @@ function AppNav() {
       : "leaderboard";
   return (
     <nav className="app-nav">
-      <NavLink to="/singles/cursed" className={section === "leaderboard" ? "active" : ""}>
+      <NavLink to="/singles/cursed/none" className={section === "leaderboard" ? "active" : ""}>
         Leaderboard
       </NavLink>
       <NavLink to="/compare" className={section === "compare" ? "active" : ""}>
@@ -32,10 +32,10 @@ function App() {
     <HashRouter>
       <AppNav />
       <Routes>
-        <Route path="/" element={<Navigate to="/singles/cursed" replace />} />
+        <Route path="/" element={<Navigate to="/singles/cursed/none" replace />} />
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/stats" element={<StatsPage />} />
-        <Route path="/:battleType/:curseVariant" element={<LeaderboardPage />}>
+        <Route path="/:battleType/:curseVariant/:filter" element={<LeaderboardPage />}>
           <Route path=":label" element={<TrainerModal />} />
         </Route>
       </Routes>

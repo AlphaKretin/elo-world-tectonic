@@ -3,7 +3,7 @@ import { CurseIcon } from "../components/CurseIcon";
 import { FormatPicker } from "../components/FormatPicker";
 import { fetchLeaderboard, formatKey } from "../lib/dataClient";
 import { TrainerModalContent } from "./TrainerModal";
-import type { BattleType, CurseVariant, JoinedRow, LeaderboardRow } from "../types";
+import type { BattleType, CurseVariant, FilterVariant, JoinedRow, LeaderboardRow } from "../types";
 import "./ComparePage.css";
 
 type SortKey = "trainer" | "rankA" | "ratingA" | "rankB" | "ratingB" | "ratingDelta" | "rankDelta";
@@ -12,8 +12,10 @@ export function ComparePage() {
   const [modalLabel, setModalLabel] = useState<string | null>(null);
   const [battleTypeA, setBattleTypeA] = useState<BattleType>("singles");
   const [curseVariantA, setCurseVariantA] = useState<CurseVariant>("cursed");
+  const [filterA, setFilterA] = useState<FilterVariant>("none");
   const [battleTypeB, setBattleTypeB] = useState<BattleType>("singles");
   const [curseVariantB, setCurseVariantB] = useState<CurseVariant>("uncursed");
+  const [filterB, setFilterB] = useState<FilterVariant>("none");
 
   const [rowsA, setRowsA] = useState<LeaderboardRow[] | null>(null);
   const [rowsB, setRowsB] = useState<LeaderboardRow[] | null>(null);
@@ -23,8 +25,8 @@ export function ComparePage() {
   const [sortKey, setSortKey] = useState<SortKey>("ratingDelta");
   const [sortAsc, setSortAsc] = useState(false);
 
-  const fmtA = formatKey(battleTypeA, curseVariantA);
-  const fmtB = formatKey(battleTypeB, curseVariantB);
+  const fmtA = formatKey(battleTypeA, curseVariantA, filterA);
+  const fmtB = formatKey(battleTypeB, curseVariantB, filterB);
 
   useEffect(() => {
     let cancelled = false;
@@ -137,9 +139,11 @@ export function ComparePage() {
           <FormatPicker
             battleType={battleTypeA}
             curseVariant={curseVariantA}
-            onChange={(bt, cv) => {
+            filter={filterA}
+            onChange={(bt, cv, f) => {
               setBattleTypeA(bt);
               setCurseVariantA(cv);
+              setFilterA(f);
             }}
           />
         </div>
@@ -148,9 +152,11 @@ export function ComparePage() {
           <FormatPicker
             battleType={battleTypeB}
             curseVariant={curseVariantB}
-            onChange={(bt, cv) => {
+            filter={filterB}
+            onChange={(bt, cv, f) => {
               setBattleTypeB(bt);
               setCurseVariantB(cv);
+              setFilterB(f);
             }}
           />
         </div>
@@ -224,6 +230,7 @@ export function ComparePage() {
         <TrainerModalContent
           battleType={battleTypeA}
           curseVariant={curseVariantA}
+          filter={filterA}
           label={modalLabel}
           onClose={() => setModalLabel(null)}
           onOpenTrainer={setModalLabel}

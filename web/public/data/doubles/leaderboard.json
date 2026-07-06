@@ -105,7 +105,7 @@
             "loss": 0.04
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 1980659576,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -149,7 +149,7 @@
             "loss": 0.04
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 2352872655,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -158,7 +158,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1992.56,
+            "rating": 1992.55,
             "seed": 3576406003,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#14",
@@ -193,7 +193,7 @@
             "loss": 0.041970802919708027
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 2149482967,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -325,7 +325,7 @@
             "loss": 0.05588043564671277
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 11082707,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -334,7 +334,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1573.85,
+            "rating": 1573.86,
             "seed": 3805294228,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -369,7 +369,7 @@
             "loss": 0.06125399872040947
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 3909532249,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -378,7 +378,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1745.78,
+            "rating": 1745.77,
             "seed": 1082589747,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -413,7 +413,7 @@
             "loss": 0.06569343065693431
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 342372722,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -457,7 +457,7 @@
             "loss": 0.06751824817518248
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 1511599948,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -466,7 +466,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1751.63,
+            "rating": 1751.62,
             "seed": 83540640,
             "opponent": {
                 "label": "IRISCOSPLAYER:Isabelle",
@@ -501,7 +501,7 @@
             "loss": 0.06751824817518248
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 2421807625,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -589,7 +589,7 @@
             "loss": 0.06934306569343066
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 3987059811,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -633,7 +633,7 @@
             "loss": 0.06812306224660147
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 1438784210,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -642,7 +642,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1914.73,
+            "rating": 1914.72,
             "seed": 1764197554,
             "opponent": {
                 "label": "POKEMONRANGER_M2_GANG:Terrance",
@@ -677,7 +677,7 @@
             "loss": 0.07116788321167883
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 3441475375,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -721,7 +721,7 @@
             "loss": 0.07481751824817519
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 1441386617,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -818,7 +818,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1796.51,
+            "rating": 1796.5,
             "seed": 430365550,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#20",
@@ -941,7 +941,7 @@
             "loss": 0.08228270412642669
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 2639626391,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -985,7 +985,7 @@
             "loss": 0.0838635821607441
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 1529378869,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -994,7 +994,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1781.88,
+            "rating": 1781.87,
             "seed": 1168953507,
             "opponent": {
                 "label": "COOLTRAINERSQUAD_2:Shouta and Kaede",
@@ -1029,7 +1029,7 @@
             "loss": 0.08395093197387288
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 3056116849,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1161,7 +1161,7 @@
             "loss": 0.09621793850565558
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 22373984,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1205,7 +1205,7 @@
             "loss": 0.10036496350364964
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 3181246542,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1214,7 +1214,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1669.36,
+            "rating": 1669.35,
             "seed": 2768479281,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#7",
@@ -1249,7 +1249,7 @@
             "loss": 0.10401459854014598
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 3412353309,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1293,7 +1293,7 @@
             "loss": 0.10583941605839416
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 2864645859,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1337,7 +1337,7 @@
             "loss": 0.1032276565238171
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 30715278,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1346,7 +1346,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1560.64,
+            "rating": 1560.65,
             "seed": 3343466084,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#6",
@@ -1381,7 +1381,7 @@
             "loss": 0.10766423357664233
         },
         "bestWin": {
-            "rating": 2268.39,
+            "rating": 2268.38,
             "seed": 2855491062,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -1425,7 +1425,7 @@
             "loss": 0.10766423357664233
         },
         "bestWin": {
-            "rating": 2272.55,
+            "rating": 2272.54,
             "seed": 2997742830,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -1434,7 +1434,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1573.85,
+            "rating": 1573.86,
             "seed": 531892061,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -1469,7 +1469,7 @@
             "loss": 0.10485094204626758
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 967010758,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -1513,7 +1513,7 @@
             "loss": 0.10948905109489052
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 1364158481,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1566,7 +1566,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1670.3,
+            "rating": 1670.29,
             "seed": 3958109422,
             "opponent": {
                 "label": "FAIRYTALEGIRL:Madeline",
@@ -1689,7 +1689,7 @@
             "loss": 0.11131386861313869
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 1768274985,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1777,7 +1777,7 @@
             "loss": 0.11009778201764846
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 1919968641,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1786,7 +1786,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1608.32,
+            "rating": 1605.99,
             "seed": 3908825932,
             "opponent": {
                 "label": "MASKEDVILLAIN_Sang:Silver#1",
@@ -1865,7 +1865,7 @@
             "loss": 0.11184672867477542
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 555570193,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -1953,7 +1953,7 @@
             "loss": 0.12043795620437957
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 2043953340,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1997,7 +1997,7 @@
             "loss": 0.1170935686461563
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 3374029804,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -2041,7 +2041,7 @@
             "loss": 0.12226277372262774
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 1836077686,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -2050,7 +2050,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1740.2,
+            "rating": 1740.19,
             "seed": 3232563300,
             "opponent": {
                 "label": "EXPERTF:Kimiko",
@@ -2129,7 +2129,7 @@
             "loss": 0.1205914619604102
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 3554862999,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -2305,7 +2305,7 @@
             "loss": 0.13138686131386862
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 2369180091,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -2358,7 +2358,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1650.6,
+            "rating": 1650.59,
             "seed": 1215947630,
             "opponent": {
                 "label": "DRAGONTAMER:Arthur",
@@ -2393,7 +2393,7 @@
             "loss": 0.13108514190317194
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 3184169416,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -2437,7 +2437,7 @@
             "loss": 0.13686131386861314
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 1749618870,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -2446,7 +2446,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1745.78,
+            "rating": 1745.77,
             "seed": 4130928732,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -2525,7 +2525,7 @@
             "loss": 0.1363319818745528
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 4135245198,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -2622,7 +2622,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1740.2,
+            "rating": 1740.19,
             "seed": 3438619990,
             "opponent": {
                 "label": "EXPERTF:Kimiko",
@@ -2710,7 +2710,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1744.96,
+            "rating": 1744.95,
             "seed": 3840704649,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -2877,7 +2877,7 @@
             "loss": 0.1551094890510949
         },
         "bestWin": {
-            "rating": 2272.55,
+            "rating": 2272.54,
             "seed": 2361013766,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -2886,7 +2886,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1650.6,
+            "rating": 1650.59,
             "seed": 1480828038,
             "opponent": {
                 "label": "MAID:Wendy",
@@ -3053,7 +3053,7 @@
             "loss": 0.15580054166002869
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 797405646,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -3097,7 +3097,7 @@
             "loss": 0.16423357664233576
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 2707754722,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -3185,7 +3185,7 @@
             "loss": 0.1608172350743302
         },
         "bestWin": {
-            "rating": 2268.39,
+            "rating": 2268.38,
             "seed": 1262008766,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -3194,7 +3194,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1573.85,
+            "rating": 1573.86,
             "seed": 1296512089,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -3238,7 +3238,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1745.78,
+            "rating": 1745.77,
             "seed": 3621233547,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -3273,7 +3273,7 @@
             "loss": 0.1678832116788321
         },
         "bestWin": {
-            "rating": 2268.39,
+            "rating": 2268.38,
             "seed": 4265704663,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -3326,7 +3326,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1650.6,
+            "rating": 1650.59,
             "seed": 2410280480,
             "opponent": {
                 "label": "DRAGONTAMER:Arthur",
@@ -3405,7 +3405,7 @@
             "loss": 0.16431512838858414
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 1079746872,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -3449,7 +3449,7 @@
             "loss": 0.1660640750457111
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 4197218047,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -3493,7 +3493,7 @@
             "loss": 0.166315118687271
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 3158142263,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -3581,7 +3581,7 @@
             "loss": 0.16781302170283807
         },
         "bestWin": {
-            "rating": 2258.92,
+            "rating": 2258.91,
             "seed": 601246590,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -3669,7 +3669,7 @@
             "loss": 0.177007299270073
         },
         "bestWin": {
-            "rating": 2268.39,
+            "rating": 2268.38,
             "seed": 1325792419,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -3801,7 +3801,7 @@
             "loss": 0.17883211678832117
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 735403534,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -3845,7 +3845,7 @@
             "loss": 0.17883211678832117
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 4240751913,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -3977,7 +3977,7 @@
             "loss": 0.1748088083313459
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 2836281035,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -4021,7 +4021,7 @@
             "loss": 0.18248175182481752
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 1911723363,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -4065,7 +4065,7 @@
             "loss": 0.1783067016455998
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 3692558514,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -4074,7 +4074,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1670.3,
+            "rating": 1670.29,
             "seed": 361602908,
             "opponent": {
                 "label": "FAIRYTALEGIRL:Madeline",
@@ -4206,7 +4206,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1669.36,
+            "rating": 1669.35,
             "seed": 3761714516,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#7",
@@ -4294,7 +4294,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1490.9,
+            "rating": 1490.91,
             "seed": 1133792075,
             "opponent": {
                 "label": "BIKER:Knoxx",
@@ -4329,7 +4329,7 @@
             "loss": 0.18795620437956204
         },
         "bestWin": {
-            "rating": 2272.55,
+            "rating": 2272.54,
             "seed": 737767772,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -4593,7 +4593,7 @@
             "loss": 0.1905493282454885
         },
         "bestWin": {
-            "rating": 2236.13,
+            "rating": 2236.12,
             "seed": 3870312047,
             "opponent": {
                 "label": "LEADER_Eko:Eko#3",
@@ -4637,7 +4637,7 @@
             "loss": 0.1908491317508364
         },
         "bestWin": {
-            "rating": 2272.55,
+            "rating": 2272.54,
             "seed": 2495430614,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -4725,7 +4725,7 @@
             "loss": 0.19229827490261547
         },
         "bestWin": {
-            "rating": 2193.41,
+            "rating": 2193.4,
             "seed": 166252696,
             "opponent": {
                 "label": "PUNKM:ValourDyke",
@@ -4813,7 +4813,7 @@
             "loss": 0.20072992700729927
         },
         "bestWin": {
-            "rating": 2272.55,
+            "rating": 2272.54,
             "seed": 2122888003,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -4822,7 +4822,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1650.6,
+            "rating": 1650.59,
             "seed": 1093535733,
             "opponent": {
                 "label": "DRAGONTAMER:Arthur",
@@ -4857,7 +4857,7 @@
             "loss": 0.20072992700729927
         },
         "bestWin": {
-            "rating": 2343.79,
+            "rating": 2343.78,
             "seed": 3010246467,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -4901,7 +4901,7 @@
             "loss": 0.19404722155974244
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 3373685563,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -4954,7 +4954,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1573.85,
+            "rating": 1573.86,
             "seed": 1076399049,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -4998,7 +4998,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1560.64,
+            "rating": 1560.65,
             "seed": 2313119175,
             "opponent": {
                 "label": "ANCIENTPRIEST:Radzayac",
@@ -5033,7 +5033,7 @@
             "loss": 0.2062043795620438
         },
         "bestWin": {
-            "rating": 2258.92,
+            "rating": 2258.91,
             "seed": 1942797449,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -5077,7 +5077,7 @@
             "loss": 0.20985401459854014
         },
         "bestWin": {
-            "rating": 2378.54,
+            "rating": 2378.53,
             "seed": 3576406003,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -5165,7 +5165,7 @@
             "loss": 0.20985401459854014
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 584392506,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -5297,7 +5297,7 @@
             "loss": 0.20803879481675808
         },
         "bestWin": {
-            "rating": 2268.39,
+            "rating": 2268.38,
             "seed": 1351358468,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -5341,7 +5341,7 @@
             "loss": 0.21715328467153286
         },
         "bestWin": {
-            "rating": 2258.92,
+            "rating": 2258.91,
             "seed": 3694181864,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -5394,7 +5394,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1650.6,
+            "rating": 1650.59,
             "seed": 3240280150,
             "opponent": {
                 "label": "MAID:Wendy",
@@ -5561,7 +5561,7 @@
             "loss": 0.22445255474452555
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 170343001,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -5649,7 +5649,7 @@
             "loss": 0.21853247475951984
         },
         "bestWin": {
-            "rating": 2187.78,
+            "rating": 2187.77,
             "seed": 2887002600,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#1",
@@ -5957,7 +5957,7 @@
             "loss": 0.24635036496350365
         },
         "bestWin": {
-            "rating": 2186.4,
+            "rating": 2186.39,
             "seed": 260509052,
             "opponent": {
                 "label": "ULTRALAINIE:Lainie",
@@ -5966,7 +5966,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1500.56,
+            "rating": 1500.57,
             "seed": 3879727338,
             "opponent": {
                 "label": "SWIMMER_F2:Astrid",
@@ -6001,7 +6001,7 @@
             "loss": 0.24817518248175183
         },
         "bestWin": {
-            "rating": 2168.99,
+            "rating": 2168.98,
             "seed": 1251666007,
             "opponent": {
                 "label": "TRAINER_Alessa:Alessa#4",
@@ -6098,7 +6098,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1551.24,
+            "rating": 1551.25,
             "seed": 1702622351,
             "opponent": {
                 "label": "NIGHTMARE_TRAINER:Torment",
@@ -6186,7 +6186,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1650.6,
+            "rating": 1650.59,
             "seed": 2237483356,
             "opponent": {
                 "label": "MAID:Wendy",
@@ -6274,7 +6274,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1510.05,
+            "rating": 1510.06,
             "seed": 1780625756,
             "opponent": {
                 "label": "COOLTRAINER_M7:Emir",
@@ -6309,7 +6309,7 @@
             "loss": 0.2447666746164242
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 841879246,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -6353,7 +6353,7 @@
             "loss": 0.2447666746164242
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 3130115902,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -6450,7 +6450,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1517.09,
+            "rating": 1517.1,
             "seed": 3272146356,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#2",
@@ -6485,7 +6485,7 @@
             "loss": 0.2572992700729927
         },
         "bestWin": {
-            "rating": 2193.41,
+            "rating": 2193.4,
             "seed": 4045199697,
             "opponent": {
                 "label": "PUNKM:ValourDyke",
@@ -6626,7 +6626,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1517.09,
+            "rating": 1517.1,
             "seed": 955312002,
             "opponent": {
                 "label": "BLACKBELT2:Riccardo",
@@ -6661,7 +6661,7 @@
             "loss": 0.251762461244932
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 2274213305,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -6837,7 +6837,7 @@
             "loss": 0.2645985401459854
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 2626816947,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -6969,7 +6969,7 @@
             "loss": 0.25700930121631294
         },
         "bestWin": {
-            "rating": 2186.4,
+            "rating": 2186.39,
             "seed": 2516770335,
             "opponent": {
                 "label": "TRAINER_Zain:Zain#3",
@@ -7057,7 +7057,7 @@
             "loss": 0.27007299270072993
         },
         "bestWin": {
-            "rating": 2236.13,
+            "rating": 2236.12,
             "seed": 3245779392,
             "opponent": {
                 "label": "LEADER_Eko:Eko#3",
@@ -7101,7 +7101,7 @@
             "loss": 0.2718978102189781
         },
         "bestWin": {
-            "rating": 2258.92,
+            "rating": 2258.91,
             "seed": 4196045165,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -7110,7 +7110,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1573.85,
+            "rating": 1573.86,
             "seed": 1266355675,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -7145,7 +7145,7 @@
             "loss": 0.260953910390236
         },
         "bestWin": {
-            "rating": 2268.39,
+            "rating": 2268.38,
             "seed": 205136415,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -7233,7 +7233,7 @@
             "loss": 0.2755474452554745
         },
         "bestWin": {
-            "rating": 2236.13,
+            "rating": 2236.12,
             "seed": 2844796350,
             "opponent": {
                 "label": "LEADER_Eko:Eko#3",
@@ -7286,7 +7286,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1560.64,
+            "rating": 1560.65,
             "seed": 1285474843,
             "opponent": {
                 "label": "PILOT:Kurtis",
@@ -7453,7 +7453,7 @@
             "loss": 0.2937956204379562
         },
         "bestWin": {
-            "rating": 2187.78,
+            "rating": 2187.77,
             "seed": 3195522566,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#1",
@@ -7585,7 +7585,7 @@
             "loss": 0.29927007299270075
         },
         "bestWin": {
-            "rating": 2193.78,
+            "rating": 2193.77,
             "seed": 4189383186,
             "opponent": {
                 "label": "TRAINER_Eifion:Eifion#2",
@@ -7594,7 +7594,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1608.32,
+            "rating": 1605.99,
             "seed": 527433094,
             "opponent": {
                 "label": "MASKEDVILLAIN_Sang:Silver#1",
@@ -7673,7 +7673,7 @@
             "loss": 0.28849034104459814
         },
         "bestWin": {
-            "rating": 2196.93,
+            "rating": 2196.92,
             "seed": 1354350842,
             "opponent": {
                 "label": "SHADOWMAVIS:Mavis#1",
@@ -7717,7 +7717,7 @@
             "loss": 0.2902392877017251
         },
         "bestWin": {
-            "rating": 2268.39,
+            "rating": 2268.38,
             "seed": 302324796,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -7849,7 +7849,7 @@
             "loss": 0.3083941605839416
         },
         "bestWin": {
-            "rating": 2240.67,
+            "rating": 2240.66,
             "seed": 877654646,
             "opponent": {
                 "label": "ODDISH:Oddium",
@@ -7902,7 +7902,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1500.56,
+            "rating": 1500.57,
             "seed": 626378593,
             "opponent": {
                 "label": "SWIMMER_F2:Astrid",
@@ -7981,7 +7981,7 @@
             "loss": 0.3012521905368807
         },
         "bestWin": {
-            "rating": 2181.27,
+            "rating": 2181.26,
             "seed": 3155006388,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise",
@@ -8069,7 +8069,7 @@
             "loss": 0.3175182481751825
         },
         "bestWin": {
-            "rating": 2189.9,
+            "rating": 2189.89,
             "seed": 530419964,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise",
@@ -8113,7 +8113,7 @@
             "loss": 0.3175182481751825
         },
         "bestWin": {
-            "rating": 2196.93,
+            "rating": 2196.92,
             "seed": 658545984,
             "opponent": {
                 "label": "SHADOWMAVIS:Mavis#1",
@@ -8122,7 +8122,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1478.73,
+            "rating": 1478.74,
             "seed": 1305030406,
             "opponent": {
                 "label": "SWIMMER_F4:Yvonne",
@@ -8157,7 +8157,7 @@
             "loss": 0.3193430656934307
         },
         "bestWin": {
-            "rating": 2240.67,
+            "rating": 2240.66,
             "seed": 2320593270,
             "opponent": {
                 "label": "ODDISH:Oddium",
@@ -8201,7 +8201,7 @@
             "loss": 0.30757517594369804
         },
         "bestWin": {
-            "rating": 2196.93,
+            "rating": 2196.92,
             "seed": 3321341606,
             "opponent": {
                 "label": "SHADOWMAVIS:Mavis#1",
@@ -8254,7 +8254,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1517.09,
+            "rating": 1517.1,
             "seed": 3691126815,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#2",
@@ -8289,7 +8289,7 @@
             "loss": 0.31297559424437554
         },
         "bestWin": {
-            "rating": 2193.41,
+            "rating": 2193.4,
             "seed": 2389982455,
             "opponent": {
                 "label": "PUNKM:ValourDyke",
@@ -8421,7 +8421,7 @@
             "loss": 0.3164734875586295
         },
         "bestWin": {
-            "rating": 2189.9,
+            "rating": 2189.89,
             "seed": 3581327962,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise",
@@ -8465,7 +8465,7 @@
             "loss": 0.3164734875586295
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 3884858839,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -8509,7 +8509,7 @@
             "loss": 0.3302919708029197
         },
         "bestWin": {
-            "rating": 2258.92,
+            "rating": 2258.91,
             "seed": 4134832646,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -8606,7 +8606,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1517.09,
+            "rating": 1517.1,
             "seed": 3561919957,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#2",
@@ -8641,7 +8641,7 @@
             "loss": 0.33394160583941607
         },
         "bestWin": {
-            "rating": 2137.71,
+            "rating": 2137.7,
             "seed": 3851731961,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya",
@@ -8694,7 +8694,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1526.39,
+            "rating": 1526.4,
             "seed": 3218915968,
             "opponent": {
                 "label": "BLACKBELT:Kai",
@@ -8729,7 +8729,7 @@
             "loss": 0.3357664233576642
         },
         "bestWin": {
-            "rating": 2129.89,
+            "rating": 2129.88,
             "seed": 3711390212,
             "opponent": {
                 "label": "FORMERCHAMP_Scilla:Scilla",
@@ -8914,7 +8914,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1510.05,
+            "rating": 1510.06,
             "seed": 3668143800,
             "opponent": {
                 "label": "COOLTRAINER_M7:Emir",
@@ -8949,7 +8949,7 @@
             "loss": 0.32871611415851815
         },
         "bestWin": {
-            "rating": 2331.03,
+            "rating": 2331.02,
             "seed": 3863631916,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -9169,7 +9169,7 @@
             "loss": 0.3392097941012799
         },
         "bestWin": {
-            "rating": 2168.99,
+            "rating": 2168.98,
             "seed": 1112020814,
             "opponent": {
                 "label": "TRAINER_Alessa:Alessa#4",
@@ -9301,7 +9301,7 @@
             "loss": 0.36313868613138683
         },
         "bestWin": {
-            "rating": 2240.67,
+            "rating": 2240.66,
             "seed": 712448640,
             "opponent": {
                 "label": "ODDISH:Oddium",
@@ -9310,7 +9310,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1490.3,
+            "rating": 1493.37,
             "seed": 2067284029,
             "opponent": {
                 "label": "DOCTOR:Renaldo",
@@ -9398,7 +9398,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1348.83,
+            "rating": 1348.84,
             "seed": 850725363,
             "opponent": {
                 "label": "AROMALADY3:Henrietta",
@@ -9477,7 +9477,7 @@
             "loss": 0.3503202166640114
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 1964678055,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -9521,7 +9521,7 @@
             "loss": 0.35382507567309224
         },
         "bestWin": {
-            "rating": 2196.93,
+            "rating": 2196.92,
             "seed": 1213193580,
             "opponent": {
                 "label": "SHADOWMAVIS:Mavis#1",
@@ -9565,7 +9565,7 @@
             "loss": 0.35495031401542254
         },
         "bestWin": {
-            "rating": 2189.9,
+            "rating": 2189.89,
             "seed": 3229211609,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise",
@@ -9574,7 +9574,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1456.1,
+            "rating": 1456.11,
             "seed": 427883379,
             "opponent": {
                 "label": "CHALLENGER_Vanya:Vanya#5",
@@ -9653,7 +9653,7 @@
             "loss": 0.3740875912408759
         },
         "bestWin": {
-            "rating": 2193.78,
+            "rating": 2193.77,
             "seed": 2970001611,
             "opponent": {
                 "label": "TRAINER_Eifion:Eifion#2",
@@ -9662,7 +9662,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1355.02,
+            "rating": 1355.03,
             "seed": 534664992,
             "opponent": {
                 "label": "RUINMANIAC:Colby",
@@ -9697,7 +9697,7 @@
             "loss": 0.3608347936912538
         },
         "bestWin": {
-            "rating": 2240.67,
+            "rating": 2240.66,
             "seed": 933944793,
             "opponent": {
                 "label": "ODDISH:Oddium",
@@ -9741,7 +9741,7 @@
             "loss": 0.3601971539868034
         },
         "bestWin": {
-            "rating": 2186.4,
+            "rating": 2186.39,
             "seed": 871685546,
             "opponent": {
                 "label": "TRAINER_Alessa:Alessa#6",
@@ -9785,7 +9785,7 @@
             "loss": 0.3759124087591241
         },
         "bestWin": {
-            "rating": 2088.05,
+            "rating": 2088.04,
             "seed": 3959222426,
             "opponent": {
                 "label": "LEADER_Samorn:Samorn#2",
@@ -9838,7 +9838,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1490.9,
+            "rating": 1490.91,
             "seed": 707964218,
             "opponent": {
                 "label": "BIKER:Knoxx",
@@ -9873,7 +9873,7 @@
             "loss": 0.3741887272438191
         },
         "bestWin": {
-            "rating": 2064.67,
+            "rating": 2064.66,
             "seed": 1650066094,
             "opponent": {
                 "label": "TRAINER_Eifion:Eifion#3",
@@ -9926,7 +9926,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 1410864146,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -10005,7 +10005,7 @@
             "loss": 0.39233576642335766
         },
         "bestWin": {
-            "rating": 2187.78,
+            "rating": 2187.77,
             "seed": 3958109422,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#1",
@@ -10093,7 +10093,7 @@
             "loss": 0.37768662055807295
         },
         "bestWin": {
-            "rating": 2057.34,
+            "rating": 2057.33,
             "seed": 2345913344,
             "opponent": {
                 "label": "LEADER_Eko:Eko#2",
@@ -10102,7 +10102,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1390.18,
+            "rating": 1390.19,
             "seed": 2631243719,
             "opponent": {
                 "label": "POKEMONBREEDER_F4:Sara",
@@ -10137,7 +10137,7 @@
             "loss": 0.37943556721519994
         },
         "bestWin": {
-            "rating": 2129.89,
+            "rating": 2129.88,
             "seed": 1083121299,
             "opponent": {
                 "label": "FORMERCHAMP_Scilla:Scilla",
@@ -10225,7 +10225,7 @@
             "loss": 0.3846824071865808
         },
         "bestWin": {
-            "rating": 2236.13,
+            "rating": 2236.12,
             "seed": 205086031,
             "opponent": {
                 "label": "LEADER_Eko:Eko#3",
@@ -10234,7 +10234,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 2897304424,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -10313,7 +10313,7 @@
             "loss": 0.4051094890510949
         },
         "bestWin": {
-            "rating": 2022.35,
+            "rating": 2022.34,
             "seed": 484185296,
             "opponent": {
                 "label": "GUITARIST3:Envy",
@@ -10401,7 +10401,7 @@
             "loss": 0.40693430656934304
         },
         "bestWin": {
-            "rating": 2142.99,
+            "rating": 2142.98,
             "seed": 1215947630,
             "opponent": {
                 "label": "POKEMONRANGER_M:Zufaix",
@@ -10489,7 +10489,7 @@
             "loss": 0.40875912408759124
         },
         "bestWin": {
-            "rating": 2272.55,
+            "rating": 2272.54,
             "seed": 1158434048,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -10709,7 +10709,7 @@
             "loss": 0.4215328467153285
         },
         "bestWin": {
-            "rating": 2129.89,
+            "rating": 2129.88,
             "seed": 1987658218,
             "opponent": {
                 "label": "FORMERCHAMP_Scilla:Scilla",
@@ -10753,7 +10753,7 @@
             "loss": 0.4074187137292312
         },
         "bestWin": {
-            "rating": 2161.02,
+            "rating": 2161.01,
             "seed": 4091475734,
             "opponent": {
                 "label": "LEADER_Lambert:Lambert#3",
@@ -10762,7 +10762,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1393.7,
+            "rating": 1393.71,
             "seed": 1521796916,
             "opponent": {
                 "label": "LEADER_Bence:Bence#1",
@@ -10982,7 +10982,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1423.93,
+            "rating": 1423.94,
             "seed": 269646141,
             "opponent": {
                 "label": "YOUNGSTER:Buzim",
@@ -11017,7 +11017,7 @@
             "loss": 0.44343065693430656
         },
         "bestWin": {
-            "rating": 2084.6,
+            "rating": 2084.59,
             "seed": 683459597,
             "opponent": {
                 "label": "LEADER_Bence:Bence#2",
@@ -11061,7 +11061,7 @@
             "loss": 0.4470802919708029
         },
         "bestWin": {
-            "rating": 2111.76,
+            "rating": 2111.75,
             "seed": 1075253017,
             "opponent": {
                 "label": "ELDER:Logun",
@@ -11114,7 +11114,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1290.97,
+            "rating": 1290.98,
             "seed": 1105994678,
             "opponent": {
                 "label": "SCIENTIST_M5:Sonatane",
@@ -11149,7 +11149,7 @@
             "loss": 0.4301550202718817
         },
         "bestWin": {
-            "rating": 2168.99,
+            "rating": 2168.98,
             "seed": 4014284707,
             "opponent": {
                 "label": "TRAINER_Alessa:Alessa#4",
@@ -11237,7 +11237,7 @@
             "loss": 0.45072992700729925
         },
         "bestWin": {
-            "rating": 1835.76,
+            "rating": 1835.75,
             "seed": 2914461079,
             "opponent": {
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal",
@@ -11369,7 +11369,7 @@
             "loss": 0.46167883211678834
         },
         "bestWin": {
-            "rating": 1979.66,
+            "rating": 1979.65,
             "seed": 1239101579,
             "opponent": {
                 "label": "ROUGHNECK2:Jaggedthorn",
@@ -11378,7 +11378,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1348.83,
+            "rating": 1348.84,
             "seed": 3530071807,
             "opponent": {
                 "label": "JUGGLER:Youcef",
@@ -11422,7 +11422,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 775765003,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -11457,7 +11457,7 @@
             "loss": 0.4449514099091923
         },
         "bestWin": {
-            "rating": 2181.27,
+            "rating": 2181.26,
             "seed": 1056710160,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise",
@@ -11466,7 +11466,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 1605427690,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -11501,7 +11501,7 @@
             "loss": 0.4476444868431513
         },
         "bestWin": {
-            "rating": 1979.66,
+            "rating": 1979.65,
             "seed": 2658792095,
             "opponent": {
                 "label": "ROUGHNECK2:Jaggedthorn",
@@ -11510,7 +11510,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 1560195167,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -11545,7 +11545,7 @@
             "loss": 0.46605504587155966
         },
         "bestWin": {
-            "rating": 2301.92,
+            "rating": 2301.91,
             "seed": 3805294228,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -11633,7 +11633,7 @@
             "loss": 0.4781021897810219
         },
         "bestWin": {
-            "rating": 2040.85,
+            "rating": 2040.84,
             "seed": 3284052353,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#16",
@@ -11677,7 +11677,7 @@
             "loss": 0.4781021897810219
         },
         "bestWin": {
-            "rating": 2193.78,
+            "rating": 2193.77,
             "seed": 3343466084,
             "opponent": {
                 "label": "TRAINER_Eifion:Eifion#2",
@@ -11686,7 +11686,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1390.18,
+            "rating": 1390.19,
             "seed": 3536820047,
             "opponent": {
                 "label": "POKEMONBREEDER_F4:Sara",
@@ -11765,7 +11765,7 @@
             "loss": 0.47992700729927007
         },
         "bestWin": {
-            "rating": 1957.84,
+            "rating": 1957.83,
             "seed": 3065458992,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#1",
@@ -11809,7 +11809,7 @@
             "loss": 0.4835766423357664
         },
         "bestWin": {
-            "rating": 1885.84,
+            "rating": 1885.83,
             "seed": 3132541263,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#18",
@@ -11897,7 +11897,7 @@
             "loss": 0.4854014598540146
         },
         "bestWin": {
-            "rating": 1835.76,
+            "rating": 1835.75,
             "seed": 2970301337,
             "opponent": {
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal",
@@ -11941,7 +11941,7 @@
             "loss": 0.4651339534144209
         },
         "bestWin": {
-            "rating": 2084.6,
+            "rating": 2084.59,
             "seed": 1990291219,
             "opponent": {
                 "label": "LEADER_Bence:Bence#2",
@@ -11950,7 +11950,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1169.03,
+            "rating": 1169.04,
             "seed": 1630639668,
             "opponent": {
                 "label": "DOCTOR:Peio",
@@ -11985,7 +11985,7 @@
             "loss": 0.4651339534144209
         },
         "bestWin": {
-            "rating": 1914.73,
+            "rating": 1914.72,
             "seed": 1702622351,
             "opponent": {
                 "label": "POKEMONRANGER_M2_GANG:Terrance",
@@ -12161,7 +12161,7 @@
             "loss": 0.4791255266714365
         },
         "bestWin": {
-            "rating": 2186.4,
+            "rating": 2186.39,
             "seed": 267018839,
             "opponent": {
                 "label": "TRAINER_Alessa:Alessa#6",
@@ -12170,7 +12170,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1276.38,
+            "rating": 1276.39,
             "seed": 914283864,
             "opponent": {
                 "label": "PUNKM:Vlad",
@@ -12302,7 +12302,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1370.21,
+            "rating": 1370.22,
             "seed": 3980478267,
             "opponent": {
                 "label": "REPORTER:Pesha",
@@ -12425,7 +12425,7 @@
             "loss": 0.4870086014654348
         },
         "bestWin": {
-            "rating": 2139.91,
+            "rating": 2139.9,
             "seed": 3959459580,
             "opponent": {
                 "label": "LADY2:Eseria",
@@ -12434,7 +12434,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1218.72,
+            "rating": 1218.73,
             "seed": 293054849,
             "opponent": {
                 "label": "IDOL:Teagan",
@@ -12478,7 +12478,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1358.09,
+            "rating": 1358.1,
             "seed": 4029176221,
             "opponent": {
                 "label": "ARTIST2:Frank",
@@ -12522,7 +12522,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1348.83,
+            "rating": 1348.84,
             "seed": 731820589,
             "opponent": {
                 "label": "JUGGLER:Youcef",
@@ -12566,7 +12566,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1358.09,
+            "rating": 1358.1,
             "seed": 1246357874,
             "opponent": {
                 "label": "ARTIST2:Frank",
@@ -12733,7 +12733,7 @@
             "loss": 0.5200729927007299
         },
         "bestWin": {
-            "rating": 1835.76,
+            "rating": 1835.75,
             "seed": 2636961012,
             "opponent": {
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal",
@@ -12742,7 +12742,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1348.83,
+            "rating": 1348.84,
             "seed": 3096418907,
             "opponent": {
                 "label": "JUGGLER:Youcef",
@@ -12821,7 +12821,7 @@
             "loss": 0.5237226277372263
         },
         "bestWin": {
-            "rating": 2040.85,
+            "rating": 2040.84,
             "seed": 3421790875,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#16",
@@ -12874,7 +12874,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1290.97,
+            "rating": 1290.98,
             "seed": 2823014307,
             "opponent": {
                 "label": "SCIENTIST_M5:Sonatane",
@@ -12918,7 +12918,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1348.83,
+            "rating": 1348.84,
             "seed": 276922572,
             "opponent": {
                 "label": "JUGGLER:Youcef",
@@ -13041,7 +13041,7 @@
             "loss": 0.5053597265283409
         },
         "bestWin": {
-            "rating": 1835.76,
+            "rating": 1835.75,
             "seed": 1997380142,
             "opponent": {
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal",
@@ -13094,7 +13094,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1276.38,
+            "rating": 1276.39,
             "seed": 3626389679,
             "opponent": {
                 "label": "PUNKM:Vlad",
@@ -13217,7 +13217,7 @@
             "loss": 0.5383211678832117
         },
         "bestWin": {
-            "rating": 1670.3,
+            "rating": 1670.29,
             "seed": 1724624707,
             "opponent": {
                 "label": "FAIRYTALEGIRL:Madeline",
@@ -13393,7 +13393,7 @@
             "loss": 0.5437956204379562
         },
         "bestWin": {
-            "rating": 1669.36,
+            "rating": 1669.35,
             "seed": 1575505242,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#7",
@@ -13490,7 +13490,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1194.6,
+            "rating": 1194.61,
             "seed": 2354528595,
             "opponent": {
                 "label": "CAMERAMAN2:Octavio",
@@ -13525,7 +13525,7 @@
             "loss": 0.5263470864138644
         },
         "bestWin": {
-            "rating": 1781.88,
+            "rating": 1781.87,
             "seed": 2173411399,
             "opponent": {
                 "label": "COOLTRAINERSQUAD_2:Shouta and Kaede",
@@ -13569,7 +13569,7 @@
             "loss": 0.5565693430656934
         },
         "bestWin": {
-            "rating": 2181.27,
+            "rating": 2181.26,
             "seed": 1972067805,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise",
@@ -13578,7 +13578,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1161.18,
+            "rating": 1161.19,
             "seed": 3888466887,
             "opponent": {
                 "label": "BIKER2:Chuck",
@@ -13613,7 +13613,7 @@
             "loss": 0.5565693430656934
         },
         "bestWin": {
-            "rating": 1650.6,
+            "rating": 1650.59,
             "seed": 2468436912,
             "opponent": {
                 "label": "MAID:Wendy",
@@ -13745,7 +13745,7 @@
             "loss": 0.5583941605839416
         },
         "bestWin": {
-            "rating": 1702.14,
+            "rating": 1702.13,
             "seed": 427883379,
             "opponent": {
                 "label": "POKEMONRANGER_M4_GANG:Micah",
@@ -14018,7 +14018,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1228.4,
+            "rating": 1228.41,
             "seed": 2644339343,
             "opponent": {
                 "label": "POKEMONBREEDER_M4:Isaac",
@@ -14185,7 +14185,7 @@
             "loss": 0.5543302329278956
         },
         "bestWin": {
-            "rating": 1670.3,
+            "rating": 1670.29,
             "seed": 951241407,
             "opponent": {
                 "label": "FAIRYTALEGIRL:Madeline",
@@ -14273,7 +14273,7 @@
             "loss": 0.5578281262421496
         },
         "bestWin": {
-            "rating": 1608.32,
+            "rating": 1605.99,
             "seed": 269646141,
             "opponent": {
                 "label": "MASKEDVILLAIN_Sang:Silver#1",
@@ -14361,7 +14361,7 @@
             "loss": 0.5857664233576643
         },
         "bestWin": {
-            "rating": 1754.58,
+            "rating": 1754.57,
             "seed": 451784756,
             "opponent": {
                 "label": "WILDPACK:Muggy",
@@ -14370,7 +14370,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1218.72,
+            "rating": 1218.73,
             "seed": 336443916,
             "opponent": {
                 "label": "IDOL:Teagan",
@@ -14625,7 +14625,7 @@
             "loss": 0.6021897810218978
         },
         "bestWin": {
-            "rating": 1560.64,
+            "rating": 1560.65,
             "seed": 2030621579,
             "opponent": {
                 "label": "ANCIENTPRIEST:Radzayac",
@@ -14722,7 +14722,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1169.03,
+            "rating": 1169.04,
             "seed": 2108385800,
             "opponent": {
                 "label": "ROUGHNECK2:Flavio",
@@ -14766,7 +14766,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1169.03,
+            "rating": 1169.04,
             "seed": 1937593644,
             "opponent": {
                 "label": "DOCTOR:Peio",
@@ -15030,7 +15030,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1121.21,
+            "rating": 1121.22,
             "seed": 440424782,
             "opponent": {
                 "label": "BURGLAR:Keith",
@@ -15074,7 +15074,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1194.6,
+            "rating": 1194.61,
             "seed": 2391180849,
             "opponent": {
                 "label": "CAMERAMAN2:Octavio",
@@ -15109,7 +15109,7 @@
             "loss": 0.6240875912408759
         },
         "bestWin": {
-            "rating": 1456.1,
+            "rating": 1456.11,
             "seed": 1205311771,
             "opponent": {
                 "label": "CHALLENGER_Vanya:Vanya#5",
@@ -15118,7 +15118,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1169.03,
+            "rating": 1169.04,
             "seed": 1932896686,
             "opponent": {
                 "label": "ROUGHNECK2:Flavio",
@@ -15329,7 +15329,7 @@
             "loss": 0.6313868613138686
         },
         "bestWin": {
-            "rating": 1490.9,
+            "rating": 1490.91,
             "seed": 1455289959,
             "opponent": {
                 "label": "BIKER:Knoxx",
@@ -15338,7 +15338,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1194.6,
+            "rating": 1194.61,
             "seed": 4027059866,
             "opponent": {
                 "label": "CAMERAMAN2:Octavio",
@@ -15417,7 +15417,7 @@
             "loss": 0.635036496350365
         },
         "bestWin": {
-            "rating": 2055.55,
+            "rating": 2055.54,
             "seed": 3506769785,
             "opponent": {
                 "label": "WAITER:Aaron",
@@ -15505,7 +15505,7 @@
             "loss": 0.6368613138686131
         },
         "bestWin": {
-            "rating": 1650.6,
+            "rating": 1650.59,
             "seed": 1468885686,
             "opponent": {
                 "label": "DRAGONTAMER:Arthur",
@@ -15514,7 +15514,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1008.68,
+            "rating": 1008.69,
             "seed": 529685078,
             "opponent": {
                 "label": "LEADER_Helena:Helena#1",
@@ -15778,7 +15778,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1169.03,
+            "rating": 1169.04,
             "seed": 1276695181,
             "opponent": {
                 "label": "ROUGHNECK2:Flavio",
@@ -15910,7 +15910,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1121.21,
+            "rating": 1121.22,
             "seed": 3952137399,
             "opponent": {
                 "label": "LEADER_Zoe:Zo\u00e9",
@@ -16042,7 +16042,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1121.21,
+            "rating": 1121.22,
             "seed": 3048429180,
             "opponent": {
                 "label": "BURGLAR:Keith",
@@ -16174,7 +16174,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1039.8,
+            "rating": 1039.81,
             "seed": 3742464393,
             "opponent": {
                 "label": "GUITARIST2:Brady",
@@ -16209,7 +16209,7 @@
             "loss": 0.6733576642335767
         },
         "bestWin": {
-            "rating": 1390.18,
+            "rating": 1390.19,
             "seed": 261486158,
             "opponent": {
                 "label": "POKEMONBREEDER_F4:Sara",
@@ -16473,7 +16473,7 @@
             "loss": 0.6843065693430657
         },
         "bestWin": {
-            "rating": 1573.85,
+            "rating": 1573.86,
             "seed": 630301030,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -16482,7 +16482,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1139.24,
+            "rating": 1139.25,
             "seed": 3281848117,
             "opponent": {
                 "label": "TWINS2:Bella and Meghan",
@@ -16693,7 +16693,7 @@
             "loss": 0.664513872326894
         },
         "bestWin": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 3208344812,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -16737,7 +16737,7 @@
             "loss": 0.6934306569343066
         },
         "bestWin": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 3871581586,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -16869,7 +16869,7 @@
             "loss": 0.6675099569858213
         },
         "bestWin": {
-            "rating": 1370.21,
+            "rating": 1370.22,
             "seed": 1184026669,
             "opponent": {
                 "label": "REPORTER:Pesha",
@@ -16922,7 +16922,7 @@
             }
         },
         "worstLoss": {
-            "rating": 927.3,
+            "rating": 927.31,
             "seed": 3514212867,
             "opponent": {
                 "label": "LEADER_Eko:Eko#1",
@@ -17045,7 +17045,7 @@
             "loss": 0.698905109489051
         },
         "bestWin": {
-            "rating": 1468.78,
+            "rating": 1468.79,
             "seed": 3021665204,
             "opponent": {
                 "label": "GENTLEMAN:Nicholas",
@@ -17098,7 +17098,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1039.8,
+            "rating": 1039.81,
             "seed": 1124571509,
             "opponent": {
                 "label": "GUITARIST2:Brady",
@@ -17133,7 +17133,7 @@
             "loss": 0.7025547445255474
         },
         "bestWin": {
-            "rating": 1560.64,
+            "rating": 1560.65,
             "seed": 1330078557,
             "opponent": {
                 "label": "PILOT:Kurtis",
@@ -17221,7 +17221,7 @@
             "loss": 0.6802543922410367
         },
         "bestWin": {
-            "rating": 1468.44,
+            "rating": 1468.45,
             "seed": 2354528595,
             "opponent": {
                 "label": "BLACKBELT:Santiago",
@@ -17230,7 +17230,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1039.8,
+            "rating": 1039.81,
             "seed": 2661130831,
             "opponent": {
                 "label": "GUITARIST2:Brady",
@@ -17265,7 +17265,7 @@
             "loss": 0.7098540145985401
         },
         "bestWin": {
-            "rating": 1290.97,
+            "rating": 1290.98,
             "seed": 1090080643,
             "opponent": {
                 "label": "SCIENTIST_M5:Sonatane",
@@ -17309,7 +17309,7 @@
             "loss": 0.7135036496350365
         },
         "bestWin": {
-            "rating": 1348.83,
+            "rating": 1348.84,
             "seed": 2857026406,
             "opponent": {
                 "label": "JUGGLER:Youcef",
@@ -17318,7 +17318,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1039.8,
+            "rating": 1039.81,
             "seed": 1722707629,
             "opponent": {
                 "label": "GUITARIST2:Brady",
@@ -17450,7 +17450,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1037.73,
+            "rating": 1037.74,
             "seed": 3285159050,
             "opponent": {
                 "label": "POKEMONRANGER_M2:Martel",
@@ -17494,7 +17494,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1039.8,
+            "rating": 1039.81,
             "seed": 3263144280,
             "opponent": {
                 "label": "GUITARIST2:Brady",
@@ -17529,7 +17529,7 @@
             "loss": 0.718978102189781
         },
         "bestWin": {
-            "rating": 1456.1,
+            "rating": 1456.11,
             "seed": 1922468167,
             "opponent": {
                 "label": "CHALLENGER_Vanya:Vanya#5",
@@ -17670,7 +17670,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1039.8,
+            "rating": 1039.81,
             "seed": 4166694786,
             "opponent": {
                 "label": "GUITARIST2:Brady",
@@ -17749,7 +17749,7 @@
             "loss": 0.7262773722627737
         },
         "bestWin": {
-            "rating": 1348.83,
+            "rating": 1348.84,
             "seed": 1498886055,
             "opponent": {
                 "label": "JUGGLER:Youcef",
@@ -17758,7 +17758,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1037.73,
+            "rating": 1037.74,
             "seed": 179769107,
             "opponent": {
                 "label": "POKEMONRANGER_M2:Martel",
@@ -17969,7 +17969,7 @@
             "loss": 0.7078158355902502
         },
         "bestWin": {
-            "rating": 1339.42,
+            "rating": 1339.43,
             "seed": 41811332,
             "opponent": {
                 "label": "ARTIST3:Frida",
@@ -18022,7 +18022,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1008.68,
+            "rating": 1008.69,
             "seed": 195890309,
             "opponent": {
                 "label": "LEADER_Helena:Helena#1",
@@ -18101,7 +18101,7 @@
             "loss": 0.7390510948905109
         },
         "bestWin": {
-            "rating": 1390.18,
+            "rating": 1390.19,
             "seed": 3213306945,
             "opponent": {
                 "label": "POKEMONBREEDER_F4:Sara",
@@ -18189,7 +18189,7 @@
             "loss": 0.7408759124087592
         },
         "bestWin": {
-            "rating": 1301.35,
+            "rating": 1301.36,
             "seed": 2560286821,
             "opponent": {
                 "label": "BATTLEGIRL2:Yumei",
@@ -18198,7 +18198,7 @@
             }
         },
         "worstLoss": {
-            "rating": 1037.73,
+            "rating": 1037.74,
             "seed": 3358459923,
             "opponent": {
                 "label": "POKEMONRANGER_M2:Martel",
@@ -18277,7 +18277,7 @@
             "loss": 0.7427007299270073
         },
         "bestWin": {
-            "rating": 1358.09,
+            "rating": 1358.1,
             "seed": 440424782,
             "opponent": {
                 "label": "ARTIST2:Frank",
@@ -18409,7 +18409,7 @@
             "loss": 0.7169822720407028
         },
         "bestWin": {
-            "rating": 1370.21,
+            "rating": 1370.22,
             "seed": 3871097663,
             "opponent": {
                 "label": "REPORTER:Pesha",
@@ -18541,7 +18541,7 @@
             "loss": 0.7204801653549566
         },
         "bestWin": {
-            "rating": 1293.55,
+            "rating": 1293.56,
             "seed": 3461541575,
             "opponent": {
                 "label": "LEADER_Zoe:Zo\u00e9#1",
@@ -18550,7 +18550,7 @@
             }
         },
         "worstLoss": {
-            "rating": 927.3,
+            "rating": 927.31,
             "seed": 2727406472,
             "opponent": {
                 "label": "LEADER_Eko:Eko#1",
@@ -18585,7 +18585,7 @@
             "loss": 0.7536496350364964
         },
         "bestWin": {
-            "rating": 1263.4,
+            "rating": 1263.41,
             "seed": 3215485556,
             "opponent": {
                 "label": "ARTIST:Arnold",
@@ -18629,7 +18629,7 @@
             "loss": 0.7270925601401944
         },
         "bestWin": {
-            "rating": 1222.44,
+            "rating": 1222.45,
             "seed": 3276201219,
             "opponent": {
                 "label": "GUITARIST3:Jamie",
@@ -18726,7 +18726,7 @@
             }
         },
         "worstLoss": {
-            "rating": 948.8,
+            "rating": 948.81,
             "seed": 2514151215,
             "opponent": {
                 "label": "DELINQUENT:Jeralyn",
@@ -18902,7 +18902,7 @@
             }
         },
         "worstLoss": {
-            "rating": 948.8,
+            "rating": 948.81,
             "seed": 2027063481,
             "opponent": {
                 "label": "DELINQUENT:Jeralyn",
@@ -19069,7 +19069,7 @@
             "loss": 0.7883211678832117
         },
         "bestWin": {
-            "rating": 1169.03,
+            "rating": 1169.04,
             "seed": 3249682398,
             "opponent": {
                 "label": "DOCTOR:Peio",
@@ -19113,7 +19113,7 @@
             "loss": 0.7883211678832117
         },
         "bestWin": {
-            "rating": 1276.38,
+            "rating": 1276.39,
             "seed": 3257721005,
             "opponent": {
                 "label": "PUNKM:Vlad",
@@ -19210,7 +19210,7 @@
             }
         },
         "worstLoss": {
-            "rating": 970.25,
+            "rating": 970.26,
             "seed": 3157679044,
             "opponent": {
                 "label": "SCIENTIST_F:Natasha",
@@ -19245,7 +19245,7 @@
             "loss": 0.7956204379562044
         },
         "bestWin": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 3969132374,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -19333,7 +19333,7 @@
             "loss": 0.801094890510949
         },
         "bestWin": {
-            "rating": 1169.03,
+            "rating": 1169.04,
             "seed": 4157035726,
             "opponent": {
                 "label": "DOCTOR:Peio",
@@ -19465,7 +19465,7 @@
             "loss": 0.8083941605839416
         },
         "bestWin": {
-            "rating": 1039.8,
+            "rating": 1039.81,
             "seed": 3745730142,
             "opponent": {
                 "label": "GUITARIST2:Brady",
@@ -19509,7 +19509,7 @@
             "loss": 0.8083941605839416
         },
         "bestWin": {
-            "rating": 1008.68,
+            "rating": 1008.69,
             "seed": 3157679044,
             "opponent": {
                 "label": "LEADER_Helena:Helena#1",
@@ -19562,7 +19562,7 @@
             }
         },
         "worstLoss": {
-            "rating": 858.2,
+            "rating": 858.21,
             "seed": 157613263,
             "opponent": {
                 "label": "AROMALADY:Cheshire",
@@ -19641,7 +19641,7 @@
             "loss": 0.8120437956204379
         },
         "bestWin": {
-            "rating": 1021.42,
+            "rating": 1021.43,
             "seed": 1184127022,
             "opponent": {
                 "label": "LEADER_Rafael:Rafael",
@@ -19738,7 +19738,7 @@
             }
         },
         "worstLoss": {
-            "rating": 858.2,
+            "rating": 858.21,
             "seed": 1180849756,
             "opponent": {
                 "label": "BACKPACKER_F:Aiyana",
@@ -19905,7 +19905,7 @@
             "loss": 0.8266423357664233
         },
         "bestWin": {
-            "rating": 1218.72,
+            "rating": 1218.73,
             "seed": 3514212867,
             "opponent": {
                 "label": "IDOL:Teagan",
@@ -20222,7 +20222,7 @@
             }
         },
         "worstLoss": {
-            "rating": 845.17,
+            "rating": 845.18,
             "seed": 4209728287,
             "opponent": {
                 "label": "POKEMONRANGER_M:Ivan",
@@ -20257,7 +20257,7 @@
             "loss": 0.8131743381826854
         },
         "bestWin": {
-            "rating": 927.3,
+            "rating": 927.31,
             "seed": 2887194691,
             "opponent": {
                 "label": "LEADER_Eko:Eko#1",
@@ -20389,7 +20389,7 @@
             "loss": 0.8521897810218978
         },
         "bestWin": {
-            "rating": 927.3,
+            "rating": 927.31,
             "seed": 549191283,
             "opponent": {
                 "label": "LEADER_Eko:Eko#1",
@@ -20794,7 +20794,7 @@
             }
         },
         "worstLoss": {
-            "rating": 742.89,
+            "rating": 742.9,
             "seed": 3692088531,
             "opponent": {
                 "label": "FAIRYTALEGIRL:Maja",
@@ -21093,7 +21093,7 @@
             "loss": 0.8394085380395897
         },
         "bestWin": {
-            "rating": 927.3,
+            "rating": 927.31,
             "seed": 384647401,
             "opponent": {
                 "label": "LEADER_Eko:Eko#1",
@@ -21102,7 +21102,7 @@
             }
         },
         "worstLoss": {
-            "rating": 709.98,
+            "rating": 709.99,
             "seed": 1560302871,
             "opponent": {
                 "label": "TRAINER_Alessa:Alessa",
@@ -21225,7 +21225,7 @@
             "loss": 0.8795620437956204
         },
         "bestWin": {
-            "rating": 845.17,
+            "rating": 845.18,
             "seed": 2734200547,
             "opponent": {
                 "label": "POKEMONRANGER_M:Ivan",
@@ -21630,7 +21630,7 @@
             }
         },
         "worstLoss": {
-            "rating": 709.98,
+            "rating": 709.99,
             "seed": 175511557,
             "opponent": {
                 "label": "CLERK_F:Lily",
@@ -21973,7 +21973,7 @@
             "loss": 0.9087591240875912
         },
         "bestWin": {
-            "rating": 814.6,
+            "rating": 814.61,
             "seed": 3177670873,
             "opponent": {
                 "label": "TRAINER_Alessa:Alessa#1",
@@ -22061,7 +22061,7 @@
             "loss": 0.9142335766423357
         },
         "bestWin": {
-            "rating": 858.2,
+            "rating": 858.21,
             "seed": 396488441,
             "opponent": {
                 "label": "BACKPACKER_F:Aiyana",
@@ -22281,7 +22281,7 @@
             "loss": 0.9178832116788321
         },
         "bestWin": {
-            "rating": 847.47,
+            "rating": 847.48,
             "seed": 1186558560,
             "opponent": {
                 "label": "CYCLIST_M:Mitron",
@@ -22501,7 +22501,7 @@
             "loss": 0.9288321167883211
         },
         "bestWin": {
-            "rating": 742.89,
+            "rating": 742.9,
             "seed": 2941023013,
             "opponent": {
                 "label": "IDOL:Ishizu",
@@ -22545,7 +22545,7 @@
             "loss": 0.8918769377533985
         },
         "bestWin": {
-            "rating": 845.17,
+            "rating": 845.18,
             "seed": 3852024665,
             "opponent": {
                 "label": "POKEMONRANGER_M:Ivan",
@@ -22677,7 +22677,7 @@
             "loss": 0.9361313868613139
         },
         "bestWin": {
-            "rating": 847.47,
+            "rating": 847.48,
             "seed": 558053418,
             "opponent": {
                 "label": "CYCLIST_M:Mitron",
@@ -22721,7 +22721,7 @@
             "loss": 0.9379562043795621
         },
         "bestWin": {
-            "rating": 814.6,
+            "rating": 814.61,
             "seed": 164993709,
             "opponent": {
                 "label": "TRAINER_Alessa:Alessa#1",
@@ -22897,7 +22897,7 @@
             "loss": 0.9434306569343066
         },
         "bestWin": {
-            "rating": 709.98,
+            "rating": 709.99,
             "seed": 4033824140,
             "opponent": {
                 "label": "CLERK_F:Lily",
@@ -22985,7 +22985,7 @@
             "loss": 0.9093664043246681
         },
         "bestWin": {
-            "rating": 709.98,
+            "rating": 709.99,
             "seed": 1198834434,
             "opponent": {
                 "label": "CLERK_F:Lily",
@@ -23073,7 +23073,7 @@
             "loss": 0.9128642976389221
         },
         "bestWin": {
-            "rating": 1433.32,
+            "rating": 1432.53,
             "seed": 3826474214,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -23522,7 +23522,7 @@
             }
         },
         "worstLoss": {
-            "rating": 452.68,
+            "rating": 452.69,
             "seed": 2133665962,
             "opponent": {
                 "label": "GENTLEMAN:Wilfrid",
@@ -23821,7 +23821,7 @@
             "loss": 0.96
         },
         "bestWin": {
-            "rating": 499.68,
+            "rating": 499.69,
             "seed": 4041040947,
             "opponent": {
                 "label": "AROMALADY:Hannah",
@@ -23874,7 +23874,7 @@
             }
         },
         "worstLoss": {
-            "rating": 452.68,
+            "rating": 452.69,
             "seed": 1659790765,
             "opponent": {
                 "label": "YOUNGSTER:Harvey",
@@ -23909,7 +23909,7 @@
             "loss": 0.96
         },
         "bestWin": {
-            "rating": 452.68,
+            "rating": 452.69,
             "seed": 373789679,
             "opponent": {
                 "label": "YOUNGSTER:Harvey",
@@ -23918,7 +23918,7 @@
             }
         },
         "worstLoss": {
-            "rating": 452.68,
+            "rating": 452.69,
             "seed": 3781256380,
             "opponent": {
                 "label": "GENTLEMAN:Wilfrid",
@@ -24006,7 +24006,7 @@
             }
         },
         "worstLoss": {
-            "rating": 452.68,
+            "rating": 452.69,
             "seed": 2837794440,
             "opponent": {
                 "label": "YOUNGSTER:Harvey",
@@ -24138,7 +24138,7 @@
             }
         },
         "worstLoss": {
-            "rating": 452.68,
+            "rating": 452.69,
             "seed": 1112493584,
             "opponent": {
                 "label": "GENTLEMAN:Wilfrid",

@@ -3,12 +3,13 @@ import { useNavigate, useParams } from "react-router-dom";
 import { toPng } from "html-to-image";
 import { TrainerCard } from "../components/TrainerCard";
 import { fetchLeaderboardRow, fetchMeta, fetchTrainerStatic, formatKey } from "../lib/dataClient";
-import type { BattleType, CurseVariant, FormatMeta, LeaderboardRow, TrainerStatic } from "../types";
+import type { BattleType, CurseVariant, FilterVariant, FormatMeta, LeaderboardRow, TrainerStatic } from "../types";
 import "./TrainerModal.css";
 
 interface TrainerModalContentProps {
   battleType: BattleType;
   curseVariant: CurseVariant;
+  filter: FilterVariant;
   label: string;
   onClose: () => void;
   onOpenTrainer: (label: string) => void;
@@ -18,8 +19,8 @@ interface TrainerModalContentProps {
 // as a route (TrainerModal below, for the Leaderboard page) or directly from
 // page-local state (see ComparePage) without navigating away and losing that
 // page's filters/settings.
-export function TrainerModalContent({ battleType, curseVariant, label, onClose, onOpenTrainer }: TrainerModalContentProps) {
-  const fmt = formatKey(battleType, curseVariant);
+export function TrainerModalContent({ battleType, curseVariant, filter, label, onClose, onOpenTrainer }: TrainerModalContentProps) {
+  const fmt = formatKey(battleType, curseVariant, filter);
 
   const [trainer, setTrainer] = useState<TrainerStatic | null>(null);
   const [row, setRow] = useState<LeaderboardRow | null>(null);
@@ -101,20 +102,22 @@ export function TrainerModal() {
   const navigate = useNavigate();
   const battleType = params.battleType as BattleType;
   const curseVariant = params.curseVariant as CurseVariant;
+  const filter = params.filter as FilterVariant;
   const label = decodeURIComponent(params.label ?? "");
 
   function close() {
-    navigate(`/${battleType}/${curseVariant}`);
+    navigate(`/${battleType}/${curseVariant}/${filter}`);
   }
 
   function openTrainer(nextLabel: string) {
-    navigate(`/${battleType}/${curseVariant}/${encodeURIComponent(nextLabel)}`);
+    navigate(`/${battleType}/${curseVariant}/${filter}/${encodeURIComponent(nextLabel)}`);
   }
 
   return (
     <TrainerModalContent
       battleType={battleType}
       curseVariant={curseVariant}
+      filter={filter}
       label={label}
       onClose={close}
       onOpenTrainer={openTrainer}

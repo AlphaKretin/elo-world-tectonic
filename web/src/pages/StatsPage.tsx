@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { FormatPicker } from "../components/FormatPicker";
 import { StatsScatter } from "../components/StatsScatter";
 import { fetchLeaderboard, fetchTeamLevels, formatKey } from "../lib/dataClient";
-import type { BattleType, CurseVariant, LeaderboardRow, ScatterPoint, TeamLevels } from "../types";
+import type { BattleType, CurseVariant, FilterVariant, LeaderboardRow, ScatterPoint, TeamLevels } from "../types";
 import "./StatsPage.css";
 
 type MetricKey = "rating" | "rank" | "winRate" | "avgLevel" | "maxLevel";
@@ -25,22 +25,30 @@ interface AxisConfig {
   metric: MetricKey;
   battleType: BattleType;
   curseVariant: CurseVariant;
+  filter: FilterVariant;
 }
 
 function metricOption(key: MetricKey): MetricOption {
   return METRICS.find((m) => m.key === key)!;
 }
 
-function formatShortLabel(battleType: BattleType, curseVariant: CurseVariant): string {
+const FILTER_LABELS: Record<FilterVariant, string> = {
+  none: "",
+  cursed_excluded: "Cursed-excluded",
+  level70_only: "Level 70 only",
+};
+
+function formatShortLabel(battleType: BattleType, curseVariant: CurseVariant, filter: FilterVariant): string {
   const bt = battleType === "singles" ? "Singles" : "Doubles";
-  const cv = curseVariant === "cursed" ? "Cursed" : curseVariant === "uncursed" ? "Uncursed" : "Cursed-excluded";
-  return `${bt} / ${cv}`;
+  const cv = curseVariant === "cursed" ? "Cursed" : "Uncursed";
+  const filterLabel = FILTER_LABELS[filter];
+  return filterLabel ? `${bt} / ${cv} / ${filterLabel}` : `${bt} / ${cv}`;
 }
 
 function axisLabel(axis: AxisConfig): string {
   const opt = metricOption(axis.metric);
   if (!opt.needsFormat) return opt.label;
-  return `${formatShortLabel(axis.battleType, axis.curseVariant)} ${opt.label.toLowerCase()}`;
+  return `${formatShortLabel(axis.battleType, axis.curseVariant, axis.filter)} ${opt.label.toLowerCase()}`;
 }
 
 function metricValue(
@@ -51,7 +59,7 @@ function metricValue(
 ): number | undefined {
   if (axis.metric === "avgLevel") return teamLevels?.[label]?.avgLevel;
   if (axis.metric === "maxLevel") return teamLevels?.[label]?.maxLevel;
-  const rows = leaderboards[formatKey(axis.battleType, axis.curseVariant)];
+  const rows = leaderboards[formatKey(axis.battleType, axis.curseVariant, axis.filter)];
   const row = rows?.find((r) => r.label === label);
   if (!row) return undefined;
   if (axis.metric === "rating") return row.rating;
@@ -83,7 +91,8 @@ function AxisPicker({ title, axis, onChange }: AxisPickerProps) {
         <FormatPicker
           battleType={axis.battleType}
           curseVariant={axis.curseVariant}
-          onChange={(bt, cv) => onChange({ ...axis, battleType: bt, curseVariant: cv })}
+          filter={axis.filter}
+          onChange={(bt, cv, f) => onChange({ ...axis, battleType: bt, curseVariant: cv, filter: f })}
         />
       )}
     </div>
@@ -91,8 +100,8 @@ function AxisPicker({ title, axis, onChange }: AxisPickerProps) {
 }
 
 export function StatsPage() {
-  const [axisX, setAxisX] = useState<AxisConfig>({ metric: "maxLevel", battleType: "singles", curseVariant: "cursed" });
-  const [axisY, setAxisY] = useState<AxisConfig>({ metric: "rating", battleType: "singles", curseVariant: "cursed" });
+  const [axisX, setAxisX] = useState<AxisConfig>({ metric: "maxLevel", battleType: "singles", curseVariant: "cursed", filter: "none" });
+  const [axisY, setAxisY] = useState<AxisConfig>({ metric: "rating", battleType: "singles", curseVariant: "cursed", filter: "none" });
   const [showTrendline, setShowTrendline] = useState(false);
 
   const [teamLevels, setTeamLevels] = useState<TeamLevels | null>(null);
@@ -107,8 +116,8 @@ export function StatsPage() {
 
   const neededFormats = useMemo(() => {
     const set = new Set<string>();
-    if (metricOption(axisX.metric).needsFormat) set.add(formatKey(axisX.battleType, axisX.curseVariant));
-    if (metricOption(axisY.metric).needsFormat) set.add(formatKey(axisY.battleType, axisY.curseVariant));
+    if (metricOption(axisX.metric).needsFormat) set.add(formatKey(axisX.battleType, axisX.curseVariant, axisX.filter));
+    if (metricOption(axisY.metric).needsFormat) set.add(formatKey(axisY.battleType, axisY.curseVariant, axisY.filter));
     return [...set];
   }, [axisX, axisY]);
 
@@ -134,10 +143,10 @@ export function StatsPage() {
     if (!ready) return null;
 
     const xFmtRows = metricOption(axisX.metric).needsFormat
-      ? leaderboards[formatKey(axisX.battleType, axisX.curseVariant)]
+      ? leaderboards[formatKey(axisX.battleType, axisX.curseVariant, axisX.filter)]
       : null;
     const yFmtRows = metricOption(axisY.metric).needsFormat
-      ? leaderboards[formatKey(axisY.battleType, axisY.curseVariant)]
+      ? leaderboards[formatKey(axisY.battleType, axisY.curseVariant, axisY.filter)]
       : null;
     const nameSource = xFmtRows ?? yFmtRows;
 

@@ -62,6 +62,24 @@ await step("switch format (doubles / uncursed)", async () => {
   await page.screenshot({ path: `${outDir}/3-doubles-uncursed.png`, fullPage: true });
 });
 
+await step("apply level70_only filter", async () => {
+  await page.click("button:has-text('Singles')");
+  await page.waitForTimeout(200);
+  await page.click("button:has-text('Cursed'):not(:has-text('Excluded'))");
+  await page.waitForTimeout(200);
+  await page.click("button:has-text('Level 70 only')");
+  await page.waitForTimeout(500);
+  const url = page.url();
+  if (!url.includes("/singles/cursed/level70_only")) {
+    throw new Error(`expected URL to include /singles/cursed/level70_only, got ${url}`);
+  }
+  const rowCount = await page.locator("table tbody tr").count();
+  if (rowCount !== 167) {
+    throw new Error(`expected exactly 167 level70_only trainers, got ${rowCount}`);
+  }
+  await page.screenshot({ path: `${outDir}/3b-singles-level70-only.png`, fullPage: true });
+});
+
 await step("open trainer detail card", async () => {
   // Row 50, not 0: rank #1 is often a freshly-added/masked trainer whose
   // sprite may not be on the CDN yet (404s are handled gracefully by

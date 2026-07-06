@@ -1,11 +1,15 @@
-import type { BattleType, CurseVariant, FormatMeta, LeaderboardRow, TeamLevels, TrainerStatic } from "../types";
+import type { BattleType, CurseVariant, FilterVariant, FormatMeta, LeaderboardRow, TeamLevels, TrainerStatic } from "../types";
 
-// The 6 backend datasets are a cross product of battleType x curseVariant,
-// but "cursed" (the default/base tournament) has no suffix in the backend
-// naming (see analysis/export_web_data.py's FORMATS list) -- singles,
-// singles_uncursed, singles_cursed_excluded, etc.
-export function formatKey(battleType: BattleType, curseVariant: CurseVariant): string {
-  return curseVariant === "cursed" ? battleType : `${battleType}_${curseVariant}`;
+// The backend's format string is battleType, optionally with "_uncursed"
+// (a genuinely different battle-results dataset), optionally with a
+// results_lib.FILTERS name appended (a post-hoc row filter over whichever
+// dataset that already is) -- see analysis/export_web_data.py's FORMATS
+// list. "cursed"/"none" are each the no-suffix default for their factor.
+export function formatKey(battleType: BattleType, curseVariant: CurseVariant, filter: FilterVariant): string {
+  let key: string = battleType;
+  if (curseVariant === "uncursed") key += "_uncursed";
+  if (filter !== "none") key += `_${filter}`;
+  return key;
 }
 
 function dataUrl(path: string): string {

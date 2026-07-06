@@ -1,5 +1,11 @@
 export type BattleType = "singles" | "doubles";
-export type CurseVariant = "cursed" | "uncursed" | "cursed_excluded";
+// Whether curse effects were rolled as-is or re-battled/stripped -- a real
+// difference in underlying battle results, unlike FilterVariant below.
+export type CurseVariant = "cursed" | "uncursed";
+// A post-hoc row filter applied on top of a battleType/curseVariant's
+// results (see analysis/results_lib.py's FILTERS registry) -- doesn't
+// change what was battled, only which battles count toward the rating fit.
+export type FilterVariant = "none" | "cursed_excluded" | "level70_only";
 
 export interface OpponentRef {
   label: string;
