@@ -66,7 +66,7 @@ function opponentLine(prefix: string, entry: BestWorstEntry | null, onOpenTraine
   if (!entry) {
     return <p className="card-line dim">{prefix}: --</p>;
   }
-  const { opponent, rating, seed } = entry;
+  const { opponent, rating, opponentRank, seed } = entry;
   return (
     <p className="card-line">
       {prefix}:{" "}
@@ -80,7 +80,8 @@ function opponentLine(prefix: string, entry: BestWorstEntry | null, onOpenTraine
       ) : (
         opponent.display
       )}{" "}
-      ({rating.toFixed(0)})
+      ({opponentRank !== null ? `#${opponentRank}, ` : ""}
+      {rating.toFixed(0)})
       <span className="seed">Seed: {seed}</span>
     </p>
   );

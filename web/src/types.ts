@@ -15,6 +15,7 @@ export interface OpponentRef {
 
 export interface BestWorstEntry {
   rating: number;
+  opponentRank: number | null;
   seed: number;
   opponent: OpponentRef;
 }

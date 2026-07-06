@@ -83,13 +83,20 @@ def opponent_payload(label, card_data_by_label):
     return {"label": label, "display": name, "cursed": cursed}
 
 
-def best_worst_payload(entry, card_data_by_label):
+def best_worst_payload(entry, card_data_by_label, ratings_by_label):
     if not entry:
         return None
+    opponent_row = ratings_by_label.get(entry["opponent"])
     return {
         "rating": entry["rating"],
         "seed": entry["seed"],
         "opponent": opponent_payload(entry["opponent"], card_data_by_label),
+        # Opponent's own rank in this same format's leaderboard, alongside
+        # the rating they had at fight time (entry["rating"]) -- None only
+        # if the opponent somehow isn't in this format's fit at all, which
+        # shouldn't happen since best/worst is computed from the same
+        # format's battles.
+        "opponentRank": opponent_row["rank"] if opponent_row else None,
     }
 
 
@@ -222,8 +229,8 @@ def export_format(fmt, card_data_by_label):
             "overlap": row.get("overlap"), "tier": tier,
             "tierColor": TIER_COLORS.get(tier),
             "wldFractions": wld_fractions(row["wins"], row["losses"], row["draws"]),
-            "bestWin": best_worst_payload(bw.get("best_win"), card_data_by_label),
-            "worstLoss": best_worst_payload(bw.get("worst_loss"), card_data_by_label),
+            "bestWin": best_worst_payload(bw.get("best_win"), card_data_by_label, ratings_by_label),
+            "worstLoss": best_worst_payload(bw.get("worst_loss"), card_data_by_label, ratings_by_label),
         })
     leaderboard.sort(key=lambda r: r["rank"])
     with open(os.path.join(out_dir, "leaderboard.json"), "w", encoding="utf-8") as f:

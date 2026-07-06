@@ -31,7 +31,8 @@
                 "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
                 "display": "Another Possible Rafael",
                 "cursed": false
-            }
+            },
+            "opponentRank": 2
         },
         "worstLoss": null
     },
@@ -67,7 +68,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 2195.23,
@@ -76,7 +78,8 @@
                 "label": "ANOTHERPOSSIBLERAFAEL:Rafael#1",
                 "display": "Another Possible Rafael",
                 "cursed": true
-            }
+            },
+            "opponentRank": 1
         }
     },
     {
@@ -111,7 +114,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1434.67,
@@ -120,7 +124,8 @@
                 "label": "MASKEDVILLAIN2:Teal#14",
                 "display": "Masked Villain Teal [Alessa] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 112
         }
     },
     {
@@ -155,7 +160,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1336.29,
@@ -164,7 +170,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#8",
                 "display": "Pok\u00e9mon Master Vanya #8",
                 "cursed": false
-            }
+            },
+            "opponentRank": 138
         }
     },
     {
@@ -199,7 +206,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1468.85,
@@ -208,7 +216,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": false
-            }
+            },
+            "opponentRank": 96
         }
     },
     {
@@ -243,7 +252,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -252,7 +262,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -287,7 +298,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -296,7 +308,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -331,7 +344,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1358.53,
@@ -340,7 +354,8 @@
                 "label": "MASKEDVILLAIN:Crimson#18",
                 "display": "Masked Villain Crimson [Keoni] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 132
         }
     },
     {
@@ -375,7 +390,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1290.71,
@@ -384,7 +400,8 @@
                 "label": "MASKEDVILLAIN2:Teal#20",
                 "display": "Masked Villain Teal [Eifion] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 147
         }
     },
     {
@@ -419,7 +436,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -428,7 +446,8 @@
                 "label": "JUGGLER:Brickbat",
                 "display": "Developer Brickbat",
                 "cursed": false
-            }
+            },
+            "opponentRank": 150
         }
     },
     {
@@ -463,7 +482,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1417.55,
@@ -472,7 +492,8 @@
                 "label": "ROUGHNECK2:Jaggedthorn",
                 "display": "Developer Jaggedthorn",
                 "cursed": false
-            }
+            },
+            "opponentRank": 118
         }
     },
     {
@@ -507,7 +528,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1335.54,
@@ -516,7 +538,8 @@
                 "label": "FORMERCHAMP_Casey:Casey",
                 "display": "Former Champion Casey",
                 "cursed": false
-            }
+            },
+            "opponentRank": 139
         }
     },
     {
@@ -551,7 +574,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -560,7 +584,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -595,7 +620,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1346.7,
@@ -604,7 +630,8 @@
                 "label": "WORKER5:Jbsundown",
                 "display": "Developer Jbsundown",
                 "cursed": false
-            }
+            },
+            "opponentRank": 136
         }
     },
     {
@@ -639,7 +666,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1297.14,
@@ -648,7 +676,8 @@
                 "label": "ANOTHERPOSSIBLEZAIN:Zain",
                 "display": "Another Possible Zain #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 146
         }
     },
     {
@@ -683,7 +712,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1346.7,
@@ -692,7 +722,8 @@
                 "label": "WORKER5:Jbsundown",
                 "display": "Developer Jbsundown",
                 "cursed": false
-            }
+            },
+            "opponentRank": 136
         }
     },
     {
@@ -727,7 +758,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1290.71,
@@ -736,7 +768,8 @@
                 "label": "MASKEDVILLAIN2:Teal#20",
                 "display": "Masked Villain Teal [Eifion] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 147
         }
     },
     {
@@ -771,7 +804,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1352.64,
@@ -780,7 +814,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#9",
                 "display": "Pok\u00e9mon Master Vanya #9",
                 "cursed": false
-            }
+            },
+            "opponentRank": 134
         }
     },
     {
@@ -815,7 +850,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1328.52,
@@ -824,7 +860,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#6",
                 "display": "Pok\u00e9mon Master Vanya #6",
                 "cursed": false
-            }
+            },
+            "opponentRank": 140
         }
     },
     {
@@ -859,7 +896,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -868,7 +906,8 @@
                 "label": "MASKEDVILLAIN:Crimson#20",
                 "display": "Masked Villain Crimson [Eifion] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 151
         }
     },
     {
@@ -903,7 +942,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1249.82,
@@ -912,7 +952,8 @@
                 "label": "IDEALTRAINER:of Origins",
                 "display": "Ideal Trainer of Origins",
                 "cursed": false
-            }
+            },
+            "opponentRank": 153
         }
     },
     {
@@ -947,7 +988,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -956,7 +998,8 @@
                 "label": "JUGGLER:Brickbat",
                 "display": "Developer Brickbat",
                 "cursed": false
-            }
+            },
+            "opponentRank": 150
         }
     },
     {
@@ -991,7 +1034,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1309.86,
@@ -1000,7 +1044,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#4",
                 "display": "Pok\u00e9mon Master Vanya #4",
                 "cursed": false
-            }
+            },
+            "opponentRank": 143
         }
     },
     {
@@ -1035,7 +1080,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1439.69,
@@ -1044,7 +1090,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#21",
                 "display": "Pok\u00e9mon Master Vanya #21",
                 "cursed": false
-            }
+            },
+            "opponentRank": 110
         }
     },
     {
@@ -1079,7 +1126,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1335.54,
@@ -1088,7 +1136,8 @@
                 "label": "FORMERCHAMP_Casey:Casey",
                 "display": "Former Champion Casey",
                 "cursed": false
-            }
+            },
+            "opponentRank": 139
         }
     },
     {
@@ -1123,7 +1172,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1249.82,
@@ -1132,7 +1182,8 @@
                 "label": "IDEALTRAINER:of Origins",
                 "display": "Ideal Trainer of Origins",
                 "cursed": false
-            }
+            },
+            "opponentRank": 153
         }
     },
     {
@@ -1167,7 +1218,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -1176,7 +1228,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -1211,7 +1264,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1285.78,
@@ -1220,7 +1274,8 @@
                 "label": "IDEALTRAINER:of Tradition",
                 "display": "Ideal Trainer of Tradition",
                 "cursed": false
-            }
+            },
+            "opponentRank": 148
         }
     },
     {
@@ -1255,7 +1310,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1237.11,
@@ -1264,7 +1320,8 @@
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
-            }
+            },
+            "opponentRank": 155
         }
     },
     {
@@ -1299,7 +1356,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1285.78,
@@ -1308,7 +1366,8 @@
                 "label": "IDEALTRAINER:of Tradition",
                 "display": "Ideal Trainer of Tradition",
                 "cursed": false
-            }
+            },
+            "opponentRank": 148
         }
     },
     {
@@ -1343,7 +1402,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1346.7,
@@ -1352,7 +1412,8 @@
                 "label": "WORKER5:Jbsundown",
                 "display": "Developer Jbsundown",
                 "cursed": false
-            }
+            },
+            "opponentRank": 136
         }
     },
     {
@@ -1387,7 +1448,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1335.54,
@@ -1396,7 +1458,8 @@
                 "label": "FORMERCHAMP_Casey:Casey",
                 "display": "Former Champion Casey",
                 "cursed": false
-            }
+            },
+            "opponentRank": 139
         }
     },
     {
@@ -1431,7 +1494,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1316.13,
@@ -1440,7 +1504,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#13",
                 "display": "Pok\u00e9mon Master Vanya #13",
                 "cursed": false
-            }
+            },
+            "opponentRank": 142
         }
     },
     {
@@ -1475,7 +1540,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1285.78,
@@ -1484,7 +1550,8 @@
                 "label": "IDEALTRAINER:of Tradition",
                 "display": "Ideal Trainer of Tradition",
                 "cursed": false
-            }
+            },
+            "opponentRank": 148
         }
     },
     {
@@ -1519,7 +1586,8 @@
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
                 "display": "Nightmare Queen Elise",
                 "cursed": true
-            }
+            },
+            "opponentRank": 15
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -1528,7 +1596,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -1563,7 +1632,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1285.78,
@@ -1572,7 +1642,8 @@
                 "label": "IDEALTRAINER:of Tradition",
                 "display": "Ideal Trainer of Tradition",
                 "cursed": false
-            }
+            },
+            "opponentRank": 148
         }
     },
     {
@@ -1607,7 +1678,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1303.53,
@@ -1616,7 +1688,8 @@
                 "label": "POKEMONBREEDER_F:Miss Zesty",
                 "display": "Developer Miss Zesty",
                 "cursed": false
-            }
+            },
+            "opponentRank": 144
         }
     },
     {
@@ -1651,7 +1724,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -1660,7 +1734,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -1695,7 +1770,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1285.78,
@@ -1704,7 +1780,8 @@
                 "label": "IDEALTRAINER:of Tradition",
                 "display": "Ideal Trainer of Tradition",
                 "cursed": false
-            }
+            },
+            "opponentRank": 148
         }
     },
     {
@@ -1739,7 +1816,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1303.53,
@@ -1748,7 +1826,8 @@
                 "label": "POKEMONBREEDER_F:Miss Zesty",
                 "display": "Developer Miss Zesty",
                 "cursed": false
-            }
+            },
+            "opponentRank": 144
         }
     },
     {
@@ -1783,7 +1862,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1244.05,
@@ -1792,7 +1872,8 @@
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
-            }
+            },
+            "opponentRank": 154
         }
     },
     {
@@ -1827,7 +1908,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1249.82,
@@ -1836,7 +1918,8 @@
                 "label": "IDEALTRAINER:of Origins",
                 "display": "Ideal Trainer of Origins",
                 "cursed": false
-            }
+            },
+            "opponentRank": 153
         }
     },
     {
@@ -1871,7 +1954,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -1880,7 +1964,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -1915,7 +2000,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -1924,7 +2010,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -1959,7 +2046,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -1968,7 +2056,8 @@
                 "label": "JUGGLER:Brickbat",
                 "display": "Developer Brickbat",
                 "cursed": false
-            }
+            },
+            "opponentRank": 150
         }
     },
     {
@@ -2003,7 +2092,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -2012,7 +2102,8 @@
                 "label": "MASKEDVILLAIN:Crimson#20",
                 "display": "Masked Villain Crimson [Eifion] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 151
         }
     },
     {
@@ -2047,7 +2138,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -2056,7 +2148,8 @@
                 "label": "MASKEDVILLAIN:Crimson#20",
                 "display": "Masked Villain Crimson [Eifion] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 151
         }
     },
     {
@@ -2091,7 +2184,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -2100,7 +2194,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -2135,7 +2230,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1273.03,
@@ -2144,7 +2240,8 @@
                 "label": "IDEALTRAINER:of Conquest",
                 "display": "Ideal Trainer of Conquest",
                 "cursed": false
-            }
+            },
+            "opponentRank": 149
         }
     },
     {
@@ -2179,7 +2276,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1244.05,
@@ -2188,7 +2286,8 @@
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
-            }
+            },
+            "opponentRank": 154
         }
     },
     {
@@ -2223,7 +2322,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1249.82,
@@ -2232,7 +2332,8 @@
                 "label": "IDEALTRAINER:of Origins",
                 "display": "Ideal Trainer of Origins",
                 "cursed": false
-            }
+            },
+            "opponentRank": 153
         }
     },
     {
@@ -2267,7 +2368,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1297.14,
@@ -2276,7 +2378,8 @@
                 "label": "ANOTHERPOSSIBLEZAIN:Zain",
                 "display": "Another Possible Zain #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 146
         }
     },
     {
@@ -2311,7 +2414,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -2320,7 +2424,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -2355,7 +2460,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1303.53,
@@ -2364,7 +2470,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#15",
                 "display": "Pok\u00e9mon Master Vanya #15",
                 "cursed": false
-            }
+            },
+            "opponentRank": 145
         }
     },
     {
@@ -2399,7 +2506,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 867.57,
@@ -2408,7 +2516,8 @@
                 "label": "ARTIFICIALTRAINER:Trinity",
                 "display": "Artificial Trainer Trinity",
                 "cursed": false
-            }
+            },
+            "opponentRank": 165
         }
     },
     {
@@ -2443,7 +2552,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -2452,7 +2562,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -2487,7 +2598,8 @@
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
                 "display": "Masked Villains Teal [Imogene] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 14
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -2496,7 +2608,8 @@
                 "label": "MASKEDVILLAIN:Crimson#20",
                 "display": "Masked Villain Crimson [Eifion] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 151
         }
     },
     {
@@ -2531,7 +2644,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -2540,7 +2654,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -2575,7 +2690,8 @@
                 "label": "MASKEDVILLAIN2:Teal#15",
                 "display": "Masked Villain Teal [Alessa] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 10
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -2584,7 +2700,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -2619,7 +2736,8 @@
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
                 "display": "Masked Villains Teal [Imogene] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 14
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -2628,7 +2746,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -2663,7 +2782,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -2672,7 +2792,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -2707,7 +2828,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -2716,7 +2838,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -2751,7 +2874,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1303.53,
@@ -2760,7 +2884,8 @@
                 "label": "POKEMONBREEDER_F:Miss Zesty",
                 "display": "Developer Miss Zesty",
                 "cursed": false
-            }
+            },
+            "opponentRank": 144
         }
     },
     {
@@ -2795,7 +2920,8 @@
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
                 "display": "Nightmare Queen Elise",
                 "cursed": true
-            }
+            },
+            "opponentRank": 15
         },
         "worstLoss": {
             "rating": 1273.03,
@@ -2804,7 +2930,8 @@
                 "label": "IDEALTRAINER:of Conquest",
                 "display": "Ideal Trainer of Conquest",
                 "cursed": false
-            }
+            },
+            "opponentRank": 149
         }
     },
     {
@@ -2839,7 +2966,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -2848,7 +2976,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -2883,7 +3012,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1244.05,
@@ -2892,7 +3022,8 @@
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
-            }
+            },
+            "opponentRank": 154
         }
     },
     {
@@ -2927,7 +3058,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -2936,7 +3068,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -2971,7 +3104,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1244.05,
@@ -2980,7 +3114,8 @@
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
-            }
+            },
+            "opponentRank": 154
         }
     },
     {
@@ -3015,7 +3150,8 @@
                 "label": "TRAINER_Candy:Candy#1",
                 "display": "Pok\u00e9mon Trainer Candy #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 12
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -3024,7 +3160,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -3059,7 +3196,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1273.03,
@@ -3068,7 +3206,8 @@
                 "label": "IDEALTRAINER:of Conquest",
                 "display": "Ideal Trainer of Conquest",
                 "cursed": false
-            }
+            },
+            "opponentRank": 149
         }
     },
     {
@@ -3103,7 +3242,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -3112,7 +3252,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -3147,7 +3288,8 @@
                 "label": "TOURISTM:Azeler",
                 "display": "Developer Azeler",
                 "cursed": false
-            }
+            },
+            "opponentRank": 13
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -3156,7 +3298,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -3191,7 +3334,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -3200,7 +3344,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -3235,7 +3380,8 @@
                 "label": "SPIRITGUARDIAN3:Preeti#1",
                 "display": "Spirit Guardian Preeti",
                 "cursed": true
-            }
+            },
+            "opponentRank": 17
         },
         "worstLoss": {
             "rating": 1303.53,
@@ -3244,7 +3390,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#15",
                 "display": "Pok\u00e9mon Master Vanya #15",
                 "cursed": false
-            }
+            },
+            "opponentRank": 145
         }
     },
     {
@@ -3279,7 +3426,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -3288,7 +3436,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -3323,7 +3472,8 @@
                 "label": "TRAINER_Candy:Candy#1",
                 "display": "Pok\u00e9mon Trainer Candy #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 12
         },
         "worstLoss": {
             "rating": 1244.05,
@@ -3332,7 +3482,8 @@
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
-            }
+            },
+            "opponentRank": 154
         }
     },
     {
@@ -3367,7 +3518,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1249.82,
@@ -3376,7 +3528,8 @@
                 "label": "IDEALTRAINER:of Origins",
                 "display": "Ideal Trainer of Origins",
                 "cursed": false
-            }
+            },
+            "opponentRank": 153
         }
     },
     {
@@ -3411,7 +3564,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -3420,7 +3574,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -3455,7 +3610,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -3464,7 +3620,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -3499,7 +3656,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -3508,7 +3666,8 @@
                 "label": "MASKEDVILLAIN:Crimson#20",
                 "display": "Masked Villain Crimson [Eifion] #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 151
         }
     },
     {
@@ -3543,7 +3702,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1257.7,
@@ -3552,7 +3712,8 @@
                 "label": "JUGGLER:Brickbat",
                 "display": "Developer Brickbat",
                 "cursed": false
-            }
+            },
+            "opponentRank": 150
         }
     },
     {
@@ -3587,7 +3748,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -3596,7 +3758,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -3631,7 +3794,8 @@
                 "label": "TRAINER_Eifion:Eifion#2",
                 "display": "Pok\u00e9mon Trainer Eifion #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 28
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -3640,7 +3804,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -3675,7 +3840,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1303.53,
@@ -3684,7 +3850,8 @@
                 "label": "POKEMONBREEDER_F:Miss Zesty",
                 "display": "Developer Miss Zesty",
                 "cursed": false
-            }
+            },
+            "opponentRank": 144
         }
     },
     {
@@ -3719,7 +3886,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -3728,7 +3896,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -3763,7 +3932,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -3772,7 +3942,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -3807,7 +3978,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
                 "display": "Pok\u00e9mon Trainer Vanya #4",
                 "cursed": false
-            }
+            },
+            "opponentRank": 19
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -3816,7 +3988,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -3851,7 +4024,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -3860,7 +4034,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -3895,7 +4070,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -3904,7 +4080,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -3939,7 +4116,8 @@
                 "label": "MASKEDVILLAIN:Crimson#23",
                 "display": "Masked Villain Crimson [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 18
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -3948,7 +4126,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -3983,7 +4162,8 @@
                 "label": "TOURISTM:Azeler",
                 "display": "Developer Azeler",
                 "cursed": false
-            }
+            },
+            "opponentRank": 13
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -3992,7 +4172,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -4027,7 +4208,8 @@
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
                 "display": "Nightmare Queen Elise",
                 "cursed": true
-            }
+            },
+            "opponentRank": 15
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -4036,7 +4218,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -4071,7 +4254,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1237.11,
@@ -4080,7 +4264,8 @@
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
-            }
+            },
+            "opponentRank": 155
         }
     },
     {
@@ -4115,7 +4300,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -4124,7 +4310,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -4159,7 +4346,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -4168,7 +4356,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -4203,7 +4392,8 @@
                 "label": "MASKEDVILLAIN2:Teal#23",
                 "display": "Masked Villain Teal [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 5
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -4212,7 +4402,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -4247,7 +4438,8 @@
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
                 "display": "Nightmare Queen Elise",
                 "cursed": true
-            }
+            },
+            "opponentRank": 15
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -4256,7 +4448,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -4291,7 +4484,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -4300,7 +4494,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -4335,7 +4530,8 @@
                 "label": "HEXMANIAC:Errata",
                 "display": "Developer Errata",
                 "cursed": false
-            }
+            },
+            "opponentRank": 26
         },
         "worstLoss": {
             "rating": 1237.11,
@@ -4344,7 +4540,8 @@
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
-            }
+            },
+            "opponentRank": 155
         }
     },
     {
@@ -4379,7 +4576,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1273.03,
@@ -4388,7 +4586,8 @@
                 "label": "IDEALTRAINER:of Conquest",
                 "display": "Ideal Trainer of Conquest",
                 "cursed": false
-            }
+            },
+            "opponentRank": 149
         }
     },
     {
@@ -4423,7 +4622,8 @@
                 "label": "POKEMONCHAMPION_Vanya:Vanya",
                 "display": "Champion Vanya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 33
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -4432,7 +4632,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -4467,7 +4668,8 @@
                 "label": "TOURISTM:Azeler",
                 "display": "Developer Azeler",
                 "cursed": false
-            }
+            },
+            "opponentRank": 13
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -4476,7 +4678,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -4511,7 +4714,8 @@
                 "label": "TOURISTM:Azeler",
                 "display": "Developer Azeler",
                 "cursed": false
-            }
+            },
+            "opponentRank": 13
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -4520,7 +4724,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -4555,7 +4760,8 @@
                 "label": "LEADER_Eko:Eko#3",
                 "display": "Gym Leader Eko #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 23
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -4564,7 +4770,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -4599,7 +4806,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1237.11,
@@ -4608,7 +4816,8 @@
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
-            }
+            },
+            "opponentRank": 155
         }
     },
     {
@@ -4643,7 +4852,8 @@
                 "label": "TOURISTM:Chus",
                 "display": "Developer Chus",
                 "cursed": false
-            }
+            },
+            "opponentRank": 21
         },
         "worstLoss": {
             "rating": 1249.82,
@@ -4652,7 +4862,8 @@
                 "label": "IDEALTRAINER:of Origins",
                 "display": "Ideal Trainer of Origins",
                 "cursed": false
-            }
+            },
+            "opponentRank": 153
         }
     },
     {
@@ -4687,7 +4898,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -4696,7 +4908,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -4731,7 +4944,8 @@
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
                 "display": "Masked Villains Teal [Imogene] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 14
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -4740,7 +4954,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -4775,7 +4990,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1237.11,
@@ -4784,7 +5000,8 @@
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
-            }
+            },
+            "opponentRank": 155
         }
     },
     {
@@ -4819,7 +5036,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -4828,7 +5046,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -4863,7 +5082,8 @@
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
                 "display": "Nightmare Queen Elise",
                 "cursed": true
-            }
+            },
+            "opponentRank": 15
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -4872,7 +5092,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -4907,7 +5128,8 @@
                 "label": "LEADER_Bence:Bence#3",
                 "display": "Gym Leader Bence #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 3
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -4916,7 +5138,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -4951,7 +5174,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
                 "display": "Pok\u00e9mon Trainer Vanya #4",
                 "cursed": false
-            }
+            },
+            "opponentRank": 19
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -4960,7 +5184,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -4995,7 +5220,8 @@
                 "label": "MASKEDVILLAIN2:Teal#15",
                 "display": "Masked Villain Teal [Alessa] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 10
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -5004,7 +5230,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -5039,7 +5266,8 @@
                 "label": "ODDISH:Oddium",
                 "display": "Developer Oddium",
                 "cursed": false
-            }
+            },
+            "opponentRank": 16
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -5048,7 +5276,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -5083,7 +5312,8 @@
                 "label": "MASKEDVILLAIN2:Teal#15",
                 "display": "Masked Villain Teal [Alessa] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 10
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -5092,7 +5322,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -5127,7 +5358,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -5136,7 +5368,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -5171,7 +5404,8 @@
                 "label": "LEADER_Helena:Helena#3",
                 "display": "Gym Leader Helena #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 11
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -5180,7 +5414,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -5215,7 +5450,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#1",
                 "display": "Pok\u00e9mon Trainer Vanya #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 40
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -5224,7 +5460,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -5259,7 +5496,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -5268,7 +5506,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -5303,7 +5542,8 @@
                 "label": "MASKEDVILLAIN2:Teal#15",
                 "display": "Masked Villain Teal [Alessa] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 10
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -5312,7 +5552,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -5347,7 +5588,8 @@
                 "label": "TOURISTM:Azeler",
                 "display": "Developer Azeler",
                 "cursed": false
-            }
+            },
+            "opponentRank": 13
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -5356,7 +5598,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -5391,7 +5634,8 @@
                 "label": "MASKEDVILLAIN2:Teal#17",
                 "display": "Masked Villain Teal [Skyler] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 20
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -5400,7 +5644,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -5435,7 +5680,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -5444,7 +5690,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -5479,7 +5726,8 @@
                 "label": "TRAINER_Candy:Candy#1",
                 "display": "Pok\u00e9mon Trainer Candy #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 12
         },
         "worstLoss": {
             "rating": 1226.91,
@@ -5488,7 +5736,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya",
                 "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 157
         }
     },
     {
@@ -5523,7 +5772,8 @@
                 "label": "ULTRALAINIE:Lainie",
                 "display": "Ultra Lainie",
                 "cursed": false
-            }
+            },
+            "opponentRank": 45
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -5532,7 +5782,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -5567,7 +5818,8 @@
                 "label": "MASKEDVILLAIN2:Teal#15",
                 "display": "Masked Villain Teal [Alessa] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 10
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -5576,7 +5828,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -5611,7 +5864,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -5620,7 +5874,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -5655,7 +5910,8 @@
                 "label": "MASKEDVILLAIN2:Teal#17",
                 "display": "Masked Villain Teal [Skyler] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 20
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -5664,7 +5920,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -5699,7 +5956,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -5708,7 +5966,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -5743,7 +6002,8 @@
                 "label": "TOURISTM:Chus",
                 "display": "Developer Chus",
                 "cursed": false
-            }
+            },
+            "opponentRank": 21
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -5752,7 +6012,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -5787,7 +6048,8 @@
                 "label": "TRAINER_Sang:Sang#5",
                 "display": "Pok\u00e9mon Trainer Sang #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 8
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -5796,7 +6058,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -5831,7 +6094,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -5840,7 +6104,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -5875,7 +6140,8 @@
                 "label": "MASKEDVILLAIN:Crimson#23",
                 "display": "Masked Villain Crimson [Candy] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 18
         },
         "worstLoss": {
             "rating": 1249.82,
@@ -5884,7 +6150,8 @@
                 "label": "IDEALTRAINER:of Origins",
                 "display": "Ideal Trainer of Origins",
                 "cursed": false
-            }
+            },
+            "opponentRank": 153
         }
     },
     {
@@ -5919,7 +6186,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -5928,7 +6196,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -5963,7 +6232,8 @@
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
                 "display": "Masked Villains Teal [Imogene] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 14
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -5972,7 +6242,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -6007,7 +6278,8 @@
                 "label": "VETERANM_2:Kirbae",
                 "display": "Developer Kirbae",
                 "cursed": false
-            }
+            },
+            "opponentRank": 25
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -6016,7 +6288,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -6051,7 +6324,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#2",
                 "display": "Former Champion Elise #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 4
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -6060,7 +6334,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -6095,7 +6370,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1230.09,
@@ -6104,7 +6380,8 @@
                 "label": "SPIRITGUARDIAN2:Sonya",
                 "display": "Spirit Guardian Sonya",
                 "cursed": false
-            }
+            },
+            "opponentRank": 156
         }
     },
     {
@@ -6139,7 +6416,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
                 "display": "Pok\u00e9mon Trainer Vanya #4",
                 "cursed": false
-            }
+            },
+            "opponentRank": 19
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -6148,7 +6426,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -6183,7 +6462,8 @@
                 "label": "TOURISTM:Azeler",
                 "display": "Developer Azeler",
                 "cursed": false
-            }
+            },
+            "opponentRank": 13
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -6192,7 +6472,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -6227,7 +6508,8 @@
                 "label": "TOURISTM:Chus",
                 "display": "Developer Chus",
                 "cursed": false
-            }
+            },
+            "opponentRank": 21
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -6236,7 +6518,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -6271,7 +6554,8 @@
                 "label": "POKEMONTRAINER_Yezera:Yezera#11",
                 "display": "Pok\u00e9mon Trainer Yezera #6",
                 "cursed": true
-            }
+            },
+            "opponentRank": 22
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -6280,7 +6564,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -6315,7 +6600,8 @@
                 "label": "FORMERCHAMP_Elise:Elise#1",
                 "display": "Former Champion Elise #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 37
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -6324,7 +6610,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -6359,7 +6646,8 @@
                 "label": "ANOTHERPOSSIBLEALESSA:Alessa#1",
                 "display": "Another Possible Alessa #2",
                 "cursed": false
-            }
+            },
+            "opponentRank": 54
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -6368,7 +6656,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -6403,7 +6692,8 @@
                 "label": "MASKEDVILLAIN2:Teal#15",
                 "display": "Masked Villain Teal [Alessa] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 10
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -6412,7 +6702,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -6447,7 +6738,8 @@
                 "label": "COOLTRAINER_M7:X#1",
                 "display": "Pro Trainer X",
                 "cursed": true
-            }
+            },
+            "opponentRank": 9
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -6456,7 +6748,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -6491,7 +6784,8 @@
                 "label": "TRAINER_Eifion:Eifion#2",
                 "display": "Pok\u00e9mon Trainer Eifion #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 28
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -6500,7 +6794,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -6535,7 +6830,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -6544,7 +6840,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -6579,7 +6876,8 @@
                 "label": "MASKEDVILLAIN2:Teal#15",
                 "display": "Masked Villain Teal [Alessa] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 10
         },
         "worstLoss": {
             "rating": 1208.45,
@@ -6588,7 +6886,8 @@
                 "label": "ARTIST3:Drawingbox",
                 "display": "Developer Drawingbox",
                 "cursed": false
-            }
+            },
+            "opponentRank": 159
         }
     },
     {
@@ -6623,7 +6922,8 @@
                 "label": "MASKEDVILLAIN2:Teal#17",
                 "display": "Masked Villain Teal [Skyler] #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 20
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -6632,7 +6932,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -6667,7 +6968,8 @@
                 "label": "TAPU_LELE:Tapu Lele#1",
                 "display": "Guardian Deity Tapu Lele",
                 "cursed": true
-            }
+            },
+            "opponentRank": 51
         },
         "worstLoss": {
             "rating": 1237.11,
@@ -6676,7 +6978,8 @@
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
-            }
+            },
+            "opponentRank": 155
         }
     },
     {
@@ -6711,7 +7014,8 @@
                 "label": "TOURISTM:Chus",
                 "display": "Developer Chus",
                 "cursed": false
-            }
+            },
+            "opponentRank": 21
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -6720,7 +7024,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -6755,7 +7060,8 @@
                 "label": "LEADER_Lambert:Lambert#3",
                 "display": "Gym Leader Lambert #2",
                 "cursed": true
-            }
+            },
+            "opponentRank": 41
         },
         "worstLoss": {
             "rating": 1222.98,
@@ -6764,7 +7070,8 @@
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 158
         }
     },
     {
@@ -6799,7 +7106,8 @@
                 "label": "NIGHTMAREQUEEN_Elise:Elise",
                 "display": "Nightmare Queen Elise",
                 "cursed": false
-            }
+            },
+            "opponentRank": 29
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -6808,7 +7116,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -6843,7 +7152,8 @@
                 "label": "TAPU_BULU:Tapu Bulu#1",
                 "display": "Guardian Deity Tapu Bulu",
                 "cursed": true
-            }
+            },
+            "opponentRank": 44
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -6852,7 +7162,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -6887,7 +7198,8 @@
                 "label": "FORMERCHAMP_Elise:Elise",
                 "display": "Former Champion Elise #1",
                 "cursed": false
-            }
+            },
+            "opponentRank": 43
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -6896,7 +7208,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -6931,7 +7244,8 @@
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": true
-            }
+            },
+            "opponentRank": 7
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -6940,7 +7254,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -6975,7 +7290,8 @@
                 "label": "FORMERCHAMP_Scilla:Scilla",
                 "display": "Former Champion Scilla",
                 "cursed": false
-            }
+            },
+            "opponentRank": 56
         },
         "worstLoss": {
             "rating": 1112.64,
@@ -6984,7 +7300,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         }
     },
     {
@@ -7019,7 +7336,8 @@
                 "label": "TOURISTM:Azeler",
                 "display": "Developer Azeler",
                 "cursed": false
-            }
+            },
+            "opponentRank": 13
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -7028,7 +7346,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -7063,7 +7382,8 @@
                 "label": "SPIRITGUARDIAN3:Preeti",
                 "display": "Spirit Guardian Preeti",
                 "cursed": false
-            }
+            },
+            "opponentRank": 27
         },
         "worstLoss": {
             "rating": 1201.01,
@@ -7072,7 +7392,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
                 "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
-            }
+            },
+            "opponentRank": 160
         }
     },
     {
@@ -7107,7 +7428,8 @@
                 "label": "SEEKER_Nora:Nora#1",
                 "display": "Seeker Nora",
                 "cursed": true
-            }
+            },
+            "opponentRank": 53
         },
         "worstLoss": {
             "rating": 880.92,
@@ -7116,7 +7438,8 @@
                 "label": "MAID2:Maddie",
                 "display": "Developer Maddie",
                 "cursed": false
-            }
+            },
+            "opponentRank": 164
         }
     },
     {
@@ -7151,7 +7474,8 @@
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
                 "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
-            }
+            },
+            "opponentRank": 6
         },
         "worstLoss": {
             "rating": 1163.35,
@@ -7160,7 +7484,8 @@
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
                 "cursed": false
-            }
+            },
+            "opponentRank": 161
         }
     },
     {
@@ -7195,7 +7520,8 @@
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
                 "display": "Pok\u00e9mon Master Vanya #20",
                 "cursed": false
-            }
+            },
+            "opponentRank": 162
         },
         "worstLoss": {
             "rating": 1040.01,
@@ -7204,7 +7530,8 @@
                 "label": "ARTIFICIALTRAINER:Doppel",
                 "display": "Artificial Trainer Doppel",
                 "cursed": false
-            }
+            },
+            "opponentRank": 163
         }
     },
     {
@@ -7239,7 +7566,8 @@
                 "label": "LADY2:Eseria",
                 "display": "Developer Eseria",
                 "cursed": false
-            }
+            },
+            "opponentRank": 55
         },
         "worstLoss": {
             "rating": 880.92,
@@ -7248,7 +7576,8 @@
                 "label": "MAID2:Maddie",
                 "display": "Developer Maddie",
                 "cursed": false
-            }
+            },
+            "opponentRank": 164
         }
     },
     {
@@ -7283,7 +7612,8 @@
                 "label": "BATTLEGIRL:Tester",
                 "display": "Battle Girl Tester",
                 "cursed": false
-            }
+            },
+            "opponentRank": 167
         },
         "worstLoss": {
             "rating": 867.57,
@@ -7292,7 +7622,8 @@
                 "label": "ARTIFICIALTRAINER:Trinity",
                 "display": "Artificial Trainer Trinity",
                 "cursed": false
-            }
+            },
+            "opponentRank": 165
         }
     },
     {
@@ -7328,7 +7659,8 @@
                 "label": "ARTIFICIALTRAINER:Solitaire",
                 "display": "Artificial Trainer Solitaire",
                 "cursed": false
-            }
+            },
+            "opponentRank": 166
         }
     }
 ]
