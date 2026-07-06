@@ -7,15 +7,23 @@ data dump. Pulled out once six different scripts (ratings.py, best_worst.py,
 notable_matches.py, trainer_cards.py, level_plot.py, compare_formats.py) had
 each grown their own near-identical copy.
 
-Also owns the "cursed_excluded" post-hoc filter (drop every battle flagged
-curse, see ratings.py's --exclude-cursed) and its one hand-maintained
-special case: CURSE_NO_MERCY is sometimes only authored on one half of a
-narratively-paired battle (e.g. Bence carries CURSE_NO_MERCY#1, his duo
-partner Zoé doesn't), so a battle-level `curse` flag alone leaves Zoé's
-non-Bence battles in the cursed_excluded fit while Bence's own disappear
-entirely. Confirmed with Luna: cursed_excluded should be consistently
-over-zealous rather than asymmetric, so both halves of a known pair are
-excluded together.
+Also owns the named row-level filter registry (FILTERS) shared by every
+script that lets you narrow a fit or lookup to a subset of battles --
+cursed_excluded (drop every battle flagged curse) and level70_only (keep
+only battles between two 6-Pokemon-at-level-70 "endgame" trainers) as of
+this writing -- plus add_filter_arg/filter_suffix/passes_filters/
+load_card_data_if_needed, the shared CLI-flag-to-filename-suffix plumbing
+so ratings.py, best_worst.py, and custom_trainer_report.py all pick
+ratings_<fmt>_<name1>_<name2>...json the same way instead of each growing
+its own --exclude-cursed-shaped flag.
+
+cursed_excluded has one hand-maintained special case: CURSE_NO_MERCY is
+sometimes only authored on one half of a narratively-paired battle (e.g.
+Bence carries CURSE_NO_MERCY#1, his duo partner Zoé doesn't), so a
+battle-level `curse` flag alone leaves Zoé's non-Bence battles in the
+cursed_excluded fit while Bence's own disappear entirely. Confirmed with
+Luna: cursed_excluded should be consistently over-zealous rather than
+asymmetric, so both halves of a known pair are excluded together.
 """
 import glob
 import json
@@ -137,3 +145,70 @@ def is_cursed_excluded(row):
         return True
     t1, t2 = row.get("trainer1"), row.get("trainer2")
     return t1 in ASYMMETRIC_CURSE_PAIRS or t2 in ASYMMETRIC_CURSE_PAIRS
+
+
+def is_level70_trainer(label, card_data):
+    """True if `label` fields exactly 6 Pokemon, all at level 70 -- the
+    "endgame/developer team" cohort used by the level70_only filter. There's
+    no in-game "developer" trainer type to key off (it's just an informal
+    label people put on trainers of various real types), so this is derived
+    purely from the dumped party data."""
+    row = card_data.get(label)
+    if row is None:
+        return False
+    party = row.get("party") or []
+    return len(party) == 6 and all(p.get("level") == 70 for p in party)
+
+
+# Named row-level "keep this battle" predicates shared by ratings.py,
+# best_worst.py, and custom_trainer_report.py's --filter flag, each keyed by
+# the name used in its output suffix (ratings_<fmt>_<name>.json). A
+# predicate takes (row, card_data) and returns True to keep the row.
+# card_data is only loaded (via load_card_data_if_needed) if some active
+# filter's FILTERS_NEEDING_CARD_DATA entry says it's needed, since most
+# rows/filters don't need per-trainer party data.
+FILTERS = {
+    "cursed_excluded": lambda row, card_data: not is_cursed_excluded(row),
+    "level70_only": lambda row, card_data: (
+        is_level70_trainer(row["trainer1"], card_data)
+        and is_level70_trainer(row["trainer2"], card_data)
+    ),
+}
+FILTERS_NEEDING_CARD_DATA = {"level70_only"}
+
+
+def add_filter_arg(parser):
+    """Shared --filter CLI flag: a repeatable named row-level filter (see
+    FILTERS) that also picks the ratings_<fmt><filter_suffix(...)>.json/csv
+    file a script reads and/or writes, instead of each script growing its
+    own --exclude-cursed-shaped boolean flag."""
+    parser.add_argument(
+        "--filter", action="append", default=[], metavar="NAME", choices=sorted(FILTERS),
+        help=(
+            "Named filter (repeatable); see results_lib.FILTERS for definitions. Determines the "
+            "ratings_<fmt>_<name1>_<name2>...json/csv file this reads and/or writes instead of "
+            "the unfiltered one, with names joined in FILTERS' own order regardless of flag order."
+        ),
+    )
+
+
+def filter_suffix(filter_names):
+    """Canonical suffix for a set of active filter names, in FILTERS' own
+    order (not caller order) so e.g. --filter level70_only --filter
+    cursed_excluded and the reverse both produce
+    _cursed_excluded_level70_only."""
+    return "".join(f"_{name}" for name in FILTERS if name in filter_names)
+
+
+def load_card_data_if_needed(filter_names, card_data_path=None):
+    """load_card_data() only if some active filter actually needs it (see
+    FILTERS_NEEDING_CARD_DATA) -- so a script that never uses level70_only
+    doesn't pay to load and index trainer_card_data.json for nothing."""
+    if any(name in FILTERS_NEEDING_CARD_DATA for name in filter_names):
+        return load_card_data(card_data_path)
+    return None
+
+
+def passes_filters(row, filter_names, card_data):
+    """True if row survives every active named filter (see FILTERS)."""
+    return all(FILTERS[name](row, card_data) for name in filter_names)

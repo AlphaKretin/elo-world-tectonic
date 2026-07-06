@@ -4,7 +4,7 @@ Builds the "uncursed" tournament format's actual results per base format by
 merging the real round-robin (elo_results_<fmt>_shard*.jsonl) with the
 curse-stripped format's raw re-battled results
 (elo_results_<fmt>_uncursed_raw_shard*.jsonl -- see curse_stripping.rb).
-Unlike ratings.py's --exclude-cursed (which just discards every
+Unlike ratings.py's --filter cursed_excluded (which just discards every
 curse-flagged battle and leaves cursed trainers with no data at all), this
 keeps a real, comparable result for every trainer by substituting in their
 actual curse-stripped battles wherever fresh ones were simulated.

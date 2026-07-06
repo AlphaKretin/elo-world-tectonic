@@ -21,9 +21,10 @@ in the cache.
 Run this after ratings.py for a given format; re-run it whenever the
 underlying results change, same as ratings.py.
 
---exclude-cursed mirrors ratings.py's own flag of the same name: pass the
-base format (e.g. "doubles") plus --exclude-cursed, not "doubles_cursed_excluded"
-as --format, to produce best_worst_doubles_cursed_excluded.json from
+--filter mirrors ratings.py's own flag of the same name (see
+results_lib.FILTERS/add_filter_arg): pass the base format (e.g. "doubles")
+plus --filter cursed_excluded, not "doubles_cursed_excluded" as --format,
+to produce best_worst_doubles_cursed_excluded.json from
 ratings_doubles_cursed_excluded.json.
 """
 import argparse
@@ -38,24 +39,24 @@ RESULTS_DIR = results_lib.RESULTS_DIR
 WIN, LOSS = 1, 2
 
 
-def compute_best_worst(fmt, ratings_by_label, exclude_cursed=False):
+def compute_best_worst(fmt, ratings_by_label, filters=()):
     """One pass over every battle in the format: for each trainer, the
     highest-rated opponent beaten (best_win) and lowest-rated opponent lost
     to (worst_loss), each as (opponent_rating, opponent_label, seed).
 
-    exclude_cursed mirrors ratings.py's --exclude-cursed: there's no separate
-    elo_results_<fmt>_cursed_excluded_shard*.jsonl on disk (ratings.py's
-    "cursed_excluded" leaderboard is just the normal <fmt> results with
-    curse-flagged battles -- plus the ASYMMETRIC_CURSE_PAIRS special case,
-    see results_lib -- filtered out, saved under a _cursed_excluded-suffixed
-    filename), so this must filter the same way rather than globbing for a
-    results file that will never exist."""
+    filters mirrors ratings.py's --filter: there's no separate
+    elo_results_<fmt>_<filter_suffix>_shard*.jsonl on disk (a filtered
+    leaderboard is just the normal <fmt> results with some battles filtered
+    out, see results_lib.FILTERS, saved under a filter-suffixed filename),
+    so this must filter the same way rather than globbing for a results
+    file that will never exist."""
+    card_data = results_lib.load_card_data_if_needed(filters)
     best_win = {}
     worst_loss = {}
     for row in results_lib.load_results(fmt, results_dir=RESULTS_DIR):
         if row.get("skipped") or row.get("had_error"):
             continue
-        if exclude_cursed and results_lib.is_cursed_excluded(row):
+        if not results_lib.passes_filters(row, filters, card_data):
             continue
         t1, t2, result = row.get("trainer1"), row.get("trainer2"), row.get("result")
         if result not in (WIN, LOSS):
@@ -104,16 +105,7 @@ def main():
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
         help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
     )
-    parser.add_argument(
-        "--exclude-cursed", action="store_true",
-        help=(
-            "Drop every battle flagged curse (plus results_lib.ASYMMETRIC_CURSE_PAIRS's extra "
-            "half), matching `ratings.py --exclude-cursed`, and read/write the _cursed_excluded-suffixed "
-            "files (ratings_<fmt>_cursed_excluded.json in, best_worst_<fmt>_cursed_excluded.json "
-            "out) instead of the normal ones. --format should still name the base format (e.g. 'doubles', "
-            "not 'doubles_cursed_excluded') -- there is no elo_results_<fmt>_cursed_excluded_shard*.jsonl on disk."
-        ),
-    )
+    results_lib.add_filter_arg(parser)
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
 
@@ -122,14 +114,14 @@ def main():
         print(f"No elo_results_*_shard*.jsonl files found under {RESULTS_DIR}.")
         return
 
-    suffix = "_cursed_excluded" if args.exclude_cursed else ""
+    suffix = results_lib.filter_suffix(args.filter)
     for fmt in formats:
         ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}{suffix}.json")
         if not os.path.exists(ratings_path):
             print(f"[{fmt}] {ratings_path} not found -- run ratings.py first. Skipping.")
             continue
         ratings_by_label = results_lib.load_ratings(fmt, suffix, analysis_dir=ANALYSIS_DIR)
-        best_win, worst_loss = compute_best_worst(fmt, ratings_by_label, exclude_cursed=args.exclude_cursed)
+        best_win, worst_loss = compute_best_worst(fmt, ratings_by_label, filters=args.filter)
         path = write_output(fmt, suffix, best_win, worst_loss, ratings_by_label.keys())
         print(f"[{fmt}{suffix}] {len(ratings_by_label)} trainers -> {path}")
 

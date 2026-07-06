@@ -24,14 +24,20 @@ ALLOW_RANDOM_MOVES policy is too chaotic to be meaningful rating data --
 see trainer_pool.rb's QUARANTINED_POLICIES comment for why that isn't
 filtered at the trainer-pool level instead.
 
---exclude-cursed drops every battle flagged curse (tournament.rb tags a
-battle curse if either trainer had a CURSE_* policy active in it) and
-writes a parallel ratings_<fmt>_cursed_excluded.json/csv leaderboard, to see
-how the field shakes out without curse-skewed results pulling on the fit.
-Cursed trainers' curses are active in every battle they play, so they end
-up with no data and don't appear in the cursed_excluded leaderboard at all
--- same for the two known trainers whose curse is authored on their duo
-partner's side instead of their own (see results_lib.ASYMMETRIC_CURSE_PAIRS).
+--filter NAME (repeatable) applies one of results_lib.FILTERS' named
+row-level "keep this battle" predicates before fitting, and writes a
+parallel ratings_<fmt>_<name1>_<name2>...json/csv leaderboard (names joined
+in results_lib.FILTERS' own order, so a single filter's suffix matches its
+name exactly, e.g. --filter cursed_excluded -> _cursed_excluded).
+
+--filter cursed_excluded drops every battle flagged curse (tournament.rb
+tags a battle curse if either trainer had a CURSE_* policy active in it),
+to see how the field shakes out without curse-skewed results pulling on
+the fit. Cursed trainers' curses are active in every battle they play, so
+they end up with no data and don't appear in the cursed_excluded
+leaderboard at all -- same for the two known trainers whose curse is
+authored on their duo partner's side instead of their own (see
+results_lib.ASYMMETRIC_CURSE_PAIRS).
 
 This is a blunt, post-hoc data filter, not a simulation of what cursed
 trainers "should" look like -- for that, see the singles_uncursed/
@@ -39,6 +45,14 @@ doubles_uncursed formats (built by build_uncursed_results.py from the raw
 curse-stripped re-battles plus the base results), which re-battle cursed
 trainers with curse *effects* actually stripped instead of just discarding
 their data.
+
+--filter level70_only keeps only battles where both trainers have exactly
+6 Pokemon at level 70 -- the endgame/developer-team cohort, whose battles
+against underleveled trainers otherwise inflate their rating without
+saying much about how they'd fare against actual peers.
+
+Filters are composable (e.g. --filter cursed_excluded --filter
+level70_only); each additional filter only narrows the fit further.
 
 Each trainer's rating also gets a standard error and a 95% confidence
 interval, plus an "overlap" count -- how many *other* trainers' point
@@ -90,8 +104,10 @@ REG_C = 1.0
 CI_Z = 1.96  # ~95% normal-approximation interval
 
 
-def compute_ratings(fmt, exclude_trainers=(), exclude_cursed=False):
+def compute_ratings(fmt, exclude_trainers=(), filters=()):
     rows = results_lib.load_results(fmt, results_dir=RESULTS_DIR, report_skipped=True)
+
+    card_data = results_lib.load_card_data_if_needed(filters)
 
     stats = defaultdict(lambda: {"wins": 0, "losses": 0, "draws": 0, "battles": 0})
     fit_rows = []  # (trainer1, trainer2, target) for the regression
@@ -101,7 +117,7 @@ def compute_ratings(fmt, exclude_trainers=(), exclude_cursed=False):
             continue
         if r.get("had_error"):
             continue
-        if exclude_cursed and results_lib.is_cursed_excluded(r):
+        if not results_lib.passes_filters(r, filters, card_data):
             continue
         result = r.get("result")
         if result not in (WIN, LOSS, DRAW):
@@ -270,17 +286,7 @@ def main():
         "--exclude-trainer", action="append", default=[], metavar="LABEL",
         help="Trainer label (e.g. 'ROLLERSKATER_F:Attea') to drop from the fit entirely. Repeatable.",
     )
-    parser.add_argument(
-        "--exclude-cursed", action="store_true",
-        help=(
-            "Drop every battle flagged curse (either side had a CURSE_* policy active), plus battles "
-            "involving the non-curse-flagged half of a known asymmetric CURSE_NO_MERCY pair (see "
-            "results_lib.ASYMMETRIC_CURSE_PAIRS), from the fit, and write to "
-            "ratings_<fmt>_cursed_excluded.json/csv instead of the normal output. Since a cursed "
-            "trainer's curse is active in every battle it plays (see tournament.rb's pairsForEdge), "
-            "this leaves cursed trainers with no data and they won't appear in the result."
-        ),
-    )
+    results_lib.add_filter_arg(parser)
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
 
@@ -289,10 +295,10 @@ def main():
         print(f"No elo_results_*_shard*.jsonl files found under {RESULTS_DIR}.")
         return
 
-    suffix = "_cursed_excluded" if args.exclude_cursed else ""
+    suffix = results_lib.filter_suffix(args.filter)
     for fmt in formats:
         leaderboard, stats = compute_ratings(
-            fmt, exclude_trainers=set(args.exclude_trainer), exclude_cursed=args.exclude_cursed,
+            fmt, exclude_trainers=set(args.exclude_trainer), filters=args.filter,
         )
         if not leaderboard:
             print(f"[{fmt}] No usable (non-skipped, win/loss/draw) results yet -- skipping.")

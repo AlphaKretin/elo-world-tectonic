@@ -8,10 +8,10 @@ Same definitions as best_worst.py, applied to a single trainer who isn't
 part of the rated pool: best_win is the highest-rated opponent the custom
 trainer beat (most notable win), worst_loss is the lowest-rated opponent
 that beat the custom trainer (most notable/unexpected loss). Opponent
-skill comes from the *existing* ratings_<format>.json (or
-ratings_<format>_cursed_excluded.json with --exclude-cursed) -- this script
-doesn't rate the custom trainer itself, just ranks its results against
-where its opponents already sit.
+skill comes from the *existing* ratings_<format>.json (or a filtered
+ratings_<format>_<...>.json via --filter, see results_lib.FILTERS) -- this
+script doesn't rate the custom trainer itself, just ranks its results
+against where its opponents already sit.
 
 Prints the save_replay.ps1 command for each of best_win/worst_loss so the
 two fights worth watching can be re-recorded while the run's seeds are
@@ -46,7 +46,7 @@ def load_custom_results(results_dir, fmt):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", default="singles", help="Battle format the custom trainer fought in (default: singles)")
-    parser.add_argument("--exclude-cursed", action="store_true", help="Rank opponents by ratings_<format>_cursed_excluded.json instead of ratings_<format>.json")
+    results_lib.add_filter_arg(parser)
     parser.add_argument("--results-dir", default=os.path.join(REPO_ROOT, "results"), metavar="DIR", help="Directory containing custom_trainer_results_<format>_shard*.jsonl (default: results/)")
     parser.add_argument("--pbs-file", help="Path to the custom trainer's PBS snippet, printed into the suggested save_replay.ps1 commands (-CustomTrainerPbs)")
     args = parser.parse_args()
@@ -67,7 +67,7 @@ def main():
     custom_label = rows[0]["custom"]
     fmt = rows[0]["format"]
 
-    suffix = "_cursed_excluded" if args.exclude_cursed else ""
+    suffix = results_lib.filter_suffix(args.filter)
     ratings_by_label = results_lib.load_ratings(args.format, suffix, analysis_dir=ANALYSIS_DIR)
 
     wins = sum(1 for r in rows if r["result"] == WIN)
