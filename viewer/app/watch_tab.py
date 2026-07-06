@@ -139,16 +139,19 @@ class WatchTab(QWidget):
         for i, name in enumerate(names):
             full_path = os.path.join(replay_dir, name)
             mtime = datetime.datetime.fromtimestamp(os.path.getmtime(full_path)).strftime("%Y-%m-%d %H:%M:%S")
-            self.table.setItem(i, 0, QTableWidgetItem(os.path.splitext(name)[0]))
-            self._set_trainer_columns(i, *self._sidecar_trainers(full_path))
+            base_name = os.path.splitext(name)[0]
+            self.table.setItem(i, 0, QTableWidgetItem(base_name))
+            self._set_trainer_columns(i, *self._sidecar_trainers(base_name))
             self.table.setItem(i, 3, QTableWidgetItem(mtime))
 
-    def _sidecar_trainers(self, full_path):
-        """(trainer1, trainer2) raw labels from full_path's ".dat.json"
-        sidecar, or ("", "") if there isn't one -- a replay imported/exported
-        through the file dialog carries its sidecar alongside it on disk,
-        see _on_import_clicked/GenerateTab._on_export_clicked."""
-        sidecar_path = full_path + ".json"
+    def _sidecar_trainers(self, base_name):
+        """(trainer1, trainer2) raw labels from base_name's sidecar in
+        config.replay_metadata_dir, or ("", "") if there isn't one. Kept
+        separate from replay_dir (inside the vendor/tectonic-content
+        submodule) so this viewer-only metadata doesn't show up as
+        untracked submodule content -- see GenerateTab._write_sidecar/
+        _on_import_clicked for the writers."""
+        sidecar_path = os.path.join(self.config.replay_metadata_dir, base_name + ".json")
         if not os.path.exists(sidecar_path):
             return "", ""
         try:
@@ -167,11 +170,10 @@ class WatchTab(QWidget):
     def select_replay(self, dat_path, expected_result=None):
         """Called from Generate's "Watch this replay" hand-off. The file is
         already sitting in replay_dir (generation wrote it there), so this
-        just selects/highlights its row instead of copying anything -- and
-        since a freshly-generated replay has no ".dat.json" sidecar on disk
-        yet (only Export writes one), the trainer columns are filled in
-        directly from expected_result here rather than through refresh()'s
-        own disk-sidecar lookup, which would otherwise leave them blank."""
+        just selects/highlights its row instead of copying anything. The
+        trainer columns are filled in directly from expected_result rather
+        than through refresh()'s disk-sidecar lookup, just to avoid a
+        redundant read of the sidecar GenerateTab already just wrote."""
         self.refresh()
         name = os.path.splitext(os.path.basename(dat_path))[0]
         for row in range(self.table.rowCount()):
@@ -203,7 +205,10 @@ class WatchTab(QWidget):
                 f_out.write(f_in.read())
             sidecar_src = src + ".json"
             if os.path.exists(sidecar_src):
-                with open(sidecar_src, "rb") as f_in, open(dest + ".json", "wb") as f_out:
+                metadata_dir = self.config.replay_metadata_dir
+                os.makedirs(metadata_dir, exist_ok=True)
+                sidecar_dest = os.path.join(metadata_dir, os.path.splitext(os.path.basename(dest))[0] + ".json")
+                with open(sidecar_src, "rb") as f_in, open(sidecar_dest, "wb") as f_out:
                     f_out.write(f_in.read())
         except OSError as exc:
             QMessageBox.warning(self, "Import failed", str(exc))

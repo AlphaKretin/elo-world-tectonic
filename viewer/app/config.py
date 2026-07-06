@@ -71,6 +71,17 @@ class AppConfig:
         return os.path.join(self.vendor_dir, "VSRecorder", "ELOReplay")
 
     @property
+    def replay_metadata_dir(self):
+        # Viewer-only sidecar metadata (trainer labels/result for a .dat),
+        # keyed by the .dat's basename. Deliberately kept outside vendor_dir:
+        # that's the vendor/tectonic-content submodule in a dev checkout, so
+        # anything written there shows up as untracked submodule content with
+        # no way for this repo to gitignore it. This directory lives under
+        # the main repo instead, where viewer/replay_metadata/ can just be
+        # gitignored normally.
+        return os.path.join(self.repo_root, "viewer", "replay_metadata")
+
+    @property
     def timeout_seconds(self):
         return int(self._settings.value("run/timeout_seconds", DEFAULT_TIMEOUT_SECONDS))
 

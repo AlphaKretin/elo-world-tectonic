@@ -13,3 +13,4 @@ analysis/*.csv
 analysis/*.md
 analysis/cards/
 analysis/mockups/
+viewer/replay_metadata/

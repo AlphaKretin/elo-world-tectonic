@@ -234,13 +234,15 @@ class GenerateTab(QWidget):
             self._write_sidecar()
 
     def _write_sidecar(self):
-        """Writes the .dat.json sidecar next to the freshly generated .dat
-        itself (not just on Export), so the Watch tab's trainer columns
-        survive a refresh even for a replay that was watched straight from
-        Generate and never exported."""
-        dat_path = os.path.normpath(os.path.join(self.config.vendor_dir, self._last_result["saved_to"]))
+        """Writes sidecar metadata for the freshly generated .dat into
+        config.replay_metadata_dir (not just on Export), so the Watch tab's
+        trainer columns survive a refresh even for a replay that was watched
+        straight from Generate and never exported."""
+        name = os.path.splitext(os.path.basename(self._last_result["saved_to"]))[0]
+        metadata_dir = self.config.replay_metadata_dir
         try:
-            with open(dat_path + ".json", "w", encoding="utf-8") as f:
+            os.makedirs(metadata_dir, exist_ok=True)
+            with open(os.path.join(metadata_dir, name + ".json"), "w", encoding="utf-8") as f:
                 json.dump(self._sidecar_metadata(), f, indent=2)
         except OSError:
             pass
