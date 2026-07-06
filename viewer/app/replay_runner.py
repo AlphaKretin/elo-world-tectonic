@@ -31,6 +31,7 @@ class ReplayRunner(QObject):
         self._timer.setSingleShot(True)
         self._timer.timeout.connect(self._on_timeout)
         self._cancelled = False
+        self._timed_out = False
         self._window_suppressor = None
 
     def is_running(self):
@@ -46,13 +47,20 @@ class ReplayRunner(QObject):
     ):
         """suppress_window sends the game's window behind the viewer instead
         of letting it steal focus -- appropriate for Generate (meant to run
-        unattended), never for Watch (the whole point is seeing the battle)."""
+        unattended), never for Watch (the whole point is seeing the battle).
+
+        timeout_seconds is falsy (None/0) to disable the watchdog entirely --
+        appropriate for Watch, where a human is present and slow text/battle
+        animations can legitimately run well past any fixed bound. Generate
+        (headless, unattended) still wants a real timeout as its only
+        defense against a genuinely stuck process."""
         if self.is_running():
             raise RuntimeError("A replay run is already in progress.")
 
         self._vendor_dir = vendor_dir
         self._result_filename = result_filename
         self._cancelled = False
+        self._timed_out = False
 
         result_path = os.path.join(vendor_dir, result_filename)
         if os.path.exists(result_path):
@@ -78,7 +86,8 @@ class ReplayRunner(QObject):
                 parent=self,
             )
 
-        self._timer.start(int(timeout_seconds * 1000))
+        if timeout_seconds:
+            self._timer.start(int(timeout_seconds * 1000))
         self.started.emit()
 
     def cancel(self):
@@ -89,15 +98,18 @@ class ReplayRunner(QObject):
         self._process.kill()
 
     def _on_timeout(self):
+        self._timed_out = True
         if self.is_running():
             self._process.kill()
-        self.finished.emit(
-            {
-                "ok": False,
-                "error_class": "Timeout",
-                "error_message": "Game.exe did not finish within the configured timeout.",
-            }
-        )
+        # Don't emit `finished` here -- QProcess.finished will still fire
+        # once Windows reports the killed process as terminated, and
+        # _on_finished (guarded by self._timed_out below) is what actually
+        # reports it. Emitting here too used to race with that: the later,
+        # genuine QProcess.finished signal would land second and overwrite
+        # this "Timeout" result with a spurious "Crash" one (kill() forces
+        # exit_status=CrashExit and a Qt-internal TerminateProcess exit code
+        # -- 0xf291/62097 on Windows -- that looks exactly like a real crash
+        # but isn't).
 
     def _on_finished(self, exit_code, exit_status):
         self._timer.stop()
@@ -115,6 +127,12 @@ class ReplayRunner(QObject):
                     }
         elif self._cancelled:
             result = {"ok": False, "error_class": "Cancelled", "error_message": "Cancelled by user."}
+        elif self._timed_out:
+            result = {
+                "ok": False,
+                "error_class": "Timeout",
+                "error_message": "Game.exe did not finish within the configured timeout.",
+            }
         else:
             stdout = bytes(self._process.readAllStandardOutput()).decode("utf-8", errors="replace")
             stderr = bytes(self._process.readAllStandardError()).decode("utf-8", errors="replace")
@@ -122,6 +140,7 @@ class ReplayRunner(QObject):
                 "ok": False,
                 "error_class": "Crash",
                 "error_message": f"Game.exe exited (code {exit_code}) without producing a result.",
+                "exit_status": "CrashExit" if exit_status == QProcess.CrashExit else "NormalExit",
                 "stdout_tail": stdout[-STDOUT_TAIL_CHARS:],
                 "stderr_tail": stderr[-STDERR_TAIL_CHARS:],
             }

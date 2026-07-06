@@ -197,7 +197,11 @@ class WatchTab(QWidget):
             bgm=self.bgm_combo.currentData(),
         )
         self.status_view.setPlainText("Launching Game.exe (watch)...")
-        self.runner.start(self.config.vendor_dir, env_vars, self.config.timeout_seconds, result_filename=WATCH_RESULT_FILE)
+        # No timeout: Watch is interactive, not headless -- a human is present
+        # and slow text speed/full battle animations can legitimately run well
+        # past any fixed bound. Only Generate (unattended) needs a stuck-process
+        # safety net.
+        self.runner.start(self.config.vendor_dir, env_vars, None, result_filename=WATCH_RESULT_FILE)
 
     def _on_started(self):
         self.watch_button.setEnabled(False)
