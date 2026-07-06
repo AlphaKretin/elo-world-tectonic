@@ -16,7 +16,13 @@ param(
     [Parameter(Mandatory)][int64]$Seed,
     [string]$Format = "singles",
     [string]$OutputName,
-    [switch]$UseDebugFlag
+    [switch]$UseDebugFlag,
+    # Path to the same standalone PBS snippet run_custom_trainer.ps1 used --
+    # needed if either -Trainer1/-Trainer2 label is the custom trainer,
+    # since it was only ever registered in-memory in whichever shard ran
+    # the original battle (see custom_trainer.rb) and has no other way to
+    # be looked up by label in this fresh launch.
+    [string]$CustomTrainerPbs
 )
 
 function Set-ReplayTrainerEnv {
@@ -45,6 +51,12 @@ if ($OutputName) {
 }
 else {
     Remove-Item Env:\ELO_REPLAY_NAME -ErrorAction SilentlyContinue
+}
+if ($CustomTrainerPbs) {
+    $env:ELO_CUSTOM_TRAINER_PBS = (Resolve-Path $CustomTrainerPbs).Path
+}
+else {
+    Remove-Item Env:\ELO_CUSTOM_TRAINER_PBS -ErrorAction SilentlyContinue
 }
 
 Set-ReplayTrainerEnv -Prefix "T1" -Label $Trainer1

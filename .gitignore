@@ -4,6 +4,7 @@ __pycache__/
 results/*
 !results/.gitkeep
 shards/
+custom_trainers/
 upstream/
 release-staging/
 scripts/remote_hosts.txt
