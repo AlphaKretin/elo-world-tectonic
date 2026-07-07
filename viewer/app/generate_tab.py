@@ -28,6 +28,10 @@ class GenerateTab(QWidget):
     engine's playRecordedBattle rather than live in-process rendering."""
 
     watch_requested = Signal(str, dict)
+    # (dat_path, result) whenever a generation actually produces a replay --
+    # lets a caller (the Bracket tab) notice a match it handed off to this
+    # tab got resolved, even if the user tabbed away before it finished.
+    generation_finished = Signal(str, dict)
 
     def __init__(self, config, parent=None):
         super().__init__(parent)
@@ -151,6 +155,7 @@ class GenerateTab(QWidget):
         battle_type, curse_variant = format_selector.parse_format_key(fmt)
         self.battle_type_combo.setCurrentIndex(self.battle_type_combo.findData(battle_type))
         self.curse_variant_combo.setCurrentIndex(self.curse_variant_combo.findData(curse_variant))
+        self.output_name_edit.setText(payload.get("output_name", ""))
 
     def _on_swap_sides_clicked(self):
         t1, t2 = self.trainer1_edit.text(), self.trainer2_edit.text()
@@ -240,6 +245,8 @@ class GenerateTab(QWidget):
         self.watch_button.setEnabled(can_watch_or_export)
         if can_watch_or_export:
             self._write_sidecar()
+            src = os.path.normpath(os.path.join(self.config.vendor_dir, result["saved_to"]))
+            self.generation_finished.emit(src, result)
 
     def _write_sidecar(self):
         """Writes sidecar metadata for the freshly generated .dat into

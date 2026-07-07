@@ -2,7 +2,7 @@ import datetime
 import json
 import os
 
-from PySide6.QtCore import QSettings
+from PySide6.QtCore import QSettings, Signal
 from PySide6.QtWidgets import (
     QAbstractItemView,
     QCheckBox,
@@ -52,6 +52,15 @@ class WatchTab(QWidget):
     Recorder's "Watch battle" menu item. Display-setting overrides are
     applied in-memory only by the engine, never persisted to Options.dat."""
 
+    # (dat_path, result) once a watch session ends, whatever the outcome --
+    # crash/timeout/viewer-cancelled (result["ok"] is False), an in-game
+    # cancel (ok True, result["result"] == 0), or an actual finish. Lets a
+    # caller (the Bracket tab) defer revealing a match's winner until the
+    # replay has actually been watched, rather than the moment it's handed
+    # off, without needing to track "which match is this watch session for"
+    # itself -- see bracket_lib.parse_bracket_slug.
+    replay_finished = Signal(str, dict)
+
     def __init__(self, config, parent=None):
         super().__init__(parent)
         self.config = config
@@ -60,6 +69,7 @@ class WatchTab(QWidget):
         self.runner.started.connect(self._on_started)
         self.runner.finished.connect(self._on_finished)
         self._expected_result = None
+        self._active_dat_path = None
 
         layout = QVBoxLayout(self)
 
@@ -260,6 +270,8 @@ class WatchTab(QWidget):
             QMessageBox.warning(self, "No replay selected", "Select a replay from the table first.")
             return
 
+        self._active_dat_path = dat_path
+
         replay_dir = self.config.replay_dir
         staging_path = os.path.join(replay_dir, f"{STAGING_NAME}.dat")
         with open(dat_path, "rb") as f_in, open(staging_path, "wb") as f_out:
@@ -301,6 +313,10 @@ class WatchTab(QWidget):
     def _on_finished(self, result):
         self.watch_button.setEnabled(True)
         self.cancel_button.setEnabled(False)
+
+        if self._active_dat_path:
+            self.replay_finished.emit(self._active_dat_path, result)
+        self._active_dat_path = None
 
         expected = self._expected_result
         self._expected_result = None

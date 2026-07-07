@@ -12,6 +12,7 @@ from PySide6.QtWidgets import (
 )
 
 from app import vendor_fetch
+from app.bracket_tab import BracketTab
 from app.browse_tab import BrowseTab
 from app.config import AppConfig
 from app.generate_tab import GenerateTab
@@ -71,14 +72,20 @@ class MainWindow(QMainWindow):
         self.browse_tab = BrowseTab(self.config)
         self.generate_tab = GenerateTab(self.config)
         self.watch_tab = WatchTab(self.config)
+        self.bracket_tab = BracketTab(self.config)
         self.tabs.addTab(self.browse_tab, "Browse")
         self.tabs.addTab(self.generate_tab, "Generate")
         self.tabs.addTab(self.watch_tab, "Watch")
+        self.tabs.addTab(self.bracket_tab, "Bracket")
         layout.addWidget(self.tabs)
         self.tabs.tabBar().installEventFilter(_DisabledTabCursorFilter(self.tabs))
 
         self.browse_tab.match_selected.connect(self._on_match_selected)
         self.generate_tab.watch_requested.connect(self._on_watch_requested)
+        self.bracket_tab.watch_requested.connect(self._on_watch_requested)
+        self.bracket_tab.generate_requested.connect(self._on_bracket_generate_requested)
+        self.watch_tab.replay_finished.connect(self.bracket_tab.handle_replay_finished)
+        self.generate_tab.generation_finished.connect(self.bracket_tab.handle_generation_finished)
 
         self._ensure_vendor_ready()
 
@@ -226,6 +233,10 @@ class MainWindow(QMainWindow):
         self._start_compile()
 
     def _on_match_selected(self, payload):
+        self.generate_tab.set_match(payload)
+        self.tabs.setCurrentWidget(self.generate_tab)
+
+    def _on_bracket_generate_requested(self, payload):
         self.generate_tab.set_match(payload)
         self.tabs.setCurrentWidget(self.generate_tab)
 
