@@ -55,8 +55,8 @@ for ($i = 0; $i -lt $ShardCount; $i++) {
 
     Push-Location $shardDir
     $proc = Start-Process -FilePath ".\Game.exe" -PassThru `
-        -RedirectStandardOutput (Join-Path $ResultsDir "custom_trainer_stdout_shard$i.log") `
-        -RedirectStandardError  (Join-Path $ResultsDir "custom_trainer_stderr_shard$i.log")
+        -RedirectStandardOutput (Join-Path $ResultsDir "custom_trainer_stdout_${Format}_shard$i.log") `
+        -RedirectStandardError  (Join-Path $ResultsDir "custom_trainer_stderr_${Format}_shard$i.log")
     Pop-Location
 
     $procs += [PSCustomObject]@{ Index = $i; Proc = $proc; ShardDir = $shardDir }

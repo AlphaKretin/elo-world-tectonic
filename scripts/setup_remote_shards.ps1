@@ -9,9 +9,21 @@
 # 1-2 minutes (apt install + clone + compile + validate battle); run in
 # parallel via ForEach-Object -Parallel rather than sequentially, since
 # with 10 droplets that's the difference between ~90s and ~15 minutes.
+#
+# remote_provision_shard.sh does a `git reset --hard`+`git clean -fdx` on
+# already-provisioned droplets to pick up newly pushed commits, which wipes
+# any results/logs still sitting on that droplet. Pulling isn't otherwise on
+# a schedule -- it happens "at some point after a run", not right after each
+# droplet finishes -- so without a pull-first step here, re-provisioning
+# could silently destroy not-yet-pulled data. So by default this script
+# pulls+archives each droplet's results/ (same mechanism as
+# pull_remote_results.ps1 + archive_run.ps1: move, don't delete) before ever
+# touching that droplet. Use -SkipResultsPull to opt out (e.g. you already
+# just pulled and know there's nothing pending).
 param(
     [string]$HostsFile = (Join-Path $PSScriptRoot "remote_hosts.txt"),
-    [int]$ThrottleLimit = 10
+    [int]$ThrottleLimit = 10,
+    [switch]$SkipResultsPull
 )
 
 $hosts = @(Get-Content $HostsFile | Where-Object { $_ -and $_ -notmatch '^\s*#' } | ForEach-Object { $_.Trim() })
@@ -22,6 +34,30 @@ if (-not $hosts) {
 Write-Output "Provisioning $($hosts.Count) droplet(s): $($hosts -join ', ')"
 
 $ScriptDir = $PSScriptRoot
+$RepoRoot  = Split-Path -Parent $PSScriptRoot
+$PullDir   = Join-Path $RepoRoot "results\remote"
+
+if (-not $SkipResultsPull) {
+    New-Item -ItemType Directory -Force -Path $PullDir | Out-Null
+    Write-Output "Pulling any not-yet-collected results off each droplet before provisioning wipes them..."
+    $hosts | ForEach-Object -ThrottleLimit $ThrottleLimit -Parallel {
+        $thisHost = $_
+        $pullDir = $using:PullDir
+        & scp -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new -q `
+            "root@${thisHost}:~/elo-test/results/*" "$pullDir/" 2>$null
+    }
+
+    $pulled = @(Get-ChildItem -Path $PullDir -File -ErrorAction SilentlyContinue)
+    if ($pulled.Count -gt 0) {
+        $timestamp  = Get-Date -Format "yyyy-MM-dd_HHmmss"
+        $archiveDir = Join-Path $PullDir "archive_${timestamp}_pre_provision"
+        New-Item -ItemType Directory -Force -Path $archiveDir | Out-Null
+        Write-Output "Pulled $($pulled.Count) file(s) -- archiving to $archiveDir (moved, not deleted)"
+        $pulled | Move-Item -Destination $archiveDir
+    } else {
+        Write-Output "Nothing pending on any droplet."
+    }
+}
 
 $hosts | ForEach-Object -ThrottleLimit $ThrottleLimit -Parallel {
     $thisHost = $_

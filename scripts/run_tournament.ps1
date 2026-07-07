@@ -47,6 +47,15 @@
 # died anyway; the watchdog's dangling-crash detection doesn't depend on
 # that log entry existing. Pass -UseDebugFlag after editing Plugin code,
 # since only a debug launch recompiles Data/PluginScripts.rxdata.
+# -SubsetTrainerLabels (comma-separated, e.g. "TYPE:Name#Version,...")
+# restricts this run to only pairings touching at least one given trainer
+# label -- e.g. rerunning just the pairings affected by a specific
+# trainer/behavior fix across the whole pool, without re-fighting
+# everything. ELO_FORMAT stays the real format (so battle mode/curse
+# stripping/etc all behave normally) but the results/status/etc files get
+# an extra "_$SubsetTag" suffix (default "subset") so this partial result
+# set never collides with the format's own full-round-robin file -- see
+# analysis/apply_subset_rerun.py, which splices the results back in after.
 param(
     [string]$Format = "singles",
     [int]$TurnStallTimeoutSeconds = 60,
@@ -57,7 +66,9 @@ param(
     [int]$ShardCount = 1,
     [switch]$UseDebugFlag,
     [int]$SampleGamesPerTrainer = 0,   # 0 = full round robin; >0 = sparse random sampling
-    [int]$SampleSeed = 1
+    [int]$SampleSeed = 1,
+    [string]$SubsetTrainerLabels = "",
+    [string]$SubsetTag = "subset"
 )
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
@@ -67,7 +78,8 @@ $GameDir    = if ($ShardCount -gt 1) {
 } else {
     Join-Path $RepoRoot "vendor\tectonic-content"
 }
-$Suffix = if ($ShardCount -gt 1) { "${Format}_shard$ShardIndex" } else { $Format }
+$FormatTag = if ($SubsetTrainerLabels) { "${Format}_${SubsetTag}" } else { $Format }
+$Suffix = if ($ShardCount -gt 1) { "${FormatTag}_shard$ShardIndex" } else { $FormatTag }
 
 $env:ELO_TOURNAMENT          = "1"
 $env:ELO_FORMAT              = $Format
@@ -88,6 +100,11 @@ if ($SampleGamesPerTrainer -gt 0) {
     $env:ELO_SAMPLE_SEED = "$SampleSeed"
 } else {
     Remove-Item Env:\ELO_SAMPLE_GAMES_PER_TRAINER -ErrorAction SilentlyContinue
+}
+if ($SubsetTrainerLabels) {
+    $env:ELO_SUBSET_TRAINER_LABELS = $SubsetTrainerLabels
+} else {
+    Remove-Item Env:\ELO_SUBSET_TRAINER_LABELS -ErrorAction SilentlyContinue
 }
 
 function Get-Finished {

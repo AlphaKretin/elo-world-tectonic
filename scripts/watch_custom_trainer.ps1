@@ -15,6 +15,8 @@ param(
     [int]$RefreshSeconds = 3
 )
 
+. (Join-Path $PSScriptRoot "_watch_common.ps1")
+
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
 $ResultsDir = Join-Path $RepoRoot "results"
 
@@ -23,8 +25,8 @@ while ($true) {
     Write-Output "Custom trainer battle status ($Format, $ShardCount shards) -- Ctrl+C to stop watching"
     Write-Output "================================================================"
 
-    $totalDone = 0
-    $totalAll  = 0
+    $doneByFormat = @{}
+    $globalTotalByFormat = @{}
     $anyError  = $false
 
     for ($i = 0; $i -lt $ShardCount; $i++) {
@@ -32,27 +34,17 @@ while ($true) {
 
         Write-Output ""
         Write-Output "-- shard $i --"
-        if (Test-Path $statusPath) {
-            $raw = Get-Content $statusPath -Raw
-            Write-Output $raw
-            if ($raw -match '"done":(\d+)')  { $totalDone += [int]$Matches[1] }
-            if ($raw -match '"total":(\d+)') { $totalAll  += [int]$Matches[1] }
-            if ($raw -match '"error":\{')    { $anyError = $true }
+        $d = Read-StatusJson $statusPath
+        if ($d) {
+            Show-StatusEntry $d $Format
+            Add-StatusToAggregate -Data $d -Label $Format -GlobalTotalByFormat $globalTotalByFormat `
+                -DoneByFormat $doneByFormat -AnyError ([ref]$anyError)
         } else {
             Write-Output "(no status yet)"
         }
     }
 
-    Write-Output ""
-    Write-Output "================================================================"
-    if ($totalAll -gt 0) {
-        $pct = [math]::Round($totalDone * 100.0 / $totalAll, 3)
-        Write-Output "AGGREGATE: $totalDone / $totalAll ($pct%)"
-    }
-    if ($anyError) {
-        Write-Output "*** At least one shard reports a top-level error -- check its status above. ***"
-    }
-    Write-Output "Last refreshed: $(Get-Date -Format o)"
+    Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError
 
     Start-Sleep -Seconds $RefreshSeconds
 }

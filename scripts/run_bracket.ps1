@@ -34,10 +34,10 @@ $env:ELO_RUN_BRACKET = "1"
 $env:ELO_FORMAT = $Format   # labels the attempting-file snapshot AND tells bracket.rb whether to curse-strip entrants (UNCURSED_BRACKET)
 $env:ELO_BRACKET_FORMAT = if ($Format -like "double*") { "double" } else { "single" }
 $env:ELO_BRACKET_SEEDS_PATH = $SeedsPath
-$env:ELO_BRACKET_RESULTS_PATH = Join-Path $ResultsDir "bracket_${Format}_results.tsv"
-$env:ELO_BRACKET_STATUS_PATH = Join-Path $ResultsDir "bracket_${Format}_status.json"
-$env:ELO_ATTEMPTING_PATH = Join-Path $ResultsDir "bracket_${Format}_attempting.json"
-$env:ELO_TURN_HEARTBEAT_PATH = Join-Path $ResultsDir "bracket_${Format}_turn_heartbeat.json"
+$env:ELO_BRACKET_RESULTS_PATH = Join-Path $ResultsDir "bracket_results_${Format}.tsv"
+$env:ELO_BRACKET_STATUS_PATH = Join-Path $ResultsDir "bracket_status_${Format}.json"
+$env:ELO_ATTEMPTING_PATH = Join-Path $ResultsDir "bracket_attempting_${Format}.json"
+$env:ELO_TURN_HEARTBEAT_PATH = Join-Path $ResultsDir "bracket_turn_heartbeat_${Format}.json"
 
 function Get-Finished {
     if (-not (Test-Path $env:ELO_BRACKET_STATUS_PATH)) { return $false }
@@ -48,13 +48,13 @@ while (-not (Get-Finished)) {
     Push-Location $GameDir
     if ($UseDebugFlag) {
         $proc = Start-Process -FilePath ".\Game.exe" -ArgumentList "debug" -PassThru `
-            -RedirectStandardOutput (Join-Path $ResultsDir "bracket_${Format}_stdout.log") `
-            -RedirectStandardError  (Join-Path $ResultsDir "bracket_${Format}_stderr.log")
+            -RedirectStandardOutput (Join-Path $ResultsDir "bracket_stdout_${Format}.log") `
+            -RedirectStandardError  (Join-Path $ResultsDir "bracket_stderr_${Format}.log")
     }
     else {
         $proc = Start-Process -FilePath ".\Game.exe" -PassThru `
-            -RedirectStandardOutput (Join-Path $ResultsDir "bracket_${Format}_stdout.log") `
-            -RedirectStandardError  (Join-Path $ResultsDir "bracket_${Format}_stderr.log")
+            -RedirectStandardOutput (Join-Path $ResultsDir "bracket_stdout_${Format}.log") `
+            -RedirectStandardError  (Join-Path $ResultsDir "bracket_stderr_${Format}.log")
     }
     Pop-Location
 

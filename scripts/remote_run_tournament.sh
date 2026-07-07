@@ -50,6 +50,8 @@ SHARD_COUNT=1
 SAMPLE_GAMES_PER_TRAINER=0
 SAMPLE_SEED=1
 DISPLAY_NUM=":100"
+SUBSET_TRAINER_LABELS=""
+SUBSET_TAG="subset"
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -63,6 +65,12 @@ while [[ $# -gt 0 ]]; do
         --sample-games-per-trainer) SAMPLE_GAMES_PER_TRAINER="$2"; shift 2 ;;
         --sample-seed) SAMPLE_SEED="$2"; shift 2 ;;
         --display) DISPLAY_NUM="$2"; shift 2 ;;
+        # See tournament.rb's SUBSET_TRAINER_LABELS -- restricts this run to
+        # only pairings touching one of these trainer labels, and tags the
+        # results/status/etc filenames with "_$SUBSET_TAG" so this partial
+        # set never collides with the format's own full-round-robin file.
+        --subset-trainer-labels) SUBSET_TRAINER_LABELS="$2"; shift 2 ;;
+        --subset-tag) SUBSET_TAG="$2"; shift 2 ;;
         *) echo "Unknown arg: $1" >&2; exit 1 ;;
     esac
 done
@@ -112,7 +120,14 @@ recompile() {
 
 run_format() {
     local format="$1"
-    local suffix="${format}_shard${SHARD_INDEX}"
+    # format_tag (not format) drives every path -- keeps ELO_FORMAT itself
+    # as the real format (so battle mode/curse stripping/etc behave
+    # normally) while a subset run's files land under a distinct name.
+    local format_tag="$format"
+    if [[ -n "$SUBSET_TRAINER_LABELS" ]]; then
+        format_tag="${format}_${SUBSET_TAG}"
+    fi
+    local suffix="${format_tag}_shard${SHARD_INDEX}"
     local results_path="$RESULTS_DIR/elo_results_${suffix}.jsonl"
     local status_path="$RESULTS_DIR/elo_status_${suffix}.json"
     local attempting_path="$RESULTS_DIR/elo_attempting_${suffix}.json"
@@ -133,6 +148,11 @@ run_format() {
         export ELO_SAMPLE_SEED="$SAMPLE_SEED"
     else
         unset ELO_SAMPLE_GAMES_PER_TRAINER ELO_SAMPLE_SEED
+    fi
+    if [[ -n "$SUBSET_TRAINER_LABELS" ]]; then
+        export ELO_SUBSET_TRAINER_LABELS="$SUBSET_TRAINER_LABELS"
+    else
+        unset ELO_SUBSET_TRAINER_LABELS
     fi
 
     is_finished() {

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Markdown bracket report, built from bracket.rb's
-results/bracket_<format>_results.tsv. Renders each completed round as its
+results/bracket_results_<format>.tsv. Renders each completed round as its
 own table -- safe to run mid-bracket, later rounds just don't appear yet.
 Presentation only, mirrors report.py's role for the round-robin leaderboard.
 """
@@ -24,14 +24,14 @@ FIELDS = [
 
 def discover_formats():
     formats = []
-    for path in sorted(glob.glob(os.path.join(RESULTS_DIR, "bracket_*_results.tsv"))):
+    for path in sorted(glob.glob(os.path.join(RESULTS_DIR, "bracket_results_*.tsv"))):
         name = os.path.basename(path)
-        formats.append(name[len("bracket_"):-len("_results.tsv")])
+        formats.append(name[len("bracket_results_"):-len(".tsv")])
     return formats
 
 
 def load_matches(fmt):
-    path = os.path.join(RESULTS_DIR, f"bracket_{fmt}_results.tsv")
+    path = os.path.join(RESULTS_DIR, f"bracket_results_{fmt}.tsv")
     with open(path, "r", encoding="utf-8", newline="") as f:
         return list(csv.DictReader(f, fieldnames=FIELDS, delimiter="\t"))
 
@@ -74,12 +74,12 @@ def write_report(fmt):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--format", help="Only report this format (default: all bracket_*_results.tsv found)")
+    parser.add_argument("--format", help="Only report this format (default: all bracket_results_*.tsv found)")
     args = parser.parse_args()
 
     formats = [args.format] if args.format else discover_formats()
     if not formats:
-        print("No bracket_*_results.tsv found in results/ -- run the bracket first.")
+        print("No bracket_results_*.tsv found in results/ -- run the bracket first.")
         return
 
     for fmt in formats:

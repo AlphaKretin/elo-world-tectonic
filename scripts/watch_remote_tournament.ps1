@@ -10,10 +10,28 @@
 # sequence per-droplet independently, different shards can legitimately
 # be on different formats (or have a finished singles file alongside an
 # in-progress doubles file) at the same point in time.
+#
+# -Formats optionally narrows both the display and the AGGREGATE line to
+# just the given exact format label(s) (comma-separated, e.g.
+# "singles_subset,doubles_subset") -- otherwise every elo_status_*_shard*.json
+# a host has ever produced gets summed in, including a long-finished full
+# round robin's files left over from a previous run. That's not wrong
+# (each file's own done/total is correctly scoped to its own pairs), but
+# it means the AGGREGATE line silently mixes two logically separate runs'
+# totals -- e.g. watching a small subset rerun on a droplet that also has
+# the old full-format run's finished status files sitting on disk makes
+# AGGREGATE jump to ~99%+ instantly, dwarfed by the old finished total.
+# Use -Formats to scope the view down to just the run you're actually
+# watching.
 param(
     [string]$HostsFile = (Join-Path $PSScriptRoot "remote_hosts.txt"),
-    [int]$RefreshSeconds = 5
+    [int]$RefreshSeconds = 5,
+    [string]$Formats = ""
 )
+
+. (Join-Path $PSScriptRoot "_watch_common.ps1")
+
+$formatFilter = @($Formats -split "," | ForEach-Object { $_.Trim() } | Where-Object { $_ })
 
 # tournament.rb's writeStatus/writeAttempting (ELO Tournament/tournament.rb)
 # write flat, single-line JSON with no trailing newline, and the remote glob
@@ -44,28 +62,8 @@ function Get-ShardFormatLabel([string]$path) {
     return $path
 }
 
-# Renders a duration (in seconds, possibly fractional) as [Dd] HH:MM:SS.
-function Format-Duration($seconds) {
-    if ($null -eq $seconds) { return "n/a" }
-    $ts = [TimeSpan]::FromSeconds([double]$seconds)
-    if ($ts.Days -ne 0) { return "{0}d {1:D2}:{2:D2}:{3:D2}" -f $ts.Days, [Math]::Abs($ts.Hours), [Math]::Abs($ts.Minutes), [Math]::Abs($ts.Seconds) }
-    return "{0:D2}:{1:D2}:{2:D2}" -f $ts.Hours, $ts.Minutes, $ts.Seconds
-}
-
-function Write-StatusEntry([PSCustomObject]$d, [string]$formatLabel) {
-    $state = if ($d.error) { "ERROR" } elseif ($d.finished) { "FINISHED" } else { "running" }
-    Write-Output "  [$formatLabel] $state -- $($d.done)/$($d.total) ($($d.percent)%)"
-    $rateText = if ($null -ne $d.rate_per_s) { "$($d.rate_per_s) battles/s" } else { "n/a" }
-    Write-Output "    elapsed: $(Format-Duration $d.elapsed_s)  rate: $rateText"
-    if (-not $d.finished -and $null -ne $d.eta_s) {
-        $etaClock = (Get-Date).AddSeconds([double]$d.eta_s)
-        Write-Output "    ETA: $(Format-Duration $d.eta_s) remaining -- around $($etaClock.ToString('yyyy-MM-dd HH:mm:ss'))"
-    }
-    if ($d.error) {
-        Write-Output "    *** ERROR: $($d.error.error_class): $($d.error.error_message) ***"
-    }
-    Write-Output "    updated_at: $($d.updated_at)"
-}
+# Format-Duration and Show-StatusEntry come from _watch_common.ps1 -- shared
+# with every other watch_*.ps1 script.
 
 function Write-AttemptingEntry([PSCustomObject]$a) {
     Write-Output "  [$($a.format)] $($a.trainer1) vs $($a.trainer2) (seed $($a.seed))"
@@ -94,11 +92,17 @@ while ($true) {
     # real interactive console (e.g. output redirected to a file/log) --
     # harmless to skip in that case, just less pretty.
     try { Clear-Host } catch {}
-    Write-Output "ELO Tournament remote status (all formats, $($hostList.Count) droplets) -- Ctrl+C to stop watching (does not stop the tournament)"
+    $scopeLabel = if ($formatFilter) { "formats: $($formatFilter -join ', ')" } else { "all formats" }
+    Write-Output "ELO Tournament remote status ($scopeLabel, $($hostList.Count) droplets) -- Ctrl+C to stop watching (does not stop the tournament)"
     Write-Output "================================================================"
 
-    $totalDone = 0
-    $totalAll  = 0
+    # Keyed by format label, not summed per-blob -- see _watch_common.ps1's
+    # Add-StatusToAggregate for why (global_total is the same value across
+    # every shard/chunk of a given format, so it's added once per format
+    # seen, not once per shard -- the mirror-image fix to the stale-total
+    # bug this -Formats filter above was originally built to guard against).
+    $doneByFormat = @{}
+    $globalTotalByFormat = @{}
     $anyError  = $false
 
     for ($i = 0; $i -lt $hostList.Count; $i++) {
@@ -111,7 +115,11 @@ while ($true) {
         Write-Output ""
         Write-Output "-- shard $i ($thisHost) --"
         $statusBlobs = if ($statusRaw) { Split-StatusBlobs $statusRaw } else { @() }
+        if ($formatFilter) {
+            $statusBlobs = @($statusBlobs | Where-Object { $formatFilter -contains (Get-ShardFormatLabel $_.Path) })
+        }
         if ($statusBlobs) {
+            $parsed = @()
             foreach ($blob in $statusBlobs) {
                 $formatLabel = Get-ShardFormatLabel $blob.Path
                 try {
@@ -120,16 +128,34 @@ while ($true) {
                     Write-Output "  [$formatLabel] (failed to parse status JSON: $($_.Exception.Message))"
                     continue
                 }
-                $totalDone += [int]$d.done
-                $totalAll  += [int]$d.total
-                if ($d.error) { $anyError = $true }
-                Write-StatusEntry $d $formatLabel
+                # Always fold every format this shard has ever produced into
+                # the running totals -- a finished singles file is still real
+                # progress even once doubles has taken over the display.
+                Add-StatusToAggregate -Data $d -Label $formatLabel -GlobalTotalByFormat $globalTotalByFormat `
+                    -DoneByFormat $doneByFormat -AnyError ([ref]$anyError)
+                $parsed += [PSCustomObject]@{ Label = $formatLabel; Data = $d }
             }
+            # Without -Formats, a shard part-way through its format sequence
+            # accumulates one status file per format it's passed through
+            # (singles finished, doubles running, ...) and the view just
+            # grows forever, mostly showing stale finished formats. Only the
+            # most recently updated one is what's actually happening now, so
+            # collapse the *display* down to that -- the totals above already
+            # counted everything regardless.
+            $toShow = if (-not $formatFilter -and $parsed.Count -gt 1) {
+                @($parsed | Sort-Object { [datetime]$_.Data.updated_at } -Descending | Select-Object -First 1)
+            } else {
+                $parsed
+            }
+            foreach ($p in $toShow) { Show-StatusEntry $p.Data $p.Label }
         } elseif (-not $snap -or $snap.SshFailed) {
-            # Distinct from the "no status file yet" case below -- this means
-            # ssh itself failed (host down, connection refused, etc), a real
-            # problem worth investigating, not just "still warming up."
+            # Checked before the formatFilter-specific message below -- ssh
+            # itself failing (host down, connection refused, etc) is a real
+            # problem worth investigating regardless of which format(s)
+            # this view is scoped to, not just "still warming up."
             Write-Output "*** UNREACHABLE (ssh failed) ***"
+        } elseif ($formatFilter) {
+            Write-Output "(no status file yet for $($formatFilter -join ', ') -- normal until the first checkpoint)"
         } else {
             # tournament.rb only writes elo_status_*.json every
             # ELO_PROGRESS_INTERVAL (default 25) completed battles -- a
@@ -149,22 +175,20 @@ while ($true) {
             $lastAttemptingEntries[$i] = $entries
         }
         if ($lastAttempting[$i]) {
-            $sinceChange = [int]((Get-Date) - $lastAttemptingChangedAt[$i]).TotalSeconds
-            Write-Output "attempting (unchanged ${sinceChange}s):"
-            foreach ($a in $lastAttemptingEntries[$i]) { Write-AttemptingEntry $a }
+            $shownEntries = if ($formatFilter) {
+                @($lastAttemptingEntries[$i] | Where-Object { $formatFilter -contains $_.format })
+            } else {
+                $lastAttemptingEntries[$i]
+            }
+            if ($shownEntries) {
+                $sinceChange = [int]((Get-Date) - $lastAttemptingChangedAt[$i]).TotalSeconds
+                Write-Output "attempting (unchanged ${sinceChange}s):"
+                foreach ($a in $shownEntries) { Write-AttemptingEntry $a }
+            }
         }
     }
 
-    Write-Output ""
-    Write-Output "================================================================"
-    if ($totalAll -gt 0) {
-        $pct = [math]::Round($totalDone * 100.0 / $totalAll, 3)
-        Write-Output "AGGREGATE: $totalDone / $totalAll ($pct%)"
-    }
-    if ($anyError) {
-        Write-Output "*** At least one shard reports a top-level error -- check its status above. ***"
-    }
-    Write-Output "Last refreshed: $(Get-Date -Format o)"
+    Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError
 
     Start-Sleep -Seconds $RefreshSeconds
 }

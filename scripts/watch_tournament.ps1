@@ -6,6 +6,8 @@ param(
     [int]$RefreshSeconds = 2
 )
 
+. (Join-Path $PSScriptRoot "_watch_common.ps1")
+
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
 $ResultsDir = Join-Path $RepoRoot "results"
 $StatusPath     = Join-Path $ResultsDir "elo_status_$Format.json"
@@ -20,9 +22,9 @@ while ($true) {
     Write-Output "================================================================"
     Write-Output ""
 
-    if (Test-Path $StatusPath) {
-        Write-Output "STATUS ($StatusPath):"
-        Write-Output (Get-Content $StatusPath -Raw)
+    $d = Read-StatusJson $StatusPath
+    if ($d) {
+        Show-StatusEntry $d $Format
     } else {
         Write-Output "(no status file yet)"
     }

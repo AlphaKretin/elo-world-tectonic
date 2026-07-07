@@ -15,9 +15,27 @@
 # self-match footgun pause_tournament.ps1's own comment already documents
 # for the local/-Command case -- hit the remote equivalent for real
 # during testing: the watchdog died but the game process survived).
+#
+# Also stops the local oversubscription supervisor (supervise_remote_chunks.ps1,
+# started by run_remote_parallel.ps1 -ChunksPerHost), if one is running --
+# otherwise it would notice every droplet went "idle" the moment this
+# script kills their watchdogs and immediately relaunch fresh chunks on
+# them, undoing the pause within one poll interval.
 param(
     [string]$HostsFile = (Join-Path $PSScriptRoot "remote_hosts.txt")
 )
+
+$supervisors = Get-CimInstance Win32_Process -Filter "Name='powershell.exe' OR Name='pwsh.exe'" |
+    Where-Object { $_.CommandLine -match 'supervise_remote_chunks\.ps1' }
+if ($supervisors) {
+    Write-Output "Stopping $($supervisors.Count) oversubscription supervisor process(es)..."
+    $supervisors | ForEach-Object {
+        Write-Output "  PID $($_.ProcessId)"
+        Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue
+    }
+} else {
+    Write-Output "No oversubscription supervisor running."
+}
 
 $hostList = @(Get-Content $HostsFile | Where-Object { $_ -and $_ -notmatch '^\s*#' } | ForEach-Object { $_.Trim() })
 if (-not $hostList) {

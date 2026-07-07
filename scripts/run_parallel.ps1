@@ -19,18 +19,21 @@ param(
     [int]$PollIntervalSeconds = 5,
     [switch]$UseDebugFlag,
     [int]$SampleGamesPerTrainer = 0,   # 0 = full round robin; >0 = sparse random sampling
-    [int]$SampleSeed = 1
+    [int]$SampleSeed = 1,
+    [string]$SubsetTrainerLabels = "",
+    [string]$SubsetTag = "subset"
 )
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
 $ResultsDir = Join-Path $RepoRoot "results"
 $ScriptPath = Join-Path $PSScriptRoot "run_tournament.ps1"
+$ArchiveLabel = if ($SubsetTrainerLabels) { "${Format}_${SubsetTag}" } else { $Format }
 
-& (Join-Path $PSScriptRoot "archive_run.ps1") -Label $Format
+& (Join-Path $PSScriptRoot "archive_run.ps1") -Label $ArchiveLabel
 
 for ($i = 0; $i -lt $ShardCount; $i++) {
-    $outLogPath = Join-Path $ResultsDir "watchdog_${Format}_shard$i.log"
-    $errLogPath = Join-Path $ResultsDir "watchdog_${Format}_shard${i}_err.log"
+    $outLogPath = Join-Path $ResultsDir "watchdog_${ArchiveLabel}_shard$i.log"
+    $errLogPath = Join-Path $ResultsDir "watchdog_${ArchiveLabel}_shard${i}_err.log"
     $argList = @(
         "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "`"$ScriptPath`"",
         "-Format", $Format,
@@ -43,6 +46,9 @@ for ($i = 0; $i -lt $ShardCount; $i++) {
     if ($UseDebugFlag) { $argList += "-UseDebugFlag" }
     if ($SampleGamesPerTrainer -gt 0) {
         $argList += @("-SampleGamesPerTrainer", $SampleGamesPerTrainer, "-SampleSeed", $SampleSeed)
+    }
+    if ($SubsetTrainerLabels) {
+        $argList += @("-SubsetTrainerLabels", "`"$SubsetTrainerLabels`"", "-SubsetTag", $SubsetTag)
     }
     Start-Process -FilePath "powershell.exe" -ArgumentList $argList `
         -RedirectStandardOutput $outLogPath -RedirectStandardError $errLogPath `

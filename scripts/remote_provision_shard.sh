@@ -25,7 +25,15 @@ if [[ ! -d "$GAME_DIR/.git" ]]; then
     echo "=== Cloning $REPO_URL ($BRANCH) ==="
     git clone --depth 1 --branch "$BRANCH" "$REPO_URL" "$GAME_DIR"
 else
-    echo "=== $GAME_DIR already a git checkout, skipping clone ==="
+    echo "=== $GAME_DIR already a git checkout, syncing to latest $BRANCH ==="
+    # A prior run's compiled artifacts/results/errorlog are droplet-local
+    # scratch, not anything worth preserving -- reset+clean so a shard that
+    # was provisioned before the latest fix was pushed actually picks it up,
+    # instead of silently running stale code forever (bit us on the last rerun).
+    git -C "$GAME_DIR" fetch --depth 1 origin "$BRANCH"
+    git -C "$GAME_DIR" checkout "$BRANCH"
+    git -C "$GAME_DIR" reset --hard "origin/$BRANCH"
+    git -C "$GAME_DIR" clean -fdx
 fi
 
 cd "$GAME_DIR"
