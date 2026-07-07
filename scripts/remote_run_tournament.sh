@@ -19,16 +19,13 @@
 #     the battle as a whole never ends."
 #
 # --formats takes a comma-separated sequence (e.g. "singles,doubles") --
-# each format runs to completion, then (if another format follows) does a
-# fresh debug-compile before moving on, entirely self-contained on this
-# one droplet. Deliberately does NOT wait for sibling droplets the way
-# watch_singles_then_launch_doubles.ps1 does locally -- that script waits
-# for *all* local shards because they share one vendor/tectonic-content
-# directory and a recompile's robocopy /MIR would race a still-running
-# sibling. Each droplet has its own independent git checkout, so that
-# race doesn't exist remotely: every shard can move on to the next format
-# the moment *it* finishes, with zero cross-droplet coordination and zero
-# dependency on the control machine staying on after launch.
+# each format runs to completion, then the next one starts immediately on
+# this same droplet, entirely self-contained, with zero cross-droplet
+# coordination and zero dependency on the control machine staying on after
+# launch. No recompile between formats: curse-stripping is a runtime
+# ELO_FORMAT check, not compile-time (see tournament.rb's UNCURSED_RUN), so
+# there's nothing a format switch needs picked up by a fresh compile. If
+# you push a code fix mid-run, kill and relaunch to pick it up.
 #
 # Usage: run on the droplet itself, already cloned+compiled (see
 # remote_provision_shard.sh). Not meant to be invoked over a single
@@ -99,22 +96,6 @@ ensure_display() {
             < /dev/null > "$RESULTS_DIR/fluxbox.log" 2>&1 < /dev/null &
         disown
         sleep 2
-    fi
-}
-
-recompile() {
-    # Same debug-compile pass remote_provision_shard.sh does. Run between
-    # formats so a code fix pushed mid-singles (e.g. a quarantine flag,
-    # an AI no-op fix) is picked up for doubles without restarting anything
-    # by hand -- mirrors watch_singles_then_launch_doubles.ps1's reason
-    # for recompiling between formats locally.
-    ensure_display
-    rm -f "$GAME_DIR/Analysis/compile_done.txt"
-    setsid env ELO_TOURNAMENT=1 ELO_COMPILE_ONLY=1 \
-        timeout -k 10 90 ./'Game Linux.x86_64' debug compile \
-        < /dev/null > "$RESULTS_DIR/recompile.log" 2>&1 < /dev/null
-    if [[ ! -f "$GAME_DIR/Analysis/compile_done.txt" ]]; then
-        echo "$(date -Iseconds)  WARNING: recompile marker never appeared -- check $RESULTS_DIR/recompile.log" >&2
     fi
 }
 
@@ -231,10 +212,6 @@ for idx in "${!FORMAT_LIST[@]}"; do
     fmt="${FORMAT_LIST[$idx]}"
     echo "$(date -Iseconds)  [shard${SHARD_INDEX}] starting format '$fmt' (${idx}/${#FORMAT_LIST[@]})"
     run_format "$fmt"
-    if [[ $((idx + 1)) -lt ${#FORMAT_LIST[@]} ]]; then
-        echo "$(date -Iseconds)  [shard${SHARD_INDEX}] '$fmt' finished -- recompiling before next format"
-        recompile
-    fi
 done
 
 echo "$(date -Iseconds)  [shard${SHARD_INDEX}] all formats finished. Watchdog exiting."
