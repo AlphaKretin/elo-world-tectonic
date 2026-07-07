@@ -37,6 +37,15 @@ def _option_index(options, label):
     return next(i for i, (opt_label, _value) in enumerate(options) if opt_label == label)
 
 
+class _CaseInsensitiveItem(QTableWidgetItem):
+    """Sorts by lowercased text, matching Browse tab's sort keys (which
+    lowercase Trainer 1/2 before comparing) instead of Qt's default
+    case-sensitive text compare."""
+
+    def __lt__(self, other):
+        return self.text().lower() < other.text().lower()
+
+
 class WatchTab(QWidget):
     """Watches a .dat from vendor_dir/VSRecorder/ELOReplay/ through the
     engine's own playRecordedBattle, same mechanism as the in-game VS
@@ -68,6 +77,7 @@ class WatchTab(QWidget):
         self.table.setSelectionMode(QAbstractItemView.SingleSelection)
         self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.table.setColumnWidth(0, 220)
+        self.table.setSortingEnabled(True)
         layout.addWidget(self.table)
 
         form = QFormLayout()
@@ -130,9 +140,14 @@ class WatchTab(QWidget):
         self.refresh()
 
     def refresh(self):
+        # Sorting must be off while populating -- QTableWidget re-sorts after
+        # every setItem() when enabled, so rows and their trainer columns
+        # would scatter mid-population instead of landing together.
+        self.table.setSortingEnabled(False)
         self.table.setRowCount(0)
         replay_dir = self.config.replay_dir
         if not os.path.isdir(replay_dir):
+            self.table.setSortingEnabled(True)
             return
         names = sorted(
             f for f in os.listdir(replay_dir) if f.lower().endswith(".dat") and f != f"{STAGING_NAME}.dat"
@@ -142,9 +157,10 @@ class WatchTab(QWidget):
             full_path = os.path.join(replay_dir, name)
             mtime = datetime.datetime.fromtimestamp(os.path.getmtime(full_path)).strftime("%Y-%m-%d %H:%M:%S")
             base_name = os.path.splitext(name)[0]
-            self.table.setItem(i, 0, QTableWidgetItem(base_name))
+            self.table.setItem(i, 0, _CaseInsensitiveItem(base_name))
             self._set_trainer_columns(i, *self._sidecar_trainers(base_name))
             self.table.setItem(i, 3, QTableWidgetItem(mtime))
+        self.table.setSortingEnabled(True)
 
     def _sidecar_trainers(self, base_name):
         """(trainer1, trainer2) raw labels from base_name's sidecar in
@@ -165,7 +181,7 @@ class WatchTab(QWidget):
 
     def _set_trainer_columns(self, row, t1_label, t2_label):
         for col, label in ((1, t1_label), (2, t2_label)):
-            item = QTableWidgetItem(self._names.display_name(label) if label else "")
+            item = _CaseInsensitiveItem(self._names.display_name(label) if label else "")
             item.setToolTip(label)
             self.table.setItem(row, col, item)
 
@@ -182,9 +198,14 @@ class WatchTab(QWidget):
             if self.table.item(row, 0).text() == name:
                 self.table.selectRow(row)
                 if expected_result:
+                    # Sorting must be off here too -- setItem on the first
+                    # trainer column could re-sort and move this row before
+                    # the second setItem call lands, misassigning it.
+                    self.table.setSortingEnabled(False)
                     self._set_trainer_columns(
                         row, expected_result.get("trainer1", ""), expected_result.get("trainer2", "")
                     )
+                    self.table.setSortingEnabled(True)
                 break
         self._expected_result = expected_result
 
