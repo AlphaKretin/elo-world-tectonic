@@ -6,7 +6,7 @@ import { TrainerModalContent } from "./TrainerModal";
 import type { BattleType, CurseVariant, FilterVariant, JoinedRow, LeaderboardRow } from "../types";
 import "./ComparePage.css";
 
-type SortKey = "trainer" | "rankA" | "ratingA" | "rankB" | "ratingB" | "ratingDelta" | "rankDelta";
+type SortKey = "trainer" | "rankA" | "ratingA" | "rankB" | "ratingB" | "rankDelta";
 
 export function ComparePage() {
   const [modalLabel, setModalLabel] = useState<string | null>(null);
@@ -22,7 +22,7 @@ export function ComparePage() {
   const [error, setError] = useState<string | null>(null);
 
   const [search, setSearch] = useState("");
-  const [sortKey, setSortKey] = useState<SortKey>("ratingDelta");
+  const [sortKey, setSortKey] = useState<SortKey>("rankDelta");
   const [sortAsc, setSortAsc] = useState(false);
 
   const fmtA = formatKey(battleTypeA, curseVariantA, filterA);
@@ -95,18 +95,8 @@ export function ComparePage() {
     const q = search.trim().toLowerCase();
     const base = q ? joined.filter((r) => r.trainer.toLowerCase().includes(q)) : joined;
     const sorted = [...base].sort((a, b) => {
-      const av =
-        sortKey === "ratingDelta"
-          ? a.ratingB - a.ratingA
-          : sortKey === "rankDelta"
-            ? a.rankB - a.rankA
-            : a[sortKey];
-      const bv =
-        sortKey === "ratingDelta"
-          ? b.ratingB - b.ratingA
-          : sortKey === "rankDelta"
-            ? b.rankB - b.rankA
-            : b[sortKey];
+      const av = sortKey === "rankDelta" ? a.rankB - a.rankA : a[sortKey];
+      const bv = sortKey === "rankDelta" ? b.rankB - b.rankA : b[sortKey];
       if (av < bv) return sortAsc ? -1 : 1;
       if (av > bv) return sortAsc ? 1 : -1;
       return 0;
@@ -165,6 +155,14 @@ export function ComparePage() {
       {error && <p className="error">Failed to load leaderboard: {error}</p>}
       {sameFormat && <p className="compare-hint">Pick two different formats to compare.</p>}
       {!error && !sameFormat && !filtered && <p>Loading...</p>}
+      {!sameFormat && filtered && (
+        <p className="compare-hint">
+          Rating A/B are each shown for reference only, from that format's own independent
+          fit -- there's no shared anchor between two separately-fit formats, so a rating
+          difference between them isn't a meaningful quantity (unlike within one format, where
+          it predicts win probability). Rank change is the number to compare formats by.
+        </p>
+      )}
 
       {!sameFormat && filtered && (
         <>
@@ -187,12 +185,10 @@ export function ComparePage() {
                   <th onClick={() => toggleSort("rankB")}>Rank B{sortIndicator("rankB")}</th>
                   <th onClick={() => toggleSort("ratingB")}>Rating B{sortIndicator("ratingB")}</th>
                   <th onClick={() => toggleSort("rankDelta")}>Δ Rank (B - A){sortIndicator("rankDelta")}</th>
-                  <th onClick={() => toggleSort("ratingDelta")}>Δ Rating (B - A){sortIndicator("ratingDelta")}</th>
                 </tr>
               </thead>
               <tbody>
                 {filtered.map((row) => {
-                  const ratingDelta = row.ratingB - row.ratingA;
                   const rankDelta = row.rankB - row.rankA;
                   return (
                     <tr key={row.label} onClick={() => setModalLabel(row.label)}>
@@ -209,10 +205,6 @@ export function ComparePage() {
                       <td className={rankDelta < 0 ? "compare-delta-pos" : rankDelta > 0 ? "compare-delta-neg" : ""}>
                         {rankDelta > 0 ? "+" : ""}
                         {rankDelta}
-                      </td>
-                      <td className={ratingDelta > 0 ? "compare-delta-pos" : ratingDelta < 0 ? "compare-delta-neg" : ""}>
-                        {ratingDelta > 0 ? "+" : ""}
-                        {ratingDelta.toFixed(1)}
                       </td>
                     </tr>
                   );
