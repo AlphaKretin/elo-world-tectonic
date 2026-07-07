@@ -51,6 +51,12 @@ their data.
 against underleveled trainers otherwise inflate their rating without
 saying much about how they'd fare against actual peers.
 
+--filter developer_only keeps only battles where both trainers carry the
+TrainerTypeLabel = DEVELOPER display override (a label swap, not a real
+TrainerType -- see results_lib.is_developer_trainer) -- a "these are
+actual people" cohort that overlaps heavily with level70_only but isn't
+identical to it.
+
 Filters are composable (e.g. --filter cursed_excluded --filter
 level70_only); each additional filter only narrows the fit further.
 

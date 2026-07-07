@@ -31,21 +31,31 @@ import trainer_cards
 from card_constants import TIER_COLORS
 from results_lib import ANALYSIS_DIR, REPO_ROOT
 
-# (base format, filters) pairs to publish -- base format is either a real
-# elo_results_<fmt>_shard*.jsonl dataset (singles/doubles/*_uncursed) or,
-# combined with filters, a post-hoc row-filtered view of one (see
-# results_lib.FILTERS). FORMATS (the exported web/public/data/<fmt>/ names)
-# is derived from this, not hand-maintained separately, so the two can't
-# drift apart.
-FORMAT_SPECS = [
-    ("singles", []), ("doubles", []),
-    ("singles_uncursed", []), ("doubles_uncursed", []),
-    ("singles", ["cursed_excluded"]), ("doubles", ["cursed_excluded"]),
-    ("singles", ["level70_only"]), ("doubles", ["level70_only"]),
-    ("singles_uncursed", ["level70_only"]), ("doubles_uncursed", ["level70_only"]),
-]
-
-FORMATS = [base + results_lib.filter_suffix(filters) for base, filters in FORMAT_SPECS]
+def build_format_specs(card_data):
+    """(base format, filters) pairs to publish -- base format is either a
+    real elo_results_<fmt>_shard*.jsonl dataset (singles/doubles/*_uncursed)
+    or, combined with filters, a post-hoc row-filtered view of one (see
+    results_lib.FILTERS). cursed_excluded is never crossed with an _uncursed
+    base (it's a row-level curse-drop, not a fixed trainer cohort, so
+    there's no population to check). Every filter in
+    results_lib.FILTER_TRAINER_PREDICATES DOES have a fixed cohort, so it's
+    only crossed with an _uncursed base if that cohort actually contains a
+    cursed trainer (see results_lib.filter_has_cursed_population) --
+    otherwise the _uncursed variant would just be a byte-identical copy of
+    the plain cursed default, and the website falls back cursed instead of
+    publishing the duplicate (see web/src/lib/formatValidity.ts)."""
+    specs = [
+        ("singles", []), ("doubles", []),
+        ("singles_uncursed", []), ("doubles_uncursed", []),
+        ("singles", ["cursed_excluded"]), ("doubles", ["cursed_excluded"]),
+    ]
+    for filt in sorted(results_lib.FILTER_TRAINER_PREDICATES):
+        specs.append(("singles", [filt]))
+        specs.append(("doubles", [filt]))
+        if results_lib.filter_has_cursed_population(filt, card_data):
+            specs.append(("singles_uncursed", [filt]))
+            specs.append(("doubles_uncursed", [filt]))
+    return specs
 
 WEB_DIR = os.path.join(REPO_ROOT, "web")
 WEB_DATA_DIR = os.path.join(WEB_DIR, "public", "data")
@@ -109,7 +119,7 @@ def static_trainer_payload(label, card_data_by_label, tribe_info):
     row = card_data_by_label[label]
     identities = trainer_cards.masked_villain_identities(row, card_data_by_label)
     tribe_bonuses = trainer_cards.active_tribe_bonuses(row, tribe_info)
-    is_cursed = any(p.startswith("CURSE_") for p in row["policies"])
+    is_cursed = results_lib.is_cursed_trainer(label, card_data_by_label)
     levels = [m["level"] for m in row["party"]]
     return {
         "label": label,
@@ -149,13 +159,13 @@ def static_trainer_payload(label, card_data_by_label, tribe_info):
     }
 
 
-def export_trainers(card_data_by_label, tribe_info):
+def export_trainers(card_data_by_label, tribe_info, formats):
     """Every trainer referenced by ANY format's ratings gets exactly one
     static payload file, regardless of how many formats it appears in."""
     out_dir = os.path.join(WEB_DATA_DIR, "trainers")
     os.makedirs(out_dir, exist_ok=True)
     referenced = set()
-    for fmt in FORMATS:
+    for fmt in formats:
         ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
         if os.path.exists(ratings_path):
             referenced |= set(results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR))
@@ -288,13 +298,14 @@ def export_assets(card_data_by_label):
     print(f"assets: copied {n} sprite/icon files -> {WEB_ASSETS_DIR}")
 
 
-def regenerate_analysis_outputs():
+def regenerate_analysis_outputs(format_specs):
     """Recompute ratings_<fmt>.json and best_worst_<fmt>.json for every
-    FORMAT_SPEC from the current results/remote data, so this script is
-    the one place that has to be run for the site to be fresh -- see the
-    module docstring for why relying on ratings.py/best_worst.py having
-    already been run by hand isn't good enough."""
-    for base_fmt, filters in FORMAT_SPECS:
+    format_specs entry (see build_format_specs) from the current
+    results/remote data, so this script is the one place that has to be run
+    for the site to be fresh -- see the module docstring for why relying on
+    ratings.py/best_worst.py having already been run by hand isn't good
+    enough."""
+    for base_fmt, filters in format_specs:
         fmt = base_fmt + results_lib.filter_suffix(filters)
         leaderboard, stats = ratings.compute_ratings(base_fmt, filters=filters)
         if not leaderboard:
@@ -310,9 +321,12 @@ def regenerate_analysis_outputs():
 
 
 def main():
-    regenerate_analysis_outputs()
-
     card_data_by_label = results_lib.load_card_data()
+    format_specs = build_format_specs(card_data_by_label)
+    formats = [base + results_lib.filter_suffix(filters) for base, filters in format_specs]
+
+    regenerate_analysis_outputs(format_specs)
+
     tribe_info = trainer_cards.load_tribe_info()
     max_native_dim = trainer_cards.max_native_sprite_dim(card_data_by_label)
     cell_sprite_budget = max_native_dim * trainer_cards.SPRITE_SCALE
@@ -327,18 +341,19 @@ def main():
             "moveGridColumns": move_cols,
             "maxNativeSpriteDim": max_native_dim,
             "spriteScale": trainer_cards.SPRITE_SCALE,
-            # FORMAT_SPECS-derived list of format keys the site actually has
-            # data for, so the frontend's format picker can grey out
-            # combinations (e.g. uncursed + cursed_excluded, redundant by
-            # construction) without hand-maintaining a second copy of this
-            # list in TypeScript.
-            "availableFormats": FORMATS,
+            # build_format_specs-derived list of format keys the site
+            # actually has data for, so the frontend's format picker can
+            # grey out combinations (e.g. uncursed + cursed_excluded, or an
+            # uncursed variant of a filter whose whole cohort has no cursed
+            # trainers) without hand-maintaining a second copy of this list
+            # in TypeScript.
+            "availableFormats": formats,
         }, f, indent=4)
 
-    export_trainers(card_data_by_label, tribe_info)
+    export_trainers(card_data_by_label, tribe_info, formats)
     export_team_levels(card_data_by_label)
 
-    for fmt in FORMATS:
+    for fmt in formats:
         ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
         if not os.path.exists(ratings_path):
             print(f"SKIPPED {fmt}: {ratings_path} not found")

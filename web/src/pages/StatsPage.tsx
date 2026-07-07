@@ -36,6 +36,7 @@ const FILTER_LABELS: Record<FilterVariant, string> = {
   none: "",
   cursed_excluded: "Cursed-excluded",
   level70_only: "Level 70 only",
+  developer_only: "Developers only",
 };
 
 function formatShortLabel(battleType: BattleType, curseVariant: CurseVariant, filter: FilterVariant): string {

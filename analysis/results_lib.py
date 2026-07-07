@@ -9,9 +9,12 @@ each grown their own near-identical copy.
 
 Also owns the named row-level filter registry (FILTERS) shared by every
 script that lets you narrow a fit or lookup to a subset of battles --
-cursed_excluded (drop every battle flagged curse) and level70_only (keep
-only battles between two 6-Pokemon-at-level-70 "endgame" trainers) as of
-this writing -- plus add_filter_arg/filter_suffix/passes_filters/
+cursed_excluded (drop every battle flagged curse), level70_only (keep
+only battles between two 6-Pokemon-at-level-70 "endgame" trainers), and
+developer_only (keep only battles between two TrainerTypeLabel=DEVELOPER
+trainers -- overlaps heavily with level70_only but isn't identical, since
+DEVELOPER is a display-label override, not tied to party composition) as
+of this writing -- plus add_filter_arg/filter_suffix/passes_filters/
 load_card_data_if_needed, the shared CLI-flag-to-filename-suffix plumbing
 so ratings.py, best_worst.py, and custom_trainer_report.py all pick
 ratings_<fmt>_<name1>_<name2>...json the same way instead of each growing
@@ -160,6 +163,60 @@ def is_level70_trainer(label, card_data):
     return len(party) == 6 and all(p.get("level") == 70 for p in party)
 
 
+def is_developer_trainer(label, card_data):
+    """True if `label` carries the TrainerTypeLabel = DEVELOPER override --
+    a display-only label (see custom_trainer.rb/Trainer.rb) that swaps the
+    shown trainer type name while keeping the original sprite, not a real
+    TrainerType. Used by the developer_only filter to isolate the
+    "actual person" cohort (distinct from level70_only's endgame-team
+    cohort, though the two overlap significantly)."""
+    row = card_data.get(label)
+    if row is None:
+        return False
+    return row.get("trainer_type_label") == "DEVELOPER"
+
+
+def is_cursed_trainer(label, card_data):
+    """True if `label` has an authored CURSE_* policy active (the same
+    "isCursed" check export_web_data.py's static_trainer_payload shows on
+    the website's trainer cards) -- not to be confused with a battle-level
+    `curse` flag, which also fires for a curse-free trainer paired against
+    a cursed one."""
+    row = card_data.get(label)
+    if row is None:
+        return False
+    return any(p.startswith("CURSE_") for p in row.get("policies") or [])
+
+
+# Filters in here have a fixed "both sides must be in this cohort" shape
+# keyed off a per-trainer predicate (unlike cursed_excluded, which is a
+# row-level curse-drop with no fixed trainer population of its own) -- see
+# filter_has_cursed_population, which uses this registry to decide whether
+# publishing an _uncursed variant of one of these filters would actually
+# differ from its plain cursed default.
+FILTER_TRAINER_PREDICATES = {
+    "level70_only": is_level70_trainer,
+    "developer_only": is_developer_trainer,
+}
+
+
+def filter_has_cursed_population(name, card_data):
+    """True if filter `name`'s trainer cohort (see FILTER_TRAINER_PREDICATES)
+    contains at least one authored-curse trainer. A curse-stripped _uncursed
+    rebattle only changes cursed trainers' own battles, so if a filter's
+    cohort has none, its _uncursed variant is byte-identical to the plain
+    cursed default -- export_web_data.py uses this to skip publishing that
+    redundant duplicate (e.g. developer_only: no developer trainer is
+    cursed, so singles_uncursed_developer_only would just be a copy of
+    singles_developer_only) and the website falls back cursed instead (see
+    web/src/lib/formatValidity.ts's nearestValidFormat)."""
+    predicate = FILTER_TRAINER_PREDICATES[name]
+    return any(
+        predicate(label, card_data) and is_cursed_trainer(label, card_data)
+        for label in card_data
+    )
+
+
 # Named row-level "keep this battle" predicates shared by ratings.py,
 # best_worst.py, and custom_trainer_report.py's --filter flag, each keyed by
 # the name used in its output suffix (ratings_<fmt>_<name>.json). A
@@ -173,8 +230,12 @@ FILTERS = {
         is_level70_trainer(row["trainer1"], card_data)
         and is_level70_trainer(row["trainer2"], card_data)
     ),
+    "developer_only": lambda row, card_data: (
+        is_developer_trainer(row["trainer1"], card_data)
+        and is_developer_trainer(row["trainer2"], card_data)
+    ),
 }
-FILTERS_NEEDING_CARD_DATA = {"level70_only"}
+FILTERS_NEEDING_CARD_DATA = {"level70_only", "developer_only"}
 
 
 def add_filter_arg(parser):

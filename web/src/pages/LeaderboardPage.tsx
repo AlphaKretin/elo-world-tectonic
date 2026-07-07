@@ -8,7 +8,7 @@ import type { BattleType, CurseVariant, FilterVariant, LeaderboardRow } from "..
 
 const VALID_BATTLE_TYPES: BattleType[] = ["singles", "doubles"];
 const VALID_CURSE_VARIANTS: CurseVariant[] = ["cursed", "uncursed"];
-const VALID_FILTERS: FilterVariant[] = ["none", "cursed_excluded", "level70_only"];
+const VALID_FILTERS: FilterVariant[] = ["none", "cursed_excluded", "level70_only", "developer_only"];
 
 export function LeaderboardPage() {
   const params = useParams();

@@ -5,7 +5,7 @@ export type CurseVariant = "cursed" | "uncursed";
 // A post-hoc row filter applied on top of a battleType/curseVariant's
 // results (see analysis/results_lib.py's FILTERS registry) -- doesn't
 // change what was battled, only which battles count toward the rating fit.
-export type FilterVariant = "none" | "cursed_excluded" | "level70_only";
+export type FilterVariant = "none" | "cursed_excluded" | "level70_only" | "developer_only";
 
 export interface OpponentRef {
   label: string;

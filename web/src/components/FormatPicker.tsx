@@ -18,6 +18,7 @@ const FILTER_VARIANTS: { value: FilterVariant; label: string; hint: string }[] =
   { value: "none", label: "None", hint: "Every battle counts toward the fit" },
   { value: "cursed_excluded", label: "Cursed-excluded", hint: "Cursed battles dropped from the fit entirely" },
   { value: "level70_only", label: "Level 70 only", hint: "Only battles between two 6-Pokemon, all-level-70 trainers" },
+  { value: "developer_only", label: "Developers only", hint: "Only battles between two developer-labeled trainers" },
 ];
 
 interface Props {
