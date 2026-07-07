@@ -15,10 +15,11 @@ import glob
 import json
 import os
 
-from PySide6.QtCore import QSettings, Signal
+from PySide6.QtCore import QSettings, Qt, Signal
+from PySide6.QtGui import QGuiApplication, QPainter, QPixmap
 from PySide6.QtWidgets import (
     QComboBox,
-    QGroupBox,
+    QFrame,
     QHBoxLayout,
     QLabel,
     QMessageBox,
@@ -29,10 +30,15 @@ from PySide6.QtWidgets import (
 )
 
 from app import bracket_seeds, format_selector, ui_settings
+from app.bracket_canvas import BracketCanvas
 from app.results_source import load_results_lib
-from app.trainer_names import TrainerNameResolver
+from app.trainer_names import TrainerNameResolver, load_trainer_naming
 
 FILTER_CHOICES = [(None, "(none)"), ("cursed_excluded", "Cursed-excluded"), ("level70_only", "Level 70 only")]
+SPRITE_SIZE = 40  # trainer sprites are 160x160 pixel art; 40 is a clean 4x nearest-neighbor downscale
+CURSE_BADGE_SIZE = 24  # the amulet badge is 48x48 pixel art; 24 is a clean 2x nearest-neighbor downscale
+CURSED_TEXT_SUFFIX = " (Cursed)"  # trainer_naming.resolve_display_name's text marker, for text-only contexts;
+# the bracket is graphical, so it shows the same Tarot Amulet badge trainer_cards.py/the website use instead.
 
 
 class BracketTab(QWidget):
@@ -49,6 +55,11 @@ class BracketTab(QWidget):
         self.bracket_key = None
         self.rounds = None
         self.results_index = {}
+        self._sprite_cache = {}
+        self._card_data_cache = None
+        self._naming_cache = None
+        self._curse_badge_pixmap = None
+        self._curse_badge_loaded = False
 
         layout = QVBoxLayout(self)
 
@@ -79,10 +90,8 @@ class BracketTab(QWidget):
 
         self.scroll_area = QScrollArea()
         self.scroll_area.setWidgetResizable(True)
-        self.rounds_container = QWidget()
-        self.rounds_layout = QVBoxLayout(self.rounds_container)
-        self.rounds_layout.addStretch(1)
-        self.scroll_area.setWidget(self.rounds_container)
+        self.canvas = BracketCanvas()
+        self.scroll_area.setWidget(self.canvas)
         layout.addWidget(self.scroll_area)
 
         self.battle_type_combo.currentIndexChanged.connect(self._on_format_changed)
@@ -119,7 +128,7 @@ class BracketTab(QWidget):
         if not labels:
             self.rounds = None
             self.status_label.setText(f"No curated bracket for '{self.bracket_key}' yet.")
-            self._clear_rounds_ui()
+            self.canvas.set_rounds([], [])
             self.reveal_button.setEnabled(False)
             return
 
@@ -129,7 +138,7 @@ class BracketTab(QWidget):
         except ValueError as exc:
             self.rounds = None
             self.status_label.setText(str(exc))
-            self._clear_rounds_ui()
+            self.canvas.set_rounds([], [])
             self.reveal_button.setEnabled(False)
             return
 
@@ -206,51 +215,194 @@ class BracketTab(QWidget):
         results_lib = load_results_lib(self.config.analysis_dir)
         return "decisive" if row["result"] in (results_lib.WIN, results_lib.LOSS) else "draw"
 
+    # -- sprites / curse marker --------------------------------------------
+
+    def _card_data(self):
+        if self._card_data_cache is None:
+            results_lib = load_results_lib(self.config.analysis_dir)
+            try:
+                self._card_data_cache = results_lib.load_card_data()
+            except OSError:
+                self._card_data_cache = {}
+        return self._card_data_cache
+
+    def _naming(self):
+        if self._naming_cache is None:
+            self._naming_cache = load_trainer_naming(self.config.analysis_dir)
+        return self._naming_cache
+
+    def _is_cursed(self, label):
+        if not label:
+            return False
+        row = self._card_data().get(label)
+        if row is None:
+            return False
+        return self._naming().is_curse_variant(row, self._card_data())
+
+    def _device_pixel_ratio(self):
+        screen = QGuiApplication.primaryScreen()
+        return screen.devicePixelRatio() if screen else 1.0
+
+    def _scaled_pixel_art(self, raw, logical_size):
+        """Nearest-neighbor downscale to logical_size x logical_size,
+        rendered at the screen's actual device pixel ratio and tagged with
+        that ratio via setDevicePixelRatio -- without this, a pixmap with
+        no DPR set gets silently re-stretched a *second* time by Qt when
+        painted on a HiDPI screen (to match the screen's real physical
+        pixel density), and that implicit second pass isn't
+        nearest-neighbor. That's what was making sprites still look
+        soft/crunchy despite the source scale factor itself being a clean
+        integer ratio (160/40 for trainer sprites, 48/16 for the curse
+        badge) -- the corruption was happening one step later, at paint
+        time, not in this scaling step."""
+        dpr = self._device_pixel_ratio()
+        physical = max(1, round(logical_size * dpr))
+        scaled = raw.scaled(physical, physical, Qt.KeepAspectRatio, Qt.FastTransformation)
+        scaled.setDevicePixelRatio(dpr)
+        return scaled
+
+    def _curse_badge(self):
+        """Tarot Amulet badge (Graphics/Items/TAROTAMULET_ACTIVE.png), the
+        same icon trainer_cards.py/the website use to mark a curse-rolled
+        trainer -- loaded once and composited onto a cursed trainer's
+        sprite corner (see _sprite_pixmap), instead of resolve_display_name's
+        text-only "(Cursed)" suffix (see CURSED_TEXT_SUFFIX)."""
+        if not self._curse_badge_loaded:
+            self._curse_badge_loaded = True
+            path = os.path.join(self.config.vendor_dir, "Graphics", "Items", "TAROTAMULET_ACTIVE.png")
+            if os.path.isfile(path):
+                raw = QPixmap(path)
+                if not raw.isNull():
+                    self._curse_badge_pixmap = self._scaled_pixel_art(raw, CURSE_BADGE_SIZE)
+        return self._curse_badge_pixmap
+
+    def _sprite_pixmap(self, label):
+        """Trainer portrait sprite (Graphics/Trainers/{trainer_type}.png,
+        the same one trainer_cards.py uses), scaled down for a bracket
+        slot, with the curse badge composited onto its bottom-right corner
+        for a curse-rolled trainer. Cached per label since the same trainer
+        recurs across many matches/rounds. None if the label has no
+        card-data row yet or the sprite file is missing (e.g. a hand-typed
+        label)."""
+        if not label:
+            return None
+        if label not in self._sprite_cache:
+            pixmap = None
+            row = self._card_data().get(label)
+            trainer_type = row.get("trainer_type") if row else None
+            if trainer_type:
+                path = os.path.join(self.config.vendor_dir, "Graphics", "Trainers", f"{trainer_type}.png")
+                if os.path.isfile(path):
+                    raw = QPixmap(path)
+                    if not raw.isNull():
+                        pixmap = self._scaled_pixel_art(raw, SPRITE_SIZE)
+            if pixmap is not None and self._is_cursed(label):
+                badge = self._curse_badge()
+                if badge is not None:
+                    dpr = pixmap.devicePixelRatio()
+                    composed = QPixmap(pixmap.size())
+                    composed.setDevicePixelRatio(dpr)
+                    composed.fill(Qt.transparent)
+                    painter = QPainter(composed)
+                    painter.drawPixmap(0, 0, pixmap)
+                    # Positions are in the painter's logical coordinate
+                    # space (the composed pixmap's tagged DPR), so the
+                    # known logical sizes (not pixmap.width()/height(),
+                    # which are physical pixel counts) are what to subtract.
+                    painter.drawPixmap(SPRITE_SIZE - CURSE_BADGE_SIZE, SPRITE_SIZE - CURSE_BADGE_SIZE, badge)
+                    painter.end()
+                    pixmap = composed
+            self._sprite_cache[label] = pixmap
+        return self._sprite_cache[label]
+
     # -- rendering -----------------------------------------------------------
 
-    def _clear_rounds_ui(self):
-        while self.rounds_layout.count() > 1:
-            item = self.rounds_layout.takeAt(0)
-            widget = item.widget()
-            if widget:
-                widget.deleteLater()
-
     def _render(self):
-        self._clear_rounds_ui()
         if not self.rounds:
+            self.canvas.set_rounds([], [])
             return
         bracket_lib = self._ensure_bracket_lib()
 
+        round_names = [
+            bracket_lib.ROUND_NAMES[i] if i < len(bracket_lib.ROUND_NAMES) else f"Round {i + 1}"
+            for i in range(len(self.rounds))
+        ]
+        card_rows = []
+        footer_widths = []
         any_generation_needed = False
-        for round_idx, matches in enumerate(self.rounds):
-            box = QGroupBox(bracket_lib.ROUND_NAMES[round_idx] if round_idx < len(bracket_lib.ROUND_NAMES) else f"Round {round_idx + 1}")
-            box_layout = QVBoxLayout(box)
+        for matches in self.rounds:
+            cards = []
             for match in matches:
-                row_widget, needs_generation = self._build_match_row(match)
-                box_layout.addWidget(row_widget)
+                card, needs_generation, footer_width = self._build_match_card(match)
+                cards.append(card)
+                footer_widths.append(footer_width)
                 any_generation_needed = any_generation_needed or needs_generation
-            self.rounds_layout.insertWidget(self.rounds_layout.count() - 1, box)
+            card_rows.append(cards)
 
+        final_match = self.rounds[-1][0] if self.rounds[-1] else None
+        champion_text = None
+        if final_match and final_match.resolved:
+            champion_text = f"Champion: {self._strip_cursed_suffix(self._names.display_name(final_match.winner_label))}"
+
+        # Height still comes from the whole card's natural size (sprite
+        # rows + footer). Width deliberately ignores the entrant/name rows
+        # and is driven only by the footer row (status text + Skip/Watch/
+        # Generate buttons) -- with the curse marker now a small sprite
+        # badge rather than a "(Cursed)" text suffix, names are much less
+        # likely to be the widest thing in the card, and an unusually long
+        # one should just clip rather than widen every card and column.
+        all_cards = [card for cards in card_rows for card in cards if card is not None]
+        card_height = max((card.sizeHint().height() for card in all_cards), default=None)
+        card_width = max(footer_widths, default=None)
+
+        self.canvas.set_rounds(
+            round_names, card_rows, champion_text=champion_text, card_height=card_height, card_width=card_width
+        )
         self._any_generation_needed = any_generation_needed
 
-    def _build_match_row(self, match):
-        row = QWidget()
-        row_layout = QHBoxLayout(row)
-        row_layout.setContentsMargins(0, 0, 0, 0)
+    def _entrant_row(self, rank, label, bold=False):
+        row = QHBoxLayout()
+        row.setContentsMargins(0, 0, 0, 0)
+        row.setSpacing(4)
 
-        name_a = self._entrant_text(match.rank_a, match.label_a)
-        name_b = self._entrant_text(match.rank_b, match.label_b)
-        row_layout.addWidget(QLabel(name_a), 2)
-        row_layout.addWidget(QLabel("vs"))
-        row_layout.addWidget(QLabel(name_b), 2)
+        sprite_label = QLabel()
+        sprite_label.setFixedSize(SPRITE_SIZE, SPRITE_SIZE)
+        pixmap = self._sprite_pixmap(label)
+        if pixmap is not None:
+            sprite_label.setPixmap(pixmap)
+        row.addWidget(sprite_label)
 
+        text_label = QLabel(self._entrant_text(rank, label))
+        if bold:
+            font = text_label.font()
+            font.setBold(True)
+            text_label.setFont(font)
+        row.addWidget(text_label, 1)
+        return row
+
+    def _build_match_card(self, match):
+        card = QFrame(self.canvas)
+        card.setFrameShape(QFrame.StyledPanel)
+        layout = QVBoxLayout(card)
+        layout.setContentsMargins(6, 4, 6, 4)
+        layout.setSpacing(2)
+        layout.setAlignment(Qt.AlignTop)
+
+        winner_is_a = match.resolved and match.winner_label == match.label_a
+        winner_is_b = match.resolved and match.winner_label == match.label_b
+        layout.addLayout(self._entrant_row(match.rank_a, match.label_a, bold=winner_is_a))
+        layout.addLayout(self._entrant_row(match.rank_b, match.label_b, bold=winner_is_b))
+
+        footer = QHBoxLayout()
+        footer.setContentsMargins(0, 0, 0, 0)
         status_label = QLabel()
         needs_generation = False
 
         if not (match.ready or match.resolved):
             status_label.setText("Waiting")
-            row_layout.addWidget(status_label, 1)
-            return row, needs_generation
+            footer.addWidget(status_label, 1)
+            layout.addLayout(footer)
+            return card, needs_generation, footer.sizeHint().width()
 
         # The winner is only ever revealed by an explicit Skip, or once a
         # watched replay actually finishes (see _on_skip_clicked /
@@ -264,9 +416,9 @@ class BracketTab(QWidget):
             can_skip = bracket_lib.lookup_result(self.results_index, match.label_a, match.label_b) is not None
 
         if match.resolved:
-            status_label.setText(f"Winner: {self._names.display_name(match.winner_label)}")
+            status_label.setText("Winner")
         elif replay_state == "draw":
-            status_label.setText("Draw -- rematch!")
+            status_label.setText("Draw, rematch!")
         elif replay_state == "decisive":
             status_label.setText("Replay ready")
         else:
@@ -275,25 +427,31 @@ class BracketTab(QWidget):
         if can_skip:
             skip_button = QPushButton("Skip")
             skip_button.clicked.connect(lambda: self._on_skip_clicked(match))
-            row_layout.addWidget(skip_button)
+            footer.addWidget(skip_button)
 
         if replay_state == "decisive":
             watch_button = QPushButton("Watch")
             watch_button.clicked.connect(lambda: self._on_watch_clicked(match))
-            row_layout.addWidget(watch_button)
+            footer.addWidget(watch_button)
         else:
             needs_generation = True
             generate_button = QPushButton("Generate")
             generate_button.clicked.connect(lambda: self._on_generate_clicked(match))
-            row_layout.addWidget(generate_button)
+            footer.addWidget(generate_button)
 
-        row_layout.addWidget(status_label, 1)
-        return row, needs_generation
+        footer.addWidget(status_label, 1)
+        layout.addLayout(footer)
+        return card, needs_generation, footer.sizeHint().width()
+
+    def _strip_cursed_suffix(self, name):
+        if name.endswith(CURSED_TEXT_SUFFIX):
+            return name[: -len(CURSED_TEXT_SUFFIX)]
+        return name
 
     def _entrant_text(self, rank, label):
         if label is None:
             return "TBD"
-        return f"#{rank} {self._names.display_name(label)}"
+        return f"#{rank} {self._strip_cursed_suffix(self._names.display_name(label))}"
 
     # -- match resolution ----------------------------------------------------
 
