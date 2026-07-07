@@ -45,7 +45,7 @@ The rest of this README covers the tournament infrastructure itself — running 
 - `analysis/` — Python rating computation and reporting over `results/`:
   - `ratings.py` — Bradley-Terry trainer ratings (one-hot ±1 logistic regression via scikit-learn), per format. Safe to run against a still-in-progress tournament.
   - `report.py` — turns `ratings.py`'s output into a Markdown leaderboard.
-  - `bracket_seeds.py` / `bracket_report.py` — top-16 seed extraction and bracket-tree reporting, see "Top 16 bracket" below.
+  - `bracket_report.py` — bracket-tree reporting, see "Top 16 bracket" below.
 - `.venv/` — Python virtualenv for `analysis/` (gitignored; see "Analysis" below to recreate it).
 - `web/` — the React/Vite site published at the URL above. Reads static JSON (`web/public/data/`) produced by `analysis/export_web_data.py`; see "Website" below. Deployed automatically to GitHub Pages by `.github/workflows/deploy-web.yml` on every push to `main` that touches `web/`.
 
@@ -130,14 +130,15 @@ Resuming and selective re-runs work the same identity-based way as the local cas
 
 ## Top 16 bracket
 
-Once a tournament has produced ratings (`analysis/ratings_<format>.json`), an exhibition top-16 single-elimination bracket can be run over the highest-rated trainers, seeded NCAA-style (1v16, 8v9, ...) so the favorites stay apart for as long as possible. Every match is a fresh battle with a replay saved (`.dat`, same VS Recorder mechanism as `replay.rb`), even if that exact pairing already has a row in the sparse round-robin results — the bracket is a showcase, not more rating data.
+An exhibition top-16 single-elimination bracket can be run over a hand-curated list of 16 entrants, seeded NCAA-style (1v16, 8v9, ...) so the favorites stay apart for as long as possible. Every match is a fresh battle with a replay saved (`.dat`, same VS Recorder mechanism as `replay.rb`), even if that exact pairing already has a row in the sparse round-robin results — the bracket is a showcase, not more rating data.
+
+Seeding is manual curation, not a straight top-16-by-rating pull: some formats' true top-16 is uninteresting (one trainer overwhelmingly favored, or duplicate trainers taking multiple slots), so `results/bracket_seeds_<format>.txt` is hand-written — plain tab-separated `seed<TAB>trainer label` (blank lines and `#`-comments skipped; use `analysis/ratings_<format>.json` to see who's actually rated highest and pick from there).
 
 ```powershell
-.\.venv\Scripts\python.exe analysis\bracket_seeds.py --format singles
 .\scripts\run_bracket.ps1 -Format singles -UseDebugFlag   # -UseDebugFlag only needed the first time, to pick up bracket.rb
 .\.venv\Scripts\python.exe analysis\bracket_report.py
 ```
-`bracket_seeds.py` writes `results/bracket_seeds_<format>.txt`. `run_bracket.ps1` is a single unsharded watchdog (15 matches total, no need to shard) that resumes mid-bracket on a crash/restart the same way the round robin does — completed matches are keyed by `(round, match)` in `results/bracket_<format>_results.tsv`, not by position. `bracket_report.py` turns that into `analysis/bracket_report_<format>.md`. Replays land under `vendor/tectonic-content/VSRecorder/EloBracket/`.
+`run_bracket.ps1` is a single unsharded watchdog (15 matches total, no need to shard) that resumes mid-bracket on a crash/restart the same way the round robin does — completed matches are keyed by `(round, match)` in `results/bracket_<format>_results.tsv`, not by position. `bracket_report.py` turns that into `analysis/bracket_report_<format>.md`. Replays land under `vendor/tectonic-content/VSRecorder/EloBracket/`.
 
 A draw (or any non-decisive outcome) gets up to 5 reroll attempts with a different seed before falling back to the better seed advancing automatically; `decided_by` in the results file records which happened for each match.
 

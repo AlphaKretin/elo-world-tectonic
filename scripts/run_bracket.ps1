@@ -6,8 +6,9 @@
 # There's no need to parallelize 15 battles across shards the way the full
 # round robin needs to.
 #
-# Prereq: analysis/bracket_seeds.py must have already written
-# results/bracket_seeds_<format>.txt (top 16 from ratings_<format>.json).
+# Prereq: results/bracket_seeds_<format>.txt must already exist -- a
+# hand-curated, tab-separated (seed, trainer label) list, one line per
+# entrant. See "Top 16 bracket" in README.md.
 #
 # Pass -UseDebugFlag the first run after adding/editing bracket.rb, since
 # only a debug launch recompiles Data/PluginScripts.rxdata.
@@ -25,7 +26,7 @@ $GameDir = Join-Path $RepoRoot "vendor\tectonic-content"
 $SeedsPath = Join-Path $ResultsDir "bracket_seeds_$Format.txt"
 
 if (-not (Test-Path $SeedsPath)) {
-    Write-Error "Seeds file not found: $SeedsPath -- run '.\.venv\Scripts\python.exe analysis\bracket_seeds.py --format $Format' first."
+    Write-Error "Seeds file not found: $SeedsPath -- hand-write it (seed`ttrainer label, one per line) before running the bracket."
     exit 1
 }
 
