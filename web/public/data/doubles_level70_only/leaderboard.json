@@ -4,9 +4,9 @@
         "trainer": "Another Possible Rafael",
         "cursed": true,
         "rating": 2195.23,
-        "se": 74.34,
+        "se": 74.35,
         "ciLow": 2049.51,
-        "ciHigh": 2340.94,
+        "ciHigh": 2340.95,
         "wins": 166,
         "losses": 0,
         "draws": 0,
@@ -25,7 +25,7 @@
             "loss": 0.0
         },
         "bestWin": {
-            "rating": 2173.45,
+            "rating": 2173.46,
             "seed": 2841572081,
             "opponent": {
                 "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
@@ -40,10 +40,10 @@
         "label": "ANOTHERPOSSIBLERAFAEL:Rafael",
         "trainer": "Another Possible Rafael",
         "cursed": false,
-        "rating": 2173.45,
+        "rating": 2173.46,
         "se": 71.29,
-        "ciLow": 2033.73,
-        "ciHigh": 2313.18,
+        "ciLow": 2033.72,
+        "ciHigh": 2313.19,
         "wins": 165,
         "losses": 1,
         "draws": 0,
@@ -62,7 +62,7 @@
             "loss": 0.04
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 2915695137,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -86,10 +86,10 @@
         "label": "LEADER_Bence:Bence#3",
         "trainer": "Gym Leader Bence #2",
         "cursed": true,
-        "rating": 1934.97,
+        "rating": 1934.95,
         "se": 46.31,
-        "ciLow": 1844.21,
-        "ciHigh": 2025.73,
+        "ciLow": 1844.19,
+        "ciHigh": 2025.72,
         "wins": 150,
         "losses": 16,
         "draws": 0,
@@ -108,7 +108,7 @@
             "loss": 0.0963855421686747
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 2352872655,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -118,7 +118,7 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1434.67,
+            "rating": 1434.66,
             "seed": 3576406003,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#14",
@@ -132,10 +132,10 @@
         "label": "FORMERCHAMP_Elise:Elise#2",
         "trainer": "Former Champion Elise #2",
         "cursed": true,
-        "rating": 1881.57,
+        "rating": 1881.55,
         "se": 42.9,
-        "ciLow": 1797.48,
-        "ciHigh": 1965.65,
+        "ciLow": 1797.46,
+        "ciHigh": 1965.63,
         "wins": 143,
         "losses": 21,
         "draws": 2,
@@ -154,7 +154,7 @@
             "loss": 0.12384288747346071
         },
         "bestWin": {
-            "rating": 1808.55,
+            "rating": 1808.53,
             "seed": 2463500997,
             "opponent": {
                 "label": "TRAINER_Sang:Sang#5",
@@ -178,10 +178,10 @@
         "label": "MASKEDVILLAIN2:Teal#23",
         "trainer": "Masked Villain Teal [Candy] #2",
         "cursed": true,
-        "rating": 1874.11,
+        "rating": 1874.09,
         "se": 42.28,
-        "ciLow": 1791.24,
-        "ciHigh": 1956.97,
+        "ciLow": 1791.22,
+        "ciHigh": 1956.95,
         "wins": 144,
         "losses": 22,
         "draws": 0,
@@ -200,7 +200,7 @@
             "loss": 0.13253012048192772
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 2149482967,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -210,24 +210,24 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1468.85,
+            "rating": 1468.84,
             "seed": 3010246467,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte",
                 "display": "Spirit Guardian Brigitte",
                 "cursed": false
             },
-            "opponentRank": 96
+            "opponentRank": 95
         }
     },
     {
         "label": "POKEMONTRAINER_Vanya:Vanya#2",
         "trainer": "Pok\u00e9mon Trainer Vanya #3",
         "cursed": false,
-        "rating": 1837.56,
+        "rating": 1837.59,
         "se": 40.41,
-        "ciLow": 1758.36,
-        "ciHigh": 1916.77,
+        "ciLow": 1758.38,
+        "ciHigh": 1916.79,
         "wins": 139,
         "losses": 26,
         "draws": 1,
@@ -246,7 +246,7 @@
             "loss": 0.15229106248352228
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 11082707,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -256,7 +256,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 3805294228,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -270,10 +270,10 @@
         "label": "SPIRITGUARDIAN4:Brigitte#1",
         "trainer": "Spirit Guardian Brigitte",
         "cursed": true,
-        "rating": 1816.11,
+        "rating": 1816.09,
         "se": 39.19,
-        "ciLow": 1739.29,
-        "ciHigh": 1892.93,
+        "ciLow": 1739.26,
+        "ciHigh": 1892.91,
         "wins": 137,
         "losses": 29,
         "draws": 0,
@@ -292,7 +292,7 @@
             "loss": 0.1746987951807229
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 2521012073,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -302,7 +302,7 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1222.98,
+            "rating": 1223.0,
             "seed": 2040256671,
             "opponent": {
                 "label": "LADY4:Pria",
@@ -316,10 +316,10 @@
         "label": "TRAINER_Sang:Sang#5",
         "trainer": "Pok\u00e9mon Trainer Sang #2",
         "cursed": true,
-        "rating": 1808.55,
+        "rating": 1808.53,
         "se": 38.84,
-        "ciLow": 1732.42,
-        "ciHigh": 1884.68,
+        "ciLow": 1732.4,
+        "ciHigh": 1884.66,
         "wins": 136,
         "losses": 30,
         "draws": 0,
@@ -338,7 +338,7 @@
             "loss": 0.18072289156626506
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 2421807625,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -355,17 +355,17 @@
                 "display": "Masked Villain Crimson [Keoni] #2",
                 "cursed": false
             },
-            "opponentRank": 132
+            "opponentRank": 133
         }
     },
     {
         "label": "COOLTRAINER_M7:X#1",
         "trainer": "Pro Trainer X",
         "cursed": true,
-        "rating": 1801.13,
+        "rating": 1801.1,
         "se": 38.51,
-        "ciLow": 1725.65,
-        "ciHigh": 1876.6,
+        "ciLow": 1725.63,
+        "ciHigh": 1876.58,
         "wins": 135,
         "losses": 31,
         "draws": 0,
@@ -384,7 +384,7 @@
             "loss": 0.18674698795180722
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 1511599948,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -394,7 +394,7 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1290.71,
+            "rating": 1290.72,
             "seed": 1721788727,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#20",
@@ -408,10 +408,10 @@
         "label": "MASKEDVILLAIN2:Teal#15",
         "trainer": "Masked Villain Teal [Alessa] #2",
         "cursed": true,
-        "rating": 1793.82,
+        "rating": 1793.8,
         "se": 38.19,
-        "ciLow": 1718.97,
-        "ciHigh": 1868.67,
+        "ciLow": 1718.95,
+        "ciHigh": 1868.65,
         "wins": 134,
         "losses": 32,
         "draws": 0,
@@ -430,7 +430,7 @@
             "loss": 0.1927710843373494
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 342372722,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -440,7 +440,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 1919921476,
             "opponent": {
                 "label": "JUGGLER:Brickbat",
@@ -454,16 +454,16 @@
         "label": "LEADER_Helena:Helena#3",
         "trainer": "Gym Leader Helena #2",
         "cursed": true,
-        "rating": 1786.62,
+        "rating": 1786.6,
         "se": 37.88,
-        "ciLow": 1712.37,
-        "ciHigh": 1860.87,
+        "ciLow": 1712.35,
+        "ciHigh": 1860.85,
         "wins": 133,
         "losses": 33,
         "draws": 0,
         "battles": 166,
         "rank": 11,
-        "overlap": 17,
+        "overlap": 18,
         "tier": "A",
         "tierColor": [
             255,
@@ -476,7 +476,7 @@
             "loss": 0.19879518072289157
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 3441475375,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -486,7 +486,7 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1417.55,
+            "rating": 1417.53,
             "seed": 1351358468,
             "opponent": {
                 "label": "ROUGHNECK2:Jaggedthorn",
@@ -500,10 +500,10 @@
         "label": "TRAINER_Candy:Candy#1",
         "trainer": "Pok\u00e9mon Trainer Candy #2",
         "cursed": false,
-        "rating": 1779.52,
+        "rating": 1779.5,
         "se": 37.59,
-        "ciLow": 1705.84,
-        "ciHigh": 1853.2,
+        "ciLow": 1705.82,
+        "ciHigh": 1853.18,
         "wins": 132,
         "losses": 34,
         "draws": 0,
@@ -522,7 +522,7 @@
             "loss": 0.20481927710843373
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 1441386617,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -546,10 +546,10 @@
         "label": "TOURISTM:Azeler",
         "trainer": "Developer Azeler",
         "cursed": false,
-        "rating": 1778.52,
+        "rating": 1778.5,
         "se": 38.01,
-        "ciLow": 1704.02,
-        "ciHigh": 1853.02,
+        "ciLow": 1704.0,
+        "ciHigh": 1853.0,
         "wins": 130,
         "losses": 33,
         "draws": 3,
@@ -568,7 +568,7 @@
             "loss": 0.194934544483035
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 3909532249,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -578,7 +578,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 1082589747,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -592,10 +592,10 @@
         "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
         "trainer": "Masked Villains Teal [Imogene] #2",
         "cursed": true,
-        "rating": 1778.42,
+        "rating": 1778.4,
         "se": 37.63,
-        "ciLow": 1704.66,
-        "ciHigh": 1852.18,
+        "ciLow": 1704.64,
+        "ciHigh": 1852.16,
         "wins": 131,
         "losses": 34,
         "draws": 1,
@@ -614,7 +614,7 @@
             "loss": 0.19869232797258107
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 1712188174,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -638,10 +638,10 @@
         "label": "NIGHTMAREQUEEN_Elise:Elise#1",
         "trainer": "Nightmare Queen Elise",
         "cursed": true,
-        "rating": 1772.51,
+        "rating": 1772.48,
         "se": 37.31,
-        "ciLow": 1699.37,
-        "ciHigh": 1845.64,
+        "ciLow": 1699.35,
+        "ciHigh": 1845.62,
         "wins": 131,
         "losses": 35,
         "draws": 0,
@@ -660,7 +660,7 @@
             "loss": 0.21084337349397592
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 3987059811,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -670,7 +670,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1297.14,
+            "rating": 1297.15,
             "seed": 3249679477,
             "opponent": {
                 "label": "ANOTHERPOSSIBLEZAIN:Zain",
@@ -684,10 +684,10 @@
         "label": "ODDISH:Oddium",
         "trainer": "Developer Oddium",
         "cursed": false,
-        "rating": 1772.51,
+        "rating": 1772.48,
         "se": 37.31,
-        "ciLow": 1699.37,
-        "ciHigh": 1845.64,
+        "ciLow": 1699.35,
+        "ciHigh": 1845.62,
         "wins": 131,
         "losses": 35,
         "draws": 0,
@@ -706,7 +706,7 @@
             "loss": 0.21084337349397592
         },
         "bestWin": {
-            "rating": 1808.55,
+            "rating": 1808.53,
             "seed": 4142004414,
             "opponent": {
                 "label": "TRAINER_Sang:Sang#5",
@@ -730,10 +730,10 @@
         "label": "SPIRITGUARDIAN3:Preeti#1",
         "trainer": "Spirit Guardian Preeti",
         "cursed": true,
-        "rating": 1772.51,
+        "rating": 1772.48,
         "se": 37.31,
-        "ciLow": 1699.37,
-        "ciHigh": 1845.64,
+        "ciLow": 1699.35,
+        "ciHigh": 1845.62,
         "wins": 131,
         "losses": 35,
         "draws": 0,
@@ -752,7 +752,7 @@
             "loss": 0.21084337349397592
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 3437206639,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -762,7 +762,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1290.71,
+            "rating": 1290.72,
             "seed": 2303517656,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#20",
@@ -776,10 +776,10 @@
         "label": "MASKEDVILLAIN:Crimson#23",
         "trainer": "Masked Villain Crimson [Candy] #2",
         "cursed": true,
-        "rating": 1763.07,
+        "rating": 1763.05,
         "se": 37.09,
-        "ciLow": 1690.37,
-        "ciHigh": 1835.77,
+        "ciLow": 1690.34,
+        "ciHigh": 1835.75,
         "wins": 129,
         "losses": 36,
         "draws": 1,
@@ -798,7 +798,7 @@
             "loss": 0.21029264434484576
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 1438784210,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -822,10 +822,10 @@
         "label": "POKEMONTRAINER_Vanya:Vanya#3",
         "trainer": "Pok\u00e9mon Trainer Vanya #4",
         "cursed": false,
-        "rating": 1750.65,
+        "rating": 1750.63,
         "se": 36.59,
-        "ciLow": 1678.94,
-        "ciHigh": 1822.37,
+        "ciLow": 1678.91,
+        "ciHigh": 1822.35,
         "wins": 127,
         "losses": 38,
         "draws": 1,
@@ -844,7 +844,7 @@
             "loss": 0.22189296071711045
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 1864158978,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -868,10 +868,10 @@
         "label": "MASKEDVILLAIN2:Teal#17",
         "trainer": "Masked Villain Teal [Skyler] #2",
         "cursed": true,
-        "rating": 1738.51,
+        "rating": 1738.49,
         "se": 36.08,
-        "ciLow": 1667.79,
-        "ciHigh": 1809.24,
+        "ciLow": 1667.76,
+        "ciHigh": 1809.22,
         "wins": 126,
         "losses": 40,
         "draws": 0,
@@ -890,7 +890,7 @@
             "loss": 0.24096385542168675
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 2823397488,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -900,7 +900,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 430365550,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#20",
@@ -914,10 +914,10 @@
         "label": "TOURISTM:Chus",
         "trainer": "Developer Chus",
         "cursed": false,
-        "rating": 1734.16,
+        "rating": 1734.14,
         "se": 36.13,
-        "ciLow": 1663.33,
-        "ciHigh": 1804.98,
+        "ciLow": 1663.31,
+        "ciHigh": 1804.96,
         "wins": 124,
         "losses": 40,
         "draws": 2,
@@ -936,7 +936,7 @@
             "loss": 0.23477707006369428
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 3056116849,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -946,7 +946,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1249.82,
+            "rating": 1249.84,
             "seed": 799290605,
             "opponent": {
                 "label": "IDEALTRAINER:of Origins",
@@ -960,10 +960,10 @@
         "label": "POKEMONTRAINER_Yezera:Yezera#11",
         "trainer": "Pok\u00e9mon Trainer Yezera #6",
         "cursed": true,
-        "rating": 1723.83,
+        "rating": 1723.81,
         "se": 35.71,
-        "ciLow": 1653.84,
-        "ciHigh": 1793.82,
+        "ciLow": 1653.82,
+        "ciHigh": 1793.8,
         "wins": 123,
         "losses": 42,
         "draws": 1,
@@ -982,7 +982,7 @@
             "loss": 0.24509359346163984
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 1529378869,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -992,7 +992,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 3066798679,
             "opponent": {
                 "label": "JUGGLER:Brickbat",
@@ -1006,10 +1006,10 @@
         "label": "LEADER_Eko:Eko#3",
         "trainer": "Gym Leader Eko #2",
         "cursed": true,
-        "rating": 1719.51,
+        "rating": 1719.48,
         "se": 35.75,
-        "ciLow": 1649.45,
-        "ciHigh": 1789.57,
+        "ciLow": 1649.42,
+        "ciHigh": 1789.55,
         "wins": 121,
         "losses": 42,
         "draws": 3,
@@ -1028,7 +1028,7 @@
             "loss": 0.24783328880577074
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 2639626391,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1049,65 +1049,19 @@
         }
     },
     {
-        "label": "MASKEDVILLAIN:Crimson#22",
-        "trainer": "Masked Villain Crimson [Candy] #2",
-        "cursed": false,
-        "rating": 1712.36,
-        "se": 35.27,
-        "ciLow": 1643.23,
-        "ciHigh": 1781.49,
-        "wins": 122,
-        "losses": 44,
-        "draws": 0,
-        "battles": 166,
-        "rank": 24,
-        "overlap": 24,
-        "tier": "A-",
-        "tierColor": [
-            255,
-            93,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.7349397590361446,
-            "draw": 0.0,
-            "loss": 0.26506024096385544
-        },
-        "bestWin": {
-            "rating": 1786.62,
-            "seed": 3509075135,
-            "opponent": {
-                "label": "LEADER_Helena:Helena#3",
-                "display": "Gym Leader Helena #2",
-                "cursed": true
-            },
-            "opponentRank": 11
-        },
-        "worstLoss": {
-            "rating": 1439.69,
-            "seed": 4188398293,
-            "opponent": {
-                "label": "POKEMONMASTER_Vanya:Vanya#21",
-                "display": "Pok\u00e9mon Master Vanya #21",
-                "cursed": false
-            },
-            "opponentRank": 110
-        }
-    },
-    {
         "label": "VETERANM_2:Kirbae",
         "trainer": "Developer Kirbae",
         "cursed": false,
-        "rating": 1712.36,
-        "se": 35.27,
-        "ciLow": 1643.23,
-        "ciHigh": 1781.49,
-        "wins": 122,
-        "losses": 44,
+        "rating": 1718.8,
+        "se": 35.46,
+        "ciLow": 1649.3,
+        "ciHigh": 1788.3,
+        "wins": 123,
+        "losses": 43,
         "draws": 0,
         "battles": 166,
-        "rank": 25,
-        "overlap": 24,
+        "rank": 24,
+        "overlap": 22,
         "tier": "A-",
         "tierColor": [
             255,
@@ -1115,12 +1069,12 @@
             0
         ],
         "wldFractions": {
-            "win": 0.7349397590361446,
+            "win": 0.7409638554216867,
             "draw": 0.0,
-            "loss": 0.26506024096385544
+            "loss": 0.25903614457831325
         },
         "bestWin": {
-            "rating": 1808.55,
+            "rating": 1808.53,
             "seed": 280741172,
             "opponent": {
                 "label": "TRAINER_Sang:Sang#5",
@@ -1141,19 +1095,65 @@
         }
     },
     {
+        "label": "MASKEDVILLAIN:Crimson#22",
+        "trainer": "Masked Villain Crimson [Candy] #2",
+        "cursed": false,
+        "rating": 1712.34,
+        "se": 35.27,
+        "ciLow": 1643.21,
+        "ciHigh": 1781.47,
+        "wins": 122,
+        "losses": 44,
+        "draws": 0,
+        "battles": 166,
+        "rank": 25,
+        "overlap": 24,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.7349397590361446,
+            "draw": 0.0,
+            "loss": 0.26506024096385544
+        },
+        "bestWin": {
+            "rating": 1786.6,
+            "seed": 3509075135,
+            "opponent": {
+                "label": "LEADER_Helena:Helena#3",
+                "display": "Gym Leader Helena #2",
+                "cursed": true
+            },
+            "opponentRank": 11
+        },
+        "worstLoss": {
+            "rating": 1439.67,
+            "seed": 4188398293,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#21",
+                "display": "Pok\u00e9mon Master Vanya #21",
+                "cursed": false
+            },
+            "opponentRank": 110
+        }
+    },
+    {
         "label": "HEXMANIAC:Errata",
         "trainer": "Developer Errata",
         "cursed": false,
-        "rating": 1699.59,
+        "rating": 1699.57,
         "se": 34.91,
-        "ciLow": 1631.16,
-        "ciHigh": 1768.01,
+        "ciLow": 1631.14,
+        "ciHigh": 1767.99,
         "wins": 120,
         "losses": 46,
         "draws": 0,
         "battles": 166,
         "rank": 26,
-        "overlap": 24,
+        "overlap": 23,
         "tier": "A-",
         "tierColor": [
             255,
@@ -1166,7 +1166,7 @@
             "loss": 0.27710843373493976
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 3181246542,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1176,7 +1176,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1249.82,
+            "rating": 1249.84,
             "seed": 3571298546,
             "opponent": {
                 "label": "IDEALTRAINER:of Origins",
@@ -1190,10 +1190,10 @@
         "label": "SPIRITGUARDIAN3:Preeti",
         "trainer": "Spirit Guardian Preeti",
         "cursed": false,
-        "rating": 1693.27,
+        "rating": 1693.26,
         "se": 34.74,
-        "ciLow": 1625.18,
-        "ciHigh": 1761.37,
+        "ciLow": 1625.16,
+        "ciHigh": 1761.35,
         "wins": 119,
         "losses": 47,
         "draws": 0,
@@ -1212,7 +1212,7 @@
             "loss": 0.28313253012048195
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 3412353309,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1222,7 +1222,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 667853308,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -1236,10 +1236,10 @@
         "label": "TRAINER_Eifion:Eifion#2",
         "trainer": "Pok\u00e9mon Trainer Eifion #2",
         "cursed": true,
-        "rating": 1689.74,
+        "rating": 1689.72,
         "se": 34.86,
-        "ciLow": 1621.42,
-        "ciHigh": 1758.06,
+        "ciLow": 1621.4,
+        "ciHigh": 1758.04,
         "wins": 117,
         "losses": 47,
         "draws": 2,
@@ -1258,7 +1258,7 @@
             "loss": 0.2756475583864119
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 30715278,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1268,7 +1268,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1285.78,
+            "rating": 1279.27,
             "seed": 1171006711,
             "opponent": {
                 "label": "IDEALTRAINER:of Tradition",
@@ -1282,16 +1282,16 @@
         "label": "NIGHTMAREQUEEN_Elise:Elise",
         "trainer": "Nightmare Queen Elise",
         "cursed": false,
-        "rating": 1687.01,
-        "se": 34.58,
-        "ciLow": 1619.23,
-        "ciHigh": 1754.8,
-        "wins": 118,
-        "losses": 48,
+        "rating": 1680.79,
+        "se": 34.43,
+        "ciLow": 1613.3,
+        "ciHigh": 1748.27,
+        "wins": 117,
+        "losses": 49,
         "draws": 0,
         "battles": 166,
         "rank": 29,
-        "overlap": 29,
+        "overlap": 28,
         "tier": "B+",
         "tierColor": [
             255,
@@ -1299,12 +1299,12 @@
             0
         ],
         "wldFractions": {
-            "win": 0.7108433734939759,
+            "win": 0.7048192771084337,
             "draw": 0.0,
-            "loss": 0.2891566265060241
+            "loss": 0.29518072289156627
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 1364158481,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1314,24 +1314,24 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1237.11,
+            "rating": 1244.06,
             "seed": 530419964,
             "opponent": {
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
             },
-            "opponentRank": 155
+            "opponentRank": 154
         }
     },
     {
         "label": "SHADOWMAVIS:Mavis#1",
         "trainer": "Shadow Mavis #2",
         "cursed": false,
-        "rating": 1680.8,
+        "rating": 1680.79,
         "se": 34.43,
-        "ciLow": 1613.32,
-        "ciHigh": 1748.29,
+        "ciLow": 1613.3,
+        "ciHigh": 1748.27,
         "wins": 117,
         "losses": 49,
         "draws": 0,
@@ -1350,7 +1350,7 @@
             "loss": 0.29518072289156627
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 2864645859,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1360,7 +1360,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1285.78,
+            "rating": 1279.27,
             "seed": 1354350842,
             "opponent": {
                 "label": "IDEALTRAINER:of Tradition",
@@ -1374,10 +1374,10 @@
         "label": "WAITRESS3:Destiny",
         "trainer": "Developer Destiny",
         "cursed": false,
-        "rating": 1673.26,
+        "rating": 1673.21,
         "se": 34.34,
-        "ciLow": 1605.96,
-        "ciHigh": 1740.57,
+        "ciLow": 1605.9,
+        "ciHigh": 1740.52,
         "wins": 115,
         "losses": 50,
         "draws": 1,
@@ -1396,7 +1396,7 @@
             "loss": 0.29149485895069865
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 22373984,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1420,16 +1420,16 @@
         "label": "MASKEDVILLAIN2:Teal#22",
         "trainer": "Masked Villain Teal [Candy] #2",
         "cursed": false,
-        "rating": 1662.49,
+        "rating": 1662.47,
         "se": 34.01,
-        "ciLow": 1595.83,
-        "ciHigh": 1729.16,
+        "ciLow": 1595.81,
+        "ciHigh": 1729.14,
         "wins": 114,
         "losses": 52,
         "draws": 0,
         "battles": 166,
         "rank": 32,
-        "overlap": 28,
+        "overlap": 29,
         "tier": "B+",
         "tierColor": [
             255,
@@ -1442,7 +1442,7 @@
             "loss": 0.3132530120481928
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 2855491062,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -1466,16 +1466,16 @@
         "label": "POKEMONCHAMPION_Vanya:Vanya",
         "trainer": "Champion Vanya",
         "cursed": false,
-        "rating": 1650.56,
+        "rating": 1650.54,
         "se": 33.77,
-        "ciLow": 1584.38,
-        "ciHigh": 1716.74,
+        "ciLow": 1584.36,
+        "ciHigh": 1716.72,
         "wins": 112,
         "losses": 54,
         "draws": 0,
         "battles": 166,
         "rank": 33,
-        "overlap": 28,
+        "overlap": 27,
         "tier": "B",
         "tierColor": [
             255,
@@ -1488,7 +1488,7 @@
             "loss": 0.3253012048192771
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 967010758,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -1512,16 +1512,16 @@
         "label": "MASKEDVILLAIN2:Teal#21",
         "trainer": "Masked Villain Teal [Eifion] #2",
         "cursed": true,
-        "rating": 1649.11,
+        "rating": 1649.09,
         "se": 33.83,
-        "ciLow": 1582.8,
-        "ciHigh": 1715.41,
+        "ciLow": 1582.78,
+        "ciHigh": 1715.39,
         "wins": 111,
         "losses": 54,
         "draws": 1,
         "battles": 166,
         "rank": 34,
-        "overlap": 29,
+        "overlap": 28,
         "tier": "B",
         "tierColor": [
             255,
@@ -1534,7 +1534,7 @@
             "loss": 0.31469549169522804
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 1919968641,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1544,7 +1544,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1285.78,
+            "rating": 1279.27,
             "seed": 2841838220,
             "opponent": {
                 "label": "IDEALTRAINER:of Tradition",
@@ -1558,10 +1558,10 @@
         "label": "PUNKM:ValourDyke",
         "trainer": "Developer ValourDyke",
         "cursed": false,
-        "rating": 1644.68,
+        "rating": 1644.66,
         "se": 33.65,
-        "ciLow": 1578.72,
-        "ciHigh": 1710.64,
+        "ciLow": 1578.71,
+        "ciHigh": 1710.62,
         "wins": 111,
         "losses": 55,
         "draws": 0,
@@ -1580,7 +1580,7 @@
             "loss": 0.3313253012048193
         },
         "bestWin": {
-            "rating": 1772.51,
+            "rating": 1772.48,
             "seed": 2997742830,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -1590,7 +1590,7 @@
             "opponentRank": 15
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 531892061,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -1604,10 +1604,10 @@
         "label": "TRAINER_Alessa:Alessa#6",
         "trainer": "Pok\u00e9mon Trainer Alessa #5",
         "cursed": false,
-        "rating": 1644.68,
+        "rating": 1644.66,
         "se": 33.65,
-        "ciLow": 1578.72,
-        "ciHigh": 1710.64,
+        "ciLow": 1578.71,
+        "ciHigh": 1710.62,
         "wins": 111,
         "losses": 55,
         "draws": 0,
@@ -1626,7 +1626,7 @@
             "loss": 0.3313253012048193
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 3726124842,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -1636,7 +1636,7 @@
             "opponentRank": 11
         },
         "worstLoss": {
-            "rating": 1285.78,
+            "rating": 1279.27,
             "seed": 3349291027,
             "opponent": {
                 "label": "IDEALTRAINER:of Tradition",
@@ -1650,10 +1650,10 @@
         "label": "FORMERCHAMP_Elise:Elise#1",
         "trainer": "Former Champion Elise #2",
         "cursed": false,
-        "rating": 1638.86,
+        "rating": 1638.84,
         "se": 33.54,
-        "ciLow": 1573.11,
-        "ciHigh": 1704.6,
+        "ciLow": 1573.09,
+        "ciHigh": 1704.58,
         "wins": 110,
         "losses": 56,
         "draws": 0,
@@ -1672,7 +1672,7 @@
             "loss": 0.3373493975903614
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 3374029804,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -1696,10 +1696,10 @@
         "label": "TRAINER_Alessa:Alessa#4",
         "trainer": "Pok\u00e9mon Trainer Alessa #3",
         "cursed": true,
-        "rating": 1638.86,
+        "rating": 1638.84,
         "se": 33.54,
-        "ciLow": 1573.11,
-        "ciHigh": 1704.6,
+        "ciLow": 1573.09,
+        "ciHigh": 1704.58,
         "wins": 110,
         "losses": 56,
         "draws": 0,
@@ -1718,7 +1718,7 @@
             "loss": 0.3373493975903614
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 2043953340,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1728,7 +1728,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 4191207497,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -1742,10 +1742,10 @@
         "label": "TRAINER_Zain:Zain#3",
         "trainer": "Your Brother Zain #2",
         "cursed": true,
-        "rating": 1638.86,
+        "rating": 1638.84,
         "se": 33.54,
-        "ciLow": 1573.11,
-        "ciHigh": 1704.6,
+        "ciLow": 1573.09,
+        "ciHigh": 1704.58,
         "wins": 110,
         "losses": 56,
         "draws": 0,
@@ -1764,7 +1764,7 @@
             "loss": 0.3373493975903614
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 2329787195,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -1774,7 +1774,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1285.78,
+            "rating": 1279.27,
             "seed": 4179677686,
             "opponent": {
                 "label": "IDEALTRAINER:of Tradition",
@@ -1785,16 +1785,16 @@
         }
     },
     {
-        "label": "POKEMONTRAINER_Vanya:Vanya#1",
-        "trainer": "Pok\u00e9mon Trainer Vanya #2",
-        "cursed": false,
-        "rating": 1634.99,
-        "se": 33.56,
-        "ciLow": 1569.22,
-        "ciHigh": 1700.76,
+        "label": "LEADER_Lambert:Lambert#3",
+        "trainer": "Gym Leader Lambert #2",
+        "cursed": true,
+        "rating": 1633.08,
+        "se": 33.44,
+        "ciLow": 1567.53,
+        "ciHigh": 1698.62,
         "wins": 109,
-        "losses": 56,
-        "draws": 1,
+        "losses": 57,
+        "draws": 0,
         "battles": 166,
         "rank": 40,
         "overlap": 30,
@@ -1805,12 +1805,150 @@
             0
         ],
         "wldFractions": {
-            "win": 0.6337041919325072,
-            "draw": 0.04,
-            "loss": 0.3262958080674927
+            "win": 0.6566265060240963,
+            "draw": 0.0,
+            "loss": 0.3433734939759036
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1874.09,
+            "seed": 3554862999,
+            "opponent": {
+                "label": "MASKEDVILLAIN2:Teal#23",
+                "display": "Masked Villain Teal [Candy] #2",
+                "cursed": true
+            },
+            "opponentRank": 5
+        },
+        "worstLoss": {
+            "rating": 1244.06,
+            "seed": 4151714861,
+            "opponent": {
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
+                "cursed": false
+            },
+            "opponentRank": 155
+        }
+    },
+    {
+        "label": "LEADER_Samorn:Samorn#3",
+        "trainer": "Gym Leader Samorn #2",
+        "cursed": true,
+        "rating": 1632.51,
+        "se": 33.7,
+        "ciLow": 1566.47,
+        "ciHigh": 1698.55,
+        "wins": 107,
+        "losses": 56,
+        "draws": 3,
+        "battles": 166,
+        "rank": 41,
+        "overlap": 30,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6298797755810848,
+            "draw": 0.04,
+            "loss": 0.3301202244189153
+        },
+        "bestWin": {
+            "rating": 1801.1,
+            "seed": 3692155456,
+            "opponent": {
+                "label": "COOLTRAINER_M7:X#1",
+                "display": "Pro Trainer X",
+                "cursed": true
+            },
+            "opponentRank": 9
+        },
+        "worstLoss": {
+            "rating": 1249.84,
+            "seed": 2223797131,
+            "opponent": {
+                "label": "IDEALTRAINER:of Origins",
+                "display": "Ideal Trainer of Origins",
+                "cursed": false
+            },
+            "opponentRank": 153
+        }
+    },
+    {
+        "label": "FORMERCHAMP_Elise:Elise",
+        "trainer": "Former Champion Elise #1",
+        "cursed": false,
+        "rating": 1631.02,
+        "se": 33.51,
+        "ciLow": 1565.34,
+        "ciHigh": 1696.7,
+        "wins": 108,
+        "losses": 57,
+        "draws": 1,
+        "battles": 166,
+        "rank": 42,
+        "overlap": 30,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6279040337463749,
+            "draw": 0.04,
+            "loss": 0.3320959662536251
+        },
+        "bestWin": {
+            "rating": 1816.09,
+            "seed": 1864714360,
+            "opponent": {
+                "label": "SPIRITGUARDIAN4:Brigitte#1",
+                "display": "Spirit Guardian Brigitte",
+                "cursed": true
+            },
+            "opponentRank": 7
+        },
+        "worstLoss": {
+            "rating": 1226.93,
+            "seed": 3155006388,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya",
+                "display": "Pok\u00e9mon Master Vanya #1",
+                "cursed": false
+            },
+            "opponentRank": 157
+        }
+    },
+    {
+        "label": "POKEMONTRAINER_Vanya:Vanya#1",
+        "trainer": "Pok\u00e9mon Trainer Vanya #2",
+        "cursed": false,
+        "rating": 1629.23,
+        "se": 33.45,
+        "ciLow": 1563.65,
+        "ciHigh": 1694.8,
+        "wins": 108,
+        "losses": 57,
+        "draws": 1,
+        "battles": 166,
+        "rank": 43,
+        "overlap": 30,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6279040337463749,
+            "draw": 0.04,
+            "loss": 0.3320959662536251
+        },
+        "bestWin": {
+            "rating": 1816.09,
             "seed": 396740054,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -1831,151 +1969,13 @@
         }
     },
     {
-        "label": "LEADER_Lambert:Lambert#3",
-        "trainer": "Gym Leader Lambert #2",
-        "cursed": true,
-        "rating": 1633.1,
-        "se": 33.44,
-        "ciLow": 1567.55,
-        "ciHigh": 1698.64,
-        "wins": 109,
-        "losses": 57,
-        "draws": 0,
-        "battles": 166,
-        "rank": 41,
-        "overlap": 30,
-        "tier": "B",
-        "tierColor": [
-            255,
-            214,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.6566265060240963,
-            "draw": 0.0,
-            "loss": 0.3433734939759036
-        },
-        "bestWin": {
-            "rating": 1874.11,
-            "seed": 3554862999,
-            "opponent": {
-                "label": "MASKEDVILLAIN2:Teal#23",
-                "display": "Masked Villain Teal [Candy] #2",
-                "cursed": true
-            },
-            "opponentRank": 5
-        },
-        "worstLoss": {
-            "rating": 1244.05,
-            "seed": 4151714861,
-            "opponent": {
-                "label": "HEXMANIAC:Lichenprincess",
-                "display": "Developer Lichenprincess",
-                "cursed": false
-            },
-            "opponentRank": 154
-        }
-    },
-    {
-        "label": "LEADER_Samorn:Samorn#3",
-        "trainer": "Gym Leader Samorn #2",
-        "cursed": true,
-        "rating": 1632.53,
-        "se": 33.7,
-        "ciLow": 1566.49,
-        "ciHigh": 1698.57,
-        "wins": 107,
-        "losses": 56,
-        "draws": 3,
-        "battles": 166,
-        "rank": 42,
-        "overlap": 30,
-        "tier": "B",
-        "tierColor": [
-            255,
-            214,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.6298797755810848,
-            "draw": 0.04,
-            "loss": 0.3301202244189153
-        },
-        "bestWin": {
-            "rating": 1801.13,
-            "seed": 3692155456,
-            "opponent": {
-                "label": "COOLTRAINER_M7:X#1",
-                "display": "Pro Trainer X",
-                "cursed": true
-            },
-            "opponentRank": 9
-        },
-        "worstLoss": {
-            "rating": 1249.82,
-            "seed": 2223797131,
-            "opponent": {
-                "label": "IDEALTRAINER:of Origins",
-                "display": "Ideal Trainer of Origins",
-                "cursed": false
-            },
-            "opponentRank": 153
-        }
-    },
-    {
-        "label": "FORMERCHAMP_Elise:Elise",
-        "trainer": "Former Champion Elise #1",
-        "cursed": false,
-        "rating": 1631.04,
-        "se": 33.51,
-        "ciLow": 1565.36,
-        "ciHigh": 1696.72,
-        "wins": 108,
-        "losses": 57,
-        "draws": 1,
-        "battles": 166,
-        "rank": 43,
-        "overlap": 30,
-        "tier": "B",
-        "tierColor": [
-            255,
-            214,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.6279040337463749,
-            "draw": 0.04,
-            "loss": 0.3320959662536251
-        },
-        "bestWin": {
-            "rating": 1816.11,
-            "seed": 1864714360,
-            "opponent": {
-                "label": "SPIRITGUARDIAN4:Brigitte#1",
-                "display": "Spirit Guardian Brigitte",
-                "cursed": true
-            },
-            "opponentRank": 7
-        },
-        "worstLoss": {
-            "rating": 1226.91,
-            "seed": 3155006388,
-            "opponent": {
-                "label": "POKEMONMASTER_Vanya:Vanya",
-                "display": "Pok\u00e9mon Master Vanya #1",
-                "cursed": false
-            },
-            "opponentRank": 157
-        }
-    },
-    {
         "label": "TAPU_BULU:Tapu Bulu#1",
         "trainer": "Guardian Deity Tapu Bulu",
         "cursed": true,
-        "rating": 1627.39,
+        "rating": 1627.37,
         "se": 33.34,
-        "ciLow": 1562.04,
-        "ciHigh": 1692.75,
+        "ciLow": 1562.02,
+        "ciHigh": 1692.73,
         "wins": 108,
         "losses": 58,
         "draws": 0,
@@ -1994,7 +1994,7 @@
             "loss": 0.3493975903614458
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 1836077686,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -2004,7 +2004,7 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 1890442032,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -2018,10 +2018,10 @@
         "label": "ULTRALAINIE:Lainie",
         "trainer": "Ultra Lainie",
         "cursed": false,
-        "rating": 1627.39,
+        "rating": 1627.37,
         "se": 33.34,
-        "ciLow": 1562.04,
-        "ciHigh": 1692.75,
+        "ciLow": 1562.02,
+        "ciHigh": 1692.73,
         "wins": 108,
         "losses": 58,
         "draws": 0,
@@ -2040,7 +2040,7 @@
             "loss": 0.3493975903614458
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 1768274985,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -2050,7 +2050,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 648454815,
             "opponent": {
                 "label": "JUGGLER:Brickbat",
@@ -2064,10 +2064,10 @@
         "label": "SCIENTIST_F:LunaFlare",
         "trainer": "Developer LunaFlare",
         "cursed": false,
-        "rating": 1625.8,
+        "rating": 1625.74,
         "se": 33.41,
-        "ciLow": 1560.31,
-        "ciHigh": 1691.29,
+        "ciLow": 1560.25,
+        "ciHigh": 1691.23,
         "wins": 107,
         "losses": 58,
         "draws": 1,
@@ -2086,7 +2086,7 @@
             "loss": 0.3378961244397575
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 360691580,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -2096,7 +2096,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 3578703666,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#20",
@@ -2110,16 +2110,16 @@
         "label": "MASKEDVILLAIN2:Teal#19",
         "trainer": "Masked Villain Teal [Keoni] #2",
         "cursed": true,
-        "rating": 1621.75,
+        "rating": 1621.73,
         "se": 33.25,
-        "ciLow": 1556.57,
-        "ciHigh": 1686.93,
+        "ciLow": 1556.56,
+        "ciHigh": 1686.91,
         "wins": 107,
         "losses": 59,
         "draws": 0,
         "battles": 166,
         "rank": 47,
-        "overlap": 32,
+        "overlap": 33,
         "tier": "B",
         "tierColor": [
             255,
@@ -2132,7 +2132,7 @@
             "loss": 0.35542168674698793
         },
         "bestWin": {
-            "rating": 1801.13,
+            "rating": 1801.1,
             "seed": 3366689053,
             "opponent": {
                 "label": "COOLTRAINER_M7:X#1",
@@ -2142,7 +2142,7 @@
             "opponentRank": 9
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 3976489312,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#20",
@@ -2156,16 +2156,16 @@
         "label": "TAPU_KOKO:Tapu Koko#1",
         "trainer": "Guardian Deity Tapu Koko",
         "cursed": true,
-        "rating": 1620.34,
+        "rating": 1620.32,
         "se": 33.32,
-        "ciLow": 1555.03,
-        "ciHigh": 1685.65,
+        "ciLow": 1555.01,
+        "ciHigh": 1685.63,
         "wins": 106,
         "losses": 59,
         "draws": 1,
         "battles": 166,
         "rank": 48,
-        "overlap": 32,
+        "overlap": 33,
         "tier": "B",
         "tierColor": [
             255,
@@ -2178,7 +2178,7 @@
             "loss": 0.34369628262588975
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1816.09,
             "seed": 3045479996,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -2188,7 +2188,7 @@
             "opponentRank": 7
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 3252734587,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -2202,10 +2202,10 @@
         "label": "FORMERCHAMP_Vincent:Vincent",
         "trainer": "Former Champion Vincent",
         "cursed": false,
-        "rating": 1608.34,
+        "rating": 1608.32,
         "se": 33.16,
-        "ciLow": 1543.35,
-        "ciHigh": 1673.33,
+        "ciLow": 1543.33,
+        "ciHigh": 1673.31,
         "wins": 104,
         "losses": 61,
         "draws": 1,
@@ -2224,7 +2224,7 @@
             "loss": 0.3552965989981545
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 1828606286,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -2234,7 +2234,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1273.03,
+            "rating": 1273.04,
             "seed": 1121395381,
             "opponent": {
                 "label": "IDEALTRAINER:of Conquest",
@@ -2248,10 +2248,10 @@
         "label": "MASKEDVILLAIN_DOUBLE:Crimson#13",
         "trainer": "Masked Villains Crimson [Imogene] #2",
         "cursed": true,
-        "rating": 1599.79,
+        "rating": 1599.77,
         "se": 32.94,
-        "ciLow": 1535.22,
-        "ciHigh": 1664.35,
+        "ciLow": 1535.21,
+        "ciHigh": 1664.33,
         "wins": 103,
         "losses": 63,
         "draws": 0,
@@ -2270,7 +2270,7 @@
             "loss": 0.3795180722891566
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 2369180091,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -2280,29 +2280,75 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1244.05,
+            "rating": 1244.06,
             "seed": 2056485721,
             "opponent": {
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
             },
-            "opponentRank": 154
+            "opponentRank": 155
+        }
+    },
+    {
+        "label": "POKEMONRANGER_M:Zufaix",
+        "trainer": "Developer Zufaix",
+        "cursed": false,
+        "rating": 1598.48,
+        "se": 33.01,
+        "ciLow": 1533.77,
+        "ciHigh": 1663.18,
+        "wins": 102,
+        "losses": 63,
+        "draws": 1,
+        "battles": 166,
+        "rank": 51,
+        "overlap": 37,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5931030846295808,
+            "draw": 0.04,
+            "loss": 0.3668969153704192
+        },
+        "bestWin": {
+            "rating": 1881.55,
+            "seed": 3681431648,
+            "opponent": {
+                "label": "FORMERCHAMP_Elise:Elise#2",
+                "display": "Former Champion Elise #2",
+                "cursed": true
+            },
+            "opponentRank": 4
+        },
+        "worstLoss": {
+            "rating": 1297.15,
+            "seed": 3020785358,
+            "opponent": {
+                "label": "ANOTHERPOSSIBLEZAIN:Zain",
+                "display": "Another Possible Zain #1",
+                "cursed": false
+            },
+            "opponentRank": 146
         }
     },
     {
         "label": "TAPU_LELE:Tapu Lele#1",
         "trainer": "Guardian Deity Tapu Lele",
         "cursed": true,
-        "rating": 1594.45,
+        "rating": 1594.43,
         "se": 32.87,
-        "ciLow": 1530.01,
-        "ciHigh": 1658.88,
+        "ciLow": 1530.0,
+        "ciHigh": 1658.86,
         "wins": 102,
         "losses": 64,
         "draws": 0,
         "battles": 166,
-        "rank": 51,
+        "rank": 52,
         "overlap": 36,
         "tier": "B-",
         "tierColor": [
@@ -2316,7 +2362,7 @@
             "loss": 0.3855421686746988
         },
         "bestWin": {
-            "rating": 1801.13,
+            "rating": 1801.1,
             "seed": 3090336057,
             "opponent": {
                 "label": "COOLTRAINER_M7:X#1",
@@ -2326,7 +2372,7 @@
             "opponentRank": 9
         },
         "worstLoss": {
-            "rating": 1249.82,
+            "rating": 1249.84,
             "seed": 2282300018,
             "opponent": {
                 "label": "IDEALTRAINER:of Origins",
@@ -2337,65 +2383,19 @@
         }
     },
     {
-        "label": "POKEMONRANGER_M:Zufaix",
-        "trainer": "Developer Zufaix",
-        "cursed": false,
-        "rating": 1593.14,
-        "se": 32.95,
-        "ciLow": 1528.57,
-        "ciHigh": 1657.72,
-        "wins": 101,
-        "losses": 64,
-        "draws": 1,
-        "battles": 166,
-        "rank": 52,
-        "overlap": 37,
-        "tier": "B-",
-        "tierColor": [
-            255,
-            255,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.5873029264434485,
-            "draw": 0.04,
-            "loss": 0.3726970735565516
-        },
-        "bestWin": {
-            "rating": 1881.57,
-            "seed": 3681431648,
-            "opponent": {
-                "label": "FORMERCHAMP_Elise:Elise#2",
-                "display": "Former Champion Elise #2",
-                "cursed": true
-            },
-            "opponentRank": 4
-        },
-        "worstLoss": {
-            "rating": 1297.14,
-            "seed": 3020785358,
-            "opponent": {
-                "label": "ANOTHERPOSSIBLEZAIN:Zain",
-                "display": "Another Possible Zain #1",
-                "cursed": false
-            },
-            "opponentRank": 146
-        }
-    },
-    {
         "label": "SEEKER_Nora:Nora#1",
         "trainer": "Seeker Nora",
         "cursed": true,
-        "rating": 1583.94,
+        "rating": 1583.92,
         "se": 32.75,
-        "ciLow": 1519.74,
-        "ciHigh": 1648.14,
+        "ciLow": 1519.72,
+        "ciHigh": 1648.12,
         "wins": 100,
         "losses": 66,
         "draws": 0,
         "battles": 166,
         "rank": 53,
-        "overlap": 36,
+        "overlap": 37,
         "tier": "B-",
         "tierColor": [
             255,
@@ -2408,7 +2408,7 @@
             "loss": 0.39759036144578314
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 908156437,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -2418,7 +2418,7 @@
             "opponentRank": 11
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 1267958558,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -2432,10 +2432,10 @@
         "label": "ANOTHERPOSSIBLEALESSA:Alessa#1",
         "trainer": "Another Possible Alessa #2",
         "cursed": false,
-        "rating": 1578.77,
+        "rating": 1578.75,
         "se": 32.7,
-        "ciLow": 1514.68,
-        "ciHigh": 1642.87,
+        "ciLow": 1514.66,
+        "ciHigh": 1642.85,
         "wins": 99,
         "losses": 67,
         "draws": 0,
@@ -2454,7 +2454,7 @@
             "loss": 0.4036144578313253
         },
         "bestWin": {
-            "rating": 1801.13,
+            "rating": 1801.1,
             "seed": 3011428080,
             "opponent": {
                 "label": "COOLTRAINER_M7:X#1",
@@ -2478,10 +2478,10 @@
         "label": "LADY2:Eseria",
         "trainer": "Developer Eseria",
         "cursed": false,
-        "rating": 1578.77,
+        "rating": 1578.75,
         "se": 32.7,
-        "ciLow": 1514.68,
-        "ciHigh": 1642.87,
+        "ciLow": 1514.66,
+        "ciHigh": 1642.85,
         "wins": 99,
         "losses": 67,
         "draws": 0,
@@ -2500,7 +2500,7 @@
             "loss": 0.4036144578313253
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 3184169416,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -2510,7 +2510,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 867.57,
+            "rating": 867.6,
             "seed": 3959459580,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Trinity",
@@ -2524,10 +2524,10 @@
         "label": "FORMERCHAMP_Scilla:Scilla",
         "trainer": "Former Champion Scilla",
         "cursed": false,
-        "rating": 1573.66,
+        "rating": 1573.64,
         "se": 32.65,
-        "ciLow": 1509.66,
-        "ciHigh": 1637.66,
+        "ciLow": 1509.64,
+        "ciHigh": 1637.64,
         "wins": 98,
         "losses": 68,
         "draws": 0,
@@ -2546,7 +2546,7 @@
             "loss": 0.40963855421686746
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 4135245198,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -2556,7 +2556,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 3287665408,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -2570,16 +2570,16 @@
         "label": "FORMERCHAMP_Chara:Chara",
         "trainer": "Former Champion Chara",
         "cursed": false,
-        "rating": 1568.6,
+        "rating": 1568.58,
         "se": 32.61,
-        "ciLow": 1504.69,
-        "ciHigh": 1632.51,
+        "ciLow": 1504.67,
+        "ciHigh": 1632.49,
         "wins": 97,
         "losses": 69,
         "draws": 0,
         "battles": 166,
         "rank": 57,
-        "overlap": 32,
+        "overlap": 33,
         "tier": "B-",
         "tierColor": [
             255,
@@ -2592,7 +2592,7 @@
             "loss": 0.41566265060240964
         },
         "bestWin": {
-            "rating": 1778.42,
+            "rating": 1778.4,
             "seed": 3321123395,
             "opponent": {
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
@@ -2602,7 +2602,7 @@
             "opponentRank": 14
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 1952356544,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#20",
@@ -2616,10 +2616,10 @@
         "label": "POKEMONTRAINER_Vanya:Vanya",
         "trainer": "Pok\u00e9mon Trainer Vanya #1",
         "cursed": false,
-        "rating": 1563.59,
-        "se": 32.57,
-        "ciLow": 1499.76,
-        "ciHigh": 1627.42,
+        "rating": 1563.57,
+        "se": 32.56,
+        "ciLow": 1499.74,
+        "ciHigh": 1627.4,
         "wins": 96,
         "losses": 70,
         "draws": 0,
@@ -2638,7 +2638,7 @@
             "loss": 0.42168674698795183
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 1749618870,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -2648,7 +2648,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 4130928732,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -2662,10 +2662,10 @@
         "label": "TAPU_BULU:Tapu Bulu",
         "trainer": "Guardian Deity Tapu Bulu",
         "cursed": false,
-        "rating": 1563.59,
-        "se": 32.57,
-        "ciLow": 1499.76,
-        "ciHigh": 1627.42,
+        "rating": 1563.57,
+        "se": 32.56,
+        "ciLow": 1499.74,
+        "ciHigh": 1627.4,
         "wins": 96,
         "losses": 70,
         "draws": 0,
@@ -2684,7 +2684,7 @@
             "loss": 0.42168674698795183
         },
         "bestWin": {
-            "rating": 1793.82,
+            "rating": 1793.8,
             "seed": 4093984569,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#15",
@@ -2694,7 +2694,7 @@
             "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 740076738,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -2708,16 +2708,16 @@
         "label": "ELDER:Logun",
         "trainer": "Elder Logun",
         "cursed": false,
-        "rating": 1558.27,
-        "se": 32.73,
-        "ciLow": 1494.12,
-        "ciHigh": 1622.41,
+        "rating": 1558.25,
+        "se": 32.72,
+        "ciLow": 1494.11,
+        "ciHigh": 1622.39,
         "wins": 94,
         "losses": 70,
         "draws": 2,
         "battles": 166,
         "rank": 60,
-        "overlap": 37,
+        "overlap": 36,
         "tier": "B-",
         "tierColor": [
             255,
@@ -2730,7 +2730,7 @@
             "loss": 0.4099363057324841
         },
         "bestWin": {
-            "rating": 1778.42,
+            "rating": 1778.4,
             "seed": 4197479151,
             "opponent": {
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
@@ -2740,7 +2740,7 @@
             "opponentRank": 14
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 2888802136,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -2754,10 +2754,10 @@
         "label": "LEADER_Samorn:Samorn#2",
         "trainer": "Gym Leader Samorn #2",
         "cursed": false,
-        "rating": 1557.61,
+        "rating": 1557.59,
         "se": 32.69,
-        "ciLow": 1493.54,
-        "ciHigh": 1621.68,
+        "ciLow": 1493.52,
+        "ciHigh": 1621.66,
         "wins": 94,
         "losses": 70,
         "draws": 2,
@@ -2776,7 +2776,7 @@
             "loss": 0.4099363057324841
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 797405646,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -2786,7 +2786,7 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 3504105160,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -2800,10 +2800,10 @@
         "label": "FORMERCHAMP_Ansel:Ansel",
         "trainer": "Former Champion Ansel",
         "cursed": false,
-        "rating": 1557.54,
+        "rating": 1557.52,
         "se": 32.6,
-        "ciLow": 1493.65,
-        "ciHigh": 1621.42,
+        "ciLow": 1493.63,
+        "ciHigh": 1621.4,
         "wins": 94,
         "losses": 71,
         "draws": 1,
@@ -2822,7 +2822,7 @@
             "loss": 0.413298180859478
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 1262008766,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -2832,7 +2832,7 @@
             "opponentRank": 11
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 1296512089,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -2846,16 +2846,16 @@
         "label": "COOLTRAINER_M7:X",
         "trainer": "Pro Trainer X",
         "cursed": false,
-        "rating": 1554.16,
+        "rating": 1554.14,
         "se": 32.67,
-        "ciLow": 1490.13,
-        "ciHigh": 1618.19,
+        "ciLow": 1490.11,
+        "ciHigh": 1618.16,
         "wins": 93,
         "losses": 71,
         "draws": 2,
         "battles": 166,
         "rank": 63,
-        "overlap": 36,
+        "overlap": 37,
         "tier": "B-",
         "tierColor": [
             255,
@@ -2868,7 +2868,7 @@
             "loss": 0.41577494692144373
         },
         "bestWin": {
-            "rating": 1808.55,
+            "rating": 1808.53,
             "seed": 1184282744,
             "opponent": {
                 "label": "TRAINER_Sang:Sang#5",
@@ -2892,16 +2892,16 @@
         "label": "FAIRYTALEGIRL:Emmi",
         "trainer": "Developer Emmi",
         "cursed": false,
-        "rating": 1553.71,
+        "rating": 1553.69,
         "se": 32.49,
-        "ciLow": 1490.02,
-        "ciHigh": 1617.4,
+        "ciLow": 1490.01,
+        "ciHigh": 1617.38,
         "wins": 94,
         "losses": 72,
         "draws": 0,
         "battles": 166,
         "rank": 64,
-        "overlap": 36,
+        "overlap": 37,
         "tier": "B-",
         "tierColor": [
             255,
@@ -2914,7 +2914,7 @@
             "loss": 0.43373493975903615
         },
         "bestWin": {
-            "rating": 1772.51,
+            "rating": 1772.48,
             "seed": 2361013766,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -2924,7 +2924,7 @@
             "opponentRank": 15
         },
         "worstLoss": {
-            "rating": 1273.03,
+            "rating": 1273.04,
             "seed": 3298100761,
             "opponent": {
                 "label": "IDEALTRAINER:of Conquest",
@@ -2938,16 +2938,16 @@
         "label": "FORMERCHAMP_Praveen:Praveen",
         "trainer": "Former Champion Praveen",
         "cursed": false,
-        "rating": 1544.0,
+        "rating": 1543.98,
         "se": 32.43,
-        "ciLow": 1480.43,
-        "ciHigh": 1607.57,
+        "ciLow": 1480.41,
+        "ciHigh": 1607.55,
         "wins": 92,
         "losses": 74,
         "draws": 0,
         "battles": 166,
         "rank": 65,
-        "overlap": 41,
+        "overlap": 40,
         "tier": "B-",
         "tierColor": [
             255,
@@ -2960,7 +2960,7 @@
             "loss": 0.4457831325301205
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1816.09,
             "seed": 2170440504,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -2970,7 +2970,7 @@
             "opponentRank": 7
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 2332905685,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -2984,16 +2984,16 @@
         "label": "LEADER_Bence:Bence#2",
         "trainer": "Gym Leader Bence #2",
         "cursed": false,
-        "rating": 1544.0,
+        "rating": 1543.98,
         "se": 32.43,
-        "ciLow": 1480.43,
-        "ciHigh": 1607.57,
+        "ciLow": 1480.41,
+        "ciHigh": 1607.55,
         "wins": 92,
         "losses": 74,
         "draws": 0,
         "battles": 166,
         "rank": 66,
-        "overlap": 41,
+        "overlap": 40,
         "tier": "B-",
         "tierColor": [
             255,
@@ -3006,7 +3006,7 @@
             "loss": 0.4457831325301205
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 2707754722,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -3016,30 +3016,30 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1244.05,
+            "rating": 1244.06,
             "seed": 2795088364,
             "opponent": {
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
             },
-            "opponentRank": 154
+            "opponentRank": 155
         }
     },
     {
         "label": "TAPU_KOKO:Tapu Koko",
         "trainer": "Guardian Deity Tapu Koko",
         "cursed": false,
-        "rating": 1542.13,
+        "rating": 1542.11,
         "se": 32.56,
-        "ciLow": 1478.3,
-        "ciHigh": 1605.95,
+        "ciLow": 1478.29,
+        "ciHigh": 1605.93,
         "wins": 91,
         "losses": 73,
         "draws": 2,
         "battles": 166,
         "rank": 67,
-        "overlap": 42,
+        "overlap": 41,
         "tier": "B-",
         "tierColor": [
             255,
@@ -3052,7 +3052,7 @@
             "loss": 0.42745222929936305
         },
         "bestWin": {
-            "rating": 1801.13,
+            "rating": 1801.1,
             "seed": 3505386123,
             "opponent": {
                 "label": "COOLTRAINER_M7:X#1",
@@ -3062,7 +3062,7 @@
             "opponentRank": 9
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 3840704649,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -3076,10 +3076,10 @@
         "label": "MASKEDVILLAIN:Crimson#17",
         "trainer": "Masked Villain Crimson [Skyler] #2",
         "cursed": true,
-        "rating": 1539.2,
+        "rating": 1539.18,
         "se": 32.41,
-        "ciLow": 1475.68,
-        "ciHigh": 1602.73,
+        "ciLow": 1475.66,
+        "ciHigh": 1602.7,
         "wins": 91,
         "losses": 75,
         "draws": 0,
@@ -3098,7 +3098,7 @@
             "loss": 0.45180722891566266
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 1344199733,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -3108,24 +3108,24 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1244.05,
+            "rating": 1244.06,
             "seed": 3353167895,
             "opponent": {
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
             },
-            "opponentRank": 154
+            "opponentRank": 155
         }
     },
     {
         "label": "LEADER_Helena:Helena#2",
         "trainer": "Gym Leader Helena #2",
         "cursed": false,
-        "rating": 1537.71,
-        "se": 32.5,
-        "ciLow": 1474.02,
-        "ciHigh": 1601.4,
+        "rating": 1537.69,
+        "se": 32.49,
+        "ciLow": 1474.0,
+        "ciHigh": 1601.38,
         "wins": 90,
         "losses": 75,
         "draws": 1,
@@ -3144,7 +3144,7 @@
             "loss": 0.4364988136040074
         },
         "bestWin": {
-            "rating": 1779.52,
+            "rating": 1779.5,
             "seed": 1070211660,
             "opponent": {
                 "label": "TRAINER_Candy:Candy#1",
@@ -3154,7 +3154,7 @@
             "opponentRank": 12
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 918434117,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -3168,16 +3168,16 @@
         "label": "KILLU:Killu",
         "trainer": "Developer Killu",
         "cursed": false,
-        "rating": 1529.7,
+        "rating": 1529.68,
         "se": 32.37,
-        "ciLow": 1466.25,
-        "ciHigh": 1593.14,
+        "ciLow": 1466.23,
+        "ciHigh": 1593.12,
         "wins": 89,
         "losses": 77,
         "draws": 0,
         "battles": 166,
         "rank": 70,
-        "overlap": 44,
+        "overlap": 42,
         "tier": "C+",
         "tierColor": [
             220,
@@ -3190,7 +3190,7 @@
             "loss": 0.463855421686747
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 4265704663,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -3200,7 +3200,7 @@
             "opponentRank": 11
         },
         "worstLoss": {
-            "rating": 1273.03,
+            "rating": 1273.04,
             "seed": 3213880732,
             "opponent": {
                 "label": "IDEALTRAINER:of Conquest",
@@ -3211,13 +3211,13 @@
         }
     },
     {
-        "label": "TRAINER_Zain:Zain#2",
-        "trainer": "Your Brother Zain #2",
+        "label": "ANOTHERPOSSIBLEALESSA:Alessa",
+        "trainer": "Another Possible Alessa #1",
         "cursed": false,
-        "rating": 1520.29,
+        "rating": 1520.27,
         "se": 32.34,
-        "ciLow": 1456.9,
-        "ciHigh": 1583.68,
+        "ciLow": 1456.88,
+        "ciHigh": 1583.66,
         "wins": 87,
         "losses": 79,
         "draws": 0,
@@ -3236,145 +3236,7 @@
             "loss": 0.4759036144578313
         },
         "bestWin": {
-            "rating": 1816.11,
-            "seed": 3064949224,
-            "opponent": {
-                "label": "SPIRITGUARDIAN4:Brigitte#1",
-                "display": "Spirit Guardian Brigitte",
-                "cursed": true
-            },
-            "opponentRank": 7
-        },
-        "worstLoss": {
-            "rating": 1208.45,
-            "seed": 244532501,
-            "opponent": {
-                "label": "ARTIST3:Drawingbox",
-                "display": "Developer Drawingbox",
-                "cursed": false
-            },
-            "opponentRank": 159
-        }
-    },
-    {
-        "label": "POKEMONMASTER_Vanya:Vanya#19",
-        "trainer": "Pok\u00e9mon Master Vanya #19",
-        "cursed": false,
-        "rating": 1518.28,
-        "se": 32.44,
-        "ciLow": 1454.71,
-        "ciHigh": 1581.86,
-        "wins": 86,
-        "losses": 79,
-        "draws": 1,
-        "battles": 166,
-        "rank": 72,
-        "overlap": 46,
-        "tier": "C+",
-        "tierColor": [
-            220,
-            244,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.5003005536514632,
-            "draw": 0.04,
-            "loss": 0.45969944634853677
-        },
-        "bestWin": {
-            "rating": 1778.52,
-            "seed": 3819419052,
-            "opponent": {
-                "label": "TOURISTM:Azeler",
-                "display": "Developer Azeler",
-                "cursed": false
-            },
-            "opponentRank": 13
-        },
-        "worstLoss": {
-            "rating": 1222.98,
-            "seed": 2682246744,
-            "opponent": {
-                "label": "LADY4:Pria",
-                "display": "Developer Pria",
-                "cursed": false
-            },
-            "opponentRank": 158
-        }
-    },
-    {
-        "label": "MASKEDVILLAIN:Crimson#15",
-        "trainer": "Masked Villain Crimson [Alessa] #2",
-        "cursed": true,
-        "rating": 1515.85,
-        "se": 32.51,
-        "ciLow": 1452.14,
-        "ciHigh": 1579.56,
-        "wins": 85,
-        "losses": 79,
-        "draws": 2,
-        "battles": 166,
-        "rank": 73,
-        "overlap": 48,
-        "tier": "C+",
-        "tierColor": [
-            220,
-            244,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.497515923566879,
-            "draw": 0.04,
-            "loss": 0.462484076433121
-        },
-        "bestWin": {
-            "rating": 1881.57,
-            "seed": 3158142263,
-            "opponent": {
-                "label": "FORMERCHAMP_Elise:Elise#2",
-                "display": "Former Champion Elise #2",
-                "cursed": true
-            },
-            "opponentRank": 4
-        },
-        "worstLoss": {
-            "rating": 1163.35,
-            "seed": 1549625818,
-            "opponent": {
-                "label": "IDEALTRAINER:of Colors",
-                "display": "Ideal Trainer of Colors",
-                "cursed": false
-            },
-            "opponentRank": 161
-        }
-    },
-    {
-        "label": "ANOTHERPOSSIBLEALESSA:Alessa",
-        "trainer": "Another Possible Alessa #1",
-        "cursed": false,
-        "rating": 1515.62,
-        "se": 32.33,
-        "ciLow": 1452.24,
-        "ciHigh": 1578.99,
-        "wins": 86,
-        "losses": 80,
-        "draws": 0,
-        "battles": 166,
-        "rank": 74,
-        "overlap": 48,
-        "tier": "C+",
-        "tierColor": [
-            220,
-            244,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.5180722891566265,
-            "draw": 0.0,
-            "loss": 0.4819277108433735
-        },
-        "bestWin": {
-            "rating": 1772.51,
+            "rating": 1772.48,
             "seed": 270359629,
             "opponent": {
                 "label": "SPIRITGUARDIAN3:Preeti#1",
@@ -3395,13 +3257,151 @@
         }
     },
     {
+        "label": "TRAINER_Zain:Zain#2",
+        "trainer": "Your Brother Zain #2",
+        "cursed": false,
+        "rating": 1520.27,
+        "se": 32.34,
+        "ciLow": 1456.88,
+        "ciHigh": 1583.66,
+        "wins": 87,
+        "losses": 79,
+        "draws": 0,
+        "battles": 166,
+        "rank": 72,
+        "overlap": 46,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5240963855421686,
+            "draw": 0.0,
+            "loss": 0.4759036144578313
+        },
+        "bestWin": {
+            "rating": 1816.09,
+            "seed": 3064949224,
+            "opponent": {
+                "label": "SPIRITGUARDIAN4:Brigitte#1",
+                "display": "Spirit Guardian Brigitte",
+                "cursed": true
+            },
+            "opponentRank": 7
+        },
+        "worstLoss": {
+            "rating": 1208.48,
+            "seed": 244532501,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            },
+            "opponentRank": 159
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#19",
+        "trainer": "Pok\u00e9mon Master Vanya #19",
+        "cursed": false,
+        "rating": 1518.26,
+        "se": 32.44,
+        "ciLow": 1454.69,
+        "ciHigh": 1581.84,
+        "wins": 86,
+        "losses": 79,
+        "draws": 1,
+        "battles": 166,
+        "rank": 73,
+        "overlap": 46,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.5003005536514632,
+            "draw": 0.04,
+            "loss": 0.45969944634853677
+        },
+        "bestWin": {
+            "rating": 1778.5,
+            "seed": 3819419052,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            },
+            "opponentRank": 13
+        },
+        "worstLoss": {
+            "rating": 1223.0,
+            "seed": 2682246744,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            },
+            "opponentRank": 158
+        }
+    },
+    {
+        "label": "MASKEDVILLAIN:Crimson#15",
+        "trainer": "Masked Villain Crimson [Alessa] #2",
+        "cursed": true,
+        "rating": 1515.83,
+        "se": 32.5,
+        "ciLow": 1452.13,
+        "ciHigh": 1579.54,
+        "wins": 85,
+        "losses": 79,
+        "draws": 2,
+        "battles": 166,
+        "rank": 74,
+        "overlap": 48,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.497515923566879,
+            "draw": 0.04,
+            "loss": 0.462484076433121
+        },
+        "bestWin": {
+            "rating": 1881.55,
+            "seed": 3158142263,
+            "opponent": {
+                "label": "FORMERCHAMP_Elise:Elise#2",
+                "display": "Former Champion Elise #2",
+                "cursed": true
+            },
+            "opponentRank": 4
+        },
+        "worstLoss": {
+            "rating": 1163.38,
+            "seed": 1549625818,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            },
+            "opponentRank": 161
+        }
+    },
+    {
         "label": "KATY:Manycrows",
         "trainer": "Developer Manycrows",
         "cursed": false,
-        "rating": 1506.3,
+        "rating": 1506.28,
         "se": 32.32,
-        "ciLow": 1442.94,
-        "ciHigh": 1569.65,
+        "ciLow": 1442.93,
+        "ciHigh": 1569.63,
         "wins": 84,
         "losses": 82,
         "draws": 0,
@@ -3420,7 +3420,7 @@
             "loss": 0.4939759036144578
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 2774506545,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -3430,7 +3430,7 @@
             "opponentRank": 11
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 2090867546,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -3444,10 +3444,10 @@
         "label": "LEADER_Eko:Eko#2",
         "trainer": "Gym Leader Eko #2",
         "cursed": false,
-        "rating": 1502.79,
+        "rating": 1502.77,
         "se": 32.39,
-        "ciLow": 1439.3,
-        "ciHigh": 1566.28,
+        "ciLow": 1439.29,
+        "ciHigh": 1566.26,
         "wins": 83,
         "losses": 82,
         "draws": 1,
@@ -3466,7 +3466,7 @@
             "loss": 0.4770999209069338
         },
         "bestWin": {
-            "rating": 1779.52,
+            "rating": 1779.5,
             "seed": 1887877420,
             "opponent": {
                 "label": "TRAINER_Candy:Candy#1",
@@ -3476,24 +3476,24 @@
             "opponentRank": 12
         },
         "worstLoss": {
-            "rating": 1244.05,
+            "rating": 1244.06,
             "seed": 1369091756,
             "opponent": {
                 "label": "HEXMANIAC:Lichenprincess",
                 "display": "Developer Lichenprincess",
                 "cursed": false
             },
-            "opponentRank": 154
+            "opponentRank": 155
         }
     },
     {
         "label": "DELINQUENT:Lilypad",
         "trainer": "Developer Lilypad",
         "cursed": false,
-        "rating": 1501.65,
+        "rating": 1501.63,
         "se": 32.32,
-        "ciLow": 1438.29,
-        "ciHigh": 1565.0,
+        "ciLow": 1438.28,
+        "ciHigh": 1564.98,
         "wins": 83,
         "losses": 83,
         "draws": 0,
@@ -3512,7 +3512,7 @@
             "loss": 0.5
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 1325792419,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -3522,7 +3522,7 @@
             "opponentRank": 11
         },
         "worstLoss": {
-            "rating": 1249.82,
+            "rating": 1249.84,
             "seed": 2089480267,
             "opponent": {
                 "label": "IDEALTRAINER:of Origins",
@@ -3536,10 +3536,10 @@
         "label": "TRAINER_Sang:Sang#4",
         "trainer": "Pok\u00e9mon Trainer Sang #2",
         "cursed": false,
-        "rating": 1501.65,
+        "rating": 1501.63,
         "se": 32.32,
-        "ciLow": 1438.29,
-        "ciHigh": 1565.0,
+        "ciLow": 1438.28,
+        "ciHigh": 1564.98,
         "wins": 83,
         "losses": 83,
         "draws": 0,
@@ -3558,7 +3558,7 @@
             "loss": 0.5
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 1079746872,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -3568,7 +3568,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 3308241395,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -3582,10 +3582,10 @@
         "label": "MASKEDVILLAIN:Crimson#19",
         "trainer": "Masked Villain Crimson [Keoni] #2",
         "cursed": true,
-        "rating": 1501.58,
+        "rating": 1501.56,
         "se": 32.47,
-        "ciLow": 1437.94,
-        "ciHigh": 1565.22,
+        "ciLow": 1437.92,
+        "ciHigh": 1565.2,
         "wins": 82,
         "losses": 82,
         "draws": 2,
@@ -3604,7 +3604,7 @@
             "loss": 0.48
         },
         "bestWin": {
-            "rating": 1801.13,
+            "rating": 1801.1,
             "seed": 1318126804,
             "opponent": {
                 "label": "COOLTRAINER_M7:X#1",
@@ -3614,7 +3614,7 @@
             "opponentRank": 9
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 3987139325,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -3628,10 +3628,10 @@
         "label": "PROFESSOR_Tamarind:Tamarind",
         "trainer": "Professor Tamarind",
         "cursed": false,
-        "rating": 1500.33,
+        "rating": 1500.31,
         "se": 32.41,
-        "ciLow": 1436.81,
-        "ciHigh": 1563.85,
+        "ciLow": 1436.79,
+        "ciHigh": 1563.82,
         "wins": 82,
         "losses": 83,
         "draws": 1,
@@ -3650,7 +3650,7 @@
             "loss": 0.48290007909306615
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 2836281035,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -3660,7 +3660,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 1005977349,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#20",
@@ -3674,10 +3674,10 @@
         "label": "HIKER:Valrex",
         "trainer": "Developer Valrex",
         "cursed": false,
-        "rating": 1497.0,
-        "se": 32.33,
-        "ciLow": 1433.64,
-        "ciHigh": 1560.35,
+        "rating": 1496.98,
+        "se": 32.32,
+        "ciLow": 1433.62,
+        "ciHigh": 1560.33,
         "wins": 82,
         "losses": 84,
         "draws": 0,
@@ -3696,7 +3696,7 @@
             "loss": 0.5060240963855421
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 735403534,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -3706,7 +3706,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1257.7,
+            "rating": 1257.71,
             "seed": 2590150408,
             "opponent": {
                 "label": "JUGGLER:Brickbat",
@@ -3720,10 +3720,10 @@
         "label": "SUPERNERD:Agentbla",
         "trainer": "Developer Agentbla",
         "cursed": false,
-        "rating": 1497.0,
-        "se": 32.33,
-        "ciLow": 1433.64,
-        "ciHigh": 1560.35,
+        "rating": 1496.98,
+        "se": 32.32,
+        "ciLow": 1433.62,
+        "ciHigh": 1560.33,
         "wins": 82,
         "losses": 84,
         "draws": 0,
@@ -3742,7 +3742,7 @@
             "loss": 0.5060240963855421
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 4240751913,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -3752,7 +3752,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 1936551735,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -3763,13 +3763,13 @@
         }
     },
     {
-        "label": "IDEALTRAINER:of Freedom",
-        "trainer": "Ideal Trainer of Freedom",
+        "label": "ARCHFRIEND_Lainie:Lainie",
+        "trainer": "Archfriend Lainie",
         "cursed": false,
-        "rating": 1495.76,
-        "se": 32.4,
-        "ciLow": 1432.27,
-        "ciHigh": 1559.26,
+        "rating": 1495.37,
+        "se": 32.42,
+        "ciLow": 1431.83,
+        "ciHigh": 1558.91,
         "wins": 81,
         "losses": 84,
         "draws": 1,
@@ -3788,53 +3788,7 @@
             "loss": 0.4887002372791985
         },
         "bestWin": {
-            "rating": 1689.74,
-            "seed": 1747659411,
-            "opponent": {
-                "label": "TRAINER_Eifion:Eifion#2",
-                "display": "Pok\u00e9mon Trainer Eifion #2",
-                "cursed": true
-            },
-            "opponentRank": 28
-        },
-        "worstLoss": {
-            "rating": 1226.91,
-            "seed": 3679639476,
-            "opponent": {
-                "label": "POKEMONMASTER_Vanya:Vanya",
-                "display": "Pok\u00e9mon Master Vanya #1",
-                "cursed": false
-            },
-            "opponentRank": 157
-        }
-    },
-    {
-        "label": "ARCHFRIEND_Lainie:Lainie",
-        "trainer": "Archfriend Lainie",
-        "cursed": false,
-        "rating": 1495.39,
-        "se": 32.42,
-        "ciLow": 1431.85,
-        "ciHigh": 1558.93,
-        "wins": 81,
-        "losses": 84,
-        "draws": 1,
-        "battles": 166,
-        "rank": 84,
-        "overlap": 54,
-        "tier": "C+",
-        "tierColor": [
-            220,
-            244,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.4712997627208015,
-            "draw": 0.04,
-            "loss": 0.4887002372791985
-        },
-        "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 3692558514,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -3855,13 +3809,59 @@
         }
     },
     {
+        "label": "ANOTHERPOSSIBLETAMARIND:Tamarind#1",
+        "trainer": "Another Possible Tamarind #2",
+        "cursed": false,
+        "rating": 1493.65,
+        "se": 32.41,
+        "ciLow": 1430.12,
+        "ciHigh": 1557.18,
+        "wins": 81,
+        "losses": 84,
+        "draws": 1,
+        "battles": 166,
+        "rank": 84,
+        "overlap": 51,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4712997627208015,
+            "draw": 0.04,
+            "loss": 0.4887002372791985
+        },
+        "bestWin": {
+            "rating": 1881.55,
+            "seed": 4197218047,
+            "opponent": {
+                "label": "FORMERCHAMP_Elise:Elise#2",
+                "display": "Former Champion Elise #2",
+                "cursed": true
+            },
+            "opponentRank": 4
+        },
+        "worstLoss": {
+            "rating": 1223.0,
+            "seed": 920252873,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            },
+            "opponentRank": 158
+        }
+    },
+    {
         "label": "MASKEDVILLAIN2:Teal#16",
         "trainer": "Masked Villain Teal [Skyler] #2",
         "cursed": false,
-        "rating": 1492.34,
+        "rating": 1492.32,
         "se": 32.33,
-        "ciLow": 1428.98,
-        "ciHigh": 1555.71,
+        "ciLow": 1428.96,
+        "ciHigh": 1555.69,
         "wins": 81,
         "losses": 85,
         "draws": 0,
@@ -3880,7 +3880,7 @@
             "loss": 0.5120481927710844
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1816.09,
             "seed": 3358817047,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -3890,7 +3890,7 @@
             "opponentRank": 7
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 2029618875,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -3901,19 +3901,19 @@
         }
     },
     {
-        "label": "ANOTHERPOSSIBLETAMARIND:Tamarind#1",
-        "trainer": "Another Possible Tamarind #2",
+        "label": "IDEALTRAINER:of Freedom",
+        "trainer": "Ideal Trainer of Freedom",
         "cursed": false,
-        "rating": 1488.98,
-        "se": 32.42,
-        "ciLow": 1425.43,
-        "ciHigh": 1552.52,
+        "rating": 1491.07,
+        "se": 32.4,
+        "ciLow": 1427.56,
+        "ciHigh": 1554.57,
         "wins": 80,
         "losses": 85,
         "draws": 1,
         "battles": 166,
         "rank": 86,
-        "overlap": 51,
+        "overlap": 53,
         "tier": "C+",
         "tierColor": [
             220,
@@ -3926,34 +3926,34 @@
             "loss": 0.4945003954653309
         },
         "bestWin": {
-            "rating": 1881.57,
-            "seed": 4197218047,
+            "rating": 1689.72,
+            "seed": 1747659411,
             "opponent": {
-                "label": "FORMERCHAMP_Elise:Elise#2",
-                "display": "Former Champion Elise #2",
+                "label": "TRAINER_Eifion:Eifion#2",
+                "display": "Pok\u00e9mon Trainer Eifion #2",
                 "cursed": true
             },
-            "opponentRank": 4
+            "opponentRank": 28
         },
         "worstLoss": {
-            "rating": 1222.98,
-            "seed": 920252873,
+            "rating": 1226.93,
+            "seed": 3679639476,
             "opponent": {
-                "label": "LADY4:Pria",
-                "display": "Developer Pria",
+                "label": "POKEMONMASTER_Vanya:Vanya",
+                "display": "Pok\u00e9mon Master Vanya #1",
                 "cursed": false
             },
-            "opponentRank": 158
+            "opponentRank": 157
         }
     },
     {
         "label": "TRAINER_Eifion:Eifion#3",
         "trainer": "Pok\u00e9mon Trainer Eifion #3",
         "cursed": false,
-        "rating": 1488.83,
+        "rating": 1488.81,
         "se": 32.41,
-        "ciLow": 1425.31,
-        "ciHigh": 1552.35,
+        "ciLow": 1425.29,
+        "ciHigh": 1552.32,
         "wins": 80,
         "losses": 85,
         "draws": 1,
@@ -3972,7 +3972,7 @@
             "loss": 0.4945003954653309
         },
         "bestWin": {
-            "rating": 1750.65,
+            "rating": 1750.63,
             "seed": 601246590,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -3982,7 +3982,7 @@
             "opponentRank": 19
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 126614821,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -3993,124 +3993,32 @@
         }
     },
     {
-        "label": "POKEMONMASTER_Vanya:Vanya#5",
-        "trainer": "Pok\u00e9mon Master Vanya #5",
-        "cursed": false,
-        "rating": 1485.45,
-        "se": 32.44,
-        "ciLow": 1421.87,
-        "ciHigh": 1549.04,
-        "wins": 79,
-        "losses": 86,
-        "draws": 1,
-        "battles": 166,
-        "rank": 88,
-        "overlap": 52,
-        "tier": "C",
-        "tierColor": [
-            184,
-            233,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.45969944634853677,
-            "draw": 0.04,
-            "loss": 0.5003005536514632
-        },
-        "bestWin": {
-            "rating": 1808.55,
-            "seed": 630224693,
-            "opponent": {
-                "label": "TRAINER_Sang:Sang#5",
-                "display": "Pok\u00e9mon Trainer Sang #2",
-                "cursed": true
-            },
-            "opponentRank": 8
-        },
-        "worstLoss": {
-            "rating": 1222.98,
-            "seed": 1639264389,
-            "opponent": {
-                "label": "LADY4:Pria",
-                "display": "Developer Pria",
-                "cursed": false
-            },
-            "opponentRank": 158
-        }
-    },
-    {
-        "label": "IDEALTRAINER:of Brilliance",
-        "trainer": "Ideal Trainer of Brilliance",
-        "cursed": false,
-        "rating": 1485.01,
-        "se": 32.44,
-        "ciLow": 1421.42,
-        "ciHigh": 1548.59,
-        "wins": 79,
-        "losses": 86,
-        "draws": 1,
-        "battles": 166,
-        "rank": 89,
-        "overlap": 52,
-        "tier": "C",
-        "tierColor": [
-            184,
-            233,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.45969944634853677,
-            "draw": 0.04,
-            "loss": 0.5003005536514632
-        },
-        "bestWin": {
-            "rating": 1801.13,
-            "seed": 811274710,
-            "opponent": {
-                "label": "COOLTRAINER_M7:X#1",
-                "display": "Pro Trainer X",
-                "cursed": true
-            },
-            "opponentRank": 9
-        },
-        "worstLoss": {
-            "rating": 1201.01,
-            "seed": 3621233547,
-            "opponent": {
-                "label": "POKEMONMASTER_Vanya:Vanya#7",
-                "display": "Pok\u00e9mon Master Vanya #7",
-                "cursed": false
-            },
-            "opponentRank": 160
-        }
-    },
-    {
         "label": "POKEMONMASTER_Vanya:Vanya#17",
         "trainer": "Pok\u00e9mon Master Vanya #17",
         "cursed": false,
-        "rating": 1483.0,
-        "se": 32.35,
-        "ciLow": 1419.6,
-        "ciHigh": 1546.4,
-        "wins": 79,
-        "losses": 87,
+        "rating": 1487.66,
+        "se": 32.34,
+        "ciLow": 1424.28,
+        "ciHigh": 1551.04,
+        "wins": 80,
+        "losses": 86,
         "draws": 0,
         "battles": 166,
-        "rank": 90,
+        "rank": 88,
         "overlap": 52,
-        "tier": "C",
+        "tier": "C+",
         "tierColor": [
-            184,
-            233,
+            220,
+            244,
             0
         ],
         "wldFractions": {
-            "win": 0.4759036144578313,
+            "win": 0.4819277108433735,
             "draw": 0.0,
-            "loss": 0.5240963855421686
+            "loss": 0.5180722891566265
         },
         "bestWin": {
-            "rating": 1763.07,
+            "rating": 1763.05,
             "seed": 49588433,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#23",
@@ -4120,7 +4028,7 @@
             "opponentRank": 18
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 3759606791,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -4131,18 +4039,64 @@
         }
     },
     {
+        "label": "IDEALTRAINER:of Brilliance",
+        "trainer": "Ideal Trainer of Brilliance",
+        "cursed": false,
+        "rating": 1484.99,
+        "se": 32.44,
+        "ciLow": 1421.41,
+        "ciHigh": 1548.57,
+        "wins": 79,
+        "losses": 86,
+        "draws": 1,
+        "battles": 166,
+        "rank": 89,
+        "overlap": 52,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.45969944634853677,
+            "draw": 0.04,
+            "loss": 0.5003005536514632
+        },
+        "bestWin": {
+            "rating": 1801.1,
+            "seed": 811274710,
+            "opponent": {
+                "label": "COOLTRAINER_M7:X#1",
+                "display": "Pro Trainer X",
+                "cursed": true
+            },
+            "opponentRank": 9
+        },
+        "worstLoss": {
+            "rating": 1201.04,
+            "seed": 3621233547,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
+                "cursed": false
+            },
+            "opponentRank": 160
+        }
+    },
+    {
         "label": "SPIRITGUARDIAN2:Sonya#1",
         "trainer": "Spirit Guardian Sonya",
         "cursed": true,
-        "rating": 1482.14,
-        "se": 32.51,
-        "ciLow": 1418.43,
-        "ciHigh": 1545.86,
+        "rating": 1482.13,
+        "se": 32.5,
+        "ciLow": 1418.42,
+        "ciHigh": 1545.84,
         "wins": 78,
         "losses": 86,
         "draws": 2,
         "battles": 166,
-        "rank": 91,
+        "rank": 90,
         "overlap": 52,
         "tier": "C",
         "tierColor": [
@@ -4156,7 +4110,7 @@
             "loss": 0.5033545647558386
         },
         "bestWin": {
-            "rating": 1778.52,
+            "rating": 1778.5,
             "seed": 2224971317,
             "opponent": {
                 "label": "TOURISTM:Azeler",
@@ -4166,7 +4120,7 @@
             "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 1631496645,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -4180,16 +4134,16 @@
         "label": "TAPU_LELE:Tapu Lele",
         "trainer": "Guardian Deity Tapu Lele",
         "cursed": false,
-        "rating": 1478.31,
+        "rating": 1478.29,
         "se": 32.36,
-        "ciLow": 1414.88,
-        "ciHigh": 1541.74,
+        "ciLow": 1414.86,
+        "ciHigh": 1541.72,
         "wins": 78,
         "losses": 88,
         "draws": 0,
         "battles": 166,
-        "rank": 92,
-        "overlap": 50,
+        "rank": 91,
+        "overlap": 51,
         "tier": "C",
         "tierColor": [
             184,
@@ -4202,7 +4156,7 @@
             "loss": 0.5301204819277109
         },
         "bestWin": {
-            "rating": 1772.51,
+            "rating": 1772.48,
             "seed": 737767772,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -4212,7 +4166,7 @@
             "opponentRank": 15
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 4215536066,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -4223,19 +4177,19 @@
         }
     },
     {
-        "label": "MASKEDVILLAIN2_DOUBLE:Teal#12",
-        "trainer": "Masked Villains Teal [Imogene] #2",
+        "label": "CHALLENGER_Vanya:Vanya#8",
+        "trainer": "Challenger Vanya #9",
         "cursed": false,
-        "rating": 1477.01,
-        "se": 32.54,
-        "ciLow": 1413.23,
-        "ciHigh": 1540.8,
+        "rating": 1477.58,
+        "se": 32.53,
+        "ciLow": 1413.81,
+        "ciHigh": 1541.34,
         "wins": 77,
         "losses": 87,
         "draws": 2,
         "battles": 166,
-        "rank": 93,
-        "overlap": 51,
+        "rank": 92,
+        "overlap": 52,
         "tier": "C",
         "tierColor": [
             184,
@@ -4248,53 +4202,7 @@
             "loss": 0.5091932059447982
         },
         "bestWin": {
-            "rating": 1816.11,
-            "seed": 2993251993,
-            "opponent": {
-                "label": "SPIRITGUARDIAN4:Brigitte#1",
-                "display": "Spirit Guardian Brigitte",
-                "cursed": true
-            },
-            "opponentRank": 7
-        },
-        "worstLoss": {
-            "rating": 1237.11,
-            "seed": 2687437926,
-            "opponent": {
-                "label": "GAMBLER:Tiki",
-                "display": "Developer Tiki",
-                "cursed": false
-            },
-            "opponentRank": 155
-        }
-    },
-    {
-        "label": "CHALLENGER_Vanya:Vanya#8",
-        "trainer": "Challenger Vanya #9",
-        "cursed": false,
-        "rating": 1472.84,
-        "se": 32.55,
-        "ciLow": 1409.04,
-        "ciHigh": 1536.64,
-        "wins": 76,
-        "losses": 88,
-        "draws": 2,
-        "battles": 166,
-        "rank": 94,
-        "overlap": 51,
-        "tier": "C",
-        "tierColor": [
-            184,
-            233,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.44496815286624203,
-            "draw": 0.04,
-            "loss": 0.515031847133758
-        },
-        "bestWin": {
-            "rating": 1808.55,
+            "rating": 1808.53,
             "seed": 2090322792,
             "opponent": {
                 "label": "TRAINER_Sang:Sang#5",
@@ -4304,7 +4212,7 @@
             "opponentRank": 8
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 3430757433,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -4315,18 +4223,64 @@
         }
     },
     {
+        "label": "MASKEDVILLAIN2_DOUBLE:Teal#12",
+        "trainer": "Masked Villains Teal [Imogene] #2",
+        "cursed": false,
+        "rating": 1477.23,
+        "se": 32.54,
+        "ciLow": 1413.45,
+        "ciHigh": 1541.02,
+        "wins": 77,
+        "losses": 87,
+        "draws": 2,
+        "battles": 166,
+        "rank": 93,
+        "overlap": 52,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.4508067940552017,
+            "draw": 0.04,
+            "loss": 0.5091932059447982
+        },
+        "bestWin": {
+            "rating": 1816.09,
+            "seed": 2993251993,
+            "opponent": {
+                "label": "SPIRITGUARDIAN4:Brigitte#1",
+                "display": "Spirit Guardian Brigitte",
+                "cursed": true
+            },
+            "opponentRank": 7
+        },
+        "worstLoss": {
+            "rating": 1244.06,
+            "seed": 2687437926,
+            "opponent": {
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
+                "cursed": false
+            },
+            "opponentRank": 154
+        }
+    },
+    {
         "label": "ANOTHERPOSSIBLETAMARIND:Tamarind",
         "trainer": "Another Possible Tamarind #1",
         "cursed": false,
-        "rating": 1470.0,
+        "rating": 1469.99,
         "se": 32.44,
-        "ciLow": 1406.42,
-        "ciHigh": 1533.59,
+        "ciLow": 1406.4,
+        "ciHigh": 1533.57,
         "wins": 76,
         "losses": 89,
         "draws": 1,
         "battles": 166,
-        "rank": 95,
+        "rank": 94,
         "overlap": 53,
         "tier": "C",
         "tierColor": [
@@ -4340,7 +4294,7 @@
             "loss": 0.5177010282098603
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 2345032801,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -4350,7 +4304,7 @@
             "opponentRank": 11
         },
         "worstLoss": {
-            "rating": 1222.98,
+            "rating": 1223.0,
             "seed": 929106811,
             "opponent": {
                 "label": "LADY4:Pria",
@@ -4364,15 +4318,15 @@
         "label": "SPIRITGUARDIAN4:Brigitte",
         "trainer": "Spirit Guardian Brigitte",
         "cursed": false,
-        "rating": 1468.85,
+        "rating": 1468.84,
         "se": 32.4,
-        "ciLow": 1405.35,
-        "ciHigh": 1532.35,
+        "ciLow": 1405.34,
+        "ciHigh": 1532.33,
         "wins": 76,
         "losses": 90,
         "draws": 0,
         "battles": 166,
-        "rank": 96,
+        "rank": 95,
         "overlap": 53,
         "tier": "C",
         "tierColor": [
@@ -4386,7 +4340,7 @@
             "loss": 0.5421686746987951
         },
         "bestWin": {
-            "rating": 1874.11,
+            "rating": 1874.09,
             "seed": 3010246467,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#23",
@@ -4396,7 +4350,7 @@
             "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 3821111158,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -4410,15 +4364,15 @@
         "label": "LEADER_Lambert:Lambert#2",
         "trainer": "Gym Leader Lambert #2",
         "cursed": false,
-        "rating": 1465.28,
+        "rating": 1465.26,
         "se": 32.5,
-        "ciLow": 1401.58,
-        "ciHigh": 1528.97,
+        "ciLow": 1401.57,
+        "ciHigh": 1528.95,
         "wins": 75,
         "losses": 90,
         "draws": 1,
         "battles": 166,
-        "rank": 97,
+        "rank": 96,
         "overlap": 52,
         "tier": "C",
         "tierColor": [
@@ -4432,7 +4386,7 @@
             "loss": 0.5235011863959926
         },
         "bestWin": {
-            "rating": 1772.51,
+            "rating": 1772.48,
             "seed": 2495430614,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -4442,7 +4396,7 @@
             "opponentRank": 15
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 3254504025,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -4456,10 +4410,56 @@
         "label": "GUITARIST3:Envy",
         "trainer": "Developer Envy",
         "cursed": false,
-        "rating": 1464.09,
+        "rating": 1464.07,
         "se": 32.42,
-        "ciLow": 1400.54,
-        "ciHigh": 1527.63,
+        "ciLow": 1400.53,
+        "ciHigh": 1527.61,
+        "wins": 75,
+        "losses": 91,
+        "draws": 0,
+        "battles": 166,
+        "rank": 97,
+        "overlap": 52,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.45180722891566266,
+            "draw": 0.0,
+            "loss": 0.5481927710843374
+        },
+        "bestWin": {
+            "rating": 1786.6,
+            "seed": 4047696818,
+            "opponent": {
+                "label": "LEADER_Helena:Helena#3",
+                "display": "Gym Leader Helena #2",
+                "cursed": true
+            },
+            "opponentRank": 11
+        },
+        "worstLoss": {
+            "rating": 1226.93,
+            "seed": 3835535736,
+            "opponent": {
+                "label": "POKEMONMASTER_Vanya:Vanya",
+                "display": "Pok\u00e9mon Master Vanya #1",
+                "cursed": false
+            },
+            "opponentRank": 157
+        }
+    },
+    {
+        "label": "POKEMONMASTER_Vanya:Vanya#18",
+        "trainer": "Pok\u00e9mon Master Vanya #18",
+        "cursed": false,
+        "rating": 1464.07,
+        "se": 32.42,
+        "ciLow": 1400.53,
+        "ciHigh": 1527.61,
         "wins": 75,
         "losses": 91,
         "draws": 0,
@@ -4478,34 +4478,34 @@
             "loss": 0.5481927710843374
         },
         "bestWin": {
-            "rating": 1786.62,
-            "seed": 4047696818,
+            "rating": 1699.57,
+            "seed": 1964922618,
             "opponent": {
-                "label": "LEADER_Helena:Helena#3",
-                "display": "Gym Leader Helena #2",
-                "cursed": true
-            },
-            "opponentRank": 11
-        },
-        "worstLoss": {
-            "rating": 1226.91,
-            "seed": 3835535736,
-            "opponent": {
-                "label": "POKEMONMASTER_Vanya:Vanya",
-                "display": "Pok\u00e9mon Master Vanya #1",
+                "label": "HEXMANIAC:Errata",
+                "display": "Developer Errata",
                 "cursed": false
             },
-            "opponentRank": 157
+            "opponentRank": 26
+        },
+        "worstLoss": {
+            "rating": 1244.06,
+            "seed": 1309420698,
+            "opponent": {
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
+                "cursed": false
+            },
+            "opponentRank": 154
         }
     },
     {
-        "label": "POKEMONMASTER_Vanya:Vanya#18",
-        "trainer": "Pok\u00e9mon Master Vanya #18",
+        "label": "TRAINER_Skyler:Skyler",
+        "trainer": "Pok\u00e9mon Trainer Skyler",
         "cursed": false,
-        "rating": 1464.09,
+        "rating": 1464.07,
         "se": 32.42,
-        "ciLow": 1400.54,
-        "ciHigh": 1527.63,
+        "ciLow": 1400.53,
+        "ciHigh": 1527.61,
         "wins": 75,
         "losses": 91,
         "draws": 0,
@@ -4524,53 +4524,7 @@
             "loss": 0.5481927710843374
         },
         "bestWin": {
-            "rating": 1699.59,
-            "seed": 1964922618,
-            "opponent": {
-                "label": "HEXMANIAC:Errata",
-                "display": "Developer Errata",
-                "cursed": false
-            },
-            "opponentRank": 26
-        },
-        "worstLoss": {
-            "rating": 1237.11,
-            "seed": 1309420698,
-            "opponent": {
-                "label": "GAMBLER:Tiki",
-                "display": "Developer Tiki",
-                "cursed": false
-            },
-            "opponentRank": 155
-        }
-    },
-    {
-        "label": "TRAINER_Skyler:Skyler",
-        "trainer": "Pok\u00e9mon Trainer Skyler",
-        "cursed": false,
-        "rating": 1464.09,
-        "se": 32.42,
-        "ciLow": 1400.54,
-        "ciHigh": 1527.63,
-        "wins": 75,
-        "losses": 91,
-        "draws": 0,
-        "battles": 166,
-        "rank": 100,
-        "overlap": 52,
-        "tier": "C",
-        "tierColor": [
-            184,
-            233,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.45180722891566266,
-            "draw": 0.0,
-            "loss": 0.5481927710843374
-        },
-        "bestWin": {
-            "rating": 1808.55,
+            "rating": 1808.53,
             "seed": 3552851989,
             "opponent": {
                 "label": "TRAINER_Sang:Sang#5",
@@ -4580,7 +4534,7 @@
             "opponentRank": 8
         },
         "worstLoss": {
-            "rating": 1273.03,
+            "rating": 1273.04,
             "seed": 2783619252,
             "opponent": {
                 "label": "IDEALTRAINER:of Conquest",
@@ -4591,19 +4545,65 @@
         }
     },
     {
+        "label": "POKEMONMASTER_Vanya:Vanya#5",
+        "trainer": "Pok\u00e9mon Master Vanya #5",
+        "cursed": false,
+        "rating": 1461.54,
+        "se": 32.53,
+        "ciLow": 1397.78,
+        "ciHigh": 1525.31,
+        "wins": 74,
+        "losses": 91,
+        "draws": 1,
+        "battles": 166,
+        "rank": 100,
+        "overlap": 54,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.430698655417875,
+            "draw": 0.04,
+            "loss": 0.529301344582125
+        },
+        "bestWin": {
+            "rating": 1808.53,
+            "seed": 630224693,
+            "opponent": {
+                "label": "TRAINER_Sang:Sang#5",
+                "display": "Pok\u00e9mon Trainer Sang #2",
+                "cursed": true
+            },
+            "opponentRank": 8
+        },
+        "worstLoss": {
+            "rating": 1223.0,
+            "seed": 1639264389,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            },
+            "opponentRank": 158
+        }
+    },
+    {
         "label": "HARLEQUIN:Minty",
         "trainer": "Developer Minty",
         "cursed": false,
-        "rating": 1454.45,
-        "se": 32.48,
-        "ciLow": 1390.79,
-        "ciHigh": 1518.1,
+        "rating": 1454.43,
+        "se": 32.47,
+        "ciLow": 1390.78,
+        "ciHigh": 1518.08,
         "wins": 73,
         "losses": 93,
         "draws": 0,
         "battles": 166,
         "rank": 101,
-        "overlap": 52,
+        "overlap": 51,
         "tier": "C",
         "tierColor": [
             184,
@@ -4616,7 +4616,7 @@
             "loss": 0.5602409638554217
         },
         "bestWin": {
-            "rating": 1650.56,
+            "rating": 1650.54,
             "seed": 1929167080,
             "opponent": {
                 "label": "POKEMONCHAMPION_Vanya:Vanya",
@@ -4626,7 +4626,7 @@
             "opponentRank": 33
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 2679115558,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -4640,16 +4640,16 @@
         "label": "TRAINER_Alessa:Alessa#3",
         "trainer": "Pok\u00e9mon Trainer Alessa #3",
         "cursed": false,
-        "rating": 1454.45,
-        "se": 32.48,
-        "ciLow": 1390.79,
-        "ciHigh": 1518.1,
+        "rating": 1454.43,
+        "se": 32.47,
+        "ciLow": 1390.78,
+        "ciHigh": 1518.08,
         "wins": 73,
         "losses": 93,
         "draws": 0,
         "battles": 166,
         "rank": 102,
-        "overlap": 52,
+        "overlap": 51,
         "tier": "C",
         "tierColor": [
             184,
@@ -4662,7 +4662,7 @@
             "loss": 0.5602409638554217
         },
         "bestWin": {
-            "rating": 1778.52,
+            "rating": 1778.5,
             "seed": 562545281,
             "opponent": {
                 "label": "TOURISTM:Azeler",
@@ -4672,7 +4672,7 @@
             "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1222.98,
+            "rating": 1223.0,
             "seed": 735332341,
             "opponent": {
                 "label": "LADY4:Pria",
@@ -4686,10 +4686,10 @@
         "label": "TRAINER_Keoni:Keoni#2",
         "trainer": "Pok\u00e9mon Trainer Keoni #3",
         "cursed": false,
-        "rating": 1449.57,
+        "rating": 1449.55,
         "se": 32.51,
-        "ciLow": 1385.85,
-        "ciHigh": 1513.29,
+        "ciLow": 1385.84,
+        "ciHigh": 1513.27,
         "wins": 72,
         "losses": 94,
         "draws": 0,
@@ -4708,7 +4708,7 @@
             "loss": 0.5662650602409639
         },
         "bestWin": {
-            "rating": 1778.52,
+            "rating": 1778.5,
             "seed": 420214752,
             "opponent": {
                 "label": "TOURISTM:Azeler",
@@ -4718,7 +4718,7 @@
             "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 1076399049,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -4732,21 +4732,21 @@
         "label": "POKEMONMASTER_Vanya:Vanya#14",
         "trainer": "Pok\u00e9mon Master Vanya #14",
         "cursed": false,
-        "rating": 1448.01,
+        "rating": 1448.0,
         "se": 32.6,
-        "ciLow": 1384.12,
-        "ciHigh": 1511.91,
+        "ciLow": 1384.11,
+        "ciHigh": 1511.89,
         "wins": 71,
         "losses": 94,
         "draws": 1,
         "battles": 166,
         "rank": 104,
         "overlap": 50,
-        "tier": "C-",
+        "tier": "C",
         "tierColor": [
-            147,
-            222,
-            21
+            184,
+            233,
+            0
         ],
         "wldFractions": {
             "win": 0.413298180859478,
@@ -4754,7 +4754,7 @@
             "loss": 0.5467018191405221
         },
         "bestWin": {
-            "rating": 1719.51,
+            "rating": 1719.48,
             "seed": 3870312047,
             "opponent": {
                 "label": "LEADER_Eko:Eko#3",
@@ -4764,7 +4764,7 @@
             "opponentRank": 23
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 260425870,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -4778,10 +4778,10 @@
         "label": "TRAINER_Imogene_A:Imogene#1",
         "trainer": "Pok\u00e9mon Trainer Imogene #2",
         "cursed": false,
-        "rating": 1444.65,
+        "rating": 1444.64,
         "se": 32.54,
-        "ciLow": 1380.86,
-        "ciHigh": 1508.44,
+        "ciLow": 1380.85,
+        "ciHigh": 1508.42,
         "wins": 71,
         "losses": 95,
         "draws": 0,
@@ -4800,7 +4800,7 @@
             "loss": 0.572289156626506
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1816.09,
             "seed": 65555253,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -4810,24 +4810,24 @@
             "opponentRank": 7
         },
         "worstLoss": {
-            "rating": 1237.11,
+            "rating": 1244.06,
             "seed": 693363914,
             "opponent": {
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
             },
-            "opponentRank": 155
+            "opponentRank": 154
         }
     },
     {
         "label": "WAITRESS2:Fanfan",
         "trainer": "Developer Fanfan",
         "cursed": false,
-        "rating": 1443.03,
+        "rating": 1442.99,
         "se": 32.74,
-        "ciLow": 1378.86,
-        "ciHigh": 1507.21,
+        "ciLow": 1378.82,
+        "ciHigh": 1507.16,
         "wins": 70,
         "losses": 94,
         "draws": 2,
@@ -4846,7 +4846,7 @@
             "loss": 0.550063694267516
         },
         "bestWin": {
-            "rating": 1734.16,
+            "rating": 1734.14,
             "seed": 3263183359,
             "opponent": {
                 "label": "TOURISTM:Chus",
@@ -4856,7 +4856,7 @@
             "opponentRank": 21
         },
         "worstLoss": {
-            "rating": 1249.82,
+            "rating": 1249.84,
             "seed": 2200574289,
             "opponent": {
                 "label": "IDEALTRAINER:of Origins",
@@ -4870,10 +4870,10 @@
         "label": "RICHBOY4:Darlvon",
         "trainer": "Developer Darlvon",
         "cursed": false,
-        "rating": 1441.25,
-        "se": 32.67,
-        "ciLow": 1377.23,
-        "ciHigh": 1505.28,
+        "rating": 1441.24,
+        "se": 32.66,
+        "ciLow": 1377.22,
+        "ciHigh": 1505.26,
         "wins": 70,
         "losses": 95,
         "draws": 1,
@@ -4892,7 +4892,7 @@
             "loss": 0.5525019773266544
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 3373685563,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -4902,7 +4902,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1222.98,
+            "rating": 1223.0,
             "seed": 1708767441,
             "opponent": {
                 "label": "LADY4:Pria",
@@ -4916,10 +4916,10 @@
         "label": "DRAGONTAMER_F:Zinnia",
         "trainer": "Developer Zinnia",
         "cursed": false,
-        "rating": 1439.69,
+        "rating": 1439.67,
         "se": 32.58,
-        "ciLow": 1375.82,
-        "ciHigh": 1503.55,
+        "ciLow": 1375.81,
+        "ciHigh": 1503.53,
         "wins": 70,
         "losses": 96,
         "draws": 0,
@@ -4938,7 +4938,7 @@
             "loss": 0.5783132530120482
         },
         "bestWin": {
-            "rating": 1778.42,
+            "rating": 1778.4,
             "seed": 2154646806,
             "opponent": {
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
@@ -4948,7 +4948,7 @@
             "opponentRank": 14
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 2217051861,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -4962,10 +4962,10 @@
         "label": "MASKEDVILLAIN_DOUBLE:Crimson#12",
         "trainer": "Masked Villains Crimson [Imogene] #2",
         "cursed": false,
-        "rating": 1439.69,
+        "rating": 1439.67,
         "se": 32.58,
-        "ciLow": 1375.82,
-        "ciHigh": 1503.55,
+        "ciLow": 1375.81,
+        "ciHigh": 1503.53,
         "wins": 70,
         "losses": 96,
         "draws": 0,
@@ -4984,7 +4984,7 @@
             "loss": 0.5783132530120482
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 584392506,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -4994,24 +4994,24 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1237.11,
+            "rating": 1244.06,
             "seed": 1850958575,
             "opponent": {
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
             },
-            "opponentRank": 155
+            "opponentRank": 154
         }
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#21",
         "trainer": "Pok\u00e9mon Master Vanya #21",
         "cursed": false,
-        "rating": 1439.69,
+        "rating": 1439.67,
         "se": 32.58,
-        "ciLow": 1375.82,
-        "ciHigh": 1503.55,
+        "ciLow": 1375.81,
+        "ciHigh": 1503.53,
         "wins": 70,
         "losses": 96,
         "draws": 0,
@@ -5030,7 +5030,7 @@
             "loss": 0.5783132530120482
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 170343001,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -5040,7 +5040,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 1982524434,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -5054,10 +5054,10 @@
         "label": "JANITOR:Steeb",
         "trainer": "Developer Steeb",
         "cursed": false,
-        "rating": 1434.67,
+        "rating": 1434.66,
         "se": 32.63,
-        "ciLow": 1370.72,
-        "ciHigh": 1498.62,
+        "ciLow": 1370.71,
+        "ciHigh": 1498.61,
         "wins": 69,
         "losses": 97,
         "draws": 0,
@@ -5076,7 +5076,7 @@
             "loss": 0.5843373493975904
         },
         "bestWin": {
-            "rating": 1772.51,
+            "rating": 1772.48,
             "seed": 2122888003,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise#1",
@@ -5086,7 +5086,7 @@
             "opponentRank": 15
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 1262220876,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -5100,10 +5100,10 @@
         "label": "MASKEDVILLAIN2:Teal#14",
         "trainer": "Masked Villain Teal [Alessa] #2",
         "cursed": false,
-        "rating": 1434.67,
+        "rating": 1434.66,
         "se": 32.63,
-        "ciLow": 1370.72,
-        "ciHigh": 1498.62,
+        "ciLow": 1370.71,
+        "ciHigh": 1498.61,
         "wins": 69,
         "losses": 97,
         "draws": 0,
@@ -5122,7 +5122,7 @@
             "loss": 0.5843373493975904
         },
         "bestWin": {
-            "rating": 1934.97,
+            "rating": 1934.95,
             "seed": 3576406003,
             "opponent": {
                 "label": "LEADER_Bence:Bence#3",
@@ -5132,7 +5132,7 @@
             "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 3176546233,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -5146,10 +5146,10 @@
         "label": "MASKEDVILLAIN:Crimson#16",
         "trainer": "Masked Villain Crimson [Skyler] #2",
         "cursed": false,
-        "rating": 1434.67,
+        "rating": 1434.66,
         "se": 32.63,
-        "ciLow": 1370.72,
-        "ciHigh": 1498.62,
+        "ciLow": 1370.71,
+        "ciHigh": 1498.61,
         "wins": 69,
         "losses": 97,
         "draws": 0,
@@ -5168,7 +5168,7 @@
             "loss": 0.5843373493975904
         },
         "bestWin": {
-            "rating": 1750.65,
+            "rating": 1750.63,
             "seed": 1942797449,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -5178,7 +5178,7 @@
             "opponentRank": 19
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 1217630386,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -5192,10 +5192,10 @@
         "label": "MASKEDVILLAIN:Crimson#21",
         "trainer": "Masked Villain Crimson [Eifion] #2",
         "cursed": true,
-        "rating": 1434.67,
+        "rating": 1434.66,
         "se": 32.63,
-        "ciLow": 1370.72,
-        "ciHigh": 1498.62,
+        "ciLow": 1370.71,
+        "ciHigh": 1498.61,
         "wins": 69,
         "losses": 97,
         "draws": 0,
@@ -5214,7 +5214,7 @@
             "loss": 0.5843373493975904
         },
         "bestWin": {
-            "rating": 1793.82,
+            "rating": 1793.8,
             "seed": 2491434189,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#15",
@@ -5224,7 +5224,7 @@
             "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 1248175446,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -5238,10 +5238,10 @@
         "label": "POKEMONMASTER_Vanya:Vanya#3",
         "trainer": "Pok\u00e9mon Master Vanya #3",
         "cursed": false,
-        "rating": 1429.61,
-        "se": 32.68,
-        "ciLow": 1365.57,
-        "ciHigh": 1493.65,
+        "rating": 1429.6,
+        "se": 32.67,
+        "ciLow": 1365.56,
+        "ciHigh": 1493.64,
         "wins": 68,
         "losses": 98,
         "draws": 0,
@@ -5260,7 +5260,7 @@
             "loss": 0.5903614457831325
         },
         "bestWin": {
-            "rating": 1772.51,
+            "rating": 1772.48,
             "seed": 3742740046,
             "opponent": {
                 "label": "ODDISH:Oddium",
@@ -5270,7 +5270,7 @@
             "opponentRank": 16
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 3098853235,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -5284,10 +5284,10 @@
         "label": "RICHBOY:Splitmoon",
         "trainer": "Developer Splitmoon",
         "cursed": false,
-        "rating": 1429.61,
-        "se": 32.68,
-        "ciLow": 1365.57,
-        "ciHigh": 1493.65,
+        "rating": 1429.6,
+        "se": 32.67,
+        "ciLow": 1365.56,
+        "ciHigh": 1493.64,
         "wins": 68,
         "losses": 98,
         "draws": 0,
@@ -5306,7 +5306,7 @@
             "loss": 0.5903614457831325
         },
         "bestWin": {
-            "rating": 1793.82,
+            "rating": 1793.8,
             "seed": 2963312275,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#15",
@@ -5316,7 +5316,7 @@
             "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1222.98,
+            "rating": 1223.0,
             "seed": 2197526200,
             "opponent": {
                 "label": "LADY4:Pria",
@@ -5330,10 +5330,10 @@
         "label": "TRAINER_Eifion:Eifion#1",
         "trainer": "Pok\u00e9mon Trainer Eifion #2",
         "cursed": false,
-        "rating": 1424.49,
+        "rating": 1424.48,
         "se": 32.73,
-        "ciLow": 1360.35,
-        "ciHigh": 1488.64,
+        "ciLow": 1360.34,
+        "ciHigh": 1488.62,
         "wins": 67,
         "losses": 99,
         "draws": 0,
@@ -5352,7 +5352,7 @@
             "loss": 0.5963855421686747
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1816.09,
             "seed": 1823706891,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -5362,7 +5362,7 @@
             "opponentRank": 7
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 3991077542,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -5376,16 +5376,16 @@
         "label": "ROUGHNECK2:Jaggedthorn",
         "trainer": "Developer Jaggedthorn",
         "cursed": false,
-        "rating": 1417.55,
-        "se": 32.89,
-        "ciLow": 1353.09,
-        "ciHigh": 1482.0,
+        "rating": 1417.53,
+        "se": 32.88,
+        "ciLow": 1353.08,
+        "ciHigh": 1481.99,
         "wins": 65,
         "losses": 100,
         "draws": 1,
         "battles": 166,
         "rank": 118,
-        "overlap": 40,
+        "overlap": 42,
         "tier": "C-",
         "tierColor": [
             147,
@@ -5398,7 +5398,7 @@
             "loss": 0.5815027682573162
         },
         "bestWin": {
-            "rating": 1786.62,
+            "rating": 1786.6,
             "seed": 1351358468,
             "opponent": {
                 "label": "LEADER_Helena:Helena#3",
@@ -5408,7 +5408,7 @@
             "opponentRank": 11
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 3925704250,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -5419,19 +5419,65 @@
         }
     },
     {
+        "label": "TAPU_FINI:Tapu Fini#1",
+        "trainer": "Guardian Deity Tapu Fini",
+        "cursed": true,
+        "rating": 1416.16,
+        "se": 32.92,
+        "ciLow": 1351.64,
+        "ciHigh": 1480.68,
+        "wins": 65,
+        "losses": 100,
+        "draws": 1,
+        "battles": 166,
+        "rank": 119,
+        "overlap": 43,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.37849723174268385,
+            "draw": 0.04,
+            "loss": 0.5815027682573162
+        },
+        "bestWin": {
+            "rating": 1801.1,
+            "seed": 2023903289,
+            "opponent": {
+                "label": "COOLTRAINER_M7:X#1",
+                "display": "Pro Trainer X",
+                "cursed": true
+            },
+            "opponentRank": 9
+        },
+        "worstLoss": {
+            "rating": 1163.38,
+            "seed": 2586198459,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            },
+            "opponentRank": 161
+        }
+    },
+    {
         "label": "POKEMONMASTER_Vanya:Vanya#1",
         "trainer": "Pok\u00e9mon Master Vanya #2",
         "cursed": false,
-        "rating": 1414.1,
+        "rating": 1414.08,
         "se": 32.84,
-        "ciLow": 1349.72,
-        "ciHigh": 1478.47,
+        "ciLow": 1349.71,
+        "ciHigh": 1478.45,
         "wins": 65,
         "losses": 101,
         "draws": 0,
         "battles": 166,
-        "rank": 119,
-        "overlap": 42,
+        "rank": 120,
+        "overlap": 43,
         "tier": "C-",
         "tierColor": [
             147,
@@ -5444,64 +5490,18 @@
             "loss": 0.608433734939759
         },
         "bestWin": {
-            "rating": 1634.99,
-            "seed": 2887002600,
+            "rating": 1632.51,
+            "seed": 4227255163,
             "opponent": {
-                "label": "POKEMONTRAINER_Vanya:Vanya#1",
-                "display": "Pok\u00e9mon Trainer Vanya #2",
-                "cursed": false
-            },
-            "opponentRank": 40
-        },
-        "worstLoss": {
-            "rating": 1163.35,
-            "seed": 1271170906,
-            "opponent": {
-                "label": "IDEALTRAINER:of Colors",
-                "display": "Ideal Trainer of Colors",
-                "cursed": false
-            },
-            "opponentRank": 161
-        }
-    },
-    {
-        "label": "TAPU_FINI:Tapu Fini#1",
-        "trainer": "Guardian Deity Tapu Fini",
-        "cursed": true,
-        "rating": 1410.91,
-        "se": 32.98,
-        "ciLow": 1346.27,
-        "ciHigh": 1475.56,
-        "wins": 64,
-        "losses": 101,
-        "draws": 1,
-        "battles": 166,
-        "rank": 120,
-        "overlap": 42,
-        "tier": "C-",
-        "tierColor": [
-            147,
-            222,
-            21
-        ],
-        "wldFractions": {
-            "win": 0.3726970735565516,
-            "draw": 0.04,
-            "loss": 0.5873029264434485
-        },
-        "bestWin": {
-            "rating": 1801.13,
-            "seed": 2023903289,
-            "opponent": {
-                "label": "COOLTRAINER_M7:X#1",
-                "display": "Pro Trainer X",
+                "label": "LEADER_Samorn:Samorn#3",
+                "display": "Gym Leader Samorn #2",
                 "cursed": true
             },
-            "opponentRank": 9
+            "opponentRank": 41
         },
         "worstLoss": {
-            "rating": 1163.35,
-            "seed": 2586198459,
+            "rating": 1163.38,
+            "seed": 1271170906,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
                 "display": "Ideal Trainer of Colors",
@@ -5514,10 +5514,10 @@
         "label": "COOLTRAINER_M3:Dada",
         "trainer": "Developer Dada",
         "cursed": false,
-        "rating": 1410.66,
+        "rating": 1410.65,
         "se": 32.98,
         "ciLow": 1346.01,
-        "ciHigh": 1475.31,
+        "ciHigh": 1475.3,
         "wins": 64,
         "losses": 101,
         "draws": 1,
@@ -5536,7 +5536,7 @@
             "loss": 0.5873029264434485
         },
         "bestWin": {
-            "rating": 1793.82,
+            "rating": 1793.8,
             "seed": 2768125407,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#15",
@@ -5546,7 +5546,7 @@
             "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 2003471664,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -5560,10 +5560,10 @@
         "label": "POKEMONMASTER_Vanya:Vanya#11",
         "trainer": "Pok\u00e9mon Master Vanya #11",
         "cursed": false,
-        "rating": 1408.81,
+        "rating": 1408.8,
         "se": 32.91,
-        "ciLow": 1344.31,
-        "ciHigh": 1473.31,
+        "ciLow": 1344.3,
+        "ciHigh": 1473.29,
         "wins": 64,
         "losses": 102,
         "draws": 0,
@@ -5582,7 +5582,7 @@
             "loss": 0.6144578313253012
         },
         "bestWin": {
-            "rating": 1778.52,
+            "rating": 1778.5,
             "seed": 3904910756,
             "opponent": {
                 "label": "TOURISTM:Azeler",
@@ -5592,7 +5592,7 @@
             "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 2956140064,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -5606,16 +5606,16 @@
         "label": "MASKEDVILLAIN:Crimson#14",
         "trainer": "Masked Villain Crimson [Alessa] #2",
         "cursed": false,
-        "rating": 1407.21,
-        "se": 33.0,
-        "ciLow": 1342.54,
-        "ciHigh": 1471.88,
+        "rating": 1407.2,
+        "se": 32.99,
+        "ciLow": 1342.53,
+        "ciHigh": 1471.87,
         "wins": 63,
         "losses": 102,
         "draws": 1,
         "battles": 166,
         "rank": 123,
-        "overlap": 41,
+        "overlap": 42,
         "tier": "C-",
         "tierColor": [
             147,
@@ -5628,7 +5628,7 @@
             "loss": 0.5931030846295808
         },
         "bestWin": {
-            "rating": 1738.51,
+            "rating": 1738.49,
             "seed": 1635987113,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#17",
@@ -5638,7 +5638,7 @@
             "opponentRank": 20
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 2717157936,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -5652,16 +5652,16 @@
         "label": "TAPU_FINI:Tapu Fini",
         "trainer": "Guardian Deity Tapu Fini",
         "cursed": false,
-        "rating": 1399.4,
+        "rating": 1399.39,
         "se": 33.12,
-        "ciLow": 1334.49,
-        "ciHigh": 1464.32,
+        "ciLow": 1334.48,
+        "ciHigh": 1464.31,
         "wins": 62,
         "losses": 103,
         "draws": 1,
         "battles": 166,
         "rank": 124,
-        "overlap": 41,
+        "overlap": 42,
         "tier": "C-",
         "tierColor": [
             147,
@@ -5674,7 +5674,7 @@
             "loss": 0.5989032428157132
         },
         "bestWin": {
-            "rating": 1801.13,
+            "rating": 1801.1,
             "seed": 2038112203,
             "opponent": {
                 "label": "COOLTRAINER_M7:X#1",
@@ -5684,7 +5684,7 @@
             "opponentRank": 9
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 1485370562,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -5698,16 +5698,16 @@
         "label": "POKEMONMASTER_Vanya:Vanya#10",
         "trainer": "Pok\u00e9mon Master Vanya #10",
         "cursed": false,
-        "rating": 1399.29,
+        "rating": 1399.28,
         "se": 33.06,
         "ciLow": 1334.49,
-        "ciHigh": 1464.08,
+        "ciHigh": 1464.07,
         "wins": 62,
         "losses": 103,
         "draws": 1,
         "battles": 166,
         "rank": 125,
-        "overlap": 38,
+        "overlap": 42,
         "tier": "C-",
         "tierColor": [
             147,
@@ -5720,7 +5720,7 @@
             "loss": 0.5989032428157132
         },
         "bestWin": {
-            "rating": 1779.52,
+            "rating": 1779.5,
             "seed": 986864453,
             "opponent": {
                 "label": "TRAINER_Candy:Candy#1",
@@ -5730,7 +5730,7 @@
             "opponentRank": 12
         },
         "worstLoss": {
-            "rating": 1226.91,
+            "rating": 1226.93,
             "seed": 2198523041,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya",
@@ -5744,10 +5744,10 @@
         "label": "DRAGONTAMER_F:Bella",
         "trainer": "Developer Bella",
         "cursed": false,
-        "rating": 1375.84,
+        "rating": 1375.83,
         "se": 33.4,
         "ciLow": 1310.37,
-        "ciHigh": 1441.3,
+        "ciHigh": 1441.29,
         "wins": 58,
         "losses": 108,
         "draws": 0,
@@ -5766,7 +5766,7 @@
             "loss": 0.6506024096385542
         },
         "bestWin": {
-            "rating": 1627.39,
+            "rating": 1627.37,
             "seed": 260509052,
             "opponent": {
                 "label": "ULTRALAINIE:Lainie",
@@ -5776,7 +5776,7 @@
             "opponentRank": 45
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 2560929393,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -5790,10 +5790,10 @@
         "label": "ANOTHERPOSSIBLEZAIN:Zain#1",
         "trainer": "Another Possible Zain #2",
         "cursed": false,
-        "rating": 1371.39,
+        "rating": 1371.38,
         "se": 33.56,
         "ciLow": 1305.6,
-        "ciHigh": 1437.17,
+        "ciHigh": 1437.16,
         "wins": 57,
         "losses": 108,
         "draws": 1,
@@ -5812,7 +5812,7 @@
             "loss": 0.6279040337463749
         },
         "bestWin": {
-            "rating": 1793.82,
+            "rating": 1793.8,
             "seed": 2982098242,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#15",
@@ -5822,7 +5822,7 @@
             "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 2630112808,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -5836,10 +5836,10 @@
         "label": "MASKEDVILLAIN2:Teal#18",
         "trainer": "Masked Villain Teal [Keoni] #2",
         "cursed": false,
-        "rating": 1370.13,
+        "rating": 1370.12,
         "se": 33.5,
         "ciLow": 1304.47,
-        "ciHigh": 1435.79,
+        "ciHigh": 1435.78,
         "wins": 57,
         "losses": 109,
         "draws": 0,
@@ -5858,7 +5858,7 @@
             "loss": 0.6566265060240963
         },
         "bestWin": {
-            "rating": 1808.55,
+            "rating": 1808.53,
             "seed": 2489643637,
             "opponent": {
                 "label": "TRAINER_Sang:Sang#5",
@@ -5868,7 +5868,7 @@
             "opponentRank": 8
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 3070332276,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -5882,10 +5882,10 @@
         "label": "HEXMANIAC_1:Riptide#1",
         "trainer": "Developer Riptide #2",
         "cursed": false,
-        "rating": 1364.36,
+        "rating": 1364.35,
         "se": 33.61,
         "ciLow": 1298.49,
-        "ciHigh": 1430.23,
+        "ciHigh": 1430.22,
         "wins": 56,
         "losses": 110,
         "draws": 0,
@@ -5904,7 +5904,7 @@
             "loss": 0.6626506024096386
         },
         "bestWin": {
-            "rating": 1738.51,
+            "rating": 1738.49,
             "seed": 2884101203,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#17",
@@ -5914,7 +5914,7 @@
             "opponentRank": 20
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 742158849,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -5931,7 +5931,7 @@
         "rating": 1361.77,
         "se": 33.85,
         "ciLow": 1295.42,
-        "ciHigh": 1428.12,
+        "ciHigh": 1428.11,
         "wins": 55,
         "losses": 109,
         "draws": 2,
@@ -5950,7 +5950,7 @@
             "loss": 0.6376433121019108
         },
         "bestWin": {
-            "rating": 1801.13,
+            "rating": 1801.1,
             "seed": 3184630599,
             "opponent": {
                 "label": "COOLTRAINER_M7:X#1",
@@ -5960,7 +5960,7 @@
             "opponentRank": 9
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 2878132799,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -5975,9 +5975,9 @@
         "trainer": "Developer Papper",
         "cursed": false,
         "rating": 1359.5,
-        "se": 33.77,
+        "se": 33.76,
         "ciLow": 1293.32,
-        "ciHigh": 1425.69,
+        "ciHigh": 1425.68,
         "wins": 55,
         "losses": 110,
         "draws": 1,
@@ -5996,7 +5996,7 @@
             "loss": 0.6395043501186396
         },
         "bestWin": {
-            "rating": 1734.16,
+            "rating": 1734.14,
             "seed": 3927822340,
             "opponent": {
                 "label": "TOURISTM:Chus",
@@ -6006,7 +6006,7 @@
             "opponentRank": 21
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 2571151651,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -6017,8 +6017,8 @@
         }
     },
     {
-        "label": "MASKEDVILLAIN:Crimson#18",
-        "trainer": "Masked Villain Crimson [Keoni] #2",
+        "label": "IDEALTRAINER:of Days",
+        "trainer": "Ideal Trainer of Days",
         "cursed": false,
         "rating": 1358.53,
         "se": 33.72,
@@ -6042,36 +6042,36 @@
             "loss": 0.6686746987951807
         },
         "bestWin": {
-            "rating": 1808.55,
-            "seed": 1921981564,
+            "rating": 1837.59,
+            "seed": 2626816947,
             "opponent": {
-                "label": "TRAINER_Sang:Sang#5",
-                "display": "Pok\u00e9mon Trainer Sang #2",
-                "cursed": true
-            },
-            "opponentRank": 8
-        },
-        "worstLoss": {
-            "rating": 1201.01,
-            "seed": 291637192,
-            "opponent": {
-                "label": "POKEMONMASTER_Vanya:Vanya#7",
-                "display": "Pok\u00e9mon Master Vanya #7",
+                "label": "POKEMONTRAINER_Vanya:Vanya#2",
+                "display": "Pok\u00e9mon Trainer Vanya #3",
                 "cursed": false
             },
-            "opponentRank": 160
+            "opponentRank": 6
+        },
+        "worstLoss": {
+            "rating": 1163.38,
+            "seed": 3668834530,
+            "opponent": {
+                "label": "IDEALTRAINER:of Colors",
+                "display": "Ideal Trainer of Colors",
+                "cursed": false
+            },
+            "opponentRank": 161
         }
     },
     {
-        "label": "IDEALTRAINER:of Days",
-        "trainer": "Ideal Trainer of Days",
+        "label": "MASKEDVILLAIN:Crimson#18",
+        "trainer": "Masked Villain Crimson [Keoni] #2",
         "cursed": false,
-        "rating": 1352.64,
-        "se": 33.84,
-        "ciLow": 1286.32,
-        "ciHigh": 1418.97,
-        "wins": 54,
-        "losses": 112,
+        "rating": 1358.53,
+        "se": 33.72,
+        "ciLow": 1292.44,
+        "ciHigh": 1424.62,
+        "wins": 55,
+        "losses": 111,
         "draws": 0,
         "battles": 166,
         "rank": 133,
@@ -6083,29 +6083,29 @@
             38
         ],
         "wldFractions": {
-            "win": 0.3253012048192771,
+            "win": 0.3313253012048193,
             "draw": 0.0,
-            "loss": 0.6746987951807228
+            "loss": 0.6686746987951807
         },
         "bestWin": {
-            "rating": 1837.56,
-            "seed": 2626816947,
+            "rating": 1808.53,
+            "seed": 1921981564,
             "opponent": {
-                "label": "POKEMONTRAINER_Vanya:Vanya#2",
-                "display": "Pok\u00e9mon Trainer Vanya #3",
-                "cursed": false
+                "label": "TRAINER_Sang:Sang#5",
+                "display": "Pok\u00e9mon Trainer Sang #2",
+                "cursed": true
             },
-            "opponentRank": 6
+            "opponentRank": 8
         },
         "worstLoss": {
-            "rating": 1163.35,
-            "seed": 3668834530,
+            "rating": 1201.04,
+            "seed": 291637192,
             "opponent": {
-                "label": "IDEALTRAINER:of Colors",
-                "display": "Ideal Trainer of Colors",
+                "label": "POKEMONMASTER_Vanya:Vanya#7",
+                "display": "Pok\u00e9mon Master Vanya #7",
                 "cursed": false
             },
-            "opponentRank": 161
+            "opponentRank": 160
         }
     },
     {
@@ -6115,7 +6115,7 @@
         "rating": 1352.64,
         "se": 33.84,
         "ciLow": 1286.32,
-        "ciHigh": 1418.97,
+        "ciHigh": 1418.96,
         "wins": 54,
         "losses": 112,
         "draws": 0,
@@ -6134,7 +6134,7 @@
             "loss": 0.6746987951807228
         },
         "bestWin": {
-            "rating": 1763.07,
+            "rating": 1763.05,
             "seed": 4061869550,
             "opponent": {
                 "label": "MASKEDVILLAIN:Crimson#23",
@@ -6144,7 +6144,7 @@
             "opponentRank": 18
         },
         "worstLoss": {
-            "rating": 1249.82,
+            "rating": 1249.84,
             "seed": 1517262971,
             "opponent": {
                 "label": "IDEALTRAINER:of Origins",
@@ -6159,15 +6159,15 @@
         "trainer": "Pok\u00e9mon Master Vanya #16",
         "cursed": false,
         "rating": 1346.7,
-        "se": 33.97,
+        "se": 33.96,
         "ciLow": 1280.13,
-        "ciHigh": 1413.27,
+        "ciHigh": 1413.26,
         "wins": 53,
         "losses": 113,
         "draws": 0,
         "battles": 166,
         "rank": 135,
-        "overlap": 28,
+        "overlap": 26,
         "tier": "D+",
         "tierColor": [
             111,
@@ -6180,7 +6180,7 @@
             "loss": 0.6807228915662651
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1816.09,
             "seed": 4026896971,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -6190,7 +6190,7 @@
             "opponentRank": 7
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 1499566822,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -6205,15 +6205,15 @@
         "trainer": "Developer Jbsundown",
         "cursed": false,
         "rating": 1346.7,
-        "se": 33.97,
+        "se": 33.96,
         "ciLow": 1280.13,
-        "ciHigh": 1413.27,
+        "ciHigh": 1413.26,
         "wins": 53,
         "losses": 113,
         "draws": 0,
         "battles": 166,
         "rank": 136,
-        "overlap": 28,
+        "overlap": 26,
         "tier": "D+",
         "tierColor": [
             111,
@@ -6226,7 +6226,7 @@
             "loss": 0.6807228915662651
         },
         "bestWin": {
-            "rating": 1778.42,
+            "rating": 1778.4,
             "seed": 1761102075,
             "opponent": {
                 "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
@@ -6236,7 +6236,7 @@
             "opponentRank": 14
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 3612457261,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -6250,10 +6250,10 @@
         "label": "IDEALTRAINER:of Beauty",
         "trainer": "Ideal Trainer of Beauty",
         "cursed": false,
-        "rating": 1340.7,
+        "rating": 1340.69,
         "se": 34.1,
-        "ciLow": 1273.86,
-        "ciHigh": 1407.53,
+        "ciLow": 1273.87,
+        "ciHigh": 1407.52,
         "wins": 52,
         "losses": 114,
         "draws": 0,
@@ -6272,17 +6272,17 @@
             "loss": 0.6867469879518072
         },
         "bestWin": {
-            "rating": 1712.36,
+            "rating": 1718.8,
             "seed": 3657702191,
             "opponent": {
                 "label": "VETERANM_2:Kirbae",
                 "display": "Developer Kirbae",
                 "cursed": false
             },
-            "opponentRank": 25
+            "opponentRank": 24
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 22097075,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -6297,7 +6297,7 @@
         "trainer": "Pok\u00e9mon Master Vanya #8",
         "cursed": false,
         "rating": 1336.29,
-        "se": 34.3,
+        "se": 34.29,
         "ciLow": 1269.07,
         "ciHigh": 1403.51,
         "wins": 51,
@@ -6318,7 +6318,7 @@
             "loss": 0.662704982863169
         },
         "bestWin": {
-            "rating": 1881.57,
+            "rating": 1881.55,
             "seed": 3130115902,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#2",
@@ -6328,7 +6328,7 @@
             "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 3872405129,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -6343,8 +6343,8 @@
         "trainer": "Former Champion Casey",
         "cursed": false,
         "rating": 1335.54,
-        "se": 34.26,
-        "ciLow": 1268.39,
+        "se": 34.25,
+        "ciLow": 1268.4,
         "ciHigh": 1402.68,
         "wins": 51,
         "losses": 114,
@@ -6364,7 +6364,7 @@
             "loss": 0.662704982863169
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 841879246,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -6374,7 +6374,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1230.09,
+            "rating": 1230.11,
             "seed": 2331471156,
             "opponent": {
                 "label": "SPIRITGUARDIAN2:Sonya",
@@ -6390,7 +6390,7 @@
         "cursed": false,
         "rating": 1328.52,
         "se": 34.38,
-        "ciLow": 1261.13,
+        "ciLow": 1261.14,
         "ciHigh": 1395.91,
         "wins": 50,
         "losses": 116,
@@ -6410,7 +6410,7 @@
             "loss": 0.6987951807228916
         },
         "bestWin": {
-            "rating": 1750.65,
+            "rating": 1750.63,
             "seed": 4196045165,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -6420,7 +6420,7 @@
             "opponentRank": 19
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 1266355675,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -6436,7 +6436,7 @@
         "cursed": false,
         "rating": 1316.13,
         "se": 34.7,
-        "ciLow": 1248.12,
+        "ciLow": 1248.13,
         "ciHigh": 1384.14,
         "wins": 48,
         "losses": 118,
@@ -6456,7 +6456,7 @@
             "loss": 0.7108433734939759
         },
         "bestWin": {
-            "rating": 1778.52,
+            "rating": 1778.5,
             "seed": 628420,
             "opponent": {
                 "label": "TOURISTM:Azeler",
@@ -6466,7 +6466,7 @@
             "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 3916997985,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -6482,7 +6482,7 @@
         "cursed": false,
         "rating": 1316.13,
         "se": 34.7,
-        "ciLow": 1248.12,
+        "ciLow": 1248.13,
         "ciHigh": 1384.14,
         "wins": 48,
         "losses": 118,
@@ -6502,7 +6502,7 @@
             "loss": 0.7108433734939759
         },
         "bestWin": {
-            "rating": 1734.16,
+            "rating": 1734.14,
             "seed": 444851790,
             "opponent": {
                 "label": "TOURISTM:Chus",
@@ -6512,7 +6512,7 @@
             "opponentRank": 21
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 3464603305,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -6527,15 +6527,15 @@
         "trainer": "Pok\u00e9mon Master Vanya #4",
         "cursed": false,
         "rating": 1309.86,
-        "se": 34.87,
-        "ciLow": 1241.52,
+        "se": 34.86,
+        "ciLow": 1241.53,
         "ciHigh": 1378.19,
         "wins": 47,
         "losses": 119,
         "draws": 0,
         "battles": 166,
         "rank": 143,
-        "overlap": 28,
+        "overlap": 29,
         "tier": "D+",
         "tierColor": [
             111,
@@ -6548,7 +6548,7 @@
             "loss": 0.7168674698795181
         },
         "bestWin": {
-            "rating": 1723.83,
+            "rating": 1723.81,
             "seed": 322624924,
             "opponent": {
                 "label": "POKEMONTRAINER_Yezera:Yezera#11",
@@ -6558,7 +6558,7 @@
             "opponentRank": 22
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 2978289541,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -6574,7 +6574,7 @@
         "cursed": false,
         "rating": 1303.53,
         "se": 35.04,
-        "ciLow": 1234.84,
+        "ciLow": 1234.85,
         "ciHigh": 1372.21,
         "wins": 46,
         "losses": 120,
@@ -6594,7 +6594,7 @@
             "loss": 0.7228915662650602
         },
         "bestWin": {
-            "rating": 1638.86,
+            "rating": 1638.84,
             "seed": 3476688282,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise#1",
@@ -6604,7 +6604,7 @@
             "opponentRank": 37
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 1523520619,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -6620,7 +6620,7 @@
         "cursed": false,
         "rating": 1303.53,
         "se": 35.04,
-        "ciLow": 1234.84,
+        "ciLow": 1234.85,
         "ciHigh": 1372.21,
         "wins": 46,
         "losses": 120,
@@ -6640,7 +6640,7 @@
             "loss": 0.7228915662650602
         },
         "bestWin": {
-            "rating": 1578.77,
+            "rating": 1578.75,
             "seed": 2265499582,
             "opponent": {
                 "label": "ANOTHERPOSSIBLEALESSA:Alessa#1",
@@ -6650,7 +6650,7 @@
             "opponentRank": 54
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 1750909776,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -6664,9 +6664,9 @@
         "label": "ANOTHERPOSSIBLEZAIN:Zain",
         "trainer": "Another Possible Zain #1",
         "cursed": false,
-        "rating": 1297.14,
-        "se": 35.23,
-        "ciLow": 1228.1,
+        "rating": 1297.15,
+        "se": 35.22,
+        "ciLow": 1228.11,
         "ciHigh": 1366.19,
         "wins": 45,
         "losses": 121,
@@ -6686,7 +6686,7 @@
             "loss": 0.7289156626506024
         },
         "bestWin": {
-            "rating": 1793.82,
+            "rating": 1793.8,
             "seed": 1474425712,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#15",
@@ -6696,7 +6696,7 @@
             "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 465341338,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -6710,9 +6710,9 @@
         "label": "MASKEDVILLAIN2:Teal#20",
         "trainer": "Masked Villain Teal [Eifion] #2",
         "cursed": false,
-        "rating": 1290.71,
+        "rating": 1290.72,
         "se": 35.42,
-        "ciLow": 1221.29,
+        "ciLow": 1221.3,
         "ciHigh": 1360.13,
         "wins": 44,
         "losses": 122,
@@ -6732,7 +6732,7 @@
             "loss": 0.7349397590361446
         },
         "bestWin": {
-            "rating": 1801.13,
+            "rating": 1801.1,
             "seed": 1721788727,
             "opponent": {
                 "label": "COOLTRAINER_M7:X#1",
@@ -6742,7 +6742,7 @@
             "opponentRank": 9
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 1079408883,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -6756,16 +6756,16 @@
         "label": "IDEALTRAINER:of Tradition",
         "trainer": "Ideal Trainer of Tradition",
         "cursed": false,
-        "rating": 1285.78,
-        "se": 35.67,
-        "ciLow": 1215.87,
-        "ciHigh": 1355.7,
-        "wins": 43,
-        "losses": 122,
+        "rating": 1279.27,
+        "se": 35.88,
+        "ciLow": 1208.95,
+        "ciHigh": 1349.59,
+        "wins": 42,
+        "losses": 123,
         "draws": 1,
         "battles": 166,
         "rank": 148,
-        "overlap": 25,
+        "overlap": 23,
         "tier": "D",
         "tierColor": [
             75,
@@ -6773,12 +6773,12 @@
             53
         ],
         "wldFractions": {
-            "win": 0.2508937516477722,
+            "win": 0.24509359346163984,
             "draw": 0.04,
-            "loss": 0.7091062483522278
+            "loss": 0.7149064065383601
         },
         "bestWin": {
-            "rating": 1689.74,
+            "rating": 1689.72,
             "seed": 1171006711,
             "opponent": {
                 "label": "TRAINER_Eifion:Eifion#2",
@@ -6788,7 +6788,7 @@
             "opponentRank": 28
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 3479887521,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -6802,10 +6802,10 @@
         "label": "IDEALTRAINER:of Conquest",
         "trainer": "Ideal Trainer of Conquest",
         "cursed": false,
-        "rating": 1273.03,
-        "se": 36.1,
-        "ciLow": 1202.28,
-        "ciHigh": 1343.78,
+        "rating": 1273.04,
+        "se": 36.09,
+        "ciLow": 1202.3,
+        "ciHigh": 1343.79,
         "wins": 41,
         "losses": 124,
         "draws": 1,
@@ -6824,7 +6824,7 @@
             "loss": 0.7207065647244925
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1816.09,
             "seed": 1616625294,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -6834,7 +6834,7 @@
             "opponentRank": 7
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 1635132803,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -6848,10 +6848,10 @@
         "label": "JUGGLER:Brickbat",
         "trainer": "Developer Brickbat",
         "cursed": false,
-        "rating": 1257.7,
+        "rating": 1257.71,
         "se": 36.51,
-        "ciLow": 1186.13,
-        "ciHigh": 1329.26,
+        "ciLow": 1186.15,
+        "ciHigh": 1329.27,
         "wins": 39,
         "losses": 127,
         "draws": 0,
@@ -6870,7 +6870,7 @@
             "loss": 0.7650602409638554
         },
         "bestWin": {
-            "rating": 1793.82,
+            "rating": 1793.8,
             "seed": 1919921476,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#15",
@@ -6880,7 +6880,7 @@
             "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1208.45,
+            "rating": 1208.48,
             "seed": 4085945102,
             "opponent": {
                 "label": "ARTIST3:Drawingbox",
@@ -6894,10 +6894,10 @@
         "label": "MASKEDVILLAIN:Crimson#20",
         "trainer": "Masked Villain Crimson [Eifion] #2",
         "cursed": false,
-        "rating": 1257.7,
+        "rating": 1257.71,
         "se": 36.51,
-        "ciLow": 1186.13,
-        "ciHigh": 1329.26,
+        "ciLow": 1186.15,
+        "ciHigh": 1329.27,
         "wins": 39,
         "losses": 127,
         "draws": 0,
@@ -6916,7 +6916,7 @@
             "loss": 0.7650602409638554
         },
         "bestWin": {
-            "rating": 1738.51,
+            "rating": 1738.49,
             "seed": 430365550,
             "opponent": {
                 "label": "MASKEDVILLAIN2:Teal#17",
@@ -6926,7 +6926,7 @@
             "opponentRank": 20
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 3485150998,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -6940,10 +6940,10 @@
         "label": "POKEMONMASTER_Vanya:Vanya#12",
         "trainer": "Pok\u00e9mon Master Vanya #12",
         "cursed": false,
-        "rating": 1257.7,
+        "rating": 1257.71,
         "se": 36.51,
-        "ciLow": 1186.13,
-        "ciHigh": 1329.26,
+        "ciLow": 1186.15,
+        "ciHigh": 1329.27,
         "wins": 39,
         "losses": 127,
         "draws": 0,
@@ -6962,34 +6962,34 @@
             "loss": 0.7650602409638554
         },
         "bestWin": {
-            "rating": 1594.45,
+            "rating": 1594.43,
             "seed": 3511227856,
             "opponent": {
                 "label": "TAPU_LELE:Tapu Lele#1",
                 "display": "Guardian Deity Tapu Lele",
                 "cursed": true
             },
-            "opponentRank": 51
+            "opponentRank": 52
         },
         "worstLoss": {
-            "rating": 1237.11,
+            "rating": 1244.06,
             "seed": 2114166160,
             "opponent": {
                 "label": "GAMBLER:Tiki",
                 "display": "Developer Tiki",
                 "cursed": false
             },
-            "opponentRank": 155
+            "opponentRank": 154
         }
     },
     {
         "label": "IDEALTRAINER:of Origins",
         "trainer": "Ideal Trainer of Origins",
         "cursed": false,
-        "rating": 1249.82,
+        "rating": 1249.84,
         "se": 37.09,
-        "ciLow": 1177.12,
-        "ciHigh": 1322.52,
+        "ciLow": 1177.14,
+        "ciHigh": 1322.53,
         "wins": 37,
         "losses": 127,
         "draws": 2,
@@ -7008,7 +7008,7 @@
             "loss": 0.7427388535031847
         },
         "bestWin": {
-            "rating": 1734.16,
+            "rating": 1734.14,
             "seed": 799290605,
             "opponent": {
                 "label": "TOURISTM:Chus",
@@ -7018,7 +7018,7 @@
             "opponentRank": 21
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 3795505472,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -7029,13 +7029,13 @@
         }
     },
     {
-        "label": "HEXMANIAC:Lichenprincess",
-        "trainer": "Developer Lichenprincess",
+        "label": "GAMBLER:Tiki",
+        "trainer": "Developer Tiki",
         "cursed": false,
-        "rating": 1244.05,
+        "rating": 1244.06,
         "se": 37.02,
-        "ciLow": 1171.49,
-        "ciHigh": 1316.61,
+        "ciLow": 1171.51,
+        "ciHigh": 1316.62,
         "wins": 37,
         "losses": 129,
         "draws": 0,
@@ -7054,53 +7054,7 @@
             "loss": 0.7771084337349398
         },
         "bestWin": {
-            "rating": 1633.1,
-            "seed": 4151714861,
-            "opponent": {
-                "label": "LEADER_Lambert:Lambert#3",
-                "display": "Gym Leader Lambert #2",
-                "cursed": true
-            },
-            "opponentRank": 41
-        },
-        "worstLoss": {
-            "rating": 1222.98,
-            "seed": 3176587159,
-            "opponent": {
-                "label": "LADY4:Pria",
-                "display": "Developer Pria",
-                "cursed": false
-            },
-            "opponentRank": 158
-        }
-    },
-    {
-        "label": "GAMBLER:Tiki",
-        "trainer": "Developer Tiki",
-        "cursed": false,
-        "rating": 1237.11,
-        "se": 37.29,
-        "ciLow": 1164.02,
-        "ciHigh": 1310.21,
-        "wins": 36,
-        "losses": 130,
-        "draws": 0,
-        "battles": 166,
-        "rank": 155,
-        "overlap": 17,
-        "tier": "D",
-        "tierColor": [
-            75,
-            199,
-            53
-        ],
-        "wldFractions": {
-            "win": 0.21686746987951808,
-            "draw": 0.0,
-            "loss": 0.7831325301204819
-        },
-        "bestWin": {
-            "rating": 1687.01,
+            "rating": 1680.79,
             "seed": 530419964,
             "opponent": {
                 "label": "NIGHTMAREQUEEN_Elise:Elise",
@@ -7110,7 +7064,7 @@
             "opponentRank": 29
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 1243967899,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -7121,13 +7075,59 @@
         }
     },
     {
+        "label": "HEXMANIAC:Lichenprincess",
+        "trainer": "Developer Lichenprincess",
+        "cursed": false,
+        "rating": 1244.06,
+        "se": 37.02,
+        "ciLow": 1171.51,
+        "ciHigh": 1316.62,
+        "wins": 37,
+        "losses": 129,
+        "draws": 0,
+        "battles": 166,
+        "rank": 155,
+        "overlap": 19,
+        "tier": "D",
+        "tierColor": [
+            75,
+            199,
+            53
+        ],
+        "wldFractions": {
+            "win": 0.22289156626506024,
+            "draw": 0.0,
+            "loss": 0.7771084337349398
+        },
+        "bestWin": {
+            "rating": 1633.08,
+            "seed": 4151714861,
+            "opponent": {
+                "label": "LEADER_Lambert:Lambert#3",
+                "display": "Gym Leader Lambert #2",
+                "cursed": true
+            },
+            "opponentRank": 40
+        },
+        "worstLoss": {
+            "rating": 1223.0,
+            "seed": 3176587159,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            },
+            "opponentRank": 158
+        }
+    },
+    {
         "label": "SPIRITGUARDIAN2:Sonya",
         "trainer": "Spirit Guardian Sonya",
         "cursed": false,
-        "rating": 1230.09,
-        "se": 37.58,
-        "ciLow": 1156.45,
-        "ciHigh": 1303.74,
+        "rating": 1230.11,
+        "se": 37.57,
+        "ciLow": 1156.47,
+        "ciHigh": 1303.76,
         "wins": 35,
         "losses": 131,
         "draws": 0,
@@ -7146,7 +7146,7 @@
             "loss": 0.7891566265060241
         },
         "bestWin": {
-            "rating": 1627.39,
+            "rating": 1627.37,
             "seed": 1890442032,
             "opponent": {
                 "label": "TAPU_BULU:Tapu Bulu#1",
@@ -7156,7 +7156,7 @@
             "opponentRank": 44
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 1698369640,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -7170,10 +7170,10 @@
         "label": "POKEMONMASTER_Vanya:Vanya",
         "trainer": "Pok\u00e9mon Master Vanya #1",
         "cursed": false,
-        "rating": 1226.91,
-        "se": 37.92,
-        "ciLow": 1152.6,
-        "ciHigh": 1301.23,
+        "rating": 1226.93,
+        "se": 37.91,
+        "ciLow": 1152.62,
+        "ciHigh": 1301.25,
         "wins": 34,
         "losses": 130,
         "draws": 2,
@@ -7192,17 +7192,17 @@
             "loss": 0.7602547770700636
         },
         "bestWin": {
-            "rating": 1631.04,
+            "rating": 1631.02,
             "seed": 3155006388,
             "opponent": {
                 "label": "FORMERCHAMP_Elise:Elise",
                 "display": "Former Champion Elise #1",
                 "cursed": false
             },
-            "opponentRank": 43
+            "opponentRank": 42
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 3023855144,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -7216,10 +7216,10 @@
         "label": "LADY4:Pria",
         "trainer": "Developer Pria",
         "cursed": false,
-        "rating": 1222.98,
+        "rating": 1223.0,
         "se": 37.87,
-        "ciLow": 1148.76,
-        "ciHigh": 1297.21,
+        "ciLow": 1148.78,
+        "ciHigh": 1297.23,
         "wins": 34,
         "losses": 132,
         "draws": 0,
@@ -7238,7 +7238,7 @@
             "loss": 0.7951807228915663
         },
         "bestWin": {
-            "rating": 1816.11,
+            "rating": 1816.09,
             "seed": 2040256671,
             "opponent": {
                 "label": "SPIRITGUARDIAN4:Brigitte#1",
@@ -7248,7 +7248,7 @@
             "opponentRank": 7
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 1191683122,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -7262,16 +7262,16 @@
         "label": "ARTIST3:Drawingbox",
         "trainer": "Developer Drawingbox",
         "cursed": false,
-        "rating": 1208.45,
+        "rating": 1208.48,
         "se": 38.5,
-        "ciLow": 1132.99,
-        "ciHigh": 1283.92,
+        "ciLow": 1133.01,
+        "ciHigh": 1283.94,
         "wins": 32,
         "losses": 134,
         "draws": 0,
         "battles": 166,
         "rank": 159,
-        "overlap": 12,
+        "overlap": 13,
         "tier": "D",
         "tierColor": [
             75,
@@ -7284,7 +7284,7 @@
             "loss": 0.8072289156626506
         },
         "bestWin": {
-            "rating": 1573.66,
+            "rating": 1573.64,
             "seed": 2456721733,
             "opponent": {
                 "label": "FORMERCHAMP_Scilla:Scilla",
@@ -7294,7 +7294,7 @@
             "opponentRank": 56
         },
         "worstLoss": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 930798739,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -7308,10 +7308,10 @@
         "label": "POKEMONMASTER_Vanya:Vanya#7",
         "trainer": "Pok\u00e9mon Master Vanya #7",
         "cursed": false,
-        "rating": 1201.01,
+        "rating": 1201.04,
         "se": 38.84,
-        "ciLow": 1124.88,
-        "ciHigh": 1277.15,
+        "ciLow": 1124.91,
+        "ciHigh": 1277.17,
         "wins": 31,
         "losses": 135,
         "draws": 0,
@@ -7330,7 +7330,7 @@
             "loss": 0.8132530120481928
         },
         "bestWin": {
-            "rating": 1778.52,
+            "rating": 1778.5,
             "seed": 1082589747,
             "opponent": {
                 "label": "TOURISTM:Azeler",
@@ -7340,7 +7340,7 @@
             "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 710186106,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -7354,16 +7354,16 @@
         "label": "IDEALTRAINER:of Colors",
         "trainer": "Ideal Trainer of Colors",
         "cursed": false,
-        "rating": 1163.35,
+        "rating": 1163.38,
         "se": 40.87,
-        "ciLow": 1083.24,
-        "ciHigh": 1243.45,
+        "ciLow": 1083.28,
+        "ciHigh": 1243.48,
         "wins": 26,
         "losses": 139,
         "draws": 1,
         "battles": 166,
         "rank": 161,
-        "overlap": 7,
+        "overlap": 6,
         "tier": "D-",
         "tierColor": [
             36,
@@ -7376,7 +7376,7 @@
             "loss": 0.8077089375164777
         },
         "bestWin": {
-            "rating": 1693.27,
+            "rating": 1693.26,
             "seed": 667853308,
             "opponent": {
                 "label": "SPIRITGUARDIAN3:Preeti",
@@ -7386,7 +7386,7 @@
             "opponentRank": 27
         },
         "worstLoss": {
-            "rating": 1201.01,
+            "rating": 1201.04,
             "seed": 1696799516,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -7400,10 +7400,10 @@
         "label": "POKEMONMASTER_Vanya:Vanya#20",
         "trainer": "Pok\u00e9mon Master Vanya #20",
         "cursed": false,
-        "rating": 1112.64,
-        "se": 43.99,
-        "ciLow": 1026.42,
-        "ciHigh": 1198.85,
+        "rating": 1112.68,
+        "se": 43.98,
+        "ciLow": 1026.47,
+        "ciHigh": 1198.88,
         "wins": 20,
         "losses": 145,
         "draws": 0,
@@ -7422,7 +7422,7 @@
             "loss": 0.8787878787878788
         },
         "bestWin": {
-            "rating": 1583.94,
+            "rating": 1583.92,
             "seed": 1267958558,
             "opponent": {
                 "label": "SEEKER_Nora:Nora#1",
@@ -7432,7 +7432,7 @@
             "opponentRank": 53
         },
         "worstLoss": {
-            "rating": 880.92,
+            "rating": 880.96,
             "seed": 1688997295,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -7446,10 +7446,10 @@
         "label": "ARTIFICIALTRAINER:Doppel",
         "trainer": "Artificial Trainer Doppel",
         "cursed": false,
-        "rating": 1040.01,
+        "rating": 1040.05,
         "se": 49.67,
-        "ciLow": 942.65,
-        "ciHigh": 1137.37,
+        "ciLow": 942.69,
+        "ciHigh": 1137.41,
         "wins": 13,
         "losses": 151,
         "draws": 0,
@@ -7468,7 +7468,7 @@
             "loss": 0.9207317073170732
         },
         "bestWin": {
-            "rating": 1837.56,
+            "rating": 1837.59,
             "seed": 3805294228,
             "opponent": {
                 "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -7478,7 +7478,7 @@
             "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1163.35,
+            "rating": 1163.38,
             "seed": 2794924933,
             "opponent": {
                 "label": "IDEALTRAINER:of Colors",
@@ -7492,10 +7492,10 @@
         "label": "MAID2:Maddie",
         "trainer": "Developer Maddie",
         "cursed": false,
-        "rating": 880.92,
-        "se": 64.37,
-        "ciLow": 754.75,
-        "ciHigh": 1007.09,
+        "rating": 880.96,
+        "se": 64.38,
+        "ciLow": 754.78,
+        "ciHigh": 1007.14,
         "wins": 4,
         "losses": 162,
         "draws": 0,
@@ -7514,7 +7514,7 @@
             "loss": 0.9600000000000001
         },
         "bestWin": {
-            "rating": 1112.64,
+            "rating": 1112.68,
             "seed": 1688997295,
             "opponent": {
                 "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -7524,7 +7524,7 @@
             "opponentRank": 162
         },
         "worstLoss": {
-            "rating": 1040.01,
+            "rating": 1040.05,
             "seed": 1561332515,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Doppel",
@@ -7538,10 +7538,10 @@
         "label": "ARTIFICIALTRAINER:Trinity",
         "trainer": "Artificial Trainer Trinity",
         "cursed": false,
-        "rating": 867.57,
+        "rating": 867.6,
         "se": 66.81,
-        "ciLow": 736.62,
-        "ciHigh": 998.51,
+        "ciLow": 736.65,
+        "ciHigh": 998.55,
         "wins": 3,
         "losses": 162,
         "draws": 0,
@@ -7560,7 +7560,7 @@
             "loss": 0.96
         },
         "bestWin": {
-            "rating": 1578.77,
+            "rating": 1578.75,
             "seed": 3959459580,
             "opponent": {
                 "label": "LADY2:Eseria",
@@ -7570,7 +7570,7 @@
             "opponentRank": 55
         },
         "worstLoss": {
-            "rating": 880.92,
+            "rating": 880.96,
             "seed": 1715212740,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -7584,10 +7584,10 @@
         "label": "ARTIFICIALTRAINER:Solitaire",
         "trainer": "Artificial Trainer Solitaire",
         "cursed": false,
-        "rating": 819.93,
+        "rating": 819.96,
         "se": 71.79,
-        "ciLow": 679.23,
-        "ciHigh": 960.63,
+        "ciLow": 679.25,
+        "ciHigh": 960.67,
         "wins": 1,
         "losses": 165,
         "draws": 0,
@@ -7606,7 +7606,7 @@
             "loss": 0.9600000000000001
         },
         "bestWin": {
-            "rating": 798.06,
+            "rating": 798.09,
             "seed": 3794074011,
             "opponent": {
                 "label": "BATTLEGIRL:Tester",
@@ -7616,7 +7616,7 @@
             "opponentRank": 167
         },
         "worstLoss": {
-            "rating": 867.57,
+            "rating": 867.6,
             "seed": 1956420788,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Trinity",
@@ -7630,10 +7630,10 @@
         "label": "BATTLEGIRL:Tester",
         "trainer": "Battle Girl Tester",
         "cursed": false,
-        "rating": 798.06,
+        "rating": 798.09,
         "se": 74.66,
-        "ciLow": 651.73,
-        "ciHigh": 944.38,
+        "ciLow": 651.76,
+        "ciHigh": 944.42,
         "wins": 0,
         "losses": 166,
         "draws": 0,
@@ -7653,7 +7653,7 @@
         },
         "bestWin": null,
         "worstLoss": {
-            "rating": 819.93,
+            "rating": 819.96,
             "seed": 3794074011,
             "opponent": {
                 "label": "ARTIFICIALTRAINER:Solitaire",
