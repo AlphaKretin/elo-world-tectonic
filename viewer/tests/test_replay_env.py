@@ -70,6 +70,10 @@ class BuildWatchEnvTests(unittest.TestCase):
         self.assertNotIn("ELO_WATCH_TEXTSPEED", env)
         self.assertNotIn("ELO_WATCH_TRANSITIONS", env)
 
+    def test_action_log_always_set(self):
+        env = replay_env.build_watch_env("_WatchStaging")
+        self.assertEqual(env["ELO_WATCH_ACTION_LOG"], "Analysis/replay_playback_log.txt")
+
     def test_display_overrides(self):
         env = replay_env.build_watch_env("_WatchStaging", battlescene=0, textspeed=4, transitions=1)
         self.assertEqual(env["ELO_WATCH_BATTLESCENE"], "0")

@@ -3,6 +3,7 @@ import os
 
 from PySide6.QtCore import QSettings, Signal
 from PySide6.QtWidgets import (
+    QCheckBox,
     QComboBox,
     QFileDialog,
     QFormLayout,
@@ -16,7 +17,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import asset_names, format_selector, game_assets, replay_env, replay_runner, ui_settings
+from app import asset_names, config as config_module, format_selector, game_assets, replay_env, replay_runner, ui_settings
 from app.replay_runner import ReplayRunner
 from app.trainer_names import TrainerNameResolver
 
@@ -68,6 +69,8 @@ class GenerateTab(QWidget):
         for value, label in game_assets.TIME_VARIANTS:
             self.backdrop_time_combo.addItem(label, value)
         self.swap_sides_button = QPushButton("⇄ Swap trainers")
+        self.debug_check = QCheckBox("Debug mode (shows the engine's console window)")
+        self._is_dev_build = config_module.is_dev_build()
 
         trainer1_row = QHBoxLayout()
         trainer1_row.addWidget(self.trainer1_edit, 2)
@@ -92,6 +95,8 @@ class GenerateTab(QWidget):
         form.addRow("Format", format_row)
         form.addRow("Output name", self.output_name_edit)
         form.addRow("Backdrop", backdrop_row)
+        if self._is_dev_build:
+            form.addRow("", self.debug_check)
         layout.addLayout(form)
 
         buttons = QHBoxLayout()
@@ -128,6 +133,7 @@ class GenerateTab(QWidget):
         ui_settings.bind_combo(settings, "generate/curse_variant", self.curse_variant_combo)
         ui_settings.bind_combo(settings, "generate/backdrop", self.backdrop_combo)
         ui_settings.bind_combo(settings, "generate/backdrop_time", self.backdrop_time_combo)
+        ui_settings.bind_checkbox(settings, "generate/debug", self.debug_check)
 
     def _update_name_label(self, label_widget, raw_label):
         raw_label = raw_label.strip()
@@ -197,13 +203,15 @@ class GenerateTab(QWidget):
         }
         self.export_button.setEnabled(False)
         self.watch_button.setEnabled(False)
+        debug = self._is_dev_build and self.debug_check.isChecked()
         self.status_view.setPlainText("Launching Game.exe (headless)...")
         self.runner.start(
             self.config.vendor_dir,
             env_vars,
             self.config.timeout_seconds,
-            suppress_window=True,
+            suppress_window=not debug,
             heartbeat_filename=replay_runner.DEFAULT_HEARTBEAT_FILE_RELATIVE,
+            extra_args=["debug"] if debug else None,
         )
 
     def _on_started(self):

@@ -20,7 +20,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import game_assets, replay_env, replay_runner, ui_settings
+from app import config as config_module, game_assets, replay_env, replay_runner, ui_settings
 from app.replay_runner import ReplayRunner
 from app.trainer_names import TrainerNameResolver
 
@@ -85,6 +85,8 @@ class WatchTab(QWidget):
         self.transitions_combo.setCurrentIndex(_option_index(TRANSITIONS_OPTIONS, "Standard"))
         self.mute_check = QCheckBox("Mute (music/sound effects)")
         self.debug_check = QCheckBox("Debug mode (shows the engine's console window)")
+        self._is_dev_build = config_module.is_dev_build()
+        self.debug_check.setVisible(self._is_dev_build)
         mute_debug_row = QHBoxLayout()
         mute_debug_row.addWidget(self.mute_check)
         mute_debug_row.addWidget(self.debug_check)
@@ -266,7 +268,7 @@ class WatchTab(QWidget):
         # and slow text speed/full battle animations can legitimately run well
         # past any fixed bound. Only Generate (unattended) needs a stuck-process
         # safety net.
-        extra_args = ["debug"] if self.debug_check.isChecked() else None
+        extra_args = ["debug"] if self._is_dev_build and self.debug_check.isChecked() else None
         self.runner.start(
             self.config.vendor_dir, env_vars, None, result_filename=WATCH_RESULT_FILE, extra_args=extra_args
         )

@@ -17,6 +17,14 @@ else:
 DEFAULT_TIMEOUT_SECONDS = 120
 
 
+def is_dev_build():
+    """True for a dev checkout run via `python -m app`, false for a
+    PyInstaller-frozen release build -- used to hide debugging-only options
+    (e.g. the Generate/Watch tabs' Debug mode checkboxes) that shouldn't be
+    exposed to end users of a distributed build."""
+    return not getattr(sys, "frozen", False)
+
+
 class AppConfig:
     """QSettings-backed paths, so a dev checkout and a distributed install
     differ only in these values, not in code (viewer/, results_lib.py, and

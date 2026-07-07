@@ -107,6 +107,12 @@ def build_watch_env(
     env = {
         "ELO_TOURNAMENT": "1",
         "ELO_WATCH_REPLAY_NAME": replay_name,
+        # Ground-truth-vs-playback diff tool, same as replay.rb's always-on
+        # ELO_REPLAY_* action log at generation time (Analysis/
+        # replay_action_log.txt) -- unconditional here too rather than a UI
+        # toggle, since it's cheap to write and invisible unless someone
+        # goes looking in Analysis/.
+        "ELO_WATCH_ACTION_LOG": "Analysis/replay_playback_log.txt",
     }
     if battlescene is not None:
         env["ELO_WATCH_BATTLESCENE"] = str(battlescene)
