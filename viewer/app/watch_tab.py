@@ -200,6 +200,13 @@ class WatchTab(QWidget):
         replay_dir = self.config.replay_dir
         os.makedirs(replay_dir, exist_ok=True)
         dest = os.path.join(replay_dir, os.path.basename(src))
+        if os.path.normcase(os.path.abspath(src)) == os.path.normcase(os.path.abspath(dest)):
+            # Already sitting in replay_dir -- copying it onto itself would
+            # truncate it via the "wb" open below before the "rb" read
+            # finishes (confirmed: corrupted a real replay this way). Nothing
+            # to import, it's already there.
+            self.refresh()
+            return
         try:
             with open(src, "rb") as f_in, open(dest, "wb") as f_out:
                 f_out.write(f_in.read())
