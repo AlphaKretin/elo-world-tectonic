@@ -27,8 +27,9 @@
 # sole thing ever reassigning work, since two supervisors racing on the
 # same queue-state file could both claim the same front-of-queue item.
 #
-# All run config (formats, timeouts, chunk count, current per-host
-# assignment, the pending queue itself) lives in the queue-state JSON, not
+# All run config (formats, timeouts, chunk count per format, current
+# per-host assignment, the pending queue itself) lives in the queue-state
+# JSON, not
 # in this script's own params -- so re-pointing this at an existing state
 # file (e.g. after this process died and you restart it by hand, or to
 # resume a run with a hand-edited queue) can never drift from what
@@ -120,7 +121,12 @@ while ($true) {
 
             $h.currentFormat = $item.format
             $h.currentChunk = $item.chunk
-            Invoke-RemoteChunkLaunch -TargetHost $h.host -ShardIndex ([int]$item.chunk) -ShardCount $state.chunkCount -Formats $item.format `
+            # chunkCountByFormat round-trips through JSON as a
+            # PSCustomObject (one property per format), not a hashtable --
+            # ConvertFrom-Json never reconstructs the hashtable
+            # ConvertTo-Json was originally fed.
+            $chunkCountForFormat = [int]$state.chunkCountByFormat.($item.format)
+            Invoke-RemoteChunkLaunch -TargetHost $h.host -ShardIndex ([int]$item.chunk) -ShardCount $chunkCountForFormat -Formats $item.format `
                 -TurnStallTimeoutSeconds $state.turnStallTimeoutSeconds -BattleStallTimeoutSeconds $state.battleStallTimeoutSeconds `
                 -PollIntervalSeconds $state.pollIntervalSeconds -SampleGamesPerTrainer $state.sampleGamesPerTrainer -SampleSeed $state.sampleSeed `
                 -SubsetTrainerLabels $state.subsetTrainerLabels -SubsetTag $(if ($state.subsetTag) { $state.subsetTag } else { "subset" }) | Out-Null

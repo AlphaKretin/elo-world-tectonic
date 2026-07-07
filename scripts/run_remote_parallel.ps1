@@ -49,6 +49,17 @@
 # Tags every result/status file with "_$SubsetTag" (default "subset") so
 # this partial run never collides with the format's own full-round-robin
 # files.
+#
+# -ChunksPerFormat overrides -ChunksPerHost's chunk count for specific
+# formats, e.g. "singles_uncursed=3,doubles_uncursed=3" -- an uncursed
+# subset rerun can have an order of magnitude fewer pairs than its cursed
+# counterpart (most trainers' uncursed team is identical to their cursed
+# one and gets skipped entirely), so splitting it into the same chunk
+# count as singles/doubles leaves each chunk with only a handful of
+# battles -- not enough to ever hit even one PROGRESS_INTERVAL status
+# checkpoint, and paying a full Xvfb/Game.exe cold start for a few
+# battles' worth of work. Any format not named here keeps using
+# $ChunksPerHost * hosts.Count, unchanged.
 param(
     [string]$Formats = "singles",
     [string]$HostsFile = (Join-Path $PSScriptRoot "remote_hosts.txt"),
@@ -58,6 +69,7 @@ param(
     [int]$SampleGamesPerTrainer = 0,
     [int]$SampleSeed = 1,
     [int]$ChunksPerHost = 1,
+    [string]$ChunksPerFormat = "",
     [string]$SubsetTrainerLabels = "",
     [string]$SubsetTag = "subset"
 )
@@ -91,28 +103,41 @@ if ($formatList.Count -le 1 -and $ChunksPerHost -le 1) {
     return
 }
 
+# format=count,format=count -- e.g. "singles_uncursed=3,doubles_uncursed=3".
+# Any format not named here falls back to $ChunksPerHost * hosts.Count.
+$defaultChunkCount = $hosts.Count * $ChunksPerHost
+$chunkCountByFormat = @{}
+foreach ($fmt in $formatList) { $chunkCountByFormat[$fmt] = $defaultChunkCount }
+foreach ($pair in ($ChunksPerFormat -split "," | Where-Object { $_ -and $_.Trim() })) {
+    $parts = $pair.Split("=", 2)
+    if ($parts.Count -ne 2) { throw "Malformed -ChunksPerFormat entry '$pair' -- expected format=count" }
+    $fmtName = $parts[0].Trim()
+    if (-not ($formatList -contains $fmtName)) { throw "-ChunksPerFormat names format '$fmtName' which isn't in -Formats ($Formats)" }
+    $chunkCountByFormat[$fmtName] = [int]$parts[1].Trim()
+}
+
 # List[object], not a plain array -- RemoveAt(0) below is O(1) amortized
 # for repeated front-removal, unlike Select-Object -Skip 1 on a real array.
 # .ToArray() (not @($queue)) when this needs to become a JSON-serializable
 # array -- on this PS 7.6.3/.NET 10 combination, @() directly around a
 # List[object] throws "Argument types do not match" for reasons that look
 # like a runtime bug, not anything about this code; ToArray() sidesteps it.
-$chunkCount = $hosts.Count * $ChunksPerHost
 $queue = New-Object System.Collections.Generic.List[object]
 foreach ($fmt in $formatList) {
-    for ($c = 0; $c -lt $chunkCount; $c++) {
+    for ($c = 0; $c -lt $chunkCountByFormat[$fmt]; $c++) {
         $queue.Add([PSCustomObject]@{ format = $fmt; chunk = $c })
     }
 }
 
-Write-Output "Launching watchdogs across $($hosts.Count) droplet(s), $chunkCount chunk(s) x $($formatList.Count) format(s) = $($queue.Count) total work item(s) (format-major queue: $($formatList -join ' -> '))..."
+$chunkCountSummary = ($formatList | ForEach-Object { "$($_)=$($chunkCountByFormat[$_])" }) -join ", "
+Write-Output "Launching watchdogs across $($hosts.Count) droplet(s), $($queue.Count) total work item(s) (chunk counts: $chunkCountSummary; format-major queue: $($formatList -join ' -> '))..."
 
 $hostStates = @()
 for ($i = 0; $i -lt $hosts.Count; $i++) {
     $item = $queue[0]
     $queue.RemoveAt(0)
     Write-Output "[shard $i / $($hosts[$i])] launching $($item.format) chunk $($item.chunk)..."
-    Invoke-RemoteChunkLaunch -TargetHost $hosts[$i] -ShardIndex ([int]$item.chunk) -ShardCount $chunkCount -Formats $item.format `
+    Invoke-RemoteChunkLaunch -TargetHost $hosts[$i] -ShardIndex ([int]$item.chunk) -ShardCount $chunkCountByFormat[$item.format] -Formats $item.format `
         -TurnStallTimeoutSeconds $TurnStallTimeoutSeconds -BattleStallTimeoutSeconds $BattleStallTimeoutSeconds `
         -PollIntervalSeconds $PollIntervalSeconds -SampleGamesPerTrainer $SampleGamesPerTrainer -SampleSeed $SampleSeed `
         -SubsetTrainerLabels $SubsetTrainerLabels -SubsetTag $SubsetTag
@@ -123,7 +148,7 @@ Write-Output ""
 Write-Output "$($hosts.Count) shard watchdog(s) launched. Use watch_remote_tournament.ps1 for aggregate live status."
 
 $state = [PSCustomObject]@{
-    chunkCount                = $chunkCount
+    chunkCountByFormat        = $chunkCountByFormat
     formats                   = $Formats
     turnStallTimeoutSeconds   = $TurnStallTimeoutSeconds
     battleStallTimeoutSeconds = $BattleStallTimeoutSeconds

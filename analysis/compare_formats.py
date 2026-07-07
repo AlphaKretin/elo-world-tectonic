@@ -5,9 +5,22 @@ Per-trainer rank/rating swing between two formats' leaderboards.
 Reads analysis/ratings_<format>.json for two formats (default singles vs
 doubles -- run ratings.py for both first) and, for every trainer present in
 both, computes how far their *rank* moves between the two leaderboards.
-Rank is the primary signal (each format's regression is its own separate
-fit, so raw rating values aren't directly comparable the way ranks are);
-rating delta is included alongside as secondary context.
+
+Rank is the only swing metric here, deliberately -- each format's
+Bradley-Terry fit is `fit_intercept=False`, identified only by the L2
+prior's pull toward zero (see ratings.py's REG_C comment), so there's no
+shared anchor tying one format's zero-point to another's. A rating
+*difference* is only meaningful within one fit's own battle graph, where
+it has a real predicted-win-probability interpretation (rating = a base-10
+Elo scale, see ratings.py's ELO_SCALE/ELO_BASE); across two independent
+fits it's not measuring a real quantity, just wherever each population's
+regularized optimum happened to settle. Confirmed empirically 2026-07-07:
+after the resolutionChoice subset rerun, trainers whose actual battle
+outcomes were provably unchanged (verified by diffing before/after
+per-battle results) still showed small nonzero rating drift purely from
+everyone else's refit -- the individual per-format ratings are still
+shown as reference (each is meaningful in isolation), the delta between
+them is not.
 
 Ranks are rescaled to the intersection of the two formats' participants
 before comparing -- trainers only ranked in one format (e.g. ineligible for
@@ -59,7 +72,6 @@ def compare(fmt_a, fmt_b):
             "rank_delta": rank_a[trainer] - rank_b[trainer],
             f"rating_{fmt_a}": a["rating"],
             f"rating_{fmt_b}": b["rating"],
-            "rating_delta": round(b["rating"] - a["rating"], 2),
             f"battles_{fmt_a}": a["battles"],
             f"battles_{fmt_b}": b["battles"],
         })
@@ -74,7 +86,7 @@ def write_outputs(fmt_a, fmt_b, comparisons, only_a, only_b):
 
     fieldnames = [
         "trainer", f"rank_{fmt_a}", f"rank_{fmt_b}", "rank_delta",
-        f"rating_{fmt_a}", f"rating_{fmt_b}", "rating_delta",
+        f"rating_{fmt_a}", f"rating_{fmt_b}",
         f"battles_{fmt_a}", f"battles_{fmt_b}",
     ]
     with open(csv_path, "w", encoding="utf-8", newline="") as f:
@@ -91,33 +103,37 @@ def write_outputs(fmt_a, fmt_b, comparisons, only_a, only_b):
         f"rank_delta = rank_{fmt_a} - rank_{fmt_b}: positive means the trainer "
         f"ranks better (lower number) in {fmt_b}.",
         "",
+        f"Rating ({fmt_a})/({fmt_b}) columns are each format's own independent "
+        f"Bradley-Terry fit, shown for reference only -- there's no shared "
+        f"anchor between two separate fits, so their *difference* isn't a "
+        f"meaningful quantity (see this script's module docstring). Rank is "
+        f"the swing metric.",
+        "",
         f"## Biggest swings toward {fmt_b}",
         "",
-        f"| Trainer | Rank ({fmt_a}) | Rank ({fmt_b}) | Δrank | Rating ({fmt_a}) | Rating ({fmt_b}) | Δrating |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        f"| Trainer | Rank ({fmt_a}) | Rank ({fmt_b}) | Δrank | Rating ({fmt_a}) | Rating ({fmt_b}) |",
+        "|---|---:|---:|---:|---:|---:|",
     ]
     toward_b = [row for row in comparisons if row["rank_delta"] > 0][:20]
     for row in toward_b:
         lines.append(
             f"| {row['trainer']} | {row[f'rank_{fmt_a}']} | {row[f'rank_{fmt_b}']} | "
-            f"+{row['rank_delta']} | {row[f'rating_{fmt_a}']:.1f} | {row[f'rating_{fmt_b}']:.1f} | "
-            f"{row['rating_delta']:+.1f} |"
+            f"+{row['rank_delta']} | {row[f'rating_{fmt_a}']:.1f} | {row[f'rating_{fmt_b}']:.1f} |"
         )
 
     lines += [
         "",
         f"## Biggest swings toward {fmt_a}",
         "",
-        f"| Trainer | Rank ({fmt_a}) | Rank ({fmt_b}) | Δrank | Rating ({fmt_a}) | Rating ({fmt_b}) | Δrating |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        f"| Trainer | Rank ({fmt_a}) | Rank ({fmt_b}) | Δrank | Rating ({fmt_a}) | Rating ({fmt_b}) |",
+        "|---|---:|---:|---:|---:|---:|",
     ]
     toward_a = [row for row in comparisons if row["rank_delta"] < 0]
     toward_a.sort(key=lambda row: row["rank_delta"])
     for row in toward_a[:20]:
         lines.append(
             f"| {row['trainer']} | {row[f'rank_{fmt_a}']} | {row[f'rank_{fmt_b}']} | "
-            f"{row['rank_delta']} | {row[f'rating_{fmt_a}']:.1f} | {row[f'rating_{fmt_b}']:.1f} | "
-            f"{row['rating_delta']:+.1f} |"
+            f"{row['rank_delta']} | {row[f'rating_{fmt_a}']:.1f} | {row[f'rating_{fmt_b}']:.1f} |"
         )
 
     if only_a or only_b:
