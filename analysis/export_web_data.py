@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Export analysis/*.json (ratings, best_worst, trainer_card_data) into the
+Export analysis/*.json (ratings, best_worst, trainer_data) into the
 web/ frontend's public/data/<format>/ directory, plus the referenced subset
 of sprites/icons/fonts into web/public/assets/ -- feeds the website's live
 HTML trainer card component, which supersedes trainer_cards.py's PIL PNGs
@@ -31,7 +31,7 @@ import trainer_cards
 from card_constants import TIER_COLORS
 from results_lib import REPO_ROOT
 
-def build_format_specs(card_data):
+def build_format_specs(trainer_data):
     """(base format, filters) pairs to publish -- base format is either a
     real elo_results_<fmt>_shard*.jsonl dataset (singles/doubles/*_uncursed)
     or, combined with filters, a post-hoc row-filtered view of one (see
@@ -52,7 +52,7 @@ def build_format_specs(card_data):
     for filt in sorted(results_lib.FILTER_TRAINER_PREDICATES):
         specs.append(("singles", [filt]))
         specs.append(("doubles", [filt]))
-        if results_lib.filter_has_cursed_population(filt, card_data):
+        if results_lib.filter_has_cursed_population(filt, trainer_data):
             specs.append(("singles_uncursed", [filt]))
             specs.append(("doubles_uncursed", [filt]))
     return specs
@@ -83,24 +83,24 @@ def wld_fractions(wins, losses, draws, min_frac=0.04):
     return fracs
 
 
-def opponent_payload(label, card_data_by_label):
-    opp_row = card_data_by_label.get(label)
+def opponent_payload(label, trainer_data_by_label):
+    opp_row = trainer_data_by_label.get(label)
     if not opp_row:
         return {"label": label, "display": label, "cursed": False}
-    opp_identities = trainer_cards.masked_villain_identities(opp_row, card_data_by_label)
-    name = trainer_cards.display_name(opp_row, card_data_by_label, identities=opp_identities)
-    cursed = trainer_cards.is_curse_variant(opp_row, card_data_by_label)
+    opp_identities = trainer_cards.masked_villain_identities(opp_row, trainer_data_by_label)
+    name = trainer_cards.display_name(opp_row, trainer_data_by_label, identities=opp_identities)
+    cursed = trainer_cards.is_curse_variant(opp_row, trainer_data_by_label)
     return {"label": label, "display": name, "cursed": cursed}
 
 
-def best_worst_payload(entry, card_data_by_label, ratings_by_label):
+def best_worst_payload(entry, trainer_data_by_label, ratings_by_label):
     if not entry:
         return None
     opponent_row = ratings_by_label.get(entry["opponent"])
     return {
         "rating": entry["rating"],
         "seed": entry["seed"],
-        "opponent": opponent_payload(entry["opponent"], card_data_by_label),
+        "opponent": opponent_payload(entry["opponent"], trainer_data_by_label),
         # Opponent's own rank in this same format's leaderboard, alongside
         # the rating they had at fight time (entry["rating"]) -- None only
         # if the opponent somehow isn't in this format's fit at all, which
@@ -110,20 +110,20 @@ def best_worst_payload(entry, card_data_by_label, ratings_by_label):
     }
 
 
-def static_trainer_payload(label, card_data_by_label, tribe_info):
+def static_trainer_payload(label, trainer_data_by_label, tribe_info):
     """Everything about a trainer that does NOT vary by format (identity,
     party, curse-authoring, tribe bonuses) -- written once to
     web/public/data/trainers/, not duplicated per format. Rank/rating/
     record/best-worst DO vary by format and live in each format's own
     leaderboard.json row instead (see leaderboard_row below)."""
-    row = card_data_by_label[label]
-    identities = trainer_cards.masked_villain_identities(row, card_data_by_label)
+    row = trainer_data_by_label[label]
+    identities = trainer_cards.masked_villain_identities(row, trainer_data_by_label)
     tribe_bonuses = trainer_cards.active_tribe_bonuses(row, tribe_info)
-    is_cursed = results_lib.is_cursed_trainer(label, card_data_by_label)
+    is_cursed = results_lib.is_cursed_trainer(label, trainer_data_by_label)
     levels = [m["level"] for m in row["party"]]
     return {
         "label": label,
-        "title": trainer_cards.display_name(row, card_data_by_label),
+        "title": trainer_cards.display_name(row, trainer_data_by_label),
         "trainerType": row["trainer_type"],
         "identities": [
             {"trainerType": i["trainer_type"], "realName": i["real_name"]}
@@ -159,7 +159,7 @@ def static_trainer_payload(label, card_data_by_label, tribe_info):
     }
 
 
-def export_trainers(card_data_by_label, tribe_info, formats):
+def export_trainers(trainer_data_by_label, tribe_info, formats):
     """Every trainer referenced by ANY format's ratings gets exactly one
     static payload file, regardless of how many formats it appears in."""
     out_dir = os.path.join(WEB_DATA_DIR, "trainers")
@@ -171,9 +171,9 @@ def export_trainers(card_data_by_label, tribe_info, formats):
             referenced |= set(results_lib.load_ratings(fmt))
     n = 0
     for label in referenced:
-        if label not in card_data_by_label:
+        if label not in trainer_data_by_label:
             continue
-        payload = static_trainer_payload(label, card_data_by_label, tribe_info)
+        payload = static_trainer_payload(label, trainer_data_by_label, tribe_info)
         out_path = os.path.join(out_dir, f"{trainer_cards.safe_filename(label)}.json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=4)
@@ -181,7 +181,7 @@ def export_trainers(card_data_by_label, tribe_info, formats):
     print(f"trainers: {n} static payloads -> {out_dir}")
 
 
-def export_team_levels(card_data_by_label):
+def export_team_levels(trainer_data_by_label):
     """Standalone label -> {avgLevel, maxLevel} summary for every trainer,
     format-independent (see static_trainer_payload). Lets the Stats page
     plot team level against any format's ratings with one fetch instead of
@@ -189,7 +189,7 @@ def export_team_levels(card_data_by_label):
     every trainer with a party gets an entry, same set the trainers/
     directory covers)."""
     out = {}
-    for label, row in card_data_by_label.items():
+    for label, row in trainer_data_by_label.items():
         levels = [m["level"] for m in row["party"]]
         if not levels:
             continue
@@ -202,7 +202,7 @@ def export_team_levels(card_data_by_label):
     print(f"team_levels: {len(out)} entries -> {WEB_DATA_DIR}")
 
 
-def export_format(fmt, card_data_by_label):
+def export_format(fmt, trainer_data_by_label):
     """Per-format leaderboard.json: everything that DOES vary by format
     (rank, rating, record, tier, best win/worst loss), keyed by the same
     label the static trainers/<label>.json uses."""
@@ -214,7 +214,7 @@ def export_format(fmt, card_data_by_label):
 
     leaderboard = []
     for label, row in ratings_by_label.items():
-        if label not in card_data_by_label:
+        if label not in trainer_data_by_label:
             continue
         bw = best_worst_by_label.get(label, {})
         tier = row.get("tier")
@@ -225,13 +225,13 @@ def export_format(fmt, card_data_by_label):
             # already does when they appear as someone else's best-win/
             # worst-loss opponent -- row["trainer"] from ratings.json has
             # no identity tag, only the plain trainer_type + real_name.
-            "trainer": opponent_payload(label, card_data_by_label)["display"],
+            "trainer": opponent_payload(label, trainer_data_by_label)["display"],
             # Same fight-grouping distinction opponent lines already use --
             # a curse-deduped display name can hide a base/cursed sibling
             # pair behind the same "#N" number, so the leaderboard needs its
             # own per-row cursed flag (distinct from the trainer's own
             # authored-curse isCursed field in trainers/<label>.json).
-            "cursed": trainer_cards.is_curse_variant(card_data_by_label[label], card_data_by_label),
+            "cursed": trainer_cards.is_curse_variant(trainer_data_by_label[label], trainer_data_by_label),
             "rating": row["rating"], "se": row["se"],
             "ciLow": row["ci_low"], "ciHigh": row["ci_high"],
             "wins": row["wins"], "losses": row["losses"], "draws": row["draws"],
@@ -239,8 +239,8 @@ def export_format(fmt, card_data_by_label):
             "overlap": row.get("overlap"), "tier": tier,
             "tierColor": TIER_COLORS.get(tier),
             "wldFractions": wld_fractions(row["wins"], row["losses"], row["draws"]),
-            "bestWin": best_worst_payload(bw.get("best_win"), card_data_by_label, ratings_by_label),
-            "worstLoss": best_worst_payload(bw.get("worst_loss"), card_data_by_label, ratings_by_label),
+            "bestWin": best_worst_payload(bw.get("best_win"), trainer_data_by_label, ratings_by_label),
+            "worstLoss": best_worst_payload(bw.get("worst_loss"), trainer_data_by_label, ratings_by_label),
         })
     leaderboard.sort(key=lambda r: r["rank"])
     with open(os.path.join(out_dir, "leaderboard.json"), "w", encoding="utf-8") as f:
@@ -257,7 +257,7 @@ def _copy_if_exists(src, dst):
     return False
 
 
-def export_assets(card_data_by_label):
+def export_assets(trainer_data_by_label):
     """Copy only the LOCAL-only assets: shiny Pokemon sprites (Luna's own
     tectonic-tools/Sirv CDN doesn't host shiny sprites -- confirmed by
     checking that repo directly), our own type-icon SVGs, fonts, and badge
@@ -268,7 +268,7 @@ def export_assets(card_data_by_label):
     files/~10MB of largely-duplicate binary assets to this repo."""
     species_shiny_pairs = {
         (m["species"], True)
-        for row in card_data_by_label.values()
+        for row in trainer_data_by_label.values()
         for m in row["party"]
         if m.get("shiny", False)
     }
@@ -378,16 +378,16 @@ def check_no_error_rows():
 
 def main():
     check_no_error_rows()
-    card_data_by_label = results_lib.load_card_data()
-    format_specs = build_format_specs(card_data_by_label)
+    trainer_data_by_label = results_lib.load_trainer_data()
+    format_specs = build_format_specs(trainer_data_by_label)
     formats = [base + results_lib.filter_suffix(filters) for base, filters in format_specs]
 
     regenerate_analysis_outputs(format_specs)
 
     tribe_info = trainer_cards.load_tribe_info()
-    max_native_dim = trainer_cards.max_native_sprite_dim(card_data_by_label)
+    max_native_dim = trainer_cards.max_native_sprite_dim(trainer_data_by_label)
     cell_sprite_budget = max_native_dim * trainer_cards.SPRITE_SCALE
-    move_cols = trainer_cards.moveset_grid_columns(card_data_by_label, cell_sprite_budget)
+    move_cols = trainer_cards.moveset_grid_columns(trainer_data_by_label, cell_sprite_budget)
 
     # Dataset-wide layout decisions (see trainer_cards.py's own docstrings)
     # apply to every format identically -- one shared file, not one per
@@ -407,17 +407,17 @@ def main():
             "availableFormats": formats,
         }, f, indent=4)
 
-    export_trainers(card_data_by_label, tribe_info, formats)
-    export_team_levels(card_data_by_label)
+    export_trainers(trainer_data_by_label, tribe_info, formats)
+    export_team_levels(trainer_data_by_label)
 
     for fmt in formats:
         ratings_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}.json")
         if not os.path.exists(ratings_path):
             print(f"SKIPPED {fmt}: {ratings_path} not found")
             continue
-        export_format(fmt, card_data_by_label)
+        export_format(fmt, trainer_data_by_label)
 
-    export_assets(card_data_by_label)
+    export_assets(trainer_data_by_label)
 
 
 if __name__ == "__main__":

@@ -7,19 +7,22 @@ ELO_SAVE_REPLAY) -- in the spirit of elo_world_pokemon_crystal's
 trainer_cards, on a bespoke layout rather than the in-game trainer-card
 template (too cramped for full sprites and a pixel font at body-text sizes).
 
-Party/policies come from Analysis/trainer_card_data.json, a dump produced
-by the game itself (EloTournament.dumpTrainerCardData!, gated by
-ELO_DUMP_TRAINER_CARD_DATA) -- not re-derived from PBS here, since
-ExtendsVersion inheritance (a versioned trainer's party/policies can pull
-in entries from the version it extends) is easy to get subtly wrong outside
-the engine's own resolution. Regenerate it with:
+Party/policies come from results/current/trainer_data.json, the promoted
+ground-truth copy of a dump the game itself produces
+(EloTournament.dumpTrainerCardData!, gated by ELO_DUMP_TRAINER_CARD_DATA)
+-- not re-derived from PBS here, since ExtendsVersion inheritance (a
+versioned trainer's party/policies can pull in entries from the version it
+extends) is easy to get subtly wrong outside the engine's own resolution.
+Regenerate it with:
 
     $env:ELO_TOURNAMENT = "1"
     $env:ELO_DUMP_TRAINER_CARD_DATA = "1"
     .\\vendor\\tectonic-content\\Game.exe
 (after a debug-mode launch to recompile, if dumpTrainerCardData! itself
-just changed.) Wait for Analysis/trainer_card_data.json to appear, then
-close Game.exe -- it doesn't exit on its own.
+just changed.) Wait for vendor/tectonic-content/Analysis/trainer_data.json
+to appear, then close Game.exe -- it doesn't exit on its own -- and copy it
+to results/current/trainer_data.json to promote it as ground truth (a
+manual step, same as promoting results/local shards into results/current).
 
 Move type icons are bundled as SVG (vendor/type_icons/, see that
 directory's ATTRIBUTION.txt) and rasterized at runtime via resvg_py
@@ -51,7 +54,7 @@ from trainer_naming import (
 
 import results_lib
 from card_constants import TIER_COLORS
-from results_lib import CARD_DATA_PATH, REPO_ROOT
+from results_lib import TRAINER_DATA_PATH, REPO_ROOT
 
 RESULTS_DIR = results_lib.RESULTS_DIR
 TECTONIC_DIR = os.path.join(REPO_ROOT, "vendor", "tectonic-content")
@@ -230,12 +233,12 @@ def item_icon(item_id):
     return Image.open(path).convert("RGBA")
 
 
-def max_native_sprite_dim(card_data_by_label):
+def max_native_sprite_dim(trainer_data_by_label):
     """Largest trimmed-sprite dimension across every species (and shiny/normal
     variant) that appears in any party in the whole roster -- the basis for a
     single fixed grid-cell size, so every card uses the same scale (see
     SPRITE_SCALE)."""
-    pairs = {(member["species"], member.get("shiny", False)) for row in card_data_by_label.values() for member in row["party"]}
+    pairs = {(member["species"], member.get("shiny", False)) for row in trainer_data_by_label.values() for member in row["party"]}
     best = 0
     for species, shiny in pairs:
         sprite = front_sprite(species, shiny)
@@ -340,7 +343,7 @@ def readable_text_color(bg_color):
     return COLOR_TEXT if luminance > 140 else (255, 255, 255)
 
 
-def moveset_grid_columns(card_data_by_label, capsule_area_width):
+def moveset_grid_columns(trainer_data_by_label, capsule_area_width):
     """2 if the longest move name in the *whole* dataset still fits legibly
     at MOVE_FONT_MIN within a 2-up capsule slice of capsule_area_width,
     else 1 (a column of up to 4) -- decided globally so every card uses the
@@ -348,7 +351,7 @@ def moveset_grid_columns(card_data_by_label, capsule_area_width):
     independently (see [[feedback-trainer-card-iteration]] on consistent
     scale being dataset-global, not per-card)."""
     longest = ""
-    for row in card_data_by_label.values():
+    for row in trainer_data_by_label.values():
         for member in row["party"]:
             for move in member.get("moves", []):
                 if len(move["name"]) > len(longest):
@@ -429,7 +432,7 @@ def draw_wld_bar(draw, coords, wins, losses, draws, min_frac=0.04):
         cur += w
 
 
-def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_win, worst_loss, out_path):
+def render_card(card_row, ratings_row, trainer_data_by_label, max_native_dim, best_win, worst_loss, out_path):
     margin = s(MARGIN)
     portrait_size = s(PORTRAIT_SIZE)
     gap = s(GRID_GAP)
@@ -445,7 +448,7 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
     # (from CURSE_EXTRA_MOVES) expands only the grid rows that need it --
     # all cells in the same card-row equalize to the tallest member's move
     # count so the grid stays rectilinear.
-    move_cols = moveset_grid_columns(card_data_by_label, cell_w - 2 * inner_pad)
+    move_cols = moveset_grid_columns(trainer_data_by_label, cell_w - 2 * inner_pad)
     base_move_rows = 2 if move_cols == 2 else 4
     capsule_h = s(MOVE_CAPSULE_HEIGHT)
     capsule_gap = s(MOVE_CAPSULE_GAP)
@@ -457,12 +460,12 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
 
     cell_h = cell_h_for_n_move_rows(base_move_rows)
 
-    title_text = display_name(card_row, card_data_by_label)
+    title_text = display_name(card_row, trainer_data_by_label)
     text_x = margin + s(24) + portrait_size + s(28)
     text_right = W - margin - s(24)
     tribe_bonuses = active_tribe_bonuses(card_row, load_tribe_info())
 
-    identities = masked_villain_identities(card_row, card_data_by_label)
+    identities = masked_villain_identities(card_row, trainer_data_by_label)
     # Reserve space for the curse badge at top-right so the title text never
     # extends under it. Computed early (before title font sizing) so the fit
     # uses the real boundary. One badge only -- tribe badge moved to inline.
@@ -489,12 +492,12 @@ def render_card(card_row, ratings_row, card_data_by_label, max_native_dim, best_
         win/worst loss line has no portrait for the opponent, so a Crimson/
         Teal opponent's fight number alone would be ambiguous about which
         rotating identity that particular version was (see display_name)."""
-        opp_row = card_data_by_label.get(label)
+        opp_row = trainer_data_by_label.get(label)
         if not opp_row:
             return label, False
-        opp_identities = masked_villain_identities(opp_row, card_data_by_label)
-        name = display_name(opp_row, card_data_by_label, identities=opp_identities)
-        return name, is_curse_variant(opp_row, card_data_by_label)
+        opp_identities = masked_villain_identities(opp_row, trainer_data_by_label)
+        name = display_name(opp_row, trainer_data_by_label, identities=opp_identities)
+        return name, is_curse_variant(opp_row, trainer_data_by_label)
 
     # Lay out header text top-down, tracking y as we go, so the panel can be
     # sized to fit whatever's actually drawn (an undefeated trainer's header
@@ -742,18 +745,18 @@ TEST_CASES = [
 ]
 
 
-def render_one(label, fmt, ratings_by_label, card_data_by_label, best_worst_by_label, max_native_dim):
+def render_one(label, fmt, ratings_by_label, trainer_data_by_label, best_worst_by_label, max_native_dim):
     if label not in ratings_by_label:
         raise KeyError(f"No ratings entry for trainer {label!r}.")
-    if label not in card_data_by_label:
-        raise KeyError(f"No trainer_card_data.json entry for trainer {label!r}.")
+    if label not in trainer_data_by_label:
+        raise KeyError(f"No trainer_data.json entry for trainer {label!r}.")
     if label not in best_worst_by_label:
         raise KeyError(f"No best_worst_{fmt}.json entry for trainer {label!r} -- re-run best_worst.py.")
     bw = best_worst_by_label[label]
     best_win, worst_loss = best_win_tuple(bw["best_win"]), best_win_tuple(bw["worst_loss"])
     os.makedirs(CARDS_OUT_DIR, exist_ok=True)
     out_path = os.path.join(CARDS_OUT_DIR, f"{safe_filename(label)}.png")
-    render_card(card_data_by_label[label], ratings_by_label[label], card_data_by_label, max_native_dim, best_win, worst_loss, out_path)
+    render_card(trainer_data_by_label[label], ratings_by_label[label], trainer_data_by_label, max_native_dim, best_win, worst_loss, out_path)
     return out_path
 
 
@@ -770,32 +773,33 @@ def main():
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
 
-    if not os.path.exists(CARD_DATA_PATH):
+    if not os.path.exists(TRAINER_DATA_PATH):
         raise SystemExit(
-            f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first (see this script's docstring)."
+            f"{TRAINER_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump and promote it "
+            "to results/current/trainer_data.json first (see this script's docstring)."
         )
 
     found_formats = results_lib.discover_formats(RESULTS_DIR)
     fmt = args.format or ("singles" if "singles" in found_formats else found_formats[0])
     ratings_by_label = results_lib.load_ratings(fmt)
-    card_data_by_label = results_lib.load_card_data()
+    trainer_data_by_label = results_lib.load_trainer_data()
     best_worst_path = os.path.join(results_lib.BEST_WORST_DIR, f"best_worst_{fmt}.json")
     if not os.path.exists(best_worst_path):
         raise SystemExit(f"{best_worst_path} not found -- run `python analysis/best_worst.py --format {fmt}` first.")
     best_worst_by_label = load_best_worst(fmt)
-    max_native_dim = max_native_sprite_dim(card_data_by_label)
+    max_native_dim = max_native_sprite_dim(trainer_data_by_label)
 
     if args.test_cases:
         for label, why in TEST_CASES:
             try:
-                out_path = render_one(label, fmt, ratings_by_label, card_data_by_label, best_worst_by_label, max_native_dim)
+                out_path = render_one(label, fmt, ratings_by_label, trainer_data_by_label, best_worst_by_label, max_native_dim)
                 print(f"Wrote {out_path}  ({why})")
             except KeyError as e:
                 print(f"SKIPPED {label!r} ({why}): {e}")
         return
 
     label = args.trainer or next(iter(ratings_by_label))  # ratings_<fmt>.json is rank-sorted
-    out_path = render_one(label, fmt, ratings_by_label, card_data_by_label, best_worst_by_label, max_native_dim)
+    out_path = render_one(label, fmt, ratings_by_label, trainer_data_by_label, best_worst_by_label, max_native_dim)
     print(f"Wrote {out_path}")
 
 

@@ -2,7 +2,7 @@
 """
 Shared path/loader boilerplate for the analysis/*.py scripts: locating
 elo_results_<format>_shard*.jsonl, discovering formats from them, loading a
-format's ratings_<format>.json leaderboard, and loading the trainer-card
+format's ratings_<format>.json leaderboard, and loading the per-trainer
 data dump. Pulled out once six different scripts (ratings.py, best_worst.py,
 notable_matches.py, trainer_cards.py, level_plot.py, compare_formats.py) had
 each grown their own near-identical copy.
@@ -15,7 +15,7 @@ developer_only (keep only battles between two TrainerTypeLabel=DEVELOPER
 trainers -- overlaps heavily with level70_only but isn't identical, since
 DEVELOPER is a display-label override, not tied to party composition) as
 of this writing -- plus add_filter_arg/filter_suffix/passes_filters/
-load_card_data_if_needed, the shared CLI-flag-to-filename-suffix plumbing
+load_trainer_data_if_needed, the shared CLI-flag-to-filename-suffix plumbing
 so ratings.py, best_worst.py, and custom_trainer_report.py all pick
 ratings_<fmt>_<name1>_<name2>...json the same way instead of each growing
 its own --exclude-cursed-shaped flag.
@@ -35,8 +35,13 @@ import os
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
 RESULTS_DIR = os.path.join(REPO_ROOT, "results", "current")
-CARD_DATA_PATH = os.path.join(REPO_ROOT, "vendor", "tectonic-content", "Analysis", "trainer_card_data.json")
-CURSE_STRIP_DIFF_PATH = os.path.join(REPO_ROOT, "vendor", "tectonic-content", "Analysis", "curse_strip_diff.json")
+# trainer_data.json / curse_strip_diff.json ground truth lives in
+# results/current alongside the battle shards, not in the vendor submodule's
+# gitignored Analysis/ staging folder -- the game dumps a fresh copy there
+# (EloTournament.dumpTrainerCardData! / curse_stripping.rb), and promoting it
+# into results/current is a manual step, same as results/local -> current.
+TRAINER_DATA_PATH = os.path.join(RESULTS_DIR, "trainer_data.json")
+CURSE_STRIP_DIFF_PATH = os.path.join(RESULTS_DIR, "curse_strip_diff.json")
 
 # Generated-output subfolders, one per kind, so analysis/ itself holds only
 # scripts (+ card_constants.py) -- everything these scripts write lives
@@ -109,7 +114,7 @@ def pair_key(row):
     return frozenset((row.get("trainer1"), row.get("trainer2")))
 
 
-def _merge_uncursed(base_rows, raw_rows):
+def _merge_uncursed(base_rows, raw_rows, results_dir=None):
     """Merge rule per pairing (confirmed with Luna 2026-07-04):
       1. curse:false rows carry over unchanged.
       2. curse:true rows are replaced by the matching pairing's row in the
@@ -122,7 +127,7 @@ def _merge_uncursed(base_rows, raw_rows):
          stripped form duplicates another pool member exactly, so they're
          excluded from the uncursed pool entirely as a redundant opponent).
       4. Every row from the raw curse-stripped results is included."""
-    diff = load_curse_strip_diff()
+    diff = load_curse_strip_diff(results_dir=results_dir)
     identical_to_base = {label for label, info in diff.items() if info.get("identical_to_base")}
     raw_pairs = {pair_key(r) for r in raw_rows}
 
@@ -175,7 +180,7 @@ def load_results(fmt, results_dir=None, report_skipped=False):
         raw_rows = load_shard_files(fmt, results_dir, report_skipped)
         base_fmt = fmt[:-len(UNCURSED_SUFFIX)]
         base_rows = load_results(base_fmt, results_dir=results_dir, report_skipped=report_skipped)
-        return _merge_uncursed(base_rows, raw_rows)
+        return _merge_uncursed(base_rows, raw_rows, results_dir=results_dir)
     return load_shard_files(fmt, results_dir, report_skipped)
 
 
@@ -207,18 +212,22 @@ def load_ratings(fmt, suffix="", ratings_dir=None):
     return {row["trainer"]: row for row in rows}
 
 
-def load_card_data(card_data_path=None):
-    card_data_path = card_data_path or CARD_DATA_PATH
-    with open(card_data_path, "r", encoding="utf-8") as f:
+def load_trainer_data(trainer_data_path=None, results_dir=None):
+    trainer_data_path = trainer_data_path or (
+        os.path.join(results_dir, "trainer_data.json") if results_dir else TRAINER_DATA_PATH
+    )
+    with open(trainer_data_path, "r", encoding="utf-8") as f:
         rows = json.load(f)
     return {row["label"]: row for row in rows}
 
 
-def load_curse_strip_diff(path=None):
+def load_curse_strip_diff(path=None, results_dir=None):
     """label -> classifyCursedTrainer's dump (curses, base, identical_to_base,
     no_change_from_original, diffs_vs_base) for every cursed trainer -- see
     curse_stripping.rb. Only cursed trainers appear; everyone else is absent."""
-    path = path or CURSE_STRIP_DIFF_PATH
+    path = path or (
+        os.path.join(results_dir, "curse_strip_diff.json") if results_dir else CURSE_STRIP_DIFF_PATH
+    )
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -233,39 +242,39 @@ def is_cursed_excluded(row):
     return t1 in ASYMMETRIC_CURSE_PAIRS or t2 in ASYMMETRIC_CURSE_PAIRS
 
 
-def is_level70_trainer(label, card_data):
+def is_level70_trainer(label, trainer_data):
     """True if `label` fields exactly 6 Pokemon, all at level 70 -- the
     "endgame/developer team" cohort used by the level70_only filter. There's
     no in-game "developer" trainer type to key off (it's just an informal
     label people put on trainers of various real types), so this is derived
     purely from the dumped party data."""
-    row = card_data.get(label)
+    row = trainer_data.get(label)
     if row is None:
         return False
     party = row.get("party") or []
     return len(party) == 6 and all(p.get("level") == 70 for p in party)
 
 
-def is_developer_trainer(label, card_data):
+def is_developer_trainer(label, trainer_data):
     """True if `label` carries the TrainerTypeLabel = DEVELOPER override --
     a display-only label (see custom_trainer.rb/Trainer.rb) that swaps the
     shown trainer type name while keeping the original sprite, not a real
     TrainerType. Used by the developer_only filter to isolate the
     "actual person" cohort (distinct from level70_only's endgame-team
     cohort, though the two overlap significantly)."""
-    row = card_data.get(label)
+    row = trainer_data.get(label)
     if row is None:
         return False
     return row.get("trainer_type_label") == "DEVELOPER"
 
 
-def is_cursed_trainer(label, card_data):
+def is_cursed_trainer(label, trainer_data):
     """True if `label` has an authored CURSE_* policy active (the same
     "isCursed" check export_web_data.py's static_trainer_payload shows on
     the website's trainer cards) -- not to be confused with a battle-level
     `curse` flag, which also fires for a curse-free trainer paired against
     a cursed one."""
-    row = card_data.get(label)
+    row = trainer_data.get(label)
     if row is None:
         return False
     return any(p.startswith("CURSE_") for p in row.get("policies") or [])
@@ -283,7 +292,7 @@ FILTER_TRAINER_PREDICATES = {
 }
 
 
-def filter_has_cursed_population(name, card_data):
+def filter_has_cursed_population(name, trainer_data):
     """True if filter `name`'s trainer cohort (see FILTER_TRAINER_PREDICATES)
     contains at least one authored-curse trainer. A curse-stripped _uncursed
     rebattle only changes cursed trainers' own battles, so if a filter's
@@ -295,30 +304,30 @@ def filter_has_cursed_population(name, card_data):
     web/src/lib/formatValidity.ts's nearestValidFormat)."""
     predicate = FILTER_TRAINER_PREDICATES[name]
     return any(
-        predicate(label, card_data) and is_cursed_trainer(label, card_data)
-        for label in card_data
+        predicate(label, trainer_data) and is_cursed_trainer(label, trainer_data)
+        for label in trainer_data
     )
 
 
 # Named row-level "keep this battle" predicates shared by ratings.py,
 # best_worst.py, and custom_trainer_report.py's --filter flag, each keyed by
 # the name used in its output suffix (ratings_<fmt>_<name>.json). A
-# predicate takes (row, card_data) and returns True to keep the row.
-# card_data is only loaded (via load_card_data_if_needed) if some active
-# filter's FILTERS_NEEDING_CARD_DATA entry says it's needed, since most
+# predicate takes (row, trainer_data) and returns True to keep the row.
+# trainer_data is only loaded (via load_trainer_data_if_needed) if some active
+# filter's FILTERS_NEEDING_TRAINER_DATA entry says it's needed, since most
 # rows/filters don't need per-trainer party data.
 FILTERS = {
-    "cursed_excluded": lambda row, card_data: not is_cursed_excluded(row),
-    "level70_only": lambda row, card_data: (
-        is_level70_trainer(row["trainer1"], card_data)
-        and is_level70_trainer(row["trainer2"], card_data)
+    "cursed_excluded": lambda row, trainer_data: not is_cursed_excluded(row),
+    "level70_only": lambda row, trainer_data: (
+        is_level70_trainer(row["trainer1"], trainer_data)
+        and is_level70_trainer(row["trainer2"], trainer_data)
     ),
-    "developer_only": lambda row, card_data: (
-        is_developer_trainer(row["trainer1"], card_data)
-        and is_developer_trainer(row["trainer2"], card_data)
+    "developer_only": lambda row, trainer_data: (
+        is_developer_trainer(row["trainer1"], trainer_data)
+        and is_developer_trainer(row["trainer2"], trainer_data)
     ),
 }
-FILTERS_NEEDING_CARD_DATA = {"level70_only", "developer_only"}
+FILTERS_NEEDING_TRAINER_DATA = {"level70_only", "developer_only"}
 
 
 def add_filter_arg(parser):
@@ -344,15 +353,15 @@ def filter_suffix(filter_names):
     return "".join(f"_{name}" for name in FILTERS if name in filter_names)
 
 
-def load_card_data_if_needed(filter_names, card_data_path=None):
-    """load_card_data() only if some active filter actually needs it (see
-    FILTERS_NEEDING_CARD_DATA) -- so a script that never uses level70_only
-    doesn't pay to load and index trainer_card_data.json for nothing."""
-    if any(name in FILTERS_NEEDING_CARD_DATA for name in filter_names):
-        return load_card_data(card_data_path)
+def load_trainer_data_if_needed(filter_names, trainer_data_path=None):
+    """load_trainer_data() only if some active filter actually needs it (see
+    FILTERS_NEEDING_TRAINER_DATA) -- so a script that never uses level70_only
+    doesn't pay to load and index trainer_data.json for nothing."""
+    if any(name in FILTERS_NEEDING_TRAINER_DATA for name in filter_names):
+        return load_trainer_data(trainer_data_path)
     return None
 
 
-def passes_filters(row, filter_names, card_data):
+def passes_filters(row, filter_names, trainer_data):
     """True if row survives every active named filter (see FILTERS)."""
-    return all(FILTERS[name](row, card_data) for name in filter_names)
+    return all(FILTERS[name](row, trainer_data) for name in filter_names)

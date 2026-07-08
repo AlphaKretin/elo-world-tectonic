@@ -184,7 +184,7 @@ def fit_bt(fit_rows, index, w0=None, C=REG_C, max_iter=100, tol=1e-9):
     return w, hessian
 
 
-def _collect_stats_and_fit_rows(rows, filters, card_data, exclude_trainers):
+def _collect_stats_and_fit_rows(rows, filters, trainer_data, exclude_trainers):
     """Shared row-walking loop: per-trainer win/loss/draw/battle stats plus
     the (trainer1, trainer2, target) list fit_bt needs. Draws count toward
     stats but are excluded from the fit itself -- plain Bradley-Terry
@@ -194,7 +194,7 @@ def _collect_stats_and_fit_rows(rows, filters, card_data, exclude_trainers):
     for r in rows:
         if r.get("skipped") or r.get("had_error"):
             continue
-        if not results_lib.passes_filters(r, filters, card_data):
+        if not results_lib.passes_filters(r, filters, trainer_data):
             continue
         result = r.get("result")
         if result not in (WIN, LOSS, DRAW):
@@ -262,8 +262,8 @@ def _build_leaderboard(index, stats, coefs, hessian):
 
 def compute_ratings(fmt, exclude_trainers=(), filters=()):
     rows = results_lib.load_results(fmt, results_dir=RESULTS_DIR, report_skipped=True)
-    card_data = results_lib.load_card_data_if_needed(filters)
-    stats, fit_rows = _collect_stats_and_fit_rows(rows, filters, card_data, exclude_trainers)
+    trainer_data = results_lib.load_trainer_data_if_needed(filters)
+    stats, fit_rows = _collect_stats_and_fit_rows(rows, filters, trainer_data, exclude_trainers)
 
     trainers = sorted(stats.keys())
     if not trainers or not fit_rows:
@@ -321,11 +321,11 @@ def compute_anchored_uncursed_pair(base_fmt, exclude_trainers=(), filters=()):
     uncursed_rows = results_lib.load_results(uncursed_fmt, results_dir=RESULTS_DIR, report_skipped=True)
     raw_rows = results_lib.load_shard_files(uncursed_fmt, RESULTS_DIR)
 
-    card_data = results_lib.load_card_data_if_needed(filters)
+    trainer_data = results_lib.load_trainer_data_if_needed(filters)
     if filters:
-        base_rows = [r for r in base_rows if results_lib.passes_filters(r, filters, card_data)]
-        uncursed_rows = [r for r in uncursed_rows if results_lib.passes_filters(r, filters, card_data)]
-        raw_rows = [r for r in raw_rows if results_lib.passes_filters(r, filters, card_data)]
+        base_rows = [r for r in base_rows if results_lib.passes_filters(r, filters, trainer_data)]
+        uncursed_rows = [r for r in uncursed_rows if results_lib.passes_filters(r, filters, trainer_data)]
+        raw_rows = [r for r in raw_rows if results_lib.passes_filters(r, filters, trainer_data)]
 
     raw_pairs = {results_lib.pair_key(r) for r in raw_rows}
     uncursed_pairs = {results_lib.pair_key(r) for r in uncursed_rows}

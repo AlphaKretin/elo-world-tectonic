@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 ELO Rating vs. party level, from a format's ratings_<format>.json (see
-ratings.py) and trainer_card_data.json (needs the ELO_DUMP_TRAINER_CARD_DATA
-dump).
+ratings.py) and results/current/trainer_data.json (needs the
+ELO_DUMP_TRAINER_CARD_DATA dump, promoted into results/current -- see
+trainer_cards.py's docstring).
 
 One chart: rating vs. each trainer's raw max party level, with a linear fit
 (slope/R^2 in the console output and the legend). No outlier flag, drawn
@@ -22,7 +23,7 @@ import mplcursors
 import numpy as np
 
 import results_lib
-from results_lib import CARD_DATA_PATH, REPO_ROOT
+from results_lib import TRAINER_DATA_PATH, REPO_ROOT
 
 RESULTS_DIR = results_lib.RESULTS_DIR
 TECTONIC_DIR = os.path.join(REPO_ROOT, "vendor", "tectonic-content")
@@ -41,10 +42,10 @@ COLOR_FIT = "#e66767"        # trend line
 COLOR_POINT = "#5aa9d6"      # point fill -- distinct hue from the trend line
 
 
-def build_entries(ratings_by_label, card_data_by_label):
+def build_entries(ratings_by_label, trainer_data_by_label):
     entries = []
     for label, row in ratings_by_label.items():
-        card = card_data_by_label.get(label)
+        card = trainer_data_by_label.get(label)
         if card is None:
             continue
         level = max(p["level"] for p in card["party"])
@@ -146,17 +147,18 @@ def main():
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
 
-    if not os.path.exists(CARD_DATA_PATH):
+    if not os.path.exists(TRAINER_DATA_PATH):
         raise SystemExit(
-            f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first (see this script's docstring)."
+            f"{TRAINER_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump and promote it "
+            "to results/current/trainer_data.json first (see this script's docstring)."
         )
 
     found_formats = results_lib.discover_formats(RESULTS_DIR)
     fmt = args.format or ("singles" if "singles" in found_formats else found_formats[0])
     ratings_by_label = results_lib.load_ratings(fmt)
-    card_data_by_label = results_lib.load_card_data()
+    trainer_data_by_label = results_lib.load_trainer_data()
 
-    entries = build_entries(ratings_by_label, card_data_by_label)
+    entries = build_entries(ratings_by_label, trainer_data_by_label)
     m, b, r2 = fit_trend(entries)
 
     fig, ax = plt.subplots(figsize=(11, 8))

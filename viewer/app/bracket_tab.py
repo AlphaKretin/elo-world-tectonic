@@ -57,7 +57,7 @@ class BracketTab(QWidget):
         self.rounds = None
         self.results_index = {}
         self._sprite_cache = {}
-        self._card_data_cache = None
+        self._trainer_data_cache = None
         self._naming_cache = None
         self._curse_badge_pixmap = None
         self._curse_badge_loaded = False
@@ -226,14 +226,14 @@ class BracketTab(QWidget):
 
     # -- sprites / curse marker --------------------------------------------
 
-    def _card_data(self):
-        if self._card_data_cache is None:
+    def _trainer_data(self):
+        if self._trainer_data_cache is None:
             results_lib = load_results_lib(self.config.analysis_dir)
             try:
-                self._card_data_cache = results_lib.load_card_data()
+                self._trainer_data_cache = results_lib.load_trainer_data(results_dir=self.config.results_dir)
             except OSError:
-                self._card_data_cache = {}
-        return self._card_data_cache
+                self._trainer_data_cache = {}
+        return self._trainer_data_cache
 
     def _naming(self):
         if self._naming_cache is None:
@@ -243,10 +243,10 @@ class BracketTab(QWidget):
     def _is_cursed(self, label):
         if not label:
             return False
-        row = self._card_data().get(label)
+        row = self._trainer_data().get(label)
         if row is None:
             return False
-        return self._naming().is_curse_variant(row, self._card_data())
+        return self._naming().is_curse_variant(row, self._trainer_data())
 
     def _device_pixel_ratio(self):
         screen = QGuiApplication.primaryScreen()
@@ -297,7 +297,7 @@ class BracketTab(QWidget):
             return None
         if label not in self._sprite_cache:
             pixmap = None
-            row = self._card_data().get(label)
+            row = self._trainer_data().get(label)
             trainer_type = row.get("trainer_type") if row else None
             if trainer_type:
                 path = os.path.join(self.config.vendor_dir, "Graphics", "Trainers", f"{trainer_type}.png")

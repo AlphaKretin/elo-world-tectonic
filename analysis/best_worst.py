@@ -51,13 +51,13 @@ def compute_best_worst(fmt, ratings_by_label, filters=()):
     out, see results_lib.FILTERS, saved under a filter-suffixed filename),
     so this must filter the same way rather than globbing for a results
     file that will never exist."""
-    card_data = results_lib.load_card_data_if_needed(filters)
+    trainer_data = results_lib.load_trainer_data_if_needed(filters)
     best_win = {}
     worst_loss = {}
     for row in results_lib.load_results(fmt, results_dir=RESULTS_DIR):
         if row.get("skipped") or row.get("had_error"):
             continue
-        if not results_lib.passes_filters(row, filters, card_data):
+        if not results_lib.passes_filters(row, filters, trainer_data):
             continue
         t1, t2, result = row.get("trainer1"), row.get("trainer2"), row.get("result")
         if result not in (WIN, LOSS):

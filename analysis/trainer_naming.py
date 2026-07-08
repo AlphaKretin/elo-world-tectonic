@@ -6,13 +6,13 @@ viewer/app/trainer_names.py (PySide6 viewer) -- pulled out of trainer_cards.py
 so consumers that only need naming (not PIL/resvg_py rendering) can import
 this without dragging in image-rendering dependencies.
 
-Pure dict/string logic over trainer_card_data.json rows (see
-results_lib.load_card_data) -- no PIL, no filesystem access beyond what the
+Pure dict/string logic over trainer_data.json rows (see
+results_lib.load_trainer_data) -- no PIL, no filesystem access beyond what the
 caller already loaded.
 """
 
 
-def fight_grouping(card_row, card_data_by_label):
+def fight_grouping(card_row, trainer_data_by_label):
     """{version: (fight_number, is_curse_variant)} across every same-identity
     sibling, plus the total distinct-fight count, for the fight-numbering
     scheme shared by distinct_fight_number() and is_curse_variant() below.
@@ -36,7 +36,7 @@ def fight_grouping(card_row, card_data_by_label):
     """
     identity = card_row.get("name_for_hashing") or card_row["real_name"]
     siblings = sorted(
-        (row for row in card_data_by_label.values()
+        (row for row in trainer_data_by_label.values()
          if row["trainer_type"] == card_row["trainer_type"]
          and (row.get("name_for_hashing") or row["real_name"]) == identity),
         key=lambda row: row["version"],
@@ -57,31 +57,31 @@ def fight_grouping(card_row, card_data_by_label):
     return grouping, next_number - 1
 
 
-def distinct_fight_number(card_row, card_data_by_label):
+def distinct_fight_number(card_row, trainer_data_by_label):
     """1-indexed position of this row's fight among same-identity versions,
     or None if there's only one distinct fight."""
-    grouping, total = fight_grouping(card_row, card_data_by_label)
+    grouping, total = fight_grouping(card_row, trainer_data_by_label)
     if total <= 1:
         return None
     return grouping[card_row["version"]][0]
 
 
-def is_curse_variant(card_row, card_data_by_label):
+def is_curse_variant(card_row, trainer_data_by_label):
     """Whether this row is the curse-rolled instance of its fight, as
     opposed to that fight's base version (see fight_grouping's docstring for
     why this isn't just "has any CURSE_ policy")."""
-    grouping, _ = fight_grouping(card_row, card_data_by_label)
+    grouping, _ = fight_grouping(card_row, trainer_data_by_label)
     return grouping[card_row["version"]][1]
 
 
-def display_name(card_row, card_data_by_label, identities=None):
+def display_name(card_row, trainer_data_by_label, identities=None):
     """identities, if given, renders as "[real name(s)]" between the real
     name and the "#N" fight-number suffix -- needed when referencing a
     Crimson/Teal masked villain by version number alone (e.g. "Crimson #2")
     would otherwise be ambiguous about which of their several rotating
     identities (see fight_grouping's docstring) that specific version was."""
     display_type = card_row.get("trainer_type_display") or card_row["trainer_type"]
-    number = distinct_fight_number(card_row, card_data_by_label)
+    number = distinct_fight_number(card_row, trainer_data_by_label)
     suffix = f" #{number}" if number is not None else ""
     identity_tag = ""
     if identities:
@@ -90,18 +90,18 @@ def display_name(card_row, card_data_by_label, identities=None):
     return f"{display_type} {card_row['real_name']}{identity_tag}{suffix}"
 
 
-def identity_matches(real_name, card_data_by_label):
+def identity_matches(real_name, trainer_data_by_label):
     """Every non-Masked-Villain trainer_type with this real_name, deduped
     (a name can recur across many versions of the same trainer_type)."""
     by_type = {}
-    for row in card_data_by_label.values():
+    for row in trainer_data_by_label.values():
         if row["real_name"] != real_name or "MASKEDVILLAIN" in row["trainer_type"]:
             continue
         by_type.setdefault(row["trainer_type"], row)
     return list(by_type.values())
 
 
-def masked_villain_identities(card_row, card_data_by_label):
+def masked_villain_identities(card_row, trainer_data_by_label):
     """Who's really under the mask, by way of name_for_hashing -- a Masked
     Villain's NameForHashing holds their true identity's real_name (Silver
     is the one exception: MASKEDVILLAIN_Sang has no name_for_hashing at all,
@@ -116,7 +116,7 @@ def masked_villain_identities(card_row, card_data_by_label):
     hashing_name = card_row.get("name_for_hashing")
     if not hashing_name:
         return []
-    matches = identity_matches(hashing_name, card_data_by_label)
+    matches = identity_matches(hashing_name, trainer_data_by_label)
     if not matches:
         return []
     if "_DOUBLE" in trainer_type:
@@ -130,8 +130,8 @@ def safe_filename(label):
     return label.replace(":", "_").replace("#", "_v")
 
 
-def resolve_display_name(label, card_data_by_label):
-    """label ("TYPE:Name#version", matching trainer_card_data.json's own
+def resolve_display_name(label, trainer_data_by_label):
+    """label ("TYPE:Name#version", matching trainer_data.json's own
     "label" field) -> full display name, doing the masked-villain identity
     lookup and passing it through -- the one call non-rendering consumers
     (viewer, future scripts) actually want, vs. display_name's lower-level
@@ -141,9 +141,9 @@ def resolve_display_name(label, card_data_by_label):
     Appends a plain-text "(Cursed)" marker for a curse-rolled variant --
     trainer_cards.py/the website mark this with a curse-symbol icon instead,
     not practical in a text-only context like the viewer."""
-    card_row = card_data_by_label[label]
-    identities = masked_villain_identities(card_row, card_data_by_label)
-    name = display_name(card_row, card_data_by_label, identities=identities)
-    if is_curse_variant(card_row, card_data_by_label):
+    card_row = trainer_data_by_label[label]
+    identities = masked_villain_identities(card_row, trainer_data_by_label)
+    name = display_name(card_row, trainer_data_by_label, identities=identities)
+    if is_curse_variant(card_row, trainer_data_by_label):
         name += " (Cursed)"
     return name

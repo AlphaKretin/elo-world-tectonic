@@ -23,8 +23,8 @@ an ongoing thing, not meant to be exhaustive):
 Run after ratings.py (needs ratings_<format>.json) against
 results/current/elo_results_<format>_shard*.jsonl (default; use
 --results-dir results/local/ or results/remote/ for not-yet-promoted data)
-and vendor/tectonic-content/Analysis/trainer_card_data.json (for per-trainer
-curse/identity lookups, the same dump trainer_cards.py uses). Writes
+and results/current/trainer_data.json (for per-trainer curse/identity
+lookups, the same promoted ground-truth dump trainer_cards.py uses). Writes
 analysis/notable_matches/notable_matches_<format>.md.
 
 The current results are a stale, incomplete sample (see project notes) --
@@ -35,7 +35,7 @@ import argparse
 import os
 
 import results_lib
-from results_lib import CARD_DATA_PATH, WIN, LOSS, DRAW
+from results_lib import TRAINER_DATA_PATH, WIN, LOSS, DRAW
 
 RESULTS_DIR = results_lib.RESULTS_DIR
 
@@ -55,7 +55,7 @@ def identity_key(card_row):
     return (card_row["trainer_type"], card_row.get("name_for_hashing") or card_row["real_name"])
 
 
-def fight_pairs(card_data):
+def fight_pairs(trainer_data):
     """{label: partner_label} for labels that are exactly each other's
     base/cursed-extension pair -- the *same* fight, not just the same
     identity at a different point in their story (e.g. Helena#0/#1 are a
@@ -65,7 +65,7 @@ def fight_pairs(card_data):
     within an identity, walk versions in order and attach each cursed
     entry to the nearest preceding non-cursed one."""
     groups = {}
-    for row in card_data.values():
+    for row in trainer_data.values():
         groups.setdefault(identity_key(row), []).append(row)
 
     pairs = {}
@@ -108,16 +108,16 @@ def find_upsets(rows, ratings, top_n):
     return upsets[:top_n]
 
 
-def find_self_mirror_losses(rows, card_data, ratings):
+def find_self_mirror_losses(rows, trainer_data, ratings):
     """Exact base/cursed-extension fight pairs (see fight_pairs) where the
     cursed side lost to its own plain original."""
-    pairs = fight_pairs(card_data)
+    pairs = fight_pairs(trainer_data)
     found = []
     for r in decisive_rows(rows):
         t1, t2 = r["trainer1"], r["trainer2"]
         if t1 == t2 or pairs.get(t1) != t2:
             continue
-        cursed_label, plain_label = (t1, t2) if is_cursed(card_data[t1]) else (t2, t1)
+        cursed_label, plain_label = (t1, t2) if is_cursed(trainer_data[t1]) else (t2, t1)
         winner = t1 if r["result"] == WIN else t2
         if cursed_label == winner:
             continue  # curse won -- not the anomaly we're after
@@ -128,7 +128,7 @@ def find_self_mirror_losses(rows, card_data, ratings):
     return found
 
 
-def find_extreme_length(rows, ratings, card_data, top_n):
+def find_extreme_length(rows, ratings, trainer_data, top_n):
     """(longest grinds, fastest finishes). Longest is plain rounds-
     descending -- a long battle is notable on its own regardless of team
     size. Fastest ranks by the *combined* percentile rank of low
@@ -143,7 +143,7 @@ def find_extreme_length(rows, ratings, card_data, top_n):
         t1, t2 = r["trainer1"], r["trainer2"]
         winner, loser = (t1, t2) if r["result"] == WIN else (t2, t1)
         wr, lr = ratings.get(winner), ratings.get(loser)
-        loser_card = card_data.get(loser)
+        loser_card = trainer_data.get(loser)
         if not wr or not lr or not loser_card:
             continue
         loser_party_size = len(loser_card["party"]) or 1
@@ -236,9 +236,12 @@ def main():
     if not formats:
         print(f"No elo_results_*_shard*.jsonl found under {RESULTS_DIR}.")
         return
-    if not os.path.exists(CARD_DATA_PATH):
-        raise SystemExit(f"{CARD_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump first.")
-    card_data = results_lib.load_card_data()
+    if not os.path.exists(TRAINER_DATA_PATH):
+        raise SystemExit(
+            f"{TRAINER_DATA_PATH} not found -- run the ELO_DUMP_TRAINER_CARD_DATA dump and promote it "
+            "to results/current/trainer_data.json first."
+        )
+    trainer_data = results_lib.load_trainer_data()
 
     for fmt in formats:
         ratings_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}.json")
@@ -249,8 +252,8 @@ def main():
         rows = results_lib.load_results(fmt, results_dir=RESULTS_DIR)
 
         upsets = find_upsets(rows, ratings, args.top)
-        self_mirror = find_self_mirror_losses(rows, card_data, ratings)
-        longest, fastest = find_extreme_length(rows, ratings, card_data, args.top)
+        self_mirror = find_self_mirror_losses(rows, trainer_data, ratings)
+        longest, fastest = find_extreme_length(rows, ratings, trainer_data, args.top)
 
         md_path = write_report(fmt, upsets, self_mirror, longest, fastest)
         print(f"[{fmt}] {len(upsets)} upsets, {len(self_mirror)} self-mirror losses, "
