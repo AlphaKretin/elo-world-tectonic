@@ -179,6 +179,26 @@ def load_results(fmt, results_dir=None, report_skipped=False):
     return load_shard_files(fmt, results_dir, report_skipped)
 
 
+def find_had_error_rows(results_dir=None):
+    """Every had_error:true row across every discovered format's raw shard
+    files (including _uncursed formats' own raw partial files, scanned
+    directly rather than through the in-memory uncursed merge, since a
+    had_error row needs fixing on disk regardless of which merged view would
+    show it). Used by export_web_data.py to hard-fail before publishing --
+    a had_error row (whether a recoverable engine hiccup with a result
+    attached, or a repeated-crash row with result:null) sat undetected in
+    results/current for an unknown length of time once before (see
+    strip_had_error.py's existence), so publishing must refuse to proceed
+    silently rather than warn."""
+    results_dir = results_dir or RESULTS_DIR
+    errors = []
+    for fmt in discover_formats(results_dir):
+        for row in load_shard_files(fmt, results_dir):
+            if row.get("had_error"):
+                errors.append((fmt, row))
+    return errors
+
+
 def load_ratings(fmt, suffix="", ratings_dir=None):
     ratings_dir = ratings_dir or RATINGS_DIR
     path = os.path.join(ratings_dir, f"ratings_{fmt}{suffix}.json")

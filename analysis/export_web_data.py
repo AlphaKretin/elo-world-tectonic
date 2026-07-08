@@ -354,7 +354,30 @@ def regenerate_analysis_outputs(format_specs):
         processed.add(key)
 
 
+def check_no_error_rows():
+    """Hard-fail if any had_error:true row exists anywhere in results/current
+    (see results_lib.find_had_error_rows) -- this script is normally run
+    unattended, so a warning here would go unseen the same way the
+    had_error rows themselves went unnoticed for an unknown length of time.
+    Publishing must stop until strip_had_error.py + a rerun + splice clears
+    them, not silently ship ratings fit around missing/erroring pairings."""
+    error_rows = results_lib.find_had_error_rows()
+    if not error_rows:
+        return
+    lines = "\n".join(
+        f"  [{fmt}] {row.get('trainer1')} vs {row.get('trainer2')} "
+        f"(seed {row.get('seed')}, result={row.get('result')})"
+        for fmt, row in error_rows
+    )
+    raise RuntimeError(
+        f"{len(error_rows)} had_error row(s) found in results/current -- "
+        f"refusing to publish. Diagnose/fix and rerun those pairings (see "
+        f"strip_had_error.py) before running export_web_data.py again:\n{lines}"
+    )
+
+
 def main():
+    check_no_error_rows()
     card_data_by_label = results_lib.load_card_data()
     format_specs = build_format_specs(card_data_by_label)
     formats = [base + results_lib.filter_suffix(filters) for base, filters in format_specs]
