@@ -77,7 +77,7 @@ $lastAttemptingEntries = @{}
 while ($true) {
     $snapshots = $hostList | ForEach-Object -ThrottleLimit $hostList.Count -Parallel {
         $thisHost = $_
-        $remoteCmd = "for f in ~/elo-test/results/elo_status_*_shard*.json; do [ -f `"`$f`" ] && echo `"`$f:`" && cat `"`$f`"; done 2>/dev/null; echo '---ATTEMPTING---'; for f in ~/elo-test/results/elo_attempting_*_shard*.json; do [ -f `"`$f`" ] && cat `"`$f`"; done 2>/dev/null"
+        $remoteCmd = "for f in ~/elo-test/results/elo_status_*_shard*.json; do [ -f `"`$f`" ] && echo `"`$f:`" && cat `"`$f`"; done 2>/dev/null; echo '---ATTEMPTING---'; for f in ~/elo-test/results/elo_attempting_*_shard*.json; do [ -f `"`$f`" ] && cat `"`$f`"; done 2>/dev/null; echo '---HEARTBEAT---'; for f in ~/elo-test/results/elo_turn_heartbeat_*_shard*.json; do [ -f `"`$f`" ] && echo `"`$f:`" && cat `"`$f`"; done 2>/dev/null"
         # -n: see setup_remote_shards.ps1's comment on the same flag.
         $output = & ssh -n -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$thisHost" $remoteCmd 2>$null
         [PSCustomObject]@{ HostName = $thisHost; Output = ($output -join "`n"); SshFailed = ($LASTEXITCODE -ne 0) }
@@ -105,7 +105,9 @@ while ($true) {
         $snap = $snapshots | Where-Object { $_.HostName -eq $thisHost } | Select-Object -First 1
         $parts = if ($snap) { $snap.Output -split "---ATTEMPTING---" } else { @("", "") }
         $statusRaw = $parts[0].Trim()
-        $attemptingRaw = if ($parts.Count -gt 1) { $parts[1].Trim() } else { "" }
+        $attemptingParts = if ($parts.Count -gt 1) { $parts[1] -split "---HEARTBEAT---" } else { @("", "") }
+        $attemptingRaw = $attemptingParts[0].Trim()
+        $heartbeatRaw = if ($attemptingParts.Count -gt 1) { $attemptingParts[1].Trim() } else { "" }
 
         Write-Output ""
         Write-Output "-- shard $i ($thisHost) --"
@@ -179,6 +181,30 @@ while ($true) {
                 $sinceChange = [int]((Get-Date) - $lastAttemptingChangedAt[$i]).TotalSeconds
                 Write-Output "attempting (unchanged ${sinceChange}s):"
                 foreach ($a in $shownEntries) { Write-AttemptingEntry $a }
+            }
+        }
+
+        # Heartbeat carries its own updated_at (unlike attempting), so no
+        # local change-tracking needed -- just pick whichever format's
+        # heartbeat is freshest, same collapse-to-latest logic as the
+        # status blobs above.
+        $heartbeatBlobs = if ($heartbeatRaw) { Split-StatusBlobs $heartbeatRaw } else { @() }
+        if ($formatFilter) {
+            $heartbeatBlobs = @($heartbeatBlobs | Where-Object { $formatFilter -contains (Get-ShardFormatLabel $_.Path) })
+        }
+        if ($heartbeatBlobs) {
+            $hbParsed = @()
+            foreach ($blob in $heartbeatBlobs) {
+                try { $hbParsed += [PSCustomObject]@{ Label = (Get-ShardFormatLabel $blob.Path); Data = ($blob.Json | ConvertFrom-Json) } } catch {}
+            }
+            $hbToShow = if (-not $formatFilter -and $hbParsed.Count -gt 1) {
+                @($hbParsed | Sort-Object { [datetime]$_.Data.updated_at } -Descending | Select-Object -First 1)
+            } else {
+                $hbParsed
+            }
+            foreach ($p in $hbToShow) {
+                $line = Format-HeartbeatLine $p.Data $p.Label
+                if ($line) { Write-Output $line }
             }
         }
     }

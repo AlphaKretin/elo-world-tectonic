@@ -159,6 +159,10 @@ while ($true) {
                 Write-Output "  attempting (unchanged ${sinceChange}s): $($lastAttempting[$key])"
             }
         }
+
+        $heartbeatPath = Join-Path $ResultsDir "elo_turn_heartbeat_$($s.Label)_shard$($s.Chunk).json"
+        $heartbeatLine = Format-HeartbeatLine (Read-StatusJson $heartbeatPath)
+        if ($heartbeatLine) { Write-Output $heartbeatLine }
     }
 
     Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError

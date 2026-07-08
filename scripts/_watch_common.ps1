@@ -24,11 +24,11 @@
 # physical shard/host slot, both watchers need the same parsing rather than
 # each re-deriving their own regex.
 function Get-ShardFormatLabel([string]$path) {
-    if ($path -match 'elo_(?:status|attempting)_(.+)_shard\d+\.json$') { return $Matches[1] }
+    if ($path -match 'elo_(?:status|attempting|turn_heartbeat)_(.+)_shard\d+\.json$') { return $Matches[1] }
     return $path
 }
 function Get-ShardChunkIndex([string]$path) {
-    if ($path -match 'elo_(?:status|attempting)_.+_shard(\d+)\.json$') { return [int]$Matches[1] }
+    if ($path -match 'elo_(?:status|attempting|turn_heartbeat)_.+_shard(\d+)\.json$') { return [int]$Matches[1] }
     return -1
 }
 
@@ -66,6 +66,24 @@ function Show-StatusEntry([PSCustomObject]$d, [string]$label) {
         Write-Output "    *** ERROR: $($d.error.error_class): $($d.error.error_message) ***"
     }
     Write-Output "    updated_at: $($d.updated_at)"
+}
+
+# Renders one parsed elo_turn_heartbeat_<format>_shard<N>.json entry
+# (headless_boot.rb's pbStartOfRoundPhase hook -- {"turn":N,"updated_at":...},
+# written every round of the battle currently in progress) as a one-line
+# progress indicator, or $null if there's nothing to show. Unlike the
+# attempting file (which has no timestamp of its own, so callers track
+# "last changed at" locally), the heartbeat already carries updated_at, so
+# staleness is a straight subtraction -- no local change-tracking needed.
+# Lets a long single-battle stretch (e.g. a stall-heavy timeout-cap rerun)
+# be told apart from an actually-stuck battle without waiting on the
+# per-battle status checkpoint, which only updates every N completed battles.
+function Format-HeartbeatLine([PSCustomObject]$d, [string]$label = "") {
+    if (-not $d) { return $null }
+    $ageText = "unknown"
+    try { $ageText = "$([int]((Get-Date) - [datetime]$d.updated_at).TotalSeconds)s ago" } catch {}
+    $prefix = if ($label) { "[$label] " } else { "" }
+    return "  ${prefix}turn heartbeat: round $($d.turn) (updated $ageText)"
 }
 
 # Folds one status entry into the running aggregate. $globalTotalByFormat
