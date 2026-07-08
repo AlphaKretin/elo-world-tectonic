@@ -7,9 +7,10 @@ an ongoing thing, not meant to be exhaustive):
 
 - Upsets: the winner was rated much lower than the loser.
 - Self-mirror losses: a trainer's cursed/extended version lost to the
-  *exact* plain version it extends (see fight_pairs -- same identity,
-  consecutive base+CURSE_* versions, not just any two versions of the
-  same character at different points in their story) -- the curse is
+  *exact* plain version it extends (see pair_cursed_with_originals --
+  same identity, consecutive base+CURSE_* versions, not just any two
+  versions of the same character at different points in their story) --
+  the curse is
   supposed to be in that side's favor, so this runs backwards. Exhaustive,
   not top-N -- there's no "how cursed" scale to rank by, it either
   happened or it didn't.
@@ -55,7 +56,7 @@ def identity_key(card_row):
     return (card_row["trainer_type"], card_row.get("name_for_hashing") or card_row["real_name"])
 
 
-def fight_pairs(trainer_data):
+def pair_cursed_with_originals(trainer_data):
     """{label: partner_label} for labels that are exactly each other's
     base/cursed-extension pair -- the *same* fight, not just the same
     identity at a different point in their story (e.g. Helena#0/#1 are a
@@ -109,9 +110,9 @@ def find_upsets(rows, ratings, top_n):
 
 
 def find_self_mirror_losses(rows, trainer_data, ratings):
-    """Exact base/cursed-extension fight pairs (see fight_pairs) where the
-    cursed side lost to its own plain original."""
-    pairs = fight_pairs(trainer_data)
+    """Exact base/cursed-extension fight pairs (see pair_cursed_with_originals)
+    where the cursed side lost to its own plain original."""
+    pairs = pair_cursed_with_originals(trainer_data)
     found = []
     for r in decisive_rows(rows):
         t1, t2 = r["trainer1"], r["trainer2"]

@@ -5,9 +5,20 @@ TYPE:Name / TYPE:Name#version label pulled straight out of
 results/*.jsonl works here unchanged. Pure functions, no Qt/process
 dependency, so this is unit-testable on its own.
 """
+import os
 import re
 
 TRAINER_LABEL_RE = re.compile(r"^(?P<type>[^:#]+):(?P<name>[^#]+)(#(?P<version>\d+))?$")
+
+
+def find_existing_replay(replay_dir, slug):
+    """.dat path for slug if one's already on disk under replay_dir, else
+    None. Slug construction (what identifies "this exact match/attempt") is
+    caller-specific -- see bracket_lib.bracket_replay_slug for the bracket
+    tab's round/match/attempt-aware scheme -- but the disk check itself is
+    identical wherever a slug-named replay might already exist."""
+    path = os.path.join(replay_dir, slug + ".dat")
+    return path if os.path.isfile(path) else None
 
 
 class InvalidTrainerLabel(ValueError):

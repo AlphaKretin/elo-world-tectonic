@@ -16,10 +16,11 @@ from app.bracket_tab import BracketTab
 from app.browse_tab import BrowseTab
 from app.config import AppConfig
 from app.generate_tab import GenerateTab
+from app.trainers_tab import TrainersTab
 from app.watch_tab import WatchTab
 
-GENERATE_TAB_INDEX = 1
-WATCH_TAB_INDEX = 2
+GENERATE_TAB_INDEX = 3
+WATCH_TAB_INDEX = 4
 BLOCKED_TAB_TOOLTIP = "Waiting for the game files to finish downloading/compiling..."
 
 
@@ -73,19 +74,30 @@ class MainWindow(QMainWindow):
         self.generate_tab = GenerateTab(self.config)
         self.watch_tab = WatchTab(self.config)
         self.bracket_tab = BracketTab(self.config)
-        self.tabs.addTab(self.browse_tab, "Browse")
+        self.trainers_tab = TrainersTab(self.config)
+        # Battles/Trainers/Bracket each feed into Generate/Watch, so the
+        # latter two sit at the end rather than splitting the "sources" up.
+        self.tabs.addTab(self.browse_tab, "Battles")
+        self.tabs.addTab(self.trainers_tab, "Trainers")
+        self.tabs.addTab(self.bracket_tab, "Bracket")
         self.tabs.addTab(self.generate_tab, "Generate")
         self.tabs.addTab(self.watch_tab, "Watch")
-        self.tabs.addTab(self.bracket_tab, "Bracket")
         layout.addWidget(self.tabs)
         self.tabs.tabBar().installEventFilter(_DisabledTabCursorFilter(self.tabs))
 
         self.browse_tab.match_selected.connect(self._on_match_selected)
+        self.browse_tab.watch_requested.connect(self._on_watch_requested)
         self.generate_tab.watch_requested.connect(self._on_watch_requested)
         self.bracket_tab.watch_requested.connect(self._on_watch_requested)
         self.bracket_tab.generate_requested.connect(self._on_bracket_generate_requested)
         self.watch_tab.replay_finished.connect(self.bracket_tab.handle_replay_finished)
         self.generate_tab.generation_finished.connect(self.bracket_tab.handle_generation_finished)
+        self.watch_tab.replay_finished.connect(self.browse_tab.handle_replay_finished)
+        self.generate_tab.generation_finished.connect(self.browse_tab.handle_generation_finished)
+        self.trainers_tab.watch_requested.connect(self._on_watch_requested)
+        self.trainers_tab.generate_requested.connect(self._on_trainers_generate_requested)
+        self.watch_tab.replay_finished.connect(self.trainers_tab.handle_replay_finished)
+        self.generate_tab.generation_finished.connect(self.trainers_tab.handle_generation_finished)
 
         self._ensure_vendor_ready()
 
@@ -137,6 +149,13 @@ class MainWindow(QMainWindow):
         for index in (GENERATE_TAB_INDEX, WATCH_TAB_INDEX):
             self.tabs.setTabEnabled(index, not blocked)
             self.tabs.setTabToolTip(index, BLOCKED_TAB_TOOLTIP if blocked else "")
+        # Battles/Trainers/Bracket stay open (browsable) during vendor setup,
+        # but their Generate/Watch hand-off buttons launch Game.exe just as
+        # directly as the Generate/Watch tabs' own buttons do, so those need
+        # blocking too -- not just the destination tabs themselves.
+        self.browse_tab.set_actions_blocked(blocked)
+        self.trainers_tab.set_actions_blocked(blocked)
+        self.bracket_tab.set_actions_blocked(blocked)
 
     def _set_vendor_actions_enabled(self, enabled):
         if self.redownload_action is not None:
@@ -237,6 +256,10 @@ class MainWindow(QMainWindow):
         self.tabs.setCurrentWidget(self.generate_tab)
 
     def _on_bracket_generate_requested(self, payload):
+        self.generate_tab.set_match(payload)
+        self.tabs.setCurrentWidget(self.generate_tab)
+
+    def _on_trainers_generate_requested(self, payload):
         self.generate_tab.set_match(payload)
         self.tabs.setCurrentWidget(self.generate_tab)
 

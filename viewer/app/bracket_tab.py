@@ -16,7 +16,6 @@ import json
 import os
 
 from PySide6.QtCore import QSettings, Qt, Signal
-from PySide6.QtGui import QGuiApplication, QPainter, QPixmap
 from PySide6.QtWidgets import (
     QComboBox,
     QFrame,
@@ -30,9 +29,10 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import bracket_seeds, format_selector, ui_settings
+from app import bracket_seeds, format_selector, replay_env, ui_settings
 from app.bracket_canvas import BracketCanvas
 from app.results_source import load_results_lib
+from app.sprite_loader import SpriteLoader
 from app.trainer_names import TrainerNameResolver, load_trainer_naming
 
 FILTER_CHOICES = [(None, "(none)"), ("cursed_excluded", "Cursed-excluded"), ("level70_only", "Level 70 only")]
@@ -56,11 +56,10 @@ class BracketTab(QWidget):
         self.bracket_key = None
         self.rounds = None
         self.results_index = {}
-        self._sprite_cache = {}
         self._trainer_data_cache = None
         self._naming_cache = None
-        self._curse_badge_pixmap = None
-        self._curse_badge_loaded = False
+        self._vendor_blocked = False
+        self._sprites = SpriteLoader(config, self._trainer_data, self._is_cursed)
 
         layout = QVBoxLayout(self)
 
@@ -116,6 +115,11 @@ class BracketTab(QWidget):
         self._on_format_changed()
 
     # -- setup / teardown --------------------------------------------------
+
+    def set_actions_blocked(self, blocked):
+        self._vendor_blocked = blocked
+        if self.rounds is not None:
+            self._render()
 
     def _ensure_bracket_lib(self):
         if self._bracket_lib is None:
@@ -248,82 +252,6 @@ class BracketTab(QWidget):
             return False
         return self._naming().is_curse_variant(row, self._trainer_data())
 
-    def _device_pixel_ratio(self):
-        screen = QGuiApplication.primaryScreen()
-        return screen.devicePixelRatio() if screen else 1.0
-
-    def _scaled_pixel_art(self, raw, logical_size):
-        """Nearest-neighbor downscale to logical_size x logical_size,
-        rendered at the screen's actual device pixel ratio and tagged with
-        that ratio via setDevicePixelRatio -- without this, a pixmap with
-        no DPR set gets silently re-stretched a *second* time by Qt when
-        painted on a HiDPI screen (to match the screen's real physical
-        pixel density), and that implicit second pass isn't
-        nearest-neighbor. That's what was making sprites still look
-        soft/crunchy despite the source scale factor itself being a clean
-        integer ratio (160/40 for trainer sprites, 48/16 for the curse
-        badge) -- the corruption was happening one step later, at paint
-        time, not in this scaling step."""
-        dpr = self._device_pixel_ratio()
-        physical = max(1, round(logical_size * dpr))
-        scaled = raw.scaled(physical, physical, Qt.KeepAspectRatio, Qt.FastTransformation)
-        scaled.setDevicePixelRatio(dpr)
-        return scaled
-
-    def _curse_badge(self):
-        """Tarot Amulet badge (Graphics/Items/TAROTAMULET_ACTIVE.png), the
-        same icon trainer_cards.py/the website use to mark a curse-rolled
-        trainer -- loaded once and composited onto a cursed trainer's
-        sprite corner (see _sprite_pixmap), instead of resolve_display_name's
-        text-only "(Cursed)" suffix (see CURSED_TEXT_SUFFIX)."""
-        if not self._curse_badge_loaded:
-            self._curse_badge_loaded = True
-            path = os.path.join(self.config.vendor_dir, "Graphics", "Items", "TAROTAMULET_ACTIVE.png")
-            if os.path.isfile(path):
-                raw = QPixmap(path)
-                if not raw.isNull():
-                    self._curse_badge_pixmap = self._scaled_pixel_art(raw, CURSE_BADGE_SIZE)
-        return self._curse_badge_pixmap
-
-    def _sprite_pixmap(self, label):
-        """Trainer portrait sprite (Graphics/Trainers/{trainer_type}.png,
-        the same one trainer_cards.py uses), scaled down for a bracket
-        slot, with the curse badge composited onto its bottom-right corner
-        for a curse-rolled trainer. Cached per label since the same trainer
-        recurs across many matches/rounds. None if the label has no
-        card-data row yet or the sprite file is missing (e.g. a hand-typed
-        label)."""
-        if not label:
-            return None
-        if label not in self._sprite_cache:
-            pixmap = None
-            row = self._trainer_data().get(label)
-            trainer_type = row.get("trainer_type") if row else None
-            if trainer_type:
-                path = os.path.join(self.config.vendor_dir, "Graphics", "Trainers", f"{trainer_type}.png")
-                if os.path.isfile(path):
-                    raw = QPixmap(path)
-                    if not raw.isNull():
-                        pixmap = self._scaled_pixel_art(raw, SPRITE_SIZE)
-            if pixmap is not None and self._is_cursed(label):
-                badge = self._curse_badge()
-                if badge is not None:
-                    dpr = pixmap.devicePixelRatio()
-                    composed = QPixmap(pixmap.size())
-                    composed.setDevicePixelRatio(dpr)
-                    composed.fill(Qt.transparent)
-                    painter = QPainter(composed)
-                    painter.drawPixmap(0, 0, pixmap)
-                    # Positions are in the painter's logical coordinate
-                    # space (the composed pixmap's tagged DPR), so the
-                    # known logical sizes (not pixmap.width()/height(),
-                    # which are physical pixel counts) are what to subtract.
-                    painter.drawPixmap(SPRITE_SIZE - CURSE_BADGE_SIZE, SPRITE_SIZE - CURSE_BADGE_SIZE, badge)
-                    painter.end()
-                    pixmap = composed
-            self._sprite_cache[label] = pixmap
-        return self._sprite_cache[label]
-
     # -- rendering -----------------------------------------------------------
 
     def _render(self):
@@ -396,7 +324,7 @@ class BracketTab(QWidget):
 
         sprite_label = QLabel()
         sprite_label.setFixedSize(SPRITE_SIZE, SPRITE_SIZE)
-        pixmap = self._sprite_pixmap(label)
+        pixmap = self._sprites.sprite_pixmap(label, SPRITE_SIZE, CURSE_BADGE_SIZE)
         if pixmap is not None:
             sprite_label.setPixmap(pixmap)
         row.addWidget(sprite_label)
@@ -472,18 +400,33 @@ class BracketTab(QWidget):
         else:
             status_label.setText(f"{score_prefix}Ready" if can_skip else f"{score_prefix}Needs generation")
 
+        # Watch/Generate both actually launch Game.exe, and Skip applies a
+        # result that a background Generate/Watch may itself still be in
+        # the middle of producing -- so all three are refused outright
+        # while the vendor download/compile could have Game.exe open
+        # concurrently, same as ReplayActionButton's vendor_blocked (see
+        # its docstring), not just left to the destination tab's own
+        # is_valid() check.
+        blocked_tooltip = "Waiting for the game files to finish downloading/compiling..." if self._vendor_blocked else ""
+
         if can_skip:
             skip_button = QPushButton("Skip")
+            skip_button.setEnabled(not self._vendor_blocked)
+            skip_button.setToolTip(blocked_tooltip)
             skip_button.clicked.connect(lambda: self._on_skip_clicked(match))
             footer.addWidget(skip_button)
 
         if replay_state == "decisive":
             watch_button = QPushButton("Watch")
+            watch_button.setEnabled(not self._vendor_blocked)
+            watch_button.setToolTip(blocked_tooltip)
             watch_button.clicked.connect(lambda: self._on_watch_clicked(match))
             footer.addWidget(watch_button)
         else:
             needs_generation = True
             generate_button = QPushButton("Generate")
+            generate_button.setEnabled(not self._vendor_blocked)
+            generate_button.setToolTip(blocked_tooltip)
             generate_button.clicked.connect(lambda: self._on_generate_clicked(match))
             footer.addWidget(generate_button)
 
@@ -709,8 +652,7 @@ class BracketTab(QWidget):
         "whatever's newest on disk" -- so an attempt already applied into
         match.attempts is never re-surfaced as pending again."""
         slug = self._match_slug_for_attempt(match, match.current_attempt_idx)
-        path = os.path.join(self.config.replay_dir, slug + ".dat")
-        return path if os.path.isfile(path) else None
+        return replay_env.find_existing_replay(self.config.replay_dir, slug)
 
     def _perspective_order(self, match):
         """(trainer1_label, trainer2_label) for the actual battle env, with
