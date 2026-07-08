@@ -1,5 +1,5 @@
 # Aggregate live status for a run_custom_trainer.ps1 run. Separate from
-# watch_tournament_parallel.ps1 on purpose -- that script reads
+# watch_parallel_tournament.ps1 on purpose -- that script reads
 # results/elo_status_<format>_shard*.json, the *main* tournament's status
 # files, which persist indefinitely across sessions for identity-based
 # resume. Pointing it at a custom-trainer run showed stale leftover status

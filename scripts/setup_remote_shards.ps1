@@ -20,10 +20,20 @@
 # pull_remote_results.ps1 + archive_run.ps1: move, don't delete) before ever
 # touching that droplet. Use -SkipResultsPull to opt out (e.g. you already
 # just pulled and know there's nothing pending).
+# -SubsetPairsPath, if given, scp's a local exact-pair-rerun manifest (see
+# tournament.rb's SUBSET_PAIRS_PATH) up to every droplet at
+# ~/elo-test/Analysis/subset_pairs.tsv -- unlike setup_shards.ps1's local
+# shards (which pick up anything dropped into vendor/tectonic-content/Analysis/
+# for free via its robocopy /MIR of the whole game dir), remote_provision_shard.sh
+# provisions via a fresh git clone, so a manifest living only in this repo's
+# working tree never reaches a droplet on its own. Point -SubsetPairsPath at
+# run_remote_parallel.ps1's own -SubsetPairsPath at
+# ~/elo-test/Analysis/subset_pairs.tsv to match.
 param(
     [string]$HostsFile = (Join-Path $PSScriptRoot "remote_hosts.txt"),
     [int]$ThrottleLimit = 10,
-    [switch]$SkipResultsPull
+    [switch]$SkipResultsPull,
+    [string]$SubsetPairsPath = ""
 )
 
 $hosts = @(Get-Content $HostsFile | Where-Object { $_ -and $_ -notmatch '^\s*#' } | ForEach-Object { $_.Trim() })
@@ -86,6 +96,22 @@ $hosts | ForEach-Object -ThrottleLimit $ThrottleLimit -Parallel {
         Write-Output "[$thisHost] *** PROVISIONED OK ***"
     } else {
         Write-Output "[$thisHost] *** PROVISIONING FAILED (exit $LASTEXITCODE) -- check output above ***"
+    }
+}
+
+if ($SubsetPairsPath) {
+    if (-not (Test-Path $SubsetPairsPath)) {
+        throw "-SubsetPairsPath '$SubsetPairsPath' not found"
+    }
+    Write-Output ""
+    Write-Output "Pushing subset pairs manifest to every droplet (~/elo-test/Analysis/subset_pairs.tsv)..."
+    $hosts | ForEach-Object -ThrottleLimit $ThrottleLimit -Parallel {
+        $thisHost = $_
+        $manifestPath = $using:SubsetPairsPath
+        & ssh -n -o StrictHostKeyChecking=accept-new "root@$thisHost" "mkdir -p ~/elo-test/Analysis" 2>&1 | ForEach-Object { "[$thisHost] $_" }
+        & scp -o StrictHostKeyChecking=accept-new -q "$manifestPath" "root@${thisHost}:~/elo-test/Analysis/subset_pairs.tsv" 2>&1 |
+            ForEach-Object { "[$thisHost] $_" }
+        Write-Output "[$thisHost] manifest pushed."
     }
 }
 

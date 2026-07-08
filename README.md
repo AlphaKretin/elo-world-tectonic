@@ -30,13 +30,13 @@ The rest of this README covers the tournament infrastructure itself — running 
   - `bracket.rb` — `EloTournament.runBracket!` (`ELO_RUN_BRACKET`): seeded top-16 single-elimination bracket, curse-strips entrants when the format is an `_uncursed`/`double`-style variant — see "Top 16 bracket" below.
 - `scripts/` — PowerShell tooling for running the tournament outside the editor (Windows; see "Running a tournament"):
   - `setup_shards.ps1` — syncs N independent copies of the game directory under `shards/` (one per parallel process) via `robocopy /MIR`. `-Recompile` does a `debug` launch first to pick up Plugin code changes.
-  - `run_parallel.ps1` — launches N `run_tournament.ps1` watchdogs, one per shard. Archives `errorlog.txt` first (every launch, fresh start or resume alike).
-  - `run_tournament.ps1` — the actual watchdog: launches `Game.exe`, restarts it on a stalled turn or a stalled whole battle, until the shard reports `finished:true`.
+  - `run_parallel.ps1` — launches N `run_tournament.ps1` watchdogs, one per shard directory. Archives `errorlog.txt` first (every launch, fresh start or resume alike). Takes `-Formats singles,doubles` (comma-separated; each shard works through the whole sequence on its own) and `-ChunksPerShard`/`-ChunksPerFormat` to split the pairing pool more finely than one chunk per shard directory, reassigning a freed-up directory to whichever (format, chunk) is next via a background supervisor (`supervise_local_chunks.ps1`) — mirrors `run_remote_parallel.ps1`'s design exactly, sharing the actual queue-building math with it via `_chunk_queue.ps1` so the two backends can't silently diverge.
+  - `run_tournament.ps1` — the actual watchdog: launches `Game.exe`, restarts it on a stalled turn or a stalled whole battle, until the shard reports `finished:true`. Runs its own `-Formats` sequence to completion, one format at a time, in one shard directory.
   - `run_bracket.ps1` — the equivalent watchdog for the top-16 bracket (single, unsharded process — see "Top 16 bracket" below).
   - `run_custom_trainer.ps1` / `watch_custom_trainer.ps1` — the custom-trainer-vs-pool diversion workflow — see "Testing a custom trainer against the pool" below.
   - `pause_tournament.ps1` — stops every watchdog and `Game.exe`, in the right order (watchdogs first) so none auto-relaunch out from under you.
   - `archive_run.ps1` — moves `errorlog.txt` (always) and result/log files (`-IncludeResults`, for an intentional fresh start) into a timestamped `results/archive_.../` folder instead of deleting them.
-  - `watch_tournament.ps1` / `watch_tournament_parallel.ps1` — read-only live status viewers.
+  - `watch_parallel_tournament.ps1` — read-only live status viewer, aggregated across every shard directory and format.
   - `build_release.ps1` — packages the desktop viewer app into a distributable release — see "Developing the replay viewer" below.
   - Distributed (cloud droplet fleet) tooling — see "Running a tournament on a cloud fleet" below:
     - `remote_provision_shard.sh` — runs *on* a droplet: installs deps (Xvfb, Mesa, fluxbox), clones the game (from the personal fork noted above, not the team repo), debug-compiles, validates with a test battle. Idempotent.
@@ -77,7 +77,7 @@ Resuming is identity-based, not position-based: it's safe to stop and restart at
 
 Check progress:
 ```powershell
-.\scripts\watch_tournament_parallel.ps1
+.\scripts\watch_parallel_tournament.ps1
 ```
 
 Stop everything cleanly:

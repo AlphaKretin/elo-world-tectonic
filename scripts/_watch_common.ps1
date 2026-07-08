@@ -1,17 +1,36 @@
 # Shared rendering/aggregation for every "watch a running tournament"
-# script (watch_tournament.ps1, watch_tournament_parallel.ps1,
-# watch_custom_trainer.ps1, watch_remote_tournament.ps1). Dot-sourced by
-# all four so a display/aggregation fix (e.g. the global_total-based
-# denominator, or the finished/error state label) only has to be made once
-# -- before this file existed, three of the four had copy-pasted their own
-# slightly-diverged version of the same done/total regex-scrape, and the
-# fourth had a structurally different (and better) JSON-based version that
-# never made it back into the other three.
+# script (watch_parallel_tournament.ps1, watch_custom_trainer.ps1,
+# watch_remote_tournament.ps1). Dot-sourced by all three so a
+# display/aggregation fix (e.g. the global_total-based denominator, or the
+# finished/error state label) only has to be made once -- before this file
+# existed, each watcher (plus the now-removed single-process
+# watch_tournament.ps1) had copy-pasted its own slightly-diverged version of
+# the same done/total regex-scrape, and one had a structurally different
+# (and better) JSON-based version that never made it back into the others.
 #
 # Every status file tournament.rb/custom_trainer_battles.rb write is plain
 # JSON (json_encode), so all of these operate on the parsed object, not
 # raw text -- regex-scraping was never necessary, just how the older
 # scripts happened to be written.
+
+# Extracts the format label / chunk index embedded in a status or
+# attempting file name written by tournament.rb (writeStatus/writeAttempting
+# in ELO Tournament/tournament.rb) -- elo_status_<format>_shard<N>.json /
+# elo_attempting_<format>_shard<N>.json. Shared by every watcher that globs
+# across multiple formats' files instead of assuming one fixed -Format
+# (watch_remote_tournament.ps1, watch_parallel_tournament.ps1) -- since
+# run_tournament.ps1's chunking (-GameDirIndex vs -ShardIndex/-ShardCount)
+# means "_shard<N>" is a pairing-pool chunk index, not necessarily a
+# physical shard/host slot, both watchers need the same parsing rather than
+# each re-deriving their own regex.
+function Get-ShardFormatLabel([string]$path) {
+    if ($path -match 'elo_(?:status|attempting)_(.+)_shard\d+\.json$') { return $Matches[1] }
+    return $path
+}
+function Get-ShardChunkIndex([string]$path) {
+    if ($path -match 'elo_(?:status|attempting)_.+_shard(\d+)\.json$') { return [int]$Matches[1] }
+    return -1
+}
 
 # Renders a duration (in seconds, possibly fractional) as [Dd] HH:MM:SS.
 function Format-Duration($seconds) {

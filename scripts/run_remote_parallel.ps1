@@ -3,7 +3,13 @@
 # ShardCount = total host count -- mirrors run_parallel.ps1's local
 # ShardIndex/ShardCount contract exactly (tournament.rb's pairing-pool
 # partition is purely `i % SHARD_COUNT == SHARD_INDEX`, agnostic to
-# whether shards run on one machine or across a fleet).
+# whether shards run on one machine or across a fleet). The actual
+# (format, chunk) queue-building math (below) is shared verbatim with
+# run_parallel.ps1 via _chunk_queue.ps1, so the two backends can't
+# silently diverge on it -- only the dispatch mechanism (ssh vs local
+# Start-Process, in _remote_chunk_launch.ps1/_local_chunk_launch.ps1) and
+# the aliveness check (ssh/pgrep vs a local process handle, in this
+# script vs supervise_local_chunks.ps1) actually differ.
 #
 # Each launch is `setsid ... & disown` over a single non-interactive ssh
 # call so it survives the ssh session closing -- see
@@ -71,9 +77,12 @@ param(
     [int]$ChunksPerHost = 1,
     [string]$ChunksPerFormat = "",
     [string]$SubsetTrainerLabels = "",
-    [string]$SubsetTag = "subset"
+    [string]$SubsetPairsPath = "",
+    [string]$SubsetTag = "subset",
+    [int]$TurnTimeout = 0
 )
 
+. (Join-Path $PSScriptRoot "_chunk_queue.ps1")
 . (Join-Path $PSScriptRoot "_remote_chunk_launch.ps1")
 
 $hosts = @(Get-Content $HostsFile | Where-Object { $_ -and $_ -notmatch '^\s*#' } | ForEach-Object { $_.Trim() })
@@ -87,7 +96,7 @@ New-Item -ItemType Directory -Force -Path $ResultsDir | Out-Null
 $QueueStatePath = Join-Path $ResultsDir "remote_chunk_queue.json"
 $LogPath = Join-Path $ResultsDir "remote_chunk_supervisor.log"
 
-$formatList = @($Formats -split "," | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+$formatList = Get-FormatList $Formats
 
 if ($formatList.Count -le 1 -and $ChunksPerHost -le 1) {
     Write-Output "Launching watchdogs (format: $Formats) on $($hosts.Count) droplet(s), one static chunk each, no supervisor..."
@@ -96,7 +105,7 @@ if ($formatList.Count -le 1 -and $ChunksPerHost -le 1) {
         Invoke-RemoteChunkLaunch -TargetHost $hosts[$i] -ShardIndex $i -ShardCount $hosts.Count -Formats $Formats `
             -TurnStallTimeoutSeconds $TurnStallTimeoutSeconds -BattleStallTimeoutSeconds $BattleStallTimeoutSeconds `
             -PollIntervalSeconds $PollIntervalSeconds -SampleGamesPerTrainer $SampleGamesPerTrainer -SampleSeed $SampleSeed `
-            -SubsetTrainerLabels $SubsetTrainerLabels -SubsetTag $SubsetTag
+            -SubsetTrainerLabels $SubsetTrainerLabels -SubsetPairsPath $SubsetPairsPath -SubsetTag $SubsetTag -TurnTimeout $TurnTimeout
     }
     Write-Output ""
     Write-Output "$($hosts.Count) shard watchdog(s) launched. Use watch_remote_tournament.ps1 for aggregate live status."
@@ -106,30 +115,17 @@ if ($formatList.Count -le 1 -and $ChunksPerHost -le 1) {
 # format=count,format=count -- e.g. "singles_uncursed=3,doubles_uncursed=3".
 # Any format not named here falls back to $ChunksPerHost * hosts.Count.
 $defaultChunkCount = $hosts.Count * $ChunksPerHost
-$chunkCountByFormat = @{}
-foreach ($fmt in $formatList) { $chunkCountByFormat[$fmt] = $defaultChunkCount }
-foreach ($pair in ($ChunksPerFormat -split "," | Where-Object { $_ -and $_.Trim() })) {
-    $parts = $pair.Split("=", 2)
-    if ($parts.Count -ne 2) { throw "Malformed -ChunksPerFormat entry '$pair' -- expected format=count" }
-    $fmtName = $parts[0].Trim()
-    if (-not ($formatList -contains $fmtName)) { throw "-ChunksPerFormat names format '$fmtName' which isn't in -Formats ($Formats)" }
-    $chunkCountByFormat[$fmtName] = [int]$parts[1].Trim()
-}
-
+$built = New-ChunkQueue -FormatList $formatList -DefaultChunkCount $defaultChunkCount -ChunksPerFormatOverride $ChunksPerFormat
+$chunkCountByFormat = $built.chunkCountByFormat
 # List[object], not a plain array -- RemoveAt(0) below is O(1) amortized
 # for repeated front-removal, unlike Select-Object -Skip 1 on a real array.
 # .ToArray() (not @($queue)) when this needs to become a JSON-serializable
 # array -- on this PS 7.6.3/.NET 10 combination, @() directly around a
 # List[object] throws "Argument types do not match" for reasons that look
 # like a runtime bug, not anything about this code; ToArray() sidesteps it.
-$queue = New-Object System.Collections.Generic.List[object]
-foreach ($fmt in $formatList) {
-    for ($c = 0; $c -lt $chunkCountByFormat[$fmt]; $c++) {
-        $queue.Add([PSCustomObject]@{ format = $fmt; chunk = $c })
-    }
-}
+$queue = $built.queue
 
-$chunkCountSummary = ($formatList | ForEach-Object { "$($_)=$($chunkCountByFormat[$_])" }) -join ", "
+$chunkCountSummary = Get-ChunkCountSummary -FormatList $formatList -ChunkCountByFormat $chunkCountByFormat
 Write-Output "Launching watchdogs across $($hosts.Count) droplet(s), $($queue.Count) total work item(s) (chunk counts: $chunkCountSummary; format-major queue: $($formatList -join ' -> '))..."
 
 $hostStates = @()
@@ -140,7 +136,7 @@ for ($i = 0; $i -lt $hosts.Count; $i++) {
     Invoke-RemoteChunkLaunch -TargetHost $hosts[$i] -ShardIndex ([int]$item.chunk) -ShardCount $chunkCountByFormat[$item.format] -Formats $item.format `
         -TurnStallTimeoutSeconds $TurnStallTimeoutSeconds -BattleStallTimeoutSeconds $BattleStallTimeoutSeconds `
         -PollIntervalSeconds $PollIntervalSeconds -SampleGamesPerTrainer $SampleGamesPerTrainer -SampleSeed $SampleSeed `
-        -SubsetTrainerLabels $SubsetTrainerLabels -SubsetTag $SubsetTag
+        -SubsetTrainerLabels $SubsetTrainerLabels -SubsetPairsPath $SubsetPairsPath -SubsetTag $SubsetTag -TurnTimeout $TurnTimeout
     $hostStates += [PSCustomObject]@{ index = $i; host = $hosts[$i]; currentFormat = $item.format; currentChunk = $item.chunk; done = $false }
 }
 
@@ -156,7 +152,9 @@ $state = [PSCustomObject]@{
     sampleGamesPerTrainer     = $SampleGamesPerTrainer
     sampleSeed                = $SampleSeed
     subsetTrainerLabels       = $SubsetTrainerLabels
+    subsetPairsPath           = $SubsetPairsPath
     subsetTag                 = $SubsetTag
+    turnTimeout               = $TurnTimeout
     pendingQueue              = $queue.ToArray()
     hosts                     = $hostStates
     updatedAt                 = (Get-Date -Format o)

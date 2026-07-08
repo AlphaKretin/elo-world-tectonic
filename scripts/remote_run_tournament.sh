@@ -48,7 +48,9 @@ SAMPLE_GAMES_PER_TRAINER=0
 SAMPLE_SEED=1
 DISPLAY_NUM=":100"
 SUBSET_TRAINER_LABELS=""
+SUBSET_PAIRS_PATH=""
 SUBSET_TAG="subset"
+TURN_TIMEOUT=0
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -67,7 +69,19 @@ while [[ $# -gt 0 ]]; do
         # results/status/etc filenames with "_$SUBSET_TAG" so this partial
         # set never collides with the format's own full-round-robin file.
         --subset-trainer-labels) SUBSET_TRAINER_LABELS="$2"; shift 2 ;;
+        # See tournament.rb's SUBSET_PAIRS_PATH -- restricts this run to an
+        # exact list of pairings instead of every pairing touching a label.
+        # The path is resolved on THIS host, so the manifest must already
+        # exist here (e.g. under $GAME_DIR/Analysis/) before launch --
+        # nothing in this script uploads it. Accepts either one plain path
+        # (used for every format in --formats, mirroring run_tournament.ps1's
+        # -SubsetPairsPath exactly) or a "format=path,format=path" list when
+        # different formats' timed-out pairings live in different manifests
+        # -- see resolve_subset_pairs_path() below. A format missing from
+        # the map gets no subset restriction at all.
+        --subset-pairs-path) SUBSET_PAIRS_PATH="$2"; shift 2 ;;
         --subset-tag) SUBSET_TAG="$2"; shift 2 ;;
+        --turn-timeout) TURN_TIMEOUT="$2"; shift 2 ;;
         *) echo "Unknown arg: $1" >&2; exit 1 ;;
     esac
 done
@@ -99,13 +113,44 @@ ensure_display() {
     fi
 }
 
+# Mirrors run_tournament.ps1's Resolve-SubsetPairsPathForFormat /
+# _chunk_queue.ps1's ConvertFrom-FormatKeyedOverrides: a bare
+# $SUBSET_PAIRS_PATH (no "=") applies unchanged to every format; a
+# "format=path,format=path" list resolves per format, with a format missing
+# from the map getting no restriction. Prints the resolved path (possibly
+# empty) to stdout -- call as `local p; p=$(resolve_subset_pairs_path "$fmt")`.
+resolve_subset_pairs_path() {
+    local format="$1"
+    if [[ -z "$SUBSET_PAIRS_PATH" ]]; then
+        echo ""
+        return
+    fi
+    if [[ "$SUBSET_PAIRS_PATH" != *=* ]]; then
+        echo "$SUBSET_PAIRS_PATH"
+        return
+    fi
+    local IFS=','
+    local entry
+    for entry in $SUBSET_PAIRS_PATH; do
+        local key="${entry%%=*}"
+        local value="${entry#*=}"
+        if [[ "$key" == "$format" ]]; then
+            echo "$value"
+            return
+        fi
+    done
+    echo ""
+}
+
 run_format() {
     local format="$1"
+    local resolved_subset_pairs_path
+    resolved_subset_pairs_path=$(resolve_subset_pairs_path "$format")
     # format_tag (not format) drives every path -- keeps ELO_FORMAT itself
     # as the real format (so battle mode/curse stripping/etc behave
     # normally) while a subset run's files land under a distinct name.
     local format_tag="$format"
-    if [[ -n "$SUBSET_TRAINER_LABELS" ]]; then
+    if [[ -n "$SUBSET_TRAINER_LABELS" || -n "$resolved_subset_pairs_path" ]]; then
         format_tag="${format}_${SUBSET_TAG}"
     fi
     local suffix="${format_tag}_shard${SHARD_INDEX}"
@@ -134,6 +179,16 @@ run_format() {
         export ELO_SUBSET_TRAINER_LABELS="$SUBSET_TRAINER_LABELS"
     else
         unset ELO_SUBSET_TRAINER_LABELS
+    fi
+    if [[ -n "$resolved_subset_pairs_path" ]]; then
+        export ELO_SUBSET_PAIRS_PATH="$resolved_subset_pairs_path"
+    else
+        unset ELO_SUBSET_PAIRS_PATH
+    fi
+    if [[ "$TURN_TIMEOUT" -gt 0 ]]; then
+        export ELO_TURN_TIMEOUT="$TURN_TIMEOUT"
+    else
+        unset ELO_TURN_TIMEOUT
     fi
 
     is_finished() {

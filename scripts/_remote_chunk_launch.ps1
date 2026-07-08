@@ -17,7 +17,9 @@ function Invoke-RemoteChunkLaunch {
         [int]$SampleGamesPerTrainer = 0,
         [int]$SampleSeed = 1,
         [string]$SubsetTrainerLabels = "",
-        [string]$SubsetTag = "subset"
+        [string]$SubsetPairsPath = "",
+        [string]$SubsetTag = "subset",
+        [int]$TurnTimeout = 0
     )
 
     # No leading `cd && ...` here -- bash's trailing `&` binds to the whole
@@ -38,6 +40,15 @@ function Invoke-RemoteChunkLaunch {
         # (e.g. "WILDPARTY_KOKO:of Conflict"), and single-quoting preserves
         # it as one bash argv entry without bash reinterpreting the spaces.
         $remoteCmd += "--subset-trainer-labels '$SubsetTrainerLabels' --subset-tag $SubsetTag "
+    }
+    if ($SubsetPairsPath) {
+        # Path on the REMOTE host's own filesystem (not this control
+        # machine) -- the manifest must already be there (e.g. scp'd up
+        # alongside setup_remote_shards.ps1's initial sync) before launch.
+        $remoteCmd += "--subset-pairs-path '$SubsetPairsPath' --subset-tag $SubsetTag "
+    }
+    if ($TurnTimeout -gt 0) {
+        $remoteCmd += "--turn-timeout $TurnTimeout "
     }
     $remoteCmd += "< /dev/null > ~/elo-test/results/watchdog_shard${ShardIndex}.log 2>&1 < /dev/null & disown; echo launched"
 

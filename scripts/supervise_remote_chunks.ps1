@@ -113,7 +113,7 @@ while ($true) {
             # here -- those hold real battle data that still needs pulling.
             if ($h.currentFormat) {
                 $subsetTag = $(if ($state.subsetTag) { $state.subsetTag } else { "subset" })
-                $oldFormatTag = if ($state.subsetTrainerLabels) { "$($h.currentFormat)_$subsetTag" } else { $h.currentFormat }
+                $oldFormatTag = if ($state.subsetTrainerLabels -or $state.subsetPairsPath) { "$($h.currentFormat)_$subsetTag" } else { $h.currentFormat }
                 $oldSuffix = "${oldFormatTag}_shard$($h.currentChunk)"
                 & ssh -n -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$($h.host)" `
                     "rm -f ~/elo-test/results/elo_status_${oldSuffix}.json ~/elo-test/results/elo_attempting_${oldSuffix}.json ~/elo-test/results/elo_turn_heartbeat_${oldSuffix}.json" 2>$null
@@ -129,7 +129,8 @@ while ($true) {
             Invoke-RemoteChunkLaunch -TargetHost $h.host -ShardIndex ([int]$item.chunk) -ShardCount $chunkCountForFormat -Formats $item.format `
                 -TurnStallTimeoutSeconds $state.turnStallTimeoutSeconds -BattleStallTimeoutSeconds $state.battleStallTimeoutSeconds `
                 -PollIntervalSeconds $state.pollIntervalSeconds -SampleGamesPerTrainer $state.sampleGamesPerTrainer -SampleSeed $state.sampleSeed `
-                -SubsetTrainerLabels $state.subsetTrainerLabels -SubsetTag $(if ($state.subsetTag) { $state.subsetTag } else { "subset" }) | Out-Null
+                -SubsetTrainerLabels $state.subsetTrainerLabels -SubsetPairsPath $state.subsetPairsPath `
+                -SubsetTag $(if ($state.subsetTag) { $state.subsetTag } else { "subset" }) -TurnTimeout $(if ($state.turnTimeout) { [int]$state.turnTimeout } else { 0 }) | Out-Null
         } else {
             Write-Log "host $($h.index) ($($h.host)) finished $($h.currentFormat) chunk $($h.currentChunk) -- queue empty, host idle"
             $h.done = $true

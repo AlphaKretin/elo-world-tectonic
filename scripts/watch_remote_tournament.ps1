@@ -1,5 +1,5 @@
 # Aggregate live status across every remote shard, polled over SSH.
-# Mirrors watch_tournament_parallel.ps1's display, but fetches each
+# Mirrors watch_parallel_tournament.ps1's display, but fetches each
 # shard's status/attempting files in parallel (ForEach-Object -Parallel)
 # since serial SSH round-trips across 10 hosts would make a 3s refresh
 # interval meaningless. Run in its own terminal and leave it open -- read
@@ -57,13 +57,8 @@ function Split-AttemptingBlobs([string]$raw) {
     return [regex]::Split($raw, '(?<=\})\s*(?=\{)') | Where-Object { $_.Trim() }
 }
 
-function Get-ShardFormatLabel([string]$path) {
-    if ($path -match 'elo_(?:status|attempting)_(.+)_shard\d+\.json$') { return $Matches[1] }
-    return $path
-}
-
-# Format-Duration and Show-StatusEntry come from _watch_common.ps1 -- shared
-# with every other watch_*.ps1 script.
+# Get-ShardFormatLabel, Format-Duration, and Show-StatusEntry come from
+# _watch_common.ps1 -- shared with every other watch_*.ps1 script.
 
 function Write-AttemptingEntry([PSCustomObject]$a) {
     Write-Output "  [$($a.format)] $($a.trainer1) vs $($a.trainer2) (seed $($a.seed))"

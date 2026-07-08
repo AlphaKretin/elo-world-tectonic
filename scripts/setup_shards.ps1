@@ -11,6 +11,14 @@
 # recompiled PluginScripts.rxdata, not the ~0.67GB of Graphics/Audio/PBS
 # data that never changes.
 #
+# A subset-pairs manifest for exact-pair reruns (tournament.rb's
+# SUBSET_PAIRS_PATH) needs no special handling here: drop it anywhere under
+# vendor\tectonic-content\Analysis\ before running this script and the /MIR
+# below picks it up like any other source file, since it mirrors the whole
+# game directory. (Remote droplets don't get this for free -- see
+# setup_remote_shards.ps1's -SubsetPairsPath, since that provisions via a
+# fresh git clone instead of copying this working tree.)
+#
 # -Recompile does a plain "debug" launch of the root game first (scripts
 # only -- PluginScripts.rxdata -- not a PBS recompile; PBS data is a
 # one-time "debug compile" pass done manually, not part of this routine
@@ -23,14 +31,29 @@
 # the UTC/local conversion wrong more than once -- a marker file written
 # from inside the same process that's doing the compiling has no
 # cross-tool timezone math to get wrong.
+#
+# Archives results/ (via archive_run.ps1 -IncludeResults) before syncing,
+# same as setup_remote_shards.ps1 does before it provisions -- without
+# this, a leftover elo_status_*/elo_results_* file from a days-old run
+# silently sits in results/ and pollutes watch_parallel_tournament.ps1's
+# aggregate for the next run, indistinguishable from live data (confirmed
+# live 2026-07-08: a week-old elo_status_singles_shard0.json/
+# elo_status_doubles_shard0.json pair was still being read into the
+# aggregate). Use -SkipResultsArchive when resyncing mid-run (e.g. after a
+# hotfix) and you want to keep in-progress results.
 param(
     [int]$ShardCount = 8,
-    [switch]$Recompile
+    [switch]$Recompile,
+    [switch]$SkipResultsArchive
 )
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
 $SourceDir  = Join-Path $RepoRoot "vendor\tectonic-content"
 $ShardsRoot = Join-Path $RepoRoot "shards"
+
+if (-not $SkipResultsArchive) {
+    & (Join-Path $PSScriptRoot "archive_run.ps1") -Label "pre_setup_shards" -IncludeResults
+}
 
 if ($Recompile) {
     $marker = Join-Path $SourceDir "Analysis\compile_done.txt"
