@@ -298,26 +298,60 @@ def export_assets(card_data_by_label):
     print(f"assets: copied {n} sprite/icon files -> {WEB_ASSETS_DIR}")
 
 
+def _write_ratings(base_fmt, filters, leaderboard, stats):
+    fmt = base_fmt + results_lib.filter_suffix(filters)
+    if not leaderboard:
+        print(f"SKIPPED regen for {fmt}: no usable results yet")
+        return
+    suffix = results_lib.filter_suffix(filters)
+    ratings.write_outputs(base_fmt, leaderboard, suffix=suffix)
+    ratings_by_label = {row["trainer"]: row for row in leaderboard}
+    best_win, worst_loss = best_worst.compute_best_worst(base_fmt, ratings_by_label, filters=filters)
+    best_worst.write_output(base_fmt, suffix, best_win, worst_loss, ratings_by_label.keys())
+    total_battles = sum(s["battles"] for s in stats.values()) // 2
+    print(f"regenerated {fmt}: {len(leaderboard)} trainers, {total_battles} battles")
+
+
 def regenerate_analysis_outputs(format_specs):
     """Recompute ratings_<fmt>.json and best_worst_<fmt>.json for every
     format_specs entry (see build_format_specs) from the current
-    results/remote data, so this script is the one place that has to be run
+    results/current data, so this script is the one place that has to be run
     for the site to be fresh -- see the module docstring for why relying on
     ratings.py/best_worst.py having already been run by hand isn't good
-    enough."""
+    enough.
+
+    Every (base, filters) spec whose (base + '_uncursed', filters)
+    counterpart is also in format_specs gets fit as an anchored pair
+    (ratings.compute_anchored_uncursed_pair) instead of two independent
+    zero-anchored fits -- see that function's docstring for why. Anything
+    without a matching uncursed counterpart (cursed_excluded, which is
+    never crossed with an _uncursed base -- see build_format_specs -- or a
+    filter cohort with no cursed trainers) falls back to the standalone
+    fit, unchanged from before."""
+    spec_set = {(base, tuple(filters)) for base, filters in format_specs}
+    processed = set()
+
     for base_fmt, filters in format_specs:
-        fmt = base_fmt + results_lib.filter_suffix(filters)
-        leaderboard, stats = ratings.compute_ratings(base_fmt, filters=filters)
-        if not leaderboard:
-            print(f"SKIPPED regen for {fmt}: no usable results yet")
+        key = (base_fmt, tuple(filters))
+        if key in processed:
             continue
-        suffix = results_lib.filter_suffix(filters)
-        ratings.write_outputs(base_fmt, leaderboard, suffix=suffix)
-        ratings_by_label = {row["trainer"]: row for row in leaderboard}
-        best_win, worst_loss = best_worst.compute_best_worst(base_fmt, ratings_by_label, filters=filters)
-        best_worst.write_output(base_fmt, suffix, best_win, worst_loss, ratings_by_label.keys())
-        total_battles = sum(s["battles"] for s in stats.values()) // 2
-        print(f"regenerated {fmt}: {len(leaderboard)} trainers, {total_battles} battles")
+
+        if not results_lib.is_uncursed_format(base_fmt):
+            uncursed_fmt = base_fmt + results_lib.UNCURSED_SUFFIX
+            uncursed_key = (uncursed_fmt, tuple(filters))
+            if uncursed_key in spec_set:
+                pair = ratings.compute_anchored_uncursed_pair(base_fmt, filters=filters)
+                if pair is not None:
+                    base_leaderboard, uncursed_leaderboard, base_stats, uncursed_stats = pair
+                    _write_ratings(base_fmt, filters, base_leaderboard, base_stats)
+                    _write_ratings(uncursed_fmt, filters, uncursed_leaderboard, uncursed_stats)
+                    processed.add(key)
+                    processed.add(uncursed_key)
+                    continue
+
+        leaderboard, stats = ratings.compute_ratings(base_fmt, filters=filters)
+        _write_ratings(base_fmt, filters, leaderboard, stats)
+        processed.add(key)
 
 
 def main():

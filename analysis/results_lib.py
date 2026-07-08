@@ -101,7 +101,11 @@ def discover_formats(results_dir=None):
     return sorted(formats)
 
 
-def _pair_key(row):
+def pair_key(row):
+    """Unordered (trainer1, trainer2) identity for a battle row -- shared by
+    _merge_uncursed and by ratings.py's compute_anchored_uncursed_pair,
+    which needs the same shared-vs-differing-battle split to anchor a
+    cursed/uncursed pair's fits to a common reference point."""
     return frozenset((row.get("trainer1"), row.get("trainer2")))
 
 
@@ -120,14 +124,14 @@ def _merge_uncursed(base_rows, raw_rows):
       4. Every row from the raw curse-stripped results is included."""
     diff = load_curse_strip_diff()
     identical_to_base = {label for label, info in diff.items() if info.get("identical_to_base")}
-    raw_pairs = {_pair_key(r) for r in raw_rows}
+    raw_pairs = {pair_key(r) for r in raw_rows}
 
     merged = []
     for row in base_rows:
         if not row.get("curse"):
             merged.append(row)
             continue
-        if _pair_key(row) in raw_pairs:
+        if pair_key(row) in raw_pairs:
             continue
         t1, t2 = row.get("trainer1"), row.get("trainer2")
         if t1 in identical_to_base or t2 in identical_to_base:
@@ -137,7 +141,7 @@ def _merge_uncursed(base_rows, raw_rows):
     return merged
 
 
-def _load_shard_files(fmt, results_dir, report_skipped=False):
+def load_shard_files(fmt, results_dir, report_skipped=False):
     """Every row from elo_results_<fmt>_shard*.jsonl, in shard/file order.
     A line caught mid-write by a still-live tournament run is incomplete
     JSON, not a real data problem -- silently skipped unless report_skipped."""
@@ -168,11 +172,11 @@ def load_results(fmt, results_dir=None, report_skipped=False):
     no separate "full" file for an uncursed format on disk."""
     results_dir = results_dir or RESULTS_DIR
     if is_uncursed_format(fmt):
-        raw_rows = _load_shard_files(fmt, results_dir, report_skipped)
+        raw_rows = load_shard_files(fmt, results_dir, report_skipped)
         base_fmt = fmt[:-len(UNCURSED_SUFFIX)]
         base_rows = load_results(base_fmt, results_dir=results_dir, report_skipped=report_skipped)
         return _merge_uncursed(base_rows, raw_rows)
-    return _load_shard_files(fmt, results_dir, report_skipped)
+    return load_shard_files(fmt, results_dir, report_skipped)
 
 
 def load_ratings(fmt, suffix="", ratings_dir=None):

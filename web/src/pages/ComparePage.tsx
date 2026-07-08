@@ -6,7 +6,7 @@ import { TrainerModalContent } from "./TrainerModal";
 import type { BattleType, CurseVariant, FilterVariant, JoinedRow, LeaderboardRow } from "../types";
 import "./ComparePage.css";
 
-type SortKey = "trainer" | "rankA" | "ratingA" | "rankB" | "ratingB" | "rankDelta";
+type SortKey = "trainer" | "rankA" | "ratingA" | "rankB" | "ratingB" | "rankDelta" | "ratingDelta";
 
 export function ComparePage() {
   const [modalLabel, setModalLabel] = useState<string | null>(null);
@@ -95,8 +95,14 @@ export function ComparePage() {
     const q = search.trim().toLowerCase();
     const base = q ? joined.filter((r) => r.trainer.toLowerCase().includes(q)) : joined;
     const sorted = [...base].sort((a, b) => {
-      const av = sortKey === "rankDelta" ? a.rankB - a.rankA : a[sortKey];
-      const bv = sortKey === "rankDelta" ? b.rankB - b.rankA : b[sortKey];
+      const av =
+        sortKey === "rankDelta" ? a.rankB - a.rankA
+        : sortKey === "ratingDelta" ? a.ratingB - a.ratingA
+        : a[sortKey];
+      const bv =
+        sortKey === "rankDelta" ? b.rankB - b.rankA
+        : sortKey === "ratingDelta" ? b.ratingB - b.ratingA
+        : b[sortKey];
       if (av < bv) return sortAsc ? -1 : 1;
       if (av > bv) return sortAsc ? 1 : -1;
       return 0;
@@ -119,6 +125,16 @@ export function ComparePage() {
   }
 
   const sameFormat = fmtA === fmtB;
+  // A cursed/uncursed pair of the SAME battle type + filter is fit
+  // together against a shared battle-graph anchor (see analysis/ratings.py's
+  // compute_anchored_uncursed_pair) instead of each independently to zero,
+  // so rating_delta is a real quantity for exactly this combination --
+  // still not for any other pair (e.g. singles vs doubles), where each
+  // side's zero-point is wherever its own independent fit happened to
+  // settle. See project_ratings_convergence_and_anchored_comparison memory
+  // / 2026-07-08 session for the full reasoning.
+  const isAnchoredPair =
+    !sameFormat && battleTypeA === battleTypeB && filterA === filterB && curseVariantA !== curseVariantB;
 
   return (
     <div className="page">
@@ -155,12 +171,9 @@ export function ComparePage() {
       {error && <p className="error">Failed to load leaderboard: {error}</p>}
       {sameFormat && <p className="compare-hint">Pick two different formats to compare.</p>}
       {!error && !sameFormat && !filtered && <p>Loading...</p>}
-      {!sameFormat && filtered && (
+      {!sameFormat && filtered && !isAnchoredPair && (
         <p className="compare-hint">
-          Rating A/B are each shown for reference only, from that format's own independent
-          fit -- there's no shared anchor between two separately-fit formats, so a rating
-          difference between them isn't a meaningful quantity (unlike within one format, where
-          it predicts win probability). Rank change is the number to compare formats by.
+          Ratings aren't directly comparable across these two formats -- compare by rank change.
         </p>
       )}
 
@@ -185,11 +198,17 @@ export function ComparePage() {
                   <th onClick={() => toggleSort("rankB")}>Rank B{sortIndicator("rankB")}</th>
                   <th onClick={() => toggleSort("ratingB")}>Rating B{sortIndicator("ratingB")}</th>
                   <th onClick={() => toggleSort("rankDelta")}>Δ Rank (B - A){sortIndicator("rankDelta")}</th>
+                  {isAnchoredPair && (
+                    <th onClick={() => toggleSort("ratingDelta")}>
+                      Δ Rating (B - A){sortIndicator("ratingDelta")}
+                    </th>
+                  )}
                 </tr>
               </thead>
               <tbody>
                 {filtered.map((row) => {
                   const rankDelta = row.rankB - row.rankA;
+                  const ratingDelta = row.ratingB - row.ratingA;
                   return (
                     <tr key={row.label} onClick={() => setModalLabel(row.label)}>
                       <td>
@@ -206,6 +225,16 @@ export function ComparePage() {
                         {rankDelta > 0 ? "+" : ""}
                         {rankDelta}
                       </td>
+                      {isAnchoredPair && (
+                        <td
+                          className={
+                            ratingDelta > 0 ? "compare-delta-pos" : ratingDelta < 0 ? "compare-delta-neg" : ""
+                          }
+                        >
+                          {ratingDelta > 0 ? "+" : ""}
+                          {ratingDelta.toFixed(1)}
+                        </td>
+                      )}
                     </tr>
                   );
                 })}
