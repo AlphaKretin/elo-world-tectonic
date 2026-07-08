@@ -2,9 +2,10 @@
 """
 Per-trainer rank/rating swing between two formats' leaderboards.
 
-Reads analysis/ratings_<format>.json for two formats (default singles vs
-doubles -- run ratings.py for both first) and, for every trainer present in
-both, computes how far their *rank* moves between the two leaderboards.
+Reads analysis/ratings/ratings_<format>.json for two formats (default
+singles vs doubles -- run ratings.py for both first) and, for every trainer
+present in both, computes how far their *rank* moves between the two
+leaderboards.
 
 Rank is the only swing metric here, deliberately -- each format's
 Bradley-Terry fit is `fit_intercept=False`, identified only by the L2
@@ -41,7 +42,6 @@ import csv
 import os
 
 import results_lib
-from results_lib import ANALYSIS_DIR
 
 
 def rescale_ranks(board, shared):
@@ -52,8 +52,8 @@ def rescale_ranks(board, shared):
 
 
 def compare(fmt_a, fmt_b):
-    board_a = results_lib.load_ratings(fmt_a, analysis_dir=ANALYSIS_DIR)
-    board_b = results_lib.load_ratings(fmt_b, analysis_dir=ANALYSIS_DIR)
+    board_a = results_lib.load_ratings(fmt_a)
+    board_b = results_lib.load_ratings(fmt_b)
 
     shared = sorted(set(board_a) & set(board_b))
     only_a = sorted(set(board_a) - set(board_b))
@@ -81,8 +81,9 @@ def compare(fmt_a, fmt_b):
 
 
 def write_outputs(fmt_a, fmt_b, comparisons, only_a, only_b):
-    csv_path = os.path.join(ANALYSIS_DIR, f"compare_{fmt_a}_{fmt_b}.csv")
-    md_path = os.path.join(ANALYSIS_DIR, f"compare_{fmt_a}_{fmt_b}.md")
+    os.makedirs(results_lib.COMPARE_DIR, exist_ok=True)
+    csv_path = os.path.join(results_lib.COMPARE_DIR, f"compare_{fmt_a}_{fmt_b}.csv")
+    md_path = os.path.join(results_lib.COMPARE_DIR, f"compare_{fmt_a}_{fmt_b}.md")
 
     fieldnames = [
         "trainer", f"rank_{fmt_a}", f"rank_{fmt_b}", "rank_delta",

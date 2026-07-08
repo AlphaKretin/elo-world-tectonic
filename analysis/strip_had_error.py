@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 Removes had_error:true rows from elo_results_<format>_shard*.jsonl files
-(default: results/remote/; use --results-dir results/ for local shard data)
-so a future resumed run re-attempts those exact pairings cleanly.
+(default: results/current/; use --results-dir results/local/ for local
+shard data or results/remote/ for a not-yet-promoted pull) so a future
+resumed run re-attempts those exact pairings cleanly.
 
 Background: tournament.rb flags any battle where errorlog.txt grew during
 the call as had_error:true (engine hit a recoverable error mid-battle, e.g.
@@ -36,8 +37,9 @@ import glob
 import json
 import os
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
+import results_lib
+
+RESULTS_DIR = results_lib.RESULTS_DIR
 
 
 def process_file(path, dry_run):
@@ -76,7 +78,7 @@ def main():
     parser.add_argument("--yes", "-y", action="store_true", help="skip the confirmation prompt")
     parser.add_argument(
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
-        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/current/; use results/local/ or results/remote/ for not-yet-promoted data)",
     )
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir

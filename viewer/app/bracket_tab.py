@@ -2,7 +2,7 @@
 match-by-match either instantly (looked up from existing round-robin results
 or a previously-generated bracket sidecar) or by generating a fresh battle
 via the Generate tab, so a curated bracket can be watched progressively
-round-by-round rather than dumped all at once. See analysis/bracket_lib.py
+round-by-round rather than dumped all at once. See app/bracket_lib.py
 for the tree/lookup/seed logic this tab drives.
 
 This tab never launches Game.exe itself -- that's already the Generate/Watch
@@ -111,8 +111,8 @@ class BracketTab(QWidget):
 
     def _ensure_bracket_lib(self):
         if self._bracket_lib is None:
-            load_results_lib(self.config.analysis_dir)  # side effect: puts analysis_dir on sys.path
-            import bracket_lib
+            load_results_lib(self.config.analysis_dir)  # side effect: puts analysis_dir on sys.path, needed by bracket_lib's own `import results_lib`
+            from app import bracket_lib
 
             self._bracket_lib = bracket_lib
         return self._bracket_lib

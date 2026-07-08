@@ -2,33 +2,34 @@
 """
 Markdown leaderboard report, built from ratings.py's output.
 
-Reads analysis/ratings_<format>.json (run ratings.py first) and writes
-analysis/report_<format>.md -- a plain Markdown table, full leaderboard,
-one file per format. Presentation only; all the actual rating math
-lives in ratings.py.
+Reads analysis/ratings/ratings_<format>.json (run ratings.py first) and
+writes analysis/reports/report_<format>.md -- a plain Markdown table, full
+leaderboard, one file per format. Presentation only; all the actual rating
+math lives in ratings.py.
 """
 import argparse
 import glob
 import json
 import os
 
-ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
+import results_lib
 
 
 def discover_formats():
     formats = []
-    for path in sorted(glob.glob(os.path.join(ANALYSIS_DIR, "ratings_*.json"))):
+    for path in sorted(glob.glob(os.path.join(results_lib.RATINGS_DIR, "ratings_*.json"))):
         name = os.path.basename(path)
         formats.append(name[len("ratings_"):-len(".json")])
     return formats
 
 
 def write_report(fmt):
-    json_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
+    json_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}.json")
     with open(json_path, "r", encoding="utf-8") as f:
         leaderboard = json.load(f)
 
-    md_path = os.path.join(ANALYSIS_DIR, f"report_{fmt}.md")
+    os.makedirs(results_lib.REPORTS_DIR, exist_ok=True)
+    md_path = os.path.join(results_lib.REPORTS_DIR, f"report_{fmt}.md")
     total_battles = sum(row["battles"] for row in leaderboard) // 2
 
     lines = [
@@ -63,7 +64,7 @@ def main():
 
     formats = [args.format] if args.format else discover_formats()
     if not formats:
-        print("No ratings_*.json found in analysis/ -- run ratings.py first.")
+        print("No ratings_*.json found in analysis/ratings/ -- run ratings.py first.")
         return
 
     for fmt in formats:

@@ -54,10 +54,11 @@ class AppConfig:
     @property
     def results_dir(self):
         # Distributed installs point this at the shipped canonical full-RR
-        # results folder; the dev default is the internal/live tournament
-        # output directory.
+        # results folder; the dev default is the same ground-truth directory
+        # results_lib.py itself reads (results/current/, not results/remote/'s
+        # pull-landing zone or results/local/'s in-progress shard scratch).
         return self._settings.value(
-            "paths/results_dir", os.path.join(self.repo_root, "results", "remote")
+            "paths/results_dir", os.path.join(self.repo_root, "results", "current")
         )
 
     @results_dir.setter

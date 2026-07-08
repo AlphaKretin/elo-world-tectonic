@@ -46,7 +46,7 @@ param(
 . (Join-Path $PSScriptRoot "_watch_common.ps1")
 
 $RepoRoot       = Split-Path -Parent $PSScriptRoot
-$ResultsDir     = Join-Path $RepoRoot "results"
+$ResultsDir     = Join-Path $RepoRoot "results\local"
 $QueueStatePath = Join-Path $ResultsDir "local_chunk_queue.json"
 $formatFilter   = @($Formats -split "," | ForEach-Object { $_.Trim() } | Where-Object { $_ })
 

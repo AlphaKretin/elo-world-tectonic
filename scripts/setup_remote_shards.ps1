@@ -43,6 +43,8 @@ if (-not $hosts) {
 }
 Write-Output "Provisioning $($hosts.Count) droplet(s): $($hosts -join ', ')"
 
+. (Join-Path $PSScriptRoot "archive_lib.ps1")
+
 $ScriptDir = $PSScriptRoot
 $RepoRoot  = Split-Path -Parent $PSScriptRoot
 $PullDir   = Join-Path $RepoRoot "results\remote"
@@ -59,9 +61,7 @@ if (-not $SkipResultsPull) {
 
     $pulled = @(Get-ChildItem -Path $PullDir -File -ErrorAction SilentlyContinue)
     if ($pulled.Count -gt 0) {
-        $timestamp  = Get-Date -Format "yyyy-MM-dd_HHmmss"
-        $archiveDir = Join-Path $PullDir "archive_${timestamp}_pre_provision"
-        New-Item -ItemType Directory -Force -Path $archiveDir | Out-Null
+        $archiveDir = New-ArchiveDir -Label "pre_provision"
         Write-Output "Pulled $($pulled.Count) file(s) -- archiving to $archiveDir (moved, not deleted)"
         $pulled | Move-Item -Destination $archiveDir
     } else {

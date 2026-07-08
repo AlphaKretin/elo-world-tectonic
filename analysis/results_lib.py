@@ -34,24 +34,35 @@ import os
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ANALYSIS_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
+RESULTS_DIR = os.path.join(REPO_ROOT, "results", "current")
 CARD_DATA_PATH = os.path.join(REPO_ROOT, "vendor", "tectonic-content", "Analysis", "trainer_card_data.json")
 CURSE_STRIP_DIFF_PATH = os.path.join(REPO_ROOT, "vendor", "tectonic-content", "Analysis", "curse_strip_diff.json")
 
+# Generated-output subfolders, one per kind, so analysis/ itself holds only
+# scripts (+ card_constants.py) -- everything these scripts write lives
+# under one of these instead of loose in analysis/ root.
+RATINGS_DIR = os.path.join(ANALYSIS_DIR, "ratings")
+BEST_WORST_DIR = os.path.join(ANALYSIS_DIR, "best_worst")
+REPORTS_DIR = os.path.join(ANALYSIS_DIR, "reports")
+COMPARE_DIR = os.path.join(ANALYSIS_DIR, "compare")
+NOTABLE_MATCHES_DIR = os.path.join(ANALYSIS_DIR, "notable_matches")
+CUSTOM_TRAINER_DIR = os.path.join(ANALYSIS_DIR, "custom_trainer")
+CARDS_DIR = os.path.join(ANALYSIS_DIR, "cards")
+
 WIN, LOSS, DRAW = 1, 2, 5
 
-# The curse-stripped tournament's raw per-shard output (elo_results_<fmt>_
-# uncursed_raw_shard*.jsonl) is a partial re-battled subset, not a full round
-# robin -- coherent only once build_uncursed_results.py merges it into the
-# base format's results as elo_results_<fmt>_uncursed_shard0.jsonl (see
-# project_curse_stripping_format.md). Excluded from default (no --format)
-# discovery so it never gets its own standalone ratings by accident; still
-# reachable via an explicit --format for debugging.
-RAW_ONLY_SUFFIX = "_uncursed_raw"
+# elo_results_<fmt>_uncursed_shard*.jsonl on disk is ALWAYS the raw
+# curse-stripped partial re-battle subset (only pairings where stripping
+# curses actually changed a party get re-battled -- see tournament.rb) --
+# never a full round robin. load_results() merges it with the base format's
+# curse:false population in memory on every call (see _merge_uncursed) so
+# there's no separate merged artifact that can go stale (see
+# project_curse_stripping_format.md / project_uncursed_data_staleness.md).
+UNCURSED_SUFFIX = "_uncursed"
 
 
-def is_raw_only_format(fmt):
-    return fmt.endswith(RAW_ONLY_SUFFIX)
+def is_uncursed_format(fmt):
+    return fmt.endswith(UNCURSED_SUFFIX)
 
 # Trainers whose only curse policy is CURSE_NO_MERCY (or a numbered variant)
 # but who battle alongside a narratively-linked partner that carries no
@@ -86,17 +97,50 @@ def discover_formats(results_dir=None):
         # elo_results_<format>_shard<N>.jsonl
         middle = name[len("elo_results_"):-len(".jsonl")]
         fmt = middle.rsplit("_shard", 1)[0]
-        if is_raw_only_format(fmt):
-            continue
         formats.add(fmt)
     return sorted(formats)
 
 
-def load_results(fmt, results_dir=None, report_skipped=False):
+def _pair_key(row):
+    return frozenset((row.get("trainer1"), row.get("trainer2")))
+
+
+def _merge_uncursed(base_rows, raw_rows):
+    """Merge rule per pairing (confirmed with Luna 2026-07-04):
+      1. curse:false rows carry over unchanged.
+      2. curse:true rows are replaced by the matching pairing's row in the
+         raw curse-stripped results, if one exists there (only pairings
+         where at least one side's stripped party actually changed get
+         re-battled -- see tournament.rb).
+      3. curse:true rows with no raw counterpart are pairings where
+         stripping was a no-op for both sides -- kept as-is, UNLESS either
+         trainer is "identical_to_base" per curse_strip_diff.json (their
+         stripped form duplicates another pool member exactly, so they're
+         excluded from the uncursed pool entirely as a redundant opponent).
+      4. Every row from the raw curse-stripped results is included."""
+    diff = load_curse_strip_diff()
+    identical_to_base = {label for label, info in diff.items() if info.get("identical_to_base")}
+    raw_pairs = {_pair_key(r) for r in raw_rows}
+
+    merged = []
+    for row in base_rows:
+        if not row.get("curse"):
+            merged.append(row)
+            continue
+        if _pair_key(row) in raw_pairs:
+            continue
+        t1, t2 = row.get("trainer1"), row.get("trainer2")
+        if t1 in identical_to_base or t2 in identical_to_base:
+            continue
+        merged.append(row)
+    merged.extend(raw_rows)
+    return merged
+
+
+def _load_shard_files(fmt, results_dir, report_skipped=False):
     """Every row from elo_results_<fmt>_shard*.jsonl, in shard/file order.
     A line caught mid-write by a still-live tournament run is incomplete
     JSON, not a real data problem -- silently skipped unless report_skipped."""
-    results_dir = results_dir or RESULTS_DIR
     rows = []
     skipped_lines = 0
     for path in sorted(glob.glob(os.path.join(results_dir, f"elo_results_{fmt}_shard*.jsonl"))):
@@ -116,9 +160,24 @@ def load_results(fmt, results_dir=None, report_skipped=False):
     return rows
 
 
-def load_ratings(fmt, suffix="", analysis_dir=None):
-    analysis_dir = analysis_dir or ANALYSIS_DIR
-    path = os.path.join(analysis_dir, f"ratings_{fmt}{suffix}.json")
+def load_results(fmt, results_dir=None, report_skipped=False):
+    """Every row for format `fmt`. For a plain format this is just its
+    elo_results_<fmt>_shard*.jsonl shards; for an "..._uncursed" format
+    this is that same on-disk partial subset merged in memory with the
+    base format's curse:false population (see _merge_uncursed) -- there is
+    no separate "full" file for an uncursed format on disk."""
+    results_dir = results_dir or RESULTS_DIR
+    if is_uncursed_format(fmt):
+        raw_rows = _load_shard_files(fmt, results_dir, report_skipped)
+        base_fmt = fmt[:-len(UNCURSED_SUFFIX)]
+        base_rows = load_results(base_fmt, results_dir=results_dir, report_skipped=report_skipped)
+        return _merge_uncursed(base_rows, raw_rows)
+    return _load_shard_files(fmt, results_dir, report_skipped)
+
+
+def load_ratings(fmt, suffix="", ratings_dir=None):
+    ratings_dir = ratings_dir or RATINGS_DIR
+    path = os.path.join(ratings_dir, f"ratings_{fmt}{suffix}.json")
     with open(path, "r", encoding="utf-8") as f:
         rows = json.load(f)
     return {row["trainer"]: row for row in rows}

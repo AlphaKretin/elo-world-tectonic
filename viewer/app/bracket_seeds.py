@@ -10,4 +10,20 @@ editorial call, not a computation. A format with no entry here just has no
 curated bracket yet -- see bracket_tab.py's handling of a missing key.
 """
 
-BRACKET_SEEDS = {}
+# sample bracket - not based on genuine results, just for testing
+BRACKET_SEEDS = { "singles": ["SPIRITGUARDIAN4:Brigitte#1",
+                 "LEADER_Bence:Bence#3",
+                 "MASKEDVILLAIN2:Teal#23",
+                 "COOLTRAINER_M7:X#1",
+                 "TOURISTM:Chus",
+                 "LEADER_Eko:Eko#3",
+                 "FORMERCHAMP_Ansel:Ansel",
+                 "LEADER_Samorn:Samorn#3",
+                 "MASKEDVILLAIN2:Teal#15",
+                 "SPIRITGUARDIAN3:Preeti#1",
+                 "TRAINER_Zain:Zain#3",
+                 "MASKEDVILLAIN2:Teal#21",
+                 "NIGHTMAREQUEEN_Elise:Elise",
+                 "MASKEDVILLAIN2_DOUBLE:Teal#13",
+                 "TAPU_KOKO:Tapu Koko#1",
+                 "POKEMONTRAINER_Vanya:Vanya#2"]}

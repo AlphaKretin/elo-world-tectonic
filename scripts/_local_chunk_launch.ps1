@@ -33,7 +33,7 @@ function Invoke-LocalChunkLaunch {
 
     $ScriptPath = Join-Path $PSScriptRoot "run_tournament.ps1"
     $RepoRoot   = Split-Path -Parent $PSScriptRoot
-    $ResultsDir = Join-Path $RepoRoot "results"
+    $ResultsDir = Join-Path $RepoRoot "results\local"
     # Directory + chunk both in the log name -- a directory's Nth chunk
     # across a run's lifetime would otherwise all share one log file name,
     # silently truncating/overwriting each other's watchdog output.

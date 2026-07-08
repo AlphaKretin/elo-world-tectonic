@@ -64,7 +64,8 @@ param(
 . (Join-Path $PSScriptRoot "_local_chunk_launch.ps1")
 
 $RepoRoot       = Split-Path -Parent $PSScriptRoot
-$ResultsDir     = Join-Path $RepoRoot "results"
+$ResultsDir     = Join-Path $RepoRoot "results\local"
+New-Item -ItemType Directory -Force -Path $ResultsDir | Out-Null
 $QueueStatePath = Join-Path $ResultsDir "local_chunk_queue.json"
 $LogPath        = Join-Path $ResultsDir "local_chunk_supervisor.log"
 

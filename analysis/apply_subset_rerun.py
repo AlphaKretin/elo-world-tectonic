@@ -2,8 +2,10 @@
 """
 Splices a targeted subset rerun's results back into the real per-format
 result files, in place -- for correcting existing data (e.g. a trainer/AI
-behavior fix that only invalidated some pairings) rather than creating a
-new derived format the way build_uncursed_results.py does for "uncursed".
+behavior fix that only invalidated some pairings). Works the same way for
+an "_uncursed" format's own on-disk partial subset as for a real base
+format -- see results_lib.py's module docstring for how that partial file
+gets merged into a full dataset in memory on every load.
 
 Input: elo_results_<fmt>_<subset_tag>_shard*.jsonl, produced by a
 tournament.rb run with ELO_SUBSET_TRAINER_LABELS set (see
@@ -13,7 +15,7 @@ whichever format(s) needed rerunning.
 
 For each format:
   1. Back up every elo_results_<fmt>_shard*.jsonl (the file this script is
-     about to modify) into results/backup_<timestamp>_<label>/ -- copies,
+     about to modify) into results/archive/<timestamp>_<label>/ -- copies,
      not moves, so the live files stay in place and get corrected while
      the backup is purely a safety net.
   2. Read every elo_results_<fmt>_<subset_tag>_shard*.jsonl row, keyed by
@@ -58,7 +60,7 @@ def pair_key(row):
 
 def make_backup_dir(label):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
-    path = os.path.join(REPO_ROOT, "results", f"backup_{timestamp}_{label}")
+    path = os.path.join(REPO_ROOT, "results", "archive", f"{timestamp}_{label}")
     os.makedirs(path, exist_ok=True)
     return path
 
@@ -132,11 +134,11 @@ def main():
     )
     parser.add_argument(
         "--label", default="subset_merge", metavar="LABEL",
-        help="Label used in the backup directory name (results/backup_<timestamp>_<label>/).",
+        help="Label used in the backup directory name (results/archive/<timestamp>_<label>/).",
     )
     parser.add_argument(
         "--results-dir", default=results_lib.RESULTS_DIR, metavar="DIR",
-        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/current/; use results/local/ for local shard data)",
     )
     args = parser.parse_args()
 

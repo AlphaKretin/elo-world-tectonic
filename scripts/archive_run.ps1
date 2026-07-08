@@ -20,10 +20,10 @@ param(
     [switch]$IncludeResults
 )
 
+. (Join-Path $PSScriptRoot "archive_lib.ps1")
+
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
-$ResultsDir = Join-Path $RepoRoot "results"
-$Timestamp  = Get-Date -Format "yyyy-MM-dd_HHmmss"
-$ArchiveDir = Join-Path $ResultsDir "archive_${Timestamp}_$Label"
+$ResultsDir = Join-Path $RepoRoot "results\local"
 
 $errorLogPath = Join-Path $env:APPDATA "Pokemon Tectonic\errorlog.txt"
 $haveErrorLog = (Test-Path $errorLogPath) -and (Get-Item $errorLogPath).Length -gt 0
@@ -38,7 +38,7 @@ if (-not $haveErrorLog -and -not $resultFiles) {
     return
 }
 
-New-Item -ItemType Directory -Force -Path $ArchiveDir | Out-Null
+$ArchiveDir = New-ArchiveDir -Label $Label
 
 if ($resultFiles) {
     Write-Output "Archiving $($resultFiles.Count) result/log file(s) -> $ArchiveDir"

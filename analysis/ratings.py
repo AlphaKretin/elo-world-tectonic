@@ -2,10 +2,10 @@
 """
 Bradley-Terry trainer ratings from ELO Tournament battle results.
 
-Reads every results/remote/elo_results_<format>_shard*.jsonl (default;
-use --results-dir results/ for local shard data), fits one-hot
-±1 logistic regression per format (Bradley-Terry), and writes a sorted
-leaderboard (CSV + JSON) per format to analysis/.
+Reads every results/current/elo_results_<format>_shard*.jsonl (default;
+use --results-dir results/local/ or results/remote/ for not-yet-promoted
+data), fits one-hot ±1 logistic regression per format (Bradley-Terry), and
+writes a sorted leaderboard (CSV + JSON) per format to analysis/ratings/.
 
 Draws (result code 5) count toward each trainer's draw/battle totals but
 are excluded from the regression itself -- plain Bradley-Terry models a
@@ -41,10 +41,10 @@ results_lib.ASYMMETRIC_CURSE_PAIRS).
 
 This is a blunt, post-hoc data filter, not a simulation of what cursed
 trainers "should" look like -- for that, see the singles_uncursed/
-doubles_uncursed formats (built by build_uncursed_results.py from the raw
-curse-stripped re-battles plus the base results), which re-battle cursed
-trainers with curse *effects* actually stripped instead of just discarding
-their data.
+doubles_uncursed formats (results_lib.load_results merges the raw
+curse-stripped re-battles in memory with the base results on every load --
+see results_lib.is_uncursed_format), which re-battle cursed trainers with
+curse *effects* actually stripped instead of just discarding their data.
 
 --filter level70_only keeps only battles where both trainers have exactly
 6 Pokemon at level 70 -- the endgame/developer-team cohort, whose battles
@@ -88,7 +88,7 @@ from sklearn.cluster import KMeans
 from sklearn.linear_model import LogisticRegression
 
 import results_lib
-from results_lib import ANALYSIS_DIR, REPO_ROOT, WIN, LOSS, DRAW
+from results_lib import REPO_ROOT, WIN, LOSS, DRAW
 
 RESULTS_DIR = results_lib.RESULTS_DIR
 
@@ -263,8 +263,9 @@ def assign_tiers(leaderboard):
 
 
 def write_outputs(fmt, leaderboard, suffix=""):
-    json_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}{suffix}.json")
-    csv_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}{suffix}.csv")
+    os.makedirs(results_lib.RATINGS_DIR, exist_ok=True)
+    json_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}{suffix}.json")
+    csv_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}{suffix}.csv")
 
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(leaderboard, f, indent=2)
@@ -286,7 +287,7 @@ def main():
     parser.add_argument("--format", help="Only compute this format (default: all formats found in --results-dir)")
     parser.add_argument(
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
-        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/current/; use results/local/ or results/remote/ for not-yet-promoted data)",
     )
     parser.add_argument(
         "--exclude-trainer", action="append", default=[], metavar="LABEL",

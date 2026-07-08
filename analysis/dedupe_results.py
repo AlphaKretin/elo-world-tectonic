@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Removes duplicate (trainer1, trainer2, format) rows from
-elo_results_<format>_shard*.jsonl files (default: results/remote/; use
---results-dir results/ for local shard data), keeping the first occurrence
-of each pairing.
+elo_results_<format>_shard*.jsonl files (default: results/current/; use
+--results-dir results/local/ for local shard data or results/remote/ for
+a not-yet-promoted pull), keeping the first occurrence of each pairing.
 
 Background: tournament.rb's resume is identity-based (readCompletedKeys
 only looks at trainer1/trainer2/format). If a shard's watchdog gets resumed
@@ -38,8 +38,9 @@ import glob
 import json
 import os
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESULTS_DIR = os.path.join(REPO_ROOT, "results", "remote")
+import results_lib
+
+RESULTS_DIR = results_lib.RESULTS_DIR
 
 
 def is_clean(obj):
@@ -119,7 +120,7 @@ def main():
     parser.add_argument("--yes", "-y", action="store_true", help="skip the confirmation prompt")
     parser.add_argument(
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
-        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/current/; use results/local/ or results/remote/ for not-yet-promoted data)",
     )
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir

@@ -35,7 +35,7 @@ param(
 )
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
-$ResultsDir = Join-Path $RepoRoot "results"
+$ResultsDir = Join-Path $RepoRoot "results\local"
 $ShardsRoot = Join-Path $RepoRoot "shards"
 $PbsFile    = (Resolve-Path $PbsFile).Path
 

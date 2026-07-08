@@ -29,7 +29,7 @@ import ratings
 import results_lib
 import trainer_cards
 from card_constants import TIER_COLORS
-from results_lib import ANALYSIS_DIR, REPO_ROOT
+from results_lib import REPO_ROOT
 
 def build_format_specs(card_data):
     """(base format, filters) pairs to publish -- base format is either a
@@ -166,9 +166,9 @@ def export_trainers(card_data_by_label, tribe_info, formats):
     os.makedirs(out_dir, exist_ok=True)
     referenced = set()
     for fmt in formats:
-        ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
+        ratings_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}.json")
         if os.path.exists(ratings_path):
-            referenced |= set(results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR))
+            referenced |= set(results_lib.load_ratings(fmt))
     n = 0
     for label in referenced:
         if label not in card_data_by_label:
@@ -206,7 +206,7 @@ def export_format(fmt, card_data_by_label):
     """Per-format leaderboard.json: everything that DOES vary by format
     (rank, rating, record, tier, best win/worst loss), keyed by the same
     label the static trainers/<label>.json uses."""
-    ratings_by_label = results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR)
+    ratings_by_label = results_lib.load_ratings(fmt)
     best_worst_by_label = trainer_cards.load_best_worst(fmt)
 
     out_dir = os.path.join(WEB_DATA_DIR, fmt)
@@ -354,7 +354,7 @@ def main():
     export_team_levels(card_data_by_label)
 
     for fmt in formats:
-        ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
+        ratings_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}.json")
         if not os.path.exists(ratings_path):
             print(f"SKIPPED {fmt}: {ratings_path} not found")
             continue

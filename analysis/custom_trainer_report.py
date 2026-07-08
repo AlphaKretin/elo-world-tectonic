@@ -23,7 +23,7 @@ import json
 import os
 
 import results_lib
-from results_lib import ANALYSIS_DIR, REPO_ROOT
+from results_lib import REPO_ROOT
 
 WIN, LOSS, DRAW = results_lib.WIN, results_lib.LOSS, results_lib.DRAW
 
@@ -47,7 +47,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--format", default="singles", help="Battle format the custom trainer fought in (default: singles)")
     results_lib.add_filter_arg(parser)
-    parser.add_argument("--results-dir", default=os.path.join(REPO_ROOT, "results"), metavar="DIR", help="Directory containing custom_trainer_results_<format>_shard*.jsonl (default: results/)")
+    parser.add_argument("--results-dir", default=os.path.join(REPO_ROOT, "results", "local"), metavar="DIR", help="Directory containing custom_trainer_results_<format>_shard*.jsonl (default: results/local/)")
     parser.add_argument("--pbs-file", help="Path to the custom trainer's PBS snippet, printed into the suggested save_replay.ps1 commands (-CustomTrainerPbs)")
     args = parser.parse_args()
 
@@ -68,7 +68,7 @@ def main():
     fmt = rows[0]["format"]
 
     suffix = results_lib.filter_suffix(args.filter)
-    ratings_by_label = results_lib.load_ratings(args.format, suffix, analysis_dir=ANALYSIS_DIR)
+    ratings_by_label = results_lib.load_ratings(args.format, suffix)
 
     wins = sum(1 for r in rows if r["result"] == WIN)
     losses = sum(1 for r in rows if r["result"] == LOSS)
@@ -121,7 +121,8 @@ def main():
         "best_win": best_win_json,
         "worst_loss": worst_loss_json,
     }
-    out_path = os.path.join(ANALYSIS_DIR, f"custom_trainer_report_{args.format}{suffix}.json")
+    os.makedirs(results_lib.CUSTOM_TRAINER_DIR, exist_ok=True)
+    out_path = os.path.join(results_lib.CUSTOM_TRAINER_DIR, f"custom_trainer_report_{args.format}{suffix}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2)
     print(f"\nWritten to {out_path}")

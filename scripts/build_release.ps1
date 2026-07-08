@@ -130,8 +130,8 @@ Write-Output "  -> $VendorRepoSlug @ $VendorCommit (sha256 $VendorSha256)"
 #    needed for the Browse tab -- see viewer/app/config.py's results_dir).
 # ---------------------------------------------------------------------------
 Write-Output "Staging results data..."
-$ResultsDest = Join-Path $PackageDir "results\remote"
-Invoke-Robocopy @((Join-Path $RepoRoot "results\remote"), $ResultsDest, "/MIR", "/MT:8", "/R:3", "/W:2", "/NFL", "/NDL", "/NJH", "/NP")
+$ResultsDest = Join-Path $PackageDir "results\current"
+Invoke-Robocopy @((Join-Path $RepoRoot "results\current"), $ResultsDest, "/MIR", "/MT:8", "/R:3", "/W:2", "/NFL", "/NDL", "/NJH", "/NP")
 Write-Output "Results staged."
 
 # ---------------------------------------------------------------------------

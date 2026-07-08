@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Per-trainer best win / worst loss, cached to analysis/best_worst_<format>.json.
+Per-trainer best win / worst loss, cached to
+analysis/best_worst/best_worst_<format>.json.
 
-Reads every results/remote/elo_results_<format>_shard*.jsonl (default; use
---results-dir results/ for local shard data) and that format's own
-ratings_<format>.json (from ratings.py), and for every trainer records the
+Reads every results/current/elo_results_<format>_shard*.jsonl (default;
+use --results-dir results/local/ or results/remote/ for not-yet-promoted
+data) and that format's own ratings_<format>.json (from ratings.py), and
+for every trainer records the
 highest-rated opponent they beat (best_win) and the lowest-rated opponent
 they lost to (worst_loss), each with the seed of that battle (for
 ELO_SAVE_REPLAY). Either field is null if the trainer has no such result
@@ -32,7 +34,6 @@ import json
 import os
 
 import results_lib
-from results_lib import ANALYSIS_DIR, REPO_ROOT
 
 RESULTS_DIR = results_lib.RESULTS_DIR
 
@@ -91,7 +92,8 @@ def write_output(fmt, suffix, best_win, worst_loss, trainers):
         }
         for label in trainers
     }
-    path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}{suffix}.json")
+    os.makedirs(results_lib.BEST_WORST_DIR, exist_ok=True)
+    path = os.path.join(results_lib.BEST_WORST_DIR, f"best_worst_{fmt}{suffix}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2)
     return path
@@ -103,7 +105,7 @@ def main():
     parser.add_argument("--format", help="Only compute this format (default: all formats found in --results-dir)")
     parser.add_argument(
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
-        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/current/; use results/local/ or results/remote/ for not-yet-promoted data)",
     )
     results_lib.add_filter_arg(parser)
     args = parser.parse_args()
@@ -116,11 +118,11 @@ def main():
 
     suffix = results_lib.filter_suffix(args.filter)
     for fmt in formats:
-        ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}{suffix}.json")
+        ratings_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}{suffix}.json")
         if not os.path.exists(ratings_path):
             print(f"[{fmt}] {ratings_path} not found -- run ratings.py first. Skipping.")
             continue
-        ratings_by_label = results_lib.load_ratings(fmt, suffix, analysis_dir=ANALYSIS_DIR)
+        ratings_by_label = results_lib.load_ratings(fmt, suffix)
         best_win, worst_loss = compute_best_worst(fmt, ratings_by_label, filters=args.filter)
         path = write_output(fmt, suffix, best_win, worst_loss, ratings_by_label.keys())
         print(f"[{fmt}{suffix}] {len(ratings_by_label)} trainers -> {path}")

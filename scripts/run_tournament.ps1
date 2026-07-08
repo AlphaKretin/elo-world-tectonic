@@ -122,7 +122,8 @@ param(
 )
 
 $RepoRoot            = Split-Path -Parent $PSScriptRoot
-$ResultsDir          = Join-Path $RepoRoot "results"
+$ResultsDir          = Join-Path $RepoRoot "results\local"
+New-Item -ItemType Directory -Force -Path $ResultsDir | Out-Null
 $EffectiveGameDirIndex = if ($GameDirIndex -ge 0) { $GameDirIndex } else { $ShardIndex }
 # $ShardCount alone used to decide this (>1 => a shard directory, else the
 # plain vendor/tectonic-content checkout) -- wrong once chunking exists:

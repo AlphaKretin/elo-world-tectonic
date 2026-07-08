@@ -51,11 +51,11 @@ from trainer_naming import (
 
 import results_lib
 from card_constants import TIER_COLORS
-from results_lib import ANALYSIS_DIR, CARD_DATA_PATH, REPO_ROOT
+from results_lib import CARD_DATA_PATH, REPO_ROOT
 
 RESULTS_DIR = results_lib.RESULTS_DIR
 TECTONIC_DIR = os.path.join(REPO_ROOT, "vendor", "tectonic-content")
-CARDS_OUT_DIR = os.path.join(ANALYSIS_DIR, "cards")
+CARDS_OUT_DIR = results_lib.CARDS_DIR
 
 TRAINER_SPRITE_DIR = os.path.join(TECTONIC_DIR, "Graphics", "Trainers")
 FRONT_SPRITE_DIR = os.path.join(TECTONIC_DIR, "Graphics", "Pokemon", "Front")
@@ -386,7 +386,7 @@ def load_best_worst(fmt):
     best_worst_<fmt>.json (see best_worst.py -- it computes this in one
     pass over the results instead of trainer_cards.py rescanning them once
     per trainer rendered)."""
-    path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}.json")
+    path = os.path.join(results_lib.BEST_WORST_DIR, f"best_worst_{fmt}.json")
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -765,7 +765,7 @@ def main():
     parser.add_argument("--test-cases", action="store_true", help="Render the whole canonical TEST_CASES set instead of a single trainer")
     parser.add_argument(
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
-        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/current/; use results/local/ or results/remote/ for not-yet-promoted data)",
     )
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
@@ -777,9 +777,9 @@ def main():
 
     found_formats = results_lib.discover_formats(RESULTS_DIR)
     fmt = args.format or ("singles" if "singles" in found_formats else found_formats[0])
-    ratings_by_label = results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR)
+    ratings_by_label = results_lib.load_ratings(fmt)
     card_data_by_label = results_lib.load_card_data()
-    best_worst_path = os.path.join(ANALYSIS_DIR, f"best_worst_{fmt}.json")
+    best_worst_path = os.path.join(results_lib.BEST_WORST_DIR, f"best_worst_{fmt}.json")
     if not os.path.exists(best_worst_path):
         raise SystemExit(f"{best_worst_path} not found -- run `python analysis/best_worst.py --format {fmt}` first.")
     best_worst_by_label = load_best_worst(fmt)

@@ -18,7 +18,7 @@ param(
 . (Join-Path $PSScriptRoot "_watch_common.ps1")
 
 $RepoRoot   = Split-Path -Parent $PSScriptRoot
-$ResultsDir = Join-Path $RepoRoot "results"
+$ResultsDir = Join-Path $RepoRoot "results\local"
 
 while ($true) {
     Clear-Host

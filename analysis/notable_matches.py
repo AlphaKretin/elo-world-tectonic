@@ -21,11 +21,11 @@ an ongoing thing, not meant to be exhaustive):
   favorite is just the upset category (or nothing) wearing a different hat.
 
 Run after ratings.py (needs ratings_<format>.json) against
-results/remote/elo_results_<format>_shard*.jsonl (default; use
---results-dir results/ for local shard data) and
-vendor/tectonic-content/Analysis/trainer_card_data.json (for per-trainer
+results/current/elo_results_<format>_shard*.jsonl (default; use
+--results-dir results/local/ or results/remote/ for not-yet-promoted data)
+and vendor/tectonic-content/Analysis/trainer_card_data.json (for per-trainer
 curse/identity lookups, the same dump trainer_cards.py uses). Writes
-analysis/notable_matches_<format>.md.
+analysis/notable_matches/notable_matches_<format>.md.
 
 The current results are a stale, incomplete sample (see project notes) --
 treat anything this turns up right now as a check that the script runs,
@@ -35,7 +35,7 @@ import argparse
 import os
 
 import results_lib
-from results_lib import ANALYSIS_DIR, CARD_DATA_PATH, REPO_ROOT, WIN, LOSS, DRAW
+from results_lib import CARD_DATA_PATH, WIN, LOSS, DRAW
 
 RESULTS_DIR = results_lib.RESULTS_DIR
 
@@ -213,7 +213,8 @@ def write_report(fmt, upsets, self_mirror, longest, fastest):
             f"  `{replay_cmd(r['trainer1'], r['trainer2'], r['seed'], fmt)}`"
         )
 
-    md_path = os.path.join(ANALYSIS_DIR, f"notable_matches_{fmt}.md")
+    os.makedirs(results_lib.NOTABLE_MATCHES_DIR, exist_ok=True)
+    md_path = os.path.join(results_lib.NOTABLE_MATCHES_DIR, f"notable_matches_{fmt}.md")
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
     return md_path
@@ -226,7 +227,7 @@ def main():
     parser.add_argument("--top", type=int, default=15, help="How many matches per top-N category (default: 15)")
     parser.add_argument(
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
-        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/current/; use results/local/ or results/remote/ for not-yet-promoted data)",
     )
     args = parser.parse_args()
     RESULTS_DIR = args.results_dir
@@ -240,11 +241,11 @@ def main():
     card_data = results_lib.load_card_data()
 
     for fmt in formats:
-        ratings_path = os.path.join(ANALYSIS_DIR, f"ratings_{fmt}.json")
+        ratings_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}.json")
         if not os.path.exists(ratings_path):
             print(f"[{fmt}] No {ratings_path} -- run ratings.py first. Skipping.")
             continue
-        ratings = results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR)
+        ratings = results_lib.load_ratings(fmt)
         rows = results_lib.load_results(fmt, results_dir=RESULTS_DIR)
 
         upsets = find_upsets(rows, ratings, args.top)

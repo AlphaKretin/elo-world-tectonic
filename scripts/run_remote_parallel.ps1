@@ -91,7 +91,7 @@ if (-not $hosts) {
     return
 }
 
-$ResultsDir = Join-Path (Split-Path -Parent $PSScriptRoot) "results"
+$ResultsDir = Join-Path (Split-Path -Parent $PSScriptRoot) "results\remote"
 New-Item -ItemType Directory -Force -Path $ResultsDir | Out-Null
 $QueueStatePath = Join-Path $ResultsDir "remote_chunk_queue.json"
 $LogPath = Join-Path $ResultsDir "remote_chunk_supervisor.log"

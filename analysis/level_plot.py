@@ -22,7 +22,7 @@ import mplcursors
 import numpy as np
 
 import results_lib
-from results_lib import ANALYSIS_DIR, CARD_DATA_PATH, REPO_ROOT
+from results_lib import CARD_DATA_PATH, REPO_ROOT
 
 RESULTS_DIR = results_lib.RESULTS_DIR
 TECTONIC_DIR = os.path.join(REPO_ROOT, "vendor", "tectonic-content")
@@ -136,7 +136,7 @@ def main():
     parser.add_argument("--format", default=None, help="Format to use (default: singles, or the first format found if singles isn't present)")
     parser.add_argument(
         "--results-dir", default=RESULTS_DIR, metavar="DIR",
-        help="Directory containing elo_results_*_shard*.jsonl files (default: results/remote/; use results/ for local shard data)",
+        help="Directory containing elo_results_*_shard*.jsonl files (default: results/current/; use results/local/ or results/remote/ for not-yet-promoted data)",
     )
     parser.add_argument(
         "--output", "-o", metavar="PATH",
@@ -153,7 +153,7 @@ def main():
 
     found_formats = results_lib.discover_formats(RESULTS_DIR)
     fmt = args.format or ("singles" if "singles" in found_formats else found_formats[0])
-    ratings_by_label = results_lib.load_ratings(fmt, analysis_dir=ANALYSIS_DIR)
+    ratings_by_label = results_lib.load_ratings(fmt)
     card_data_by_label = results_lib.load_card_data()
 
     entries = build_entries(ratings_by_label, card_data_by_label)

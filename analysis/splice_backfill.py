@@ -3,31 +3,43 @@
 One-off: splices the WSL2-rebattled replacements for the 8 had_error/skipped
 rows (5 singles crash-skips, well 6 as counted 2026-07-04, + 2 doubles
 DOCTOR:Renaldo had_error rows -- see project_resolved_bugs.md) back into
-results/remote/elo_results_<fmt>_shard*.jsonl, after a `pull_remote_results.ps1`
-run clobbered the previous local fix with raw (pre-fix) remote data.
+results/current/elo_results_<fmt>_shard*.jsonl (results_lib.RESULTS_DIR),
+after a `pull_remote_results.ps1` run clobbered the previous local fix with
+raw (pre-fix) remote data.
 
-Reads results/backfill_batch_pairing_results.jsonl (testBatchPairings!
+Reads results/local/backfill_batch_pairing_results.jsonl (testBatchPairings!
 output, pulled from the WSL2 ~/elo-test checkout), converts each row to the
 live tournament's row schema (trainerLabel strips "#0" for version 0,
 "single"/"double" -> "singles"/"doubles", curse derived from
 curse_strip_diff.json since testBatchPairings! doesn't compute it), and
 replaces the matching (trainer1, trainer2, format) row in the shard file
-it's found in.
+it's found in. Writes a durable copy of the replacement rows to
+results/archive/<timestamp>_backfill/backfilled_pairings.jsonl (mirrors
+apply_subset_rerun.py's backup convention) so a future pull can't clobber
+the only record of what was corrected.
 
 Not idempotent-safe against re-running with different backfill data --
 intended as a one-off tool, not a permanent pipeline step.
 """
+import datetime
 import json
 import os
 
 import results_lib
 from results_lib import REPO_ROOT
 
-BACKFILL_BATCH_PATH = os.path.join(REPO_ROOT, "results", "backfill_batch_pairing_results.jsonl")
-# results/, not official_results/ -- doesn't need git tracking, just needs to
-# survive temp cleanup and not get clobbered by a future pull_remote_results.ps1
-# run, both true here since pulls only ever write into results/remote/.
-PERMANENT_RECORD_PATH = os.path.join(REPO_ROOT, "results", "backfilled_pairings.jsonl")
+BACKFILL_BATCH_PATH = os.path.join(REPO_ROOT, "results", "local", "backfill_batch_pairing_results.jsonl")
+
+
+def make_permanent_record_path():
+    # results/archive/<timestamp>_backfill/, not results/local/ -- this record
+    # isn't shard-run scratch, it's a durable audit trail of exactly which
+    # rows got corrected, so it follows apply_subset_rerun.py's own backup
+    # convention instead: a timestamped folder under results/archive/, never a
+    # pull_remote_results.ps1 target and never overwritten by a later run of
+    # this same one-off tool.
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
+    return os.path.join(REPO_ROOT, "results", "archive", f"{timestamp}_backfill", "backfilled_pairings.jsonl")
 
 
 def normalize_label(raw_label):
@@ -74,14 +86,12 @@ def main():
         key = (row["trainer1"], row["trainer2"], row["format"])
         replacements[key] = row
 
-    # Permanent record, in results/ but NOT results/remote/ (the pull target)
-    # so a future pull_remote_results.ps1 run can't clobber it -- doesn't need
-    # to be git-tracked, just durable, so this doesn't need to be re-derived.
-    os.makedirs(os.path.dirname(PERMANENT_RECORD_PATH), exist_ok=True)
-    with open(PERMANENT_RECORD_PATH, "w", encoding="utf-8") as f:
+    permanent_record_path = make_permanent_record_path()
+    os.makedirs(os.path.dirname(permanent_record_path), exist_ok=True)
+    with open(permanent_record_path, "w", encoding="utf-8") as f:
         for row in replacements.values():
             f.write(json.dumps(row) + "\n")
-    print(f"Wrote {len(replacements)} clean row(s) to {PERMANENT_RECORD_PATH}")
+    print(f"Wrote {len(replacements)} clean row(s) to {permanent_record_path}")
 
     remaining = dict(replacements)
     for fmt in ("singles", "doubles"):
