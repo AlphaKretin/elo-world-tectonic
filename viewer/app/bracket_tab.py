@@ -29,13 +29,12 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import bracket_seeds, format_selector, replay_env, ui_settings
+from app import bracket_seeds, replay_env, ui_settings
 from app.bracket_canvas import BracketCanvas
 from app.results_source import load_results_lib
 from app.sprite_loader import SpriteLoader
 from app.trainer_names import TrainerNameResolver, load_trainer_naming
 
-FILTER_CHOICES = [(None, "(none)"), ("cursed_excluded", "Cursed-excluded"), ("level70_only", "Level 70 only")]
 SPRITE_SIZE = 40  # trainer sprites are 160x160 pixel art; 40 is a clean 4x nearest-neighbor downscale
 CURSE_BADGE_SIZE = 24  # the amulet badge is 48x48 pixel art; 24 is a clean 2x nearest-neighbor downscale
 CURSED_TEXT_SUFFIX = " (Cursed)"  # trainer_naming.resolve_display_name's text marker, for text-only contexts;
@@ -53,7 +52,6 @@ class BracketTab(QWidget):
         self._bracket_lib = None  # lazily imported, see _ensure_bracket_lib
 
         self.fmt = None
-        self.bracket_key = None
         self.rounds = None
         self.results_index = {}
         self._trainer_data_cache = None
@@ -64,24 +62,14 @@ class BracketTab(QWidget):
         layout = QVBoxLayout(self)
 
         format_row = QHBoxLayout()
-        self.battle_type_combo = QComboBox()
-        for value, label in format_selector.BATTLE_TYPES:
-            self.battle_type_combo.addItem(label, value)
-        self.curse_variant_combo = QComboBox()
-        for value, label in format_selector.CURSE_VARIANTS:
-            self.curse_variant_combo.addItem(label, value)
-        self.filter_combo = QComboBox()
-        for value, label in FILTER_CHOICES:
-            self.filter_combo.addItem(label, value)
+        self.bracket_combo = QComboBox()
+        for entry in bracket_seeds.BRACKETS:
+            self.bracket_combo.addItem(entry["name"], entry)
         self.wins_needed_spin = QSpinBox()
         self.wins_needed_spin.setRange(1, 9)
         self.wins_needed_spin.setValue(2)
-        format_row.addWidget(QLabel("Battle type:"))
-        format_row.addWidget(self.battle_type_combo, 1)
-        format_row.addWidget(QLabel("Curse variant:"))
-        format_row.addWidget(self.curse_variant_combo, 1)
-        format_row.addWidget(QLabel("Filter:"))
-        format_row.addWidget(self.filter_combo, 1)
+        format_row.addWidget(QLabel("Bracket:"))
+        format_row.addWidget(self.bracket_combo, 1)
         format_row.addWidget(QLabel("Games to win:"))
         format_row.addWidget(self.wins_needed_spin)
         self.reveal_button = QPushButton("Reveal remaining")
@@ -99,20 +87,16 @@ class BracketTab(QWidget):
         self.scroll_area.setWidget(self.canvas)
         layout.addWidget(self.scroll_area)
 
-        self.battle_type_combo.currentIndexChanged.connect(self._on_format_changed)
-        self.curse_variant_combo.currentIndexChanged.connect(self._on_format_changed)
-        self.filter_combo.currentIndexChanged.connect(self._on_format_changed)
-        self.wins_needed_spin.valueChanged.connect(self._on_format_changed)
+        self.bracket_combo.currentIndexChanged.connect(self._on_bracket_changed)
+        self.wins_needed_spin.valueChanged.connect(self._on_bracket_changed)
         self.reveal_button.clicked.connect(self._on_reveal_remaining_clicked)
         self.refresh_button.clicked.connect(self._on_refresh_clicked)
 
         settings = QSettings()
-        ui_settings.bind_combo(settings, "bracket/battle_type", self.battle_type_combo)
-        ui_settings.bind_combo(settings, "bracket/curse_variant", self.curse_variant_combo)
-        ui_settings.bind_combo(settings, "bracket/filter", self.filter_combo)
+        ui_settings.bind_combo(settings, "bracket/name", self.bracket_combo)
         ui_settings.bind_spinbox(settings, "bracket/wins_needed", self.wins_needed_spin)
 
-        self._on_format_changed()
+        self._on_bracket_changed()
 
     # -- setup / teardown --------------------------------------------------
 
@@ -129,20 +113,18 @@ class BracketTab(QWidget):
             self._bracket_lib = bracket_lib
         return self._bracket_lib
 
-    def _on_format_changed(self):
-        battle_type = self.battle_type_combo.currentData()
-        curse_variant = self.curse_variant_combo.currentData()
-        filter_name = self.filter_combo.currentData()
-        self.fmt = format_selector.format_key(battle_type, curse_variant)
-        self.bracket_key = self.fmt + (f"_{filter_name}" if filter_name else "")
-
-        labels = bracket_seeds.BRACKET_SEEDS.get(self.bracket_key)
-        if not labels:
+    def _on_bracket_changed(self):
+        entry = self.bracket_combo.currentData()
+        if entry is None:
+            self.fmt = None
             self.rounds = None
-            self.status_label.setText(f"No curated bracket for '{self.bracket_key}' yet.")
+            self.status_label.setText("No curated brackets defined yet.")
             self.canvas.set_rounds([], [])
             self.reveal_button.setEnabled(False)
             return
+
+        self.fmt = entry["format"]
+        labels = entry["seeds"]
 
         bracket_lib = self._ensure_bracket_lib()
         try:
@@ -185,20 +167,22 @@ class BracketTab(QWidget):
             self.results_index.setdefault(key, []).append(row)
 
     def _sidecar_as_row(self, sidecar):
-        """Bracket sidecars store the engine's raw generation result (0=draw,
-        1=trainer1 wins, 2=trainer2 wins, per replay_runner.outcome_label),
-        a different scale than the round-robin jsonl's (1=win, 2=loss,
-        5=draw, see results_lib.WIN/LOSS/DRAW). Normalize to the RR scale so
-        bracket_lib.lookup_result can treat both sources identically."""
+        """Bracket sidecars store the engine's raw per-battle result, which
+        is already the same 1=trainer1 wins/2=trainer2 wins/5=draw scale as
+        results_lib.WIN/LOSS/DRAW (see replay_runner.outcome_label), so no
+        rescaling is needed here. 0 is not a real outcome though -- it's the
+        engine's pre-battle sentinel, left in place if a watched recording
+        was cancelled in-game before a decision was ever reached -- so it
+        must be rejected rather than misread as a draw."""
         results_lib = load_results_lib(self.config.analysis_dir)
         raw = sidecar.get("result")
-        if raw not in (0, 1, 2) or "trainer1" not in sidecar or "trainer2" not in sidecar:
+        valid = (results_lib.WIN, results_lib.LOSS, results_lib.DRAW)
+        if raw not in valid or "trainer1" not in sidecar or "trainer2" not in sidecar:
             return None
-        normalized = {0: results_lib.DRAW, 1: results_lib.WIN, 2: results_lib.LOSS}[raw]
         return {
             "trainer1": sidecar["trainer1"],
             "trainer2": sidecar["trainer2"],
-            "result": normalized,
+            "result": raw,
             "seed": sidecar.get("seed"),
         }
 
@@ -535,12 +519,16 @@ class BracketTab(QWidget):
 
     def handle_replay_finished(self, dat_path, result):
         """Connected to WatchTab.replay_finished. A crashed/cancelled Watch
-        (ok=False) never applies. A genuine draw (result 0) now does apply,
-        same as a decisive result -- a draw is itself a played attempt that
-        must be recorded to keep the next attempt's seed chain and slug
+        (ok=False) never applies, and neither does an in-game cancel (ok=True
+        but result 0 -- the engine's pre-battle sentinel, never cleared
+        because no decision was reached). A genuine draw (result 5) now does
+        apply, same as a decisive result -- a draw is itself a played attempt
+        that must be recorded to keep the next attempt's seed chain and slug
         numbering correct, unlike the old single-game bracket where a draw
         never needed any bookkeeping."""
-        if not result.get("ok") or result.get("result") not in (0, 1, 2):
+        results_lib = load_results_lib(self.config.analysis_dir)
+        valid = (results_lib.WIN, results_lib.LOSS, results_lib.DRAW)
+        if not result.get("ok") or result.get("result") not in valid:
             return
 
         bracket_lib = self._ensure_bracket_lib()

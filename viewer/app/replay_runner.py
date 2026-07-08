@@ -204,11 +204,13 @@ class ReplayRunner(QObject):
 
 
 def outcome_label(value, win_label="Trainer 1", loss_label="Trainer 2"):
-    """Renders runBattle/playRecordedBattle's shared 0/1/2 result scale
-    (0 = draw, 1 = party1/trainer1 side wins, 2 = party2/trainer2 side
-    wins) -- same convention GenerateTab's saved sidecar and WatchTab's
-    expected-outcome check already assume."""
-    return {0: "Draw", 1: f"{win_label} wins", 2: f"{loss_label} wins"}.get(
+    """Renders runBattle/playRecordedBattle's shared result scale: 1 =
+    party1/trainer1 side wins, 2 = party2/trainer2 side wins, 5 = draw
+    (matches results_lib.WIN/LOSS/DRAW -- no rescaling between raw replay
+    results and RR-derived rows is needed). 0 is not a real outcome -- it's
+    the engine's pre-battle sentinel, left in place if playback was
+    cancelled in-game before a decision was ever reached."""
+    return {1: f"{win_label} wins", 2: f"{loss_label} wins", 5: "Draw", 0: "Cancelled (no result)"}.get(
         value, f"Unknown result ({value!r})"
     )
 
