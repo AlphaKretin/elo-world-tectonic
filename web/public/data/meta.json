@@ -9,6 +9,8 @@
         "doubles_uncursed",
         "singles_cursed_excluded",
         "doubles_cursed_excluded",
+        "singles_developer_only",
+        "doubles_developer_only",
         "singles_level70_only",
         "doubles_level70_only",
         "singles_uncursed_level70_only",
