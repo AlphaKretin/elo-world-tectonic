@@ -16,3 +16,10 @@ def bind_checkbox(settings, key, checkbox):
     if saved is not None:
         checkbox.setChecked(saved)
     checkbox.toggled.connect(lambda checked: settings.setValue(key, checked))
+
+
+def bind_spinbox(settings, key, spinbox):
+    saved = settings.value(key, None, type=int)
+    if saved is not None:
+        spinbox.setValue(saved)
+    spinbox.valueChanged.connect(lambda value: settings.setValue(key, value))

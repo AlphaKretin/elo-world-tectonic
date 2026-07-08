@@ -35,21 +35,39 @@ ROUND_NAMES = ["Round of 16", "Quarterfinals", "Semifinals", "Final"]
 class Match:
     """One bracket match. `rank_a`/`rank_b`/`label_a`/`label_b` are `None`
     until both parent matches (or, for round 0, the curated seed list) have
-    resolved. `winner_label`/`winner_rank` are `None` until this match is
-    itself resolved."""
+    resolved. A match is a series of attempts, each either a draw or
+    decisive; `winner_label`/`winner_rank` stay `None` until one side's
+    decisive-attempt count reaches `wins_needed`."""
 
-    def __init__(self, round_idx, match_idx):
+    def __init__(self, round_idx, match_idx, wins_needed=2):
         self.round_idx = round_idx
         self.match_idx = match_idx
         self.rank_a = None
         self.label_a = None
         self.rank_b = None
         self.label_b = None
+        self.wins_needed = wins_needed
+        self.attempts = []  # ordered list of {"seed": int, "winner_label": str | None}; None = draw
         self.winner_label = None
         self.winner_rank = None
-        self.resolved_seed = None  # RNG seed that decided this match, kept even after
-        # resolution so a later on-demand replay generation (e.g. Watch after Skip)
-        # can reproduce the same outcome without re-deriving a seed.
+
+    @property
+    def current_attempt_idx(self):
+        """Index (0-based) of the attempt about to be played next -- also
+        the `attempt` value to pass to bracket_replay_slug for it."""
+        return len(self.attempts)
+
+    @property
+    def decisive_attempts(self):
+        return [a for a in self.attempts if a["winner_label"] is not None]
+
+    @property
+    def wins_a(self):
+        return sum(1 for a in self.decisive_attempts if a["winner_label"] == self.label_a)
+
+    @property
+    def wins_b(self):
+        return sum(1 for a in self.decisive_attempts if a["winner_label"] == self.label_b)
 
     @property
     def resolved(self):
@@ -61,12 +79,34 @@ class Match:
         return not self.resolved and self.label_a is not None and self.label_b is not None
 
 
-def build_bracket_tree(labels):
+def record_attempt(match, winner_label, winner_rank, seed):
+    """Appends one played attempt to `match.attempts` (`winner_label=None`
+    for a draw -- draws still consume an attempt slot, since the next
+    attempt's seed chains off *this* attempt's actual seed regardless of
+    whether it was decisive, and the replay filename numbering needs every
+    attempt counted). If this decisive result brings a side's win count up
+    to `match.wins_needed`, sets `match.winner_label`/`winner_rank`. Returns
+    whether the match is now resolved -- callers still call advance_winner
+    themselves when true, since this function doesn't touch `rounds`."""
+    match.attempts.append({"seed": seed, "winner_label": winner_label})
+    if winner_label is None:
+        return False
+    wins = match.wins_a if winner_label == match.label_a else match.wins_b
+    if wins >= match.wins_needed:
+        match.winner_label = winner_label
+        match.winner_rank = winner_rank
+        return True
+    return False
+
+
+def build_bracket_tree(labels, wins_needed=2):
     """labels: the 16 curated trainer labels in seed order (labels[0] is
     seed 1, labels[15] is seed 16). Returns a list of rounds, each a list of
     Match objects; round 0's matches are pre-filled from the seed list,
     later rounds start with both slots empty until their parent matches
-    resolve (see advance_winner)."""
+    resolve (see advance_winner). wins_needed (default 2, i.e. best-of-3) is
+    the number of decisive attempts a side needs to take any match in the
+    tree; 1 reproduces a plain single-game bracket."""
     if len(labels) != 16:
         raise ValueError(f"Need exactly 16 curated labels, got {len(labels)}")
 
@@ -77,7 +117,7 @@ def build_bracket_tree(labels):
     rounds = []
     round0 = []
     for match_idx in range(8):
-        m = Match(0, match_idx)
+        m = Match(0, match_idx, wins_needed=wins_needed)
         m.rank_a, m.rank_b = round0_ranks[2 * match_idx], round0_ranks[2 * match_idx + 1]
         m.label_a, m.label_b = round0_labels[2 * match_idx], round0_labels[2 * match_idx + 1]
         round0.append(m)
@@ -85,7 +125,7 @@ def build_bracket_tree(labels):
 
     match_count = 4
     for round_idx in range(1, 4):
-        rounds.append([Match(round_idx, i) for i in range(match_count)])
+        rounds.append([Match(round_idx, i, wins_needed=wins_needed) for i in range(match_count)])
         match_count //= 2
 
     return rounds
@@ -141,11 +181,18 @@ def derive_fresh_seed(fmt, round_idx, match_idx, label_a, label_b):
     return _stable_hash("bracket", fmt, round_idx, match_idx, label_a, label_b)
 
 
-def next_retry_seed(previous_seed):
-    """Deterministic seed for a manual retry after a draw, chained off the
-    *actual* previous seed rather than re-derived from the match's static
-    position -- otherwise two different bracket contexts that both drew on
-    their first attempt would always converge on the same next seed too."""
+def next_attempt_seed(previous_seed):
+    """Deterministic seed for the next attempt in a match's sequence,
+    chained off the *actual* previous attempt's seed rather than re-derived
+    from the match's static position -- otherwise two different bracket
+    contexts whose first attempt happened to share a result would always
+    converge on the same next seed too.
+
+    Used for every non-initial attempt uniformly: a draw being retried and
+    a decisive-but-not-yet-final game advancing to the next one are the same
+    kind of step in the chain (e.g. Win -> Draw -> Loss -> Win is a valid
+    attempt sequence) -- there is deliberately no separate seed function for
+    "next game" versus "retry after a draw"."""
     return _stable_hash("bracket-retry", previous_seed)
 
 
