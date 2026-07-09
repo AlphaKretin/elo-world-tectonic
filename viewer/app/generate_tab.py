@@ -72,7 +72,6 @@ class GenerateTab(QWidget):
         self.backdrop_time_combo = QComboBox()
         for value, label in game_assets.TIME_VARIANTS:
             self.backdrop_time_combo.addItem(label, value)
-        self.swap_sides_button = QPushButton("⇄ Swap trainers")
         self.debug_check = QCheckBox("Debug mode (shows the engine's console window)")
         self._is_dev_build = config_module.is_dev_build()
 
@@ -94,7 +93,6 @@ class GenerateTab(QWidget):
 
         form.addRow("Trainer 1", trainer1_row)
         form.addRow("Trainer 2", trainer2_row)
-        form.addRow("", self.swap_sides_button)
         form.addRow("Seed", self.seed_edit)
         form.addRow("Format", format_row)
         form.addRow("Output name", self.output_name_edit)
@@ -126,7 +124,6 @@ class GenerateTab(QWidget):
         self.cancel_button.clicked.connect(self.runner.cancel)
         self.export_button.clicked.connect(self._on_export_clicked)
         self.watch_button.clicked.connect(self._on_watch_clicked)
-        self.swap_sides_button.clicked.connect(self._on_swap_sides_clicked)
         self.trainer1_edit.textChanged.connect(lambda text: self._update_name_label(self.trainer1_name_label, text))
         self.trainer2_edit.textChanged.connect(lambda text: self._update_name_label(self.trainer2_name_label, text))
         self._update_name_label(self.trainer1_name_label, self.trainer1_edit.text())
@@ -156,11 +153,6 @@ class GenerateTab(QWidget):
         self.battle_type_combo.setCurrentIndex(self.battle_type_combo.findData(battle_type))
         self.curse_variant_combo.setCurrentIndex(self.curse_variant_combo.findData(curse_variant))
         self.output_name_edit.setText(payload.get("output_name", ""))
-
-    def _on_swap_sides_clicked(self):
-        t1, t2 = self.trainer1_edit.text(), self.trainer2_edit.text()
-        self.trainer1_edit.setText(t2)
-        self.trainer2_edit.setText(t1)
 
     def _on_generate_clicked(self):
         if not self.config.is_valid():

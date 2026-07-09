@@ -17,6 +17,7 @@ avoid subtly diverging from that convention).
 import hashlib
 import re
 
+import order_key
 import results_lib
 
 _SLUG_RE = re.compile(r"^bracket_(?P<fmt>.+)_r(?P<round>\d+)m(?P<match>\d+)_rank")

@@ -593,9 +593,8 @@ class BracketTab(QWidget):
         # produces the *next* attempt rather than re-numbering the same one.
         self._apply_pending_draw(match)
         attempt = match.current_attempt_idx
-        seed = self._seed_for_generate(match)
+        trainer1_label, trainer2_label, seed = self._order_and_seed_for_generate(match)
         slug = self._match_slug_for_attempt(match, attempt)
-        trainer1_label, trainer2_label = self._perspective_order(match)
         self.generate_requested.emit({
             "trainer1": trainer1_label,
             "trainer2": trainer2_label,
@@ -605,20 +604,31 @@ class BracketTab(QWidget):
         })
         self._render()
 
-    def _seed_for_generate(self, match):
-        """Seed for match.current_attempt_idx's fresh generation. The very
-        first attempt reuses a known RR seed if this pairing already has a
-        decisive RR result (so Generate reproduces the exact historical
-        battle); every later attempt chains off the actual previous
-        attempt's seed via next_attempt_seed, regardless of whether that
-        previous attempt was a draw or a decisive-but-not-final game."""
+    def _order_and_seed_for_generate(self, match):
+        """(trainer1_label, trainer2_label, seed) for match.current_attempt_idx's
+        fresh generation. Trainer order is NOT cosmetic -- some battle
+        mechanics are keyed to battler slot rather than trainer identity, so
+        which trainer is trainer1 can change the outcome (see
+        project_trainer_order_dependence memory). So the very first attempt,
+        when a decisive RR result already exists for this pairing, reuses
+        that row's own trainer1/trainer2 verbatim (not just its seed) --
+        otherwise reusing the seed with a different order would silently
+        reproduce a *different* battle than the historical one this is
+        supposed to represent. Every other case (no RR result, or any
+        later attempt) has no historical order to match, so it uses
+        order_key's canonical order -- the same deterministic order a real
+        tournament run would have used for this pairing."""
         bracket_lib = self._ensure_bracket_lib()
         if not match.attempts:
             row = bracket_lib.lookup_result(self.results_index, match.label_a, match.label_b)
             if row is not None:
-                return row["seed"]
-            return bracket_lib.derive_fresh_seed(self.fmt, match.round_idx, match.match_idx, match.label_a, match.label_b)
-        return bracket_lib.next_attempt_seed(match.attempts[-1]["seed"])
+                return row["trainer1"], row["trainer2"], row["seed"]
+            trainer1_label, trainer2_label = bracket_lib.order_key.canonical_pair_order(match.label_a, match.label_b)
+            seed = bracket_lib.derive_fresh_seed(self.fmt, match.round_idx, match.match_idx, match.label_a, match.label_b)
+            return trainer1_label, trainer2_label, seed
+        trainer1_label, trainer2_label = order_key.canonical_pair_order(match.label_a, match.label_b)
+        seed = bracket_lib.next_attempt_seed(match.attempts[-1]["seed"])
+        return trainer1_label, trainer2_label, seed
 
     def _on_reveal_remaining_clicked(self):
         changed = True
@@ -678,15 +688,3 @@ class BracketTab(QWidget):
         slug = self._match_slug_for_attempt(match, match.current_attempt_idx)
         return replay_env.find_existing_replay(self.config.replay_dir, slug)
 
-    def _perspective_order(self, match):
-        """(trainer1_label, trainer2_label) for the actual battle env, with
-        the underdog (numerically higher/worse rank) as trainer1 -- the
-        engine's "player" side -- and the favorite as trainer2. Side-swapping
-        doesn't affect the simulated battle or its outcome (confirmed in
-        replay_env.build_env's own docs), only which side the spectator
-        watches from, so this is presentation-only and safe to apply even
-        when reproducing an exact historical seed. Display text elsewhere
-        always lists by rank (favorite first) regardless of this."""
-        if match.rank_a > match.rank_b:
-            return match.label_a, match.label_b
-        return match.label_b, match.label_a

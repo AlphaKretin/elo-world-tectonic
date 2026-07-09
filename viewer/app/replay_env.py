@@ -57,10 +57,16 @@ def build_env(
     BATTLE_MODE/UNCURSED_RUN) to decide battle mode and whether to curse-strip.
 
     backdrop names a Graphics/Battlebacks/<name>_bg file to force instead of
-    the "indoor1" default. Side-swapping is a UI-level concern (the caller
-    just swaps which label it passes as trainer1_label/trainer2_label --
-    confirmed empirically that this only mirrors the result/rounds, not the
-    simulated battle), so there's no separate env var for it.
+    the "indoor1" default. Which label is passed as trainer1_label vs
+    trainer2_label is NOT a cosmetic UI-level concern -- some battle
+    mechanics are keyed to battler slot rather than trainer identity (e.g.
+    speed-tie resolution), so swapping them can change the simulated
+    battle's outcome, not just which side is displayed as which (see
+    project_trainer_order_dependence memory; this reverses an earlier,
+    incorrect "confirmed empirically" claim here). Callers must use
+    order_key.canonical_pair_order (or an existing result row's own stored
+    trainer1/trainer2) to pick the order, not an arbitrary/display-driven
+    choice.
     """
     t1 = parse_trainer_label(trainer1_label)
     t2 = parse_trainer_label(trainer2_label)
