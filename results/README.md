@@ -4,9 +4,9 @@ Four subfolders, each with one job. `results/` root itself holds no loose
 files — only these four, plus this README.
 
 - **`local/`** — local shard-run scratch space: everything
-  `run_tournament.ps1`/`run_parallel.ps1` (and the bracket/custom-trainer
-  diversions) write while running — JSONL results, status/watchdog/game
-  logs, chunk-queue state, hand-written bracket seed files, etc.
+  `run_tournament.ps1`/`run_parallel.ps1` (and the custom-trainer/
+  single-pairing/batch-pairing diversions) write while running — JSONL
+  results, status/watchdog/game logs, chunk-queue state, etc.
 - **`remote/`** — pull-landing zone only, exactly what
   `pull_remote_results.ps1`/`setup_remote_shards.ps1` scp down from the
   droplet fleet, plus the remote chunk-supervisor's own queue state/log.

@@ -50,7 +50,7 @@ for ($i = 0; $i -lt $ShardCount; $i++) {
     $env:ELO_FORMAT                      = $Format
     $env:ELO_SHARD_INDEX                 = "$i"
     $env:ELO_SHARD_COUNT                 = "$ShardCount"
-    $env:ELO_CUSTOM_TRAINER_RESULTS_PATH = Join-Path $ResultsDir "custom_trainer_results_${Format}_shard$i.jsonl"
+    $env:ELO_TEST_RESULTS_PATH           = Join-Path $ResultsDir "custom_trainer_results_${Format}_shard$i.jsonl"
     $env:ELO_CUSTOM_TRAINER_STATUS_PATH  = Join-Path $ResultsDir "custom_trainer_status_${Format}_shard$i.json"
 
     Push-Location $shardDir
@@ -64,7 +64,7 @@ for ($i = 0; $i -lt $ShardCount; $i++) {
 }
 
 Remove-Item Env:\ELO_TOURNAMENT, Env:\ELO_CUSTOM_TRAINER_BATTLES, Env:\ELO_CUSTOM_TRAINER_PBS, Env:\ELO_FORMAT, `
-    Env:\ELO_SHARD_INDEX, Env:\ELO_SHARD_COUNT, Env:\ELO_CUSTOM_TRAINER_RESULTS_PATH, Env:\ELO_CUSTOM_TRAINER_STATUS_PATH `
+    Env:\ELO_SHARD_INDEX, Env:\ELO_SHARD_COUNT, Env:\ELO_TEST_RESULTS_PATH, Env:\ELO_CUSTOM_TRAINER_STATUS_PATH `
     -ErrorAction SilentlyContinue
 
 while (($procs | Where-Object { -not $_.Proc.HasExited }).Count -gt 0) {

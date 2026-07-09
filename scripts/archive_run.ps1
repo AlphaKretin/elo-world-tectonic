@@ -29,7 +29,7 @@ $errorLogPath = Join-Path $env:APPDATA "Pokemon Tectonic\errorlog.txt"
 $haveErrorLog = (Test-Path $errorLogPath) -and (Get-Item $errorLogPath).Length -gt 0
 $resultFiles = if ($IncludeResults) {
     Get-ChildItem -Path $ResultsDir -File | Where-Object {
-        $_.Name -match '^(elo_results_|elo_status_|elo_attempting_|elo_crash_streaks_|elo_turn_heartbeat_|watchdog_|game_stdout_|game_stderr_|bracket_|custom_trainer_)'
+        $_.Name -match '^(elo_results_|elo_status_|elo_attempting_|elo_crash_streaks_|elo_turn_heartbeat_|watchdog_|game_stdout_|game_stderr_|custom_trainer_|single_pairing_|batch_pairing_)'
     }
 } else { @() }
 

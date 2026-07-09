@@ -24,15 +24,15 @@ The rest of this README covers the tournament infrastructure itself — running 
 - `vendor/tectonic-content/Plugins/ELO Tournament/` — the headless harness:
   - `headless_boot.rb` — boot hook (`ENV["ELO_TOURNAMENT"]`-gated): jumps straight into the tournament instead of the title screen, plus headless-environment compatibility patches.
   - `trainer_pool.rb` — builds the real trainer roster from `GameData::Trainer`, with any active quarantines for known-bad matchups.
-  - `tournament.rb` — pairing, orchestration, resumable JSONL result logging, `EloTournament.testSinglePairing!` (a one-pairing diagnostic harness — see below), and the curse-stripping/uncursed-rebattle plumbing consumed in memory by `analysis/results_lib.py` (see "Curse-stripped battles" below).
+  - `tournament.rb` — pairing, orchestration, resumable JSONL result logging, `EloTournament.testSinglePairing!`/`testBatchPairings!` (one-pairing/many-pairing diagnostic harnesses — see below), and the curse-stripping/uncursed-rebattle plumbing consumed in memory by `analysis/results_lib.py` (see "Curse-stripped battles" below).
   - `custom_trainer_battles.rb` — `ELO_CUSTOM_TRAINER_BATTLES`-gated: battles one custom, not-in-the-pool trainer against the existing rated pool without touching the real round-robin — see "Testing a custom trainer against the pool" below.
   - `replay.rb` — `EloTournament.saveReplay!` (`ELO_SAVE_REPLAY`): re-runs one exact stored `(trainer1, trainer2, format, seed)` with recording enabled, producing a `.dat` watchable via the desktop viewer app (or in-game via the VS Recorder).
-  - `bracket.rb` — `EloTournament.runBracket!` (`ELO_RUN_BRACKET`): seeded top-16 single-elimination bracket, curse-strips entrants when the format is an `_uncursed`/`double`-style variant — see "Top 16 bracket" below.
 - `scripts/` — PowerShell tooling for running the tournament outside the editor (Windows; see "Running a tournament"):
   - `setup_shards.ps1` — syncs N independent copies of the game directory under `shards/` (one per parallel process) via `robocopy /MIR`. `-Recompile` does a `debug` launch first to pick up Plugin code changes.
   - `run_parallel.ps1` — launches N `run_tournament.ps1` watchdogs, one per shard directory. Archives `errorlog.txt` first (every launch, fresh start or resume alike). Takes `-Formats singles,doubles` (comma-separated; each shard works through the whole sequence on its own) and `-ChunksPerShard`/`-ChunksPerFormat` to split the pairing pool more finely than one chunk per shard directory, reassigning a freed-up directory to whichever (format, chunk) is next via a background supervisor (`supervise_local_chunks.ps1`) — mirrors `run_remote_parallel.ps1`'s design exactly, sharing the actual queue-building math with it via `_chunk_queue.ps1` so the two backends can't silently diverge.
   - `run_tournament.ps1` — the actual watchdog: launches `Game.exe`, restarts it on a stalled turn or a stalled whole battle, until the shard reports `finished:true`. Runs its own `-Formats` sequence to completion, one format at a time, in one shard directory.
   - `run_custom_trainer.ps1` / `watch_custom_trainer.ps1` — the custom-trainer-vs-pool diversion workflow — see "Testing a custom trainer against the pool" below.
+  - `run_single_pairing.ps1` / `run_batch_pairings.ps1` — one-off pairing diagnostics, outside the main pool/loop — see "Diagnosing a specific bad battle" below.
   - `pause_tournament.ps1` — stops every watchdog and `Game.exe`, in the right order (watchdogs first) so none auto-relaunch out from under you.
   - `archive_run.ps1` — moves `errorlog.txt` (always) and result/log files (`-IncludeResults`, for an intentional fresh start) into a timestamped `results/archive/.../` folder instead of deleting them (see `archive_lib.ps1`).
   - `watch_parallel_tournament.ps1` — read-only live status viewer, aggregated across every shard directory and format.
@@ -44,7 +44,7 @@ The rest of this README covers the tournament infrastructure itself — running 
     - `_remote_chunk_launch.ps1` / `supervise_remote_chunks.ps1` — chunk-oversubscription and subset-rerun support for the above — see "Running a tournament on a cloud fleet" below.
     - `remote_hosts.txt` — one droplet IP per line (gitignored — live infra detail, not code; copy from `remote_hosts.txt.example`). Shard index/count are derived from this file's contents, not passed as separate parameters.
 - `results/` — JSONL battle results, status/watchdog logs (gitignored except each subfolder's `.gitkeep`; results/ root itself holds no loose files, only these four subfolders):
-  - `results/local/` — local shard-run scratch space: everything `run_tournament.ps1`/`run_parallel.ps1` (and the bracket/custom-trainer diversions) write while running, one shard's worth of JSONL results, status/watchdog/game logs, chunk-queue state, etc.
+  - `results/local/` — local shard-run scratch space: everything `run_tournament.ps1`/`run_parallel.ps1` (and the custom-trainer/single-pairing/batch-pairing diversions) write while running, one shard's worth of JSONL results, status/watchdog/game logs, chunk-queue state, etc.
   - `results/remote/` — pull-landing zone only: exactly what `pull_remote_results.ps1`/`setup_remote_shards.ps1` scp down from the droplet fleet, plus the remote chunk-supervisor's own queue state/log. Not read directly by any analysis script.
   - `results/current/` — the actual ground truth every analysis script reads by default (`results_lib.RESULTS_DIR`). Promoting data from `results/remote/` or `results/local/` into here after a pull/run is a manual `cp`, by design — there's no tooling step to forget.
   - `results/archive/` — single consolidated root for every historical backup (`archive_run.ps1`, `apply_subset_rerun.py`, `setup_remote_shards.ps1`'s pre-provision archive), each in its own `<timestamp>_<label>/` folder. Moved (never deleted), so old data stays available for later diagnosis even once it's no longer valid for ratings.
@@ -93,17 +93,19 @@ Starting genuinely fresh (e.g. after a fix that invalidates prior results)? Arch
 
 ### Diagnosing a specific bad battle
 
-`EloTournament.testSinglePairing!` (gated by `ELO_TEST_SINGLE_PAIRING`) runs exactly one pairing, by explicit trainer identity and seed, outside the main pool/loop — much faster than reproducing an issue through the full tournament. Set the env vars and launch `Game.exe` directly from `vendor/tectonic-content` (non-debug, unless you've also edited Plugin code and need `debug` first):
+`EloTournament.testSinglePairing!` (gated by `ELO_TEST_SINGLE_PAIRING`) runs exactly one pairing, by explicit trainer identity and seed, outside the main pool/loop — much faster than reproducing an issue through the full tournament:
 
 ```powershell
-$env:ELO_TOURNAMENT = "1"
-$env:ELO_TEST_SINGLE_PAIRING = "1"
-$env:ELO_TEST_T1_TYPE = "YOUNGSTER"; $env:ELO_TEST_T1_NAME = "Joey"
-$env:ELO_TEST_T2_TYPE = "HARLEQUIN"; $env:ELO_TEST_T2_NAME = "Vincenzi"
-$env:ELO_TEST_SEED = "2786941428"
-.\vendor\tectonic-content\Game.exe
+.\scripts\run_single_pairing.ps1 -T1Type YOUNGSTER -T1Name Joey -T2Type HARLEQUIN -T2Name Vincenzi -Seed 2786941428
 ```
-Result lands in `vendor/tectonic-content/Analysis/single_pairing_test.txt`. Add `ELO_TEST_T1_VERSION`/`ELO_TEST_T2_VERSION` for non-zero trainer versions, or `ELO_TEST_PREBATTLE_ONLY=1` to dump each side's resolved party species without running a battle at all.
+Runs directly in `vendor/tectonic-content` (no shard dir needed for one battle) and copies the result out to `results/local/single_pairing_test_<timestamp>.txt`, printing it too. Add `-T1Version`/`-T2Version` for non-zero trainer versions, `-T1PartyIndices`/`-T2PartyIndices` (comma-separated, 0-based) to bisect which party member is responsible for a crash/hang, or `-PrebattleOnly` to dump each side's resolved party species without running a battle at all.
+
+For more than a handful of pairings (e.g. rerunning every battle affected by a behavior fix), `EloTournament.testBatchPairings!` (gated by `ELO_TEST_BATCH_PAIRINGS`) takes a tab-separated manifest instead of paying a fresh `Game.exe` boot per pairing:
+
+```powershell
+.\scripts\run_batch_pairings.ps1 -ManifestPath "C:\path\to\pairings.tsv" -ShardCount 8
+```
+Manifest format: `t1Type<TAB>t1Name<TAB>t1Version<TAB>t2Type<TAB>t2Name<TAB>t2Version<TAB>seed<TAB>battleMode` (one pairing per line, `#`-comments/blank lines OK; `battleMode` is the engine's own `single`/`double`/`triple`, not this repo's `singles`/`doubles` `ELO_FORMAT` convention). `-ShardCount` (default 1) splits the manifest round-robin across that many shard directories. Combined results land in `results/local/batch_pairing_results_<timestamp>.jsonl`.
 
 ### Testing a custom trainer against the pool
 
