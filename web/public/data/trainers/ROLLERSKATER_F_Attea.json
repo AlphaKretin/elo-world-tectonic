@@ -1,0 +1,181 @@
+{
+    "label": "ROLLERSKATER_F:Attea",
+    "title": "Developer Attea",
+    "trainerType": "ROLLERSKATER_F",
+    "identities": [],
+    "trueNames": [],
+    "isCursed": false,
+    "tribeBonuses": [],
+    "avgLevel": 70.0,
+    "maxLevel": 70,
+    "party": [
+        {
+            "species": "SLOWKING",
+            "speciesDisplay": "Slowking",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "SERENE",
+                "NOBLE",
+                "TACTICIAN"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Selective Memory",
+                    "type": "PSYCHIC"
+                },
+                {
+                    "name": "Slack Off",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Yawn",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "CLEFAIRY",
+            "speciesDisplay": "Clefairy",
+            "level": 70,
+            "shiny": false,
+            "nickname": "Kirby",
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                {
+                    "id": "EVIOLITE",
+                    "name": "Eviolite"
+                }
+            ],
+            "moves": [
+                {
+                    "name": "Metronome",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "CLEFABLE",
+            "speciesDisplay": "Clefable",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ESOTERIC",
+                "CHARMER",
+                "FORTUNE"
+            ],
+            "heldItems": [
+                {
+                    "id": "LIFEORB",
+                    "name": "Life Orb"
+                }
+            ],
+            "moves": [
+                {
+                    "name": "Metronome",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Wish",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "SMEARGLE",
+            "speciesDisplay": "Smeargle",
+            "level": 70,
+            "shiny": false,
+            "nickname": "The Avatar",
+            "tribes": [
+                "INDUSTRIOUS",
+                "LOYAL"
+            ],
+            "heldItems": [
+                {
+                    "id": "CRYSTALVEIL",
+                    "name": "Crystal Veil"
+                }
+            ],
+            "moves": [
+                {
+                    "name": "Metronome",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Discovered Power",
+                    "type": "QMARKS"
+                },
+                {
+                    "name": "Archmyth",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Recover",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "NIBELONG",
+            "speciesDisplay": "Nibelong",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "FORTUNE",
+                "NOBLE",
+                "TYRANNICAL"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Sacred Lots",
+                    "type": "DRAGON"
+                },
+                {
+                    "name": "Assist",
+                    "type": "NORMAL"
+                },
+                {
+                    "name": "Fake Out",
+                    "type": "NORMAL"
+                }
+            ]
+        },
+        {
+            "species": "UNOWN",
+            "speciesDisplay": "Unown",
+            "level": 70,
+            "shiny": false,
+            "nickname": null,
+            "tribes": [
+                "ANIMATED",
+                "ESOTERIC",
+                "STAMPEDE"
+            ],
+            "heldItems": [],
+            "moves": [
+                {
+                    "name": "Secret Power",
+                    "type": "QMARKS"
+                },
+                {
+                    "name": "Discovered Power",
+                    "type": "QMARKS"
+                }
+            ]
+        }
+    ]
+}
