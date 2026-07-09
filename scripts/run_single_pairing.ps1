@@ -35,30 +35,30 @@ param(
     [int]$T2Version = 0,
     [string]$T2PartyIndices = "",
 
-    [int]$Seed = 1,
+    [uint]$Seed = 1,
     [string]$BattleMode = "single",
     [switch]$PrebattleOnly
 )
 
-$RepoRoot   = Split-Path -Parent $PSScriptRoot
+$RepoRoot = Split-Path -Parent $PSScriptRoot
 $ResultsDir = Join-Path $RepoRoot "results\local"
-$GameDir    = Join-Path $RepoRoot "vendor\tectonic-content"
+$GameDir = Join-Path $RepoRoot "vendor\tectonic-content"
 New-Item -ItemType Directory -Force -Path $ResultsDir | Out-Null
 
-$stamp      = Get-Date -Format "yyyyMMdd_HHmmss"
+$stamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $destResult = Join-Path $ResultsDir "single_pairing_test_$stamp.txt"
 
-$env:ELO_TOURNAMENT          = "1"
+$env:ELO_TOURNAMENT = "1"
 $env:ELO_TEST_SINGLE_PAIRING = "1"
-$env:ELO_TEST_RESULTS_PATH   = $destResult
-$env:ELO_TEST_T1_TYPE        = $T1Type
-$env:ELO_TEST_T1_NAME        = $T1Name
-$env:ELO_TEST_T1_VERSION     = "$T1Version"
-$env:ELO_TEST_T2_TYPE        = $T2Type
-$env:ELO_TEST_T2_NAME        = $T2Name
-$env:ELO_TEST_T2_VERSION     = "$T2Version"
-$env:ELO_TEST_SEED           = "$Seed"
-$env:ELO_TEST_FORMAT         = $BattleMode
+$env:ELO_TEST_RESULTS_PATH = $destResult
+$env:ELO_TEST_T1_TYPE = $T1Type
+$env:ELO_TEST_T1_NAME = $T1Name
+$env:ELO_TEST_T1_VERSION = "$T1Version"
+$env:ELO_TEST_T2_TYPE = $T2Type
+$env:ELO_TEST_T2_NAME = $T2Name
+$env:ELO_TEST_T2_VERSION = "$T2Version"
+$env:ELO_TEST_SEED = "$Seed"
+$env:ELO_TEST_FORMAT = $BattleMode
 if ($T1PartyIndices) { $env:ELO_TEST_T1_PARTY_INDICES = $T1PartyIndices } else { Remove-Item Env:\ELO_TEST_T1_PARTY_INDICES -ErrorAction SilentlyContinue }
 if ($T2PartyIndices) { $env:ELO_TEST_T2_PARTY_INDICES = $T2PartyIndices } else { Remove-Item Env:\ELO_TEST_T2_PARTY_INDICES -ErrorAction SilentlyContinue }
 if ($PrebattleOnly) { $env:ELO_TEST_PREBATTLE_ONLY = "1" } else { Remove-Item Env:\ELO_TEST_PREBATTLE_ONLY -ErrorAction SilentlyContinue }

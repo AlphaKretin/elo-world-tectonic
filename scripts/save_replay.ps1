@@ -13,7 +13,7 @@
 param(
     [Parameter(Mandatory)][string]$Trainer1,
     [Parameter(Mandatory)][string]$Trainer2,
-    [Parameter(Mandatory)][int64]$Seed,
+    [Parameter(Mandatory)][uint]$Seed,
     [string]$Format = "singles",
     [string]$OutputName,
     [switch]$UseDebugFlag,
