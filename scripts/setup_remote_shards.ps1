@@ -59,7 +59,7 @@ if (-not $SkipResultsPull) {
             "root@${thisHost}:~/elo-test/results/*" "$pullDir/" 2>$null
     }
 
-    $pulled = @(Get-ChildItem -Path $PullDir -File -ErrorAction SilentlyContinue)
+    $pulled = @(Get-ChildItem -Path $PullDir -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -ne ".gitkeep" })
     if ($pulled.Count -gt 0) {
         $archiveDir = New-ArchiveDir -Label "pre_provision"
         Write-Output "Pulled $($pulled.Count) file(s) -- archiving to $archiveDir (moved, not deleted)"
