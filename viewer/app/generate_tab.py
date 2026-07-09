@@ -5,6 +5,7 @@ from PySide6.QtCore import QSettings, Signal
 from PySide6.QtWidgets import (
     QCheckBox,
     QComboBox,
+    QDialog,
     QFileDialog,
     QFormLayout,
     QHBoxLayout,
@@ -20,6 +21,7 @@ from PySide6.QtWidgets import (
 from app import asset_names, config as config_module, format_selector, game_assets, replay_env, replay_runner, ui_settings
 from app.replay_runner import ReplayRunner
 from app.trainer_names import TrainerNameResolver
+from app.trainer_picker_dialog import TrainerPickerDialog
 
 
 class GenerateTab(QWidget):
@@ -75,11 +77,16 @@ class GenerateTab(QWidget):
         self.debug_check = QCheckBox("Debug mode (shows the engine's console window)")
         self._is_dev_build = config_module.is_dev_build()
 
+        self.trainer1_choose_button = QPushButton("Choose...")
+        self.trainer2_choose_button = QPushButton("Choose...")
+
         trainer1_row = QHBoxLayout()
         trainer1_row.addWidget(self.trainer1_edit, 2)
+        trainer1_row.addWidget(self.trainer1_choose_button)
         trainer1_row.addWidget(self.trainer1_name_label, 3)
         trainer2_row = QHBoxLayout()
         trainer2_row.addWidget(self.trainer2_edit, 2)
+        trainer2_row.addWidget(self.trainer2_choose_button)
         trainer2_row.addWidget(self.trainer2_name_label, 3)
         format_row = QHBoxLayout()
         format_row.addWidget(QLabel("Battle type:"))
@@ -126,6 +133,8 @@ class GenerateTab(QWidget):
         self.watch_button.clicked.connect(self._on_watch_clicked)
         self.trainer1_edit.textChanged.connect(lambda text: self._update_name_label(self.trainer1_name_label, text))
         self.trainer2_edit.textChanged.connect(lambda text: self._update_name_label(self.trainer2_name_label, text))
+        self.trainer1_choose_button.clicked.connect(lambda: self._on_choose_trainer(self.trainer1_edit))
+        self.trainer2_choose_button.clicked.connect(lambda: self._on_choose_trainer(self.trainer2_edit))
         self._update_name_label(self.trainer1_name_label, self.trainer1_edit.text())
         self._update_name_label(self.trainer2_name_label, self.trainer2_edit.text())
 
@@ -135,6 +144,11 @@ class GenerateTab(QWidget):
         ui_settings.bind_combo(settings, "generate/backdrop", self.backdrop_combo)
         ui_settings.bind_combo(settings, "generate/backdrop_time", self.backdrop_time_combo)
         ui_settings.bind_checkbox(settings, "generate/debug", self.debug_check)
+
+    def _on_choose_trainer(self, target_edit):
+        dialog = TrainerPickerDialog(self.config, self)
+        if dialog.exec() == QDialog.Accepted:
+            target_edit.setText(dialog.selected_label())
 
     def _update_name_label(self, label_widget, raw_label):
         raw_label = raw_label.strip()

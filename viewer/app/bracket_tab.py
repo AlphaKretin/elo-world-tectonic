@@ -14,13 +14,17 @@ the background, so watching a replay is never spoiled ahead of time."""
 import glob
 import json
 import os
+import random
 
-from PySide6.QtCore import QSettings, Qt, Signal
+from PySide6.QtCore import QRegularExpression, QSettings, Qt, Signal
+from PySide6.QtGui import QRegularExpressionValidator
 from PySide6.QtWidgets import (
+    QCheckBox,
     QComboBox,
     QFrame,
     QHBoxLayout,
     QLabel,
+    QLineEdit,
     QMessageBox,
     QPushButton,
     QScrollArea,
@@ -29,8 +33,9 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import bracket_seeds, replay_env, ui_settings
+from app import bracket_seeds, custom_brackets, replay_env, ui_settings
 from app.bracket_canvas import BracketCanvas
+from app.bracket_manager_dialog import BracketManagerDialog
 from app.results_source import load_results_lib
 from app.sprite_loader import SpriteLoader
 from app.trainer_names import TrainerNameResolver, load_trainer_naming
@@ -64,7 +69,7 @@ class BracketTab(QWidget):
 
         format_row = QHBoxLayout()
         self.bracket_combo = QComboBox()
-        for entry in bracket_seeds.BRACKETS:
+        for entry in self._all_brackets():
             self.bracket_combo.addItem(entry["name"], entry)
         self.wins_needed_spin = QSpinBox()
         self.wins_needed_spin.setRange(1, 9)
@@ -73,6 +78,10 @@ class BracketTab(QWidget):
         format_row.addWidget(self.bracket_combo, 1)
         format_row.addWidget(QLabel("Games to win:"))
         format_row.addWidget(self.wins_needed_spin)
+        self.manage_brackets_button = QPushButton("Custom Brackets...")
+        format_row.addWidget(self.manage_brackets_button)
+        self.show_seeds_checkbox = QCheckBox("Show seeds")
+        format_row.addWidget(self.show_seeds_checkbox)
         self.reveal_button = QPushButton("Reveal remaining")
         format_row.addWidget(self.reveal_button)
         self.refresh_button = QPushButton("Refresh")
@@ -90,12 +99,15 @@ class BracketTab(QWidget):
 
         self.bracket_combo.currentIndexChanged.connect(self._on_bracket_changed)
         self.wins_needed_spin.valueChanged.connect(self._on_bracket_changed)
+        self.manage_brackets_button.clicked.connect(self._on_manage_brackets_clicked)
+        self.show_seeds_checkbox.toggled.connect(self._render)
         self.reveal_button.clicked.connect(self._on_reveal_remaining_clicked)
         self.refresh_button.clicked.connect(self._on_refresh_clicked)
 
         settings = QSettings()
         ui_settings.bind_combo(settings, "bracket/name", self.bracket_combo)
         ui_settings.bind_spinbox(settings, "bracket/wins_needed", self.wins_needed_spin)
+        ui_settings.bind_checkbox(settings, "bracket/show_seeds", self.show_seeds_checkbox)
 
         self._on_bracket_changed()
         self._precompute_other_formats()
@@ -114,6 +126,32 @@ class BracketTab(QWidget):
 
             self._bracket_lib = bracket_lib
         return self._bracket_lib
+
+    def _all_brackets(self):
+        """Curated brackets (bracket_seeds.py, source-controlled) followed by
+        custom ones (custom_brackets.json, local user data) -- combo entries
+        are treated identically regardless of which list they came from, see
+        bracket_tab.py module docstring / project plan discussion."""
+        return bracket_seeds.BRACKETS + custom_brackets.load_custom_brackets(self.config)
+
+    def _on_manage_brackets_clicked(self):
+        dialog = BracketManagerDialog(self.config, bracket_seeds.BRACKETS, parent=self)
+        dialog.exec()
+        if dialog.changed:
+            self._reload_bracket_combo()
+
+    def _reload_bracket_combo(self):
+        previous_entry = self.bracket_combo.currentData()
+        previous_name = previous_entry["name"] if previous_entry else None
+        self.bracket_combo.blockSignals(True)
+        self.bracket_combo.clear()
+        for entry in self._all_brackets():
+            self.bracket_combo.addItem(entry["name"], entry)
+        idx = self.bracket_combo.findText(previous_name) if previous_name else -1
+        if idx >= 0:
+            self.bracket_combo.setCurrentIndex(idx)
+        self.bracket_combo.blockSignals(False)
+        self._on_bracket_changed()
 
     def _on_bracket_changed(self):
         entry = self.bracket_combo.currentData()
@@ -141,6 +179,8 @@ class BracketTab(QWidget):
         self.status_label.setText("")
         self.reveal_button.setEnabled(True)
         self._load_results_index()
+        for match in self.rounds[0]:
+            self._ensure_match_seed(match)
         self._render()
 
     # -- results index (round-robin rows + cached bracket sidecars) --------
@@ -172,7 +212,7 @@ class BracketTab(QWidget):
         _build_base_index instead of paying build_results_index's full O(n)
         frozenset-index rebuild as a mid-session hitch. Silently skips a
         format that fails to load, same tolerance as Browse's version."""
-        seen_formats = {entry["format"] for entry in bracket_seeds.BRACKETS}
+        seen_formats = {entry["format"] for entry in self._all_brackets()}
         for fmt in seen_formats:
             if fmt == self.fmt or fmt in self._results_index_cache:
                 continue
@@ -226,22 +266,57 @@ class BracketTab(QWidget):
         except (OSError, json.JSONDecodeError):
             return None
 
-    def _match_replay_status(self, match):
-        """"none" | "draw" | "decisive" for this match's *current pending*
-        attempt (match.current_attempt_idx) -- not just "whatever's newest
-        on disk", so an attempt already applied into match.attempts is never
-        re-surfaced as pending again. A missing/unreadable sidecar is
-        treated the same as no replay at all, rather than surfacing a
-        replay we can't identify the outcome of."""
+    # -- seed bookkeeping ----------------------------------------------------
+
+    def _ensure_match_seed(self, match):
+        """Assigns match.seed the first time both entrants are known -- the
+        round-robin seed for this pairing if one exists (so the bracket
+        reproduces the known result by default), else a deterministic
+        fresh-generation seed. A no-op once seed is set (including after a
+        user reroll/edit), and a no-op while either entrant is still
+        unknown (a later round's match, before both its parent matches have
+        resolved)."""
+        if match.seed is not None or match.label_a is None or match.label_b is None:
+            return
+        bracket_lib = self._ensure_bracket_lib()
+        row = bracket_lib.pick_default_row(self.results_index, match.label_a, match.label_b)
+        if row is not None:
+            match.seed = row["seed"]
+        else:
+            match.seed = bracket_lib.derive_fresh_seed(
+                self.fmt, match.round_idx, match.match_idx, match.label_a, match.label_b
+            )
+
+    def _current_row(self, match):
+        """The row (round-robin, or a locally generated replay) whose seed
+        matches match.seed, or None if that seed hasn't been played yet.
+        Checks self.results_index first (round-robin plus any sidecar
+        already merged in by a past Refresh), then falls back to reading the
+        matching replay's sidecar directly off disk -- so a replay just
+        generated this session is picked up immediately, without needing an
+        explicit Refresh first (mirrors the old dual-source lookup this
+        replaces). A drawn row can never decide the match, so it's silently
+        consumed here -- recorded into match.attempts and match.seed
+        advanced to the next seed in the chain -- and lookup retried,
+        cascading through any number of consecutive draws. Only ever
+        returns None or a decisive (WIN/LOSS) row."""
+        bracket_lib = self._ensure_bracket_lib()
+        results_lib = load_results_lib(self.config.analysis_dir)
+        while True:
+            row = bracket_lib.find_row_for_seed(self.results_index, match.label_a, match.label_b, match.seed)
+            if row is None:
+                row = self._local_row_for_seed(match)
+            if row is None or row["result"] != results_lib.DRAW:
+                return row
+            bracket_lib.record_attempt(match, None, None, match.seed)
+            match.seed = bracket_lib.next_attempt_seed(match.seed)
+
+    def _local_row_for_seed(self, match):
         dat_path = self._find_existing_replay(match)
         if dat_path is None:
-            return "none"
+            return None
         sidecar = self._read_sidecar_for_replay(dat_path)
-        row = self._sidecar_as_row(sidecar) if sidecar else None
-        if row is None:
-            return "none"
-        results_lib = load_results_lib(self.config.analysis_dir)
-        return "decisive" if row["result"] in (results_lib.WIN, results_lib.LOSS) else "draw"
+        return self._sidecar_as_row(sidecar) if sidecar else None
 
     # -- sprites / curse marker --------------------------------------------
 
@@ -394,23 +469,20 @@ class BracketTab(QWidget):
         # never spoils a match before the user actually looks at it. Skip
         # and Watch are both equally explicit reveal actions though, so a
         # decisive replay already sitting on disk (this session or a past
-        # one) is just as skippable as an RR result.
-        replay_state = self._match_replay_status(match)  # "none" | "draw" | "decisive"
-        bracket_lib = self._ensure_bracket_lib()
-        rr_available = (
-            match.current_attempt_idx == 0
-            and bracket_lib.lookup_result(self.results_index, match.label_a, match.label_b) is not None
-        )
-        can_skip = rr_available or replay_state == "decisive"
+        # one) is just as skippable as an RR result. _current_row is keyed
+        # to match.seed specifically -- not "any known result for this
+        # pairing" -- so a rerolled seed with no result yet correctly shows
+        # Generate even though a different seed's result already exists.
+        row = self._current_row(match)
+        can_skip = row is not None
+        has_local_replay = can_skip and self._find_existing_replay(match) is not None
 
         # Score prefix only appears once the series is actually underway --
         # the common instant-Skip case (and any best-of-1 bracket) looks
         # exactly like it always has.
         score_prefix = f"{match.wins_a}-{match.wins_b} — " if (match.wins_a or match.wins_b) else ""
 
-        if replay_state == "draw":
-            status_label.setText(f"{score_prefix}Draw, rematch!")
-        elif replay_state == "decisive":
+        if has_local_replay:
             status_label.setText(f"{score_prefix}Replay ready")
         else:
             status_label.setText(f"{score_prefix}Ready" if can_skip else f"{score_prefix}Needs generation")
@@ -424,6 +496,29 @@ class BracketTab(QWidget):
         # is_valid() check.
         blocked_tooltip = "Waiting for the game files to finish downloading/compiling..." if self._vendor_blocked else ""
 
+        # Hidden by default -- the seed row makes every ready card taller
+        # than it needs to be for the common case of just clicking through
+        # a bracket, so it's opt-in via the toolbar's "Show seeds" checkbox
+        # rather than always shown.
+        if self.show_seeds_checkbox.isChecked():
+            seed_row = QHBoxLayout()
+            seed_row.setContentsMargins(0, 0, 0, 0)
+            seed_row.addWidget(QLabel("Seed:"))
+            seed_edit = QLineEdit(str(match.seed))
+            # QIntValidator caps out at a signed 32-bit int, but seeds here are
+            # unsigned 32-bit (derive_fresh_seed/next_attempt_seed's hash-based
+            # range, random.getrandbits(32) for reroll) -- a digits-only regex
+            # validator has no such ceiling.
+            seed_edit.setValidator(QRegularExpressionValidator(QRegularExpression(r"^\d+$"), seed_edit))
+            seed_edit.editingFinished.connect(lambda m=match, e=seed_edit: self._on_seed_edited(m, e))
+            seed_row.addWidget(seed_edit, 1)
+            reroll_button = QPushButton("🎲")
+            reroll_button.setFixedWidth(28)
+            reroll_button.setToolTip("Reroll to a random seed")
+            reroll_button.clicked.connect(lambda: self._on_reroll_clicked(match))
+            seed_row.addWidget(reroll_button)
+            layout.addLayout(seed_row)
+
         if can_skip:
             skip_button = QPushButton("Skip")
             skip_button.setEnabled(not self._vendor_blocked)
@@ -431,13 +526,14 @@ class BracketTab(QWidget):
             skip_button.clicked.connect(lambda: self._on_skip_clicked(match))
             footer.addWidget(skip_button)
 
-        if replay_state == "decisive":
+        if has_local_replay:
             watch_button = QPushButton("Watch")
             watch_button.setEnabled(not self._vendor_blocked)
             watch_button.setToolTip(blocked_tooltip)
             watch_button.clicked.connect(lambda: self._on_watch_clicked(match))
             footer.addWidget(watch_button)
-        else:
+
+        if not can_skip:
             needs_generation = True
             generate_button = QPushButton("Generate")
             generate_button.setEnabled(not self._vendor_blocked)
@@ -473,74 +569,61 @@ class BracketTab(QWidget):
         winner_rank = match.rank_a if winner_is_a else match.rank_b
         return winner_label, winner_rank
 
-    def _known_pending_row(self, match):
-        """The row describing match.current_attempt_idx's outcome, if
-        already known -- RR (attempt 0 only; RR has just one battle per
-        pairing) or a local replay sidecar for that exact pending attempt.
-        None if nothing is known yet, meaning a fresh Generate is needed."""
-        bracket_lib = self._ensure_bracket_lib()
-        if match.current_attempt_idx == 0:
-            row = bracket_lib.lookup_result(self.results_index, match.label_a, match.label_b)
-            if row is not None:
-                return row
-        dat_path = self._find_existing_replay(match)
-        if dat_path is None:
-            return None
-        sidecar = self._read_sidecar_for_replay(dat_path)
-        return self._sidecar_as_row(sidecar) if sidecar else None
-
     def _apply_known_pending_attempt(self, match):
-        """If match's current pending attempt is already known (RR or a
-        local sidecar, decisive or drawn), records it via
-        bracket_lib.record_attempt -- advancing the bracket tree too if that
-        decides the match -- and returns True. Otherwise leaves the match
-        untouched and returns False. Used by both an explicit Skip and
-        "Reveal remaining"'s cascade; Skip/Watch are the only things that
-        ever reveal a winner, but once something's already known, applying
-        it isn't itself a new reveal."""
-        row = self._known_pending_row(match)
+        """If match.seed's outcome is already known (RR or a local replay,
+        via _current_row -- which itself already consumes any draws found
+        along the way), records the decisive result via
+        bracket_lib.record_attempt -- advancing the bracket tree (and
+        seeding the newly-completed parent match) if that decides the
+        match, else advancing match.seed to the next seed in the chain for
+        the next game of the series -- and returns True. Otherwise leaves
+        the match untouched and returns False. Used by both an explicit
+        Skip and "Reveal remaining"'s cascade; Skip/Watch are the only
+        things that ever reveal a winner, but once something's already
+        known, applying it isn't itself a new reveal."""
+        row = self._current_row(match)
         if row is None:
             return False
         bracket_lib = self._ensure_bracket_lib()
-        results_lib = load_results_lib(self.config.analysis_dir)
-        if row["result"] == results_lib.DRAW:
-            bracket_lib.record_attempt(match, None, None, row.get("seed"))
-            return True
         winner_label, winner_rank = self._winner_from_row(match, row)
-        resolved = bracket_lib.record_attempt(match, winner_label, winner_rank, row.get("seed"))
+        resolved = bracket_lib.record_attempt(match, winner_label, winner_rank, match.seed)
         if resolved:
             bracket_lib.advance_winner(self.rounds, match.round_idx, match.match_idx, winner_label, winner_rank)
+            if match.round_idx + 1 < len(self.rounds):
+                parent = self.rounds[match.round_idx + 1][match.match_idx // 2]
+                self._ensure_match_seed(parent)
+        else:
+            match.seed = bracket_lib.next_attempt_seed(match.seed)
         return True
-
-    def _apply_pending_draw(self, match):
-        """If match's current pending attempt is an already-known *draw*
-        (from a local replay sidecar), records it so the attempt counter and
-        seed chain move on to the retry. Never auto-applies a decisive
-        result (RR or otherwise) -- that's Skip's job alone, since Generate
-        can be clicked even when RR/a decisive replay is already available
-        (e.g. the user wants to actually watch it), and that click must not
-        silently resolve the match instead."""
-        if self._match_replay_status(match) != "draw":
-            return
-        row = self._known_pending_row(match)
-        if row is None:
-            return
-        bracket_lib = self._ensure_bracket_lib()
-        bracket_lib.record_attempt(match, None, None, row.get("seed"))
 
     def _on_skip_clicked(self, match):
         if not self._apply_known_pending_attempt(match):
             QMessageBox.information(
-                self, "No result yet", "No decisive round-robin result available for this pairing yet -- use Generate."
+                self, "No result yet", "No result available yet for this seed -- use Generate."
             )
             return
         self._render()
 
+    def _on_seed_edited(self, match, seed_edit):
+        text = seed_edit.text().strip()
+        try:
+            seed = int(text)
+        except ValueError:
+            self._render()  # revert the field to match.seed's last valid value
+            return
+        if seed != match.seed:
+            match.seed = seed
+            self._render()
+
+    def _on_reroll_clicked(self, match):
+        match.seed = random.getrandbits(32)
+        self._render()
+
     def _on_watch_clicked(self, match):
-        # Only ever offered when _match_replay_status found a decisive local
-        # replay (see _build_match_row), so this just hands off -- winning
-        # doesn't get revealed here. It's revealed by handle_replay_finished,
-        # once the replay has actually finished playing, not the moment it's
+        # Only ever offered when _current_row found a decisive local replay
+        # (see _build_match_card), so this just hands off -- winning doesn't
+        # get revealed here. It's revealed by handle_replay_finished, once
+        # the replay has actually finished playing, not the moment it's
         # opened.
         existing = self._find_existing_replay(match)
         if existing is None:
@@ -554,9 +637,9 @@ class BracketTab(QWidget):
         but result 0 -- the engine's pre-battle sentinel, never cleared
         because no decision was reached). A genuine draw (result 5) now does
         apply, same as a decisive result -- a draw is itself a played attempt
-        that must be recorded to keep the next attempt's seed chain and slug
-        numbering correct, unlike the old single-game bracket where a draw
-        never needed any bookkeeping."""
+        that must be recorded to keep the next attempt's seed chain correct,
+        unlike the old single-game bracket where a draw never needed any
+        bookkeeping."""
         results_lib = load_results_lib(self.config.analysis_dir)
         valid = (results_lib.WIN, results_lib.LOSS, results_lib.DRAW)
         if not result.get("ok") or result.get("result") not in valid:
@@ -573,10 +656,10 @@ class BracketTab(QWidget):
         match = self.rounds[round_idx][match_idx]
         if match.resolved:
             return
-        # Guards against a stale/duplicate signal for an attempt already
-        # applied -- the finished file must be exactly the current pending
-        # attempt, not an earlier one.
-        if name != self._match_slug_for_attempt(match, match.current_attempt_idx):
+        # Guards against a stale/duplicate signal for a seed already applied
+        # -- the finished file must be exactly the current pending seed, not
+        # an earlier one.
+        if name != self._match_slug_for_seed(match, match.seed):
             return
 
         if not self._apply_known_pending_attempt(match):
@@ -588,47 +671,24 @@ class BracketTab(QWidget):
         # the user can apply Generate's own customization (backdrop, debug
         # mode, etc.). The output name stays bracket-recognizable so the
         # sidecar Generate writes gets picked up as a cached result the next
-        # time this tab is refreshed. If the current pending attempt is
-        # already a known draw, silently consume it first so this Generate
-        # produces the *next* attempt rather than re-numbering the same one.
-        self._apply_pending_draw(match)
-        attempt = match.current_attempt_idx
-        trainer1_label, trainer2_label, seed = self._order_and_seed_for_generate(match)
-        slug = self._match_slug_for_attempt(match, attempt)
+        # time this tab is refreshed. Generate is only ever offered when
+        # _current_row found nothing for match.seed (see _build_match_card),
+        # so there's never a historical row to reproduce here -- trainer
+        # order is always order_key's canonical order (see
+        # project_trainer_order_dependence memory for why order isn't
+        # cosmetic), never RR's order, since a fresh seed by definition has
+        # no RR row backing it.
+        bracket_lib = self._ensure_bracket_lib()
+        trainer1_label, trainer2_label = bracket_lib.order_key.canonical_pair_order(match.label_a, match.label_b)
+        slug = self._match_slug_for_seed(match, match.seed)
         self.generate_requested.emit({
             "trainer1": trainer1_label,
             "trainer2": trainer2_label,
-            "seed": seed,
+            "seed": match.seed,
             "format": self.fmt,
             "output_name": slug,
         })
         self._render()
-
-    def _order_and_seed_for_generate(self, match):
-        """(trainer1_label, trainer2_label, seed) for match.current_attempt_idx's
-        fresh generation. Trainer order is NOT cosmetic -- some battle
-        mechanics are keyed to battler slot rather than trainer identity, so
-        which trainer is trainer1 can change the outcome (see
-        project_trainer_order_dependence memory). So the very first attempt,
-        when a decisive RR result already exists for this pairing, reuses
-        that row's own trainer1/trainer2 verbatim (not just its seed) --
-        otherwise reusing the seed with a different order would silently
-        reproduce a *different* battle than the historical one this is
-        supposed to represent. Every other case (no RR result, or any
-        later attempt) has no historical order to match, so it uses
-        order_key's canonical order -- the same deterministic order a real
-        tournament run would have used for this pairing."""
-        bracket_lib = self._ensure_bracket_lib()
-        if not match.attempts:
-            row = bracket_lib.lookup_result(self.results_index, match.label_a, match.label_b)
-            if row is not None:
-                return row["trainer1"], row["trainer2"], row["seed"]
-            trainer1_label, trainer2_label = bracket_lib.order_key.canonical_pair_order(match.label_a, match.label_b)
-            seed = bracket_lib.derive_fresh_seed(self.fmt, match.round_idx, match.match_idx, match.label_a, match.label_b)
-            return trainer1_label, trainer2_label, seed
-        trainer1_label, trainer2_label = order_key.canonical_pair_order(match.label_a, match.label_b)
-        seed = bracket_lib.next_attempt_seed(match.attempts[-1]["seed"])
-        return trainer1_label, trainer2_label, seed
 
     def _on_reveal_remaining_clicked(self):
         changed = True
@@ -674,17 +734,16 @@ class BracketTab(QWidget):
 
     # -- replay/seed bookkeeping ----------------------------------------------
 
-    def _match_slug_for_attempt(self, match, attempt):
+    def _match_slug_for_seed(self, match, seed):
         bracket_lib = self._ensure_bracket_lib()
         return bracket_lib.bracket_replay_slug(
-            self.fmt, match.round_idx, match.match_idx, match.rank_a, match.label_a, match.rank_b, match.label_b,
-            attempt=attempt,
+            self.fmt, match.round_idx, match.match_idx, match.rank_a, match.label_a, match.rank_b, match.label_b, seed
         )
 
     def _find_existing_replay(self, match):
-        """.dat path for match.current_attempt_idx specifically -- not just
-        "whatever's newest on disk" -- so an attempt already applied into
-        match.attempts is never re-surfaced as pending again."""
-        slug = self._match_slug_for_attempt(match, match.current_attempt_idx)
+        """.dat path for match.seed specifically -- not just "whatever's
+        newest on disk" -- so a different seed's replay for this same match
+        position is never mistaken for this one."""
+        slug = self._match_slug_for_seed(match, match.seed)
         return replay_env.find_existing_replay(self.config.replay_dir, slug)
 

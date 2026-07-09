@@ -26,3 +26,13 @@ def parse_format_key(fmt):
     battle_type = "doubles" if "double" in fmt else "singles"
     curse_variant = "uncursed" if "uncursed" in fmt else "cursed"
     return battle_type, curse_variant
+
+
+def format_label(fmt):
+    """Human-readable "Singles / Cursed" form of a raw format string, for
+    display contexts (e.g. the custom brackets list) that shouldn't show
+    fmt's internal key spelling directly."""
+    battle_type, curse_variant = parse_format_key(fmt)
+    battle_labels = dict(BATTLE_TYPES)
+    curse_labels = dict(CURSE_VARIANTS)
+    return f"{battle_labels[battle_type]} / {curse_labels[curse_variant]}"

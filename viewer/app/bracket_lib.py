@@ -51,6 +51,12 @@ class Match:
         self.attempts = []  # ordered list of {"seed": int, "winner_label": str | None}; None = draw
         self.winner_label = None
         self.winner_rank = None
+        # The seed for the currently-pending attempt -- what Watch/Skip/
+        # Generate act on right now. None until both entrants are known
+        # (see bracket_tab.py's _ensure_match_seed); user-editable/rerollable
+        # from there on, and advanced by bracket_tab.py after each recorded
+        # attempt (a draw, or a decisive-but-not-yet-final game).
+        self.seed = None
 
     @property
     def current_attempt_idx(self):
@@ -159,12 +165,30 @@ def build_results_index(rows):
     return index
 
 
-def lookup_result(results_index, label_a, label_b):
-    """First decisive (non-draw) row for this pairing, if any. Draws are
-    skipped rather than treated as resolving the match -- a drawn RR sample
-    doesn't tell us who'd actually win a decisive bracket match."""
-    for row in results_index.get(frozenset({label_a, label_b}), []):
+def pick_default_row(results_index, label_a, label_b):
+    """Any existing row (round-robin or a previously-generated/merged
+    sidecar) for this pairing, preferring a decisive one over a draw, or
+    None. Used only to choose a match's *initial* seed (so a bracket
+    reproduces the known result by default) -- never for deciding whether
+    Watch/Generate should be offered, which is exact-seed matching via
+    find_row_for_seed instead."""
+    rows = results_index.get(frozenset({label_a, label_b}), [])
+    for row in rows:
         if row.get("result") in (results_lib.WIN, results_lib.LOSS):
+            return row
+    return rows[0] if rows else None
+
+
+def find_row_for_seed(results_index, label_a, label_b, seed):
+    """The row (if any) for this pairing whose seed exactly matches --
+    round-robin and locally-generated results share one index (see
+    BracketTab._merge_cached_sidecars), so this is the single source of
+    truth for whether *this specific* seed has already been played,
+    regardless of where that result came from. A rerolled seed that's never
+    been played simply has no matching row here, distinct from -- not
+    shadowed by -- any other seed's row for the same pairing."""
+    for row in results_index.get(frozenset({label_a, label_b}), []):
+        if row.get("seed") == seed:
             return row
     return None
 
@@ -197,19 +221,22 @@ def next_attempt_seed(previous_seed):
     return _stable_hash("bracket-retry", previous_seed)
 
 
-def bracket_replay_slug(fmt, round_idx, match_idx, rank_a, label_a, rank_b, label_b, attempt=0):
+def bracket_replay_slug(fmt, round_idx, match_idx, rank_a, label_a, rank_b, label_b, seed):
     """Filename (sans extension) for a bracket match's replay .dat, mirroring
-    bracket.rb's bracketReplaySlug naming convention."""
+    bracket.rb's bracketReplaySlug naming convention (with a seed suffix
+    bracket.rb doesn't have -- see find_row_for_seed's docstring for why: it
+    makes every distinct seed's replay for this same match position get its
+    own file automatically, so a rerolled-and-regenerated attempt never
+    collides with or overwrites an earlier one; best-of-N retries already
+    get distinct seeds via next_attempt_seed chaining, so they get distinct
+    filenames the same way, with no separate attempt counter needed)."""
     def slugify(label):
         return "".join(c if c.isalnum() or c in "_.-" else "_" for c in label)
 
-    slug = (
+    return (
         f"bracket_{fmt}_r{round_idx + 1}m{match_idx + 1}"
-        f"_rank{rank_a}-{slugify(label_a)}_vs_rank{rank_b}-{slugify(label_b)}"
+        f"_rank{rank_a}-{slugify(label_a)}_vs_rank{rank_b}-{slugify(label_b)}_seed{seed}"
     )
-    if attempt:
-        slug += f"_attempt{attempt}"
-    return slug
 
 
 def parse_bracket_slug(name):
