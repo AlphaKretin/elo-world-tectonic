@@ -44,10 +44,21 @@ class _DisabledTabCursorFilter(QObject):
 
 
 class MainWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self, on_progress=None):
+        """on_progress, if given, is called with a short status string
+        between each expensive tab's construction below (Browse/Trainers/
+        Bracket each load and cache a results file's worth of rows) --
+        main.py wires it to a splash screen so boot has some visible
+        progress instead of a blank window for however long that data load
+        takes, rather than trying to thread the loading itself off the main
+        thread (Qt widgets aren't safe to build outside it anyway)."""
         super().__init__()
         self.setWindowTitle("Elo World Tectonic — Replay Viewer")
         self.resize(900, 700)
+
+        def report(message):
+            if on_progress is not None:
+                on_progress(message)
 
         self.config = AppConfig()
         self._current_manifest = None
@@ -70,11 +81,16 @@ class MainWindow(QMainWindow):
         layout.addWidget(self.vendor_progress)
 
         self.tabs = QTabWidget()
+        report("Loading battle results...")
         self.browse_tab = BrowseTab(self.config)
+        report("Loading generate/watch tabs...")
         self.generate_tab = GenerateTab(self.config)
         self.watch_tab = WatchTab(self.config)
+        report("Loading bracket...")
         self.bracket_tab = BracketTab(self.config)
+        report("Loading trainer highlights...")
         self.trainers_tab = TrainersTab(self.config)
+        report("Finishing up...")
         # Battles/Trainers/Bracket each feed into Generate/Watch, so the
         # latter two sit at the end rather than splitting the "sources" up.
         self.tabs.addTab(self.browse_tab, "Battles")

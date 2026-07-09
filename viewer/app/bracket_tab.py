@@ -54,6 +54,7 @@ class BracketTab(QWidget):
         self.fmt = None
         self.rounds = None
         self.results_index = {}
+        self._results_index_cache = {}  # fmt -> base index (round-robin rows only, no sidecars) -- see _load_results_index
         self._trainer_data_cache = None
         self._naming_cache = None
         self._vendor_blocked = False
@@ -97,6 +98,7 @@ class BracketTab(QWidget):
         ui_settings.bind_spinbox(settings, "bracket/wins_needed", self.wins_needed_spin)
 
         self._on_bracket_changed()
+        self._precompute_other_formats()
 
     # -- setup / teardown --------------------------------------------------
 
@@ -144,11 +146,40 @@ class BracketTab(QWidget):
     # -- results index (round-robin rows + cached bracket sidecars) --------
 
     def _load_results_index(self):
-        results_lib = load_results_lib(self.config.analysis_dir)
-        bracket_lib = self._ensure_bracket_lib()
-        rows = results_lib.load_results(self.fmt, results_dir=self.config.results_dir)
-        self.results_index = bracket_lib.build_results_index(rows)
+        base_index = self._build_base_index(self.fmt)
+        # Copied so the sidecar merge below (which mutates self.results_index
+        # in place) never corrupts the cached base index -- otherwise
+        # switching back to this format later would re-append the same
+        # sidecar rows on top of ones already merged in last time.
+        self.results_index = {key: list(rows) for key, rows in base_index.items()}
         self._merge_cached_sidecars()
+
+    def _build_base_index(self, fmt):
+        base_index = self._results_index_cache.get(fmt)
+        if base_index is None:
+            results_lib = load_results_lib(self.config.analysis_dir)
+            bracket_lib = self._ensure_bracket_lib()
+            rows = results_lib.load_results(fmt, results_dir=self.config.results_dir)
+            base_index = bracket_lib.build_results_index(rows)
+            self._results_index_cache[fmt] = base_index
+        return base_index
+
+    def _precompute_other_formats(self):
+        """Mirrors BrowseTab's _precompute_other_formats: builds the
+        (sidecar-free) results index for every other bracket format right
+        after construction, while the boot splash is already up, so later
+        switching to a bracket that uses one of them hits the cache in
+        _build_base_index instead of paying build_results_index's full O(n)
+        frozenset-index rebuild as a mid-session hitch. Silently skips a
+        format that fails to load, same tolerance as Browse's version."""
+        seen_formats = {entry["format"] for entry in bracket_seeds.BRACKETS}
+        for fmt in seen_formats:
+            if fmt == self.fmt or fmt in self._results_index_cache:
+                continue
+            try:
+                self._build_base_index(fmt)
+            except (OSError, FileNotFoundError, ValueError):
+                continue
 
     def _merge_cached_sidecars(self):
         bracket_lib = self._ensure_bracket_lib()
@@ -609,6 +640,11 @@ class BracketTab(QWidget):
         # Picks up sidecars written by a hand-off to the Generate tab (which
         # doesn't report back to this tab directly) or by anything else
         # dropped into replay_metadata_dir since this format was last loaded.
+        # Sidecars are always re-scanned fresh regardless of the cache below
+        # (see _merge_cached_sidecars) -- busting this format's cached base
+        # index too is what makes a manually-requested Refresh also pick up
+        # newly-generated round-robin results, not just sidecars.
+        self._results_index_cache.pop(self.fmt, None)
         self._load_results_index()
         self._render()
 

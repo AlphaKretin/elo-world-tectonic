@@ -261,18 +261,14 @@ class TrainersTab(QWidget):
                 except (OSError, FileNotFoundError):
                     continue  # no ratings for this format yet -- skip it, not an error
 
-                # compute_best_worst reads results via its own module-level
-                # RESULTS_DIR global (mirrors best_worst.py's own
-                # --results-dir handling in main()) rather than taking a
-                # results_dir parameter, so point it at this app's
-                # configured results dir before calling.
-                best_worst_lib.RESULTS_DIR = self.config.results_dir
-                best_win, worst_loss = best_worst_lib.compute_best_worst(fmt, ratings)
-
                 try:
                     rows = results_lib.load_results(fmt, results_dir=self.config.results_dir)
                 except (OSError, FileNotFoundError):
                     rows = []
+                # rows is passed in so compute_best_worst doesn't have to do
+                # its own second full load_results() disk read + JSON parse
+                # of the same format.
+                best_win, worst_loss = best_worst_lib.compute_best_worst(fmt, ratings, rows=rows)
                 self_mirror = notable_lib.find_self_mirror_losses(rows, trainer_data, ratings)
                 self_mirror_by_loser = {entry["loser"]: entry for entry in self_mirror}
 

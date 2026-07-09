@@ -57,3 +57,13 @@ class TrainerNameResolver:
         if not label:
             return label
         return self._display_names.get(label, label)
+
+    def names_map(self):
+        """The full label -> display name dict, for a caller that's about
+        to look up many labels in a tight loop (e.g. BrowseTab building its
+        per-row cache for a whole results file) and wants a single plain
+        dict.get() per lookup instead of paying display_name()'s
+        _ensure_loaded()-check-plus-function-call overhead on every one of
+        hundreds of thousands of calls."""
+        self._ensure_loaded()
+        return self._display_names

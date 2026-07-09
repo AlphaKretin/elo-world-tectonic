@@ -55,6 +55,8 @@ RESULT_FILTERS = [
 ]
 
 
+
+
 class ResultsTableModel(QAbstractTableModel):
     """Backs the Browse tab's table with plain Python lists instead of
     QTableWidgetItems.
@@ -77,16 +79,25 @@ class ResultsTableModel(QAbstractTableModel):
         super().__init__(parent)
         self._names = names_resolver
         self._rows = []  # raw dicts for the current format, load order
-        self._cache = []  # precomputed per-row display/search fields, same order as _rows
+        self._lib = None  # results_lib module for the current format, needed by data()'s lazy result-label formatting
+        self._cache = []  # precomputed per-row search/sort fields, same order as _rows -- display *_text formatting is done lazily in data(), see _build_cache
         self._visible = []  # indices into _rows/_cache, current filter+sort order
         self._sort_column = -1
         self._sort_order = Qt.AscendingOrder
 
-    def set_rows(self, rows, lib, ratings=None):
+    def set_rows(self, rows, lib, ratings=None, cache=None):
+        """cache lets a caller that already built this exact rows list's
+        per-row cache once (see BrowseTab's format-keyed cache -- there are
+        only 4 possible battle_type x curse_variant combos, so keeping all
+        4 built caches resident is a small, bounded memory cost) skip
+        rebuilding it. Returns the cache actually used, so a first-time
+        caller can stash what got built here for reuse later."""
         self.beginResetModel()
         self._rows = rows
-        ratings = ratings or {}
-        self._cache = [self._build_cache(row, lib, ratings) for row in rows]
+        self._lib = lib
+        if cache is None:
+            cache = self.build_row_cache(rows, lib, ratings)
+        self._cache = cache
         self._visible = list(range(len(rows)))
         # Reapply whatever sort was already active instead of dropping back
         # to load order -- previously this unconditionally cleared
@@ -95,12 +106,40 @@ class ResultsTableModel(QAbstractTableModel):
         if self._sort_column >= 0:
             self._resort()
         self.endResetModel()
+        return self._cache
 
-    def _build_cache(self, row, lib, ratings):
+    def build_row_cache(self, rows, lib, ratings):
+        """The per-row cache list for `rows`, without touching this model's
+        own live state -- lets a caller precompute another format's cache
+        (e.g. BrowseTab warming the other 3 battle_type x curse_variant
+        combos during boot, under the splash screen, rather than paying for
+        it as a hitch the first time the user switches there) without
+        resetting/flickering whatever's currently on screen."""
+        ratings = ratings or {}
+        names_map = self._names.names_map()
+        return [self._build_cache(row, lib, ratings, names_map) for row in rows]
+
+    def _build_cache(self, row, lib, ratings, names_map):
+        """Precomputes only what filtering (apply_filter) and sorting
+        (_resort) need over *every* row up front. Formatted display strings
+        (seed_text, rounds_text, result_label, the rating/diff *_text
+        fields) are deliberately left out and computed lazily in data()
+        instead -- a results file runs into the hundreds of thousands of
+        rows, but a QTableView only ever calls data() for the couple dozen
+        rows actually painted in the viewport, so eagerly formatting all of
+        them here on every load (format switch, refresh) was doing orders
+        of magnitude more string formatting than the UI could ever show.
+
+        t1_disp/t2_disp *do* still belong here, unlike those -- display,
+        search, and sort all need them for every row, not just visible
+        ones. names_map is the resolver's already-loaded label -> name dict
+        (see TrainerNameResolver.names_map), looked up once per set_rows()
+        call rather than going through display_name()'s per-call
+        _ensure_loaded() check hundreds of thousands of times."""
         t1_raw = row.get("trainer1", "") or ""
         t2_raw = row.get("trainer2", "") or ""
-        t1_disp = self._names.display_name(t1_raw)
-        t2_disp = self._names.display_name(t2_raw)
+        t1_disp = names_map.get(t1_raw, t1_raw) if t1_raw else t1_raw
+        t2_disp = names_map.get(t2_raw, t2_raw) if t2_raw else t2_raw
         result = row.get("result")
         if result == lib.WIN:
             result_label = "T1 won"
@@ -133,26 +172,34 @@ class ResultsTableModel(QAbstractTableModel):
         return {
             "t1_disp": t1_disp,
             "t2_disp": t2_disp,
+            # Precomputed once here rather than in the column-0/1/3 sort key
+            # lambdas below: _resort() re-runs those lambdas over every
+            # visible row on every sort *and* every filter change (since a
+            # filter reapplies the active sort), so a .lower() there was
+            # redone from scratch each time instead of once per row per load.
+            "t1_disp_lower": t1_disp.lower(),
+            "t2_disp_lower": t2_disp.lower(),
             "t1_search": f"{t1_raw} {t1_disp}".lower(),
             "t2_search": f"{t2_raw} {t2_disp}".lower(),
             "seed": row.get("seed") or 0,
-            "seed_text": str(row.get("seed", "")),
             "rounds": row.get("rounds") or 0,
-            # +1 for display: the engine's stored round count is 0-indexed
-            # (see replay_runner.describe_result); sort key above stays raw
-            # since a uniform +1 shift doesn't change ordering.
-            "rounds_text": str(row.get("rounds") + 1) if row.get("rounds") is not None else "",
             "result": result,
-            "result_label": result_label,
+            "result_label_lower": result_label.lower(),
             "t1_rating": t1_rating,
             "t2_rating": t2_rating,
-            "t1_rating_text": f"{t1_rating:.0f}" if t1_rating is not None else "",
-            "t2_rating_text": f"{t2_rating:.0f}" if t2_rating is not None else "",
             "rating_diff": rating_diff,
-            "rating_diff_text": f"{rating_diff:+.0f}" if rating_diff is not None else "",
             "abs_rating_diff": abs_rating_diff,
-            "abs_rating_diff_text": f"{abs_rating_diff:.0f}" if abs_rating_diff is not None else "",
         }
+
+    def _result_label(self, result):
+        lib = self._lib
+        if result == lib.WIN:
+            return "T1 won"
+        if result == lib.LOSS:
+            return "T2 won"
+        if result == lib.DRAW:
+            return "Draw"
+        return str(result) if result is not None else ""
 
     def apply_filter(self, t1_query, t2_query, wanted_result):
         self.beginResetModel()
@@ -175,10 +222,10 @@ class ResultsTableModel(QAbstractTableModel):
         self.endResetModel()
 
     _SORT_KEYS = {
-        0: lambda cache: cache["t1_disp"].lower(),
-        1: lambda cache: cache["t2_disp"].lower(),
+        0: lambda cache: cache["t1_disp_lower"],
+        1: lambda cache: cache["t2_disp_lower"],
         2: lambda cache: cache["seed"],
-        3: lambda cache: cache["result_label"].lower(),
+        3: lambda cache: cache["result_label_lower"],
         4: lambda cache: cache["rounds"],
     }
 
@@ -188,28 +235,42 @@ class ResultsTableModel(QAbstractTableModel):
     # currently sorted. A plain (is_none, value) key handles this for
     # ascending, but list.sort(reverse=True) reverses the *whole* key
     # tuple, so under descending order the is_none flag flips too and Nones
-    # jump to the front instead. These take the sort direction as an
-    # explicit argument and negate the value themselves instead, keeping
-    # the is_none rank constant regardless of direction.
-    _NONE_LAST_SORT_KEYS = {
-        5: lambda cache: cache["t1_rating"],
-        6: lambda cache: cache["t2_rating"],
-        7: lambda cache: cache["rating_diff"],
-        8: lambda cache: cache["abs_rating_diff"],
+    # jump to the front instead.
+    _NONE_LAST_SORT_FIELDS = {
+        5: "t1_rating",
+        6: "t2_rating",
+        7: "rating_diff",
+        8: "abs_rating_diff",
     }
-
-    @staticmethod
-    def _none_last_key(value, reverse):
-        if value is None:
-            return (1, 0)
-        return (0, -value if reverse else value)
 
     def _resort(self):
         cache = self._cache
         reverse = self._sort_order == Qt.DescendingOrder
-        none_last_fn = self._NONE_LAST_SORT_KEYS.get(self._sort_column)
-        if none_last_fn is not None:
-            self._visible.sort(key=lambda i: self._none_last_key(none_last_fn(cache[i]), reverse))
+        none_last_field = self._NONE_LAST_SORT_FIELDS.get(self._sort_column)
+        if none_last_field is not None:
+            # A plain ascending sort over (is_none, maybe-negated value)
+            # keeps None last regardless of direction without ever needing
+            # reverse=True here -- negating inline in one flat local
+            # function instead of going through the wrapper-lambda-calling-
+            # another-lambda-calling-a-staticmethod chain this used to be.
+            # That indirection cost 2 extra function calls per row on every
+            # _resort() (which runs on every filter change too, not just a
+            # header click) -- measured at ~150-225ms for a full ~150k-row
+            # format. Deliberately NOT precomputed in _build_cache instead:
+            # that traded a per-sort cost for a per-load cost, but paid for
+            # every row of every format regardless of whether it's ever
+            # sorted by rating, and got paid up to 4x over now that Browse
+            # precomputes every format's cache at boot (see
+            # _precompute_other_formats) -- worse net cost than this.
+            if reverse:
+                def key(i):
+                    value = cache[i][none_last_field]
+                    return (1, 0) if value is None else (0, -value)
+            else:
+                def key(i):
+                    value = cache[i][none_last_field]
+                    return (1, 0) if value is None else (0, value)
+            self._visible.sort(key=key)
         else:
             key_fn = self._SORT_KEYS[self._sort_column]
             self._visible.sort(key=lambda i: key_fn(cache[i]), reverse=reverse)
@@ -246,21 +307,39 @@ class ResultsTableModel(QAbstractTableModel):
     def data(self, index, role=Qt.DisplayRole):
         if not index.isValid():
             return None
-        cache = self._cache[self._visible[index.row()]]
+        if role != Qt.DisplayRole:
+            return None
+        actual = self._visible[index.row()]
+        cache = self._cache[actual]
         col = index.column()
-        if role == Qt.DisplayRole:
-            return (
-                cache["t1_disp"],
-                cache["t2_disp"],
-                cache["seed_text"],
-                cache["result_label"],
-                cache["rounds_text"],
-                cache["t1_rating_text"],
-                cache["t2_rating_text"],
-                cache["rating_diff_text"],
-                cache["abs_rating_diff_text"],
-            )[col]
+        if col == 0:
+            return cache["t1_disp"]
+        if col == 1:
+            return cache["t2_disp"]
+        if col == 2:
+            return str(self._rows[actual].get("seed", ""))
+        if col == 3:
+            return self._result_label(cache["result"])
+        if col == 4:
+            # +1 for display: the engine's stored round count is 0-indexed
+            # (see replay_runner.describe_result); the sort key in _resort
+            # stays raw since a uniform +1 shift doesn't change ordering.
+            rounds = self._rows[actual].get("rounds")
+            return str(rounds + 1) if rounds is not None else ""
+        if col == 5:
+            return self._rating_text(cache["t1_rating"])
+        if col == 6:
+            return self._rating_text(cache["t2_rating"])
+        if col == 7:
+            diff = cache["rating_diff"]
+            return f"{diff:+.0f}" if diff is not None else ""
+        if col == 8:
+            return self._rating_text(cache["abs_rating_diff"])
         return None
+
+    @staticmethod
+    def _rating_text(value):
+        return f"{value:.0f}" if value is not None else ""
 
 
 class BrowseTab(QWidget):
@@ -278,6 +357,14 @@ class BrowseTab(QWidget):
         self._current_format = None
         self._names = TrainerNameResolver(config)
         self._model = ResultsTableModel(self._names)
+        # fmt -> (rows, lib, built per-row cache), so switching back to an
+        # already-visited format skips rebuilding ResultsTableModel's cache
+        # from scratch. Bounded to however many format_selector combos
+        # exist (4 today: battle_type x curse_variant) rather than growing
+        # unboundedly, so keeping every entry resident for the tab's
+        # lifetime is a small, fixed memory cost -- not the "duplicate
+        # everything" RAM tax that sounds expensive at a glance.
+        self._format_row_cache = {}
 
         layout = QVBoxLayout(self)
 
@@ -349,11 +436,44 @@ class BrowseTab(QWidget):
         ui_settings.bind_combo(settings, "browse/result_filter", self.result_filter_combo)
 
         self.refresh()
+        self._precompute_other_formats()
 
     def _lib(self):
         if self._results_lib is None:
             self._results_lib = load_results_lib(self.config.analysis_dir)
         return self._results_lib
+
+    def _precompute_other_formats(self):
+        """Builds and stashes every other battle_type x curse_variant
+        combo's row cache right after construction, so later switching to
+        one of them (via the combo boxes) hits the bounded cache in
+        _load_format instead of paying the full build cost as a mid-session
+        hitch. This runs during MainWindow's construction, while the boot
+        splash screen is already up for the unavoidable initial-load wait --
+        clustering the wait there instead of leaving it scattered across
+        whichever format the user happens to click into first. Silently
+        skips a format that fails to load (e.g. no ratings dumped for it
+        yet) rather than raising -- _load_format still surfaces that error
+        properly if the user actually navigates there themselves."""
+        lib = self._lib()
+        for battle_type, _ in format_selector.BATTLE_TYPES:
+            for curse_variant, _ in format_selector.CURSE_VARIANTS:
+                fmt = format_selector.format_key(battle_type, curse_variant)
+                if not fmt or fmt == self._current_format or fmt in self._format_row_cache:
+                    continue
+                try:
+                    rows = lib.load_results(fmt, results_dir=self.config.results_dir)
+                except (OSError, FileNotFoundError, ValueError):
+                    continue
+                # Missing ratings shouldn't block precomputing this format --
+                # matches _load_format's own tolerance for a format with no
+                # ratings dumped yet (blank rating columns, not an error).
+                try:
+                    ratings = lib.load_ratings(fmt)
+                except (OSError, FileNotFoundError):
+                    ratings = {}
+                cache = self._model.build_row_cache(rows, lib, ratings)
+                self._format_row_cache[fmt] = (rows, lib, cache)
 
     def _current_fmt(self):
         return format_selector.format_key(
@@ -361,6 +481,14 @@ class BrowseTab(QWidget):
         )
 
     def refresh(self):
+        # An explicit Refresh click means "get whatever's on disk now" --
+        # results_lib's own load_results cache already auto-invalidates
+        # against shard file mtimes, but this tab's own built-cache layer
+        # doesn't check that on every format switch (that's the whole
+        # point, it's what makes revisiting a format instant), so Refresh
+        # has to drop it or a click here would keep showing whatever was
+        # cached at first visit.
+        self._format_row_cache = {}
         self._reload()
 
     def _reload(self):
@@ -372,6 +500,13 @@ class BrowseTab(QWidget):
             self._model.set_rows([], None)
             self.count_label.setText("")
             self._refresh_action_button()
+            return
+
+        cached = self._format_row_cache.get(fmt)
+        if cached is not None:
+            rows, lib, cache = cached
+            self._model.set_rows(rows, lib, cache=cache)
+            self._apply_filter()
             return
 
         try:
@@ -388,7 +523,8 @@ class BrowseTab(QWidget):
         except (OSError, FileNotFoundError):
             ratings = {}
 
-        self._model.set_rows(rows, lib, ratings)
+        cache = self._model.set_rows(rows, lib, ratings)
+        self._format_row_cache[fmt] = (rows, lib, cache)
         self._apply_filter()
 
     def _apply_filter(self):

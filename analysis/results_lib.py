@@ -146,15 +146,49 @@ def _merge_uncursed(base_rows, raw_rows, results_dir=None):
     return merged
 
 
+# (results_dir, fmt) -> (signature, rows). A single process (viewer GUI or
+# a one-shot analysis script) can end up calling load_results for the same
+# format many times over -- e.g. the viewer's Browse/Trainers/Bracket tabs
+# each load independently at boot, and an "..._uncursed" format's own load
+# recurses into its base format's -- so this avoids re-reading and
+# re-json.loads-ing the same shard files from disk repeatedly. Safe to
+# share the returned list/dicts across every caller as long as nothing
+# mutates them in place (confirmed: nothing in this codebase does).
+_shard_cache = {}
+
+
+def clear_cache():
+    """Drops every cached load_shard_files() result. The signature check in
+    load_shard_files already re-reads automatically if a shard file's mtime
+    or size changed, so this isn't needed for correctness in the common
+    case -- it exists as an explicit "no really, forget what you had"
+    escape hatch for the viewer's Refresh buttons, since same-second mtimes
+    (a fast regeneration landing within one mtime tick) could otherwise slip
+    past the signature check."""
+    _shard_cache.clear()
+
+
+def _shard_files_signature(paths):
+    return tuple((path, os.path.getmtime(path), os.path.getsize(path)) for path in paths)
+
+
 def load_shard_files(fmt, results_dir, report_skipped=False):
     """Every row from elo_results_<fmt>_shard*.jsonl, in shard/file order.
     A line caught mid-write by a still-live tournament run is incomplete
     JSON, not a real data problem -- silently skipped unless report_skipped."""
+    paths = [
+        path for path in sorted(glob.glob(os.path.join(results_dir, f"elo_results_{fmt}_shard*.jsonl")))
+        if not _is_sidecar_file(path)
+    ]
+    signature = _shard_files_signature(paths)
+    cache_key = (results_dir, fmt)
+    cached = _shard_cache.get(cache_key)
+    if cached is not None and cached[0] == signature:
+        return cached[1]
+
     rows = []
     skipped_lines = 0
-    for path in sorted(glob.glob(os.path.join(results_dir, f"elo_results_{fmt}_shard*.jsonl"))):
-        if _is_sidecar_file(path):
-            continue
+    for path in paths:
         with open(path, "r", encoding="utf-8") as f:
             for line in f:
                 line = line.strip()
@@ -166,6 +200,7 @@ def load_shard_files(fmt, results_dir, report_skipped=False):
                     skipped_lines += 1
     if report_skipped and skipped_lines:
         print(f"  (skipped {skipped_lines} unparseable line(s), likely caught mid-write)")
+    _shard_cache[cache_key] = (signature, rows)
     return rows
 
 

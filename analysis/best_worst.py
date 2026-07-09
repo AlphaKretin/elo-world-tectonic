@@ -40,7 +40,7 @@ RESULTS_DIR = results_lib.RESULTS_DIR
 WIN, LOSS = 1, 2
 
 
-def compute_best_worst(fmt, ratings_by_label, filters=()):
+def compute_best_worst(fmt, ratings_by_label, filters=(), rows=None):
     """One pass over every battle in the format: for each trainer, the
     highest-rated opponent beaten (best_win) and lowest-rated opponent lost
     to (worst_loss), each as (opponent_rating, opponent_label, seed).
@@ -50,11 +50,18 @@ def compute_best_worst(fmt, ratings_by_label, filters=()):
     leaderboard is just the normal <fmt> results with some battles filtered
     out, see results_lib.FILTERS, saved under a filter-suffixed filename),
     so this must filter the same way rather than globbing for a results
-    file that will never exist."""
+    file that will never exist.
+
+    rows lets a caller that already loaded results_lib.load_results(fmt, ...)
+    for this format (e.g. to also compute self-mirror losses or a rounds
+    index from the same rows) pass them in directly instead of paying for a
+    second full load_results() disk read + JSON parse of the same format."""
     trainer_data = results_lib.load_trainer_data_if_needed(filters)
     best_win = {}
     worst_loss = {}
-    for row in results_lib.load_results(fmt, results_dir=RESULTS_DIR):
+    if rows is None:
+        rows = results_lib.load_results(fmt, results_dir=RESULTS_DIR)
+    for row in rows:
         if row.get("skipped") or row.get("had_error"):
             continue
         if not results_lib.passes_filters(row, filters, trainer_data):
