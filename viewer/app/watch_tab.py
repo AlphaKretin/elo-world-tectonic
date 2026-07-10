@@ -2,7 +2,7 @@ import datetime
 import json
 import os
 
-from PySide6.QtCore import QSettings, Signal
+from PySide6.QtCore import QSettings, Qt, Signal
 from PySide6.QtWidgets import (
     QAbstractItemView,
     QCheckBox,
@@ -21,10 +21,12 @@ from PySide6.QtWidgets import (
 )
 
 from app import config as config_module, game_assets, replay_env, replay_runner, ui_settings
+from app.elided_tooltip_delegate import ElidedTooltipDelegate
 from app.replay_runner import ReplayRunner
+from app.tooltip_header import install_header_tooltips
 from app.trainer_names import TrainerNameResolver
 
-COLUMNS = ["Name", "Trainer 1", "Trainer 2", "Modified"]
+COLUMNS = ["Name", "Trainer 1", "Trainer 2", "Rnds", "Modified"]
 WATCH_RESULT_FILE = os.path.join("Analysis", "watch_result.txt")
 STAGING_NAME = "_WatchStaging"
 
@@ -40,10 +42,56 @@ def _option_index(options, label):
 class _CaseInsensitiveItem(QTableWidgetItem):
     """Sorts by lowercased text, matching Browse tab's sort keys (which
     lowercase Trainer 1/2 before comparing) instead of Qt's default
-    case-sensitive text compare."""
+    case-sensitive text compare. Blank text (Trainer 1/2 with no sidecar,
+    so no known label) always lands at the bottom regardless of which way
+    the column is currently sorted -- same fixed-sentinel-flips-under-
+    descending trap as _NumericItem below, see its docstring for why
+    direction has to be read from the table rather than baked into the
+    comparison. Never triggers on the Name column, whose text is never
+    blank."""
 
     def __lt__(self, other):
-        return self.text().lower() < other.text().lower()
+        self_text = self.text().lower()
+        other_text = other.text().lower() if hasattr(other, "text") else ""
+        if not self_text and not other_text:
+            return False
+        table = self.tableWidget()
+        descending = table is not None and table.horizontalHeader().sortIndicatorOrder() == Qt.DescendingOrder
+        if not self_text:
+            return descending
+        if not other_text:
+            return not descending
+        return self_text < other_text
+
+
+class _NumericItem(QTableWidgetItem):
+    """Sorts by a stored numeric value instead of displayed text (so "9"
+    sorts before "10"). value=None (no sidecar, or an older sidecar from
+    before rounds was recorded) always lands at the bottom, regardless of
+    which way the column is currently sorted -- a plain fixed sentinel
+    (e.g. -1) sorts last under ascending but flips to *first* under
+    descending, since Qt's descending sort is just the ascending order
+    reversed (confirmed empirically: see ResultsTableModel's own
+    _NONE_LAST_SORT_FIELDS in browse_tab.py for the same trap on a
+    QAbstractTableModel). A QTableWidgetItem's __lt__ isn't handed the
+    current sort order the way a model's sort(column, order) is, so this
+    asks its owning table's header directly instead."""
+
+    def __init__(self, text, value):
+        super().__init__(text)
+        self._value = value
+
+    def __lt__(self, other):
+        other_value = getattr(other, "_value", None)
+        if self._value is None and other_value is None:
+            return False
+        table = self.tableWidget()
+        descending = table is not None and table.horizontalHeader().sortIndicatorOrder() == Qt.DescendingOrder
+        if self._value is None:
+            return descending
+        if other_value is None:
+            return not descending
+        return self._value < other_value
 
 
 class WatchTab(QWidget):
@@ -74,19 +122,26 @@ class WatchTab(QWidget):
         layout = QVBoxLayout(self)
 
         top = QHBoxLayout()
-        self.refresh_button = QPushButton("Refresh")
         self.import_button = QPushButton("Import .dat...")
-        top.addWidget(self.refresh_button)
         top.addWidget(self.import_button)
         top.addStretch(1)
         layout.addLayout(top)
 
         self.table = QTableWidget(0, len(COLUMNS))
         self.table.setHorizontalHeaderLabels(COLUMNS)
+        self.table.horizontalHeaderItem(3).setToolTip("Number of rounds the battle lasted")
         self.table.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.table.setSelectionMode(QAbstractItemView.SingleSelection)
         self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.table.setColumnWidth(0, 220)
+        self.table.setColumnWidth(3, 50)
+        # A smidge past the default section size -- long enough to stop the
+        # "YYYY-MM-DD HH:MM:SS" timestamp from just barely clipping.
+        self.table.setColumnWidth(4, 150)
+        install_header_tooltips(self.table)
+        name_tooltip_delegate = ElidedTooltipDelegate(self.table)
+        for col in (0, 1, 2):
+            self.table.setItemDelegateForColumn(col, name_tooltip_delegate)
         self.table.setSortingEnabled(True)
         layout.addWidget(self.table)
 
@@ -134,7 +189,6 @@ class WatchTab(QWidget):
         self.status_view.setReadOnly(True)
         layout.addWidget(self.status_view)
 
-        self.refresh_button.clicked.connect(self.refresh)
         self.import_button.clicked.connect(self._on_import_clicked)
         self.watch_button.clicked.connect(self._on_watch_clicked)
         self.cancel_button.clicked.connect(self.runner.cancel)
@@ -150,6 +204,14 @@ class WatchTab(QWidget):
         self.refresh()
 
     def refresh(self):
+        # Preserve the current selection across the rebuild below -- this
+        # now also runs reactively (see MainWindow wiring generation_finished
+        # here) while the user might be sitting on this tab with a row
+        # already selected, not just from an explicit user action that
+        # implies starting fresh.
+        selected_rows = self.table.selectionModel().selectedRows()
+        selected_name = self.table.item(selected_rows[0].row(), 0).text() if selected_rows else None
+
         # Sorting must be off while populating -- QTableWidget re-sorts after
         # every setItem() when enabled, so rows and their trainer columns
         # would scatter mid-population instead of landing together.
@@ -167,27 +229,30 @@ class WatchTab(QWidget):
             full_path = os.path.join(replay_dir, name)
             mtime = datetime.datetime.fromtimestamp(os.path.getmtime(full_path)).strftime("%Y-%m-%d %H:%M:%S")
             base_name = os.path.splitext(name)[0]
+            sidecar = self._read_sidecar(base_name)
             self.table.setItem(i, 0, _CaseInsensitiveItem(base_name))
-            self._set_trainer_columns(i, *self._sidecar_trainers(base_name))
-            self.table.setItem(i, 3, QTableWidgetItem(mtime))
+            self._set_trainer_columns(i, sidecar.get("trainer1", ""), sidecar.get("trainer2", ""))
+            rounds = sidecar.get("rounds")
+            self.table.setItem(i, 3, _NumericItem(str(rounds + 1) if rounds is not None else "", rounds))
+            self.table.setItem(i, 4, QTableWidgetItem(mtime))
+            if base_name == selected_name:
+                self.table.selectRow(i)
         self.table.setSortingEnabled(True)
 
-    def _sidecar_trainers(self, base_name):
-        """(trainer1, trainer2) raw labels from base_name's sidecar in
-        config.replay_metadata_dir, or ("", "") if there isn't one. Kept
-        separate from replay_dir (inside the vendor/tectonic-content
-        submodule) so this viewer-only metadata doesn't show up as
-        untracked submodule content -- see GenerateTab._write_sidecar/
-        _on_import_clicked for the writers."""
+    def _read_sidecar(self, base_name):
+        """base_name's sidecar dict from config.replay_metadata_dir, or {}
+        if there isn't one/it's unreadable. Kept separate from replay_dir
+        (inside the vendor/tectonic-content submodule) so this viewer-only
+        metadata doesn't show up as untracked submodule content -- see
+        GenerateTab._write_sidecar/_on_import_clicked for the writers."""
         sidecar_path = os.path.join(self.config.replay_metadata_dir, base_name + ".json")
         if not os.path.exists(sidecar_path):
-            return "", ""
+            return {}
         try:
             with open(sidecar_path, "r", encoding="utf-8") as f:
-                sidecar = json.load(f)
+                return json.load(f)
         except (OSError, json.JSONDecodeError):
-            return "", ""
-        return sidecar.get("trainer1", ""), sidecar.get("trainer2", "")
+            return {}
 
     def _set_trainer_columns(self, row, t1_label, t2_label):
         for col, label in ((1, t1_label), (2, t2_label)):
@@ -270,6 +335,18 @@ class WatchTab(QWidget):
             QMessageBox.warning(self, "No replay selected", "Select a replay from the table first.")
             return
 
+        sidecar_path = dat_path + ".json"
+        sidecar = None
+        if os.path.exists(sidecar_path):
+            try:
+                with open(sidecar_path, "r", encoding="utf-8") as f:
+                    sidecar = json.load(f)
+            except (OSError, json.JSONDecodeError):
+                sidecar = None
+
+        if not replay_runner.confirm_long_replay(self, sidecar.get("rounds") if sidecar else None, "watch"):
+            return
+
         self._active_dat_path = dat_path
 
         replay_dir = self.config.replay_dir
@@ -277,13 +354,8 @@ class WatchTab(QWidget):
         with open(dat_path, "rb") as f_in, open(staging_path, "wb") as f_out:
             f_out.write(f_in.read())
 
-        sidecar_path = dat_path + ".json"
-        if os.path.exists(sidecar_path) and self._expected_result is None:
-            try:
-                with open(sidecar_path, "r", encoding="utf-8") as f:
-                    self._expected_result = json.load(f)
-            except (OSError, json.JSONDecodeError):
-                self._expected_result = None
+        if sidecar is not None and self._expected_result is None:
+            self._expected_result = sidecar
 
         mute = self.mute_check.isChecked()
         env_vars = replay_env.build_watch_env(

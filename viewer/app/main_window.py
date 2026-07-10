@@ -114,6 +114,12 @@ class MainWindow(QMainWindow):
         self.trainers_tab.generate_requested.connect(self._on_trainers_generate_requested)
         self.watch_tab.replay_finished.connect(self.trainers_tab.handle_replay_finished)
         self.generate_tab.generation_finished.connect(self.trainers_tab.handle_generation_finished)
+        # Watch's own row list comes from a replay_dir directory listing, not
+        # RR/sidecar data like the other three tabs above -- so unlike their
+        # single-button rechecks, this needs a full refresh() to pick up a
+        # replay generated while the user wasn't on this tab. There's no
+        # Refresh button here for them to fall back on otherwise.
+        self.generate_tab.generation_finished.connect(self.watch_tab.refresh)
 
         self._ensure_vendor_ready()
 

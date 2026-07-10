@@ -20,7 +20,6 @@ from PySide6.QtWidgets import (
     QHeaderView,
     QLabel,
     QLineEdit,
-    QPushButton,
     QSplitter,
     QTableWidget,
     QTableWidgetItem,
@@ -182,9 +181,6 @@ class TrainersTab(QWidget):
         )
         right_layout.addWidget(self.highlights_table)
 
-        self.refresh_button = QPushButton("Refresh")
-        right_layout.addWidget(self.refresh_button)
-
         splitter.addWidget(right)
         splitter.setStretchFactor(0, 1)
         splitter.setStretchFactor(1, 2)
@@ -193,7 +189,6 @@ class TrainersTab(QWidget):
         self.trainer_table.currentItemChanged.connect(self._on_trainer_changed)
         self.rating_battle_type_combo.currentIndexChanged.connect(self._populate_trainer_list)
         self.rating_curse_variant_combo.currentIndexChanged.connect(self._populate_trainer_list)
-        self.refresh_button.clicked.connect(self.refresh)
 
         settings = QSettings()
         ui_settings.bind_combo(settings, "trainers/rating_battle_type", self.rating_battle_type_combo)

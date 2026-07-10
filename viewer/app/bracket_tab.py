@@ -84,8 +84,6 @@ class BracketTab(QWidget):
         format_row.addWidget(self.show_seeds_checkbox)
         self.reveal_button = QPushButton("Reveal remaining")
         format_row.addWidget(self.reveal_button)
-        self.refresh_button = QPushButton("Refresh")
-        format_row.addWidget(self.refresh_button)
         layout.addLayout(format_row)
 
         self.status_label = QLabel()
@@ -102,7 +100,6 @@ class BracketTab(QWidget):
         self.manage_brackets_button.clicked.connect(self._on_manage_brackets_clicked)
         self.show_seeds_checkbox.toggled.connect(self._render)
         self.reveal_button.clicked.connect(self._on_reveal_remaining_clicked)
-        self.refresh_button.clicked.connect(self._on_refresh_clicked)
 
         settings = QSettings()
         ui_settings.bind_combo(settings, "bracket/name", self.bracket_combo)
@@ -398,7 +395,10 @@ class BracketTab(QWidget):
         footer.setContentsMargins(0, 0, 0, 0)
         skip_button = QPushButton("Skip")
         watch_button = QPushButton("Watch")
-        status_label = QLabel(f"{max_score_digit}-{max_score_digit} — Replay ready")
+        # Includes a worst-case "-draws" suffix (see Match.score_text) so a
+        # match that picks one up mid-series doesn't outgrow this pinned
+        # width.
+        status_label = QLabel(f"{max_score_digit}-{max_score_digit}-{max_score_digit} — Replay ready")
         footer.addWidget(skip_button)
         footer.addWidget(watch_button)
         footer.addWidget(status_label, 1)
@@ -457,7 +457,7 @@ class BracketTab(QWidget):
             # win" (even briefly) is how to see further games of an already-
             # decided match, rather than leaving a dangling Generate button
             # here that can't actually change the outcome.
-            status_label.setText(f"Winner ({match.wins_a}-{match.wins_b})")
+            status_label.setText(f"Winner ({match.score_text})")
             footer.addWidget(status_label, 1)
             layout.addLayout(footer)
             return card, needs_generation
@@ -480,7 +480,7 @@ class BracketTab(QWidget):
         # Score prefix only appears once the series is actually underway --
         # the common instant-Skip case (and any best-of-1 bracket) looks
         # exactly like it always has.
-        score_prefix = f"{match.wins_a}-{match.wins_b} — " if (match.wins_a or match.wins_b) else ""
+        score_prefix = f"{match.score_text} — " if (match.wins_a or match.wins_b or match.draws) else ""
 
         if has_local_replay:
             status_label.setText(f"{score_prefix}Replay ready")
@@ -687,6 +687,7 @@ class BracketTab(QWidget):
             "seed": match.seed,
             "format": self.fmt,
             "output_name": slug,
+            "suppress_winner": True,
         })
         self._render()
 
@@ -706,14 +707,17 @@ class BracketTab(QWidget):
         else:
             self.status_label.setText("")
 
-    def _on_refresh_clicked(self):
+    def _refresh_results(self):
         # Picks up sidecars written by a hand-off to the Generate tab (which
         # doesn't report back to this tab directly) or by anything else
         # dropped into replay_metadata_dir since this format was last loaded.
         # Sidecars are always re-scanned fresh regardless of the cache below
         # (see _merge_cached_sidecars) -- busting this format's cached base
-        # index too is what makes a manually-requested Refresh also pick up
-        # newly-generated round-robin results, not just sidecars.
+        # index too is what makes this also pick up newly-generated
+        # round-robin results, not just sidecars. No manual trigger for this
+        # anymore -- handle_generation_finished below is the only caller,
+        # firing automatically whenever a bracket-handed-off Generate
+        # finishes.
         self._results_index_cache.pop(self.fmt, None)
         self._load_results_index()
         self._render()
@@ -722,15 +726,14 @@ class BracketTab(QWidget):
         """Connected to GenerateTab.generation_finished, so a bracket-handed-off
         Generate that finishes while the user has since tabbed away (or is
         generating several matches in a row) still updates this tab's
-        buttons/status without waiting on a manual Refresh. Doesn't reveal
-        any winner itself -- that's still gated behind Skip/watching, same as
-        a manual Refresh would leave it."""
+        buttons/status on its own. Doesn't reveal any winner itself --
+        that's still gated behind Skip/watching."""
         bracket_lib = self._ensure_bracket_lib()
         name = os.path.splitext(os.path.basename(dat_path))[0]
         parsed = bracket_lib.parse_bracket_slug(name)
         if parsed is None or parsed[0] != self.fmt:
             return
-        self._on_refresh_clicked()
+        self._refresh_results()
 
     # -- replay/seed bookkeeping ----------------------------------------------
 

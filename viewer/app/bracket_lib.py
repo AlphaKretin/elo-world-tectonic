@@ -77,6 +77,18 @@ class Match:
         return sum(1 for a in self.decisive_attempts if a["winner_label"] == self.label_b)
 
     @property
+    def draws(self):
+        return sum(1 for a in self.attempts if a["winner_label"] is None)
+
+    @property
+    def score_text(self):
+        """"wins_a-wins_b", plus a third "-draws" component only when a
+        draw has actually happened -- otherwise a draws=0 suffix would show
+        on every match regardless, when in practice it's rare."""
+        base = f"{self.wins_a}-{self.wins_b}"
+        return f"{base}-{self.draws}" if self.draws else base
+
+    @property
     def resolved(self):
         return self.winner_label is not None
 

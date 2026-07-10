@@ -20,8 +20,17 @@ from PySide6.QtWidgets import (
 
 from app import asset_names, config as config_module, format_selector, game_assets, replay_env, replay_runner, ui_settings
 from app.replay_runner import ReplayRunner
-from app.trainer_names import TrainerNameResolver
+from app.results_source import load_results_lib
+from app.sprite_loader import SpriteLoader
+from app.trainer_names import TrainerNameResolver, load_trainer_naming
 from app.trainer_picker_dialog import TrainerPickerDialog
+
+# Bigger than the bracket's small match-card sprites (see bracket_tab.py) --
+# this tab only ever shows two at a time, side by side, so there's room to
+# go larger. 48 is native curse-badge resolution exactly (80 * 0.6), a clean
+# 1x scale rather than an arbitrary resize.
+SPRITE_SIZE = 80
+CURSE_BADGE_SIZE = 48
 
 
 class GenerateTab(QWidget):
@@ -39,6 +48,10 @@ class GenerateTab(QWidget):
         super().__init__(parent)
         self.config = config
         self._names = TrainerNameResolver(config)
+        self._trainer_data_cache = None
+        self._naming_cache = None
+        self._sprites = SpriteLoader(config, self._trainer_data, self._is_cursed)
+        self._suppress_winner = False
         self.runner = ReplayRunner(self)
         self.runner.started.connect(self._on_started)
         self.runner.finished.connect(self._on_finished)
@@ -47,16 +60,24 @@ class GenerateTab(QWidget):
 
         layout = QVBoxLayout(self)
 
+        trainer1_form = QFormLayout()
+        trainer1_form.setFieldGrowthPolicy(QFormLayout.ExpandingFieldsGrow)
+        trainer2_form = QFormLayout()
+        trainer2_form.setFieldGrowthPolicy(QFormLayout.ExpandingFieldsGrow)
         form = QFormLayout()
         form.setFieldGrowthPolicy(QFormLayout.ExpandingFieldsGrow)
         self.trainer1_edit = QLineEdit()
         self.trainer1_edit.setPlaceholderText("TYPE:Name or TYPE:Name#version")
         self.trainer1_name_label = QLabel()
         self.trainer1_name_label.setStyleSheet("color: gray;")
+        self.trainer1_sprite_label = QLabel()
+        self.trainer1_sprite_label.setFixedSize(SPRITE_SIZE, SPRITE_SIZE)
         self.trainer2_edit = QLineEdit()
         self.trainer2_edit.setPlaceholderText("TYPE:Name or TYPE:Name#version")
         self.trainer2_name_label = QLabel()
         self.trainer2_name_label.setStyleSheet("color: gray;")
+        self.trainer2_sprite_label = QLabel()
+        self.trainer2_sprite_label.setFixedSize(SPRITE_SIZE, SPRITE_SIZE)
         self.seed_edit = QLineEdit()
         self.battle_type_combo = QComboBox()
         for value, label in format_selector.BATTLE_TYPES:
@@ -98,8 +119,36 @@ class GenerateTab(QWidget):
         backdrop_row.addWidget(QLabel("Time:"))
         backdrop_row.addWidget(self.backdrop_time_combo, 1)
 
-        form.addRow("Trainer 1", trainer1_row)
-        form.addRow("Trainer 2", trainer2_row)
+        trainer1_form.addRow("Trainer 1", trainer1_row)
+        trainer2_form.addRow("Trainer 2", trainer2_row)
+
+        # Two single-row forms with a stretch between them, rather than one
+        # two-row form -- spreads the rows across the 80px of vertical space
+        # the sprites need instead of clumping them together at the top of
+        # it.
+        trainer_rows = QVBoxLayout()
+        trainer_rows.addLayout(trainer1_form)
+        trainer_rows.addStretch(1)
+        trainer_rows.addLayout(trainer2_form)
+
+        sprites_row = QHBoxLayout()
+        sprites_row.addWidget(self.trainer1_sprite_label)
+        sprites_row.addWidget(QLabel("vs"))
+        sprites_row.addWidget(self.trainer2_sprite_label)
+
+        trainer_section = QHBoxLayout()
+        trainer_section.addLayout(trainer_rows, 1)
+        trainer_section.addLayout(sprites_row)
+
+        # Without a hard cap, this row has nothing stopping the outer
+        # QVBoxLayout from handing it leftover window space on resize (it
+        # blows up to 200px+ tall instead of the ~80px the sprites actually
+        # need) -- confirmed empirically with a standalone layout script.
+        trainer_section_widget = QWidget()
+        trainer_section_widget.setLayout(trainer_section)
+        trainer_section_widget.setMaximumHeight(SPRITE_SIZE + 16)
+        layout.addWidget(trainer_section_widget)
+
         form.addRow("Seed", self.seed_edit)
         form.addRow("Format", format_row)
         form.addRow("Output name", self.output_name_edit)
@@ -131,12 +180,16 @@ class GenerateTab(QWidget):
         self.cancel_button.clicked.connect(self.runner.cancel)
         self.export_button.clicked.connect(self._on_export_clicked)
         self.watch_button.clicked.connect(self._on_watch_clicked)
-        self.trainer1_edit.textChanged.connect(lambda text: self._update_name_label(self.trainer1_name_label, text))
-        self.trainer2_edit.textChanged.connect(lambda text: self._update_name_label(self.trainer2_name_label, text))
+        self.trainer1_edit.textChanged.connect(
+            lambda text: self._update_trainer_display(self.trainer1_name_label, self.trainer1_sprite_label, text)
+        )
+        self.trainer2_edit.textChanged.connect(
+            lambda text: self._update_trainer_display(self.trainer2_name_label, self.trainer2_sprite_label, text)
+        )
         self.trainer1_choose_button.clicked.connect(lambda: self._on_choose_trainer(self.trainer1_edit))
         self.trainer2_choose_button.clicked.connect(lambda: self._on_choose_trainer(self.trainer2_edit))
-        self._update_name_label(self.trainer1_name_label, self.trainer1_edit.text())
-        self._update_name_label(self.trainer2_name_label, self.trainer2_edit.text())
+        self._update_trainer_display(self.trainer1_name_label, self.trainer1_sprite_label, self.trainer1_edit.text())
+        self._update_trainer_display(self.trainer2_name_label, self.trainer2_sprite_label, self.trainer2_edit.text())
 
         settings = QSettings()
         ui_settings.bind_combo(settings, "generate/battle_type", self.battle_type_combo)
@@ -150,13 +203,41 @@ class GenerateTab(QWidget):
         if dialog.exec() == QDialog.Accepted:
             target_edit.setText(dialog.selected_label())
 
-    def _update_name_label(self, label_widget, raw_label):
+    def _update_trainer_display(self, label_widget, sprite_widget, raw_label):
         raw_label = raw_label.strip()
         if not raw_label:
             label_widget.setText("")
+            sprite_widget.clear()
             return
         resolved = self._names.display_name(raw_label)
         label_widget.setText(resolved if resolved != raw_label else "(unknown trainer label)")
+        pixmap = self._sprites.sprite_pixmap(raw_label, SPRITE_SIZE, CURSE_BADGE_SIZE)
+        if pixmap is not None:
+            sprite_widget.setPixmap(pixmap)
+        else:
+            sprite_widget.clear()
+
+    def _trainer_data(self):
+        if self._trainer_data_cache is None:
+            results_lib = load_results_lib(self.config.analysis_dir)
+            try:
+                self._trainer_data_cache = results_lib.load_trainer_data(results_dir=self.config.results_dir)
+            except OSError:
+                self._trainer_data_cache = {}
+        return self._trainer_data_cache
+
+    def _naming(self):
+        if self._naming_cache is None:
+            self._naming_cache = load_trainer_naming(self.config.analysis_dir)
+        return self._naming_cache
+
+    def _is_cursed(self, label):
+        if not label:
+            return False
+        row = self._trainer_data().get(label)
+        if row is None:
+            return False
+        return self._naming().is_curse_variant(row, self._trainer_data())
 
     def set_match(self, payload):
         self.trainer1_edit.setText(payload.get("trainer1", ""))
@@ -167,6 +248,7 @@ class GenerateTab(QWidget):
         self.battle_type_combo.setCurrentIndex(self.battle_type_combo.findData(battle_type))
         self.curse_variant_combo.setCurrentIndex(self.curse_variant_combo.findData(curse_variant))
         self.output_name_edit.setText(payload.get("output_name", ""))
+        self._suppress_winner = payload.get("suppress_winner", False)
 
     def _on_generate_clicked(self):
         if not self.config.is_valid():
@@ -205,6 +287,12 @@ class GenerateTab(QWidget):
             QMessageBox.warning(self, "Invalid trainer label", str(exc))
             return
 
+        estimated_rounds = self._estimate_rounds(
+            self.trainer1_edit.text().strip(), self.trainer2_edit.text().strip(), seed, fmt
+        )
+        if not replay_runner.confirm_long_replay(self, estimated_rounds, "generate", estimated=True):
+            return
+
         self._last_result = None
         self._last_request = {
             "trainer1": self.trainer1_edit.text().strip(),
@@ -224,6 +312,27 @@ class GenerateTab(QWidget):
             heartbeat_filename=replay_runner.DEFAULT_HEARTBEAT_FILE_RELATIVE,
             extra_args=["debug"] if debug else None,
         )
+
+    def _estimate_rounds(self, t1_label, t2_label, seed, fmt):
+        """A round-count guess for a not-yet-run matchup, drawn from
+        existing round-robin results for the same pairing -- exact if this
+        seed was already played, otherwise any other known result for the
+        same two trainers (best guess available, not exact). None if
+        there's simply no prior data for this pairing."""
+        if not t1_label or not t2_label:
+            return None
+        try:
+            results_lib = load_results_lib(self.config.analysis_dir)
+            rows = results_lib.load_results(fmt, results_dir=self.config.results_dir)
+        except OSError:
+            return None
+        from app import bracket_lib
+
+        index = bracket_lib.build_results_index(rows)
+        row = bracket_lib.find_row_for_seed(index, t1_label, t2_label, seed)
+        if row is None:
+            row = bracket_lib.pick_default_row(index, t1_label, t2_label)
+        return row.get("rounds") if row else None
 
     def _on_started(self):
         self.generate_button.setEnabled(False)
@@ -245,7 +354,9 @@ class GenerateTab(QWidget):
         self._last_result = result
         t1_name = self._names.display_name(self._last_request["trainer1"])
         t2_name = self._names.display_name(self._last_request["trainer2"])
-        self.status_view.setPlainText(replay_runner.describe_result(result, t1_name, t2_name))
+        self.status_view.setPlainText(
+            replay_runner.describe_result(result, t1_name, t2_name, hide_outcome=self._suppress_winner)
+        )
         can_watch_or_export = bool(result.get("ok")) and bool(result.get("saved_to"))
         self.export_button.setEnabled(can_watch_or_export)
         self.watch_button.setEnabled(can_watch_or_export)

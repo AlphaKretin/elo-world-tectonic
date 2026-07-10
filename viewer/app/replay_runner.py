@@ -2,6 +2,7 @@ import json
 import os
 
 from PySide6.QtCore import QObject, QProcess, QProcessEnvironment, QTimer, Signal
+from PySide6.QtWidgets import QMessageBox
 
 from app import win_window_utils
 
@@ -10,6 +11,29 @@ DEFAULT_HEARTBEAT_FILE_RELATIVE = os.path.join("Analysis", "elo_turn_heartbeat.j
 STDOUT_TAIL_CHARS = 4000
 STDERR_TAIL_CHARS = 4000
 HEARTBEAT_POLL_MS = 1000
+
+# Above this many rounds (0-indexed, so the real round count is +1), Generate/
+# Watch show a confirmation before launching Game.exe -- both can otherwise
+# run for a long time with no way to bail out short of Cancel.
+LONG_REPLAY_ROUND_THRESHOLD = 100
+
+
+def confirm_long_replay(parent, rounds, action, estimated=False):
+    """True if it's fine to proceed. rounds is the raw 0-indexed count (as
+    stored in sidecars/RR rows); estimated marks a same-pairing/seed-chain
+    guess (Generate, before the battle has actually run) rather than an
+    exact known count (Watch, already-played)."""
+    if rounds is None or rounds + 1 <= LONG_REPLAY_ROUND_THRESHOLD:
+        return True
+    qualifier = "is estimated to last around" if estimated else "lasted"
+    reply = QMessageBox.question(
+        parent,
+        "Long replay",
+        f"This replay {qualifier} {rounds + 1} rounds and may take a while to {action}. Continue?",
+        QMessageBox.Yes | QMessageBox.No,
+        QMessageBox.Yes,
+    )
+    return reply == QMessageBox.Yes
 
 
 class ReplayRunner(QObject):
@@ -215,11 +239,16 @@ def outcome_label(value, win_label="Trainer 1", loss_label="Trainer 2"):
     )
 
 
-def describe_result(result, trainer1_name="Trainer 1", trainer2_name="Trainer 2"):
+def describe_result(result, trainer1_name="Trainer 1", trainer2_name="Trainer 2", hide_outcome=False):
     """Turns one of replay.rb/watch.rb's saved result JSONs (or one of
     ReplayRunner's own Cancelled/Timeout/Crash/MalformedResult shapes,
     which share the same ok/error_class/error_message keys) into a plain-
-    English status report, replacing a raw json.dumps dump."""
+    English status report, replacing a raw json.dumps dump.
+
+    hide_outcome drops the win/loss/draw line (still reports rounds/time,
+    which don't spoil anything) -- for a bracket-triggered Generate, where
+    printing the winner here would leak the result before the user watches
+    it on the Bracket tab."""
     if not result.get("ok"):
         lines = [f"Failed: {result.get('error_class', 'Error')} -- {result.get('error_message', '(no message)')}"]
         backtrace = result.get("backtrace")
@@ -237,7 +266,9 @@ def describe_result(result, trainer1_name="Trainer 1", trainer2_name="Trainer 2"
             lines.append(result["stderr_tail"])
         return "\n".join(lines)
 
-    lines = [outcome_label(result.get("result"), trainer1_name, trainer2_name)]
+    lines = ["Battle finished (result hidden)."] if hide_outcome else [
+        outcome_label(result.get("result"), trainer1_name, trainer2_name)
+    ]
     rounds = result.get("rounds")
     if rounds is not None:
         time_s = result.get("time_s")

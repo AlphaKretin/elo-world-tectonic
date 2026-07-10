@@ -14,9 +14,8 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from app import format_selector, ui_settings
+from app import format_selector, replay_env, ui_settings
 from app.elided_tooltip_delegate import ElidedTooltipDelegate
-from app.replay_action_button import ReplayActionButton
 from app.results_source import load_results_lib
 from app.tooltip_header import install_header_tooltips
 from app.trainer_names import TrainerNameResolver
@@ -204,22 +203,34 @@ class ResultsTableModel(QAbstractTableModel):
     def apply_filter(self, t1_query, t2_query, wanted_result):
         self.beginResetModel()
         indices = range(len(self._rows))
-        if t1_query:
-            indices = [
-                i for i in indices
-                if t1_query in self._cache[i]["t1_search"] or t1_query in self._cache[i]["t2_search"]
-            ]
-        if t2_query:
-            indices = [
-                i for i in indices
-                if t2_query in self._cache[i]["t1_search"] or t2_query in self._cache[i]["t2_search"]
-            ]
+        if t1_query or t2_query:
+            indices = [i for i in indices if self._pair_matches(self._cache[i], t1_query, t2_query)]
         if wanted_result is not None:
             indices = [i for i in indices if self._cache[i]["result"] == wanted_result]
         self._visible = list(indices)
         if self._sort_column >= 0:
             self._resort()
         self.endResetModel()
+
+    @staticmethod
+    def _pair_matches(cache, t1_query, t2_query):
+        """Whether some assignment of the two (order-independent) search
+        boxes to the row's actual Trainer 1/Trainer 2 slots satisfies both
+        -- not just "each query matches somewhere in the row" independently,
+        which is what the old per-box OR-across-both-columns check did.
+        That distinction only bites when both boxes hold the same (or an
+        overlapping) name: independently, "Bob" in box 1 and "Bob" in box 2
+        each trivially match any row with a single Bob in it, surfacing
+        every match Bob played rather than just Bob-vs-Bob. Requiring one
+        straight-or-crossed full assignment fixes that while leaving
+        distinct-name, single-box, and blank-box behavior unchanged."""
+        straight = (not t1_query or t1_query in cache["t1_search"]) and (
+            not t2_query or t2_query in cache["t2_search"]
+        )
+        crossed = (not t1_query or t1_query in cache["t2_search"]) and (
+            not t2_query or t2_query in cache["t1_search"]
+        )
+        return straight or crossed
 
     _SORT_KEYS = {
         0: lambda cache: cache["t1_disp_lower"],
@@ -355,6 +366,10 @@ class BrowseTab(QWidget):
         self.config = config
         self._results_lib = None
         self._current_format = None
+        self._vendor_blocked = False
+        self._current_slug = None
+        self._current_payload = None
+        self._current_dat_path = None
         self._names = TrainerNameResolver(config)
         self._model = ResultsTableModel(self._names)
         # fmt -> (rows, lib, built per-row cache), so switching back to an
@@ -375,10 +390,8 @@ class BrowseTab(QWidget):
         self.curse_variant_combo = QComboBox()
         for value, label in format_selector.CURSE_VARIANTS:
             self.curse_variant_combo.addItem(label, value)
-        self.refresh_button = QPushButton("Refresh")
         top.addWidget(self.battle_type_combo, 1)
         top.addWidget(self.curse_variant_combo, 1)
-        top.addWidget(self.refresh_button)
         layout.addLayout(top)
 
         filter_row = QHBoxLayout()
@@ -390,12 +403,21 @@ class BrowseTab(QWidget):
         for label, _attr in RESULT_FILTERS:
             self.result_filter_combo.addItem(label)
         self.count_label = QLabel()
-        self.action_button = ReplayActionButton(self.config.replay_dir)
+        # Two independent buttons rather than one toggling label -- Generate
+        # is always available (so an existing replay can be regenerated,
+        # e.g. after an engine fix, without deleting the old .dat first),
+        # Watch only lights up once a replay actually exists for the
+        # selected match.
+        self.generate_button = QPushButton("Generate")
+        self.generate_button.setEnabled(False)
+        self.watch_button = QPushButton("Watch")
+        self.watch_button.setEnabled(False)
         filter_row.addWidget(self.search_t1_box, 2)
         filter_row.addWidget(self.search_t2_box, 2)
         filter_row.addWidget(self.result_filter_combo, 1)
         filter_row.addWidget(self.count_label)
-        filter_row.addWidget(self.action_button)
+        filter_row.addWidget(self.generate_button)
+        filter_row.addWidget(self.watch_button)
         layout.addLayout(filter_row)
 
         self.table = QTableView()
@@ -404,6 +426,11 @@ class BrowseTab(QWidget):
         self.table.setSelectionMode(QAbstractItemView.SingleSelection)
         self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.table.setSortingEnabled(True)
+        # Qt's own default when sorting is enabled with no sort indicator
+        # set yet is column 0, *descending* -- not ascending, and not "load
+        # order" -- so without this the table opens Trainer 1 Z-A. Pin an
+        # explicit A-Z default instead of inheriting that.
+        self.table.sortByColumn(0, Qt.AscendingOrder)
         for col_index, width in COLUMN_WIDTHS.items():
             self.table.setColumnWidth(col_index, width)
         install_header_tooltips(self.table)
@@ -421,14 +448,13 @@ class BrowseTab(QWidget):
 
         self.battle_type_combo.currentIndexChanged.connect(self._reload)
         self.curse_variant_combo.currentIndexChanged.connect(self._reload)
-        self.refresh_button.clicked.connect(self.refresh)
         self.search_t1_box.textChanged.connect(lambda _: self._filter_timer.start())
         self.search_t2_box.textChanged.connect(lambda _: self._filter_timer.start())
         self.result_filter_combo.currentIndexChanged.connect(self._apply_filter)
-        self.action_button.generate_requested.connect(self.match_selected.emit)
-        self.action_button.watch_requested.connect(self.watch_requested.emit)
-        self.table.doubleClicked.connect(lambda _: self.action_button.click())
-        self.table.selectionModel().selectionChanged.connect(self._refresh_action_button)
+        self.generate_button.clicked.connect(self._on_generate_clicked)
+        self.watch_button.clicked.connect(self._on_watch_clicked)
+        self.table.doubleClicked.connect(lambda _: self._on_double_clicked())
+        self.table.selectionModel().selectionChanged.connect(self._refresh_match_buttons)
 
         settings = QSettings()
         ui_settings.bind_combo(settings, "browse/battle_type", self.battle_type_combo)
@@ -499,7 +525,7 @@ class BrowseTab(QWidget):
         if not fmt:
             self._model.set_rows([], None)
             self.count_label.setText("")
-            self._refresh_action_button()
+            self._refresh_match_buttons()
             return
 
         cached = self._format_row_cache.get(fmt)
@@ -537,7 +563,7 @@ class BrowseTab(QWidget):
         shown = self._model.rowCount()
         total = self._model.total_row_count()
         self.count_label.setText(f"{shown} / {total}" if total else "")
-        self._refresh_action_button()
+        self._refresh_match_buttons()
 
     def _selected_row(self):
         selected_rows = self.table.selectionModel().selectedRows()
@@ -555,26 +581,51 @@ class BrowseTab(QWidget):
         safe_t2 = "".join(ch if ch.isalnum() else "-" for ch in t2)
         return f"browse_{fmt}_{safe_t1}_vs_{safe_t2}_{seed}"
 
-    def _refresh_action_button(self):
+    def _current_match_payload(self):
+        """(slug, payload) for whatever's selected right now, or (None,
+        None) if nothing's selected/loaded."""
         row = self._selected_row()
         if row is None or not self._current_format:
-            self.action_button.refresh(None, None)
-            return
+            return None, None
         slug = self._match_slug(self._current_format, row.get("trainer1", ""), row.get("trainer2", ""), row.get("seed"))
         payload = dict(row)
         payload["format"] = self._current_format
         payload["output_name"] = slug
-        self.action_button.refresh(slug, payload)
+        return slug, payload
+
+    def _refresh_match_buttons(self):
+        self._current_slug, payload = self._current_match_payload()
+        self._current_payload = payload
+        self._current_dat_path = (
+            replay_env.find_existing_replay(self.config.replay_dir, self._current_slug) if self._current_slug else None
+        )
+        self.generate_button.setEnabled(payload is not None and not self._vendor_blocked)
+        self.watch_button.setEnabled(self._current_dat_path is not None and not self._vendor_blocked)
+
+    def _on_generate_clicked(self):
+        if self._current_payload is not None:
+            self.match_selected.emit(self._current_payload)
+
+    def _on_watch_clicked(self):
+        if self._current_dat_path is not None:
+            self.watch_requested.emit(self._current_dat_path, {})
+
+    def _on_double_clicked(self):
+        if self._current_dat_path is not None:
+            self._on_watch_clicked()
+        else:
+            self._on_generate_clicked()
 
     def set_actions_blocked(self, blocked):
-        self.action_button.set_vendor_blocked(blocked)
+        self._vendor_blocked = blocked
+        self._refresh_match_buttons()
 
     def handle_generation_finished(self, dat_path, _result):
         name = os.path.splitext(os.path.basename(dat_path))[0]
-        if self.action_button.matches_slug(name):
-            self.action_button.recheck()
+        if name == self._current_slug:
+            self._refresh_match_buttons()
 
     def handle_replay_finished(self, dat_path, _result):
         name = os.path.splitext(os.path.basename(dat_path))[0]
-        if self.action_button.matches_slug(name):
-            self.action_button.recheck()
+        if name == self._current_slug:
+            self._refresh_match_buttons()
