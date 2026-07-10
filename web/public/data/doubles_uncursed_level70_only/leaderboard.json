@@ -43,7 +43,9 @@
                 "cursed": false
             },
             "opponentRank": 69
-        }
+        },
+        "avgRounds": 6.283870967741936,
+        "maxRounds": 14
     },
     {
         "label": "POKEMONTRAINER_Vanya:Vanya#2",
@@ -89,7 +91,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 7.380645161290323,
+        "maxRounds": 61
     },
     {
         "label": "ODDISH:Oddium",
@@ -135,7 +139,9 @@
                 "cursed": false
             },
             "opponentRank": 127
-        }
+        },
+        "avgRounds": 6.47741935483871,
+        "maxRounds": 28
     },
     {
         "label": "TOURISTM:Azeler",
@@ -181,7 +187,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 12.851612903225806,
+        "maxRounds": 46
     },
     {
         "label": "MASKEDVILLAIN:Crimson#23",
@@ -227,7 +235,9 @@
                 "cursed": false
             },
             "opponentRank": 123
-        }
+        },
+        "avgRounds": 8.141935483870968,
+        "maxRounds": 29
     },
     {
         "label": "POKEMONTRAINER_Vanya:Vanya#3",
@@ -273,7 +283,9 @@
                 "cursed": false
             },
             "opponentRank": 124
-        }
+        },
+        "avgRounds": 7.825806451612904,
+        "maxRounds": 17
     },
     {
         "label": "TRAINER_Candy:Candy#1",
@@ -319,7 +331,9 @@
                 "cursed": false
             },
             "opponentRank": 123
-        }
+        },
+        "avgRounds": 8.251612903225807,
+        "maxRounds": 15
     },
     {
         "label": "MASKEDVILLAIN:Crimson#22",
@@ -365,7 +379,9 @@
                 "cursed": false
             },
             "opponentRank": 125
-        }
+        },
+        "avgRounds": 8.154838709677419,
+        "maxRounds": 20
     },
     {
         "label": "POKEMONTRAINER_Yezera:Yezera#11",
@@ -411,7 +427,9 @@
                 "cursed": false
             },
             "opponentRank": 136
-        }
+        },
+        "avgRounds": 7.961290322580645,
+        "maxRounds": 28
     },
     {
         "label": "MASKEDVILLAIN2:Teal#23",
@@ -457,7 +475,9 @@
                 "cursed": false
             },
             "opponentRank": 123
-        }
+        },
+        "avgRounds": 7.967741935483871,
+        "maxRounds": 18
     },
     {
         "label": "VETERANM_2:Kirbae",
@@ -503,7 +523,9 @@
                 "cursed": false
             },
             "opponentRank": 123
-        }
+        },
+        "avgRounds": 7.980645161290322,
+        "maxRounds": 22
     },
     {
         "label": "HEXMANIAC:Errata",
@@ -549,7 +571,9 @@
                 "cursed": false
             },
             "opponentRank": 124
-        }
+        },
+        "avgRounds": 6.109677419354838,
+        "maxRounds": 14
     },
     {
         "label": "MASKEDVILLAIN2:Teal#22",
@@ -595,7 +619,9 @@
                 "cursed": false
             },
             "opponentRank": 130
-        }
+        },
+        "avgRounds": 8.025806451612903,
+        "maxRounds": 20
     },
     {
         "label": "TOURISTM:Chus",
@@ -641,7 +667,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 9.477419354838709,
+        "maxRounds": 42
     },
     {
         "label": "SPIRITGUARDIAN3:Preeti",
@@ -687,7 +715,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 10.838709677419354,
+        "maxRounds": 47
     },
     {
         "label": "SHADOWMAVIS:Mavis#1",
@@ -733,7 +763,9 @@
                 "cursed": false
             },
             "opponentRank": 131
-        }
+        },
+        "avgRounds": 8.593548387096774,
+        "maxRounds": 25
     },
     {
         "label": "NIGHTMAREQUEEN_Elise:Elise",
@@ -779,7 +811,9 @@
                 "cursed": false
             },
             "opponentRank": 138
-        }
+        },
+        "avgRounds": 8.335483870967742,
+        "maxRounds": 27
     },
     {
         "label": "WAITRESS3:Destiny",
@@ -825,7 +859,9 @@
                 "cursed": false
             },
             "opponentRank": 127
-        }
+        },
+        "avgRounds": 8.980645161290322,
+        "maxRounds": 34
     },
     {
         "label": "TRAINER_Alessa:Alessa#6",
@@ -871,7 +907,9 @@
                 "cursed": false
             },
             "opponentRank": 131
-        }
+        },
+        "avgRounds": 7.4,
+        "maxRounds": 29
     },
     {
         "label": "SCIENTIST_F:LunaFlare",
@@ -917,7 +955,9 @@
                 "cursed": false
             },
             "opponentRank": 139
-        }
+        },
+        "avgRounds": 9.425806451612903,
+        "maxRounds": 39
     },
     {
         "label": "ULTRALAINIE:Lainie",
@@ -963,7 +1003,9 @@
                 "cursed": false
             },
             "opponentRank": 136
-        }
+        },
+        "avgRounds": 7.645161290322581,
+        "maxRounds": 26
     },
     {
         "label": "POKEMONCHAMPION_Vanya:Vanya",
@@ -1009,7 +1051,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 6.877419354838709,
+        "maxRounds": 17
     },
     {
         "label": "POKEMONTRAINER_Vanya:Vanya",
@@ -1055,7 +1099,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 6.658064516129032,
+        "maxRounds": 17
     },
     {
         "label": "PUNKM:ValourDyke",
@@ -1101,7 +1147,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 11.729032258064516,
+        "maxRounds": 59
     },
     {
         "label": "FORMERCHAMP_Elise:Elise",
@@ -1147,7 +1195,9 @@
                 "cursed": false
             },
             "opponentRank": 141
-        }
+        },
+        "avgRounds": 6.193548387096774,
+        "maxRounds": 12
     },
     {
         "label": "TRAINER_Sang:Sang#5",
@@ -1193,7 +1243,9 @@
                 "cursed": false
             },
             "opponentRank": 143
-        }
+        },
+        "avgRounds": 10.490322580645161,
+        "maxRounds": 58
     },
     {
         "label": "POKEMONTRAINER_Vanya:Vanya#1",
@@ -1239,7 +1291,9 @@
                 "cursed": false
             },
             "opponentRank": 135
-        }
+        },
+        "avgRounds": 9.496774193548386,
+        "maxRounds": 35
     },
     {
         "label": "FORMERCHAMP_Vincent:Vincent",
@@ -1285,7 +1339,9 @@
                 "cursed": false
             },
             "opponentRank": 137
-        }
+        },
+        "avgRounds": 14.348387096774193,
+        "maxRounds": 58
     },
     {
         "label": "TAPU_BULU:Tapu Bulu",
@@ -1331,7 +1387,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 7.632258064516129,
+        "maxRounds": 16
     },
     {
         "label": "POKEMONRANGER_M:Zufaix",
@@ -1377,7 +1435,9 @@
                 "cursed": false
             },
             "opponentRank": 133
-        }
+        },
+        "avgRounds": 8.548387096774194,
+        "maxRounds": 28
     },
     {
         "label": "FORMERCHAMP_Scilla:Scilla",
@@ -1423,7 +1483,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 8.425806451612903,
+        "maxRounds": 45
     },
     {
         "label": "SEEKER_Nora:Nora#1",
@@ -1469,7 +1531,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 10.574193548387097,
+        "maxRounds": 52
     },
     {
         "label": "MASKEDVILLAIN2_DOUBLE:Teal#13",
@@ -1515,7 +1579,9 @@
                 "cursed": false
             },
             "opponentRank": 138
-        }
+        },
+        "avgRounds": 9.961290322580645,
+        "maxRounds": 27
     },
     {
         "label": "KILLU:Killu",
@@ -1561,7 +1627,9 @@
                 "cursed": false
             },
             "opponentRank": 137
-        }
+        },
+        "avgRounds": 8.741935483870968,
+        "maxRounds": 46
     },
     {
         "label": "FORMERCHAMP_Ansel:Ansel",
@@ -1607,7 +1675,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 12.154838709677419,
+        "maxRounds": 54
     },
     {
         "label": "MASKEDVILLAIN_DOUBLE:Crimson#13",
@@ -1653,7 +1723,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 9.980645161290322,
+        "maxRounds": 27
     },
     {
         "label": "TAPU_BULU:Tapu Bulu#1",
@@ -1699,7 +1771,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 7.541935483870968,
+        "maxRounds": 24
     },
     {
         "label": "FORMERCHAMP_Elise:Elise#1",
@@ -1745,7 +1819,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 6.27741935483871,
+        "maxRounds": 23
     },
     {
         "label": "FORMERCHAMP_Chara:Chara",
@@ -1791,7 +1867,9 @@
                 "cursed": false
             },
             "opponentRank": 140
-        }
+        },
+        "avgRounds": 7.554838709677419,
+        "maxRounds": 22
     },
     {
         "label": "LEADER_Samorn:Samorn#2",
@@ -1837,7 +1915,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 8.916129032258064,
+        "maxRounds": 29
     },
     {
         "label": "ELDER:Logun",
@@ -1883,7 +1963,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 8.238709677419354,
+        "maxRounds": 45
     },
     {
         "label": "LEADER_Helena:Helena#2",
@@ -1929,7 +2011,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 8.23225806451613,
+        "maxRounds": 21
     },
     {
         "label": "COOLTRAINER_M7:X",
@@ -1975,7 +2059,9 @@
                 "cursed": false
             },
             "opponentRank": 135
-        }
+        },
+        "avgRounds": 10.290322580645162,
+        "maxRounds": 46
     },
     {
         "label": "TAPU_KOKO:Tapu Koko",
@@ -2021,7 +2107,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 6.832258064516129,
+        "maxRounds": 11
     },
     {
         "label": "LADY2:Eseria",
@@ -2067,7 +2155,9 @@
                 "cursed": false
             },
             "opponentRank": 152
-        }
+        },
+        "avgRounds": 8.438709677419356,
+        "maxRounds": 47
     },
     {
         "label": "FAIRYTALEGIRL:Emmi",
@@ -2113,7 +2203,9 @@
                 "cursed": false
             },
             "opponentRank": 137
-        }
+        },
+        "avgRounds": 8.348387096774193,
+        "maxRounds": 30
     },
     {
         "label": "FORMERCHAMP_Praveen:Praveen",
@@ -2159,7 +2251,9 @@
                 "cursed": false
             },
             "opponentRank": 130
-        }
+        },
+        "avgRounds": 10.290322580645162,
+        "maxRounds": 44
     },
     {
         "label": "TRAINER_Eifion:Eifion#3",
@@ -2205,7 +2299,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 8.567741935483872,
+        "maxRounds": 36
     },
     {
         "label": "LEADER_Bence:Bence#2",
@@ -2251,7 +2347,9 @@
                 "cursed": false
             },
             "opponentRank": 144
-        }
+        },
+        "avgRounds": 9.23225806451613,
+        "maxRounds": 42
     },
     {
         "label": "LEADER_Eko:Eko#2",
@@ -2297,7 +2395,9 @@
                 "cursed": false
             },
             "opponentRank": 144
-        }
+        },
+        "avgRounds": 7.490322580645161,
+        "maxRounds": 12
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#19",
@@ -2343,7 +2443,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 8.219354838709677,
+        "maxRounds": 39
     },
     {
         "label": "LEADER_Bence:Bence#3",
@@ -2389,7 +2491,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 8.425806451612903,
+        "maxRounds": 27
     },
     {
         "label": "TRAINER_Zain:Zain#2",
@@ -2435,7 +2539,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 10.258064516129032,
+        "maxRounds": 33
     },
     {
         "label": "LEADER_Lambert:Lambert#3",
@@ -2481,7 +2587,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 7.2064516129032254,
+        "maxRounds": 14
     },
     {
         "label": "TRAINER_Sang:Sang#4",
@@ -2527,7 +2635,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 10.296774193548387,
+        "maxRounds": 29
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#17",
@@ -2573,7 +2683,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 8.832258064516129,
+        "maxRounds": 32
     },
     {
         "label": "TAPU_LELE:Tapu Lele#1",
@@ -2619,7 +2731,9 @@
                 "cursed": false
             },
             "opponentRank": 137
-        }
+        },
+        "avgRounds": 17.638709677419357,
+        "maxRounds": 1000
     },
     {
         "label": "ANOTHERPOSSIBLETAMARIND:Tamarind#1",
@@ -2665,7 +2779,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 10.406451612903226,
+        "maxRounds": 38
     },
     {
         "label": "LEADER_Lambert:Lambert#2",
@@ -2711,7 +2827,9 @@
                 "cursed": false
             },
             "opponentRank": 143
-        }
+        },
+        "avgRounds": 7.096774193548387,
+        "maxRounds": 14
     },
     {
         "label": "ANOTHERPOSSIBLEALESSA:Alessa",
@@ -2757,7 +2875,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 9.07741935483871,
+        "maxRounds": 43
     },
     {
         "label": "IDEALTRAINER:of Freedom",
@@ -2803,7 +2923,9 @@
                 "cursed": false
             },
             "opponentRank": 141
-        }
+        },
+        "avgRounds": 10.2,
+        "maxRounds": 52
     },
     {
         "label": "MASKEDVILLAIN2:Teal#17",
@@ -2849,7 +2971,9 @@
                 "cursed": false
             },
             "opponentRank": 143
-        }
+        },
+        "avgRounds": 8.961290322580645,
+        "maxRounds": 38
     },
     {
         "label": "ANOTHERPOSSIBLETAMARIND:Tamarind",
@@ -2895,7 +3019,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 10.361290322580645,
+        "maxRounds": 42
     },
     {
         "label": "PROFESSOR_Tamarind:Tamarind",
@@ -2941,7 +3067,9 @@
                 "cursed": false
             },
             "opponentRank": 140
-        }
+        },
+        "avgRounds": 9.04516129032258,
+        "maxRounds": 29
     },
     {
         "label": "ARCHFRIEND_Lainie:Lainie",
@@ -2987,7 +3115,9 @@
                 "cursed": false
             },
             "opponentRank": 135
-        }
+        },
+        "avgRounds": 8.961290322580645,
+        "maxRounds": 44
     },
     {
         "label": "HIKER:Valrex",
@@ -3033,7 +3163,9 @@
                 "cursed": false
             },
             "opponentRank": 136
-        }
+        },
+        "avgRounds": 9.103225806451613,
+        "maxRounds": 33
     },
     {
         "label": "SUPERNERD:Agentbla",
@@ -3079,7 +3211,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 9.096774193548388,
+        "maxRounds": 31
     },
     {
         "label": "KATY:Manycrows",
@@ -3125,7 +3259,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 10.225806451612904,
+        "maxRounds": 46
     },
     {
         "label": "SPIRITGUARDIAN4:Brigitte",
@@ -3171,7 +3307,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 11.980645161290322,
+        "maxRounds": 41
     },
     {
         "label": "MASKEDVILLAIN2_DOUBLE:Teal#12",
@@ -3217,7 +3355,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 10.729032258064516,
+        "maxRounds": 41
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#18",
@@ -3263,7 +3403,9 @@
                 "cursed": false
             },
             "opponentRank": 138
-        }
+        },
+        "avgRounds": 8.541935483870967,
+        "maxRounds": 35
     },
     {
         "label": "ANOTHERPOSSIBLEALESSA:Alessa#1",
@@ -3309,7 +3451,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 9.69032258064516,
+        "maxRounds": 37
     },
     {
         "label": "MASKEDVILLAIN:Crimson#17",
@@ -3355,7 +3499,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 9.87741935483871,
+        "maxRounds": 41
     },
     {
         "label": "TRAINER_Skyler:Skyler",
@@ -3401,7 +3547,9 @@
                 "cursed": false
             },
             "opponentRank": 140
-        }
+        },
+        "avgRounds": 9.845161290322581,
+        "maxRounds": 58
     },
     {
         "label": "TAPU_KOKO:Tapu Koko#1",
@@ -3447,7 +3595,9 @@
                 "cursed": false
             },
             "opponentRank": 131
-        }
+        },
+        "avgRounds": 6.909677419354839,
+        "maxRounds": 16
     },
     {
         "label": "DELINQUENT:Lilypad",
@@ -3493,7 +3643,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 6.858064516129033,
+        "maxRounds": 27
     },
     {
         "label": "MASKEDVILLAIN2:Teal#16",
@@ -3539,7 +3691,9 @@
                 "cursed": false
             },
             "opponentRank": 141
-        }
+        },
+        "avgRounds": 8.658064516129032,
+        "maxRounds": 41
     },
     {
         "label": "GUITARIST3:Envy",
@@ -3585,7 +3739,9 @@
                 "cursed": false
             },
             "opponentRank": 141
-        }
+        },
+        "avgRounds": 12.025806451612903,
+        "maxRounds": 48
     },
     {
         "label": "DRAGONTAMER_F:Zinnia",
@@ -3631,7 +3787,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 13.651612903225807,
+        "maxRounds": 50
     },
     {
         "label": "RICHBOY4:Darlvon",
@@ -3677,7 +3835,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 8.935483870967742,
+        "maxRounds": 42
     },
     {
         "label": "IDEALTRAINER:of Brilliance",
@@ -3723,7 +3883,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 7.890322580645162,
+        "maxRounds": 38
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#14",
@@ -3769,7 +3931,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 8.483870967741936,
+        "maxRounds": 23
     },
     {
         "label": "TRAINER_Zain:Zain#3",
@@ -3815,7 +3979,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 10.464516129032258,
+        "maxRounds": 45
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#21",
@@ -3861,7 +4027,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 8.974193548387097,
+        "maxRounds": 26
     },
     {
         "label": "TAPU_LELE:Tapu Lele",
@@ -3907,7 +4075,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 10.470967741935484,
+        "maxRounds": 50
     },
     {
         "label": "JANITOR:Steeb",
@@ -3953,7 +4123,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 8.103225806451613,
+        "maxRounds": 19
     },
     {
         "label": "TRAINER_Keoni:Keoni#2",
@@ -3999,7 +4171,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 8.058064516129033,
+        "maxRounds": 71
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#3",
@@ -4045,7 +4219,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 9.04516129032258,
+        "maxRounds": 38
     },
     {
         "label": "WAITRESS2:Fanfan",
@@ -4091,7 +4267,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 9.425806451612903,
+        "maxRounds": 27
     },
     {
         "label": "CHALLENGER_Vanya:Vanya#8",
@@ -4137,7 +4315,9 @@
                 "cursed": false
             },
             "opponentRank": 143
-        }
+        },
+        "avgRounds": 9.974193548387097,
+        "maxRounds": 45
     },
     {
         "label": "RICHBOY:Splitmoon",
@@ -4183,7 +4363,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 8.458064516129033,
+        "maxRounds": 21
     },
     {
         "label": "MASKEDVILLAIN_DOUBLE:Crimson#12",
@@ -4229,7 +4411,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 10.619354838709677,
+        "maxRounds": 43
     },
     {
         "label": "MASKEDVILLAIN:Crimson#19",
@@ -4275,7 +4459,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 8.290322580645162,
+        "maxRounds": 30
     },
     {
         "label": "TRAINER_Imogene_A:Imogene#1",
@@ -4321,7 +4507,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 10.974193548387097,
+        "maxRounds": 50
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#1",
@@ -4367,7 +4555,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 9.993548387096775,
+        "maxRounds": 44
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#11",
@@ -4413,7 +4603,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 9.225806451612904,
+        "maxRounds": 40
     },
     {
         "label": "HARLEQUIN:Minty",
@@ -4459,7 +4651,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 7.774193548387097,
+        "maxRounds": 54
     },
     {
         "label": "MASKEDVILLAIN2:Teal#19",
@@ -4505,7 +4699,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 8.329032258064515,
+        "maxRounds": 31
     },
     {
         "label": "MASKEDVILLAIN:Crimson#16",
@@ -4551,7 +4747,9 @@
                 "cursed": false
             },
             "opponentRank": 144
-        }
+        },
+        "avgRounds": 9.019354838709678,
+        "maxRounds": 41
     },
     {
         "label": "DRAGONTAMER_F:Bella",
@@ -4597,7 +4795,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 15.92258064516129,
+        "maxRounds": 80
     },
     {
         "label": "ROUGHNECK2:Jaggedthorn",
@@ -4643,7 +4843,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 8.509677419354839,
+        "maxRounds": 43
     },
     {
         "label": "COOLTRAINER_M3:Dada",
@@ -4689,7 +4891,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 7.52258064516129,
+        "maxRounds": 44
     },
     {
         "label": "TRAINER_Eifion:Eifion#1",
@@ -4735,7 +4939,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 12.038709677419355,
+        "maxRounds": 52
     },
     {
         "label": "TAPU_FINI:Tapu Fini#1",
@@ -4781,7 +4987,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 10.793548387096774,
+        "maxRounds": 48
     },
     {
         "label": "MASKEDVILLAIN2:Teal#15",
@@ -4827,7 +5035,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 7.664516129032258,
+        "maxRounds": 34
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#10",
@@ -4873,7 +5083,9 @@
                 "cursed": false
             },
             "opponentRank": 154
-        }
+        },
+        "avgRounds": 8.935483870967742,
+        "maxRounds": 35
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#5",
@@ -4919,7 +5131,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 7.4,
+        "maxRounds": 18
     },
     {
         "label": "MASKEDVILLAIN:Crimson#15",
@@ -4965,7 +5179,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 7.819354838709677,
+        "maxRounds": 34
     },
     {
         "label": "TAPU_FINI:Tapu Fini",
@@ -5011,7 +5227,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 10.561290322580644,
+        "maxRounds": 46
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#9",
@@ -5057,7 +5275,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 8.251612903225807,
+        "maxRounds": 22
     },
     {
         "label": "MASKEDVILLAIN:Crimson#21",
@@ -5103,7 +5323,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 12.30967741935484,
+        "maxRounds": 50
     },
     {
         "label": "ANOTHERPOSSIBLEZAIN:Zain#1",
@@ -5149,7 +5371,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 10.135483870967741,
+        "maxRounds": 46
     },
     {
         "label": "MASKEDVILLAIN:Crimson#18",
@@ -5195,7 +5419,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 8.012903225806452,
+        "maxRounds": 19
     },
     {
         "label": "CLERK_M2:Papper",
@@ -5241,7 +5467,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 9.883870967741936,
+        "maxRounds": 37
     },
     {
         "label": "MASKEDVILLAIN2:Teal#21",
@@ -5287,7 +5515,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 12.103225806451613,
+        "maxRounds": 43
     },
     {
         "label": "IDEALTRAINER:of Days",
@@ -5333,7 +5563,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 8.987096774193548,
+        "maxRounds": 47
     },
     {
         "label": "MASKEDVILLAIN2:Teal#14",
@@ -5379,7 +5611,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 7.703225806451613,
+        "maxRounds": 23
     },
     {
         "label": "GAMBLER:IgnitedxSoul",
@@ -5425,7 +5659,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 8.451612903225806,
+        "maxRounds": 21
     },
     {
         "label": "MASKEDVILLAIN:Crimson#14",
@@ -5471,7 +5707,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 7.7612903225806456,
+        "maxRounds": 25
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#8",
@@ -5517,7 +5755,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 7.470967741935484,
+        "maxRounds": 14
     },
     {
         "label": "IDEALTRAINER:of Beauty",
@@ -5563,7 +5803,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 8.754838709677419,
+        "maxRounds": 37
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#16",
@@ -5609,7 +5851,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 11.761290322580646,
+        "maxRounds": 52
     },
     {
         "label": "FORMERCHAMP_Casey:Casey",
@@ -5655,7 +5899,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 9.206451612903226,
+        "maxRounds": 43
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#6",
@@ -5701,7 +5947,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 9.941935483870967,
+        "maxRounds": 44
     },
     {
         "label": "TRAINER_Alessa:Alessa#3",
@@ -5747,7 +5995,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 7.064516129032258,
+        "maxRounds": 30
     },
     {
         "label": "MASKEDVILLAIN2:Teal#18",
@@ -5793,7 +6043,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 8.206451612903226,
+        "maxRounds": 26
     },
     {
         "label": "WORKER5:Jbsundown",
@@ -5839,7 +6091,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 7.84516129032258,
+        "maxRounds": 21
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#13",
@@ -5885,7 +6139,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 10.019354838709678,
+        "maxRounds": 52
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#15",
@@ -5931,7 +6187,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 8.019354838709678,
+        "maxRounds": 17
     },
     {
         "label": "HEXMANIAC_1:Riptide#1",
@@ -5977,7 +6235,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 8.135483870967741,
+        "maxRounds": 29
     },
     {
         "label": "IDEALTRAINER:of Tradition",
@@ -6023,7 +6283,9 @@
                 "cursed": false
             },
             "opponentRank": 145
-        }
+        },
+        "avgRounds": 11.148387096774194,
+        "maxRounds": 52
     },
     {
         "label": "ANOTHERPOSSIBLEZAIN:Zain",
@@ -6069,7 +6331,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 9.832258064516129,
+        "maxRounds": 45
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#4",
@@ -6115,7 +6379,9 @@
                 "cursed": false
             },
             "opponentRank": 147
-        }
+        },
+        "avgRounds": 10.916129032258064,
+        "maxRounds": 42
     },
     {
         "label": "IDEALTRAINER:of Riches",
@@ -6161,7 +6427,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 8.35483870967742,
+        "maxRounds": 24
     },
     {
         "label": "POKEMONBREEDER_F:Miss Zesty",
@@ -6207,7 +6475,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 9.935483870967742,
+        "maxRounds": 74
     },
     {
         "label": "JUGGLER:Brickbat",
@@ -6253,7 +6523,9 @@
                 "cursed": false
             },
             "opponentRank": 144
-        }
+        },
+        "avgRounds": 9.76774193548387,
+        "maxRounds": 34
     },
     {
         "label": "IDEALTRAINER:of Conquest",
@@ -6299,7 +6571,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 9.051612903225806,
+        "maxRounds": 47
     },
     {
         "label": "GAMBLER:Tiki",
@@ -6345,7 +6619,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 8.30967741935484,
+        "maxRounds": 38
     },
     {
         "label": "MASKEDVILLAIN:Crimson#20",
@@ -6391,7 +6667,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 11.341935483870968,
+        "maxRounds": 35
     },
     {
         "label": "MASKEDVILLAIN2:Teal#20",
@@ -6437,7 +6715,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 11.270967741935484,
+        "maxRounds": 59
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya",
@@ -6483,7 +6763,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 8.948387096774194,
+        "maxRounds": 42
     },
     {
         "label": "IDEALTRAINER:of Origins",
@@ -6529,7 +6811,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 9.174193548387096,
+        "maxRounds": 46
     },
     {
         "label": "ARTIST3:Drawingbox",
@@ -6575,7 +6859,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 7.651612903225806,
+        "maxRounds": 30
     },
     {
         "label": "HEXMANIAC:Lichenprincess",
@@ -6621,7 +6907,9 @@
                 "cursed": false
             },
             "opponentRank": 146
-        }
+        },
+        "avgRounds": 8.580645161290322,
+        "maxRounds": 21
     },
     {
         "label": "LADY4:Pria",
@@ -6667,7 +6955,9 @@
                 "cursed": false
             },
             "opponentRank": 150
-        }
+        },
+        "avgRounds": 8.651612903225807,
+        "maxRounds": 29
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#12",
@@ -6713,7 +7003,9 @@
                 "cursed": false
             },
             "opponentRank": 142
-        }
+        },
+        "avgRounds": 9.412903225806451,
+        "maxRounds": 38
     },
     {
         "label": "SPIRITGUARDIAN2:Sonya",
@@ -6759,7 +7051,9 @@
                 "cursed": false
             },
             "opponentRank": 149
-        }
+        },
+        "avgRounds": 10.916129032258064,
+        "maxRounds": 50
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#7",
@@ -6805,7 +7099,9 @@
                 "cursed": false
             },
             "opponentRank": 151
-        }
+        },
+        "avgRounds": 12.483870967741936,
+        "maxRounds": 75
     },
     {
         "label": "IDEALTRAINER:of Colors",
@@ -6851,7 +7147,9 @@
                 "cursed": false
             },
             "opponentRank": 148
-        }
+        },
+        "avgRounds": 9.961290322580645,
+        "maxRounds": 41
     },
     {
         "label": "POKEMONMASTER_Vanya:Vanya#20",
@@ -6897,7 +7195,9 @@
                 "cursed": false
             },
             "opponentRank": 153
-        }
+        },
+        "avgRounds": 18.664516129032258,
+        "maxRounds": 875
     },
     {
         "label": "ARTIFICIALTRAINER:Doppel",
@@ -6943,7 +7243,9 @@
                 "cursed": false
             },
             "opponentRank": 152
-        }
+        },
+        "avgRounds": 34.61290322580645,
+        "maxRounds": 1000
     },
     {
         "label": "ARTIFICIALTRAINER:Trinity",
@@ -6989,7 +7291,9 @@
                 "cursed": false
             },
             "opponentRank": 153
-        }
+        },
+        "avgRounds": 18.780645161290323,
+        "maxRounds": 115
     },
     {
         "label": "MAID2:Maddie",
@@ -7035,7 +7339,9 @@
                 "cursed": false
             },
             "opponentRank": 154
-        }
+        },
+        "avgRounds": 6.458064516129032,
+        "maxRounds": 58
     },
     {
         "label": "ROLLERSKATER_F:Attea",
@@ -7081,7 +7387,9 @@
                 "cursed": false
             },
             "opponentRank": 152
-        }
+        },
+        "avgRounds": 12.95483870967742,
+        "maxRounds": 58
     },
     {
         "label": "ARTIFICIALTRAINER:Solitaire",
@@ -7127,7 +7435,9 @@
                 "cursed": false
             },
             "opponentRank": 154
-        }
+        },
+        "avgRounds": 16.438709677419354,
+        "maxRounds": 77
     },
     {
         "label": "BATTLEGIRL:Tester",
@@ -7164,6 +7474,8 @@
                 "cursed": false
             },
             "opponentRank": 155
-        }
+        },
+        "avgRounds": 8.451612903225806,
+        "maxRounds": 77
     }
 ]

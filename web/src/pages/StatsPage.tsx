@@ -5,7 +5,7 @@ import { fetchLeaderboard, fetchTeamLevels, formatKey } from "../lib/dataClient"
 import type { BattleType, CurseVariant, FilterVariant, LeaderboardRow, ScatterPoint, TeamLevels } from "../types";
 import "./StatsPage.css";
 
-type MetricKey = "rating" | "rank" | "winRate" | "avgLevel" | "maxLevel";
+type MetricKey = "rating" | "rank" | "winRate" | "avgLevel" | "maxLevel" | "avgRounds" | "maxRounds";
 
 interface MetricOption {
   key: MetricKey;
@@ -19,6 +19,8 @@ const METRICS: MetricOption[] = [
   { key: "rating", label: "Rating", needsFormat: true },
   { key: "rank", label: "Rank", needsFormat: true },
   { key: "winRate", label: "Win rate", needsFormat: true },
+  { key: "avgRounds", label: "Avg rounds", needsFormat: true },
+  { key: "maxRounds", label: "Max rounds", needsFormat: true },
 ];
 
 interface AxisConfig {
@@ -65,6 +67,8 @@ function metricValue(
   if (!row) return undefined;
   if (axis.metric === "rating") return row.rating;
   if (axis.metric === "rank") return row.rank;
+  if (axis.metric === "avgRounds") return row.avgRounds;
+  if (axis.metric === "maxRounds") return row.maxRounds;
   return row.wldFractions.win;
 }
 
@@ -104,6 +108,7 @@ export function StatsPage() {
   const [axisX, setAxisX] = useState<AxisConfig>({ metric: "maxLevel", battleType: "singles", curseVariant: "cursed", filter: "none" });
   const [axisY, setAxisY] = useState<AxisConfig>({ metric: "rating", battleType: "singles", curseVariant: "cursed", filter: "none" });
   const [showTrendline, setShowTrendline] = useState(false);
+  const [search, setSearch] = useState("");
 
   const [teamLevels, setTeamLevels] = useState<TeamLevels | null>(null);
   const [leaderboards, setLeaderboards] = useState<Record<string, LeaderboardRow[]>>({});
@@ -162,11 +167,18 @@ export function StatsPage() {
       const x = metricValue(axisX, label, leaderboards, teamLevels);
       const y = metricValue(axisY, label, leaderboards, teamLevels);
       if (x === undefined || y === undefined) continue;
-      out.push({ label, trainer: nameByLabel.get(label) ?? label, x, y });
+      const cursed = teamLevels?.[label]?.cursed ?? false;
+      out.push({ label, trainer: nameByLabel.get(label) ?? label, cursed, x, y });
     }
     return out;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, axisX, axisY, leaderboards, teamLevels]);
+
+  const highlightLabel = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    if (!q) return null;
+    return points?.find((p) => p.trainer.toLowerCase().includes(q))?.label ?? null;
+  }, [search, points]);
 
   return (
     <div className="page">
@@ -178,11 +190,19 @@ export function StatsPage() {
           <input type="checkbox" checked={showTrendline} onChange={(e) => setShowTrendline(e.target.checked)} />
           Linear trendline
         </label>
+        <input
+          className="stats-search"
+          type="search"
+          placeholder="Find a trainer..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
       </div>
 
       {error && <p className="error">Failed to load data: {error}</p>}
       {!error && !points && <p>Loading...</p>}
       {points && points.length === 0 && <p>No trainers have data for both axes.</p>}
+      {search.trim() && !highlightLabel && <p className="stats-search-empty">No matching trainer.</p>}
       {points && points.length > 0 && (
         <>
           <StatsScatter
@@ -191,6 +211,7 @@ export function StatsPage() {
             yLabel={axisLabel(axisY)}
             showDiagonal={axisX.metric === axisY.metric}
             showTrendline={showTrendline}
+            highlightLabel={highlightLabel}
           />
           <p className="leaderboard-count">{points.length} trainers plotted</p>
         </>

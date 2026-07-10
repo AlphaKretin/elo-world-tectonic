@@ -4,7 +4,7 @@ import type { LeaderboardRow } from "../types";
 import { CurseIcon } from "./CurseIcon";
 import "./LeaderboardTable.css";
 
-type SortKey = "rank" | "rating" | "wins" | "losses" | "draws" | "battles" | "tier" | "winRate";
+type SortKey = "rank" | "rating" | "wins" | "losses" | "draws" | "battles" | "tier" | "winRate" | "avgRounds" | "maxRounds";
 type CurseFilter = "all" | "cursed" | "uncursed";
 
 interface Props {
@@ -139,6 +139,8 @@ export function LeaderboardTable({ rows, onSelect }: Props) {
               <th onClick={() => toggleSort("draws")}>D{sortIndicator("draws")}</th>
               <th onClick={() => toggleSort("battles")}>Battles{sortIndicator("battles")}</th>
               <th onClick={() => toggleSort("winRate")}>Win%{sortIndicator("winRate")}</th>
+              <th onClick={() => toggleSort("avgRounds")}>Avg rounds{sortIndicator("avgRounds")}</th>
+              <th onClick={() => toggleSort("maxRounds")}>Max rounds{sortIndicator("maxRounds")}</th>
             </tr>
           </thead>
           <tbody>
@@ -158,6 +160,8 @@ export function LeaderboardTable({ rows, onSelect }: Props) {
                 <td>{row.draws}</td>
                 <td>{row.battles}</td>
                 <td>{(row.wldFractions.win * 100).toFixed(0)}%</td>
+                <td>{row.avgRounds.toFixed(1)}</td>
+                <td>{row.maxRounds}</td>
               </tr>
             ))}
           </tbody>

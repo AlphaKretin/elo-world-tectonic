@@ -4,13 +4,13 @@
   /* Matches the svg's own max-width so the tooltip's %-based left/top
      (computed from the svg's viewBox coordinates) lines up with the
      rendered point instead of a wider container. */
-  max-width: 640px;
+  max-width: 960px;
 }
 
 .stats-scatter svg {
   width: 100%;
   height: auto;
-  max-width: 640px;
+  max-width: 960px;
   display: block;
 }
 
@@ -21,12 +21,12 @@
 
 .stats-scatter .scatter-tick {
   fill: var(--text-secondary);
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .stats-scatter .scatter-axis-label {
   fill: var(--text-secondary);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .stats-scatter .scatter-diagonal {
@@ -45,12 +45,12 @@
 }
 
 .stats-scatter .scatter-trendline {
-  stroke: var(--accent);
+  stroke: var(--error);
   stroke-width: 2;
 }
 
 .stats-scatter .scatter-legend-line-trend {
-  border-top: 2px solid var(--accent);
+  border-top: 2px solid var(--error);
   opacity: 1;
 }
 
@@ -65,12 +65,18 @@
   opacity: 0.85;
 }
 
+.stats-scatter .scatter-point-highlighted {
+  stroke: var(--text-primary);
+  stroke-width: 2px;
+  opacity: 1;
+}
+
 .stats-scatter .scatter-legend {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text-secondary);
 }
 
@@ -86,7 +92,7 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 0.5rem 0.7rem;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   line-height: 1.4;
   pointer-events: none;
   /* width:max-content sizes to content regardless of anchor position --

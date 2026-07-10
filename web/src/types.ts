@@ -48,6 +48,10 @@ export interface LeaderboardRow {
   wldFractions: WldFractions;
   bestWin: BestWorstEntry | null;
   worstLoss: BestWorstEntry | null;
+  // Avg/max length (in rounds) of this trainer's battles in this format --
+  // see analysis/export_web_data.py's round_stats_by_label.
+  avgRounds: number;
+  maxRounds: number;
 }
 
 // Per-trainer format-independent team level summary (avg/max of party
@@ -58,6 +62,7 @@ export interface LeaderboardRow {
 export interface TeamLevelEntry {
   avgLevel: number;
   maxLevel: number;
+  cursed: boolean;
 }
 
 export type TeamLevels = Record<string, TeamLevelEntry>;
@@ -128,6 +133,7 @@ export interface JoinedRow {
 export interface ScatterPoint {
   label: string;
   trainer: string;
+  cursed: boolean;
   x: number;
   y: number;
 }

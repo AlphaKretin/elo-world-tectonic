@@ -23,6 +23,7 @@ usable results yet rather than failing the whole run.
 import json
 import os
 import shutil
+from collections import defaultdict
 
 import best_worst
 import ratings
@@ -182,12 +183,14 @@ def export_trainers(trainer_data_by_label, tribe_info, formats):
 
 
 def export_team_levels(trainer_data_by_label):
-    """Standalone label -> {avgLevel, maxLevel} summary for every trainer,
-    format-independent (see static_trainer_payload). Lets the Stats page
-    plot team level against any format's ratings with one fetch instead of
-    one fetch per trainer (there's no per-format subset filtering here --
+    """Standalone label -> {avgLevel, maxLevel, cursed} summary for every
+    trainer, format-independent (see static_trainer_payload). Lets the Stats
+    page plot team level against any format's ratings with one fetch instead
+    of one fetch per trainer (there's no per-format subset filtering here --
     every trainer with a party gets an entry, same set the trainers/
-    directory covers)."""
+    directory covers). `cursed` is included so the Stats page can show the
+    curse icon regardless of which metrics are on the axes -- format
+    leaderboard rows also carry a `cursed` flag but aren't always fetched."""
     out = {}
     for label, row in trainer_data_by_label.items():
         levels = [m["level"] for m in row["party"]]
@@ -196,18 +199,53 @@ def export_team_levels(trainer_data_by_label):
         out[label] = {
             "avgLevel": sum(levels) / len(levels),
             "maxLevel": max(levels),
+            "cursed": results_lib.is_cursed_trainer(label, trainer_data_by_label),
         }
     with open(os.path.join(WEB_DATA_DIR, "team_levels.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, indent=4)
     print(f"team_levels: {len(out)} entries -> {WEB_DATA_DIR}")
 
 
-def export_format(fmt, trainer_data_by_label):
+def round_stats_by_label(base_fmt, filters):
+    """label -> {avgRounds, maxRounds} for one format, from the same
+    skipped/had_error/filter/result-shape row walk as ratings.py's
+    _collect_stats_and_fit_rows, so a trainer's round stats reflect exactly
+    the battles their rating was fit from. Folded directly into each
+    leaderboard row (see export_format) rather than a standalone file,
+    since -- unlike team level -- battle length genuinely varies by format
+    (singles/doubles run different lengths, and a filter changes which
+    battles count)."""
+    rows = results_lib.load_results(base_fmt)
+    trainer_data = results_lib.load_trainer_data_if_needed(filters)
+
+    rounds = defaultdict(list)
+    for r in rows:
+        if r.get("skipped") or r.get("had_error"):
+            continue
+        if not results_lib.passes_filters(r, filters, trainer_data):
+            continue
+        if r.get("result") not in (results_lib.WIN, results_lib.LOSS, results_lib.DRAW):
+            continue
+        n = r.get("rounds")
+        if n is None:
+            continue
+        rounds[r["trainer1"]].append(n)
+        rounds[r["trainer2"]].append(n)
+
+    return {
+        label: {"avgRounds": sum(vals) / len(vals), "maxRounds": max(vals)}
+        for label, vals in rounds.items()
+    }
+
+
+def export_format(base_fmt, filters, trainer_data_by_label):
     """Per-format leaderboard.json: everything that DOES vary by format
-    (rank, rating, record, tier, best win/worst loss), keyed by the same
-    label the static trainers/<label>.json uses."""
+    (rank, rating, record, tier, best win/worst loss, round length), keyed
+    by the same label the static trainers/<label>.json uses."""
+    fmt = base_fmt + results_lib.filter_suffix(filters)
     ratings_by_label = results_lib.load_ratings(fmt)
     best_worst_by_label = trainer_cards.load_best_worst(fmt)
+    round_stats = round_stats_by_label(base_fmt, filters)
 
     out_dir = os.path.join(WEB_DATA_DIR, fmt)
     os.makedirs(out_dir, exist_ok=True)
@@ -218,6 +256,7 @@ def export_format(fmt, trainer_data_by_label):
             continue
         bw = best_worst_by_label.get(label, {})
         tier = row.get("tier")
+        rs = round_stats.get(label, {"avgRounds": 0, "maxRounds": 0})
         leaderboard.append({
             "label": label,
             # Reuses opponent_payload's display name so a masked villain's
@@ -241,6 +280,7 @@ def export_format(fmt, trainer_data_by_label):
             "wldFractions": wld_fractions(row["wins"], row["losses"], row["draws"]),
             "bestWin": best_worst_payload(bw.get("best_win"), trainer_data_by_label, ratings_by_label),
             "worstLoss": best_worst_payload(bw.get("worst_loss"), trainer_data_by_label, ratings_by_label),
+            "avgRounds": rs["avgRounds"], "maxRounds": rs["maxRounds"],
         })
     leaderboard.sort(key=lambda r: r["rank"])
     with open(os.path.join(out_dir, "leaderboard.json"), "w", encoding="utf-8") as f:
@@ -410,12 +450,13 @@ def main():
     export_trainers(trainer_data_by_label, tribe_info, formats)
     export_team_levels(trainer_data_by_label)
 
-    for fmt in formats:
+    for base_fmt, filters in format_specs:
+        fmt = base_fmt + results_lib.filter_suffix(filters)
         ratings_path = os.path.join(results_lib.RATINGS_DIR, f"ratings_{fmt}.json")
         if not os.path.exists(ratings_path):
             print(f"SKIPPED {fmt}: {ratings_path} not found")
             continue
-        export_format(fmt, trainer_data_by_label)
+        export_format(base_fmt, filters, trainer_data_by_label)
 
     export_assets(trainer_data_by_label)
 

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import type { ScatterPoint } from "../types";
+import { CurseIcon } from "./CurseIcon";
 import "./StatsScatter.css";
 
 interface Props {
@@ -11,6 +12,10 @@ interface Props {
   // format A vs rating in format B), so the caller decides when to pass it.
   showDiagonal?: boolean;
   showTrendline?: boolean;
+  // Label of the point matched by the Stats page's search bar (first
+  // trainer whose name contains the query) -- drawn with a highlight ring
+  // and treated as hovered so its tooltip shows without the mouse over it.
+  highlightLabel?: string | null;
 }
 
 interface Trendline {
@@ -65,9 +70,9 @@ function clipTrendline(
   return { x1: xLo, y1: t.slope * xLo + t.intercept, x2: xHi, y2: t.slope * xHi + t.intercept };
 }
 
-const WIDTH = 640;
-const HEIGHT = 480;
-const MARGIN = { top: 16, right: 16, bottom: 48, left: 56 };
+const WIDTH = 960;
+const HEIGHT = 640;
+const MARGIN = { top: 16, right: 16, bottom: 60, left: 72 };
 const PLOT_W = WIDTH - MARGIN.left - MARGIN.right;
 const PLOT_H = HEIGHT - MARGIN.top - MARGIN.bottom;
 
@@ -85,11 +90,16 @@ function fmtCoef(v: number): string {
   return v.toFixed(v !== 0 && Math.abs(v) < 1 ? 4 : 2);
 }
 
-export function StatsScatter({ points, xLabel, yLabel, showDiagonal, showTrendline }: Props) {
+export function StatsScatter({ points, xLabel, yLabel, showDiagonal, showTrendline, highlightLabel }: Props) {
   // Sticks to the last-hovered point instead of clearing on mouse-leave, so
   // the tooltip stays put while reading rather than vanishing between
   // points -- see onMouseEnter below, there's deliberately no onMouseLeave.
   const [hovered, setHovered] = useState<ScatterPoint | null>(null);
+
+  // The mouse takes priority once it's touched the chart; until then, a
+  // search match stands in so the tooltip surfaces the found trainer
+  // without requiring a hover.
+  const effectiveHovered = hovered ?? points.find((p) => p.label === highlightLabel) ?? null;
 
   const trendline = useMemo(() => (showTrendline ? fitTrendline(points) : null), [points, showTrendline]);
 
@@ -136,10 +146,10 @@ export function StatsScatter({ points, xLabel, yLabel, showDiagonal, showTrendli
   // instead of always centering -- centering a wide tooltip on a point near
   // the plot's right edge pushed it past the container and forced aggressive
   // word-wrap rather than letting it grow toward the middle of the chart.
-  const hoveredPos = hovered
+  const hoveredPos = effectiveHovered
     ? (() => {
-        const leftPct = (x(hovered.x) / WIDTH) * 100;
-        const topPct = (y(hovered.y) / HEIGHT) * 100;
+        const leftPct = (x(effectiveHovered.x) / WIDTH) * 100;
+        const topPct = (y(effectiveHovered.y) / HEIGHT) * 100;
         const align: "left" | "center" | "right" = leftPct > 70 ? "right" : leftPct < 30 ? "left" : "center";
         return { leftPct, topPct, align };
       })()
@@ -186,14 +196,15 @@ export function StatsScatter({ points, xLabel, yLabel, showDiagonal, showTrendli
           })()}
 
         {points.map((p) => {
-          const isHovered = hovered?.label === p.label;
+          const isHovered = effectiveHovered?.label === p.label;
+          const isHighlighted = highlightLabel === p.label;
           return (
             <circle
               key={p.label}
-              className="scatter-point scatter-point-neutral"
+              className={`scatter-point scatter-point-neutral${isHighlighted ? " scatter-point-highlighted" : ""}`}
               cx={x(p.x)}
               cy={y(p.y)}
-              r={isHovered ? 6 : 4}
+              r={isHovered ? 7 : isHighlighted ? 6 : 4}
               onMouseEnter={() => setHovered(p)}
             />
           );
@@ -230,17 +241,20 @@ export function StatsScatter({ points, xLabel, yLabel, showDiagonal, showTrendli
         </div>
       )}
 
-      {hovered && hoveredPos && (
+      {effectiveHovered && hoveredPos && (
         <div
           className={`scatter-tooltip scatter-tooltip-${hoveredPos.align}`}
           style={{ left: `${hoveredPos.leftPct}%`, top: `${hoveredPos.topPct}%` }}
         >
-          <strong>{hovered.trainer}</strong>
+          <strong className="trainer-name">
+            {effectiveHovered.cursed && <CurseIcon title="Curse-rolled variant of this trainer" />}
+            {effectiveHovered.trainer}
+          </strong>
           <div>
-            {xLabel}: {fmtTick(hovered.x)}
+            {xLabel}: {fmtTick(effectiveHovered.x)}
           </div>
           <div>
-            {yLabel}: {fmtTick(hovered.y)}
+            {yLabel}: {fmtTick(effectiveHovered.y)}
           </div>
         </div>
       )}

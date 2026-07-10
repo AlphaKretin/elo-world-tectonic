@@ -38,3 +38,19 @@
   cursor: pointer;
   align-self: center;
 }
+
+.stats-search {
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  align-self: center;
+  min-width: 200px;
+}
+
+.stats-search-empty {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
