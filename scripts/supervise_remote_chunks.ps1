@@ -55,6 +55,63 @@ function Save-State($state) {
     $state | ConvertTo-Json -Depth 5 | Set-Content -Path $QueueStatePath
 }
 
+# Banks a finished chunk's done count into $state.completedByFormat (a
+# format_tag -> cumulative-done map) so watch_remote_tournament.ps1 can add
+# it back into AGGREGATE after its status file is deleted below -- without
+# this, AGGREGATE can only ever reflect chunks currently in flight, since a
+# finished chunk's status file never survives past this same poll cycle.
+# $state.completedChunks (format_tag -> [chunk indices already folded in])
+# makes this idempotent: PSCustomObject property assignment requires
+# Add-Member for a not-yet-existing property, so both maps get built up
+# property-by-property here rather than assumed to pre-exist -- and a
+# chunk index already recorded is skipped rather than double-counted,
+# which matters if this ever runs twice for the same transition (e.g. a
+# crash between folding in and Save-State, then a retry next poll).
+function Add-CompletedChunk($state, [string]$formatTag, [int]$chunkIndex, [int]$doneCount) {
+    if (-not ($state.PSObject.Properties.Name -contains "completedByFormat")) {
+        $state | Add-Member -NotePropertyName "completedByFormat" -NotePropertyValue ([PSCustomObject]@{})
+    }
+    if (-not ($state.PSObject.Properties.Name -contains "completedChunks")) {
+        $state | Add-Member -NotePropertyName "completedChunks" -NotePropertyValue ([PSCustomObject]@{})
+    }
+    if (-not ($state.completedChunks.PSObject.Properties.Name -contains $formatTag)) {
+        $state.completedChunks | Add-Member -NotePropertyName $formatTag -NotePropertyValue @()
+    }
+    $alreadyFolded = @($state.completedChunks.$formatTag)
+    if ($alreadyFolded -contains $chunkIndex) { return }
+
+    if (-not ($state.completedByFormat.PSObject.Properties.Name -contains $formatTag)) {
+        $state.completedByFormat | Add-Member -NotePropertyName $formatTag -NotePropertyValue 0
+    }
+    $state.completedByFormat.$formatTag = [int]$state.completedByFormat.$formatTag + $doneCount
+    $state.completedChunks.$formatTag = @($alreadyFolded + $chunkIndex)
+}
+
+# Shared by both "host picks up a new chunk" and "queue empty, host goes
+# idle" below -- both are the same event (a host's current chunk just
+# finished), differing only in whether a next job follows, so both need
+# the same fold-in-before-status-file-is-gone treatment. $DeleteFiles is
+# $false for the idle case: nothing will ever reassign that host again
+# this run, so there's no stacking risk and the file is left as a visible
+# finished marker (see the caller's own comment for why).
+function Complete-Chunk($state, [PSCustomObject]$h, [bool]$DeleteFiles) {
+    $subsetTag = $(if ($state.subsetTag) { $state.subsetTag } else { "subset" })
+    $formatTag = if ($state.subsetTrainerLabels -or $state.subsetPairsPath) { "$($h.currentFormat)_$subsetTag" } else { $h.currentFormat }
+    $suffix = "${formatTag}_shard$($h.currentChunk)"
+    $statusJson = & ssh -n -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$($h.host)" `
+        "cat ~/elo-test/results/elo_status_${suffix}.json 2>/dev/null"
+    $done = 0
+    try { $done = [int](($statusJson | Out-String | ConvertFrom-Json).done) } catch {
+        Write-Log "host $($h.index) ($($h.host)) -- couldn't read final done count for finished $formatTag chunk $($h.currentChunk), banking 0 (status file may have been missing/unparseable)"
+    }
+    Add-CompletedChunk -state $state -formatTag $formatTag -chunkIndex ([int]$h.currentChunk) -doneCount $done
+
+    if ($DeleteFiles) {
+        & ssh -n -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$($h.host)" `
+            "rm -f ~/elo-test/results/elo_status_${suffix}.json ~/elo-test/results/elo_attempting_${suffix}.json ~/elo-test/results/elo_turn_heartbeat_${suffix}.json" 2>$null
+    }
+}
+
 Write-Log "Supervisor starting (PID $PID). Queue state: $QueueStatePath"
 
 while ($true) {
@@ -111,13 +168,7 @@ while ($true) {
             # "stacking" watch_remote_tournament.ps1 was supposed to avoid.
             # elo_results_*/elo_crash_streaks_* are deliberately not touched
             # here -- those hold real battle data that still needs pulling.
-            if ($h.currentFormat) {
-                $subsetTag = $(if ($state.subsetTag) { $state.subsetTag } else { "subset" })
-                $oldFormatTag = if ($state.subsetTrainerLabels -or $state.subsetPairsPath) { "$($h.currentFormat)_$subsetTag" } else { $h.currentFormat }
-                $oldSuffix = "${oldFormatTag}_shard$($h.currentChunk)"
-                & ssh -n -o ConnectTimeout=5 -o StrictHostKeyChecking=accept-new "root@$($h.host)" `
-                    "rm -f ~/elo-test/results/elo_status_${oldSuffix}.json ~/elo-test/results/elo_attempting_${oldSuffix}.json ~/elo-test/results/elo_turn_heartbeat_${oldSuffix}.json" 2>$null
-            }
+            if ($h.currentFormat) { Complete-Chunk -state $state -h $h -DeleteFiles $true }
 
             $h.currentFormat = $item.format
             $h.currentChunk = $item.chunk
@@ -133,6 +184,13 @@ while ($true) {
                 -SubsetTag $(if ($state.subsetTag) { $state.subsetTag } else { "subset" }) -TurnTimeout $(if ($state.turnTimeout) { [int]$state.turnTimeout } else { 0 }) | Out-Null
         } else {
             Write-Log "host $($h.index) ($($h.host)) finished $($h.currentFormat) chunk $($h.currentChunk) -- queue empty, host idle"
+            # Nothing will ever reassign this host again this run, so its
+            # status file isn't deleted (no stacking risk -- see the
+            # reassignment branch's comment above) and is left as a visible
+            # finished marker. Still needs folding into completedByFormat
+            # though, or this host's last chunk would silently be the one
+            # chunk in the whole run AGGREGATE never counts.
+            if ($h.currentFormat) { Complete-Chunk -state $state -h $h -DeleteFiles $false }
             $h.done = $true
         }
         $state.pendingQueue = $pendingQueue

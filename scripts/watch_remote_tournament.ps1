@@ -23,10 +23,23 @@
 # AGGREGATE jump to ~99%+ instantly, dwarfed by the old finished total.
 # Use -Formats to scope the view down to just the run you're actually
 # watching.
+#
+# -QueueStatePath defaults to run_remote_parallel.ps1's own default
+# (results\remote\remote_chunk_queue.json) so a supervised/chunked run's
+# AGGREGATE is accurate with zero extra flags: supervise_remote_chunks.ps1
+# deletes a finished chunk's status file the moment its host picks up the
+# next one (to stop stale FINISHED entries from stacking up here), which
+# would otherwise mean AGGREGATE can only ever reflect chunks currently in
+# flight and never real total progress. That script instead banks each
+# finished chunk's done count into the state file's completedByFormat
+# before deleting, and this watcher adds it back in as a baseline. Safe to
+# point at a nonexistent/unrelated path (or a plain unchunked run with no
+# supervisor) -- just no baseline gets added, same as before this existed.
 param(
     [string]$HostsFile = (Join-Path $PSScriptRoot "remote_hosts.txt"),
     [int]$RefreshSeconds = 5,
-    [string]$Formats = ""
+    [string]$Formats = "",
+    [string]$QueueStatePath = (Join-Path (Split-Path -Parent $PSScriptRoot) "results\remote\remote_chunk_queue.json")
 )
 
 . (Join-Path $PSScriptRoot "_watch_common.ps1")
@@ -99,6 +112,31 @@ while ($true) {
     $doneByFormat = @{}
     $globalTotalByFormat = @{}
     $anyError  = $false
+
+    # Completed-chunk totals persisted by supervise_remote_chunks.ps1's
+    # completedByFormat (folded in there right before a finished chunk's
+    # status file is deleted -- see that script's rm -f). Seeded here
+    # first so the per-host loop below adds live in-flight progress on top
+    # via Add-StatusToAggregate's own prevDone + done accumulation; without
+    # this the aggregate could only ever reflect chunks currently running,
+    # never a finished chunk's real, already-banked progress. Missing/
+    # unparseable file (no supervisor ever ran this queue, e.g. a plain
+    # unchunked launch) just means no baseline to add -- same as today.
+    if (Test-Path $QueueStatePath) {
+        try {
+            $queueState = Get-Content $QueueStatePath -Raw | ConvertFrom-Json
+            if ($queueState.completedByFormat) {
+                foreach ($prop in $queueState.completedByFormat.PSObject.Properties) {
+                    if (-not $formatFilter -or $formatFilter -contains $prop.Name) {
+                        $doneByFormat[$prop.Name] = [int]$prop.Value
+                    }
+                }
+            }
+        } catch {
+            # Corrupt/mid-write state file -- skip this refresh's baseline
+            # rather than crashing the whole watcher; try again next poll.
+        }
+    }
 
     for ($i = 0; $i -lt $hostList.Count; $i++) {
         $thisHost = $hostList[$i]
