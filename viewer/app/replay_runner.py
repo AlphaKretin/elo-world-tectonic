@@ -131,6 +131,17 @@ class ReplayRunner(QObject):
         self._process.setProgram(os.path.join(vendor_dir, "Game.exe"))
         if extra_args:
             self._process.setArguments(extra_args)
+        if extra_args and "debug" in extra_args:
+            # "debug" makes the engine allocate its own console window; also
+            # piping stdout/stderr through QProcess races that allocation
+            # and intermittently corrupts it into "Bad file descriptor"
+            # (same failure mode documented in run_tournament.ps1 for
+            # PowerShell's pipe redirection). Nothing reads these streams
+            # in the debug case anyway -- the console window itself is
+            # the intended output -- so just discard them instead of
+            # capturing.
+            self._process.setStandardOutputFile(QProcess.nullDevice())
+            self._process.setStandardErrorFile(QProcess.nullDevice())
         self._process.finished.connect(self._on_finished)
 
         self._process.start()
