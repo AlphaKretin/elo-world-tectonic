@@ -1,66 +1,18 @@
 [
     {
-        "label": "TOURISTM:Azeler",
-        "trainer": "Developer Azeler",
+        "label": "TOURISTM:Chus",
+        "trainer": "Developer Chus",
         "cursed": false,
-        "rating": 1879.44,
-        "se": 80.35,
-        "ciLow": 1721.95,
-        "ciHigh": 2036.92,
-        "wins": 36,
-        "losses": 3,
-        "draws": 1,
-        "battles": 40,
-        "rank": 1,
-        "overlap": 5,
-        "tier": "S+",
-        "tierColor": [
-            255,
-            0,
-            80
-        ],
-        "wldFractions": {
-            "win": 0.885586592178771,
-            "draw": 0.04,
-            "loss": 0.07441340782122904
-        },
-        "bestWin": {
-            "rating": 1830.33,
-            "seed": 2928512628,
-            "opponent": {
-                "label": "HEXMANIAC:Errata",
-                "display": "Developer Errata",
-                "cursed": false
-            },
-            "opponentRank": 2
-        },
-        "worstLoss": {
-            "rating": 1525.88,
-            "seed": 133257020,
-            "opponent": {
-                "label": "GUITARIST3:Envy",
-                "display": "Developer Envy",
-                "cursed": false
-            },
-            "opponentRank": 20
-        },
-        "avgRounds": 11.05,
-        "maxRounds": 24
-    },
-    {
-        "label": "HEXMANIAC:Errata",
-        "trainer": "Developer Errata",
-        "cursed": false,
-        "rating": 1830.33,
-        "se": 74.6,
-        "ciLow": 1684.12,
-        "ciHigh": 1976.55,
+        "rating": 1826.47,
+        "se": 74.37,
+        "ciLow": 1680.69,
+        "ciHigh": 1972.24,
         "wins": 35,
         "losses": 5,
         "draws": 0,
         "battles": 40,
-        "rank": 2,
-        "overlap": 9,
+        "rank": 1,
+        "overlap": 8,
         "tier": "S+",
         "tierColor": [
             255,
@@ -73,47 +25,47 @@
             "loss": 0.125
         },
         "bestWin": {
-            "rating": 1803.33,
-            "seed": 2045850957,
+            "rating": 1774.27,
+            "seed": 1247788828,
             "opponent": {
-                "label": "ODDISH:Oddium",
-                "display": "Developer Oddium",
+                "label": "HEXMANIAC:Errata",
+                "display": "Developer Errata",
                 "cursed": false
             },
-            "opponentRank": 3
+            "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1655.65,
-            "seed": 465142069,
+            "rating": 1486.6,
+            "seed": 1930963746,
             "opponent": {
-                "label": "POKEMONRANGER_M:Zufaix",
-                "display": "Developer Zufaix",
+                "label": "ROUGHNECK2:Jaggedthorn",
+                "display": "Developer Jaggedthorn",
                 "cursed": false
             },
-            "opponentRank": 12
+            "opponentRank": 22
         },
-        "avgRounds": 5.225,
-        "maxRounds": 9
+        "avgRounds": 9.325,
+        "maxRounds": 41
     },
     {
         "label": "ODDISH:Oddium",
         "trainer": "Developer Oddium",
         "cursed": false,
-        "rating": 1803.33,
-        "se": 72.6,
-        "ciLow": 1661.03,
-        "ciHigh": 1945.64,
+        "rating": 1799.64,
+        "se": 72.37,
+        "ciLow": 1657.78,
+        "ciHigh": 1941.49,
         "wins": 34,
         "losses": 6,
         "draws": 0,
         "battles": 40,
-        "rank": 3,
+        "rank": 2,
         "overlap": 9,
-        "tier": "S",
+        "tier": "S+",
         "tierColor": [
             255,
             0,
-            0
+            80
         ],
         "wldFractions": {
             "win": 0.85,
@@ -121,47 +73,95 @@
             "loss": 0.15
         },
         "bestWin": {
-            "rating": 1761.52,
+            "rating": 1826.47,
             "seed": 3089612946,
             "opponent": {
                 "label": "TOURISTM:Chus",
                 "display": "Developer Chus",
                 "cursed": false
             },
-            "opponentRank": 5
+            "opponentRank": 1
         },
         "worstLoss": {
-            "rating": 1467.66,
+            "rating": 1467.39,
             "seed": 253617137,
             "opponent": {
                 "label": "WORKER5:Jbsundown",
                 "display": "Developer Jbsundown",
                 "cursed": false
             },
-            "opponentRank": 25
+            "opponentRank": 24
         },
-        "avgRounds": 5.45,
-        "maxRounds": 12
+        "avgRounds": 5.375,
+        "maxRounds": 11
     },
     {
         "label": "VETERANM_2:Kirbae",
         "trainer": "Developer Kirbae",
         "cursed": false,
-        "rating": 1777.8,
-        "se": 70.92,
-        "ciLow": 1638.79,
-        "ciHigh": 1916.81,
+        "rating": 1799.64,
+        "se": 72.37,
+        "ciLow": 1657.78,
+        "ciHigh": 1941.49,
+        "wins": 34,
+        "losses": 6,
+        "draws": 0,
+        "battles": 40,
+        "rank": 3,
+        "overlap": 9,
+        "tier": "S+",
+        "tierColor": [
+            255,
+            0,
+            80
+        ],
+        "wldFractions": {
+            "win": 0.85,
+            "draw": 0.0,
+            "loss": 0.15
+        },
+        "bestWin": {
+            "rating": 1826.47,
+            "seed": 2461458840,
+            "opponent": {
+                "label": "TOURISTM:Chus",
+                "display": "Developer Chus",
+                "cursed": false
+            },
+            "opponentRank": 1
+        },
+        "worstLoss": {
+            "rating": 1467.39,
+            "seed": 24495830,
+            "opponent": {
+                "label": "DRAGONTAMER_F:Zinnia",
+                "display": "Developer Zinnia",
+                "cursed": false
+            },
+            "opponentRank": 23
+        },
+        "avgRounds": 6.8,
+        "maxRounds": 16
+    },
+    {
+        "label": "HEXMANIAC:Errata",
+        "trainer": "Developer Errata",
+        "cursed": false,
+        "rating": 1774.27,
+        "se": 70.69,
+        "ciLow": 1635.73,
+        "ciHigh": 1912.82,
         "wins": 33,
         "losses": 7,
         "draws": 0,
         "battles": 40,
         "rank": 4,
-        "overlap": 11,
-        "tier": "S",
+        "overlap": 9,
+        "tier": "S+",
         "tierColor": [
             255,
             0,
-            0
+            80
         ],
         "wldFractions": {
             "win": 0.825,
@@ -169,47 +169,47 @@
             "loss": 0.175
         },
         "bestWin": {
-            "rating": 1879.44,
-            "seed": 2155434736,
+            "rating": 1799.64,
+            "seed": 3557624365,
             "opponent": {
-                "label": "TOURISTM:Azeler",
-                "display": "Developer Azeler",
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
                 "cursed": false
             },
-            "opponentRank": 1
+            "opponentRank": 2
         },
         "worstLoss": {
-            "rating": 1506.55,
-            "seed": 24495830,
+            "rating": 1563.03,
+            "seed": 169238837,
             "opponent": {
-                "label": "DRAGONTAMER_F:Zinnia",
-                "display": "Developer Zinnia",
+                "label": "POKEMONRANGER_M:Zufaix",
+                "display": "Developer Zufaix",
                 "cursed": false
             },
-            "opponentRank": 22
+            "opponentRank": 17
         },
-        "avgRounds": 7.325,
-        "maxRounds": 21
+        "avgRounds": 5.225,
+        "maxRounds": 10
     },
     {
-        "label": "TOURISTM:Chus",
-        "trainer": "Developer Chus",
+        "label": "TOURISTM:Azeler",
+        "trainer": "Developer Azeler",
         "cursed": false,
-        "rating": 1761.52,
-        "se": 70.94,
-        "ciLow": 1622.47,
-        "ciHigh": 1900.57,
+        "rating": 1771.25,
+        "se": 71.0,
+        "ciLow": 1632.1,
+        "ciHigh": 1910.4,
         "wins": 32,
         "losses": 7,
         "draws": 1,
         "battles": 40,
         "rank": 5,
-        "overlap": 11,
-        "tier": "S",
+        "overlap": 9,
+        "tier": "S+",
         "tierColor": [
             255,
             0,
-            0
+            80
         ],
         "wldFractions": {
             "win": 0.7872625698324023,
@@ -217,46 +217,94 @@
             "loss": 0.17273743016759777
         },
         "bestWin": {
-            "rating": 1777.8,
-            "seed": 1698173848,
+            "rating": 1826.47,
+            "seed": 3976463339,
             "opponent": {
-                "label": "VETERANM_2:Kirbae",
-                "display": "Developer Kirbae",
+                "label": "TOURISTM:Chus",
+                "display": "Developer Chus",
                 "cursed": false
             },
-            "opponentRank": 4
+            "opponentRank": 1
         },
         "worstLoss": {
-            "rating": 1487.16,
-            "seed": 3927822340,
+            "rating": 1428.43,
+            "seed": 1456967907,
             "opponent": {
-                "label": "CLERK_M2:Papper",
-                "display": "Developer Papper",
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
                 "cursed": false
             },
-            "opponentRank": 23
+            "opponentRank": 29
         },
-        "avgRounds": 9.55,
-        "maxRounds": 42
+        "avgRounds": 11.65,
+        "maxRounds": 40
     },
     {
-        "label": "SCIENTIST_F:LunaFlare",
-        "trainer": "Developer LunaFlare",
+        "label": "KILLU:Killu",
+        "trainer": "Developer Killu",
         "cursed": false,
-        "rating": 1730.16,
-        "se": 68.29,
-        "ciLow": 1596.32,
-        "ciHigh": 1864.01,
+        "rating": 1750.13,
+        "se": 69.26,
+        "ciLow": 1614.38,
+        "ciHigh": 1885.87,
+        "wins": 32,
+        "losses": 8,
+        "draws": 0,
+        "battles": 40,
+        "rank": 6,
+        "overlap": 10,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.8,
+            "draw": 0.0,
+            "loss": 0.2
+        },
+        "bestWin": {
+            "rating": 1799.64,
+            "seed": 3928336320,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            },
+            "opponentRank": 2
+        },
+        "worstLoss": {
+            "rating": 1254.18,
+            "seed": 2775482310,
+            "opponent": {
+                "label": "HEXMANIAC_1:Riptide",
+                "display": "Developer Riptide #1",
+                "cursed": false
+            },
+            "opponentRank": 37
+        },
+        "avgRounds": 7.825,
+        "maxRounds": 36
+    },
+    {
+        "label": "KATY:Manycrows",
+        "trainer": "Developer Manycrows",
+        "cursed": false,
+        "rating": 1726.99,
+        "se": 68.04,
+        "ciLow": 1593.63,
+        "ciHigh": 1860.35,
         "wins": 31,
         "losses": 9,
         "draws": 0,
         "battles": 40,
-        "rank": 6,
+        "rank": 7,
         "overlap": 12,
-        "tier": "A+",
+        "tier": "S",
         "tierColor": [
             255,
-            43,
+            0,
             0
         ],
         "wldFractions": {
@@ -265,94 +313,94 @@
             "loss": 0.225
         },
         "bestWin": {
-            "rating": 1803.33,
-            "seed": 310938875,
-            "opponent": {
-                "label": "ODDISH:Oddium",
-                "display": "Developer Oddium",
-                "cursed": false
-            },
-            "opponentRank": 3
-        },
-        "worstLoss": {
-            "rating": 1432.3,
-            "seed": 2668204175,
-            "opponent": {
-                "label": "HEXMANIAC_1:Riptide#1",
-                "display": "Developer Riptide #2",
-                "cursed": false
-            },
-            "opponentRank": 28
-        },
-        "avgRounds": 9.075,
-        "maxRounds": 32
-    },
-    {
-        "label": "KATY:Manycrows",
-        "trainer": "Developer Manycrows",
-        "cursed": false,
-        "rating": 1707.7,
-        "se": 67.26,
-        "ciLow": 1575.86,
-        "ciHigh": 1839.53,
-        "wins": 30,
-        "losses": 10,
-        "draws": 0,
-        "battles": 40,
-        "rank": 7,
-        "overlap": 12,
-        "tier": "A+",
-        "tierColor": [
-            255,
-            43,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.75,
-            "draw": 0.0,
-            "loss": 0.25
-        },
-        "bestWin": {
-            "rating": 1879.44,
+            "rating": 1771.25,
             "seed": 3782130271,
             "opponent": {
                 "label": "TOURISTM:Azeler",
                 "display": "Developer Azeler",
                 "cursed": false
             },
-            "opponentRank": 1
+            "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1467.66,
-            "seed": 896862708,
+            "rating": 1563.03,
+            "seed": 702922174,
             "opponent": {
-                "label": "WORKER5:Jbsundown",
-                "display": "Developer Jbsundown",
+                "label": "POKEMONRANGER_M:Zufaix",
+                "display": "Developer Zufaix",
                 "cursed": false
             },
-            "opponentRank": 25
+            "opponentRank": 17
         },
-        "avgRounds": 10.075,
-        "maxRounds": 32
+        "avgRounds": 11.375,
+        "maxRounds": 48
     },
     {
         "label": "WAITRESS3:Destiny",
         "trainer": "Developer Destiny",
         "cursed": false,
-        "rating": 1707.7,
-        "se": 67.26,
-        "ciLow": 1575.86,
-        "ciHigh": 1839.53,
-        "wins": 30,
-        "losses": 10,
+        "rating": 1726.99,
+        "se": 68.04,
+        "ciLow": 1593.63,
+        "ciHigh": 1860.35,
+        "wins": 31,
+        "losses": 9,
         "draws": 0,
         "battles": 40,
         "rank": 8,
         "overlap": 12,
-        "tier": "A+",
+        "tier": "S",
         "tierColor": [
             255,
-            43,
+            0,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.775,
+            "draw": 0.0,
+            "loss": 0.225
+        },
+        "bestWin": {
+            "rating": 1799.64,
+            "seed": 955279485,
+            "opponent": {
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
+                "cursed": false
+            },
+            "opponentRank": 3
+        },
+        "worstLoss": {
+            "rating": 1486.6,
+            "seed": 956372935,
+            "opponent": {
+                "label": "ROUGHNECK2:Jaggedthorn",
+                "display": "Developer Jaggedthorn",
+                "cursed": false
+            },
+            "opponentRank": 22
+        },
+        "avgRounds": 8.675,
+        "maxRounds": 19
+    },
+    {
+        "label": "LADY2:Eseria",
+        "trainer": "Developer Eseria",
+        "cursed": false,
+        "rating": 1704.7,
+        "se": 67.01,
+        "ciLow": 1573.37,
+        "ciHigh": 1836.04,
+        "wins": 30,
+        "losses": 10,
+        "draws": 0,
+        "battles": 40,
+        "rank": 9,
+        "overlap": 13,
+        "tier": "S",
+        "tierColor": [
+            255,
+            0,
             0
         ],
         "wldFractions": {
@@ -361,90 +409,90 @@
             "loss": 0.25
         },
         "bestWin": {
-            "rating": 1830.33,
-            "seed": 3869953337,
+            "rating": 1799.64,
+            "seed": 2062606209,
             "opponent": {
-                "label": "HEXMANIAC:Errata",
-                "display": "Developer Errata",
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
                 "cursed": false
             },
-            "opponentRank": 2
+            "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1467.66,
-            "seed": 3566913861,
+            "rating": 1563.03,
+            "seed": 3415343021,
             "opponent": {
-                "label": "WORKER5:Jbsundown",
-                "display": "Developer Jbsundown",
+                "label": "GUITARIST3:Envy",
+                "display": "Developer Envy",
                 "cursed": false
             },
-            "opponentRank": 25
+            "opponentRank": 15
         },
-        "avgRounds": 8.875,
-        "maxRounds": 14
+        "avgRounds": 7.55,
+        "maxRounds": 19
     },
     {
         "label": "FAIRYTALEGIRL:Emmi",
         "trainer": "Developer Emmi",
         "cursed": false,
-        "rating": 1685.94,
-        "se": 66.39,
-        "ciLow": 1555.81,
-        "ciHigh": 1816.06,
-        "wins": 29,
-        "losses": 11,
+        "rating": 1662.14,
+        "se": 65.39,
+        "ciLow": 1533.98,
+        "ciHigh": 1790.3,
+        "wins": 28,
+        "losses": 12,
         "draws": 0,
         "battles": 40,
-        "rank": 9,
-        "overlap": 12,
-        "tier": "A",
+        "rank": 10,
+        "overlap": 16,
+        "tier": "A+",
         "tierColor": [
             255,
-            87,
+            43,
             0
         ],
         "wldFractions": {
-            "win": 0.725,
+            "win": 0.7,
             "draw": 0.0,
-            "loss": 0.275
+            "loss": 0.3
         },
         "bestWin": {
-            "rating": 1830.33,
+            "rating": 1774.27,
             "seed": 3607675147,
             "opponent": {
                 "label": "HEXMANIAC:Errata",
                 "display": "Developer Errata",
                 "cursed": false
             },
-            "opponentRank": 2
+            "opponentRank": 4
         },
         "worstLoss": {
-            "rating": 1366.23,
+            "rating": 1388.31,
             "seed": 3310798997,
             "opponent": {
                 "label": "GAMBLER:IgnitedxSoul",
                 "display": "Developer IgnitedxSoul",
                 "cursed": false
             },
-            "opponentRank": 33
+            "opponentRank": 31
         },
-        "avgRounds": 7.775,
-        "maxRounds": 16
+        "avgRounds": 8.2,
+        "maxRounds": 19
     },
     {
-        "label": "KILLU:Killu",
-        "trainer": "Developer Killu",
+        "label": "SCIENTIST_F:LunaFlare",
+        "trainer": "Developer LunaFlare",
         "cursed": false,
-        "rating": 1685.94,
-        "se": 66.39,
-        "ciLow": 1555.81,
-        "ciHigh": 1816.06,
-        "wins": 29,
-        "losses": 11,
+        "rating": 1621.57,
+        "se": 64.25,
+        "ciLow": 1495.64,
+        "ciHigh": 1747.5,
+        "wins": 26,
+        "losses": 14,
         "draws": 0,
         "battles": 40,
-        "rank": 10,
-        "overlap": 12,
+        "rank": 11,
+        "overlap": 13,
         "tier": "A",
         "tierColor": [
             255,
@@ -452,195 +500,51 @@
             0
         ],
         "wldFractions": {
-            "win": 0.725,
+            "win": 0.65,
             "draw": 0.0,
-            "loss": 0.275
+            "loss": 0.35
         },
         "bestWin": {
-            "rating": 1830.33,
-            "seed": 2360166478,
+            "rating": 1750.13,
+            "seed": 1646055992,
             "opponent": {
-                "label": "HEXMANIAC:Errata",
-                "display": "Developer Errata",
+                "label": "KILLU:Killu",
+                "display": "Developer Killu",
                 "cursed": false
             },
-            "opponentRank": 2
+            "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1250.79,
-            "seed": 2775482310,
+            "rating": 1346.43,
+            "seed": 1628519542,
             "opponent": {
-                "label": "HEXMANIAC_1:Riptide",
-                "display": "Developer Riptide #1",
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
                 "cursed": false
             },
-            "opponentRank": 37
+            "opponentRank": 35
         },
-        "avgRounds": 8.6,
-        "maxRounds": 36
-    },
-    {
-        "label": "PUNKM:ValourDyke",
-        "trainer": "Developer ValourDyke",
-        "cursed": false,
-        "rating": 1660.36,
-        "se": 66.11,
-        "ciLow": 1530.8,
-        "ciHigh": 1789.93,
-        "wins": 27,
-        "losses": 12,
-        "draws": 1,
-        "battles": 40,
-        "rank": 11,
-        "overlap": 14,
-        "tier": "A-",
-        "tierColor": [
-            255,
-            93,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.6643575418994414,
-            "draw": 0.04,
-            "loss": 0.29564245810055867
-        },
-        "bestWin": {
-            "rating": 1685.94,
-            "seed": 4156831819,
-            "opponent": {
-                "label": "FAIRYTALEGIRL:Emmi",
-                "display": "Developer Emmi",
-                "cursed": false
-            },
-            "opponentRank": 9
-        },
-        "worstLoss": {
-            "rating": 1447.98,
-            "seed": 166252696,
-            "opponent": {
-                "label": "HARLEQUIN:Minty",
-                "display": "Developer Minty",
-                "cursed": false
-            },
-            "opponentRank": 26
-        },
-        "avgRounds": 11.3,
-        "maxRounds": 34
-    },
-    {
-        "label": "POKEMONRANGER_M:Zufaix",
-        "trainer": "Developer Zufaix",
-        "cursed": false,
-        "rating": 1655.65,
-        "se": 66.23,
-        "ciLow": 1525.84,
-        "ciHigh": 1785.46,
-        "wins": 27,
-        "losses": 12,
-        "draws": 1,
-        "battles": 40,
-        "rank": 12,
-        "overlap": 17,
-        "tier": "A-",
-        "tierColor": [
-            255,
-            93,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.6643575418994414,
-            "draw": 0.04,
-            "loss": 0.29564245810055867
-        },
-        "bestWin": {
-            "rating": 1830.33,
-            "seed": 465142069,
-            "opponent": {
-                "label": "HEXMANIAC:Errata",
-                "display": "Developer Errata",
-                "cursed": false
-            },
-            "opponentRank": 2
-        },
-        "worstLoss": {
-            "rating": 1428.07,
-            "seed": 1495522753,
-            "opponent": {
-                "label": "COOLTRAINER_M3:Dada",
-                "display": "Developer Dada",
-                "cursed": false
-            },
-            "opponentRank": 29
-        },
-        "avgRounds": 7.775,
+        "avgRounds": 8.3,
         "maxRounds": 16
     },
     {
-        "label": "WAITRESS2:Fanfan",
-        "trainer": "Developer Fanfan",
+        "label": "HIKER:Valrex",
+        "trainer": "Developer Valrex",
         "cursed": false,
-        "rating": 1612.56,
-        "se": 65.11,
-        "ciLow": 1484.94,
-        "ciHigh": 1740.17,
-        "wins": 25,
-        "losses": 14,
-        "draws": 1,
-        "battles": 40,
-        "rank": 13,
-        "overlap": 17,
-        "tier": "B+",
-        "tierColor": [
-            255,
-            172,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.615195530726257,
-            "draw": 0.04,
-            "loss": 0.344804469273743
-        },
-        "bestWin": {
-            "rating": 1761.52,
-            "seed": 3263183359,
-            "opponent": {
-                "label": "TOURISTM:Chus",
-                "display": "Developer Chus",
-                "cursed": false
-            },
-            "opponentRank": 5
-        },
-        "worstLoss": {
-            "rating": 1366.23,
-            "seed": 1263664286,
-            "opponent": {
-                "label": "GAMBLER:IgnitedxSoul",
-                "display": "Developer IgnitedxSoul",
-                "cursed": false
-            },
-            "opponentRank": 33
-        },
-        "avgRounds": 9.2,
-        "maxRounds": 23
-    },
-    {
-        "label": "LADY2:Eseria",
-        "trainer": "Developer Eseria",
-        "cursed": false,
-        "rating": 1603.85,
-        "se": 64.15,
-        "ciLow": 1478.12,
-        "ciHigh": 1729.57,
+        "rating": 1601.82,
+        "se": 63.84,
+        "ciLow": 1476.69,
+        "ciHigh": 1726.94,
         "wins": 25,
         "losses": 15,
         "draws": 0,
         "battles": 40,
-        "rank": 14,
-        "overlap": 16,
-        "tier": "B+",
+        "rank": 12,
+        "overlap": 13,
+        "tier": "A",
         "tierColor": [
             255,
-            172,
+            87,
             0
         ],
         "wldFractions": {
@@ -649,46 +553,142 @@
             "loss": 0.375
         },
         "bestWin": {
-            "rating": 1761.52,
-            "seed": 722210394,
+            "rating": 1799.64,
+            "seed": 2800114153,
             "opponent": {
-                "label": "TOURISTM:Chus",
-                "display": "Developer Chus",
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
                 "cursed": false
             },
-            "opponentRank": 5
+            "opponentRank": 2
         },
         "worstLoss": {
-            "rating": 1467.66,
-            "seed": 1479374041,
+            "rating": 1408.55,
+            "seed": 155023272,
             "opponent": {
-                "label": "WORKER5:Jbsundown",
-                "display": "Developer Jbsundown",
+                "label": "JUGGLER:Brickbat",
+                "display": "Developer Brickbat",
                 "cursed": false
             },
-            "opponentRank": 25
+            "opponentRank": 30
         },
-        "avgRounds": 7.025,
+        "avgRounds": 8.125,
         "maxRounds": 13
+    },
+    {
+        "label": "PUNKM:ValourDyke",
+        "trainer": "Developer ValourDyke",
+        "cursed": false,
+        "rating": 1601.82,
+        "se": 63.84,
+        "ciLow": 1476.69,
+        "ciHigh": 1726.94,
+        "wins": 25,
+        "losses": 15,
+        "draws": 0,
+        "battles": 40,
+        "rank": 13,
+        "overlap": 13,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.625,
+            "draw": 0.0,
+            "loss": 0.375
+        },
+        "bestWin": {
+            "rating": 1704.7,
+            "seed": 2513716709,
+            "opponent": {
+                "label": "LADY2:Eseria",
+                "display": "Developer Eseria",
+                "cursed": false
+            },
+            "opponentRank": 9
+        },
+        "worstLoss": {
+            "rating": 1367.63,
+            "seed": 1534763577,
+            "opponent": {
+                "label": "HEXMANIAC_1:Riptide#1",
+                "display": "Developer Riptide #2",
+                "cursed": false
+            },
+            "opponentRank": 34
+        },
+        "avgRounds": 9.975,
+        "maxRounds": 39
     },
     {
         "label": "DRAGONTAMER_F:Bella",
         "trainer": "Developer Bella",
         "cursed": false,
-        "rating": 1564.62,
-        "se": 63.62,
-        "ciLow": 1439.92,
-        "ciHigh": 1689.31,
+        "rating": 1582.33,
+        "se": 63.52,
+        "ciLow": 1457.83,
+        "ciHigh": 1706.83,
+        "wins": 24,
+        "losses": 16,
+        "draws": 0,
+        "battles": 40,
+        "rank": 14,
+        "overlap": 15,
+        "tier": "A",
+        "tierColor": [
+            255,
+            87,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.6,
+            "draw": 0.0,
+            "loss": 0.4
+        },
+        "bestWin": {
+            "rating": 1774.27,
+            "seed": 693831663,
+            "opponent": {
+                "label": "HEXMANIAC:Errata",
+                "display": "Developer Errata",
+                "cursed": false
+            },
+            "opponentRank": 4
+        },
+        "worstLoss": {
+            "rating": 1278.62,
+            "seed": 930492205,
+            "opponent": {
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            },
+            "opponentRank": 36
+        },
+        "avgRounds": 15.125,
+        "maxRounds": 48
+    },
+    {
+        "label": "GUITARIST3:Envy",
+        "trainer": "Developer Envy",
+        "cursed": false,
+        "rating": 1563.03,
+        "se": 63.29,
+        "ciLow": 1438.99,
+        "ciHigh": 1687.07,
         "wins": 23,
         "losses": 17,
         "draws": 0,
         "battles": 40,
         "rank": 15,
-        "overlap": 18,
-        "tier": "B",
+        "overlap": 16,
+        "tier": "A-",
         "tierColor": [
             255,
-            214,
+            93,
             0
         ],
         "wldFractions": {
@@ -697,142 +697,190 @@
             "loss": 0.425
         },
         "bestWin": {
-            "rating": 1730.16,
-            "seed": 3711478489,
-            "opponent": {
-                "label": "SCIENTIST_F:LunaFlare",
-                "display": "Developer LunaFlare",
-                "cursed": false
-            },
-            "opponentRank": 6
-        },
-        "worstLoss": {
-            "rating": 1387.27,
-            "seed": 2902994767,
-            "opponent": {
-                "label": "GAMBLER:Tiki",
-                "display": "Developer Tiki",
-                "cursed": false
-            },
-            "opponentRank": 31
-        },
-        "avgRounds": 13.4,
-        "maxRounds": 41
-    },
-    {
-        "label": "HIKER:Valrex",
-        "trainer": "Developer Valrex",
-        "cursed": false,
-        "rating": 1545.22,
-        "se": 63.49,
-        "ciLow": 1420.78,
-        "ciHigh": 1669.65,
-        "wins": 22,
-        "losses": 18,
-        "draws": 0,
-        "battles": 40,
-        "rank": 16,
-        "overlap": 19,
-        "tier": "B",
-        "tierColor": [
-            255,
-            214,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.55,
-            "draw": 0.0,
-            "loss": 0.45
-        },
-        "bestWin": {
-            "rating": 1730.16,
-            "seed": 3187253393,
-            "opponent": {
-                "label": "SCIENTIST_F:LunaFlare",
-                "display": "Developer LunaFlare",
-                "cursed": false
-            },
-            "opponentRank": 6
-        },
-        "worstLoss": {
-            "rating": 1275.63,
-            "seed": 2590150408,
-            "opponent": {
-                "label": "JUGGLER:Brickbat",
-                "display": "Developer Brickbat",
-                "cursed": false
-            },
-            "opponentRank": 36
-        },
-        "avgRounds": 8.475,
-        "maxRounds": 14
-    },
-    {
-        "label": "RICHBOY:Splitmoon",
-        "trainer": "Developer Splitmoon",
-        "cursed": false,
-        "rating": 1545.22,
-        "se": 63.49,
-        "ciLow": 1420.78,
-        "ciHigh": 1669.65,
-        "wins": 22,
-        "losses": 18,
-        "draws": 0,
-        "battles": 40,
-        "rank": 17,
-        "overlap": 19,
-        "tier": "B",
-        "tierColor": [
-            255,
-            214,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.55,
-            "draw": 0.0,
-            "loss": 0.45
-        },
-        "bestWin": {
-            "rating": 1761.52,
-            "seed": 2687024868,
+            "rating": 1826.47,
+            "seed": 3604978260,
             "opponent": {
                 "label": "TOURISTM:Chus",
                 "display": "Developer Chus",
                 "cursed": false
             },
-            "opponentRank": 5
+            "opponentRank": 1
         },
         "worstLoss": {
-            "rating": 1428.07,
-            "seed": 2197526200,
+            "rating": 1346.43,
+            "seed": 531891944,
             "opponent": {
                 "label": "LADY4:Pria",
                 "display": "Developer Pria",
                 "cursed": false
             },
-            "opponentRank": 30
+            "opponentRank": 35
         },
-        "avgRounds": 7.8,
+        "avgRounds": 12.425,
+        "maxRounds": 46
+    },
+    {
+        "label": "JANITOR:Steeb",
+        "trainer": "Developer Steeb",
+        "cursed": false,
+        "rating": 1563.03,
+        "se": 63.29,
+        "ciLow": 1438.99,
+        "ciHigh": 1687.07,
+        "wins": 23,
+        "losses": 17,
+        "draws": 0,
+        "battles": 40,
+        "rank": 16,
+        "overlap": 16,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.575,
+            "draw": 0.0,
+            "loss": 0.425
+        },
+        "bestWin": {
+            "rating": 1601.82,
+            "seed": 728259662,
+            "opponent": {
+                "label": "PUNKM:ValourDyke",
+                "display": "Developer ValourDyke",
+                "cursed": false
+            },
+            "opponentRank": 13
+        },
+        "worstLoss": {
+            "rating": 1430.84,
+            "seed": 2893390650,
+            "opponent": {
+                "label": "COOLTRAINER_M3:Dada",
+                "display": "Developer Dada",
+                "cursed": false
+            },
+            "opponentRank": 27
+        },
+        "avgRounds": 7.9,
+        "maxRounds": 12
+    },
+    {
+        "label": "POKEMONRANGER_M:Zufaix",
+        "trainer": "Developer Zufaix",
+        "cursed": false,
+        "rating": 1563.03,
+        "se": 63.29,
+        "ciLow": 1438.99,
+        "ciHigh": 1687.07,
+        "wins": 23,
+        "losses": 17,
+        "draws": 0,
+        "battles": 40,
+        "rank": 17,
+        "overlap": 16,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.575,
+            "draw": 0.0,
+            "loss": 0.425
+        },
+        "bestWin": {
+            "rating": 1799.64,
+            "seed": 1756250715,
+            "opponent": {
+                "label": "ODDISH:Oddium",
+                "display": "Developer Oddium",
+                "cursed": false
+            },
+            "opponentRank": 2
+        },
+        "worstLoss": {
+            "rating": 1428.43,
+            "seed": 3037765890,
+            "opponent": {
+                "label": "HEXMANIAC:Lichenprincess",
+                "display": "Developer Lichenprincess",
+                "cursed": false
+            },
+            "opponentRank": 29
+        },
+        "avgRounds": 7.9,
         "maxRounds": 14
     },
     {
-        "label": "SUPERNERD:Agentbla",
-        "trainer": "Developer Agentbla",
+        "label": "WAITRESS2:Fanfan",
+        "trainer": "Developer Fanfan",
         "cursed": false,
-        "rating": 1545.22,
-        "se": 63.49,
-        "ciLow": 1420.78,
-        "ciHigh": 1669.65,
+        "rating": 1563.03,
+        "se": 63.29,
+        "ciLow": 1438.99,
+        "ciHigh": 1687.07,
+        "wins": 23,
+        "losses": 17,
+        "draws": 0,
+        "battles": 40,
+        "rank": 18,
+        "overlap": 16,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.575,
+            "draw": 0.0,
+            "loss": 0.425
+        },
+        "bestWin": {
+            "rating": 1774.27,
+            "seed": 982909024,
+            "opponent": {
+                "label": "HEXMANIAC:Errata",
+                "display": "Developer Errata",
+                "cursed": false
+            },
+            "opponentRank": 4
+        },
+        "worstLoss": {
+            "rating": 1346.43,
+            "seed": 1529270051,
+            "opponent": {
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
+                "cursed": false
+            },
+            "opponentRank": 35
+        },
+        "avgRounds": 8.675,
+        "maxRounds": 17
+    },
+    {
+        "label": "DELINQUENT:Lilypad",
+        "trainer": "Developer Lilypad",
+        "cursed": false,
+        "rating": 1543.87,
+        "se": 63.14,
+        "ciLow": 1420.12,
+        "ciHigh": 1667.62,
         "wins": 22,
         "losses": 18,
         "draws": 0,
         "battles": 40,
-        "rank": 18,
+        "rank": 19,
         "overlap": 19,
-        "tier": "B",
+        "tier": "A-",
         "tierColor": [
             255,
-            214,
+            93,
             0
         ],
         "wldFractions": {
@@ -841,152 +889,8 @@
             "loss": 0.45
         },
         "bestWin": {
-            "rating": 1685.94,
-            "seed": 3269589164,
-            "opponent": {
-                "label": "FAIRYTALEGIRL:Emmi",
-                "display": "Developer Emmi",
-                "cursed": false
-            },
-            "opponentRank": 9
-        },
-        "worstLoss": {
-            "rating": 1387.27,
-            "seed": 1765722788,
-            "opponent": {
-                "label": "GAMBLER:Tiki",
-                "display": "Developer Tiki",
-                "cursed": false
-            },
-            "opponentRank": 31
-        },
-        "avgRounds": 9.075,
-        "maxRounds": 20
-    },
-    {
-        "label": "DELINQUENT:Lilypad",
-        "trainer": "Developer Lilypad",
-        "cursed": false,
-        "rating": 1525.88,
-        "se": 63.44,
-        "ciLow": 1401.54,
-        "ciHigh": 1650.22,
-        "wins": 21,
-        "losses": 19,
-        "draws": 0,
-        "battles": 40,
-        "rank": 19,
-        "overlap": 17,
-        "tier": "B-",
-        "tierColor": [
-            255,
-            255,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.525,
-            "draw": 0.0,
-            "loss": 0.475
-        },
-        "bestWin": {
-            "rating": 1777.8,
-            "seed": 2247705630,
-            "opponent": {
-                "label": "VETERANM_2:Kirbae",
-                "display": "Developer Kirbae",
-                "cursed": false
-            },
-            "opponentRank": 4
-        },
-        "worstLoss": {
-            "rating": 1275.63,
-            "seed": 295702773,
-            "opponent": {
-                "label": "JUGGLER:Brickbat",
-                "display": "Developer Brickbat",
-                "cursed": false
-            },
-            "opponentRank": 36
-        },
-        "avgRounds": 5.725,
-        "maxRounds": 10
-    },
-    {
-        "label": "GUITARIST3:Envy",
-        "trainer": "Developer Envy",
-        "cursed": false,
-        "rating": 1525.88,
-        "se": 63.44,
-        "ciLow": 1401.54,
-        "ciHigh": 1650.22,
-        "wins": 21,
-        "losses": 19,
-        "draws": 0,
-        "battles": 40,
-        "rank": 20,
-        "overlap": 17,
-        "tier": "B-",
-        "tierColor": [
-            255,
-            255,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.525,
-            "draw": 0.0,
-            "loss": 0.475
-        },
-        "bestWin": {
-            "rating": 1879.44,
-            "seed": 133257020,
-            "opponent": {
-                "label": "TOURISTM:Azeler",
-                "display": "Developer Azeler",
-                "cursed": false
-            },
-            "opponentRank": 1
-        },
-        "worstLoss": {
-            "rating": 1428.07,
-            "seed": 200793599,
-            "opponent": {
-                "label": "COOLTRAINER_M3:Dada",
-                "display": "Developer Dada",
-                "cursed": false
-            },
-            "opponentRank": 29
-        },
-        "avgRounds": 10.45,
-        "maxRounds": 29
-    },
-    {
-        "label": "ROUGHNECK2:Jaggedthorn",
-        "trainer": "Developer Jaggedthorn",
-        "cursed": false,
-        "rating": 1525.88,
-        "se": 63.44,
-        "ciLow": 1401.54,
-        "ciHigh": 1650.22,
-        "wins": 21,
-        "losses": 19,
-        "draws": 0,
-        "battles": 40,
-        "rank": 21,
-        "overlap": 17,
-        "tier": "B-",
-        "tierColor": [
-            255,
-            255,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.525,
-            "draw": 0.0,
-            "loss": 0.475
-        },
-        "bestWin": {
-            "rating": 1707.7,
-            "seed": 956372935,
+            "rating": 1726.99,
+            "seed": 4066965760,
             "opponent": {
                 "label": "WAITRESS3:Destiny",
                 "display": "Developer Destiny",
@@ -995,84 +899,84 @@
             "opponentRank": 8
         },
         "worstLoss": {
-            "rating": 1447.98,
-            "seed": 3433268336,
+            "rating": 1367.63,
+            "seed": 566723226,
             "opponent": {
-                "label": "JANITOR:Steeb",
-                "display": "Developer Steeb",
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
                 "cursed": false
             },
-            "opponentRank": 27
+            "opponentRank": 33
         },
-        "avgRounds": 8.4,
-        "maxRounds": 15
-    },
-    {
-        "label": "DRAGONTAMER_F:Zinnia",
-        "trainer": "Developer Zinnia",
-        "cursed": false,
-        "rating": 1506.55,
-        "se": 63.47,
-        "ciLow": 1382.15,
-        "ciHigh": 1630.94,
-        "wins": 20,
-        "losses": 20,
-        "draws": 0,
-        "battles": 40,
-        "rank": 22,
-        "overlap": 19,
-        "tier": "B-",
-        "tierColor": [
-            255,
-            255,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.5,
-            "draw": 0.0,
-            "loss": 0.5
-        },
-        "bestWin": {
-            "rating": 1777.8,
-            "seed": 24495830,
-            "opponent": {
-                "label": "VETERANM_2:Kirbae",
-                "display": "Developer Kirbae",
-                "cursed": false
-            },
-            "opponentRank": 4
-        },
-        "worstLoss": {
-            "rating": 1250.79,
-            "seed": 1307680730,
-            "opponent": {
-                "label": "HEXMANIAC_1:Riptide",
-                "display": "Developer Riptide #1",
-                "cursed": false
-            },
-            "opponentRank": 37
-        },
-        "avgRounds": 11.675,
+        "avgRounds": 7.175,
         "maxRounds": 42
     },
     {
-        "label": "CLERK_M2:Papper",
-        "trainer": "Developer Papper",
+        "label": "SUPERNERD:Agentbla",
+        "trainer": "Developer Agentbla",
         "cursed": false,
-        "rating": 1487.16,
-        "se": 63.58,
-        "ciLow": 1362.54,
-        "ciHigh": 1611.78,
+        "rating": 1543.87,
+        "se": 63.14,
+        "ciLow": 1420.12,
+        "ciHigh": 1667.62,
+        "wins": 22,
+        "losses": 18,
+        "draws": 0,
+        "battles": 40,
+        "rank": 20,
+        "overlap": 19,
+        "tier": "A-",
+        "tierColor": [
+            255,
+            93,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.55,
+            "draw": 0.0,
+            "loss": 0.45
+        },
+        "bestWin": {
+            "rating": 1750.13,
+            "seed": 701372361,
+            "opponent": {
+                "label": "KILLU:Killu",
+                "display": "Developer Killu",
+                "cursed": false
+            },
+            "opponentRank": 6
+        },
+        "worstLoss": {
+            "rating": 1428.43,
+            "seed": 335281823,
+            "opponent": {
+                "label": "HARLEQUIN:Minty",
+                "display": "Developer Minty",
+                "cursed": false
+            },
+            "opponentRank": 28
+        },
+        "avgRounds": 9.5,
+        "maxRounds": 28
+    },
+    {
+        "label": "RICHBOY:Splitmoon",
+        "trainer": "Developer Splitmoon",
+        "cursed": false,
+        "rating": 1486.6,
+        "se": 63.18,
+        "ciLow": 1362.76,
+        "ciHigh": 1610.43,
         "wins": 19,
         "losses": 21,
         "draws": 0,
         "battles": 40,
-        "rank": 23,
-        "overlap": 19,
-        "tier": "C+",
+        "rank": 21,
+        "overlap": 22,
+        "tier": "B+",
         "tierColor": [
-            220,
-            244,
+            255,
+            172,
             0
         ],
         "wldFractions": {
@@ -1081,46 +985,94 @@
             "loss": 0.525
         },
         "bestWin": {
-            "rating": 1761.52,
-            "seed": 3927822340,
+            "rating": 1582.33,
+            "seed": 757252695,
+            "opponent": {
+                "label": "DRAGONTAMER_F:Bella",
+                "display": "Developer Bella",
+                "cursed": false
+            },
+            "opponentRank": 14
+        },
+        "worstLoss": {
+            "rating": 1388.31,
+            "seed": 3348054341,
+            "opponent": {
+                "label": "GAMBLER:IgnitedxSoul",
+                "display": "Developer IgnitedxSoul",
+                "cursed": false
+            },
+            "opponentRank": 31
+        },
+        "avgRounds": 7.975,
+        "maxRounds": 13
+    },
+    {
+        "label": "ROUGHNECK2:Jaggedthorn",
+        "trainer": "Developer Jaggedthorn",
+        "cursed": false,
+        "rating": 1486.6,
+        "se": 63.18,
+        "ciLow": 1362.76,
+        "ciHigh": 1610.43,
+        "wins": 19,
+        "losses": 21,
+        "draws": 0,
+        "battles": 40,
+        "rank": 22,
+        "overlap": 22,
+        "tier": "B+",
+        "tierColor": [
+            255,
+            172,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.475,
+            "draw": 0.0,
+            "loss": 0.525
+        },
+        "bestWin": {
+            "rating": 1826.47,
+            "seed": 1930963746,
             "opponent": {
                 "label": "TOURISTM:Chus",
                 "display": "Developer Chus",
                 "cursed": false
             },
-            "opponentRank": 5
+            "opponentRank": 1
         },
         "worstLoss": {
-            "rating": 1275.63,
-            "seed": 2333228884,
+            "rating": 1278.62,
+            "seed": 2667346783,
             "opponent": {
-                "label": "JUGGLER:Brickbat",
-                "display": "Developer Brickbat",
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
                 "cursed": false
             },
             "opponentRank": 36
         },
-        "avgRounds": 9.075,
-        "maxRounds": 15
+        "avgRounds": 9.95,
+        "maxRounds": 44
     },
     {
-        "label": "RICHBOY4:Darlvon",
-        "trainer": "Developer Darlvon",
+        "label": "DRAGONTAMER_F:Zinnia",
+        "trainer": "Developer Zinnia",
         "cursed": false,
-        "rating": 1467.66,
-        "se": 63.78,
-        "ciLow": 1342.66,
-        "ciHigh": 1592.66,
+        "rating": 1467.39,
+        "se": 63.36,
+        "ciLow": 1343.21,
+        "ciHigh": 1591.56,
         "wins": 18,
         "losses": 22,
         "draws": 0,
         "battles": 40,
-        "rank": 24,
-        "overlap": 18,
-        "tier": "C+",
+        "rank": 23,
+        "overlap": 21,
+        "tier": "B+",
         "tierColor": [
-            220,
-            244,
+            255,
+            172,
             0
         ],
         "wldFractions": {
@@ -1129,46 +1081,46 @@
             "loss": 0.55
         },
         "bestWin": {
-            "rating": 1660.36,
-            "seed": 3388852818,
+            "rating": 1799.64,
+            "seed": 24495830,
             "opponent": {
-                "label": "PUNKM:ValourDyke",
-                "display": "Developer ValourDyke",
+                "label": "VETERANM_2:Kirbae",
+                "display": "Developer Kirbae",
                 "cursed": false
             },
-            "opponentRank": 11
+            "opponentRank": 3
         },
         "worstLoss": {
-            "rating": 1387.27,
-            "seed": 622178002,
+            "rating": 1142.21,
+            "seed": 3122648499,
             "opponent": {
-                "label": "GAMBLER:Tiki",
-                "display": "Developer Tiki",
+                "label": "ROLLERSKATER_F:Attea",
+                "display": "Developer Attea",
                 "cursed": false
             },
-            "opponentRank": 31
+            "opponentRank": 38
         },
-        "avgRounds": 9.625,
-        "maxRounds": 32
+        "avgRounds": 11.525,
+        "maxRounds": 46
     },
     {
         "label": "WORKER5:Jbsundown",
         "trainer": "Developer Jbsundown",
         "cursed": false,
-        "rating": 1467.66,
-        "se": 63.78,
-        "ciLow": 1342.66,
-        "ciHigh": 1592.66,
+        "rating": 1467.39,
+        "se": 63.36,
+        "ciLow": 1343.21,
+        "ciHigh": 1591.56,
         "wins": 18,
         "losses": 22,
         "draws": 0,
         "battles": 40,
-        "rank": 25,
-        "overlap": 18,
-        "tier": "C+",
+        "rank": 24,
+        "overlap": 21,
+        "tier": "B+",
         "tierColor": [
-            220,
-            244,
+            255,
+            172,
             0
         ],
         "wldFractions": {
@@ -1177,17 +1129,17 @@
             "loss": 0.55
         },
         "bestWin": {
-            "rating": 1803.33,
+            "rating": 1799.64,
             "seed": 253617137,
             "opponent": {
                 "label": "ODDISH:Oddium",
                 "display": "Developer Oddium",
                 "cursed": false
             },
-            "opponentRank": 3
+            "opponentRank": 2
         },
         "worstLoss": {
-            "rating": 1250.79,
+            "rating": 1254.18,
             "seed": 573150135,
             "opponent": {
                 "label": "HEXMANIAC_1:Riptide",
@@ -1196,27 +1148,75 @@
             },
             "opponentRank": 37
         },
-        "avgRounds": 7.5,
+        "avgRounds": 7.85,
         "maxRounds": 17
     },
     {
-        "label": "HARLEQUIN:Minty",
-        "trainer": "Developer Minty",
+        "label": "CLERK_M2:Papper",
+        "trainer": "Developer Papper",
         "cursed": false,
-        "rating": 1447.98,
-        "se": 64.06,
-        "ciLow": 1322.43,
-        "ciHigh": 1573.53,
+        "rating": 1448.02,
+        "se": 63.62,
+        "ciLow": 1323.32,
+        "ciHigh": 1572.71,
+        "wins": 17,
+        "losses": 23,
+        "draws": 0,
+        "battles": 40,
+        "rank": 25,
+        "overlap": 20,
+        "tier": "B",
+        "tierColor": [
+            255,
+            214,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.425,
+            "draw": 0.0,
+            "loss": 0.575
+        },
+        "bestWin": {
+            "rating": 1771.25,
+            "seed": 1867904364,
+            "opponent": {
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
+                "cursed": false
+            },
+            "opponentRank": 5
+        },
+        "worstLoss": {
+            "rating": 1367.63,
+            "seed": 3362105947,
+            "opponent": {
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
+                "cursed": false
+            },
+            "opponentRank": 33
+        },
+        "avgRounds": 9.1,
+        "maxRounds": 17
+    },
+    {
+        "label": "RICHBOY4:Darlvon",
+        "trainer": "Developer Darlvon",
+        "cursed": false,
+        "rating": 1448.02,
+        "se": 63.62,
+        "ciLow": 1323.32,
+        "ciHigh": 1572.71,
         "wins": 17,
         "losses": 23,
         "draws": 0,
         "battles": 40,
         "rank": 26,
-        "overlap": 18,
-        "tier": "C",
+        "overlap": 20,
+        "tier": "B",
         "tierColor": [
-            184,
-            233,
+            255,
+            214,
             0
         ],
         "wldFractions": {
@@ -1225,94 +1225,46 @@
             "loss": 0.575
         },
         "bestWin": {
-            "rating": 1660.36,
-            "seed": 166252696,
+            "rating": 1601.82,
+            "seed": 1119131378,
             "opponent": {
                 "label": "PUNKM:ValourDyke",
                 "display": "Developer ValourDyke",
                 "cursed": false
             },
-            "opponentRank": 11
+            "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1366.23,
-            "seed": 3322019206,
+            "rating": 1346.43,
+            "seed": 2297735825,
             "opponent": {
-                "label": "GAMBLER:IgnitedxSoul",
-                "display": "Developer IgnitedxSoul",
-                "cursed": false
-            },
-            "opponentRank": 33
-        },
-        "avgRounds": 7.225,
-        "maxRounds": 15
-    },
-    {
-        "label": "JANITOR:Steeb",
-        "trainer": "Developer Steeb",
-        "cursed": false,
-        "rating": 1447.98,
-        "se": 64.06,
-        "ciLow": 1322.43,
-        "ciHigh": 1573.53,
-        "wins": 17,
-        "losses": 23,
-        "draws": 0,
-        "battles": 40,
-        "rank": 27,
-        "overlap": 18,
-        "tier": "C",
-        "tierColor": [
-            184,
-            233,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.425,
-            "draw": 0.0,
-            "loss": 0.575
-        },
-        "bestWin": {
-            "rating": 1545.22,
-            "seed": 2061250102,
-            "opponent": {
-                "label": "RICHBOY:Splitmoon",
-                "display": "Developer Splitmoon",
-                "cursed": false
-            },
-            "opponentRank": 17
-        },
-        "worstLoss": {
-            "rating": 1275.63,
-            "seed": 1262220876,
-            "opponent": {
-                "label": "ARTIST3:Drawingbox",
-                "display": "Developer Drawingbox",
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
                 "cursed": false
             },
             "opponentRank": 35
         },
-        "avgRounds": 7.775,
-        "maxRounds": 12
+        "avgRounds": 8.825,
+        "maxRounds": 13
     },
     {
-        "label": "HEXMANIAC_1:Riptide#1",
-        "trainer": "Developer Riptide #2",
+        "label": "COOLTRAINER_M3:Dada",
+        "trainer": "Developer Dada",
         "cursed": false,
-        "rating": 1432.3,
-        "se": 64.89,
-        "ciLow": 1305.12,
-        "ciHigh": 1559.48,
+        "rating": 1430.84,
+        "se": 64.27,
+        "ciLow": 1304.87,
+        "ciHigh": 1556.82,
         "wins": 16,
         "losses": 23,
         "draws": 1,
         "battles": 40,
-        "rank": 28,
-        "overlap": 17,
-        "tier": "C",
+        "rank": 27,
+        "overlap": 16,
+        "tier": "B-",
         "tierColor": [
-            184,
-            233,
+            255,
+            255,
             0
         ],
         "wldFractions": {
@@ -1321,94 +1273,46 @@
             "loss": 0.5660335195530726
         },
         "bestWin": {
-            "rating": 1730.16,
-            "seed": 2668204175,
-            "opponent": {
-                "label": "SCIENTIST_F:LunaFlare",
-                "display": "Developer LunaFlare",
-                "cursed": false
-            },
-            "opponentRank": 6
-        },
-        "worstLoss": {
-            "rating": 1275.63,
-            "seed": 2488459195,
-            "opponent": {
-                "label": "ARTIST3:Drawingbox",
-                "display": "Developer Drawingbox",
-                "cursed": false
-            },
-            "opponentRank": 35
-        },
-        "avgRounds": 8.2,
-        "maxRounds": 39
-    },
-    {
-        "label": "COOLTRAINER_M3:Dada",
-        "trainer": "Developer Dada",
-        "cursed": false,
-        "rating": 1428.07,
-        "se": 64.43,
-        "ciLow": 1301.8,
-        "ciHigh": 1554.35,
-        "wins": 16,
-        "losses": 24,
-        "draws": 0,
-        "battles": 40,
-        "rank": 29,
-        "overlap": 17,
-        "tier": "C",
-        "tierColor": [
-            184,
-            233,
-            0
-        ],
-        "wldFractions": {
-            "win": 0.4,
-            "draw": 0.0,
-            "loss": 0.6
-        },
-        "bestWin": {
-            "rating": 1655.65,
+            "rating": 1563.03,
             "seed": 1495522753,
             "opponent": {
                 "label": "POKEMONRANGER_M:Zufaix",
                 "display": "Developer Zufaix",
                 "cursed": false
             },
-            "opponentRank": 12
+            "opponentRank": 17
         },
         "worstLoss": {
-            "rating": 1299.47,
-            "seed": 144818944,
+            "rating": 1346.43,
+            "seed": 2355453812,
             "opponent": {
-                "label": "HEXMANIAC:Lichenprincess",
-                "display": "Developer Lichenprincess",
+                "label": "LADY4:Pria",
+                "display": "Developer Pria",
                 "cursed": false
             },
-            "opponentRank": 34
+            "opponentRank": 35
         },
-        "avgRounds": 6.475,
-        "maxRounds": 20
+        "avgRounds": 6.275,
+        "maxRounds": 13
     },
     {
-        "label": "LADY4:Pria",
-        "trainer": "Developer Pria",
+        "label": "HARLEQUIN:Minty",
+        "trainer": "Developer Minty",
         "cursed": false,
-        "rating": 1428.07,
-        "se": 64.43,
-        "ciLow": 1301.8,
-        "ciHigh": 1554.35,
+        "rating": 1428.43,
+        "se": 63.97,
+        "ciLow": 1303.04,
+        "ciHigh": 1553.81,
         "wins": 16,
         "losses": 24,
         "draws": 0,
         "battles": 40,
-        "rank": 30,
-        "overlap": 17,
-        "tier": "C",
+        "rank": 28,
+        "overlap": 16,
+        "tier": "B-",
         "tierColor": [
-            184,
-            233,
+            255,
+            255,
             0
         ],
         "wldFractions": {
@@ -1417,161 +1321,161 @@
             "loss": 0.6
         },
         "bestWin": {
-            "rating": 1564.62,
-            "seed": 3819425068,
+            "rating": 1662.14,
+            "seed": 1179691952,
             "opponent": {
-                "label": "DRAGONTAMER_F:Bella",
-                "display": "Developer Bella",
+                "label": "FAIRYTALEGIRL:Emmi",
+                "display": "Developer Emmi",
                 "cursed": false
             },
-            "opponentRank": 15
+            "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1366.23,
-            "seed": 1891170910,
+            "rating": 1367.63,
+            "seed": 1426006456,
             "opponent": {
-                "label": "GAMBLER:IgnitedxSoul",
-                "display": "Developer IgnitedxSoul",
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
                 "cursed": false
             },
             "opponentRank": 33
         },
-        "avgRounds": 8.45,
-        "maxRounds": 19
+        "avgRounds": 6.85,
+        "maxRounds": 10
     },
     {
-        "label": "GAMBLER:Tiki",
-        "trainer": "Developer Tiki",
+        "label": "HEXMANIAC:Lichenprincess",
+        "trainer": "Developer Lichenprincess",
         "cursed": false,
-        "rating": 1387.27,
-        "se": 65.45,
-        "ciLow": 1258.99,
-        "ciHigh": 1515.55,
-        "wins": 14,
-        "losses": 26,
+        "rating": 1428.43,
+        "se": 63.97,
+        "ciLow": 1303.04,
+        "ciHigh": 1553.81,
+        "wins": 16,
+        "losses": 24,
         "draws": 0,
         "battles": 40,
-        "rank": 31,
-        "overlap": 14,
-        "tier": "C-",
+        "rank": 29,
+        "overlap": 16,
+        "tier": "B-",
         "tierColor": [
-            147,
-            222,
-            21
+            255,
+            255,
+            0
         ],
         "wldFractions": {
-            "win": 0.35,
+            "win": 0.4,
             "draw": 0.0,
-            "loss": 0.65
+            "loss": 0.6
         },
         "bestWin": {
-            "rating": 1564.62,
-            "seed": 2902994767,
+            "rating": 1771.25,
+            "seed": 1456967907,
             "opponent": {
-                "label": "DRAGONTAMER_F:Bella",
-                "display": "Developer Bella",
+                "label": "TOURISTM:Azeler",
+                "display": "Developer Azeler",
                 "cursed": false
             },
-            "opponentRank": 15
+            "opponentRank": 5
         },
         "worstLoss": {
-            "rating": 1366.23,
-            "seed": 1329617117,
+            "rating": 1367.63,
+            "seed": 2811732366,
             "opponent": {
-                "label": "GAMBLER:IgnitedxSoul",
-                "display": "Developer IgnitedxSoul",
+                "label": "HEXMANIAC_1:Riptide#1",
+                "display": "Developer Riptide #2",
                 "cursed": false
             },
-            "opponentRank": 33
+            "opponentRank": 34
         },
-        "avgRounds": 7.65,
+        "avgRounds": 8.0,
         "maxRounds": 16
     },
     {
-        "label": "POKEMONBREEDER_F:Miss Zesty",
-        "trainer": "Developer Miss Zesty",
+        "label": "JUGGLER:Brickbat",
+        "trainer": "Developer Brickbat",
         "cursed": false,
-        "rating": 1387.27,
-        "se": 65.45,
-        "ciLow": 1258.99,
-        "ciHigh": 1515.55,
-        "wins": 14,
-        "losses": 26,
+        "rating": 1408.55,
+        "se": 64.42,
+        "ciLow": 1282.29,
+        "ciHigh": 1534.8,
+        "wins": 15,
+        "losses": 25,
         "draws": 0,
         "battles": 40,
-        "rank": 32,
+        "rank": 30,
         "overlap": 14,
-        "tier": "C-",
+        "tier": "C+",
         "tierColor": [
-            147,
-            222,
-            21
+            220,
+            244,
+            0
         ],
         "wldFractions": {
-            "win": 0.35,
+            "win": 0.375,
             "draw": 0.0,
-            "loss": 0.65
+            "loss": 0.625
         },
         "bestWin": {
-            "rating": 1545.22,
-            "seed": 1303954475,
+            "rating": 1601.82,
+            "seed": 611374124,
             "opponent": {
-                "label": "SUPERNERD:Agentbla",
-                "display": "Developer Agentbla",
+                "label": "PUNKM:ValourDyke",
+                "display": "Developer ValourDyke",
                 "cursed": false
             },
-            "opponentRank": 18
+            "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1103.93,
-            "seed": 3324003098,
+            "rating": 1367.63,
+            "seed": 304501526,
             "opponent": {
-                "label": "POKEMONBREEDER_M2:Pechapanda",
-                "display": "Developer Pechapanda",
+                "label": "HEXMANIAC_1:Riptide#1",
+                "display": "Developer Riptide #2",
                 "cursed": false
             },
-            "opponentRank": 38
+            "opponentRank": 34
         },
-        "avgRounds": 8.925,
+        "avgRounds": 9.025,
         "maxRounds": 19
     },
     {
         "label": "GAMBLER:IgnitedxSoul",
         "trainer": "Developer IgnitedxSoul",
         "cursed": false,
-        "rating": 1366.23,
-        "se": 66.12,
-        "ciLow": 1236.64,
-        "ciHigh": 1495.82,
-        "wins": 13,
-        "losses": 27,
+        "rating": 1388.31,
+        "se": 64.96,
+        "ciLow": 1260.99,
+        "ciHigh": 1515.63,
+        "wins": 14,
+        "losses": 26,
         "draws": 0,
         "battles": 40,
-        "rank": 33,
-        "overlap": 14,
-        "tier": "C-",
+        "rank": 31,
+        "overlap": 15,
+        "tier": "C+",
         "tierColor": [
-            147,
-            222,
-            21
+            220,
+            244,
+            0
         ],
         "wldFractions": {
-            "win": 0.325,
+            "win": 0.35,
             "draw": 0.0,
-            "loss": 0.675
+            "loss": 0.65
         },
         "bestWin": {
-            "rating": 1685.94,
+            "rating": 1662.14,
             "seed": 3310798997,
             "opponent": {
                 "label": "FAIRYTALEGIRL:Emmi",
                 "display": "Developer Emmi",
                 "cursed": false
             },
-            "opponentRank": 9
+            "opponentRank": 10
         },
         "worstLoss": {
-            "rating": 1250.79,
+            "rating": 1254.18,
             "seed": 1410533461,
             "opponent": {
                 "label": "HEXMANIAC_1:Riptide",
@@ -1580,71 +1484,215 @@
             },
             "opponentRank": 37
         },
-        "avgRounds": 8.225,
-        "maxRounds": 15
+        "avgRounds": 8.45,
+        "maxRounds": 19
     },
     {
-        "label": "HEXMANIAC:Lichenprincess",
-        "trainer": "Developer Lichenprincess",
+        "label": "POKEMONBREEDER_F:Miss Zesty",
+        "trainer": "Developer Miss Zesty",
         "cursed": false,
-        "rating": 1299.47,
-        "se": 68.88,
-        "ciLow": 1164.46,
-        "ciHigh": 1434.47,
-        "wins": 10,
-        "losses": 30,
+        "rating": 1388.31,
+        "se": 64.96,
+        "ciLow": 1260.99,
+        "ciHigh": 1515.63,
+        "wins": 14,
+        "losses": 26,
+        "draws": 0,
+        "battles": 40,
+        "rank": 32,
+        "overlap": 15,
+        "tier": "C+",
+        "tierColor": [
+            220,
+            244,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.35,
+            "draw": 0.0,
+            "loss": 0.65
+        },
+        "bestWin": {
+            "rating": 1563.03,
+            "seed": 3227008420,
+            "opponent": {
+                "label": "GUITARIST3:Envy",
+                "display": "Developer Envy",
+                "cursed": false
+            },
+            "opponentRank": 15
+        },
+        "worstLoss": {
+            "rating": 1109.19,
+            "seed": 3647759002,
+            "opponent": {
+                "label": "POKEMONBREEDER_M2:Pechapanda",
+                "display": "Developer Pechapanda",
+                "cursed": false
+            },
+            "opponentRank": 39
+        },
+        "avgRounds": 8.975,
+        "maxRounds": 19
+    },
+    {
+        "label": "GAMBLER:Tiki",
+        "trainer": "Developer Tiki",
+        "cursed": false,
+        "rating": 1367.63,
+        "se": 65.62,
+        "ciLow": 1239.03,
+        "ciHigh": 1496.24,
+        "wins": 13,
+        "losses": 27,
+        "draws": 0,
+        "battles": 40,
+        "rank": 33,
+        "overlap": 16,
+        "tier": "C",
+        "tierColor": [
+            184,
+            233,
+            0
+        ],
+        "wldFractions": {
+            "win": 0.325,
+            "draw": 0.0,
+            "loss": 0.675
+        },
+        "bestWin": {
+            "rating": 1582.33,
+            "seed": 3977940143,
+            "opponent": {
+                "label": "DRAGONTAMER_F:Bella",
+                "display": "Developer Bella",
+                "cursed": false
+            },
+            "opponentRank": 14
+        },
+        "worstLoss": {
+            "rating": 1367.63,
+            "seed": 3044111385,
+            "opponent": {
+                "label": "HEXMANIAC_1:Riptide#1",
+                "display": "Developer Riptide #2",
+                "cursed": false
+            },
+            "opponentRank": 34
+        },
+        "avgRounds": 7.925,
+        "maxRounds": 21
+    },
+    {
+        "label": "HEXMANIAC_1:Riptide#1",
+        "trainer": "Developer Riptide #2",
+        "cursed": false,
+        "rating": 1367.63,
+        "se": 65.62,
+        "ciLow": 1239.03,
+        "ciHigh": 1496.24,
+        "wins": 13,
+        "losses": 27,
         "draws": 0,
         "battles": 40,
         "rank": 34,
-        "overlap": 9,
-        "tier": "D+",
+        "overlap": 16,
+        "tier": "C",
         "tierColor": [
-            111,
-            210,
-            38
+            184,
+            233,
+            0
         ],
         "wldFractions": {
-            "win": 0.25,
+            "win": 0.325,
             "draw": 0.0,
-            "loss": 0.75
+            "loss": 0.675
         },
         "bestWin": {
-            "rating": 1487.16,
-            "seed": 460022028,
+            "rating": 1601.82,
+            "seed": 1534763577,
             "opponent": {
-                "label": "CLERK_M2:Papper",
-                "display": "Developer Papper",
+                "label": "PUNKM:ValourDyke",
+                "display": "Developer ValourDyke",
                 "cursed": false
             },
-            "opponentRank": 23
+            "opponentRank": 13
         },
         "worstLoss": {
-            "rating": 1366.23,
-            "seed": 3634454378,
+            "rating": 1278.62,
+            "seed": 2488459195,
             "opponent": {
-                "label": "GAMBLER:IgnitedxSoul",
-                "display": "Developer IgnitedxSoul",
+                "label": "ARTIST3:Drawingbox",
+                "display": "Developer Drawingbox",
+                "cursed": false
+            },
+            "opponentRank": 36
+        },
+        "avgRounds": 8.275,
+        "maxRounds": 39
+    },
+    {
+        "label": "LADY4:Pria",
+        "trainer": "Developer Pria",
+        "cursed": false,
+        "rating": 1346.43,
+        "se": 66.39,
+        "ciLow": 1216.31,
+        "ciHigh": 1476.55,
+        "wins": 12,
+        "losses": 28,
+        "draws": 0,
+        "battles": 40,
+        "rank": 35,
+        "overlap": 14,
+        "tier": "C-",
+        "tierColor": [
+            147,
+            222,
+            21
+        ],
+        "wldFractions": {
+            "win": 0.3,
+            "draw": 0.0,
+            "loss": 0.7
+        },
+        "bestWin": {
+            "rating": 1621.57,
+            "seed": 1628519542,
+            "opponent": {
+                "label": "SCIENTIST_F:LunaFlare",
+                "display": "Developer LunaFlare",
+                "cursed": false
+            },
+            "opponentRank": 11
+        },
+        "worstLoss": {
+            "rating": 1367.63,
+            "seed": 4185480832,
+            "opponent": {
+                "label": "GAMBLER:Tiki",
+                "display": "Developer Tiki",
                 "cursed": false
             },
             "opponentRank": 33
         },
-        "avgRounds": 8.6,
-        "maxRounds": 15
+        "avgRounds": 7.75,
+        "maxRounds": 23
     },
     {
         "label": "ARTIST3:Drawingbox",
         "trainer": "Developer Drawingbox",
         "cursed": false,
-        "rating": 1275.63,
-        "se": 70.1,
-        "ciLow": 1138.24,
-        "ciHigh": 1413.03,
+        "rating": 1278.62,
+        "se": 69.56,
+        "ciLow": 1142.27,
+        "ciHigh": 1414.96,
         "wins": 9,
         "losses": 31,
         "draws": 0,
         "battles": 40,
-        "rank": 35,
-        "overlap": 6,
+        "rank": 36,
+        "overlap": 7,
         "tier": "D",
         "tierColor": [
             75,
@@ -1657,18 +1705,18 @@
             "loss": 0.775
         },
         "bestWin": {
-            "rating": 1467.66,
-            "seed": 988250621,
+            "rating": 1582.33,
+            "seed": 930492205,
             "opponent": {
-                "label": "WORKER5:Jbsundown",
-                "display": "Developer Jbsundown",
+                "label": "DRAGONTAMER_F:Bella",
+                "display": "Developer Bella",
                 "cursed": false
             },
-            "opponentRank": 25
+            "opponentRank": 14
         },
         "worstLoss": {
-            "rating": 1250.79,
-            "seed": 1778607945,
+            "rating": 1254.18,
+            "seed": 1470396969,
             "opponent": {
                 "label": "HEXMANIAC_1:Riptide",
                 "display": "Developer Riptide #1",
@@ -1676,23 +1724,23 @@
             },
             "opponentRank": 37
         },
-        "avgRounds": 7.35,
-        "maxRounds": 14
+        "avgRounds": 7.225,
+        "maxRounds": 16
     },
     {
-        "label": "JUGGLER:Brickbat",
-        "trainer": "Developer Brickbat",
+        "label": "HEXMANIAC_1:Riptide",
+        "trainer": "Developer Riptide #1",
         "cursed": false,
-        "rating": 1275.63,
-        "se": 70.1,
-        "ciLow": 1138.24,
-        "ciHigh": 1413.03,
-        "wins": 9,
-        "losses": 31,
+        "rating": 1254.18,
+        "se": 70.97,
+        "ciLow": 1115.07,
+        "ciHigh": 1393.28,
+        "wins": 8,
+        "losses": 32,
         "draws": 0,
         "battles": 40,
-        "rank": 36,
-        "overlap": 6,
+        "rank": 37,
+        "overlap": 7,
         "tier": "D",
         "tierColor": [
             75,
@@ -1700,71 +1748,23 @@
             53
         ],
         "wldFractions": {
-            "win": 0.225,
-            "draw": 0.0,
-            "loss": 0.775
-        },
-        "bestWin": {
-            "rating": 1545.22,
-            "seed": 2590150408,
-            "opponent": {
-                "label": "HIKER:Valrex",
-                "display": "Developer Valrex",
-                "cursed": false
-            },
-            "opponentRank": 16
-        },
-        "worstLoss": {
-            "rating": 1275.63,
-            "seed": 4085945102,
-            "opponent": {
-                "label": "ARTIST3:Drawingbox",
-                "display": "Developer Drawingbox",
-                "cursed": false
-            },
-            "opponentRank": 35
-        },
-        "avgRounds": 9.225,
-        "maxRounds": 34
-    },
-    {
-        "label": "HEXMANIAC_1:Riptide",
-        "trainer": "Developer Riptide #1",
-        "cursed": false,
-        "rating": 1250.79,
-        "se": 71.5,
-        "ciLow": 1110.64,
-        "ciHigh": 1390.93,
-        "wins": 8,
-        "losses": 32,
-        "draws": 0,
-        "battles": 40,
-        "rank": 37,
-        "overlap": 6,
-        "tier": "D-",
-        "tierColor": [
-            36,
-            187,
-            69
-        ],
-        "wldFractions": {
             "win": 0.2,
             "draw": 0.0,
             "loss": 0.8
         },
         "bestWin": {
-            "rating": 1685.94,
+            "rating": 1750.13,
             "seed": 2775482310,
             "opponent": {
                 "label": "KILLU:Killu",
                 "display": "Developer Killu",
                 "cursed": false
             },
-            "opponentRank": 10
+            "opponentRank": 6
         },
         "worstLoss": {
-            "rating": 1028.11,
-            "seed": 3005743861,
+            "rating": 1033.82,
+            "seed": 1326071701,
             "opponent": {
                 "label": "MAID2:Maddie",
                 "display": "Developer Maddie",
@@ -1772,23 +1772,23 @@
             },
             "opponentRank": 41
         },
-        "avgRounds": 11.3,
+        "avgRounds": 10.775,
         "maxRounds": 39
     },
     {
-        "label": "POKEMONBREEDER_M2:Pechapanda",
-        "trainer": "Developer Pechapanda",
+        "label": "ROLLERSKATER_F:Attea",
+        "trainer": "Developer Attea",
         "cursed": false,
-        "rating": 1103.93,
-        "se": 82.6,
-        "ciLow": 942.03,
-        "ciHigh": 1265.83,
-        "wins": 3,
-        "losses": 37,
+        "rating": 1142.21,
+        "se": 79.22,
+        "ciLow": 986.93,
+        "ciHigh": 1297.49,
+        "wins": 4,
+        "losses": 36,
         "draws": 0,
         "battles": 40,
         "rank": 38,
-        "overlap": 4,
+        "overlap": 5,
         "tier": "F",
         "tierColor": [
             0,
@@ -1796,41 +1796,41 @@
             80
         ],
         "wldFractions": {
-            "win": 0.075,
+            "win": 0.1,
             "draw": 0.0,
-            "loss": 0.925
+            "loss": 0.9
         },
         "bestWin": {
-            "rating": 1387.27,
-            "seed": 3324003098,
+            "rating": 1467.39,
+            "seed": 3122648499,
             "opponent": {
-                "label": "POKEMONBREEDER_F:Miss Zesty",
-                "display": "Developer Miss Zesty",
+                "label": "DRAGONTAMER_F:Zinnia",
+                "display": "Developer Zinnia",
                 "cursed": false
             },
-            "opponentRank": 32
+            "opponentRank": 23
         },
         "worstLoss": {
-            "rating": 1103.93,
-            "seed": 4105152084,
+            "rating": 1254.18,
+            "seed": 2240124970,
             "opponent": {
-                "label": "ROLLERSKATER_F:Attea",
-                "display": "Developer Attea",
+                "label": "HEXMANIAC_1:Riptide",
+                "display": "Developer Riptide #1",
                 "cursed": false
             },
-            "opponentRank": 39
+            "opponentRank": 37
         },
-        "avgRounds": 5.35,
-        "maxRounds": 29
+        "avgRounds": 10.625,
+        "maxRounds": 42
     },
     {
-        "label": "ROLLERSKATER_F:Attea",
-        "trainer": "Developer Attea",
+        "label": "POKEMONBREEDER_M2:Pechapanda",
+        "trainer": "Developer Pechapanda",
         "cursed": false,
-        "rating": 1103.93,
-        "se": 82.6,
-        "ciLow": 942.03,
-        "ciHigh": 1265.83,
+        "rating": 1109.19,
+        "se": 82.23,
+        "ciLow": 948.02,
+        "ciHigh": 1270.37,
         "wins": 3,
         "losses": 37,
         "draws": 0,
@@ -1849,36 +1849,36 @@
             "loss": 0.925
         },
         "bestWin": {
-            "rating": 1103.93,
-            "seed": 4105152084,
+            "rating": 1388.31,
+            "seed": 3647759002,
             "opponent": {
-                "label": "POKEMONBREEDER_M2:Pechapanda",
-                "display": "Developer Pechapanda",
+                "label": "POKEMONBREEDER_F:Miss Zesty",
+                "display": "Developer Miss Zesty",
+                "cursed": false
+            },
+            "opponentRank": 32
+        },
+        "worstLoss": {
+            "rating": 1142.21,
+            "seed": 1755869236,
+            "opponent": {
+                "label": "ROLLERSKATER_F:Attea",
+                "display": "Developer Attea",
                 "cursed": false
             },
             "opponentRank": 38
         },
-        "worstLoss": {
-            "rating": 1250.79,
-            "seed": 528428746,
-            "opponent": {
-                "label": "HEXMANIAC_1:Riptide",
-                "display": "Developer Riptide #1",
-                "cursed": false
-            },
-            "opponentRank": 37
-        },
-        "avgRounds": 11.775,
-        "maxRounds": 41
+        "avgRounds": 5.325,
+        "maxRounds": 19
     },
     {
         "label": "GENTLEMAN3:D",
         "trainer": "Developer D",
         "cursed": false,
-        "rating": 1028.11,
-        "se": 90.31,
-        "ciLow": 851.1,
-        "ciHigh": 1205.13,
+        "rating": 1033.82,
+        "se": 90.12,
+        "ciLow": 857.19,
+        "ciHigh": 1210.45,
         "wins": 1,
         "losses": 39,
         "draws": 0,
@@ -1897,7 +1897,7 @@
             "loss": 0.96
         },
         "bestWin": {
-            "rating": 1028.11,
+            "rating": 1033.82,
             "seed": 4135509332,
             "opponent": {
                 "label": "MAID2:Maddie",
@@ -1907,26 +1907,26 @@
             "opponentRank": 41
         },
         "worstLoss": {
-            "rating": 1103.93,
-            "seed": 2156013739,
+            "rating": 1109.19,
+            "seed": 2490062332,
             "opponent": {
-                "label": "ROLLERSKATER_F:Attea",
-                "display": "Developer Attea",
+                "label": "POKEMONBREEDER_M2:Pechapanda",
+                "display": "Developer Pechapanda",
                 "cursed": false
             },
             "opponentRank": 39
         },
-        "avgRounds": 7.0,
-        "maxRounds": 13
+        "avgRounds": 7.625,
+        "maxRounds": 42
     },
     {
         "label": "MAID2:Maddie",
         "trainer": "Developer Maddie",
         "cursed": false,
-        "rating": 1028.11,
-        "se": 90.31,
-        "ciLow": 851.1,
-        "ciHigh": 1205.13,
+        "rating": 1033.82,
+        "se": 90.12,
+        "ciLow": 857.19,
+        "ciHigh": 1210.45,
         "wins": 1,
         "losses": 39,
         "draws": 0,
@@ -1945,8 +1945,8 @@
             "loss": 0.96
         },
         "bestWin": {
-            "rating": 1250.79,
-            "seed": 3005743861,
+            "rating": 1254.18,
+            "seed": 1326071701,
             "opponent": {
                 "label": "HEXMANIAC_1:Riptide",
                 "display": "Developer Riptide #1",
@@ -1955,7 +1955,7 @@
             "opponentRank": 37
         },
         "worstLoss": {
-            "rating": 1028.11,
+            "rating": 1033.82,
             "seed": 4135509332,
             "opponent": {
                 "label": "GENTLEMAN3:D",
@@ -1964,7 +1964,7 @@
             },
             "opponentRank": 40
         },
-        "avgRounds": 6.775,
-        "maxRounds": 29
+        "avgRounds": 6.275,
+        "maxRounds": 22
     }
 ]
