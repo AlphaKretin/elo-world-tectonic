@@ -98,6 +98,7 @@ while ($true) {
 
     $doneByFormat        = @{}
     $globalTotalByFormat = @{}
+    $rateByFormat        = @{}
     $anyError            = $false
 
     # Aggregate/COMPLETE totals fold in every status file for every format,
@@ -111,7 +112,7 @@ while ($true) {
         $d = Read-StatusJson $f.FullName
         if ($d) {
             Add-StatusToAggregate -Data $d -Label $label -GlobalTotalByFormat $globalTotalByFormat `
-                -DoneByFormat $doneByFormat -AnyError ([ref]$anyError)
+                -DoneByFormat $doneByFormat -AnyError ([ref]$anyError) -RateByFormat $rateByFormat
         }
     }
 
@@ -165,7 +166,7 @@ while ($true) {
         if ($heartbeatLine) { Write-Output $heartbeatLine }
     }
 
-    Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError
+    Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError $rateByFormat
 
     Start-Sleep -Seconds $RefreshSeconds
 }

@@ -111,6 +111,7 @@ while ($true) {
     # bug this -Formats filter above was originally built to guard against).
     $doneByFormat = @{}
     $globalTotalByFormat = @{}
+    $rateByFormat = @{}
     $anyError  = $false
 
     # Completed-chunk totals persisted by supervise_remote_chunks.ps1's
@@ -167,7 +168,7 @@ while ($true) {
                 # the running totals -- a finished singles file is still real
                 # progress even once doubles has taken over the display.
                 Add-StatusToAggregate -Data $d -Label $formatLabel -GlobalTotalByFormat $globalTotalByFormat `
-                    -DoneByFormat $doneByFormat -AnyError ([ref]$anyError)
+                    -DoneByFormat $doneByFormat -AnyError ([ref]$anyError) -RateByFormat $rateByFormat
                 $parsed += [PSCustomObject]@{ Label = $formatLabel; Data = $d }
             }
             # Without -Formats, a shard part-way through its format sequence
@@ -247,7 +248,7 @@ while ($true) {
         }
     }
 
-    Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError
+    Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError $rateByFormat
 
     Start-Sleep -Seconds $RefreshSeconds
 }

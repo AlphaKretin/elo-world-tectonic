@@ -27,6 +27,7 @@ while ($true) {
 
     $doneByFormat = @{}
     $globalTotalByFormat = @{}
+    $rateByFormat = @{}
     $anyError  = $false
 
     for ($i = 0; $i -lt $ShardCount; $i++) {
@@ -38,13 +39,13 @@ while ($true) {
         if ($d) {
             Show-StatusEntry $d $Format
             Add-StatusToAggregate -Data $d -Label $Format -GlobalTotalByFormat $globalTotalByFormat `
-                -DoneByFormat $doneByFormat -AnyError ([ref]$anyError)
+                -DoneByFormat $doneByFormat -AnyError ([ref]$anyError) -RateByFormat $rateByFormat
         } else {
             Write-Output "(no status yet)"
         }
     }
 
-    Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError
+    Write-AggregateFooter $doneByFormat $globalTotalByFormat $anyError $rateByFormat
 
     Start-Sleep -Seconds $RefreshSeconds
 }

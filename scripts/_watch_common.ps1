@@ -101,7 +101,13 @@ function Add-StatusToAggregate {
         [Parameter(Mandatory)][string]$Label,
         [Parameter(Mandatory)][hashtable]$GlobalTotalByFormat,
         [Parameter(Mandatory)][hashtable]$DoneByFormat,
-        [Parameter(Mandatory)][ref]$AnyError
+        [Parameter(Mandatory)][ref]$AnyError,
+        # Optional: sum of rate_per_s across every currently in-flight
+        # (not finished) shard/chunk reporting this format, for
+        # Write-AggregateFooter's aggregate ETA below. A finished chunk's
+        # rate contributes nothing further -- its work is done -- so it's
+        # deliberately excluded rather than summed in like done/total are.
+        [hashtable]$RateByFormat = $null
     )
     $prevDone = if ($DoneByFormat.ContainsKey($Label)) { $DoneByFormat[$Label] } else { 0 }
     $DoneByFormat[$Label] = $prevDone + [int]$Data.done
@@ -109,6 +115,10 @@ function Add-StatusToAggregate {
     $prevTotal = if ($GlobalTotalByFormat.ContainsKey($Label)) { $GlobalTotalByFormat[$Label] } else { 0 }
     $GlobalTotalByFormat[$Label] = [Math]::Max($prevTotal, $gt)
     if ($Data.error) { $AnyError.Value = $true }
+    if ($RateByFormat -and -not $Data.finished -and $null -ne $Data.rate_per_s) {
+        $prevRate = if ($RateByFormat.ContainsKey($Label)) { $RateByFormat[$Label] } else { 0.0 }
+        $RateByFormat[$Label] = $prevRate + [double]$Data.rate_per_s
+    }
 }
 
 # A format that's fully done (summed done across every chunk seen this
@@ -121,7 +131,22 @@ function Add-StatusToAggregate {
 # from the total alone whether singles is actually close to finished, or
 # whether the move to doubles is even correct yet. Each active format
 # gets its own line instead, so that judgment never has to be made blind.
-function Write-AggregateFooter([hashtable]$doneByFormat, [hashtable]$globalTotalByFormat, [bool]$anyError) {
+#
+# $rateByFormat (optional, label -> summed rate_per_s across every currently
+# in-flight shard/chunk reporting that format -- see Add-StatusToAggregate)
+# drives the AGGREGATE ETA line. This is deliberately not "read the
+# per-shard eta_s fields" -- with chunking, a single shard's eta_s is
+# computed from its *current chunk's own* t_start (tournament.rb resets
+# t_start every time a host picks up a new chunk), so it only ever answers
+# "when does this one shard's current chunk finish," not "when is this
+# format actually done" once there's a supervised queue of many
+# chunks-per-host in flight. remaining/aggregate-throughput is the number
+# that actually answers that: $a.Total - $a.Done is already the true
+# remaining work across every chunk of this format (in-flight and still
+# queued, since global_total covers the whole format), and summing every
+# in-flight shard's own rate_per_s is real, currently-observed combined
+# throughput -- no smoothing/curve-fitting needed, just remaining / rate.
+function Write-AggregateFooter([hashtable]$doneByFormat, [hashtable]$globalTotalByFormat, [bool]$anyError, [hashtable]$rateByFormat = $null) {
     Write-Output ""
     Write-Output "================================================================"
     $completed = @()
@@ -142,6 +167,15 @@ function Write-AggregateFooter([hashtable]$doneByFormat, [hashtable]$globalTotal
         foreach ($a in ($active | Sort-Object Label)) {
             $pct = if ($a.Total -gt 0) { [math]::Round($a.Done * 100.0 / $a.Total, 3) } else { 0 }
             Write-Output "AGGREGATE [$($a.Label)]: $($a.Done) / $($a.Total) ($pct%)"
+            $remaining = $a.Total - $a.Done
+            $rate = if ($rateByFormat -and $rateByFormat.ContainsKey($a.Label)) { [double]$rateByFormat[$a.Label] } else { 0.0 }
+            if ($remaining -gt 0 -and $rate -gt 0) {
+                $etaS = $remaining / $rate
+                $etaClock = (Get-Date).AddSeconds($etaS)
+                Write-Output "  ETA: $(Format-Duration $etaS) remaining ($([math]::Round($rate, 3)) battles/s combined) -- around $($etaClock.ToString('yyyy-MM-dd HH:mm:ss'))"
+            } elseif ($remaining -gt 0) {
+                Write-Output "  ETA: n/a (no in-flight shard currently reporting this format)"
+            }
         }
     } elseif ($completed.Count -eq 0) {
         Write-Output "AGGREGATE: no status seen yet."
