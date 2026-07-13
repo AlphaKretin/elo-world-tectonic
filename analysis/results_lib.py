@@ -56,6 +56,25 @@ CARDS_DIR = os.path.join(ANALYSIS_DIR, "cards")
 
 WIN, LOSS, DRAW = 1, 2, 5
 
+# A row's raw "rounds" value is battle.turnCount, which is 0-indexed (only
+# incremented at the end of a fully-completed round -- see
+# AI_Benchmark.rb's `rounds: battle.turnCount`), so it needs +1 to show the
+# real round count. Exception: AUTO_TESTING_TURN_TIMEOUT battles (decision
+# forced by pbDecisionOnTime, not a real end-of-round) are aborted with
+# @turnCount already sitting at the configured timeout -- that's an
+# arbitrary "gave up" sentinel, not a round that actually completed, so it
+# must display as-is rather than getting the same +1. The current data's
+# timeout was run with ELO_TURN_TIMEOUT=1000 (see run_tournament.ps1's
+# -TurnTimeout); update this if a future rerun uses a different value.
+ROUND_TIMEOUT_SENTINEL = 1000
+
+
+def display_rounds(rounds):
+    if rounds is None or rounds == ROUND_TIMEOUT_SENTINEL:
+        return rounds
+    return rounds + 1
+
+
 # elo_results_<fmt>_uncursed_shard*.jsonl on disk is ALWAYS the raw
 # curse-stripped partial re-battle subset (only pairings where stripping
 # curses actually changed a party get re-battled -- see tournament.rb) --

@@ -333,10 +333,10 @@ class ResultsTableModel(QAbstractTableModel):
             return self._result_label(cache["result"])
         if col == 4:
             # +1 for display: the engine's stored round count is 0-indexed
-            # (see replay_runner.describe_result); the sort key in _resort
+            # (see results_lib.display_rounds); the sort key in _resort
             # stays raw since a uniform +1 shift doesn't change ordering.
-            rounds = self._rows[actual].get("rounds")
-            return str(rounds + 1) if rounds is not None else ""
+            rounds = self._lib.display_rounds(self._rows[actual].get("rounds"))
+            return str(rounds) if rounds is not None else ""
         if col == 5:
             return self._rating_text(cache["t1_rating"])
         if col == 6:

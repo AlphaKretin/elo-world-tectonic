@@ -439,8 +439,9 @@ class TrainersTab(QWidget):
         battle_type_label = dict(format_selector.BATTLE_TYPES)[data["battle_type"]]
         curse_variant_label = dict(format_selector.CURSE_VARIANTS)[data["curse_variant"]]
         # +1 for display: the engine's stored round count is 0-indexed (see
-        # replay_runner.describe_result), matching Browse tab's own Rnds column.
-        rounds_text = str(rounds + 1) if rounds is not None else ""
+        # results_lib.display_rounds), matching Browse tab's own Rnds column.
+        rounds = load_results_lib(self.config.analysis_dir).display_rounds(rounds)
+        rounds_text = str(rounds) if rounds is not None else ""
         diff_text = f"{diff:+.0f}" if diff is not None else ""
 
         name_item = QTableWidgetItem(battle_type_label)

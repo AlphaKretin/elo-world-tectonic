@@ -17,19 +17,33 @@ HEARTBEAT_POLL_MS = 1000
 # run for a long time with no way to bail out short of Cancel.
 LONG_REPLAY_ROUND_THRESHOLD = 100
 
+# Mirrors results_lib.ROUND_TIMEOUT_SENTINEL/display_rounds -- kept as a
+# standalone constant rather than importing analysis/results_lib.py here,
+# since this module is plain Qt/stdlib with no config/analysis_dir of its
+# own to resolve that import against. Update alongside results_lib's copy
+# if a future rerun uses a different ELO_TURN_TIMEOUT.
+ROUND_TIMEOUT_SENTINEL = 1000
+
+
+def display_rounds(rounds):
+    if rounds is None or rounds == ROUND_TIMEOUT_SENTINEL:
+        return rounds
+    return rounds + 1
+
 
 def confirm_long_replay(parent, rounds, action, estimated=False):
     """True if it's fine to proceed. rounds is the raw 0-indexed count (as
     stored in sidecars/RR rows); estimated marks a same-pairing/seed-chain
     guess (Generate, before the battle has actually run) rather than an
     exact known count (Watch, already-played)."""
-    if rounds is None or rounds + 1 <= LONG_REPLAY_ROUND_THRESHOLD:
+    shown = display_rounds(rounds)
+    if shown is None or shown <= LONG_REPLAY_ROUND_THRESHOLD:
         return True
     qualifier = "is estimated to last around" if estimated else "lasted"
     reply = QMessageBox.question(
         parent,
         "Long replay",
-        f"This replay {qualifier} {rounds + 1} rounds and may take a while to {action}. Continue?",
+        f"This replay {qualifier} {shown} rounds and may take a while to {action}. Continue?",
         QMessageBox.Yes | QMessageBox.No,
         QMessageBox.Yes,
     )
@@ -280,11 +294,11 @@ def describe_result(result, trainer1_name="Trainer 1", trainer2_name="Trainer 2"
     lines = ["Battle finished (result hidden)."] if hide_outcome else [
         outcome_label(result.get("result"), trainer1_name, trainer2_name)
     ]
-    rounds = result.get("rounds")
+    rounds = display_rounds(result.get("rounds"))
     if rounds is not None:
         time_s = result.get("time_s")
         time_part = f", {time_s:.1f}s" if isinstance(time_s, (int, float)) else ""
-        lines.append(f"{rounds + 1} rounds{time_part}")
+        lines.append(f"{rounds} rounds{time_part}")
     if result.get("saved_to"):
         lines.append(f"Saved to {result['saved_to']}")
     return "\n".join(lines)

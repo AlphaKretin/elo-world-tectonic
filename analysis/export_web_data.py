@@ -226,7 +226,7 @@ def round_stats_by_label(base_fmt, filters):
             continue
         if r.get("result") not in (results_lib.WIN, results_lib.LOSS, results_lib.DRAW):
             continue
-        n = r.get("rounds")
+        n = results_lib.display_rounds(r.get("rounds"))
         if n is None:
             continue
         rounds[r["trainer1"]].append(n)

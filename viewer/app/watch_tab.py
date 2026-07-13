@@ -23,6 +23,7 @@ from PySide6.QtWidgets import (
 from app import config as config_module, game_assets, replay_env, replay_runner, ui_settings
 from app.elided_tooltip_delegate import ElidedTooltipDelegate
 from app.replay_runner import ReplayRunner
+from app.results_source import load_results_lib
 from app.tooltip_header import install_header_tooltips
 from app.trainer_names import TrainerNameResolver
 
@@ -225,6 +226,7 @@ class WatchTab(QWidget):
             f for f in os.listdir(replay_dir) if f.lower().endswith(".dat") and f != f"{STAGING_NAME}.dat"
         )
         self.table.setRowCount(len(names))
+        results_lib = load_results_lib(self.config.analysis_dir)
         for i, name in enumerate(names):
             full_path = os.path.join(replay_dir, name)
             mtime = datetime.datetime.fromtimestamp(os.path.getmtime(full_path)).strftime("%Y-%m-%d %H:%M:%S")
@@ -232,8 +234,8 @@ class WatchTab(QWidget):
             sidecar = self._read_sidecar(base_name)
             self.table.setItem(i, 0, _CaseInsensitiveItem(base_name))
             self._set_trainer_columns(i, sidecar.get("trainer1", ""), sidecar.get("trainer2", ""))
-            rounds = sidecar.get("rounds")
-            self.table.setItem(i, 3, _NumericItem(str(rounds + 1) if rounds is not None else "", rounds))
+            rounds = results_lib.display_rounds(sidecar.get("rounds"))
+            self.table.setItem(i, 3, _NumericItem(str(rounds) if rounds is not None else "", rounds))
             self.table.setItem(i, 4, QTableWidgetItem(mtime))
             if base_name == selected_name:
                 self.table.selectRow(i)
