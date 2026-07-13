@@ -1,4 +1,4 @@
-// Playwright smoke test for the ELO World: Tectonic site. Drives a dev
+// Playwright smoke test for the Pokémon Tectonic Elo World site. Drives a dev
 // server (must already be running -- see README/`npm run dev`) through the
 // leaderboard -> search/sort/filter -> format switch -> trainer detail ->
 // PNG export path, screenshotting each step and failing on any console/page

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { FormatPicker } from "../components/FormatPicker";
 import { StatsScatter } from "../components/StatsScatter";
+import { usePageTitle } from "../hooks/usePageTitle";
 import { fetchLeaderboard, fetchTeamLevels, formatKey } from "../lib/dataClient";
 import type { BattleType, CurseVariant, FilterVariant, LeaderboardRow, ScatterPoint, TeamLevels } from "../types";
 import "./StatsPage.css";
@@ -105,6 +106,7 @@ function AxisPicker({ title, axis, onChange }: AxisPickerProps) {
 }
 
 export function StatsPage() {
+  usePageTitle("Stats", "Scatter plots of Pokémon Tectonic trainer stats — ratings, win rates, team levels, and more — plotted against each other.");
   const [axisX, setAxisX] = useState<AxisConfig>({ metric: "maxLevel", battleType: "singles", curseVariant: "cursed", filter: "none" });
   const [axisY, setAxisY] = useState<AxisConfig>({ metric: "rating", battleType: "singles", curseVariant: "cursed", filter: "none" });
   const [showTrendline, setShowTrendline] = useState(false);

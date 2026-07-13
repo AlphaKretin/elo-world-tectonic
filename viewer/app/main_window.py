@@ -53,7 +53,7 @@ class MainWindow(QMainWindow):
         takes, rather than trying to thread the loading itself off the main
         thread (Qt widgets aren't safe to build outside it anyway)."""
         super().__init__()
-        self.setWindowTitle("Elo World Tectonic — Replay Viewer")
+        self.setWindowTitle("Battle Station — Pokémon Tectonic Elo World")
         self.resize(900, 700)
 
         def report(message):

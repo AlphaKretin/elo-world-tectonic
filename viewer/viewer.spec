@@ -16,6 +16,7 @@ ANALYSIS_DIR = os.path.join(os.path.dirname(SPEC_DIR), "analysis")
 a = Analysis(
     ["main.py"],
     pathex=[ANALYSIS_DIR],
+    datas=[(os.path.join(SPEC_DIR, "assets"), "assets")],
     hiddenimports=["results_lib", "trainer_naming", "bracket_lib"],
     hookspath=[],
     hooksconfig={},
@@ -32,6 +33,7 @@ exe = EXE(
     exclude_binaries=True,
     name="viewer",
     console=False,
+    icon=os.path.join(SPEC_DIR, "assets", "app_icon.ico"),
 )
 
 coll = COLLECT(

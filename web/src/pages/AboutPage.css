@@ -1,0 +1,33 @@
+.about-page {
+  max-width: 44rem;
+}
+
+.about-page section {
+  margin-top: 2rem;
+}
+
+.about-page h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.about-page p {
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0.6rem 0;
+}
+
+.about-page ul {
+  color: var(--text-secondary);
+  line-height: 1.55;
+  padding-left: 1.2rem;
+  margin: 0.6rem 0;
+}
+
+.about-page li {
+  margin: 0.4rem 0;
+}
+
+.about-page strong {
+  color: var(--text-primary);
+}

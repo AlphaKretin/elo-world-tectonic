@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toPng } from "html-to-image";
 import { TrainerCard } from "../components/TrainerCard";
+import { usePageTitle } from "../hooks/usePageTitle";
 import { fetchLeaderboardRow, fetchMeta, fetchTrainerStatic, formatKey } from "../lib/dataClient";
 import type { BattleType, CurseVariant, FilterVariant, FormatMeta, LeaderboardRow, TrainerStatic } from "../types";
 import "./TrainerModal.css";
@@ -27,6 +28,13 @@ export function TrainerModalContent({ battleType, curseVariant, filter, label, o
   const [meta, setMeta] = useState<FormatMeta | null>(null);
   const [error, setError] = useState<string | null>(null);
   const cardRef = useRef<HTMLDivElement>(null);
+
+  usePageTitle(
+    trainer?.title ?? label,
+    row
+      ? `${trainer?.title ?? label} — rank #${row.rank}${row.tier ? ` (${row.tier} tier)` : ""} in ${battleType} ${curseVariant}, ${Math.round(row.rating)} rating, ${row.wins}-${row.losses}-${row.draws} record (${Math.round(row.wldFractions.win * 100)}% win rate) across ${row.battles} battles.`
+      : undefined,
+  );
 
   useEffect(() => {
     let cancelled = false;

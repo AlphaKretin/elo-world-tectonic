@@ -1,6 +1,6 @@
-# Pokemon Tectonic ELO World
+# Pokémon Tectonic Elo World
 
-Ranks every trainer in [Pokemon Tectonic](https://github.com/Pokemon-Tectonic-Team/Pokemon-Tectonic-Content) by running a full round-robin tournament of real, headless AI-vs-AI battles, then fitting Bradley-Terry ratings over the results — the same methodology as [elo_world_pokemon_crystal](https://github.com/jsettlem/elo_world_pokemon_crystal), built on top of Tectonic's [AI Benchmark](https://github.com/Pokemon-Tectonic-Team/Pokemon-Essentials-Chasm-Engine/tree/3.5-ai-rework) headless battle engine instead of emulator automation.
+Ranks every trainer in the fangame [Pokémon Tectonic](https://github.com/Pokemon-Tectonic-Team/Pokemon-Tectonic-Content) by running a full round-robin tournament of real, headless AI-vs-AI battles, then fitting Bradley-Terry ratings over the results — the same methodology as [elo_world_pokemon_crystal](https://github.com/jsettlem/elo_world_pokemon_crystal), built on top of Tectonic's [AI Benchmark](https://github.com/Pokemon-Tectonic-Team/Pokemon-Essentials-Chasm-Engine/tree/3.5-ai-rework) headless battle engine instead of emulator automation.
 
 ## Website
 
@@ -12,7 +12,7 @@ Ranks every trainer in [Pokemon Tectonic](https://github.com/Pokemon-Tectonic-Te
 
 ## Replay viewer
 
-**[Latest release](https://github.com/AlphaKretin/elo-world-tectonic/releases/latest)** — a companion desktop app (`viewer/`) for browsing and watching individual battles, complementing the website's overall ratings with a look at specific matches: search the full results set for a pairing, generate that exact battle as a watchable replay, and step through it turn-by-turn — all headless, no need for the in-game VS Recorder. See "Developing the replay viewer" below for how to run or build it.
+**[Latest release](https://github.com/AlphaKretin/elo-world-tectonic/releases/latest)** — **Battle Station**, a companion desktop app (`viewer/`) for browsing and watching individual battles, complementing the website's overall ratings with a look at specific matches: search the full results set for a pairing, generate that exact battle as a watchable replay, and step through it turn-by-turn — all headless, no need for the in-game VS Recorder. See "Developing the replay viewer" below for how to run or build it.
 
 ---
 
@@ -59,7 +59,7 @@ The rest of this README covers the tournament infrastructure itself — running 
   - `notable_matches.py`, `trainer_cards.py`, `level_plot.py` — supplementary reports (upsets/grinds/self-mirrors under `notable_matches/`, per-trainer card data under `cards/`, level-vs-rating scatter).
   - `export_web_data.py` — regenerates `web/public/data/` for the website; self-regenerates `ratings/`/`best_worst/` first, so it's safe to run on its own — see "Developing the website" below.
 - `.venv/` — Python virtualenv for `analysis/` (gitignored; see "Analysis" below to recreate it).
-- `viewer/` — a PySide6 desktop app for browsing tournament results and generating/watching individual battle replays, without needing the game's own VS Recorder UI. See "Replay viewer / generator app" below.
+- `viewer/` — **Battle Station**, a PySide6 desktop app for browsing tournament results and generating/watching individual battle replays, without needing the game's own VS Recorder UI. See "Replay viewer / generator app" below.
 - `web/` — the React/Vite site published at the URL above. Reads static JSON (`web/public/data/`) produced by `analysis/export_web_data.py`; see "Developing the website" below. Deployed automatically to GitHub Pages by `.github/workflows/deploy-web.yml` on every push to `main` that touches `web/`.
 
 ## Running a tournament
@@ -193,7 +193,7 @@ Pushing to `main` with changes under `web/` triggers `.github/workflows/deploy-w
 
 ## Developing the replay viewer
 
-`viewer/` is a PySide6 desktop app for browsing tournament results and generating/watching individual battle replays, without needing to hand-run `Game.exe` with env vars or use the in-game VS Recorder directly:
+`viewer/` (**Battle Station**) is a PySide6 desktop app for browsing tournament results and generating/watching individual battle replays, without needing to hand-run `Game.exe` with env vars or use the in-game VS Recorder directly:
 
 - **Browse** — search/filter the actual tournament results data (`elo_results_*.jsonl`) and send a battle straight to Generate.
 - **Generate** — given trainers/seed/format, runs that exact battle headlessly and produces a `.dat` replay.

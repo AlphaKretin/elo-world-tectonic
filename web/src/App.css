@@ -1,8 +1,41 @@
 .app-nav {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   padding-top: 1rem;
   font-size: 0.95rem;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-right: 1.5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.app-brand img {
+  width: 28px;
+  height: 28px;
+  image-rendering: pixelated;
+}
+
+.app-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.app-brand-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.app-brand-subtitle {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
 }
 
 .app-nav a {

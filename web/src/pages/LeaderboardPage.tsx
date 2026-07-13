@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Outlet, useNavigate, useParams } from "react-router-dom";
 import { FormatPicker } from "../components/FormatPicker";
 import { LeaderboardTable } from "../components/LeaderboardTable";
+import { usePageTitle } from "../hooks/usePageTitle";
 import { fetchLeaderboard, fetchMeta, formatKey } from "../lib/dataClient";
 import { isValidFormat, nearestValidFormat } from "../lib/formatValidity";
 import type { BattleType, CurseVariant, FilterVariant, LeaderboardRow } from "../types";
@@ -9,6 +10,13 @@ import type { BattleType, CurseVariant, FilterVariant, LeaderboardRow } from "..
 const VALID_BATTLE_TYPES: BattleType[] = ["singles", "doubles"];
 const VALID_CURSE_VARIANTS: CurseVariant[] = ["cursed", "uncursed"];
 const VALID_FILTERS: FilterVariant[] = ["none", "cursed_excluded", "level70_only", "developer_only"];
+
+const FILTER_DESCRIPTIONS: Record<FilterVariant, string> = {
+  none: "",
+  cursed_excluded: ", excluding cursed-format battles from the rating fit",
+  level70_only: ", restricted to level-70 teams",
+  developer_only: ", restricted to developer trainers",
+};
 
 export function LeaderboardPage() {
   const params = useParams();
@@ -22,6 +30,11 @@ export function LeaderboardPage() {
   const filter = VALID_FILTERS.includes(params.filter as FilterVariant)
     ? (params.filter as FilterVariant)
     : "none";
+
+  usePageTitle(
+    "Leaderboard",
+    `Pokémon Tectonic ${battleType} ${curseVariant} leaderboard, ranked by Elo rating${FILTER_DESCRIPTIONS[filter]}.`,
+  );
 
   const [rows, setRows] = useState<LeaderboardRow[] | null>(null);
   const [availableFormats, setAvailableFormats] = useState<string[] | null>(null);
@@ -73,7 +86,7 @@ export function LeaderboardPage() {
 
   return (
     <div className="page">
-      <h1>ELO World: Tectonic -- Leaderboard</h1>
+      <h1>Leaderboard</h1>
       <FormatPicker battleType={battleType} curseVariant={curseVariant} filter={filter} onChange={handleFormatChange} />
       {error && <p className="error">Failed to load leaderboard: {error}</p>}
       {!error && !rows && <p>Loading...</p>}

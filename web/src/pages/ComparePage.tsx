@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { CurseIcon } from "../components/CurseIcon";
 import { FormatPicker } from "../components/FormatPicker";
+import { usePageTitle } from "../hooks/usePageTitle";
 import { fetchLeaderboard, formatKey } from "../lib/dataClient";
 import { TrainerModalContent } from "./TrainerModal";
 import type { BattleType, CurseVariant, FilterVariant, JoinedRow, LeaderboardRow } from "../types";
@@ -9,6 +10,7 @@ import "./ComparePage.css";
 type SortKey = "trainer" | "rankA" | "ratingA" | "rankB" | "ratingB" | "rankDelta" | "ratingDelta";
 
 export function ComparePage() {
+  usePageTitle("Compare", "Compare Pokémon Tectonic trainer rankings and ratings across two tournament formats side by side.");
   const [modalLabel, setModalLabel] = useState<string | null>(null);
   const [battleTypeA, setBattleTypeA] = useState<BattleType>("singles");
   const [curseVariantA, setCurseVariantA] = useState<CurseVariant>("cursed");
