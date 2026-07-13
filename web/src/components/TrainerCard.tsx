@@ -130,7 +130,7 @@ export const TrainerCard = forwardRef<HTMLDivElement, Props>(function TrainerCar
             {trainer.tribeBonuses.length > 0 && (
               <p className="card-line">
                 <img className="inline-badge" src={assetUrl("badges/tribe.png")} alt="Tribal bonus" />
-                {trainer.tribeBonuses.map((t) => t.name).join(", ")}
+                {trainer.tribeBonuses.length > 3 ? `${trainer.tribeBonuses.slice(0, 3).map((t) => t.name).join(", ")} and ${trainer.tribeBonuses.length - 3} more` : trainer.tribeBonuses.map((t) => t.name).join(", ")}
               </p>
             )}
             {opponentLine("Best win", row.bestWin, onOpenTrainer)}
