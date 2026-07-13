@@ -1,19 +1,19 @@
-{"trainer1":"BATTLEGIRL:Tester","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":782756156,"result":1,"rounds":8,"time_s":6.1929099559783936,"had_error":false,"curse":true}
+{"trainer1": "BATTLEGIRL:Tester", "trainer2": "LEADER_Lambert:Lambert#1", "format": "doubles_uncursed", "seed": 782756156, "result": 1, "rounds": 8, "time_s": 5.36920428276062, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#15","trainer2":"LASS4:Chloe","format":"doubles_uncursed","seed":1900984777,"result":1,"rounds":0,"time_s":0.47759270668029785,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Samorn:Samorn#1","trainer2":"SCIENTIST_M2:Marco","format":"doubles_uncursed","seed":2030681725,"result":1,"rounds":3,"time_s":4.099130868911743,"had_error":false,"curse":true}
 {"trainer1":"BEAUTY:Gretchen","trainer2":"TRAINER_Sang:Sang#5","format":"doubles_uncursed","seed":2478048437,"result":2,"rounds":0,"time_s":0.7421934604644775,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#9","trainer2":"SWIMMER_F5:Shreya","format":"doubles_uncursed","seed":1690791778,"result":1,"rounds":4,"time_s":5.809212684631348,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Vanya:Vanya","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":1971397513,"result":1,"rounds":5,"time_s":6.480783939361572,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"POKEMONMASTER_Vanya:Vanya","format":"doubles_uncursed","seed":4242583856,"result":2,"rounds":6,"time_s":9.492809295654297,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"VANYAMOM:Vidya","format":"doubles_uncursed","seed":955325730,"result":1,"rounds":8,"time_s":6.853918552398682,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "VANYAMOM:Vidya", "format": "doubles_uncursed", "seed": 955325730, "result": 1, "rounds": 8, "time_s": 6.446412086486816, "had_error": false, "curse": true}
 {"trainer1":"PARASOLLADY2:Antoinette","trainer2":"TAPU_BULU:Tapu Bulu#1","format":"doubles_uncursed","seed":803509407,"result":2,"rounds":4,"time_s":5.5481109619140625,"had_error":false,"curse":true}
 {"trainer1":"NIGHTMAREQUEEN_Elise:Elise","trainer2":"LEADER_Eko:Eko#1","format":"doubles_uncursed","seed":1675779861,"result":1,"rounds":6,"time_s":5.60081148147583,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#21","trainer2":"NURSE:Ellen","format":"doubles_uncursed","seed":2492017122,"result":1,"rounds":6,"time_s":4.5852789878845215,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"CEO:Beatrice","format":"doubles_uncursed","seed":4114990298,"result":1,"rounds":3,"time_s":3.2194983959198,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "CEO:Beatrice", "format": "doubles_uncursed", "seed": 4114990298, "result": 1, "rounds": 3, "time_s": 2.6093711853027344, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#15","trainer2":"JUGGLER:Mikael","format":"doubles_uncursed","seed":2795418878,"result":1,"rounds":2,"time_s":2.0639939308166504,"had_error":false,"curse":true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#1","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":3250294667,"result":1,"rounds":5,"time_s":6.235862731933594,"had_error":false,"curse":true}
 {"trainer1":"RICHBOY3:Ryan","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":3480695231,"result":2,"rounds":2,"time_s":2.4482901096343994,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"TRAINER_Zain:Zain#3","format":"doubles_uncursed","seed":373546743,"result":1,"rounds":7,"time_s":7.647732496261597,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "TRAINER_Zain:Zain#3", "format": "doubles_uncursed", "seed": 373546743, "result": 2, "rounds": 10, "time_s": 10.717419147491455, "had_error": false, "curse": true}
 {"trainer1":"TAPU_FINI:Tapu Fini#1","trainer2":"POKEMONMASTER_Vanya:Vanya#3","format":"doubles_uncursed","seed":1916269874,"result":2,"rounds":10,"time_s":11.714505672454834,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Eko:Eko#1","trainer2":"LEADER_Bence:Bence#1","format":"doubles_uncursed","seed":3104475153,"result":2,"rounds":3,"time_s":5.817230224609375,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#5","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#12","format":"doubles_uncursed","seed":1077688051,"result":2,"rounds":3,"time_s":4.814263343811035,"had_error":false,"curse":true}
@@ -26,7 +26,7 @@
 {"trainer1":"HIKER2:Jude","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":3282857229,"result":2,"rounds":0,"time_s":0.6772418022155762,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#4","trainer2":"MASKEDVILLAIN2:Teal#19","format":"doubles_uncursed","seed":517367514,"result":2,"rounds":4,"time_s":5.706053972244263,"had_error":false,"curse":true}
 {"trainer1":"HARLEQUIN:Vincenzi","trainer2":"TRAINER_Sang:Sang#3","format":"doubles_uncursed","seed":2451153714,"result":2,"rounds":1,"time_s":1.398146629333496,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"TRAINER_Zain:Zain","format":"doubles_uncursed","seed":1924116161,"result":1,"rounds":6,"time_s":10.606511354446411,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "TRAINER_Zain:Zain", "format": "doubles_uncursed", "seed": 1924116161, "result": 1, "rounds": 5, "time_s": 4.743470907211304, "had_error": false, "curse": true}
 {"trainer1":"SCIENTIST_M4:Jacob","trainer2":"TAPU_LELE:Tapu Lele#1","format":"doubles_uncursed","seed":1539284951,"result":2,"rounds":8,"time_s":12.911314964294434,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#1","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":4172314707,"result":1,"rounds":8,"time_s":10.470399856567383,"had_error":false,"curse":true}
 {"trainer1":"FORMERCHAMP_Ansel:Ansel","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":3922827861,"result":1,"rounds":11,"time_s":12.782504320144653,"had_error":false,"curse":true}
@@ -68,7 +68,7 @@
 {"trainer1":"TAPU_FINI:Tapu Fini#1","trainer2":"BACKPACKER_F:Aiyana","format":"doubles_uncursed","seed":2162565503,"result":1,"rounds":1,"time_s":1.36822509765625,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"POKEMONRANGER_M:Zufaix","format":"doubles_uncursed","seed":644743919,"result":2,"rounds":7,"time_s":8.973152875900269,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Noel:Noel#1","trainer2":"POKEMONMASTER_Vanya:Vanya#5","format":"doubles_uncursed","seed":3920568687,"result":2,"rounds":5,"time_s":7.212106227874756,"had_error":false,"curse":true}
-{"trainer1":"LASS:Rovina","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":1932537735,"result":2,"rounds":4,"time_s":5.476419687271118,"had_error":false,"curse":true}
+{"trainer1": "LASS:Rovina", "trainer2": "LEADER_Samorn:Samorn#1", "format": "doubles_uncursed", "seed": 1932537735, "result": 2, "rounds": 5, "time_s": 5.738479852676392, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":2723601719,"result":2,"rounds":9,"time_s":10.517163038253784,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#18","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":2298452318,"result":1,"rounds":10,"time_s":14.286936283111572,"had_error":false,"curse":true}
 {"trainer1":"GENTLEMAN:Wilfrid","trainer2":"LEADER_Bence:Bence#3","format":"doubles_uncursed","seed":3496488669,"result":2,"rounds":0,"time_s":0.6404995918273926,"had_error":false,"curse":true}
@@ -77,14 +77,14 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#9","trainer2":"JUGGLER:Brickbat","format":"doubles_uncursed","seed":2996147682,"result":2,"rounds":5,"time_s":7.037207126617432,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#3","trainer2":"WORKER3:Bruce","format":"doubles_uncursed","seed":1591114508,"result":2,"rounds":6,"time_s":7.01448392868042,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#13","trainer2":"BEAUTY6:Brenda","format":"doubles_uncursed","seed":531415406,"result":1,"rounds":4,"time_s":4.844501972198486,"had_error":false,"curse":true}
-{"trainer1":"SPIRITGUARDIAN4:Brigitte","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":927621408,"result":1,"rounds":7,"time_s":8.61873459815979,"had_error":false,"curse":true}
+{"trainer1": "SPIRITGUARDIAN4:Brigitte", "trainer2": "MASKEDVILLAIN:Crimson#9", "format": "doubles_uncursed", "seed": 927621408, "result": 1, "rounds": 7, "time_s": 7.269673109054565, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#13","trainer2":"POKEMONMASTER_Vanya:Vanya#9","format":"doubles_uncursed","seed":3071070933,"result":1,"rounds":9,"time_s":11.073860883712769,"had_error":false,"curse":true}
-{"trainer1":"BATTLEGIRL:Tester","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":420864199,"result":2,"rounds":6,"time_s":4.022596836090088,"had_error":false,"curse":true}
+{"trainer1": "BATTLEGIRL:Tester", "trainer2": "MASKEDVILLAIN_Sang:Silver#1", "format": "doubles_uncursed", "seed": 420864199, "result": 2, "rounds": 6, "time_s": 4.085201978683472, "had_error": false, "curse": true}
 {"trainer1":"LASS4:Chloe","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":3180524005,"result":2,"rounds":0,"time_s":0.5843884944915771,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_M2:Marco","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":2791862681,"result":2,"rounds":2,"time_s":1.9702889919281006,"had_error":false,"curse":true}
 {"trainer1":"BEAUTY:Gretchen","trainer2":"MASKEDVILLAIN2:Teal#19","format":"doubles_uncursed","seed":538485090,"result":2,"rounds":1,"time_s":1.075171947479248,"had_error":false,"curse":true}
 {"trainer1":"SWIMMER_F5:Shreya","trainer2":"TRAINER_Zain:Zain#3","format":"doubles_uncursed","seed":1539443691,"result":2,"rounds":5,"time_s":5.511871337890625,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"POKEMONMASTER_Vanya:Vanya#4","format":"doubles_uncursed","seed":1349302357,"result":2,"rounds":8,"time_s":9.272977113723755,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "POKEMONMASTER_Vanya:Vanya#4", "format": "doubles_uncursed", "seed": 1349302357, "result": 2, "rounds": 8, "time_s": 9.95283842086792, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"POKEMONMASTER_Vanya:Vanya#11","format":"doubles_uncursed","seed":3773412115,"result":2,"rounds":5,"time_s":6.336500644683838,"had_error":false,"curse":true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#10","trainer2":"TRAINER_Sang:Sang#5","format":"doubles_uncursed","seed":2667728691,"result":2,"rounds":10,"time_s":10.748366355895996,"had_error":false,"curse":true}
 {"trainer1":"TAPU_BULU:Tapu Bulu#1","trainer2":"IDEALTRAINER:of Brilliance","format":"doubles_uncursed","seed":707294366,"result":1,"rounds":5,"time_s":6.789417028427124,"had_error":false,"curse":true}
@@ -121,11 +121,11 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"FORMERCHAMP_Vincent:Vincent","format":"doubles_uncursed","seed":1146738713,"result":2,"rounds":10,"time_s":18.181922912597656,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#17","trainer2":"WILDPACK:Frigid","format":"doubles_uncursed","seed":426350638,"result":1,"rounds":7,"time_s":11.011702537536621,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Noel:Noel","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":333796754,"result":1,"rounds":3,"time_s":5.006040573120117,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"COOLTRAINER_M7:Nero","format":"doubles_uncursed","seed":1203369186,"result":2,"rounds":13,"time_s":14.601333856582642,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "COOLTRAINER_M7:Nero", "format": "doubles_uncursed", "seed": 1203369186, "result": 2, "rounds": 8, "time_s": 9.743903875350952, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":3788139862,"result":2,"rounds":3,"time_s":3.5988078117370605,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"PUNKM:ValourDyke","format":"doubles_uncursed","seed":2159391204,"result":2,"rounds":8,"time_s":8.580284833908081,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_F:Zofia","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":3947372858,"result":2,"rounds":4,"time_s":5.137814521789551,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"ARTIFICIALTRAINER:Solitaire","format":"doubles_uncursed","seed":1339207690,"result":1,"rounds":30,"time_s":18.856050491333008,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "ARTIFICIALTRAINER:Solitaire", "format": "doubles_uncursed", "seed": 1339207690, "result": 1, "rounds": 41, "time_s": 23.12723660469055, "had_error": false, "curse": true}
 {"trainer1":"CRIMINALTEAM:Gianna and Rocco","trainer2":"MASKEDVILLAIN2:Teal#7","format":"doubles_uncursed","seed":3470204562,"result":2,"rounds":7,"time_s":5.912835597991943,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#13","trainer2":"ARTIFICIALTRAINER:Trinity","format":"doubles_uncursed","seed":4194990732,"result":1,"rounds":13,"time_s":9.214219093322754,"had_error":false,"curse":true}
 {"trainer1":"POKEMONBREEDER_F4:Sara","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":3406448917,"result":1,"rounds":2,"time_s":3.0644774436950684,"had_error":false,"curse":true}
@@ -141,7 +141,7 @@
 {"trainer1":"LEADER_Lambert:Lambert#3","trainer2":"BACKPACKER_M:Freedom","format":"doubles_uncursed","seed":1766380960,"result":1,"rounds":1,"time_s":1.4175865650177002,"had_error":false,"curse":true}
 {"trainer1":"ROUGHNECK2:Jaggedthorn","trainer2":"LEADER_Lambert:Lambert#3","format":"doubles_uncursed","seed":3258531414,"result":2,"rounds":7,"time_s":9.05146336555481,"had_error":false,"curse":true}
 {"trainer1":"FORMERCHAMP_Casey:Casey","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":3942868177,"result":1,"rounds":7,"time_s":11.947372198104858,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#4","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":1171416024,"result":1,"rounds":4,"time_s":7.002544403076172,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#4", "trainer2": "LEADER_Samorn:Samorn#1", "format": "doubles_uncursed", "seed": 1171416024, "result": 1, "rounds": 7, "time_s": 8.237826347351074, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#17","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":548495396,"result":1,"rounds":6,"time_s":9.673540353775024,"had_error":false,"curse":true}
 {"trainer1":"POKEMONBREEDER_F4:Sara","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":1394693859,"result":2,"rounds":3,"time_s":2.623931407928467,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#1","trainer2":"TUBER_F:Sophie","format":"doubles_uncursed","seed":3226228782,"result":1,"rounds":0,"time_s":0.6408815383911133,"had_error":false,"curse":true}
@@ -149,7 +149,7 @@
 {"trainer1":"POKEMONRANGER_F2:Amahle","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":1658540469,"result":2,"rounds":1,"time_s":1.2595155239105225,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#1","trainer2":"HEXMANIAC:Lichenprincess","format":"doubles_uncursed","seed":1763453585,"result":2,"rounds":5,"time_s":6.616538047790527,"had_error":false,"curse":true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#15","trainer2":"LEADER_Noel:Noel#1","format":"doubles_uncursed","seed":1811434558,"result":1,"rounds":5,"time_s":7.815627336502075,"had_error":false,"curse":true}
-{"trainer1":"LASS:Rovina","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":3948220963,"result":2,"rounds":5,"time_s":4.552769660949707,"had_error":false,"curse":true}
+{"trainer1": "LASS:Rovina", "trainer2": "MASKEDVILLAIN2:Teal#3", "format": "doubles_uncursed", "seed": 3948220963, "result": 2, "rounds": 7, "time_s": 5.729959487915039, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":3273808788,"result":2,"rounds":6,"time_s":6.465303421020508,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#16","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":1807527577,"result":1,"rounds":12,"time_s":11.714211702346802,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"GENTLEMAN:Wilfrid","format":"doubles_uncursed","seed":1059267340,"result":1,"rounds":0,"time_s":0.45430827140808105,"had_error":false,"curse":true}
@@ -160,14 +160,14 @@
 {"trainer1":"BEAUTY6:Brenda","trainer2":"ANOTHERPOSSIBLERAFAEL:Rafael","format":"doubles_uncursed","seed":520353073,"result":2,"rounds":3,"time_s":3.7001724243164062,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#9","trainer2":"SEEKER_Nora:Nora#1","format":"doubles_uncursed","seed":787304802,"result":2,"rounds":6,"time_s":8.49874472618103,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#13","trainer2":"POKEMONMASTER_Vanya:Vanya#19","format":"doubles_uncursed","seed":3518513892,"result":1,"rounds":6,"time_s":7.084509372711182,"had_error":false,"curse":true}
-{"trainer1":"BATTLEGIRL:Tester","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":652586640,"result":2,"rounds":9,"time_s":8.581386804580688,"had_error":false,"curse":true}
+{"trainer1": "BATTLEGIRL:Tester", "trainer2": "MASKEDVILLAIN2_DOUBLE:Teal#1", "format": "doubles_uncursed", "seed": 652586640, "result": 2, "rounds": 14, "time_s": 8.966382026672363, "had_error": false, "curse": true}
 {"trainer1":"GAMBLER:Gregor","trainer2":"TRAINER_Zain:Zain#1","format":"doubles_uncursed","seed":204251635,"result":2,"rounds":2,"time_s":2.1171090602874756,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#15","trainer2":"SCIENTIST_M2:Marco","format":"doubles_uncursed","seed":3081366983,"result":1,"rounds":3,"time_s":3.832134962081909,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Victoire:Victoire#1","trainer2":"CAMERAMAN:Marcel","format":"doubles_uncursed","seed":1551908296,"result":1,"rounds":1,"time_s":1.7492055892944336,"had_error":false,"curse":true}
 {"trainer1":"SWIMMER_F5:Shreya","trainer2":"MASKEDVILLAIN2:Teal#17","format":"doubles_uncursed","seed":974518292,"result":2,"rounds":5,"time_s":6.355068922042847,"had_error":false,"curse":true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#14","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":2996444900,"result":1,"rounds":9,"time_s":8.699840545654297,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#21","trainer2":"MASKEDVILLAIN:Crimson#7","format":"doubles_uncursed","seed":1280692016,"result":1,"rounds":6,"time_s":9.115499496459961,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#20","trainer2":"TRAINER_Sang:Sang#5","format":"doubles_uncursed","seed":914601712,"result":2,"rounds":12,"time_s":14.39630675315857,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#21", "trainer2": "MASKEDVILLAIN:Crimson#7", "format": "doubles_uncursed", "seed": 1280692016, "result": 1, "rounds": 4, "time_s": 6.456796646118164, "had_error": false, "curse": true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#20", "trainer2": "TRAINER_Sang:Sang#5", "format": "doubles_uncursed", "seed": 914601712, "result": 2, "rounds": 12, "time_s": 10.488370656967163, "had_error": false, "curse": true}
 {"trainer1":"TAPU_BULU:Tapu Bulu#1","trainer2":"POKEMONRANGER_F2_GANG:Mina","format":"doubles_uncursed","seed":3828029820,"result":1,"rounds":6,"time_s":8.426965475082397,"had_error":false,"curse":true}
 {"trainer1":"VETERANM_3:Pearce","trainer2":"LEADER_Eko:Eko#1","format":"doubles_uncursed","seed":1086471577,"result":1,"rounds":5,"time_s":6.7483603954315186,"had_error":false,"curse":true}
 {"trainer1":"GUITARIST3:Jamie","trainer2":"MASKEDVILLAIN:Crimson#11","format":"doubles_uncursed","seed":2412309586,"result":2,"rounds":3,"time_s":5.579029321670532,"had_error":false,"curse":true}
@@ -202,7 +202,7 @@
 {"trainer1":"TRAINER_Eifion:Eifion#1","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":2724551658,"result":1,"rounds":12,"time_s":15.948475122451782,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#17","trainer2":"BIRDKEEPER_M2:Vlasta","format":"doubles_uncursed","seed":1403652698,"result":1,"rounds":6,"time_s":8.58412504196167,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#1","trainer2":"ROUGHNECK2:Robert","format":"doubles_uncursed","seed":290964028,"result":2,"rounds":6,"time_s":6.9271087646484375,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_M7:Nero","trainer2":"MASKEDVILLAIN2:Teal#5","format":"doubles_uncursed","seed":2117398350,"result":1,"rounds":6,"time_s":9.365957975387573,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_M7:Nero", "trainer2": "MASKEDVILLAIN2:Teal#5", "format": "doubles_uncursed", "seed": 2117398350, "result": 1, "rounds": 6, "time_s": 8.400027751922607, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"MASKEDVILLAIN2:Teal#7","format":"doubles_uncursed","seed":389163857,"result":2,"rounds":5,"time_s":5.882863283157349,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#21","trainer2":"PUNKM:ValourDyke","format":"doubles_uncursed","seed":2920982935,"result":2,"rounds":13,"time_s":15.29500412940979,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_F:Zofia","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":311862098,"result":2,"rounds":3,"time_s":3.6412768363952637,"had_error":false,"curse":true}
@@ -230,7 +230,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"POKEMONRANGER_F2:Amahle","format":"doubles_uncursed","seed":1002346654,"result":1,"rounds":1,"time_s":1.111011266708374,"had_error":false,"curse":true}
 {"trainer1":"HEXMANIAC:Lichenprincess","trainer2":"MASKEDVILLAIN:Crimson#7","format":"doubles_uncursed","seed":1046065044,"result":1,"rounds":7,"time_s":7.086062669754028,"had_error":false,"curse":true}
 {"trainer1":"WILDPARTY_LELE:of Life","trainer2":"LEADER_Noel:Noel#1","format":"doubles_uncursed","seed":3169426319,"result":1,"rounds":5,"time_s":6.473124265670776,"had_error":false,"curse":true}
-{"trainer1":"LASS:Rovina","trainer2":"MASKEDVILLAIN:Crimson#15","format":"doubles_uncursed","seed":2962685885,"result":2,"rounds":2,"time_s":2.398191452026367,"had_error":false,"curse":true}
+{"trainer1": "LASS:Rovina", "trainer2": "MASKEDVILLAIN:Crimson#15", "format": "doubles_uncursed", "seed": 2962685885, "result": 2, "rounds": 2, "time_s": 2.4542815685272217, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#7","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":369424285,"result":2,"rounds":9,"time_s":11.504229307174683,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"SHADOWMAVIS:Mavis","format":"doubles_uncursed","seed":4212977593,"result":1,"rounds":6,"time_s":9.17596983909607,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"NINJABOY:Matthew","format":"doubles_uncursed","seed":4086350727,"result":1,"rounds":2,"time_s":2.1290132999420166,"had_error":false,"curse":true}
@@ -246,12 +246,12 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#23","trainer2":"SCIENTIST_M2:Marco","format":"doubles_uncursed","seed":2650560747,"result":1,"rounds":2,"time_s":3.000675678253174,"had_error":false,"curse":true}
 {"trainer1":"CAMERAMAN:Marcel","trainer2":"MASKEDVILLAIN:Crimson#11","format":"doubles_uncursed","seed":1233805814,"result":2,"rounds":1,"time_s":1.143364429473877,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Victoire:Victoire#1","trainer2":"HIKER2:Rhys","format":"doubles_uncursed","seed":1579468888,"result":1,"rounds":6,"time_s":6.940355062484741,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":1543035985,"result":2,"rounds":4,"time_s":6.3471198081970215,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "TAPU_KOKO:Tapu Koko#1", "format": "doubles_uncursed", "seed": 1543035985, "result": 2, "rounds": 6, "time_s": 6.855635166168213, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"WILDPARTY_FINI:of Hope","format":"doubles_uncursed","seed":2355915738,"result":2,"rounds":4,"time_s":6.861036777496338,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"TAPU_BULU:Tapu Bulu#1","format":"doubles_uncursed","seed":3564224962,"result":2,"rounds":7,"time_s":8.235008716583252,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "TAPU_BULU:Tapu Bulu#1", "format": "doubles_uncursed", "seed": 3564224962, "result": 2, "rounds": 8, "time_s": 7.662999868392944, "had_error": false, "curse": true}
 {"trainer1":"ANOTHERPOSSIBLERAFAEL:Rafael","trainer2":"TAPU_FINI:Tapu Fini","format":"doubles_uncursed","seed":3827546968,"result":1,"rounds":7,"time_s":7.932070016860962,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Eko:Eko#1","trainer2":"CHEF:Gordon","format":"doubles_uncursed","seed":521266992,"result":2,"rounds":7,"time_s":6.446507692337036,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"GUITARIST3:Jamie","format":"doubles_uncursed","seed":2796327748,"result":1,"rounds":3,"time_s":2.678988218307495,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "GUITARIST3:Jamie", "format": "doubles_uncursed", "seed": 2796327748, "result": 1, "rounds": 3, "time_s": 2.794665575027466, "had_error": false, "curse": true}
 {"trainer1":"CEO:Beatrice","trainer2":"MASKEDVILLAIN2:Teal#21","format":"doubles_uncursed","seed":3469784373,"result":2,"rounds":5,"time_s":4.262527227401733,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"DANDY:Jules","format":"doubles_uncursed","seed":3446478358,"result":1,"rounds":3,"time_s":3.2189407348632812,"had_error":false,"curse":true}
 {"trainer1":"TAPU_FINI:Tapu Fini","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":1041911800,"result":1,"rounds":9,"time_s":11.469277381896973,"had_error":false,"curse":true}
@@ -281,7 +281,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#21","trainer2":"CLOWN:Dimesmart","format":"doubles_uncursed","seed":4051758934,"result":1,"rounds":4,"time_s":4.096193790435791,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#3","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":4075459749,"result":2,"rounds":3,"time_s":6.215993881225586,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"ANOTHERPOSSIBLETAMARIND:Tamarind","format":"doubles_uncursed","seed":1995347622,"result":1,"rounds":8,"time_s":13.138400077819824,"had_error":false,"curse":true}
-{"trainer1":"SPIRITGUARDIAN3:Preeti","trainer2":"MASKEDVILLAIN2:Teal#17","format":"doubles_uncursed","seed":2292114652,"result":1,"rounds":11,"time_s":15.738349914550781,"had_error":false,"curse":true}
+{"trainer1": "SPIRITGUARDIAN3:Preeti", "trainer2": "MASKEDVILLAIN2:Teal#17", "format": "doubles_uncursed", "seed": 2292114652, "result": 2, "rounds": 13, "time_s": 16.03519582748413, "had_error": false, "curse": true}
 {"trainer1":"SWIMMER_M2:Finn","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":2081366339,"result":1,"rounds":4,"time_s":6.153228282928467,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"COOLTRAINER_M7:Nero","format":"doubles_uncursed","seed":3783635604,"result":1,"rounds":8,"time_s":11.485598087310791,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#2","trainer2":"LEADER_Rafael:Rafael#1","format":"doubles_uncursed","seed":2725495218,"result":1,"rounds":4,"time_s":4.3171727657318115,"had_error":false,"curse":true}
@@ -294,7 +294,7 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#21","trainer2":"YOUNGSTER3:Sorin","format":"doubles_uncursed","seed":923936474,"result":1,"rounds":2,"time_s":1.7846028804779053,"had_error":false,"curse":true}
 {"trainer1":"SAILOR:Konrad","trainer2":"MASKEDVILLAIN:Crimson#7","format":"doubles_uncursed","seed":2012893753,"result":2,"rounds":3,"time_s":2.842489719390869,"had_error":false,"curse":true}
 {"trainer1":"HEXMANIAC_1:Riptide#1","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":1342061959,"result":2,"rounds":6,"time_s":6.567533016204834,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"TRAINER_Alessa:Alessa#1","format":"doubles_uncursed","seed":866105555,"result":1,"rounds":2,"time_s":2.0046112537384033,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "TRAINER_Alessa:Alessa#1", "format": "doubles_uncursed", "seed": 866105555, "result": 1, "rounds": 2, "time_s": 2.3328824043273926, "had_error": false, "curse": true}
 {"trainer1":"BLACKBELT:Kai","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":2065614723,"result":2,"rounds":6,"time_s":7.459864139556885,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"POKEMONMASTER_Vanya:Vanya#12","format":"doubles_uncursed","seed":2380025243,"result":2,"rounds":11,"time_s":9.722270488739014,"had_error":false,"curse":true}
 {"trainer1":"CHALLENGER_Vanya:Vanya#6","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":2560102915,"result":2,"rounds":5,"time_s":5.152714490890503,"had_error":false,"curse":true}
@@ -311,7 +311,7 @@
 {"trainer1":"POKEMONRANGER_F2:Amahle","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":1993018413,"result":2,"rounds":2,"time_s":2.649261474609375,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Bence:Bence#3","trainer2":"HEXMANIAC:Lichenprincess","format":"doubles_uncursed","seed":76608959,"result":1,"rounds":6,"time_s":9.580962657928467,"had_error":false,"curse":true}
 {"trainer1":"WILDPACK:Lunar","trainer2":"LEADER_Noel:Noel#1","format":"doubles_uncursed","seed":235906444,"result":1,"rounds":4,"time_s":6.386650562286377,"had_error":false,"curse":true}
-{"trainer1":"LASS:Rovina","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":2307414545,"result":2,"rounds":3,"time_s":4.54036021232605,"had_error":false,"curse":true}
+{"trainer1": "LASS:Rovina", "trainer2": "MASKEDVILLAIN2:Teal#23", "format": "doubles_uncursed", "seed": 2307414545, "result": 2, "rounds": 4, "time_s": 4.57712721824646, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Lambert:Lambert#2","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":2113642302,"result":2,"rounds":6,"time_s":9.714643955230713,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"GARDENER:Larry","format":"doubles_uncursed","seed":3608817767,"result":1,"rounds":5,"time_s":8.848485231399536,"had_error":false,"curse":true}
 {"trainer1":"NINJABOY:Matthew","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":1321281884,"result":2,"rounds":0,"time_s":0.6173138618469238,"had_error":false,"curse":true}
@@ -324,7 +324,7 @@
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#13","trainer2":"WILDPACK:Cosmic","format":"doubles_uncursed","seed":1098819206,"result":1,"rounds":7,"time_s":7.791399717330933,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#21","trainer2":"BATTLEGIRL:Tester","format":"doubles_uncursed","seed":3277392072,"result":1,"rounds":9,"time_s":4.574883460998535,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Bence:Bence#3","trainer2":"GAMBLER:Gregor","format":"doubles_uncursed","seed":108487197,"result":1,"rounds":1,"time_s":1.1660935878753662,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"SCIENTIST_F:Natasha","format":"doubles_uncursed","seed":3303685837,"result":1,"rounds":1,"time_s":1.31325364112854,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "SCIENTIST_F:Natasha", "format": "doubles_uncursed", "seed": 3303685837, "result": 1, "rounds": 1, "time_s": 1.2617652416229248, "had_error": false, "curse": true}
 {"trainer1":"CAMERAMAN:Marcel","trainer2":"TRAINER_Sang:Sang#5","format":"doubles_uncursed","seed":1988900576,"result":2,"rounds":1,"time_s":0.7720696926116943,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#11","trainer2":"HIKER2:Rhys","format":"doubles_uncursed","seed":917977862,"result":2,"rounds":8,"time_s":7.880615711212158,"had_error":false,"curse":true}
 {"trainer1":"WILDPACK:Solar","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":1681429136,"result":2,"rounds":5,"time_s":5.13242244720459,"had_error":false,"curse":true}
@@ -338,7 +338,7 @@
 {"trainer1":"POKEMONBREEDER_M4:Isaac","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":2276030022,"result":2,"rounds":1,"time_s":1.536344051361084,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#5","trainer2":"POKEMONTRAINER_Vanya:Vanya#2","format":"doubles_uncursed","seed":3154412232,"result":2,"rounds":4,"time_s":4.9430832862854,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#3","trainer2":"TRAINER_Alessa:Alessa#6","format":"doubles_uncursed","seed":3212657940,"result":1,"rounds":5,"time_s":9.22500467300415,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#11","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":2259534785,"result":1,"rounds":8,"time_s":10.384833574295044,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#11", "trainer2": "TAPU_FINI:Tapu Fini#1", "format": "doubles_uncursed", "seed": 2259534785, "result": 1, "rounds": 8, "time_s": 12.24683427810669, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Eko:Eko#1","trainer2":"TRAINER_Keoni:Keoni#1","format":"doubles_uncursed","seed":2230406141,"result":2,"rounds":4,"time_s":4.2069056034088135,"had_error":false,"curse":true}
 {"trainer1":"SCHOOLKID_GHOST:Honesty","trainer2":"POKEMONTRAINER_Yezera:Yezera#5","format":"doubles_uncursed","seed":109301226,"result":1,"rounds":4,"time_s":4.9975197315216064,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#15","trainer2":"WAITRESS:Carmilla","format":"doubles_uncursed","seed":3973343860,"result":1,"rounds":2,"time_s":1.6748614311218262,"had_error":false,"curse":true}
@@ -359,14 +359,14 @@
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#3","trainer2":"MASKEDVILLAIN:Crimson#7","format":"doubles_uncursed","seed":3117207819,"result":2,"rounds":5,"time_s":4.558155298233032,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"POKEMANIAC:Nikos","format":"doubles_uncursed","seed":2818953241,"result":1,"rounds":3,"time_s":3.134247303009033,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"TOURISTM:Azeler","format":"doubles_uncursed","seed":2716098923,"result":2,"rounds":14,"time_s":12.606906652450562,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"WORKER2:Hugo","format":"doubles_uncursed","seed":1212034456,"result":1,"rounds":2,"time_s":2.7003488540649414,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "WORKER2:Hugo", "format": "doubles_uncursed", "seed": 1212034456, "result": 1, "rounds": 2, "time_s": 2.9522533416748047, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":2193241220,"result":1,"rounds":9,"time_s":10.196943283081055,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"MASKEDVILLAIN:Crimson#18","format":"doubles_uncursed","seed":2682820337,"result":1,"rounds":8,"time_s":10.618462800979614,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#17","trainer2":"SEEKER_Nora:Nora","format":"doubles_uncursed","seed":2604423078,"result":1,"rounds":8,"time_s":7.597863435745239,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#1","trainer2":"VETERANM:Yoshihiro","format":"doubles_uncursed","seed":4184943740,"result":2,"rounds":5,"time_s":6.775444269180298,"had_error":false,"curse":true}
 {"trainer1":"TAPU_KOKO:Tapu Koko#1","trainer2":"COOLTRAINER_M7:Nero","format":"doubles_uncursed","seed":4044703095,"result":1,"rounds":5,"time_s":8.927466630935669,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#2","trainer2":"LEADER_Rafael:Rafael#1","format":"doubles_uncursed","seed":2171378206,"result":1,"rounds":4,"time_s":6.109655380249023,"had_error":false,"curse":true}
-{"trainer1":"HEXMANIAC:Errata","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":583086415,"result":1,"rounds":5,"time_s":6.054823398590088,"had_error":false,"curse":true}
+{"trainer1": "HEXMANIAC:Errata", "trainer2": "MASKEDVILLAIN_DOUBLE:Crimson#1", "format": "doubles_uncursed", "seed": 583086415, "result": 1, "rounds": 5, "time_s": 5.944944620132446, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"BOARDER:Lev","format":"doubles_uncursed","seed":2906531964,"result":1,"rounds":5,"time_s":5.235344171524048,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"VETERAN_F:Emily","format":"doubles_uncursed","seed":1654704483,"result":1,"rounds":3,"time_s":3.979682445526123,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#7","trainer2":"IDEALTRAINER:of Days","format":"doubles_uncursed","seed":579845971,"result":2,"rounds":8,"time_s":8.411458253860474,"had_error":false,"curse":true}
@@ -380,7 +380,7 @@
 {"trainer1":"WILDPARTY_KOKO:of Conflict","trainer2":"MASKEDVILLAIN2:Teal#5","format":"doubles_uncursed","seed":3596648125,"result":2,"rounds":8,"time_s":7.577996015548706,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#23","trainer2":"POKEMONMASTER_Vanya:Vanya","format":"doubles_uncursed","seed":3593054630,"result":1,"rounds":8,"time_s":8.81494951248169,"had_error":false,"curse":true}
 {"trainer1":"SKIER_F:Natalia","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":131783206,"result":1,"rounds":3,"time_s":3.152275323867798,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#11","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":235279514,"result":1,"rounds":3,"time_s":4.269036054611206,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#11", "trainer2": "LEADER_Helena:Helena#1", "format": "doubles_uncursed", "seed": 235279514, "result": 1, "rounds": 3, "time_s": 3.7492942810058594, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#3","trainer2":"BUGCATCHER_F:Lovina","format":"doubles_uncursed","seed":843220794,"result":1,"rounds":1,"time_s":0.971843957901001,"had_error":false,"curse":true}
 {"trainer1":"RICHBOY4:Darlvon","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":3887123664,"result":2,"rounds":8,"time_s":8.344070434570312,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Bence:Bence#3","trainer2":"TRAINER_Imogene_A:Imogene","format":"doubles_uncursed","seed":3920285107,"result":1,"rounds":1,"time_s":1.188690185546875,"had_error":false,"curse":true}
@@ -407,7 +407,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"GAMBLER:Gregor","format":"doubles_uncursed","seed":3966137004,"result":1,"rounds":1,"time_s":0.905057430267334,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"SCIENTIST_F:Natasha","format":"doubles_uncursed","seed":2694210106,"result":1,"rounds":2,"time_s":1.9765815734863281,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"CAMERAMAN:Marcel","format":"doubles_uncursed","seed":932864663,"result":1,"rounds":1,"time_s":1.8417587280273438,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"HIKER2:Rhys","format":"doubles_uncursed","seed":58135152,"result":1,"rounds":5,"time_s":4.102881193161011,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "HIKER2:Rhys", "format": "doubles_uncursed", "seed": 58135152, "result": 1, "rounds": 8, "time_s": 6.203027725219727, "had_error": false, "curse": true}
 {"trainer1":"DRAGONTAMER2:Abraham","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":633330500,"result":1,"rounds":8,"time_s":7.979827880859375,"had_error":false,"curse":true}
 {"trainer1":"RICHCOUPLE:Diana and Edward","trainer2":"MASKEDVILLAIN:Crimson#7","format":"doubles_uncursed","seed":1612972663,"result":2,"rounds":6,"time_s":6.3029468059539795,"had_error":false,"curse":true}
 {"trainer1":"COOLTRAINERSQUAD_2:Shouta and Kaede","trainer2":"TRAINER_Sang:Sang#5","format":"doubles_uncursed","seed":812223321,"result":2,"rounds":7,"time_s":6.859410524368286,"had_error":false,"curse":true}
@@ -417,7 +417,7 @@
 {"trainer1":"BIRDKEEPER_M:Kendall","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":631267341,"result":2,"rounds":1,"time_s":2.259507894515991,"had_error":false,"curse":true}
 {"trainer1":"DANDY:Jules","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":90943535,"result":2,"rounds":1,"time_s":1.6529426574707031,"had_error":false,"curse":true}
 {"trainer1":"MAID:Wendy","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":3011638471,"result":1,"rounds":3,"time_s":4.579319000244141,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#6","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":1019117671,"result":1,"rounds":8,"time_s":10.01111912727356,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#6", "trainer2": "MASKEDVILLAIN:Crimson#5", "format": "doubles_uncursed", "seed": 1019117671, "result": 1, "rounds": 6, "time_s": 7.587184906005859, "had_error": false, "curse": true}
 {"trainer1":"TRAINER_Zain:Zain#3","trainer2":"IDOL:Teagan","format":"doubles_uncursed","seed":1179917823,"result":1,"rounds":4,"time_s":2.9771993160247803,"had_error":false,"curse":true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#13","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":1488136707,"result":1,"rounds":7,"time_s":8.352367162704468,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_F:Zofia","trainer2":"LEADER_Eko:Eko#1","format":"doubles_uncursed","seed":2156283373,"result":1,"rounds":6,"time_s":6.721685171127319,"had_error":false,"curse":true}
@@ -447,19 +447,19 @@
 {"trainer1":"RUINMANIAC:Matteo","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":3553344825,"result":1,"rounds":3,"time_s":3.883988857269287,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#2","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":908904099,"result":2,"rounds":2,"time_s":1.9413514137268066,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#12","format":"doubles_uncursed","seed":2594163366,"result":2,"rounds":4,"time_s":5.482038497924805,"had_error":false,"curse":true}
-{"trainer1":"HEXMANIAC:Errata","trainer2":"MASKEDVILLAIN2:Teal#9","format":"doubles_uncursed","seed":3890358820,"result":1,"rounds":6,"time_s":6.8443403244018555,"had_error":false,"curse":true}
+{"trainer1": "HEXMANIAC:Errata", "trainer2": "MASKEDVILLAIN2:Teal#9", "format": "doubles_uncursed", "seed": 3890358820, "result": 1, "rounds": 6, "time_s": 7.69243597984314, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Bence:Bence#3","trainer2":"BOARDER:Lev","format":"doubles_uncursed","seed":3887889175,"result":1,"rounds":2,"time_s":2.670225143432617,"had_error":false,"curse":true}
 {"trainer1":"TAPU_LELE:Tapu Lele#1","trainer2":"VETERAN_F:Emily","format":"doubles_uncursed","seed":3125044686,"result":1,"rounds":6,"time_s":7.32307767868042,"had_error":false,"curse":true}
-{"trainer1":"WAITER:Aaron","trainer2":"MASKEDVILLAIN2:Teal#7","format":"doubles_uncursed","seed":1184221352,"result":2,"rounds":6,"time_s":6.939228534698486,"had_error":false,"curse":true}
+{"trainer1": "WAITER:Aaron", "trainer2": "MASKEDVILLAIN2:Teal#7", "format": "doubles_uncursed", "seed": 1184221352, "result": 1, "rounds": 11, "time_s": 10.027312755584717, "had_error": false, "curse": true}
 {"trainer1":"HEXMANIAC_GHOST:Juno","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":492925134,"result":2,"rounds":2,"time_s":2.1363534927368164,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"IDEALTRAINER:of Brilliance","format":"doubles_uncursed","seed":31527845,"result":2,"rounds":2,"time_s":3.6470232009887695,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Samorn:Samorn#1","trainer2":"BLACKBELT3:Philip","format":"doubles_uncursed","seed":898080904,"result":1,"rounds":1,"time_s":2.3015496730804443,"had_error":false,"curse":true}
 {"trainer1":"SAILOR:Konrad","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":152981667,"result":2,"rounds":1,"time_s":1.6993532180786133,"had_error":false,"curse":true}
 {"trainer1":"HEXMANIAC_1:Riptide#1","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":4224613035,"result":2,"rounds":9,"time_s":8.258431673049927,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Alessa:Alessa#1","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":82265253,"result":2,"rounds":3,"time_s":2.9021639823913574,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#2","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":2053241394,"result":2,"rounds":7,"time_s":9.599570751190186,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#2", "trainer2": "MASKEDVILLAIN2_DOUBLE:Teal#1", "format": "doubles_uncursed", "seed": 2053241394, "result": 1, "rounds": 9, "time_s": 10.555603504180908, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"TAPU_FINI:Tapu Fini","format":"doubles_uncursed","seed":1871864346,"result":1,"rounds":6,"time_s":7.67183256149292,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#11","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":191839621,"result":2,"rounds":5,"time_s":8.112825870513916,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#11", "trainer2": "MASKEDVILLAIN:Crimson#23", "format": "doubles_uncursed", "seed": 191839621, "result": 2, "rounds": 6, "time_s": 8.49184536933899, "had_error": false, "curse": true}
 {"trainer1":"FORMERCHAMP_Casey:Casey","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":704668590,"result":1,"rounds":2,"time_s":3.9206409454345703,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"POKEMONMASTER_Vanya:Vanya#21","format":"doubles_uncursed","seed":159254393,"result":2,"rounds":3,"time_s":4.799603462219238,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"BUGCATCHER_F:Lovina","format":"doubles_uncursed","seed":511915584,"result":1,"rounds":2,"time_s":2.213912010192871,"had_error":false,"curse":true}
@@ -528,7 +528,7 @@
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#1","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":4270350496,"result":2,"rounds":5,"time_s":5.5827085971832275,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#11","trainer2":"POKEMONTRAINER_Yezera:Yezera#2","format":"doubles_uncursed","seed":3873052669,"result":1,"rounds":2,"time_s":2.004974842071533,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"MASKEDVILLAIN:Crimson#22","format":"doubles_uncursed","seed":1935843183,"result":2,"rounds":3,"time_s":3.8292853832244873,"had_error":false,"curse":true}
-{"trainer1":"HEXMANIAC:Errata","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":1338305815,"result":1,"rounds":6,"time_s":6.720301628112793,"had_error":false,"curse":true}
+{"trainer1": "HEXMANIAC:Errata", "trainer2": "MASKEDVILLAIN:Crimson#21", "format": "doubles_uncursed", "seed": 1338305815, "result": 1, "rounds": 4, "time_s": 5.697719097137451, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"BOARDER:Lev","format":"doubles_uncursed","seed":1326715846,"result":1,"rounds":2,"time_s":1.9693632125854492,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#11","trainer2":"BACKERS_F:Maria and Iveta","format":"doubles_uncursed","seed":1709440797,"result":1,"rounds":4,"time_s":6.2360618114471436,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#8","trainer2":"MASKEDVILLAIN:Crimson#15","format":"doubles_uncursed","seed":1523748036,"result":1,"rounds":5,"time_s":6.785922527313232,"had_error":false,"curse":true}
@@ -549,7 +549,7 @@
 {"trainer1":"CAMERAMAN2:Octavio","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":320171175,"result":2,"rounds":2,"time_s":2.2343037128448486,"had_error":false,"curse":true}
 {"trainer1":"ANCIENTPRIEST:Radzayac","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":3238979463,"result":2,"rounds":7,"time_s":5.650300979614258,"had_error":false,"curse":true}
 {"trainer1":"POKEMONRANGER_F2_GANG:Mina","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":3089865905,"result":2,"rounds":5,"time_s":5.564229488372803,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"BATTLEGIRL:Eliza","format":"doubles_uncursed","seed":3133512829,"result":1,"rounds":1,"time_s":1.6681923866271973,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "BATTLEGIRL:Eliza", "format": "doubles_uncursed", "seed": 3133512829, "result": 1, "rounds": 1, "time_s": 1.3393023014068604, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"VETERANM_2:Kirbae","format":"doubles_uncursed","seed":2609364654,"result":2,"rounds":2,"time_s":3.780421495437622,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#7","trainer2":"CAMPER:Christian","format":"doubles_uncursed","seed":2287606014,"result":1,"rounds":1,"time_s":1.4517765045166016,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"MAID2:Maddie","format":"doubles_uncursed","seed":910236221,"result":1,"rounds":7,"time_s":10.138999462127686,"had_error":false,"curse":true}
@@ -569,7 +569,7 @@
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#9","trainer2":"MAID:Alice","format":"doubles_uncursed","seed":1380379037,"result":1,"rounds":1,"time_s":1.0495471954345703,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#21","trainer2":"SCIENTIST_F:Natasha","format":"doubles_uncursed","seed":765806274,"result":1,"rounds":4,"time_s":3.2757928371429443,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#11","trainer2":"JANITOR:Eric","format":"doubles_uncursed","seed":396705025,"result":1,"rounds":3,"time_s":2.919480800628662,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"CLERK_M:Scott","format":"doubles_uncursed","seed":36272162,"result":1,"rounds":5,"time_s":4.33331823348999,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "CLERK_M:Scott", "format": "doubles_uncursed", "seed": 36272162, "result": 1, "rounds": 5, "time_s": 4.49003791809082, "had_error": false, "curse": true}
 {"trainer1":"EXPERTM:Hiroshi","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":2906026737,"result":1,"rounds":6,"time_s":6.190127372741699,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"PARASOLLADY2:Antoinette","format":"doubles_uncursed","seed":458624045,"result":2,"rounds":6,"time_s":7.89951491355896,"had_error":false,"curse":true}
 {"trainer1":"DANDY:Roger","trainer2":"TRAINER_Sang:Sang#5","format":"doubles_uncursed","seed":3614504116,"result":2,"rounds":5,"time_s":5.02970814704895,"had_error":false,"curse":true}
@@ -597,21 +597,21 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"RUINMANIAC:Matteo","format":"doubles_uncursed","seed":3538295227,"result":1,"rounds":3,"time_s":3.5855607986450195,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Imogene_A:Imogene#1","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":2456915430,"result":1,"rounds":10,"time_s":14.207653760910034,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#3","trainer2":"MASKEDVILLAIN:Crimson#20","format":"doubles_uncursed","seed":163914383,"result":1,"rounds":7,"time_s":8.212917804718018,"had_error":false,"curse":true}
-{"trainer1":"SPIRITGUARDIAN3:Preeti","trainer2":"MASKEDVILLAIN2:Teal#21","format":"doubles_uncursed","seed":2998726681,"result":2,"rounds":6,"time_s":9.321311950683594,"had_error":false,"curse":true}
+{"trainer1": "SPIRITGUARDIAN3:Preeti", "trainer2": "MASKEDVILLAIN2:Teal#21", "format": "doubles_uncursed", "seed": 2998726681, "result": 1, "rounds": 15, "time_s": 14.038634777069092, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#17","trainer2":"GUITARIST:Reece","format":"doubles_uncursed","seed":1858154416,"result":1,"rounds":1,"time_s":1.1992690563201904,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#3","trainer2":"LEADER_Bence:Bence#2","format":"doubles_uncursed","seed":3871057185,"result":2,"rounds":2,"time_s":2.328253984451294,"had_error":false,"curse":true}
 {"trainer1":"ROUGHNECK:Randall","trainer2":"MASKEDVILLAIN2:Teal#7","format":"doubles_uncursed","seed":3671068123,"result":2,"rounds":4,"time_s":3.6614227294921875,"had_error":false,"curse":true}
-{"trainer1":"FAIRYTALEGIRL:Emmi","trainer2":"MASKEDVILLAIN2:Teal#7","format":"doubles_uncursed","seed":2308583106,"result":1,"rounds":5,"time_s":5.939715623855591,"had_error":false,"curse":true}
+{"trainer1": "FAIRYTALEGIRL:Emmi", "trainer2": "MASKEDVILLAIN2:Teal#7", "format": "doubles_uncursed", "seed": 2308583106, "result": 1, "rounds": 8, "time_s": 10.225248336791992, "had_error": false, "curse": true}
 {"trainer1":"WORKER2:Hugo","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":2592185549,"result":2,"rounds":1,"time_s":1.6408700942993164,"had_error":false,"curse":true}
 {"trainer1":"ANOTHERPOSSIBLEZAIN:Zain","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":3922572008,"result":2,"rounds":8,"time_s":7.28092360496521,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"GARDENER:Larry","format":"doubles_uncursed","seed":468500712,"result":1,"rounds":3,"time_s":3.1140546798706055,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#18","trainer2":"MASKEDVILLAIN2:Teal#19","format":"doubles_uncursed","seed":1925931504,"result":1,"rounds":10,"time_s":8.379277467727661,"had_error":false,"curse":true}
 {"trainer1":"CLERK_F:Rosalie","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":2040019795,"result":1,"rounds":3,"time_s":4.23182487487793,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"POKEMONTRAINER_Yezera:Yezera#2","format":"doubles_uncursed","seed":716835595,"result":1,"rounds":1,"time_s":1.2570407390594482,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "POKEMONTRAINER_Yezera:Yezera#2", "format": "doubles_uncursed", "seed": 716835595, "result": 1, "rounds": 1, "time_s": 1.1808462142944336, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#20","trainer2":"LEADER_Rafael:Rafael#1","format":"doubles_uncursed","seed":1963650276,"result":1,"rounds":7,"time_s":6.800710678100586,"had_error":false,"curse":true}
-{"trainer1":"HEXMANIAC:Errata","trainer2":"TAPU_BULU:Tapu Bulu#1","format":"doubles_uncursed","seed":3806333457,"result":1,"rounds":5,"time_s":7.824150562286377,"had_error":false,"curse":true}
+{"trainer1": "HEXMANIAC:Errata", "trainer2": "TAPU_BULU:Tapu Bulu#1", "format": "doubles_uncursed", "seed": 3806333457, "result": 1, "rounds": 4, "time_s": 5.273004770278931, "had_error": false, "curse": true}
 {"trainer1":"SKIER_F2:Valeriya","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":2175732887,"result":2,"rounds":2,"time_s":2.0799014568328857,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"BACKERS_F:Maria and Iveta","format":"doubles_uncursed","seed":4078197931,"result":1,"rounds":4,"time_s":4.257840156555176,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "BACKERS_F:Maria and Iveta", "format": "doubles_uncursed", "seed": 4078197931, "result": 1, "rounds": 5, "time_s": 5.099698066711426, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#23","trainer2":"MASKEDVILLAIN2:Teal#8","format":"doubles_uncursed","seed":2316677832,"result":1,"rounds":6,"time_s":8.343698740005493,"had_error":false,"curse":true}
 {"trainer1":"COLLECTOR:Emre","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":3989379976,"result":2,"rounds":1,"time_s":1.0766232013702393,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera","trainer2":"POKEMONTRAINER_Yezera:Yezera#3","format":"doubles_uncursed","seed":1799797633,"result":2,"rounds":5,"time_s":4.199105501174927,"had_error":false,"curse":true}
@@ -649,9 +649,9 @@
 {"trainer1":"ROLLERSKATER_M:Lane Tester","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":1875566964,"result":2,"rounds":1,"time_s":0.9440598487854004,"had_error":false,"curse":true}
 {"trainer1":"MAID:Alice","trainer2":"MASKEDVILLAIN2:Teal#7","format":"doubles_uncursed","seed":403246820,"result":2,"rounds":1,"time_s":1.213111162185669,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_M:Julien","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":578583596,"result":2,"rounds":3,"time_s":3.271808385848999,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"JANITOR:Eric","format":"doubles_uncursed","seed":221925751,"result":1,"rounds":3,"time_s":4.3861377239227295,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "JANITOR:Eric", "format": "doubles_uncursed", "seed": 221925751, "result": 1, "rounds": 3, "time_s": 2.7142863273620605, "had_error": false, "curse": true}
 {"trainer1":"CLERK_M:Scott","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":2415937493,"result":2,"rounds":10,"time_s":9.743990182876587,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"BUGCATCHER_F:April","format":"doubles_uncursed","seed":2582906329,"result":2,"rounds":6,"time_s":7.494593620300293,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "BUGCATCHER_F:April", "format": "doubles_uncursed", "seed": 2582906329, "result": 1, "rounds": 4, "time_s": 4.163633108139038, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"IDEALTRAINER:of Brilliance","format":"doubles_uncursed","seed":291029868,"result":2,"rounds":6,"time_s":7.591535806655884,"had_error":false,"curse":true}
 {"trainer1":"IDEALTRAINER:of Tradition","trainer2":"TRAINER_Sang:Sang#5","format":"doubles_uncursed","seed":3829425634,"result":2,"rounds":9,"time_s":10.296245336532593,"had_error":false,"curse":true}
 {"trainer1":"TAPU_FINI:Tapu Fini#1","trainer2":"IDEALTRAINER:of Colors","format":"doubles_uncursed","seed":2379532841,"result":1,"rounds":11,"time_s":12.186296701431274,"had_error":false,"curse":true}
@@ -673,7 +673,7 @@
 {"trainer1":"LOST_RANGER_BLUE:Farid","trainer2":"ANOTHERPOSSIBLERAFAEL:Rafael","format":"doubles_uncursed","seed":1657360520,"result":2,"rounds":5,"time_s":5.262129306793213,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_F:Marie","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":1000149724,"result":2,"rounds":1,"time_s":1.2228710651397705,"had_error":false,"curse":true}
 {"trainer1":"VETERANM_2:Hadley","trainer2":"POKEMONTRAINER_Yezera:Yezera#5","format":"doubles_uncursed","seed":2360721712,"result":2,"rounds":6,"time_s":5.7348034381866455,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"SAGE:Rennyo#1","format":"doubles_uncursed","seed":324621610,"result":1,"rounds":6,"time_s":3.2624428272247314,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "SAGE:Rennyo#1", "format": "doubles_uncursed", "seed": 324621610, "result": 1, "rounds": 5, "time_s": 5.361186504364014, "had_error": false, "curse": true}
 {"trainer1":"SCIENTIST_F:Zofia","trainer2":"TRAINER_Zain:Zain#1","format":"doubles_uncursed","seed":2995685953,"result":2,"rounds":5,"time_s":6.747225046157837,"had_error":false,"curse":true}
 {"trainer1":"ELDER:Huy","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":3064807577,"result":2,"rounds":4,"time_s":5.474246263504028,"had_error":false,"curse":true}
 {"trainer1":"SCHOOLKID_GHOST:Honesty","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":2444521274,"result":2,"rounds":4,"time_s":4.851545333862305,"had_error":false,"curse":true}
@@ -700,14 +700,14 @@
 {"trainer1":"LEADER_Rafael:Rafael","trainer2":"LEADER_Lambert:Lambert#3","format":"doubles_uncursed","seed":3573664513,"result":2,"rounds":2,"time_s":2.458148717880249,"had_error":false,"curse":true}
 {"trainer1":"ROLLERSKATER_F:Attea","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":622563892,"result":2,"rounds":9,"time_s":13.298312664031982,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Alessa:Alessa#2","trainer2":"MASKEDVILLAIN2:Teal#9","format":"doubles_uncursed","seed":312069392,"result":2,"rounds":3,"time_s":3.8855533599853516,"had_error":false,"curse":true}
-{"trainer1":"YOUNGSTER:Buzim","trainer2":"TRAINER_Sang:Sang#3","format":"doubles_uncursed","seed":2266077946,"result":2,"rounds":5,"time_s":6.683269500732422,"had_error":false,"curse":true}
+{"trainer1": "YOUNGSTER:Buzim", "trainer2": "TRAINER_Sang:Sang#3", "format": "doubles_uncursed", "seed": 2266077946, "result": 2, "rounds": 5, "time_s": 6.403679609298706, "had_error": false, "curse": true}
 {"trainer1":"MEDIUM:Izumi","trainer2":"MASKEDVILLAIN2:Teal#5","format":"doubles_uncursed","seed":2684302202,"result":2,"rounds":3,"time_s":3.8210971355438232,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#23","trainer2":"POKEMONBREEDER_F4:Sara","format":"doubles_uncursed","seed":3850333514,"result":1,"rounds":4,"time_s":2.710437059402466,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_F3:Nkechi","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":3041093223,"result":1,"rounds":3,"time_s":3.508333444595337,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"RICHCOUPLE:Diana and Edward","format":"doubles_uncursed","seed":4066307006,"result":2,"rounds":3,"time_s":4.579025506973267,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#1","trainer2":"CLOWN:Klemens","format":"doubles_uncursed","seed":3759967308,"result":1,"rounds":1,"time_s":1.8732116222381592,"had_error":false,"curse":true}
 {"trainer1":"HARLEQUIN:Minty","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":1215991962,"result":1,"rounds":5,"time_s":6.755979776382446,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"TRAINER_Imogene_B:Imogene","format":"doubles_uncursed","seed":1041649306,"result":1,"rounds":0,"time_s":0.46558618545532227,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "TRAINER_Imogene_B:Imogene", "format": "doubles_uncursed", "seed": 1041649306, "result": 1, "rounds": 0, "time_s": 0.4912235736846924, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Samorn:Samorn#1","trainer2":"DITTO_CAMPER:Johnate","format":"doubles_uncursed","seed":2594610785,"result":1,"rounds":2,"time_s":2.464149236679077,"had_error":false,"curse":true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#1","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":3791879695,"result":1,"rounds":5,"time_s":5.662603139877319,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#21","trainer2":"MASKEDVILLAIN:Crimson#22","format":"doubles_uncursed","seed":519449298,"result":2,"rounds":12,"time_s":10.471655368804932,"had_error":false,"curse":true}
@@ -745,7 +745,7 @@
 {"trainer1":"POKEMONCHAMPION_Vanya:Vanya","trainer2":"TRAINER_Zain:Zain#3","format":"doubles_uncursed","seed":963077012,"result":5,"rounds":10,"time_s":11.324057579040527,"had_error":false,"curse":true}
 {"trainer1":"TAPU_FINI:Tapu Fini#1","trainer2":"POKEMONMASTER_Vanya:Vanya#21","format":"doubles_uncursed","seed":2822963170,"result":1,"rounds":15,"time_s":13.462127447128296,"had_error":false,"curse":true}
 {"trainer1":"CAMPER_F:Tanya","trainer2":"LEADER_Eko:Eko#1","format":"doubles_uncursed","seed":311663893,"result":1,"rounds":7,"time_s":7.241755962371826,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#5","trainer2":"POKEMONTRAINER_Yezera:Yezera#5","format":"doubles_uncursed","seed":1904076122,"result":1,"rounds":7,"time_s":6.495276212692261,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#5", "trainer2": "POKEMONTRAINER_Yezera:Yezera#5", "format": "doubles_uncursed", "seed": 1904076122, "result": 1, "rounds": 5, "time_s": 5.157198667526245, "had_error": false, "curse": true}
 {"trainer1":"BIKER2:Chuck","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":3693410466,"result":2,"rounds":2,"time_s":3.1169521808624268,"had_error":false,"curse":true}
 {"trainer1":"SWIMMER_M4:Jan","trainer2":"MASKEDVILLAIN:Crimson#7","format":"doubles_uncursed","seed":1788453079,"result":2,"rounds":6,"time_s":6.221412897109985,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Victoire:Victoire","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":3097830438,"result":2,"rounds":10,"time_s":12.08882761001587,"had_error":false,"curse":true}
@@ -763,12 +763,12 @@
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#9","trainer2":"PSYCHIC_M:Uriel","format":"doubles_uncursed","seed":4025234160,"result":1,"rounds":1,"time_s":1.1805164813995361,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#3","trainer2":"MASKEDVILLAIN:Crimson#20","format":"doubles_uncursed","seed":2388763294,"result":2,"rounds":4,"time_s":4.920594215393066,"had_error":false,"curse":true}
 {"trainer1":"ROUGHNECK:Randall","trainer2":"TAPU_LELE:Tapu Lele#1","format":"doubles_uncursed","seed":4245877984,"result":2,"rounds":2,"time_s":3.804090976715088,"had_error":false,"curse":true}
-{"trainer1":"FAIRYTALEGIRL:Emmi","trainer2":"TAPU_LELE:Tapu Lele#1","format":"doubles_uncursed","seed":2953824057,"result":2,"rounds":11,"time_s":11.927955627441406,"had_error":false,"curse":true}
+{"trainer1": "FAIRYTALEGIRL:Emmi", "trainer2": "TAPU_LELE:Tapu Lele#1", "format": "doubles_uncursed", "seed": 2953824057, "result": 2, "rounds": 13, "time_s": 10.8504798412323, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"PUNKM:Vlad","format":"doubles_uncursed","seed":828885403,"result":1,"rounds":3,"time_s":5.021975517272949,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#9","trainer2":"MASKEDVILLAIN2:Teal#14","format":"doubles_uncursed","seed":2790983994,"result":1,"rounds":6,"time_s":8.84774398803711,"had_error":false,"curse":true}
 {"trainer1":"DOCTOR:Renaldo","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":1132978318,"result":2,"rounds":6,"time_s":7.338322401046753,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"TRAINER_Alessa:Alessa#5","format":"doubles_uncursed","seed":3333434566,"result":1,"rounds":5,"time_s":7.683715105056763,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":2672311918,"result":1,"rounds":3,"time_s":3.8552310466766357,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "POKEMONTRAINER_Yezera:Yezera#1", "format": "doubles_uncursed", "seed": 2672311918, "result": 1, "rounds": 3, "time_s": 3.934796094894409, "had_error": false, "curse": true}
 {"trainer1":"SCHOOLKID_M:Louis","trainer2":"POKEMONTRAINER_Yezera:Yezera#3","format":"doubles_uncursed","seed":4056255000,"result":2,"rounds":5,"time_s":4.025559186935425,"had_error":false,"curse":true}
 {"trainer1":"SCHOOLKID_GHOST:Honesty","trainer2":"LEADER_Rafael:Rafael#1","format":"doubles_uncursed","seed":2634905535,"result":1,"rounds":4,"time_s":4.5024237632751465,"had_error":false,"curse":true}
 {"trainer1":"WAITRESS2:Fanfan","trainer2":"MASKEDVILLAIN2:Teal#9","format":"doubles_uncursed","seed":2200037927,"result":1,"rounds":8,"time_s":10.645923852920532,"had_error":false,"curse":true}
@@ -777,11 +777,11 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"LEADER_Helena:Helena#2","format":"doubles_uncursed","seed":1495688060,"result":2,"rounds":5,"time_s":6.304846525192261,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"CHALLENGER_Vanya:Vanya#8","format":"doubles_uncursed","seed":382952481,"result":2,"rounds":9,"time_s":9.150860071182251,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"POKEMONTRAINER_Yezera:Yezera","format":"doubles_uncursed","seed":3793963964,"result":1,"rounds":1,"time_s":2.467268466949463,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_M7:Xander","trainer2":"LEADER_Noel:Noel#1","format":"doubles_uncursed","seed":2294588478,"result":2,"rounds":3,"time_s":8.178178548812866,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_M7:Xander", "trainer2": "LEADER_Noel:Noel#1", "format": "doubles_uncursed", "seed": 2294588478, "result": 2, "rounds": 3, "time_s": 4.186282396316528, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#13","trainer2":"LEADER_Rafael:Rafael","format":"doubles_uncursed","seed":4228414588,"result":1,"rounds":4,"time_s":9.726784229278564,"had_error":false,"curse":true}
 {"trainer1":"ROLLERSKATER_F:Attea","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":1203147984,"result":2,"rounds":9,"time_s":33.59086346626282,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Alessa:Alessa#2","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":923368611,"result":2,"rounds":6,"time_s":15.583518505096436,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"MASKEDVILLAIN:Crimson#3","format":"doubles_uncursed","seed":1811776626,"result":1,"rounds":6,"time_s":10.650411605834961,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "MASKEDVILLAIN:Crimson#3", "format": "doubles_uncursed", "seed": 1811776626, "result": 1, "rounds": 6, "time_s": 6.556959629058838, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"GARDENER:Bud","format":"doubles_uncursed","seed":2456475226,"result":1,"rounds":5,"time_s":12.450853109359741,"had_error":false,"curse":true}
 {"trainer1":"RICHCOUPLE:Diana and Edward","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":2804281537,"result":2,"rounds":8,"time_s":15.537250518798828,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"ARTIST4:Rabah","format":"doubles_uncursed","seed":1583478914,"result":2,"rounds":2,"time_s":2.919912576675415,"had_error":false,"curse":true}
@@ -794,12 +794,12 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#20","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":2837455545,"result":2,"rounds":10,"time_s":7.722198724746704,"had_error":false,"curse":true}
 {"trainer1":"BATTLEGIRL:Eliza","trainer2":"MASKEDVILLAIN2:Teal#21","format":"doubles_uncursed","seed":3537260402,"result":2,"rounds":2,"time_s":2.4317188262939453,"had_error":false,"curse":true}
 {"trainer1":"POKEMANIAC:Paris","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":453183622,"result":2,"rounds":3,"time_s":3.7180533409118652,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"POKEMONRANGER_F:Val","format":"doubles_uncursed","seed":3948541243,"result":1,"rounds":3,"time_s":3.409951686859131,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "POKEMONRANGER_F:Val", "format": "doubles_uncursed", "seed": 3948541243, "result": 1, "rounds": 3, "time_s": 2.880211591720581, "had_error": false, "curse": true}
 {"trainer1":"CLERK_M2:Papper","trainer2":"TRAINER_Zain:Zain#1","format":"doubles_uncursed","seed":1475605182,"result":1,"rounds":5,"time_s":7.89890456199646,"had_error":false,"curse":true}
-{"trainer1":"WAITER:Aaron","trainer2":"LEADER_Noel:Noel#1","format":"doubles_uncursed","seed":3968655848,"result":2,"rounds":8,"time_s":9.955146074295044,"had_error":false,"curse":true}
+{"trainer1": "WAITER:Aaron", "trainer2": "LEADER_Noel:Noel#1", "format": "doubles_uncursed", "seed": 3968655848, "result": 1, "rounds": 7, "time_s": 7.082210540771484, "had_error": false, "curse": true}
 {"trainer1":"FORMERCHAMP_Chara:Chara","trainer2":"TRAINER_Sang:Sang#5","format":"doubles_uncursed","seed":2433820806,"result":2,"rounds":10,"time_s":14.035061836242676,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"SCHOOLKID_GHOST:Honesty","format":"doubles_uncursed","seed":1490250163,"result":1,"rounds":3,"time_s":7.179235458374023,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#11","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":2788663810,"result":2,"rounds":13,"time_s":18.82840347290039,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#11", "trainer2": "MASKEDVILLAIN:Crimson#17", "format": "doubles_uncursed", "seed": 2788663810, "result": 2, "rounds": 13, "time_s": 15.349071741104126, "had_error": false, "curse": true}
 {"trainer1":"FIREBREATHER:Antonio","trainer2":"MASKEDVILLAIN2:Teal#7","format":"doubles_uncursed","seed":4123502556,"result":2,"rounds":1,"time_s":3.5592243671417236,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#21","trainer2":"GUITARIST3:Mai","format":"doubles_uncursed","seed":368348702,"result":1,"rounds":1,"time_s":5.379485607147217,"had_error":false,"curse":true}
 {"trainer1":"CYCLIST_M:Mitron","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":863151803,"result":2,"rounds":1,"time_s":2.6894381046295166,"had_error":false,"curse":true}
@@ -810,7 +810,7 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#14","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":4037273426,"result":2,"rounds":8,"time_s":28.8239848613739,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"BUGCATCHER_F:Caitlyn","format":"doubles_uncursed","seed":441623136,"result":1,"rounds":0,"time_s":0.5740242004394531,"had_error":false,"curse":true}
 {"trainer1":"TAPU_LELE:Tapu Lele#1","trainer2":"MAID:Alice","format":"doubles_uncursed","seed":157868415,"result":1,"rounds":1,"time_s":0.9935197830200195,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"SCIENTIST_M:Julien","format":"doubles_uncursed","seed":1915025316,"result":1,"rounds":4,"time_s":3.4152376651763916,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "SCIENTIST_M:Julien", "format": "doubles_uncursed", "seed": 1915025316, "result": 1, "rounds": 4, "time_s": 3.0689687728881836, "had_error": false, "curse": true}
 {"trainer1":"LADY3:Kristiane","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":2600056816,"result":2,"rounds":4,"time_s":3.9311108589172363,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#21","trainer2":"CLERK_M:Scott","format":"doubles_uncursed","seed":1446089837,"result":1,"rounds":5,"time_s":4.652301073074341,"had_error":false,"curse":true}
 {"trainer1":"POKEMONRANGER_M4_GANG:Micah","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":2193423572,"result":1,"rounds":9,"time_s":10.101926565170288,"had_error":false,"curse":true}
@@ -821,7 +821,7 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"PILOT:Charlie","format":"doubles_uncursed","seed":4011413816,"result":1,"rounds":5,"time_s":6.271393537521362,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#13","trainer2":"POKEFAN_F:Impi","format":"doubles_uncursed","seed":1083152397,"result":1,"rounds":4,"time_s":4.2027788162231445,"had_error":false,"curse":true}
 {"trainer1":"POKEMONRANGER_M2:Martel","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":910841009,"result":2,"rounds":3,"time_s":2.6640281677246094,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":3733391037,"result":2,"rounds":10,"time_s":8.314540386199951,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver", "trainer2": "MASKEDVILLAIN_DOUBLE:Crimson#1", "format": "doubles_uncursed", "seed": 3733391037, "result": 2, "rounds": 8, "time_s": 8.748339176177979, "had_error": false, "curse": true}
 {"trainer1":"SUSPICIOUSMAN:Tommaso","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":872417191,"result":1,"rounds":6,"time_s":5.993114233016968,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#3","trainer2":"POKEMONMASTER_Vanya:Vanya#8","format":"doubles_uncursed","seed":1841349676,"result":2,"rounds":10,"time_s":11.215790033340454,"had_error":false,"curse":true}
 {"trainer1":"TAPU_KOKO:Tapu Koko","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":2353102627,"result":1,"rounds":7,"time_s":8.542559623718262,"had_error":false,"curse":true}
@@ -858,9 +858,9 @@
 {"trainer1":"ANOTHERPOSSIBLETAMARIND:Tamarind#1","trainer2":"MASKEDVILLAIN2:Teal#9","format":"doubles_uncursed","seed":946998925,"result":1,"rounds":12,"time_s":22.831250190734863,"had_error":false,"curse":true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#3","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":745352442,"result":2,"rounds":7,"time_s":7.588422536849976,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":912733711,"result":2,"rounds":2,"time_s":3.8080058097839355,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_M7:Xander","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":1443926137,"result":2,"rounds":3,"time_s":3.780261754989624,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_M7:Xander", "trainer2": "MASKEDVILLAIN:Crimson#9", "format": "doubles_uncursed", "seed": 1443926137, "result": 2, "rounds": 3, "time_s": 4.650120973587036, "had_error": false, "curse": true}
 {"trainer1":"ANOTHERPOSSIBLERAFAEL:Rafael","trainer2":"LEADER_Rafael:Rafael","format":"doubles_uncursed","seed":3339984675,"result":1,"rounds":2,"time_s":2.379074811935425,"had_error":false,"curse":true}
-{"trainer1":"DRAGONTAMER_F:Bella","trainer2":"MASKEDVILLAIN:Crimson#3","format":"doubles_uncursed","seed":2082358539,"result":1,"rounds":12,"time_s":11.919517993927002,"had_error":false,"curse":true}
+{"trainer1": "DRAGONTAMER_F:Bella", "trainer2": "MASKEDVILLAIN:Crimson#3", "format": "doubles_uncursed", "seed": 2082358539, "result": 1, "rounds": 13, "time_s": 12.22309136390686, "had_error": false, "curse": true}
 {"trainer1":"TRAINER_Alessa:Alessa#2","trainer2":"TAPU_BULU:Tapu Bulu#1","format":"doubles_uncursed","seed":1002911653,"result":2,"rounds":4,"time_s":3.0460753440856934,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"TRAINER_Sang:Sang#3","format":"doubles_uncursed","seed":727083699,"result":2,"rounds":10,"time_s":9.783578157424927,"had_error":false,"curse":true}
 {"trainer1":"IDEALTRAINER:of Riches","trainer2":"MASKEDVILLAIN2:Teal#5","format":"doubles_uncursed","seed":3147667544,"result":1,"rounds":5,"time_s":5.9798901081085205,"had_error":false,"curse":true}
@@ -880,10 +880,10 @@
 {"trainer1":"BLACKBELT2:Riccardo","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":3089072069,"result":2,"rounds":7,"time_s":7.318953990936279,"had_error":false,"curse":true}
 {"trainer1":"FORMERCHAMP_Chara:Chara","trainer2":"MASKEDVILLAIN2:Teal#19","format":"doubles_uncursed","seed":50248881,"result":1,"rounds":4,"time_s":5.61910343170166,"had_error":false,"curse":true}
 {"trainer1":"BIKER:Knoxx","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":2968272918,"result":2,"rounds":8,"time_s":6.690025806427002,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#21","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":3457074785,"result":2,"rounds":7,"time_s":9.536842107772827,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#21", "trainer2": "MASKEDVILLAIN:Crimson#17", "format": "doubles_uncursed", "seed": 3457074785, "result": 2, "rounds": 8, "time_s": 8.63353967666626, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"FIREBREATHER:Antonio","format":"doubles_uncursed","seed":1664299722,"result":1,"rounds":1,"time_s":1.4599013328552246,"had_error":false,"curse":true}
 {"trainer1":"TAPU_BULU:Tapu Bulu#1","trainer2":"GUITARIST3:Mai","format":"doubles_uncursed","seed":1100402488,"result":1,"rounds":1,"time_s":2.047842264175415,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"REPORTER:Helga","format":"doubles_uncursed","seed":2132048194,"result":1,"rounds":1,"time_s":1.3418400287628174,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "REPORTER:Helga", "format": "doubles_uncursed", "seed": 2132048194, "result": 1, "rounds": 1, "time_s": 0.9577488899230957, "had_error": false, "curse": true}
 {"trainer1":"SUPERNERD:Agentbla","trainer2":"MASKEDVILLAIN2:Teal#17","format":"doubles_uncursed","seed":3264252156,"result":2,"rounds":7,"time_s":10.058960676193237,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Noel:Noel#1","trainer2":"CLOWN:Dimesmart","format":"doubles_uncursed","seed":2837092738,"result":1,"rounds":4,"time_s":6.305258750915527,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#3","trainer2":"LASS3:Carmen","format":"doubles_uncursed","seed":3839321377,"result":1,"rounds":5,"time_s":7.311794757843018,"had_error":false,"curse":true}
@@ -893,7 +893,7 @@
 {"trainer1":"LASS:Tara","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":2712035500,"result":2,"rounds":1,"time_s":1.1673498153686523,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"SCIENTIST_M:Julien","format":"doubles_uncursed","seed":1159726675,"result":1,"rounds":2,"time_s":2.8459248542785645,"had_error":false,"curse":true}
 {"trainer1":"LADY3:Kristiane","trainer2":"MASKEDVILLAIN:Crimson#11","format":"doubles_uncursed","seed":2734912174,"result":2,"rounds":2,"time_s":2.186505079269409,"had_error":false,"curse":true}
-{"trainer1":"JUGGLER:Youcef","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":1520209568,"result":2,"rounds":3,"time_s":4.7192230224609375,"had_error":false,"curse":true}
+{"trainer1": "JUGGLER:Youcef", "trainer2": "LEADER_Samorn:Samorn#1", "format": "doubles_uncursed", "seed": 1520209568, "result": 2, "rounds": 3, "time_s": 4.7773659229278564, "had_error": false, "curse": true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#6","trainer2":"MASKEDVILLAIN:Crimson#7","format":"doubles_uncursed","seed":4185806190,"result":1,"rounds":6,"time_s":7.542725324630737,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#15","trainer2":"MASKEDVILLAIN:Crimson#8","format":"doubles_uncursed","seed":1223509613,"result":1,"rounds":6,"time_s":8.76110553741455,"had_error":false,"curse":true}
 {"trainer1":"ANOTHERPOSSIBLEZAIN:Zain","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":1664751882,"result":1,"rounds":7,"time_s":10.669292449951172,"had_error":false,"curse":true}
@@ -941,9 +941,9 @@
 {"trainer1":"TAPU_BULU:Tapu Bulu#1","trainer2":"POKEMONTRAINER_Yezera:Yezera","format":"doubles_uncursed","seed":46031273,"result":1,"rounds":1,"time_s":1.6412322521209717,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#3","trainer2":"COOLTRAINER_M7:Xander","format":"doubles_uncursed","seed":2478869104,"result":1,"rounds":3,"time_s":5.067634344100952,"had_error":false,"curse":true}
 {"trainer1":"HARLEQUIN:Vincenzi","trainer2":"LEADER_Rafael:Rafael#1","format":"doubles_uncursed","seed":3027760060,"result":2,"rounds":1,"time_s":1.4135355949401855,"had_error":false,"curse":true}
-{"trainer1":"DRAGONTAMER_F:Bella","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":3196853137,"result":2,"rounds":13,"time_s":16.78402280807495,"had_error":false,"curse":true}
+{"trainer1": "DRAGONTAMER_F:Bella", "trainer2": "MASKEDVILLAIN2:Teal#11", "format": "doubles_uncursed", "seed": 3196853137, "result": 1, "rounds": 13, "time_s": 13.218245506286621, "had_error": false, "curse": true}
 {"trainer1":"BIRDKEEPER_M2:Bernhard","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":26894425,"result":2,"rounds":2,"time_s":3.1271109580993652,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":2470854600,"result":2,"rounds":8,"time_s":11.31343960762024,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "MASKEDVILLAIN2:Teal#11", "format": "doubles_uncursed", "seed": 2470854600, "result": 2, "rounds": 7, "time_s": 7.675212383270264, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"POKEMONRANGER_F_GANG:Amber","format":"doubles_uncursed","seed":191810245,"result":2,"rounds":10,"time_s":12.949335098266602,"had_error":false,"curse":true}
 {"trainer1":"PARASOLLADY2:Antoinette","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":588136987,"result":2,"rounds":4,"time_s":9.52020788192749,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"LASS:Rovina","format":"doubles_uncursed","seed":1471933895,"result":2,"rounds":6,"time_s":6.38850998878479,"had_error":false,"curse":true}
@@ -973,15 +973,15 @@
 {"trainer1":"LEADER_Lambert:Lambert#3","trainer2":"BUGCATCHER_F:Caitlyn","format":"doubles_uncursed","seed":2714266498,"result":1,"rounds":0,"time_s":0.5178639888763428,"had_error":false,"curse":true}
 {"trainer1":"LASS:Tara","trainer2":"MASKEDVILLAIN:Crimson#11","format":"doubles_uncursed","seed":617260530,"result":2,"rounds":1,"time_s":1.4038927555084229,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Noel:Noel#1","trainer2":"SCIENTIST_F3:Viola","format":"doubles_uncursed","seed":1510564056,"result":1,"rounds":5,"time_s":5.457674503326416,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"LADY3:Kristiane","format":"doubles_uncursed","seed":900366584,"result":1,"rounds":3,"time_s":2.568514347076416,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "LADY3:Kristiane", "format": "doubles_uncursed", "seed": 900366584, "result": 1, "rounds": 3, "time_s": 2.460322856903076, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"JUGGLER:Youcef","format":"doubles_uncursed","seed":461913316,"result":1,"rounds":6,"time_s":6.488542556762695,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#6","trainer2":"LEADER_Bence:Bence#3","format":"doubles_uncursed","seed":2817927109,"result":2,"rounds":7,"time_s":7.591698408126831,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#23","trainer2":"MASKEDVILLAIN:Crimson#8","format":"doubles_uncursed","seed":541387457,"result":1,"rounds":8,"time_s":10.415023803710938,"had_error":false,"curse":true}
 {"trainer1":"ANOTHERPOSSIBLEZAIN:Zain#1","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":1398732956,"result":2,"rounds":10,"time_s":12.269302368164062,"had_error":false,"curse":true}
-{"trainer1":"SPIRITGUARDIAN4:Brigitte","trainer2":"ANOTHERPOSSIBLERAFAEL:Rafael","format":"doubles_uncursed","seed":3638689575,"result":2,"rounds":8,"time_s":8.445051670074463,"had_error":false,"curse":true}
+{"trainer1": "SPIRITGUARDIAN4:Brigitte", "trainer2": "ANOTHERPOSSIBLERAFAEL:Rafael", "format": "doubles_uncursed", "seed": 3638689575, "result": 2, "rounds": 8, "time_s": 8.357853412628174, "had_error": false, "curse": true}
 {"trainer1":"TRAINER_Zain:Zain#3","trainer2":"LINEBACKER:Josh","format":"doubles_uncursed","seed":620957637,"result":1,"rounds":1,"time_s":1.125643253326416,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"PILOT:Charlie","format":"doubles_uncursed","seed":3007258498,"result":1,"rounds":4,"time_s":4.736572742462158,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"COLLECTOR:Mirko","format":"doubles_uncursed","seed":1340185261,"result":1,"rounds":2,"time_s":4.27707314491272,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "COLLECTOR:Mirko", "format": "doubles_uncursed", "seed": 1340185261, "result": 1, "rounds": 2, "time_s": 2.555124044418335, "had_error": false, "curse": true}
 {"trainer1":"POKEMONRANGER_M2:Martel","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":1436868137,"result":2,"rounds":2,"time_s":2.304124116897583,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#21","trainer2":"MASKEDVILLAIN_Sang:Silver","format":"doubles_uncursed","seed":1860148677,"result":1,"rounds":8,"time_s":7.647974967956543,"had_error":false,"curse":true}
 {"trainer1":"SAILOR:Dom","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":3793963744,"result":1,"rounds":11,"time_s":5.290315389633179,"had_error":false,"curse":true}
@@ -1020,17 +1020,17 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"MASKEDVILLAIN2:Teal#17","format":"doubles_uncursed","seed":3486028910,"result":2,"rounds":11,"time_s":14.075791597366333,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"TAPU_KOKO:Tapu Koko","format":"doubles_uncursed","seed":4101002795,"result":2,"rounds":5,"time_s":6.2611870765686035,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_F:Marie","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":2738942293,"result":2,"rounds":4,"time_s":6.198284149169922,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_M7:Xander","trainer2":"MASKEDVILLAIN2:Teal#17","format":"doubles_uncursed","seed":3316046767,"result":2,"rounds":3,"time_s":5.552394390106201,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_M7:Xander", "trainer2": "MASKEDVILLAIN2:Teal#17", "format": "doubles_uncursed", "seed": 3316046767, "result": 2, "rounds": 3, "time_s": 4.064747333526611, "had_error": false, "curse": true}
 {"trainer1":"NURSERYAIDE:Francesca","trainer2":"LEADER_Rafael:Rafael#1","format":"doubles_uncursed","seed":1087449462,"result":1,"rounds":6,"time_s":14.605745792388916,"had_error":false,"curse":true}
-{"trainer1":"DRAGONTAMER_F:Bella","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":4017071161,"result":2,"rounds":14,"time_s":22.308216094970703,"had_error":false,"curse":true}
+{"trainer1": "DRAGONTAMER_F:Bella", "trainer2": "MASKEDVILLAIN:Crimson#23", "format": "doubles_uncursed", "seed": 4017071161, "result": 1, "rounds": 15, "time_s": 16.473726987838745, "had_error": false, "curse": true}
 {"trainer1":"BIRDKEEPER_M2:Bernhard","trainer2":"LEADER_Lambert:Lambert#3","format":"doubles_uncursed","seed":730561552,"result":2,"rounds":1,"time_s":2.2258312702178955,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"FORMERCHAMP_Elise:Elise#1","format":"doubles_uncursed","seed":2564645554,"result":2,"rounds":8,"time_s":22.581838607788086,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "FORMERCHAMP_Elise:Elise#1", "format": "doubles_uncursed", "seed": 2564645554, "result": 2, "rounds": 10, "time_s": 9.837671756744385, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Bence:Bence#3","trainer2":"MASKEDVILLAIN2:Teal#6","format":"doubles_uncursed","seed":1418807314,"result":1,"rounds":5,"time_s":9.694419622421265,"had_error":false,"curse":true}
 {"trainer1":"IDEALTRAINER:of Brilliance","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":3188285210,"result":2,"rounds":6,"time_s":11.376724243164062,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"RUINMANIAC2:Nabil","format":"doubles_uncursed","seed":1077973300,"result":2,"rounds":3,"time_s":3.756537675857544,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"POKEMONRANGER_F2_GANG:Mina","format":"doubles_uncursed","seed":1147851815,"result":2,"rounds":5,"time_s":6.5991151332855225,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#9","trainer2":"NINJABOY:Hwan","format":"doubles_uncursed","seed":2551256216,"result":1,"rounds":1,"time_s":1.3248927593231201,"had_error":false,"curse":true}
-{"trainer1":"SCIENTIST_F:LunaFlare","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":172387159,"result":1,"rounds":3,"time_s":4.486451625823975,"had_error":false,"curse":true}
+{"trainer1": "SCIENTIST_F:LunaFlare", "trainer2": "MASKEDVILLAIN:Crimson#5", "format": "doubles_uncursed", "seed": 172387159, "result": 1, "rounds": 3, "time_s": 3.825812578201294, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#15","trainer2":"ROUGHNECK2:Robert","format":"doubles_uncursed","seed":339490743,"result":1,"rounds":1,"time_s":1.8404977321624756,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Samorn:Samorn#1","trainer2":"POKEMONMASTER_Vanya:Vanya#17","format":"doubles_uncursed","seed":1041859996,"result":2,"rounds":8,"time_s":10.028199672698975,"had_error":false,"curse":true}
 {"trainer1":"POKEMONBREEDER_M4:Isaac","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":1790392482,"result":2,"rounds":2,"time_s":2.0282700061798096,"had_error":false,"curse":true}
@@ -1047,15 +1047,15 @@
 {"trainer1":"POKEKID:Braden","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":1370635586,"result":2,"rounds":1,"time_s":1.6766831874847412,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#13","trainer2":"REPORTER:Helga","format":"doubles_uncursed","seed":1378463823,"result":1,"rounds":1,"time_s":1.082367181777954,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#9","trainer2":"LADY4:Pria","format":"doubles_uncursed","seed":629290222,"result":2,"rounds":4,"time_s":5.497912883758545,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver","trainer2":"LEADER_Noel:Noel#1","format":"doubles_uncursed","seed":2213113048,"result":2,"rounds":8,"time_s":9.912066459655762,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver", "trainer2": "LEADER_Noel:Noel#1", "format": "doubles_uncursed", "seed": 2213113048, "result": 1, "rounds": 8, "time_s": 9.203362226486206, "had_error": false, "curse": true}
 {"trainer1":"SCIENTIST_M5:Sonatane","trainer2":"TRAINER_Sang:Sang#3","format":"doubles_uncursed","seed":865701483,"result":2,"rounds":5,"time_s":5.7477052211761475,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#11","trainer2":"MASKEDVILLAIN2:Teal#16","format":"doubles_uncursed","seed":497042335,"result":2,"rounds":8,"time_s":8.678467273712158,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#15","trainer2":"MASKEDVILLAIN2:Teal#19","format":"doubles_uncursed","seed":3640204660,"result":2,"rounds":6,"time_s":7.35713791847229,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#13","trainer2":"BUGCATCHER_F:Caitlyn","format":"doubles_uncursed","seed":1308876863,"result":1,"rounds":1,"time_s":0.937467098236084,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"LASS:Tara","format":"doubles_uncursed","seed":238738596,"result":1,"rounds":1,"time_s":1.0422935485839844,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "LASS:Tara", "format": "doubles_uncursed", "seed": 238738596, "result": 1, "rounds": 1, "time_s": 0.9694764614105225, "had_error": false, "curse": true}
 {"trainer1":"SCIENTIST_F3:Viola","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":3326735295,"result":2,"rounds":2,"time_s":2.6218934059143066,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"LADY3:Kristiane","format":"doubles_uncursed","seed":2721377967,"result":1,"rounds":2,"time_s":2.05279803276062,"had_error":false,"curse":true}
-{"trainer1":"JUGGLER:Youcef","trainer2":"MASKEDVILLAIN:Crimson#15","format":"doubles_uncursed","seed":1362562714,"result":2,"rounds":2,"time_s":2.278193712234497,"had_error":false,"curse":true}
+{"trainer1": "JUGGLER:Youcef", "trainer2": "MASKEDVILLAIN:Crimson#15", "format": "doubles_uncursed", "seed": 1362562714, "result": 2, "rounds": 2, "time_s": 2.53082537651062, "had_error": false, "curse": true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#6","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":738869716,"result":2,"rounds":5,"time_s":6.306661367416382,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#2","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":271380275,"result":2,"rounds":5,"time_s":7.506277084350586,"had_error":false,"curse":true}
 {"trainer1":"TAPU_FINI:Tapu Fini#1","trainer2":"ANOTHERPOSSIBLEZAIN:Zain#1","format":"doubles_uncursed","seed":3686912216,"result":1,"rounds":7,"time_s":7.9189629554748535,"had_error":false,"curse":true}
@@ -1081,7 +1081,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"HARLEQUIN:Vincenzi#1","format":"doubles_uncursed","seed":3835497452,"result":1,"rounds":1,"time_s":2.3281731605529785,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#1","trainer2":"LEADER_Samorn:Samorn","format":"doubles_uncursed","seed":552730703,"result":2,"rounds":6,"time_s":10.231348037719727,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"CYCLIST_F2:Lukka","format":"doubles_uncursed","seed":1864377835,"result":1,"rounds":3,"time_s":3.1627488136291504,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#5","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":2994066954,"result":1,"rounds":9,"time_s":12.264123439788818,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#5", "trainer2": "MASKEDVILLAIN_DOUBLE:Crimson#1", "format": "doubles_uncursed", "seed": 2994066954, "result": 1, "rounds": 8, "time_s": 9.625632762908936, "had_error": false, "curse": true}
 {"trainer1":"ANCIENTPRIEST:Dobromil","trainer2":"LEADER_Lambert:Lambert#3","format":"doubles_uncursed","seed":339774250,"result":2,"rounds":2,"time_s":2.940183639526367,"had_error":false,"curse":true}
 {"trainer1":"HEXMANIAC_GHOST:Juno","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":1514584587,"result":2,"rounds":4,"time_s":6.280783653259277,"had_error":false,"curse":true}
 {"trainer1":"POKEFAN_M:Jamie","trainer2":"LEADER_Noel:Noel#1","format":"doubles_uncursed","seed":984236391,"result":2,"rounds":1,"time_s":2.2906947135925293,"had_error":false,"curse":true}
@@ -1090,28 +1090,28 @@
 {"trainer1":"ODDISH:Oddium","trainer2":"TAPU_LELE:Tapu Lele#1","format":"doubles_uncursed","seed":2921416927,"result":1,"rounds":7,"time_s":8.946617603302002,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#3","trainer2":"BEAUTY3:Ester","format":"doubles_uncursed","seed":249846141,"result":1,"rounds":2,"time_s":2.080151081085205,"had_error":false,"curse":true}
 {"trainer1":"POKEMONRANGER_M:Alastar","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":1346466276,"result":2,"rounds":5,"time_s":5.801104307174683,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#11","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":3536281581,"result":2,"rounds":7,"time_s":8.4794602394104,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#11", "trainer2": "MASKEDVILLAIN2:Teal#11", "format": "doubles_uncursed", "seed": 3536281581, "result": 2, "rounds": 6, "time_s": 7.658350229263306, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"CHALLENGER_Vanya:Vanya#2","format":"doubles_uncursed","seed":2043509095,"result":1,"rounds":3,"time_s":3.127711772918701,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#2","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":921039843,"result":1,"rounds":2,"time_s":3.40063738822937,"had_error":false,"curse":true}
 {"trainer1":"SAILOR:Konrad","trainer2":"POKEMONTRAINER_Yezera:Yezera#3","format":"doubles_uncursed","seed":3635709443,"result":1,"rounds":4,"time_s":5.021224498748779,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"POKEMONTRAINER_Vanya:Vanya#1","format":"doubles_uncursed","seed":3520250048,"result":2,"rounds":3,"time_s":4.4044435024261475,"had_error":false,"curse":true}
 {"trainer1":"KATY:Manycrows","trainer2":"MASKEDVILLAIN2:Teal#9","format":"doubles_uncursed","seed":649086703,"result":1,"rounds":9,"time_s":13.762888193130493,"had_error":false,"curse":true}
 {"trainer1":"BURGLAR:Barret","trainer2":"MASKEDVILLAIN:Crimson#15","format":"doubles_uncursed","seed":754349362,"result":2,"rounds":1,"time_s":1.286064863204956,"had_error":false,"curse":true}
-{"trainer1":"YOUNGSTER:Buzim","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":2317874192,"result":2,"rounds":4,"time_s":4.774168252944946,"had_error":false,"curse":true}
+{"trainer1": "YOUNGSTER:Buzim", "trainer2": "MASKEDVILLAIN2:Teal#3", "format": "doubles_uncursed", "seed": 2317874192, "result": 2, "rounds": 5, "time_s": 4.675382852554321, "had_error": false, "curse": true}
 {"trainer1":"SHADOWMAVIS:Mavis#1","trainer2":"MASKEDVILLAIN2:Teal#9","format":"doubles_uncursed","seed":2705529309,"result":1,"rounds":11,"time_s":15.88339614868164,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":1545686809,"result":1,"rounds":11,"time_s":14.225939512252808,"had_error":false,"curse":true}
 {"trainer1":"MAID:Alice","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":363138069,"result":2,"rounds":8,"time_s":7.4116127490997314,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#5","trainer2":"COOLTRAINER_F7:Jade","format":"doubles_uncursed","seed":2733955118,"result":1,"rounds":7,"time_s":7.596805572509766,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"VETERANM_2:Hadley","format":"doubles_uncursed","seed":2251824485,"result":2,"rounds":6,"time_s":5.313837051391602,"had_error":false,"curse":true}
-{"trainer1":"DRAGONTAMER_F:Bella","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":4175773821,"result":2,"rounds":14,"time_s":13.517363548278809,"had_error":false,"curse":true}
+{"trainer1": "DRAGONTAMER_F:Bella", "trainer2": "TAPU_FINI:Tapu Fini#1", "format": "doubles_uncursed", "seed": 4175773821, "result": 2, "rounds": 14, "time_s": 13.961156845092773, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#13","trainer2":"BIRDKEEPER_M2:Bernhard","format":"doubles_uncursed","seed":1720294477,"result":1,"rounds":3,"time_s":3.1435487270355225,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"ANOTHERPOSSIBLEZAIN:Zain","format":"doubles_uncursed","seed":1464096799,"result":2,"rounds":8,"time_s":8.375887632369995,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "ANOTHERPOSSIBLEZAIN:Zain", "format": "doubles_uncursed", "seed": 1464096799, "result": 2, "rounds": 14, "time_s": 13.106523036956787, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"MASKEDVILLAIN2:Teal#6","format":"doubles_uncursed","seed":1340332483,"result":1,"rounds":4,"time_s":5.055617570877075,"had_error":false,"curse":true}
 {"trainer1":"POKEMONRANGER_F2_GANG:Mina","trainer2":"MASKEDVILLAIN:Crimson#23","format":"doubles_uncursed","seed":3472016504,"result":2,"rounds":8,"time_s":9.330271005630493,"had_error":false,"curse":true}
 {"trainer1":"SWIMMER_F6:Kiana","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":3664872190,"result":1,"rounds":3,"time_s":3.6787455081939697,"had_error":false,"curse":true}
 {"trainer1":"IDOL:Ishizu","trainer2":"TRAINER_Zain:Zain#1","format":"doubles_uncursed","seed":2427469521,"result":2,"rounds":2,"time_s":2.6335577964782715,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#7","trainer2":"NINJABOY:Hwan","format":"doubles_uncursed","seed":765567425,"result":1,"rounds":2,"time_s":2.45285964012146,"had_error":false,"curse":true}
-{"trainer1":"SCIENTIST_F:LunaFlare","trainer2":"LEADER_Lambert:Lambert#3","format":"doubles_uncursed","seed":1315113566,"result":2,"rounds":5,"time_s":5.309528827667236,"had_error":false,"curse":true}
+{"trainer1": "SCIENTIST_F:LunaFlare", "trainer2": "LEADER_Lambert:Lambert#3", "format": "doubles_uncursed", "seed": 1315113566, "result": 2, "rounds": 5, "time_s": 5.12305760383606, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#23","trainer2":"ROUGHNECK2:Robert","format":"doubles_uncursed","seed":2884678555,"result":1,"rounds":2,"time_s":2.3499972820281982,"had_error":false,"curse":true}
 {"trainer1":"TAPU_LELE:Tapu Lele#1","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":1803162026,"result":1,"rounds":10,"time_s":10.45115041732788,"had_error":false,"curse":true}
 {"trainer1":"MAID:Wendy","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":3929021635,"result":2,"rounds":4,"time_s":3.599039316177368,"had_error":false,"curse":true}
@@ -1136,7 +1136,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"LASS:Tara","format":"doubles_uncursed","seed":3986234803,"result":1,"rounds":2,"time_s":2.0868136882781982,"had_error":false,"curse":true}
 {"trainer1":"SCIENTIST_F3:Viola","trainer2":"TRAINER_Zain:Zain#3","format":"doubles_uncursed","seed":1946677622,"result":2,"rounds":4,"time_s":5.296447038650513,"had_error":false,"curse":true}
 {"trainer1":"ROUGHNECK:Reese","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":774436263,"result":2,"rounds":5,"time_s":6.925995349884033,"had_error":false,"curse":true}
-{"trainer1":"JUGGLER:Youcef","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":2537056118,"result":2,"rounds":2,"time_s":2.68221378326416,"had_error":false,"curse":true}
+{"trainer1": "JUGGLER:Youcef", "trainer2": "MASKEDVILLAIN2:Teal#23", "format": "doubles_uncursed", "seed": 2537056118, "result": 2, "rounds": 2, "time_s": 2.3181817531585693, "had_error": false, "curse": true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#7","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":744559558,"result":1,"rounds":8,"time_s":11.634278774261475,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#9","trainer2":"FORMERCHAMP_Elise:Elise","format":"doubles_uncursed","seed":2466578793,"result":2,"rounds":5,"time_s":7.198400259017944,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#17","trainer2":"ANOTHERPOSSIBLETAMARIND:Tamarind","format":"doubles_uncursed","seed":2485151264,"result":1,"rounds":11,"time_s":14.175175905227661,"had_error":false,"curse":true}
@@ -1145,7 +1145,7 @@
 {"trainer1":"VETERANM_2:Roy","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":3184945591,"result":1,"rounds":9,"time_s":11.107399940490723,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#13","trainer2":"COLLECTOR:Mirko","format":"doubles_uncursed","seed":1744104128,"result":1,"rounds":3,"time_s":4.933786869049072,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#3","trainer2":"POKEMANIAC:Paris","format":"doubles_uncursed","seed":181768907,"result":1,"rounds":1,"time_s":1.1967504024505615,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"CLERK_F:Rosalie","format":"doubles_uncursed","seed":846100953,"result":1,"rounds":2,"time_s":3.5652735233306885,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "CLERK_F:Rosalie", "format": "doubles_uncursed", "seed": 846100953, "result": 1, "rounds": 2, "time_s": 2.81723690032959, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#5","trainer2":"COOLTRAINER_F7:Milja","format":"doubles_uncursed","seed":1334598745,"result":1,"rounds":4,"time_s":7.347580432891846,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#3","trainer2":"BIRDKEEPER_M2:Vlasta","format":"doubles_uncursed","seed":3971821509,"result":1,"rounds":8,"time_s":11.77855110168457,"had_error":false,"curse":true}
 {"trainer1":"TAPU_KOKO:Tapu Koko#1","trainer2":"EXPERTF:Kimiko","format":"doubles_uncursed","seed":2221702934,"result":1,"rounds":5,"time_s":7.894459247589111,"had_error":false,"curse":true}
@@ -1170,8 +1170,8 @@
 {"trainer1":"BATTLEGIRL3:Kryska","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":451984782,"result":2,"rounds":1,"time_s":1.6272122859954834,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Bence:Bence","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":2574346330,"result":2,"rounds":1,"time_s":1.2777657508850098,"had_error":false,"curse":true}
 {"trainer1":"BEAUTY3:Ester","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#13","format":"doubles_uncursed","seed":2705425504,"result":2,"rounds":2,"time_s":3.4159352779388428,"had_error":false,"curse":true}
-{"trainer1":"DITTO_PROTRAINER:Xandevon","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":1039778200,"result":2,"rounds":3,"time_s":5.685207843780518,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#21","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":1646985678,"result":1,"rounds":9,"time_s":8.931068658828735,"had_error":false,"curse":true}
+{"trainer1": "DITTO_PROTRAINER:Xandevon", "trainer2": "POKEMONTRAINER_Yezera:Yezera#9", "format": "doubles_uncursed", "seed": 1039778200, "result": 2, "rounds": 3, "time_s": 4.7143144607543945, "had_error": false, "curse": true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#21", "trainer2": "MASKEDVILLAIN2:Teal#11", "format": "doubles_uncursed", "seed": 1646985678, "result": 2, "rounds": 6, "time_s": 6.760327577590942, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"POKEMONTRAINER_Vanya:Vanya#3","format":"doubles_uncursed","seed":3327962589,"result":2,"rounds":5,"time_s":6.7994935512542725,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#1","trainer2":"TRAINER_Zain:Zain#2","format":"doubles_uncursed","seed":1933039151,"result":2,"rounds":3,"time_s":4.253493547439575,"had_error":false,"curse":true}
 {"trainer1":"DRAGONTAMER:Georgius","trainer2":"POKEMONTRAINER_Yezera:Yezera#3","format":"doubles_uncursed","seed":3393791357,"result":2,"rounds":3,"time_s":3.085902452468872,"had_error":false,"curse":true}
@@ -1182,7 +1182,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"BEAUTY5:Esme","format":"doubles_uncursed","seed":1683728156,"result":1,"rounds":4,"time_s":4.824749708175659,"had_error":false,"curse":true}
 {"trainer1":"COOLTRAINER_F3:Leah","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":2228370086,"result":2,"rounds":2,"time_s":2.0494396686553955,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#1","trainer2":"LEADER_Helena:Helena","format":"doubles_uncursed","seed":848100498,"result":2,"rounds":7,"time_s":8.491779565811157,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_F7:Jade","trainer2":"MASKEDVILLAIN:Crimson#3","format":"doubles_uncursed","seed":165896950,"result":2,"rounds":5,"time_s":4.966994047164917,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_F7:Jade", "trainer2": "MASKEDVILLAIN:Crimson#3", "format": "doubles_uncursed", "seed": 165896950, "result": 2, "rounds": 5, "time_s": 4.848423957824707, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"JUGGLER:Brickbat","format":"doubles_uncursed","seed":1055256261,"result":2,"rounds":6,"time_s":6.938582897186279,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#3","trainer2":"VETERANM_2:Kirbae","format":"doubles_uncursed","seed":1990890723,"result":2,"rounds":2,"time_s":2.3329994678497314,"had_error":false,"curse":true}
 {"trainer1":"ANOTHERPOSSIBLERAFAEL:Rafael","trainer2":"BIRDKEEPER_M2:Bernhard","format":"doubles_uncursed","seed":1756291154,"result":1,"rounds":1,"time_s":2.09142804145813,"had_error":false,"curse":true}
@@ -1226,9 +1226,9 @@
 {"trainer1":"VETERANM_2:Roy","trainer2":"LEADER_Lambert:Lambert#3","format":"doubles_uncursed","seed":2730834622,"result":2,"rounds":3,"time_s":5.960027456283569,"had_error":false,"curse":true}
 {"trainer1":"COLLECTOR:Mirko","trainer2":"MASKEDVILLAIN2:Teal#21","format":"doubles_uncursed","seed":1901103298,"result":2,"rounds":3,"time_s":4.125422477722168,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"POKEMANIAC:Paris","format":"doubles_uncursed","seed":1455013873,"result":1,"rounds":1,"time_s":1.5834832191467285,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"RUINMANIAC2:Bernard","format":"doubles_uncursed","seed":774627019,"result":1,"rounds":7,"time_s":8.790186643600464,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "RUINMANIAC2:Bernard", "format": "doubles_uncursed", "seed": 774627019, "result": 1, "rounds": 5, "time_s": 6.7261881828308105, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#6","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":180876046,"result":2,"rounds":5,"time_s":8.46927285194397,"had_error":false,"curse":true}
-{"trainer1":"SPIRITGUARDIAN3:Preeti","trainer2":"TRAINER_Zain:Zain#3","format":"doubles_uncursed","seed":3703240483,"result":1,"rounds":13,"time_s":18.06262516975403,"had_error":false,"curse":true}
+{"trainer1": "SPIRITGUARDIAN3:Preeti", "trainer2": "TRAINER_Zain:Zain#3", "format": "doubles_uncursed", "seed": 3703240483, "result": 1, "rounds": 31, "time_s": 15.918562173843384, "had_error": false, "curse": true}
 {"trainer1":"TOURISTM:Calvin","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":2744217660,"result":2,"rounds":6,"time_s":5.923668384552002,"had_error":false,"curse":true}
 {"trainer1":"COOLTRAINER_M7:X","trainer2":"LEADER_Eko:Eko#1","format":"doubles_uncursed","seed":1108493922,"result":1,"rounds":4,"time_s":5.360947847366333,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#5","trainer2":"TOURISTM:Francois","format":"doubles_uncursed","seed":848829088,"result":2,"rounds":4,"time_s":5.122663736343384,"had_error":false,"curse":true}
@@ -1253,27 +1253,27 @@
 {"trainer1":"BEAUTY3:Ester","trainer2":"ANOTHERPOSSIBLERAFAEL:Rafael","format":"doubles_uncursed","seed":3039744607,"result":2,"rounds":3,"time_s":2.9617044925689697,"had_error":false,"curse":true}
 {"trainer1":"CHALLENGER_Vanya:Vanya#4","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":1518390919,"result":2,"rounds":5,"time_s":5.831241130828857,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"WILDPARTY_FINI:of Hope","format":"doubles_uncursed","seed":4045983588,"result":1,"rounds":5,"time_s":5.27287745475769,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#7","trainer2":"MASKEDVILLAIN2:Teal#19","format":"doubles_uncursed","seed":3661138034,"result":2,"rounds":6,"time_s":9.891722917556763,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#7", "trainer2": "MASKEDVILLAIN2:Teal#19", "format": "doubles_uncursed", "seed": 3661138034, "result": 2, "rounds": 6, "time_s": 8.455929279327393, "had_error": false, "curse": true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#1","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#12","format":"doubles_uncursed","seed":2573932407,"result":2,"rounds":2,"time_s":2.962989568710327,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#3","trainer2":"WAITRESS:Carmilla","format":"doubles_uncursed","seed":3646530877,"result":2,"rounds":4,"time_s":4.165847301483154,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"POKEMONMASTER_Vanya:Vanya#15","format":"doubles_uncursed","seed":3802129342,"result":2,"rounds":5,"time_s":6.252665281295776,"had_error":false,"curse":true}
 {"trainer1":"TAPU_BULU:Tapu Bulu#1","trainer2":"KATY:Manycrows","format":"doubles_uncursed","seed":3111110522,"result":1,"rounds":8,"time_s":11.884949684143066,"had_error":false,"curse":true}
 {"trainer1":"TUBER_M:Derek","trainer2":"POKEMONTRAINER_Yezera:Yezera#9","format":"doubles_uncursed","seed":620587685,"result":2,"rounds":2,"time_s":1.97883939743042,"had_error":false,"curse":true}
-{"trainer1":"YOUNGSTER:Buzim","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":3228869122,"result":2,"rounds":3,"time_s":3.6267404556274414,"had_error":false,"curse":true}
+{"trainer1": "YOUNGSTER:Buzim", "trainer2": "MASKEDVILLAIN2:Teal#23", "format": "doubles_uncursed", "seed": 3228869122, "result": 2, "rounds": 6, "time_s": 6.243958950042725, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"TEENAGERM:Burke","format":"doubles_uncursed","seed":2367465060,"result":1,"rounds":3,"time_s":2.86257266998291,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"BUTLER:Sagan","format":"doubles_uncursed","seed":2021931926,"result":1,"rounds":5,"time_s":4.859375238418579,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_F7:Blaire","trainer2":"POKEMONTRAINER_Yezera:Yezera#1","format":"doubles_uncursed","seed":485905105,"result":1,"rounds":3,"time_s":4.5290069580078125,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_F7:Blaire", "trainer2": "POKEMONTRAINER_Yezera:Yezera#1", "format": "doubles_uncursed", "seed": 485905105, "result": 1, "rounds": 3, "time_s": 4.028430461883545, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"COOLTRAINER_F7:Jade","format":"doubles_uncursed","seed":4200957388,"result":1,"rounds":4,"time_s":4.77436900138855,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"CLERK_M2:Papper","format":"doubles_uncursed","seed":3150850802,"result":2,"rounds":4,"time_s":5.89387845993042,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"VETERANM_2:Kirbae","format":"doubles_uncursed","seed":3384158681,"result":1,"rounds":5,"time_s":6.598159313201904,"had_error":false,"curse":true}
 {"trainer1":"PSYCHIC_M2:Rohan","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":418642625,"result":2,"rounds":3,"time_s":3.850346803665161,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"MASKEDVILLAIN2:Teal#14","format":"doubles_uncursed","seed":3079922733,"result":1,"rounds":8,"time_s":9.310703992843628,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "MASKEDVILLAIN2:Teal#14", "format": "doubles_uncursed", "seed": 3079922733, "result": 1, "rounds": 7, "time_s": 7.453501462936401, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#7","trainer2":"LEADER_Lambert:Lambert#3","format":"doubles_uncursed","seed":414882611,"result":2,"rounds":5,"time_s":8.931316614151001,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#13","trainer2":"MASKEDVILLAIN2:Teal#16","format":"doubles_uncursed","seed":3654893662,"result":2,"rounds":10,"time_s":14.663395404815674,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#4","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":2147459314,"result":1,"rounds":3,"time_s":3.9305317401885986,"had_error":false,"curse":true}
 {"trainer1":"IDOL:Ishizu","trainer2":"LEADER_Bence:Bence#3","format":"doubles_uncursed","seed":2542640767,"result":2,"rounds":1,"time_s":1.4990863800048828,"had_error":false,"curse":true}
 {"trainer1":"TAPU_LELE:Tapu Lele#1","trainer2":"NINJABOY:Hwan","format":"doubles_uncursed","seed":352957818,"result":1,"rounds":1,"time_s":1.474949598312378,"had_error":false,"curse":true}
-{"trainer1":"SCIENTIST_F:LunaFlare","trainer2":"ANOTHERPOSSIBLERAFAEL:Rafael","format":"doubles_uncursed","seed":4132289084,"result":2,"rounds":4,"time_s":6.149278163909912,"had_error":false,"curse":true}
+{"trainer1": "SCIENTIST_F:LunaFlare", "trainer2": "ANOTHERPOSSIBLERAFAEL:Rafael", "format": "doubles_uncursed", "seed": 4132289084, "result": 2, "rounds": 4, "time_s": 5.635131359100342, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#7","trainer2":"TRAINER_Candy:Candy","format":"doubles_uncursed","seed":202991023,"result":1,"rounds":4,"time_s":3.8899986743927,"had_error":false,"curse":true}
 {"trainer1":"NIGHTMAREQUEEN_Elise:Elise","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":2042557397,"result":1,"rounds":5,"time_s":8.11684775352478,"had_error":false,"curse":true}
 {"trainer1":"GARDENER:Bud","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":3253142044,"result":1,"rounds":6,"time_s":6.231053352355957,"had_error":false,"curse":true}
@@ -1297,7 +1297,7 @@
 {"trainer1":"SCIENTIST_M2:Dexter","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":196405653,"result":1,"rounds":6,"time_s":6.863759517669678,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Victoire:Victoire","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":2093309411,"result":1,"rounds":4,"time_s":8.644339323043823,"had_error":false,"curse":true}
 {"trainer1":"AROMALADY:Cheshire","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":3227805306,"result":2,"rounds":3,"time_s":3.223472833633423,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"GAMBLER:Tiki","format":"doubles_uncursed","seed":573777442,"result":1,"rounds":9,"time_s":13.191221952438354,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "GAMBLER:Tiki", "format": "doubles_uncursed", "seed": 573777442, "result": 1, "rounds": 7, "time_s": 7.055272340774536, "had_error": false, "curse": true}
 {"trainer1":"BATTLEGIRL3:Amelia","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#13","format":"doubles_uncursed","seed":2833113045,"result":2,"rounds":5,"time_s":7.942610263824463,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#11","trainer2":"SCHOOLKID_F4:Lucia","format":"doubles_uncursed","seed":1626559508,"result":1,"rounds":4,"time_s":6.413085222244263,"had_error":false,"curse":true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#17","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":4118726224,"result":2,"rounds":7,"time_s":7.784370422363281,"had_error":false,"curse":true}
@@ -1319,7 +1319,7 @@
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"POKEMONMASTER_Vanya:Vanya#19","format":"doubles_uncursed","seed":1500423422,"result":2,"rounds":7,"time_s":8.088146209716797,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"HARLEQUIN:Regis","format":"doubles_uncursed","seed":2892401668,"result":2,"rounds":8,"time_s":8.591256380081177,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"LEADER_Eko:Eko#1","format":"doubles_uncursed","seed":1614175313,"result":2,"rounds":8,"time_s":9.1679105758667,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":1567471434,"result":1,"rounds":2,"time_s":2.7586841583251953,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "LEADER_Helena:Helena#1", "format": "doubles_uncursed", "seed": 1567471434, "result": 1, "rounds": 2, "time_s": 2.811600685119629, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#13","trainer2":"AROMALADY:Cheshire","format":"doubles_uncursed","seed":1871757779,"result":1,"rounds":3,"time_s":2.6816599369049072,"had_error":false,"curse":true}
 {"trainer1":"GAMBLER:Tiki","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":1288193522,"result":2,"rounds":10,"time_s":11.486106872558594,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"BATTLEGIRL3:Amelia","format":"doubles_uncursed","seed":3291351253,"result":1,"rounds":9,"time_s":11.275976657867432,"had_error":false,"curse":true}
@@ -1332,7 +1332,7 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"GAMBLER:Tiki","format":"doubles_uncursed","seed":3076288476,"result":1,"rounds":6,"time_s":10.123192548751831,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#21","trainer2":"BATTLEGIRL3:Amelia","format":"doubles_uncursed","seed":1518964414,"result":1,"rounds":8,"time_s":9.50741982460022,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#7","trainer2":"SCHOOLKID_F4:Lucia","format":"doubles_uncursed","seed":999695818,"result":1,"rounds":7,"time_s":8.472124576568604,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#21","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":659185013,"result":1,"rounds":8,"time_s":10.642228603363037,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#21", "trainer2": "MASKEDVILLAIN2_DOUBLE:Teal#1", "format": "doubles_uncursed", "seed": 659185013, "result": 1, "rounds": 7, "time_s": 8.342798948287964, "had_error": false, "curse": true}
 {"trainer1":"CHEF:Gordon","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":2744984360,"result":2,"rounds":4,"time_s":7.635133981704712,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"LINEBACKER:Josh","format":"doubles_uncursed","seed":277910379,"result":1,"rounds":9,"time_s":8.192999362945557,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"POKEMONTRAINER_Yezera:Yezera#7","format":"doubles_uncursed","seed":3161021638,"result":2,"rounds":3,"time_s":3.908250570297241,"had_error":false,"curse":true}
@@ -1379,7 +1379,7 @@
 {"trainer1":"AROMALADY:Cheshire","trainer2":"TAPU_LELE:Tapu Lele#1","format":"doubles_uncursed","seed":3120696119,"result":2,"rounds":3,"time_s":3.425229787826538,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"GAMBLER:Tiki","format":"doubles_uncursed","seed":2959834197,"result":1,"rounds":6,"time_s":10.98494577407837,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#21","trainer2":"BATTLEGIRL3:Amelia","format":"doubles_uncursed","seed":2767710135,"result":1,"rounds":8,"time_s":9.977492570877075,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"SCHOOLKID_F4:Lucia","format":"doubles_uncursed","seed":345921122,"result":1,"rounds":6,"time_s":9.910306930541992,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "SCHOOLKID_F4:Lucia", "format": "doubles_uncursed", "seed": 345921122, "result": 1, "rounds": 7, "time_s": 6.988117694854736, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"TAPU_LELE:Tapu Lele#1","format":"doubles_uncursed","seed":2231942694,"result":1,"rounds":7,"time_s":11.688395023345947,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"IDEALTRAINER:of Colors","format":"doubles_uncursed","seed":998823274,"result":2,"rounds":8,"time_s":12.778045415878296,"had_error":false,"curse":true}
 {"trainer1":"MAID:Alice","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":2801449060,"result":1,"rounds":5,"time_s":6.6479651927948,"had_error":false,"curse":true}
@@ -1439,10 +1439,10 @@
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"WILDPACK:Solar","format":"doubles_uncursed","seed":1350856423,"result":1,"rounds":4,"time_s":5.930264472961426,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"ARTIFICIALTRAINER:Trinity","format":"doubles_uncursed","seed":1571294379,"result":1,"rounds":32,"time_s":18.451339721679688,"had_error":false,"curse":true}
 {"trainer1":"GUITARIST3:Mai","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":3405566531,"result":1,"rounds":5,"time_s":4.456511735916138,"had_error":false,"curse":true}
-{"trainer1":"LASS:Rovina","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":468604135,"result":1,"rounds":7,"time_s":8.135591268539429,"had_error":false,"curse":true}
+{"trainer1": "LASS:Rovina", "trainer2": "LEADER_Helena:Helena#1", "format": "doubles_uncursed", "seed": 468604135, "result": 1, "rounds": 6, "time_s": 7.332925081253052, "had_error": false, "curse": true}
 {"trainer1":"POKEMONRANGER_M:Ivan","trainer2":"MASKEDVILLAIN_Sang:Silver#1","format":"doubles_uncursed","seed":1310557390,"result":2,"rounds":1,"time_s":1.3183095455169678,"had_error":false,"curse":true}
 {"trainer1":"RICHBOY:Splitmoon","trainer2":"TRAINER_Zain:Zain#1","format":"doubles_uncursed","seed":3488794078,"result":1,"rounds":4,"time_s":5.894633054733276,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"BATTLEGIRL2:Juniper","format":"doubles_uncursed","seed":4090054059,"result":2,"rounds":8,"time_s":8.590166330337524,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "BATTLEGIRL2:Juniper", "format": "doubles_uncursed", "seed": 4090054059, "result": 2, "rounds": 7, "time_s": 7.882425546646118, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#15","trainer2":"SCHOOLKID_F4:Lucia","format":"doubles_uncursed","seed":1427555289,"result":1,"rounds":4,"time_s":4.338321208953857,"had_error":false,"curse":true}
 {"trainer1":"WILDPACK:Lunar","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":4044509344,"result":2,"rounds":8,"time_s":9.647971868515015,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"POKEMONRANGER_F2_GANG:Mina","format":"doubles_uncursed","seed":4044393983,"result":2,"rounds":16,"time_s":15.325907707214355,"had_error":false,"curse":true}
@@ -1456,7 +1456,7 @@
 {"trainer1":"POKEMONRANGER_F_GANG:Amber","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":1731490143,"result":2,"rounds":7,"time_s":7.3640031814575195,"had_error":false,"curse":true}
 {"trainer1":"RICHBOY2:Theodore","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":3042928475,"result":2,"rounds":11,"time_s":8.9414701461792,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"FORMERCHAMP_Chara:Chara","format":"doubles_uncursed","seed":4254958510,"result":2,"rounds":2,"time_s":3.513742208480835,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"POKEMONRANGER_M:Ivan","format":"doubles_uncursed","seed":1221484123,"result":1,"rounds":2,"time_s":1.949418544769287,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "POKEMONRANGER_M:Ivan", "format": "doubles_uncursed", "seed": 1221484123, "result": 1, "rounds": 2, "time_s": 1.683741569519043, "had_error": false, "curse": true}
 {"trainer1":"RICHBOY:Splitmoon","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":3139739826,"result":1,"rounds":7,"time_s":10.236228466033936,"had_error":false,"curse":true}
 {"trainer1":"BATTLEGIRL2:Juniper","trainer2":"TRAINER_Sang:Sang#3","format":"doubles_uncursed","seed":2983772734,"result":2,"rounds":4,"time_s":5.882613182067871,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#19","trainer2":"SCHOOLKID_F4:Lucia","format":"doubles_uncursed","seed":2052194517,"result":1,"rounds":8,"time_s":11.176127195358276,"had_error":false,"curse":true}
@@ -1477,11 +1477,11 @@
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#1","trainer2":"BATTLEGIRL2:Juniper","format":"doubles_uncursed","seed":3277699349,"result":2,"rounds":6,"time_s":7.866174221038818,"had_error":false,"curse":true}
 {"trainer1":"SCHOOLKID_F4:Lucia","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":3012479836,"result":2,"rounds":4,"time_s":3.9055657386779785,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"WILDPACK:Cosmic","format":"doubles_uncursed","seed":960145372,"result":2,"rounds":7,"time_s":7.490329265594482,"had_error":false,"curse":true}
-{"trainer1":"WAITER:Aaron","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":3758712784,"result":2,"rounds":6,"time_s":6.327564001083374,"had_error":false,"curse":true}
+{"trainer1": "WAITER:Aaron", "trainer2": "MASKEDVILLAIN:Crimson#17", "format": "doubles_uncursed", "seed": 3758712784, "result": 2, "rounds": 17, "time_s": 16.393054246902466, "had_error": false, "curse": true}
 {"trainer1":"IDOL:Ishizu","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":2669297533,"result":1,"rounds":6,"time_s":9.260003328323364,"had_error":false,"curse":true}
 {"trainer1":"BUGCATCHER2:Rangsan","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":4293986697,"result":1,"rounds":2,"time_s":5.983859062194824,"had_error":false,"curse":true}
 {"trainer1":"POKEMONRANGER_M:Ivan","trainer2":"MASKEDVILLAIN:Crimson#3","format":"doubles_uncursed","seed":2899044728,"result":2,"rounds":1,"time_s":2.5695154666900635,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"RICHBOY:Splitmoon","format":"doubles_uncursed","seed":298479612,"result":2,"rounds":8,"time_s":17.349871397018433,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "RICHBOY:Splitmoon", "format": "doubles_uncursed", "seed": 298479612, "result": 2, "rounds": 8, "time_s": 7.999742269515991, "had_error": false, "curse": true}
 {"trainer1":"BATTLEGIRL2:Juniper","trainer2":"MASKEDVILLAIN:Crimson#3","format":"doubles_uncursed","seed":2030508637,"result":1,"rounds":7,"time_s":11.557255029678345,"had_error":false,"curse":true}
 {"trainer1":"SCHOOLKID_F4:Lucia","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":1490744753,"result":2,"rounds":3,"time_s":10.172720670700073,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"SAILOR2:Noah","format":"doubles_uncursed","seed":3083697211,"result":1,"rounds":2,"time_s":3.6427879333496094,"had_error":false,"curse":true}
@@ -1531,7 +1531,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"POKEMONRANGER_M:Ivan","format":"doubles_uncursed","seed":2401922481,"result":1,"rounds":1,"time_s":0.9152171611785889,"had_error":false,"curse":true}
 {"trainer1":"RICHBOY:Splitmoon","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":3134990549,"result":1,"rounds":6,"time_s":8.789366245269775,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"BATTLEGIRL2:Juniper","format":"doubles_uncursed","seed":1608727444,"result":2,"rounds":7,"time_s":6.730978012084961,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"BUGCATCHER2:Rangsan","format":"doubles_uncursed","seed":3085543271,"result":1,"rounds":3,"time_s":4.533446788787842,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "BUGCATCHER2:Rangsan", "format": "doubles_uncursed", "seed": 3085543271, "result": 1, "rounds": 4, "time_s": 3.9826252460479736, "had_error": false, "curse": true}
 {"trainer1":"NIGHTMARE_TRAINER:Torment","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":3786495039,"result":2,"rounds":6,"time_s":5.263854026794434,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#18","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":758572085,"result":2,"rounds":5,"time_s":6.742979288101196,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"COOLTRAINER_F7:Jade","format":"doubles_uncursed","seed":1337506459,"result":2,"rounds":7,"time_s":8.113919734954834,"had_error":false,"curse":true}
@@ -1558,7 +1558,7 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#3","trainer2":"BUGCATCHER2:Rangsan","format":"doubles_uncursed","seed":4239452164,"result":2,"rounds":6,"time_s":7.241368055343628,"had_error":false,"curse":true}
 {"trainer1":"BIRDKEEPER_F:Danika","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":1855120843,"result":1,"rounds":6,"time_s":8.288168668746948,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#21","trainer2":"MASKEDVILLAIN:Crimson#18","format":"doubles_uncursed","seed":1959795730,"result":2,"rounds":10,"time_s":13.1838858127594,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_F7:Nyx","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":2977753790,"result":1,"rounds":2,"time_s":3.2355663776397705,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_F7:Nyx", "trainer2": "LEADER_Lambert:Lambert#1", "format": "doubles_uncursed", "seed": 2977753790, "result": 1, "rounds": 2, "time_s": 3.1700174808502197, "had_error": false, "curse": true}
 {"trainer1":"BACKERS_F:Maria and Iveta","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":2765278403,"result":1,"rounds":2,"time_s":3.4446074962615967,"had_error":false,"curse":true}
 {"trainer1":"POKEMONRANGER_M:Ivan","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":559360642,"result":2,"rounds":1,"time_s":1.115447998046875,"had_error":false,"curse":true}
 {"trainer1":"RICHBOY:Splitmoon","trainer2":"MASKEDVILLAIN2:Teal#5","format":"doubles_uncursed","seed":631976656,"result":1,"rounds":7,"time_s":9.680794715881348,"had_error":false,"curse":true}
@@ -1566,7 +1566,7 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#5","trainer2":"BUGCATCHER2:Rangsan","format":"doubles_uncursed","seed":2301516610,"result":2,"rounds":6,"time_s":7.770692586898804,"had_error":false,"curse":true}
 {"trainer1":"COOLTRAINERSQUAD_2:Shouta and Kaede","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":3103801085,"result":2,"rounds":9,"time_s":7.440051317214966,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#23","trainer2":"MASKEDVILLAIN:Crimson#18","format":"doubles_uncursed","seed":1588142480,"result":1,"rounds":6,"time_s":8.996314525604248,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_M7:Nero","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":3880760844,"result":1,"rounds":3,"time_s":3.9556663036346436,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_M7:Nero", "trainer2": "LEADER_Lambert:Lambert#1", "format": "doubles_uncursed", "seed": 3880760844, "result": 1, "rounds": 3, "time_s": 3.5986952781677246, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"PSYCHIC_F3:Felicia","format":"doubles_uncursed","seed":817417083,"result":2,"rounds":3,"time_s":4.364655256271362,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#3","trainer2":"POKEMONRANGER_M:Ivan","format":"doubles_uncursed","seed":2862699095,"result":1,"rounds":1,"time_s":1.4929497241973877,"had_error":false,"curse":true}
 {"trainer1":"RICHBOY:Splitmoon","trainer2":"MASKEDVILLAIN2:Teal#7","format":"doubles_uncursed","seed":1878930962,"result":1,"rounds":6,"time_s":9.120802879333496,"had_error":false,"curse":true}
@@ -1592,9 +1592,9 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#18","trainer2":"TAPU_BULU:Tapu Bulu#1","format":"doubles_uncursed","seed":1649458077,"result":2,"rounds":5,"time_s":5.40391993522644,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"POKEMONTRAINER_Yezera:Yezera#4","format":"doubles_uncursed","seed":1477876037,"result":2,"rounds":2,"time_s":3.174229145050049,"had_error":false,"curse":true}
 {"trainer1":"TUBER_F2:Hana","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":380274622,"result":1,"rounds":2,"time_s":2.876262664794922,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"POKEMONRANGER_M:Ivan","format":"doubles_uncursed","seed":2516857693,"result":1,"rounds":1,"time_s":1.1462175846099854,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "POKEMONRANGER_M:Ivan", "format": "doubles_uncursed", "seed": 2516857693, "result": 1, "rounds": 1, "time_s": 1.1341674327850342, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Lambert:Lambert#3","trainer2":"RICHBOY:Splitmoon","format":"doubles_uncursed","seed":3627878768,"result":1,"rounds":8,"time_s":8.460255861282349,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"BATTLEGIRL2:Juniper","format":"doubles_uncursed","seed":4148199352,"result":1,"rounds":6,"time_s":7.695151090621948,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "BATTLEGIRL2:Juniper", "format": "doubles_uncursed", "seed": 4148199352, "result": 1, "rounds": 6, "time_s": 6.819635629653931, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"BUGCATCHER2:Rangsan","format":"doubles_uncursed","seed":2991208581,"result":1,"rounds":6,"time_s":7.1857030391693115,"had_error":false,"curse":true}
 {"trainer1":"BURGLAR:Martino","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":835648340,"result":2,"rounds":18,"time_s":8.30743145942688,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#18","trainer2":"TAPU_FINI:Tapu Fini#1","format":"doubles_uncursed","seed":832228637,"result":1,"rounds":7,"time_s":8.619019508361816,"had_error":false,"curse":true}
@@ -1762,7 +1762,7 @@
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"MASKEDVILLAIN2:Teal#4","format":"doubles_uncursed","seed":2680239346,"result":2,"rounds":3,"time_s":9.428942203521729,"had_error":false,"curse":true}
 {"trainer1":"FAIRYTALEGIRL:Maja","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":857221193,"result":2,"rounds":2,"time_s":2.50393009185791,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Zain:Zain#1","trainer2":"JANITOR:Steeb","format":"doubles_uncursed","seed":550631563,"result":2,"rounds":3,"time_s":8.212297677993774,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"BLACKBELT:Leo","format":"doubles_uncursed","seed":1394769655,"result":1,"rounds":7,"time_s":19.491571187973022,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "BLACKBELT:Leo", "format": "doubles_uncursed", "seed": 1394769655, "result": 2, "rounds": 6, "time_s": 7.01964259147644, "had_error": false, "curse": true}
 {"trainer1":"BUGCATCHER2:Rangsan","trainer2":"MASKEDVILLAIN2:Teal#23","format":"doubles_uncursed","seed":3457959935,"result":2,"rounds":2,"time_s":4.634120941162109,"had_error":false,"curse":true}
 {"trainer1":"HARLEQUIN:Regis","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":23033840,"result":1,"rounds":7,"time_s":10.953541040420532,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"SHADOWMAVIS:Mavis#1","format":"doubles_uncursed","seed":1729899653,"result":2,"rounds":6,"time_s":16.014698266983032,"had_error":false,"curse":true}
@@ -1801,7 +1801,7 @@
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"BACKPACKER_F:Aiyana","format":"doubles_uncursed","seed":78519780,"result":2,"rounds":5,"time_s":4.568122625350952,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":2968560671,"result":1,"rounds":3,"time_s":4.23361349105835,"had_error":false,"curse":true}
 {"trainer1":"FAIRYTALEGIRL:Maja","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":1486666188,"result":2,"rounds":1,"time_s":1.0589311122894287,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"JANITOR:Steeb","format":"doubles_uncursed","seed":966624105,"result":2,"rounds":6,"time_s":6.716355562210083,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "JANITOR:Steeb", "format": "doubles_uncursed", "seed": 966624105, "result": 2, "rounds": 8, "time_s": 8.432363748550415, "had_error": false, "curse": true}
 {"trainer1":"BLACKBELT:Leo","trainer2":"MASKEDVILLAIN:Crimson#7","format":"doubles_uncursed","seed":2941743888,"result":1,"rounds":6,"time_s":8.166086435317993,"had_error":false,"curse":true}
 {"trainer1":"BUGCATCHER2:Rangsan","trainer2":"ANOTHERPOSSIBLERAFAEL:Rafael","format":"doubles_uncursed","seed":3347564425,"result":2,"rounds":3,"time_s":3.5089895725250244,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"IDEALTRAINER:of Tradition","format":"doubles_uncursed","seed":351387142,"result":2,"rounds":10,"time_s":8.710971117019653,"had_error":false,"curse":true}
@@ -1819,7 +1819,7 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#5","trainer2":"FAIRYTALEGIRL:Maja","format":"doubles_uncursed","seed":118412450,"result":1,"rounds":1,"time_s":1.210143804550171,"had_error":false,"curse":true}
 {"trainer1":"JANITOR:Steeb","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#1","format":"doubles_uncursed","seed":1800289602,"result":1,"rounds":7,"time_s":8.908732175827026,"had_error":false,"curse":true}
 {"trainer1":"BLACKBELT:Leo","trainer2":"MASKEDVILLAIN:Crimson#11","format":"doubles_uncursed","seed":2225975367,"result":1,"rounds":7,"time_s":11.012124061584473,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"LEADER_Samorn:Samorn","format":"doubles_uncursed","seed":904317549,"result":2,"rounds":6,"time_s":9.079437971115112,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "LEADER_Samorn:Samorn", "format": "doubles_uncursed", "seed": 904317549, "result": 1, "rounds": 5, "time_s": 6.832638263702393, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"IDEALTRAINER:of Riches","format":"doubles_uncursed","seed":360874070,"result":2,"rounds":6,"time_s":8.685789108276367,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"TRAINER_Skyler:Skyler","format":"doubles_uncursed","seed":1298341241,"result":2,"rounds":9,"time_s":13.1005380153656,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"POKEMONRANGER_F:Val","format":"doubles_uncursed","seed":331883765,"result":2,"rounds":5,"time_s":5.0709381103515625,"had_error":false,"curse":true}
@@ -1898,7 +1898,7 @@
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"FORMERCHAMP_Elise:Elise#1","format":"doubles_uncursed","seed":500405020,"result":2,"rounds":4,"time_s":5.073361396789551,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#3","trainer2":"FAIRYTALEGIRL:Maja","format":"doubles_uncursed","seed":244013099,"result":1,"rounds":1,"time_s":1.123046636581421,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#9","trainer2":"JANITOR:Steeb","format":"doubles_uncursed","seed":915168009,"result":2,"rounds":6,"time_s":7.042266368865967,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"BLACKBELT:Leo","format":"doubles_uncursed","seed":1160934705,"result":1,"rounds":8,"time_s":8.519299030303955,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "BLACKBELT:Leo", "format": "doubles_uncursed", "seed": 1160934705, "result": 1, "rounds": 8, "time_s": 7.45264196395874, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"LEADER_Samorn:Samorn","format":"doubles_uncursed","seed":3813621761,"result":2,"rounds":6,"time_s":8.725622177124023,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#1","trainer2":"POKEMONRANGER_F_GANG:Amber","format":"doubles_uncursed","seed":2429523659,"result":1,"rounds":10,"time_s":8.774268865585327,"had_error":false,"curse":true}
 {"trainer1":"LOST_RANGER_BLUE:Farid","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":3196136478,"result":2,"rounds":6,"time_s":7.164791584014893,"had_error":false,"curse":true}
@@ -1920,7 +1920,7 @@
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"LOST_RANGER_PURPLE:Farid","format":"doubles_uncursed","seed":4230492366,"result":1,"rounds":5,"time_s":5.7134315967559814,"had_error":false,"curse":true}
 {"trainer1":"GUITARIST2:Alan","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":3683510949,"result":1,"rounds":3,"time_s":3.597362518310547,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"LEADER_Helena:Helena#2","format":"doubles_uncursed","seed":1490478962,"result":2,"rounds":3,"time_s":5.09802508354187,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"FAIRYTALEGIRL:Maja","format":"doubles_uncursed","seed":3961668897,"result":1,"rounds":1,"time_s":0.9746577739715576,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "FAIRYTALEGIRL:Maja", "format": "doubles_uncursed", "seed": 3961668897, "result": 1, "rounds": 1, "time_s": 1.6650683879852295, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Bence:Bence#3","trainer2":"JANITOR:Steeb","format":"doubles_uncursed","seed":610533413,"result":1,"rounds":9,"time_s":10.215142011642456,"had_error":false,"curse":true}
 {"trainer1":"BLACKBELT:Leo","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":3199134593,"result":2,"rounds":7,"time_s":9.578319549560547,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#11","trainer2":"LEADER_Samorn:Samorn","format":"doubles_uncursed","seed":142076628,"result":1,"rounds":6,"time_s":10.94573163986206,"had_error":false,"curse":true}
@@ -1932,7 +1932,7 @@
 {"trainer1":"TRAINER_Zain:Zain#3","trainer2":"JANITOR:Steeb","format":"doubles_uncursed","seed":53228233,"result":2,"rounds":7,"time_s":8.971911668777466,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"BLACKBELT:Leo","format":"doubles_uncursed","seed":1256490319,"result":2,"rounds":7,"time_s":8.315872192382812,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Samorn:Samorn","trainer2":"LEADER_Lambert:Lambert#3","format":"doubles_uncursed","seed":671534177,"result":1,"rounds":5,"time_s":6.823591470718384,"had_error":false,"curse":true}
-{"trainer1":"COOLTRAINER_F7:Milja","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#1","format":"doubles_uncursed","seed":139187870,"result":2,"rounds":2,"time_s":2.9346117973327637,"had_error":false,"curse":true}
+{"trainer1": "COOLTRAINER_F7:Milja", "trainer2": "MASKEDVILLAIN2_DOUBLE:Teal#1", "format": "doubles_uncursed", "seed": 139187870, "result": 2, "rounds": 2, "time_s": 3.0616743564605713, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"MEDIUM:Paula","format":"doubles_uncursed","seed":426763525,"result":1,"rounds":5,"time_s":4.95604395866394,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":1574096451,"result":1,"rounds":4,"time_s":4.219421625137329,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Bence:Bence#3","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":3964566707,"result":1,"rounds":3,"time_s":5.1455724239349365,"had_error":false,"curse":true}
@@ -1959,7 +1959,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"MASKEDVILLAIN2:Teal#2","format":"doubles_uncursed","seed":3376240246,"result":1,"rounds":8,"time_s":11.046145915985107,"had_error":false,"curse":true}
 {"trainer1":"GUITARIST3:Athena","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":122768391,"result":2,"rounds":4,"time_s":6.2221150398254395,"had_error":false,"curse":true}
 {"trainer1":"ULTRALAINIE:Lainie","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":983426297,"result":1,"rounds":3,"time_s":3.07789945602417,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#4","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":1580195448,"result":1,"rounds":2,"time_s":2.9879493713378906,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#4", "trainer2": "LEADER_Helena:Helena#1", "format": "doubles_uncursed", "seed": 1580195448, "result": 1, "rounds": 2, "time_s": 3.348587989807129, "had_error": false, "curse": true}
 {"trainer1":"FAIRYTALEGIRL:Maja","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":604527252,"result":2,"rounds":1,"time_s":1.5658137798309326,"had_error":false,"curse":true}
 {"trainer1":"JANITOR:Steeb","trainer2":"MASKEDVILLAIN:Crimson#17","format":"doubles_uncursed","seed":1167384159,"result":2,"rounds":6,"time_s":9.501361846923828,"had_error":false,"curse":true}
 {"trainer1":"BLACKBELT:Leo","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":498671082,"result":2,"rounds":6,"time_s":8.254153490066528,"had_error":false,"curse":true}
@@ -2050,7 +2050,7 @@
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"MASKEDVILLAIN:Crimson#15","format":"doubles_uncursed","seed":186583691,"result":2,"rounds":2,"time_s":3.0439441204071045,"had_error":false,"curse":true}
 {"trainer1":"TAPU_FINI:Tapu Fini#1","trainer2":"FAIRYTALEGIRL:Maja","format":"doubles_uncursed","seed":4044471186,"result":1,"rounds":1,"time_s":1.483402967453003,"had_error":false,"curse":true}
 {"trainer1":"JANITOR:Steeb","trainer2":"TAPU_LELE:Tapu Lele#1","format":"doubles_uncursed","seed":4018902140,"result":1,"rounds":10,"time_s":7.648639440536499,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"FORMERCHAMP_Scilla:Scilla","format":"doubles_uncursed","seed":4170442005,"result":2,"rounds":6,"time_s":7.641379356384277,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "FORMERCHAMP_Scilla:Scilla", "format": "doubles_uncursed", "seed": 4170442005, "result": 2, "rounds": 5, "time_s": 6.150198459625244, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#23","trainer2":"LEADER_Samorn:Samorn","format":"doubles_uncursed","seed":2046503221,"result":1,"rounds":5,"time_s":6.659648656845093,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#2","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":3226046793,"result":2,"rounds":11,"time_s":9.31322979927063,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"DITTO_RANGER:Hannamy","format":"doubles_uncursed","seed":3937555645,"result":1,"rounds":1,"time_s":1.2893497943878174,"had_error":false,"curse":true}
@@ -2061,7 +2061,7 @@
 {"trainer1":"LEADER_Samorn:Samorn#1","trainer2":"FORMERCHAMP_Scilla:Scilla","format":"doubles_uncursed","seed":1667109390,"result":2,"rounds":3,"time_s":5.99216365814209,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Samorn:Samorn","trainer2":"TAPU_KOKO:Tapu Koko#1","format":"doubles_uncursed","seed":1511663224,"result":2,"rounds":6,"time_s":10.676622152328491,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#23","trainer2":"MASKEDVILLAIN2:Teal#2","format":"doubles_uncursed","seed":1014913003,"result":1,"rounds":9,"time_s":9.81494688987732,"had_error":false,"curse":true}
-{"trainer1":"DITTO_PROTRAINER:Xandevon","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":3168793751,"result":2,"rounds":4,"time_s":8.016412258148193,"had_error":false,"curse":true}
+{"trainer1": "DITTO_PROTRAINER:Xandevon", "trainer2": "MASKEDVILLAIN:Crimson#19", "format": "doubles_uncursed", "seed": 3168793751, "result": 2, "rounds": 4, "time_s": 5.722825527191162, "had_error": false, "curse": true}
 {"trainer1":"JOGGER:Georgio","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":2980595659,"result":1,"rounds":4,"time_s":4.243111848831177,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":1134571721,"result":1,"rounds":3,"time_s":4.137149095535278,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"HOOPSTER:Jerel","format":"doubles_uncursed","seed":4016535835,"result":1,"rounds":2,"time_s":1.938335657119751,"had_error":false,"curse":true}
@@ -2096,7 +2096,7 @@
 {"trainer1":"ANCIENTPRIEST:Dobromil","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":83744606,"result":2,"rounds":4,"time_s":3.913072347640991,"had_error":false,"curse":true}
 {"trainer1":"BIKER2:Chuck","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":2767771764,"result":1,"rounds":3,"time_s":3.9624147415161133,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#21","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":2463715948,"result":1,"rounds":3,"time_s":3.6069982051849365,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"HOOPSTER:Jerel","format":"doubles_uncursed","seed":866453568,"result":1,"rounds":1,"time_s":1.186514139175415,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "HOOPSTER:Jerel", "format": "doubles_uncursed", "seed": 866453568, "result": 1, "rounds": 1, "time_s": 2.0297770500183105, "had_error": false, "curse": true}
 {"trainer1":"GENTLEMAN3:D","trainer2":"LEADER_Victoire:Victoire#1","format":"doubles_uncursed","seed":330434691,"result":2,"rounds":6,"time_s":8.49094557762146,"had_error":false,"curse":true}
 {"trainer1":"FORMERCHAMP_Scilla:Scilla","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":1770596325,"result":1,"rounds":7,"time_s":9.075615406036377,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Samorn:Samorn#1","trainer2":"FIREBREATHER:Bradley","format":"doubles_uncursed","seed":297187173,"result":1,"rounds":4,"time_s":5.317456483840942,"had_error":false,"curse":true}
@@ -2121,7 +2121,7 @@
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"CLERK_M2:Alejandro","format":"doubles_uncursed","seed":1497163968,"result":2,"rounds":3,"time_s":3.9301986694335938,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2_DOUBLE:Teal#12","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":3327278735,"result":1,"rounds":4,"time_s":4.325155735015869,"had_error":false,"curse":true}
 {"trainer1":"POKEMONTRAINER_Yezera:Yezera#9","trainer2":"HOOPSTER:Jerel","format":"doubles_uncursed","seed":793189218,"result":1,"rounds":1,"time_s":1.2518608570098877,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"GENTLEMAN3:D","format":"doubles_uncursed","seed":2943573037,"result":1,"rounds":5,"time_s":6.171225309371948,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "GENTLEMAN3:D", "format": "doubles_uncursed", "seed": 2943573037, "result": 1, "rounds": 10, "time_s": 8.329401969909668, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#11","trainer2":"FORMERCHAMP_Scilla:Scilla","format":"doubles_uncursed","seed":58339440,"result":2,"rounds":5,"time_s":7.402803659439087,"had_error":false,"curse":true}
 {"trainer1":"BLACKBELT:Kai","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":653215484,"result":2,"rounds":4,"time_s":5.143326997756958,"had_error":false,"curse":true}
 {"trainer1":"TAPU_LELE:Tapu Lele#1","trainer2":"MASKEDVILLAIN2:Teal#2","format":"doubles_uncursed","seed":566007119,"result":1,"rounds":19,"time_s":11.975781440734863,"had_error":false,"curse":true}
@@ -2139,7 +2139,7 @@
 {"trainer1":"HOOPSTER:Jerel","trainer2":"MASKEDVILLAIN:Crimson#3","format":"doubles_uncursed","seed":389683222,"result":2,"rounds":1,"time_s":1.598541259765625,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#1","trainer2":"GENTLEMAN3:D","format":"doubles_uncursed","seed":2321698406,"result":1,"rounds":7,"time_s":15.515854597091675,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"FORMERCHAMP_Scilla:Scilla","format":"doubles_uncursed","seed":1007193322,"result":2,"rounds":4,"time_s":8.389350175857544,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#3","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":2023226015,"result":2,"rounds":12,"time_s":17.06779456138611,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#3", "trainer2": "LEADER_Samorn:Samorn#1", "format": "doubles_uncursed", "seed": 2023226015, "result": 1, "rounds": 8, "time_s": 10.41262674331665, "had_error": false, "curse": true}
 {"trainer1":"TAPU_FINI:Tapu Fini#1","trainer2":"MASKEDVILLAIN2:Teal#2","format":"doubles_uncursed","seed":2276670543,"result":1,"rounds":10,"time_s":14.549463033676147,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"CHALLENGER_Vanya:Vanya#4","format":"doubles_uncursed","seed":3332746536,"result":1,"rounds":4,"time_s":8.511480569839478,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"CEO:Beatrice","format":"doubles_uncursed","seed":182214561,"result":2,"rounds":2,"time_s":3.8144009113311768,"had_error":false,"curse":true}
@@ -2171,7 +2171,7 @@
 {"trainer1":"HOOPSTER:Jerel","trainer2":"MASKEDVILLAIN:Crimson#11","format":"doubles_uncursed","seed":1547026309,"result":2,"rounds":1,"time_s":2.749009132385254,"had_error":false,"curse":true}
 {"trainer1":"GENTLEMAN3:D","trainer2":"MASKEDVILLAIN:Crimson#9","format":"doubles_uncursed","seed":530681092,"result":2,"rounds":6,"time_s":14.55034875869751,"had_error":false,"curse":true}
 {"trainer1":"FORMERCHAMP_Scilla:Scilla","trainer2":"MASKEDVILLAIN2:Teal#11","format":"doubles_uncursed","seed":898799609,"result":1,"rounds":6,"time_s":15.67634630203247,"had_error":false,"curse":true}
-{"trainer1":"YOUNGSTER:Buzim","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":3518360724,"result":2,"rounds":4,"time_s":14.40481972694397,"had_error":false,"curse":true}
+{"trainer1": "YOUNGSTER:Buzim", "trainer2": "LEADER_Samorn:Samorn#1", "format": "doubles_uncursed", "seed": 3518360724, "result": 2, "rounds": 6, "time_s": 6.928021430969238, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"MASKEDVILLAIN2:Teal#6","format":"doubles_uncursed","seed":1905659316,"result":1,"rounds":7,"time_s":11.640834093093872,"had_error":false,"curse":true}
 {"trainer1":"CHALLENGER_Vanya:Vanya#8","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":1282619332,"result":2,"rounds":12,"time_s":15.538917064666748,"had_error":false,"curse":true}
 {"trainer1":"DOCTOR:Peio","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":398079509,"result":1,"rounds":2,"time_s":5.782272577285767,"had_error":false,"curse":true}
@@ -2257,7 +2257,7 @@
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"SMASHER:Stella","format":"doubles_uncursed","seed":3626749815,"result":2,"rounds":3,"time_s":4.103513956069946,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"TRAINER_Candy:Candy#1","format":"doubles_uncursed","seed":666046685,"result":2,"rounds":3,"time_s":4.299432992935181,"had_error":false,"curse":true}
 {"trainer1":"HOOPSTER:Jerel","trainer2":"MASKEDVILLAIN_DOUBLE:Crimson#13","format":"doubles_uncursed","seed":2835627405,"result":2,"rounds":1,"time_s":1.1551642417907715,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"GENTLEMAN3:D","format":"doubles_uncursed","seed":305456043,"result":1,"rounds":10,"time_s":8.795581102371216,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "GENTLEMAN3:D", "format": "doubles_uncursed", "seed": 305456043, "result": 1, "rounds": 9, "time_s": 8.338621616363525, "had_error": false, "curse": true}
 {"trainer1":"FORMERCHAMP_Scilla:Scilla","trainer2":"MASKEDVILLAIN2_DOUBLE:Teal#13","format":"doubles_uncursed","seed":2319205265,"result":2,"rounds":9,"time_s":10.119402647018433,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#4","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":3884563803,"result":2,"rounds":6,"time_s":8.23904037475586,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"LEADER_Lambert:Lambert#2","format":"doubles_uncursed","seed":3365530198,"result":2,"rounds":4,"time_s":5.277540683746338,"had_error":false,"curse":true}
@@ -2269,7 +2269,7 @@
 {"trainer1":"FORMERCHAMP_Scilla:Scilla","trainer2":"MASKEDVILLAIN2:Teal#15","format":"doubles_uncursed","seed":1925208445,"result":1,"rounds":7,"time_s":8.563674449920654,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Samorn:Samorn#1","trainer2":"MASKEDVILLAIN:Crimson#5","format":"doubles_uncursed","seed":914613690,"result":1,"rounds":6,"time_s":8.700149297714233,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Lambert:Lambert#3","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":833720503,"result":1,"rounds":4,"time_s":6.54690957069397,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#5","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":1989383897,"result":2,"rounds":6,"time_s":11.200742959976196,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#5", "trainer2": "MASKEDVILLAIN:Crimson#19", "format": "doubles_uncursed", "seed": 1989383897, "result": 2, "rounds": 6, "time_s": 8.352047443389893, "had_error": false, "curse": true}
 {"trainer1":"DRAGONTAMER_F:Zinnia","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":3867782779,"result":1,"rounds":3,"time_s":3.930022954940796,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Eifion:Eifion#3","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":2266512863,"result":1,"rounds":2,"time_s":3.561793327331543,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#17","trainer2":"HOOPSTER:Jerel","format":"doubles_uncursed","seed":3178462211,"result":1,"rounds":2,"time_s":1.6556165218353271,"had_error":false,"curse":true}
@@ -2277,7 +2277,7 @@
 {"trainer1":"MASKEDVILLAIN2:Teal#17","trainer2":"FORMERCHAMP_Scilla:Scilla","format":"doubles_uncursed","seed":1327041375,"result":2,"rounds":8,"time_s":10.89334225654602,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#6","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":672630745,"result":2,"rounds":7,"time_s":9.647514581680298,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Eko:Eko#2","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":4220621718,"result":1,"rounds":5,"time_s":6.066815137863159,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#6","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":2701656986,"result":2,"rounds":7,"time_s":8.052266836166382,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#6", "trainer2": "MASKEDVILLAIN:Crimson#19", "format": "doubles_uncursed", "seed": 2701656986, "result": 2, "rounds": 8, "time_s": 9.648643970489502, "had_error": false, "curse": true}
 {"trainer1":"SUPERNERD:Agentbla","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":2089448301,"result":1,"rounds":3,"time_s":6.051868200302124,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"TRAINER_Alessa:Alessa#5","format":"doubles_uncursed","seed":3491445817,"result":2,"rounds":3,"time_s":6.777737617492676,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"HOOPSTER:Jerel","format":"doubles_uncursed","seed":3862596493,"result":1,"rounds":2,"time_s":3.1560556888580322,"had_error":false,"curse":true}
@@ -2285,7 +2285,7 @@
 {"trainer1":"FORMERCHAMP_Scilla:Scilla","trainer2":"MASKEDVILLAIN2:Teal#19","format":"doubles_uncursed","seed":369742577,"result":1,"rounds":6,"time_s":11.325451374053955,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#7","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":348809624,"result":2,"rounds":7,"time_s":13.784334182739258,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"COOLTRAINER_M7:X","format":"doubles_uncursed","seed":3781261926,"result":2,"rounds":6,"time_s":9.269431352615356,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#7","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":2508754779,"result":2,"rounds":6,"time_s":10.990838766098022,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#7", "trainer2": "MASKEDVILLAIN:Crimson#19", "format": "doubles_uncursed", "seed": 2508754779, "result": 2, "rounds": 6, "time_s": 8.268674373626709, "had_error": false, "curse": true}
 {"trainer1":"LADY4:Pria","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":1146088617,"result":1,"rounds":3,"time_s":3.422618865966797,"had_error":false,"curse":true}
 {"trainer1":"TRAINER_Alessa:Alessa#6","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":1611152314,"result":1,"rounds":2,"time_s":3.99617600440979,"had_error":false,"curse":true}
 {"trainer1":"HOOPSTER:Jerel","trainer2":"MASKEDVILLAIN:Crimson#21","format":"doubles_uncursed","seed":1060959750,"result":2,"rounds":1,"time_s":1.431149959564209,"had_error":false,"curse":true}
@@ -2317,7 +2317,7 @@
 {"trainer1":"FORMERCHAMP_Scilla:Scilla","trainer2":"TAPU_LELE:Tapu Lele#1","format":"doubles_uncursed","seed":4002202453,"result":1,"rounds":7,"time_s":10.131853342056274,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN:Crimson#11","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":3700873583,"result":2,"rounds":7,"time_s":9.989432573318481,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#3","trainer2":"LEADER_Helena:Helena#2","format":"doubles_uncursed","seed":1811490038,"result":2,"rounds":6,"time_s":9.63754916191101,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#11","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":3097175372,"result":2,"rounds":8,"time_s":10.07907772064209,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#11", "trainer2": "MASKEDVILLAIN:Crimson#19", "format": "doubles_uncursed", "seed": 3097175372, "result": 1, "rounds": 9, "time_s": 9.429064273834229, "had_error": false, "curse": true}
 {"trainer1":"LEADER_Lambert:Lambert#1","trainer2":"POKEMONRANGER_M:Zufaix","format":"doubles_uncursed","seed":121702812,"result":2,"rounds":2,"time_s":2.789421796798706,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"BEAUTY5:Esme","format":"doubles_uncursed","seed":302869906,"result":2,"rounds":2,"time_s":4.039617300033569,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#17","trainer2":"HOOPSTER:Jerel","format":"doubles_uncursed","seed":278513738,"result":1,"rounds":2,"time_s":1.5942833423614502,"had_error":false,"curse":true}
@@ -2354,9 +2354,9 @@
 {"trainer1":"RICHBOY3:Ryan","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":4011667604,"result":1,"rounds":3,"time_s":6.548203706741333,"had_error":false,"curse":true}
 {"trainer1":"TAPU_KOKO:Tapu Koko#1","trainer2":"HOOPSTER:Jerel","format":"doubles_uncursed","seed":225543808,"result":1,"rounds":1,"time_s":1.8244116306304932,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#23","trainer2":"GENTLEMAN3:D","format":"doubles_uncursed","seed":927729781,"result":1,"rounds":7,"time_s":12.114514827728271,"had_error":false,"curse":true}
-{"trainer1":"MASKEDVILLAIN_Sang:Silver#1","trainer2":"FORMERCHAMP_Casey:Casey","format":"doubles_uncursed","seed":2137426581,"result":2,"rounds":7,"time_s":12.795543193817139,"had_error":false,"curse":true}
+{"trainer1": "MASKEDVILLAIN_Sang:Silver#1", "trainer2": "FORMERCHAMP_Casey:Casey", "format": "doubles_uncursed", "seed": 2137426581, "result": 2, "rounds": 10, "time_s": 10.220387935638428, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN2:Teal#4","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":694771826,"result":2,"rounds":7,"time_s":14.63172721862793,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#4","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":3349763036,"result":1,"rounds":4,"time_s":6.65388822555542,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#4", "trainer2": "MASKEDVILLAIN2:Teal#3", "format": "doubles_uncursed", "seed": 3349763036, "result": 1, "rounds": 7, "time_s": 6.892534017562866, "had_error": false, "curse": true}
 {"trainer1":"MASKEDVILLAIN:Crimson#19","trainer2":"POKEMONMASTER_Vanya:Vanya#16","format":"doubles_uncursed","seed":3855353163,"result":1,"rounds":12,"time_s":21.753724575042725,"had_error":false,"curse":true}
 {"trainer1":"RICHBOY:Splitmoon","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":937838674,"result":1,"rounds":2,"time_s":3.892333745956421,"had_error":false,"curse":true}
 {"trainer1":"CAMERAMAN2:Octavio","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":990343175,"result":1,"rounds":5,"time_s":6.41071343421936,"had_error":false,"curse":true}
@@ -2364,7 +2364,7 @@
 {"trainer1":"TAPU_KOKO:Tapu Koko#1","trainer2":"GENTLEMAN3:D","format":"doubles_uncursed","seed":2119530648,"result":1,"rounds":8,"time_s":8.52876091003418,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Samorn:Samorn#1","trainer2":"FORMERCHAMP_Casey:Casey","format":"doubles_uncursed","seed":2966778446,"result":2,"rounds":6,"time_s":9.638099908828735,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#5","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":4096852915,"result":2,"rounds":7,"time_s":11.094850301742554,"had_error":false,"curse":true}
-{"trainer1":"TRAINER_Sang:Sang#5","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":4064701437,"result":1,"rounds":4,"time_s":5.248982191085815,"had_error":false,"curse":true}
+{"trainer1": "TRAINER_Sang:Sang#5", "trainer2": "MASKEDVILLAIN2:Teal#3", "format": "doubles_uncursed", "seed": 4064701437, "result": 1, "rounds": 16, "time_s": 9.901732921600342, "had_error": false, "curse": true}
 {"trainer1":"POKEMONMASTER_Vanya:Vanya#17","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":3691597770,"result":1,"rounds":14,"time_s":17.346487045288086,"had_error":false,"curse":true}
 {"trainer1":"JANITOR:Steeb","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":1488498919,"result":1,"rounds":3,"time_s":5.694605827331543,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Helena:Helena#1","trainer2":"IDOL:Teagan","format":"doubles_uncursed","seed":3010571761,"result":2,"rounds":3,"time_s":6.558573246002197,"had_error":false,"curse":true}
@@ -2389,7 +2389,7 @@
 {"trainer1":"MASKEDVILLAIN_DOUBLE:Crimson#1","trainer2":"FORMERCHAMP_Casey:Casey","format":"doubles_uncursed","seed":3885943083,"result":2,"rounds":7,"time_s":7.220639944076538,"had_error":false,"curse":true}
 {"trainer1":"MASKEDVILLAIN2:Teal#8","trainer2":"LEADER_Samorn:Samorn#1","format":"doubles_uncursed","seed":1911162238,"result":1,"rounds":5,"time_s":5.986027002334595,"had_error":false,"curse":true}
 {"trainer1":"ANOTHERPOSSIBLETAMARIND:Tamarind","trainer2":"MASKEDVILLAIN2:Teal#3","format":"doubles_uncursed","seed":4120898997,"result":1,"rounds":11,"time_s":6.8640477657318115,"had_error":false,"curse":true}
-{"trainer1":"POKEMONMASTER_Vanya:Vanya#20","trainer2":"MASKEDVILLAIN:Crimson#19","format":"doubles_uncursed","seed":3186864366,"result":2,"rounds":9,"time_s":11.088735580444336,"had_error":false,"curse":true}
+{"trainer1": "POKEMONMASTER_Vanya:Vanya#20", "trainer2": "MASKEDVILLAIN:Crimson#19", "format": "doubles_uncursed", "seed": 3186864366, "result": 2, "rounds": 9, "time_s": 10.726569890975952, "had_error": false, "curse": true}
 {"trainer1":"RICHBOY4:Darlvon","trainer2":"LEADER_Lambert:Lambert#1","format":"doubles_uncursed","seed":789364859,"result":1,"rounds":3,"time_s":3.582548141479492,"had_error":false,"curse":true}
 {"trainer1":"LOST_RANGER_PURPLE:Farid","trainer2":"LEADER_Helena:Helena#1","format":"doubles_uncursed","seed":1744646136,"result":1,"rounds":3,"time_s":4.816854238510132,"had_error":false,"curse":true}
 {"trainer1":"LEADER_Rafael:Rafael#1","trainer2":"BACKPACKER_M:Freedom","format":"doubles_uncursed","seed":812441858,"result":1,"rounds":2,"time_s":2.2564151287078857,"had_error":false,"curse":true}
