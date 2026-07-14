@@ -51,6 +51,7 @@ saves a static PNG (no hover tooltips) for sharing a snapshot; it cannot be
 combined with --interactive, since there's no single frame to save.
 """
 import argparse
+import math
 import os
 
 import matplotlib.pyplot as plt
@@ -88,7 +89,7 @@ TREND_STYLES = {
     "richards": {"color": "#67e6a0", "linestyle": "-."},   # teal, dash-dot
 }
 
-DEFAULT_RADIUS = 200.0    # rating points on each side -- tuned by eye: noticeably less jagged
+DEFAULT_RADIUS = 400.0    # rating points on each side -- tuned by eye: noticeably less jagged
                            # than smaller radii without the smoothing artifacts (a vertical-line
                            # degeneracy as the window approaches the whole dataset) that show up
                            # by radius ~1500
@@ -134,18 +135,23 @@ def build_entries(ratings_by_label, trainer_data_by_label):
 def compute_deviations_by_rating(entries, radius):
     """For each entry, average max level over everyone within `radius`
     rating points (self excluded, clipped at the ends of the sorted
-    ratings). Two-pointer sliding window over a prefix-sum array of
-    ratings-sorted levels -- O(n) total since both window edges only
-    advance as the trainer index advances. Mutates entries with "peer_avg",
-    "peer_count", and "delta" (level - peer_avg)."""
+    ratings). Two-pointer sliding window over prefix-sum arrays of
+    ratings-sorted levels and levels^2 -- O(n) total since both window edges
+    only advance as the trainer index advances. Mutates entries with
+    "peer_avg", "peer_std" (population stdev, via E[X^2]-E[X]^2 -- the
+    "fits and starts" local-jaggedness signal drawn as a band around the
+    window trend, see plot_scatter/plot_delta), "peer_count", and "delta"
+    (level - peer_avg)."""
     ordered = sorted(entries, key=lambda e: e["rating"])
     n = len(ordered)
     ratings = [e["rating"] for e in ordered]
     levels = [e["level"] for e in ordered]
 
     prefix = [0] * (n + 1)
+    prefix_sq = [0] * (n + 1)
     for i, lv in enumerate(levels):
         prefix[i + 1] = prefix[i] + lv
+        prefix_sq[i + 1] = prefix_sq[i] + lv * lv
 
     lo = 0
     hi = -1  # last index included in the window (inclusive)
@@ -159,42 +165,51 @@ def compute_deviations_by_rating(entries, radius):
 
         count = (hi - lo + 1) - 1  # exclude self
         window_sum = prefix[hi + 1] - prefix[lo] - levels[i]
+        window_sumsq = prefix_sq[hi + 1] - prefix_sq[lo] - levels[i] * levels[i]
         e = ordered[i]
-        e["peer_avg"] = window_sum / count if count else float("nan")
+        peer_avg = window_sum / count if count else float("nan")
+        e["peer_avg"] = peer_avg
+        e["peer_std"] = math.sqrt(max(window_sumsq / count - peer_avg * peer_avg, 0.0)) if count else 0.0
         e["peer_count"] = count
-        e["delta"] = e["level"] - e["peer_avg"] if count else 0.0
+        e["delta"] = e["level"] - peer_avg if count else 0.0
     return ordered
 
 
 def compute_deviations_by_rank(entries, window):
     """entries ordered by rank (assumed contiguous 1..N). For each entry,
     average max level over the `window` ranks on either side (self
-    excluded, clipped at the rankings' ends), via a prefix-sum array so
-    each trainer's window average is an O(1) lookup instead of an O(window)
-    rescan. Mutates entries with "peer_avg", "peer_count", and "delta"
-    (level - peer_avg)."""
+    excluded, clipped at the rankings' ends), via prefix-sum arrays of
+    levels and levels^2 so each trainer's window average/stdev is an O(1)
+    lookup instead of an O(window) rescan. Mutates entries with "peer_avg",
+    "peer_std" (population stdev), "peer_count", and "delta" (level -
+    peer_avg)."""
     ordered = sorted(entries, key=lambda e: e["rank"])
     n = len(ordered)
     levels = [e["level"] for e in ordered]
 
     prefix = [0] * (n + 1)
+    prefix_sq = [0] * (n + 1)
     for i, lv in enumerate(levels):
         prefix[i + 1] = prefix[i] + lv
+        prefix_sq[i + 1] = prefix_sq[i] + lv * lv
 
     for i, e in enumerate(ordered):
         lo = max(0, i - window)
         hi = min(n - 1, i + window)
         count = (hi - lo + 1) - 1  # exclude self
         window_sum = prefix[hi + 1] - prefix[lo] - levels[i]
-        e["peer_avg"] = window_sum / count
+        window_sumsq = prefix_sq[hi + 1] - prefix_sq[lo] - levels[i] * levels[i]
+        peer_avg = window_sum / count
+        e["peer_avg"] = peer_avg
+        e["peer_std"] = math.sqrt(max(window_sumsq / count - peer_avg * peer_avg, 0.0))
         e["peer_count"] = count
-        e["delta"] = e["level"] - e["peer_avg"]
+        e["delta"] = e["level"] - peer_avg
     return ordered
 
 
-def compute_curve_by_rating(ratings, levels, prefix, radius):
+def compute_curve_by_rating(ratings, levels, prefix, prefix_sq, radius):
     """Vectorized version of compute_deviations_by_rating, for the live
-    slider: for every trainer, the peer average of everyone within
+    slider: for every trainer, the peer average/stdev of everyone within
     +/-radius rating points (self excluded). NaN where a trainer has no
     peers in range (only possible at very small radii) -- matplotlib draws
     those as a gap in the line rather than erroring."""
@@ -202,12 +217,16 @@ def compute_curve_by_rating(ratings, levels, prefix, radius):
     hi = np.searchsorted(ratings, ratings + radius, side="right") - 1
     counts = (hi - lo + 1) - 1  # exclude self
     sums = prefix[hi + 1] - prefix[lo] - levels
+    sumsqs = prefix_sq[hi + 1] - prefix_sq[lo] - levels * levels
     with np.errstate(invalid="ignore", divide="ignore"):
-        peer_avg = np.where(counts > 0, sums / np.where(counts > 0, counts, 1), np.nan)
-    return peer_avg, counts
+        safe_counts = np.where(counts > 0, counts, 1)
+        peer_avg = np.where(counts > 0, sums / safe_counts, np.nan)
+        peer_var = np.where(counts > 0, sumsqs / safe_counts - peer_avg * peer_avg, np.nan)
+    peer_std = np.sqrt(np.clip(peer_var, 0.0, None))
+    return peer_avg, peer_std, counts
 
 
-def compute_curve_by_rank(levels, prefix, window):
+def compute_curve_by_rank(levels, prefix, prefix_sq, window):
     """Vectorized version of compute_deviations_by_rank, for the live
     slider: rank is contiguous 1..N once sorted, so unlike the rating
     version (where values aren't evenly spaced and need searchsorted),
@@ -218,9 +237,13 @@ def compute_curve_by_rank(levels, prefix, window):
     hi = np.clip(idx + window, 0, n - 1)
     counts = (hi - lo + 1) - 1  # exclude self
     sums = prefix[hi + 1] - prefix[lo] - levels
+    sumsqs = prefix_sq[hi + 1] - prefix_sq[lo] - levels * levels
     with np.errstate(invalid="ignore", divide="ignore"):
-        peer_avg = np.where(counts > 0, sums / np.where(counts > 0, counts, 1), np.nan)
-    return peer_avg, counts
+        safe_counts = np.where(counts > 0, counts, 1)
+        peer_avg = np.where(counts > 0, sums / safe_counts, np.nan)
+        peer_var = np.where(counts > 0, sumsqs / safe_counts - peer_avg * peer_avg, np.nan)
+    peer_std = np.sqrt(np.clip(peer_var, 0.0, None))
+    return peer_avg, peer_std, counts
 
 
 def fit_trend_ols(entries, y_key):
@@ -352,6 +375,9 @@ def add_hover(pairs, y_key):
             lines.append(f"Residual (logistic): {e['resid_logistic']:+.1f}")
         if "resid_richards" in e:
             lines.append(f"Residual (richards): {e['resid_richards']:+.1f}")
+        if "z_score" in e:
+            lines.append(f"Peer avg: {e['peer_avg']:.1f} (std={e['peer_std']:.1f})")
+            lines.append(f"Delta: {e['delta']:+.1f}  z-score: {e['z_score']:+.2f}")
         sel.annotation.set_text("\n".join(lines))
 
     mplcursors.cursor([artist for artist, _ in pairs], hover=True).connect("add", _fmt)
@@ -390,6 +416,13 @@ def plot_scatter(fig, ax, entries, modes, trend_data, y_key, fmt):
             # this traces the curve without a re-sort.
             curve_x = np.array([e["peer_avg"] for e in entries], dtype=float)
             curve_y = np.array([e[y_key] for e in entries], dtype=float)
+            curve_std = np.array([e["peer_std"] for e in entries], dtype=float)
+            # Local-spread ribbon (+/-1 peer_std in the level direction) --
+            # widens exactly where the level~y_key relationship is locally
+            # jagged/overlapping (the "fits and starts" structure a single
+            # trend line can't show), narrows where it's locally clean.
+            ax.fill_betweenx(curve_y, curve_x - curve_std, curve_x + curve_std,
+                              color=style["color"], alpha=0.15, zorder=1, linewidth=0)
             ax.plot(curve_x, curve_y, color=style["color"], linestyle=style["linestyle"],
                     linewidth=2.5, zorder=2, label=f"windowed avg ({trend_data['window']['desc']})")
         elif mode == "logistic":
@@ -427,6 +460,12 @@ def plot_delta(fig, ax, entries, mode, trend_data, y_key, fmt):
     resids = np.array([e[f"resid_{mode}"] for e in entries], dtype=float)
 
     style = TREND_STYLES[mode]
+    if mode == "window":
+        # entries are sorted by y_key (fit_trend_window's order) -- same
+        # local-spread ribbon as plot_scatter's window branch, here centered
+        # on zero since resid_window is already level minus the local mean.
+        curve_std = np.array([e["peer_std"] for e in entries], dtype=float)
+        ax.fill_between(yvals, -curve_std, curve_std, color=style["color"], alpha=0.15, zorder=1, linewidth=0)
     scatter = ax.scatter(yvals, resids, s=32, color=style["color"], alpha=0.75,
                           edgecolors=AX_BG, linewidths=0.5, zorder=3)
     add_hover([(scatter, entries)], y_key)
@@ -474,23 +513,25 @@ def run_interactive(entries, modes, chart, y_key, initial_param, fmt, static_tre
     yvals = np.array([e[y_key] for e in ordered], dtype=float)
     levels = np.array([e["level"] for e in ordered], dtype=float)
     prefix = np.concatenate([[0.0], np.cumsum(levels)])
+    prefix_sq = np.concatenate([[0.0], np.cumsum(levels * levels)])
 
     if y_key == "rating":
         min_param, max_param = MIN_RADIUS, yvals.max() - yvals.min()
-        compute = lambda p: compute_curve_by_rating(yvals, levels, prefix, p)
+        compute = lambda p: compute_curve_by_rating(yvals, levels, prefix, prefix_sq, p)
         slider_label, fmt_param = "Radius", (lambda p: f"±{p:.0f} rating")
     else:
         min_param, max_param = MIN_WINDOW, len(ordered) - 1
-        compute = lambda p: compute_curve_by_rank(levels, prefix, int(round(p)))
+        compute = lambda p: compute_curve_by_rank(levels, prefix, prefix_sq, int(round(p)))
         slider_label, fmt_param = "Window", (lambda p: f"±{int(round(p))} ranks")
 
     def apply_param(param):
-        peer_avg, counts = compute(param)
-        for e, pa, c in zip(ordered, peer_avg, counts):
+        peer_avg, peer_std, counts = compute(param)
+        for e, pa, ps, c in zip(ordered, peer_avg, peer_std, counts):
             e["peer_avg"] = pa
+            e["peer_std"] = ps
             e["peer_count"] = c
             e["resid_window"] = e["level"] - pa
-        return peer_avg, counts
+        return peer_avg, peer_std, counts
 
     fig, ax = plt.subplots(figsize=(11, 8))
     fig.subplots_adjust(bottom=0.18)  # room for the slider; no fig.tight_layout() after this
@@ -531,13 +572,19 @@ def run_interactive(entries, modes, chart, y_key, initial_param, fmt, static_tre
                 ax.plot(x, y, color=style["color"], linestyle=style["linestyle"],
                         linewidth=2.5, zorder=2, label=f"richards fit (ν={nu:.2f}, R²={r2:.3f})")
 
-        peer_avg, counts0 = apply_param(initial_param)
+        peer_avg, peer_std0, counts0 = apply_param(initial_param)
+        band = ax.fill_betweenx(yvals, peer_avg - peer_std0, peer_avg + peer_std0,
+                                 color=window_style["color"], alpha=0.15, zorder=1, linewidth=0)
         (artist,) = ax.plot(peer_avg, yvals, color=window_style["color"], linestyle=window_style["linestyle"],
                              linewidth=2.5, zorder=2, label="windowed avg")
 
         def redraw(param):
-            peer_avg, counts = apply_param(param)
+            nonlocal band
+            peer_avg, peer_std, counts = apply_param(param)
             artist.set_xdata(peer_avg)
+            band.remove()
+            band = ax.fill_betweenx(yvals, peer_avg - peer_std, peer_avg + peer_std,
+                                     color=window_style["color"], alpha=0.15, zorder=1, linewidth=0)
             return counts
 
         ax.set_xlabel("Maximum Party Level")
@@ -547,7 +594,9 @@ def run_interactive(entries, modes, chart, y_key, initial_param, fmt, static_tre
         ax.legend(loc="upper left", fontsize=10, frameon=False, labelcolor=TEXT_SECONDARY)
     else:
         title_base = "Residual vs. Windowed Average"
-        _, counts0 = apply_param(initial_param)
+        _, peer_std0, counts0 = apply_param(initial_param)
+        band = ax.fill_between(yvals, -peer_std0, peer_std0,
+                                color=window_style["color"], alpha=0.15, zorder=1, linewidth=0)
         resids = np.array([e["resid_window"] for e in ordered], dtype=float)
         artist = ax.scatter(yvals, resids, s=32, color=window_style["color"], alpha=0.75,
                              edgecolors=AX_BG, linewidths=0.5, zorder=3)
@@ -558,9 +607,13 @@ def run_interactive(entries, modes, chart, y_key, initial_param, fmt, static_tre
             ax.invert_xaxis()
 
         def redraw(param):
-            _, counts = apply_param(param)
+            nonlocal band
+            _, peer_std, counts = apply_param(param)
             resids = np.array([e["resid_window"] for e in ordered], dtype=float)
             artist.set_offsets(np.column_stack([yvals, resids]))
+            band.remove()
+            band = ax.fill_between(yvals, -peer_std, peer_std,
+                                    color=window_style["color"], alpha=0.15, zorder=1, linewidth=0)
             return counts
 
         ax.set_xlabel(Y_AXIS_LABELS[y_key])
