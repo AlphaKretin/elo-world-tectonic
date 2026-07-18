@@ -28,11 +28,16 @@ $Robocopy    = "$env:WINDIR\System32\robocopy.exe"
 # Graphics/, same output size), so it's worth resolving NanaZip dynamically
 # rather than hardcoding its version-numbered install path (which changes
 # on every NanaZip update).
-$NanaZipPackage = Get-AppxPackage -Name "*NanaZip*" | Select-Object -First 1
-if (-not $NanaZipPackage) {
+#
+# Resolve via the NanaZipC.exe App Execution Alias (on PATH), not by
+# reaching into the versioned WindowsApps\...\InstallLocation folder:
+# Windows can refuse to CreateProcess a packaged MSIX binary directly from
+# that folder ("Access is denied") when launched outside the package's own
+# activation flow -- the alias goes through activation and isn't affected.
+$NanaZipConsole = (Get-Command "NanaZipC.exe" -ErrorAction SilentlyContinue).Source
+if (-not $NanaZipConsole) {
     throw "NanaZip isn't installed -- it's what makes zipping this many small files fast. Install it (winget install NanaZip) or fall back to Compress-Archive by editing this script."
 }
-$NanaZipConsole = Join-Path $NanaZipPackage.InstallLocation "NanaZip.Universal.Console.exe"
 
 if (-not (Test-Path (Join-Path $VendorDir "Game.exe"))) {
     throw "Game.exe not found under $VendorDir -- check the submodule is checked out."
