@@ -79,7 +79,7 @@ export function AboutPage() {
         <p>
           You can! While this website covers the aggregate ratings and
           leaderboards,{" "}
-          <a href="https://github.com/AlphaKretin/elo-world-tectonic/releases/tag/v0.6.1">Battle Station</a> is a companion
+          <a href="https://github.com/AlphaKretin/elo-world-tectonic/releases">Battle Station</a> is a companion
           desktop app that lets you browse the full results set, create and
           watch replays of any pairing, and even simulate fantasy Top 16
           brackets.
